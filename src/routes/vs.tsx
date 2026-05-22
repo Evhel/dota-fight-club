@@ -67,15 +67,15 @@ function VsPage() {
 
       {rows.length > 0 && (
         <div className="panel overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead className="bg-muted/30 text-left">
+          <table className="w-full text-sm text-center">
+            <thead className="bg-muted/30">
               <tr>
-                <th className="px-3 py-2">Игрок</th>
-                <th className="px-3 py-2">Всего</th>
-                <th className="px-3 py-2">В одной команде</th>
-                <th className="px-3 py-2">WR вместе</th>
-                <th className="px-3 py-2">Против</th>
-                <th className="px-3 py-2">WR против</th>
+                <th className="px-3 py-2 text-center">Игрок</th>
+                <th className="px-3 py-2 text-center">Всего</th>
+                <th className="px-3 py-2 text-center">В одной команде</th>
+                <th className="px-3 py-2 text-center">WR вместе</th>
+                <th className="px-3 py-2 text-center">Против</th>
+                <th className="px-3 py-2 text-center">WR против</th>
               </tr>
             </thead>
             <tbody>
