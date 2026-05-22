@@ -38,11 +38,11 @@ function HeroesPage() {
           По играм
         </Button>
       </div>
-      <div className="panel overflow-x-auto">
+      <div className="panel overflow-x-auto max-w-2xl mx-auto">
         <table className="w-full text-sm text-center">
           <thead className="bg-muted/30">
             <tr>
-              <th className="px-3 py-2 text-center">Герой</th>
+              <th className="px-3 py-2 text-left">Герой</th>
               <th className="px-3 py-2 text-center">Игр</th>
               <th className="px-3 py-2 text-center">Винрейт</th>
               <th className="px-3 py-2 text-center">Банов</th>
@@ -52,8 +52,8 @@ function HeroesPage() {
           <tbody>
             {sorted.map((h) => (
               <tr key={h.name} id={heroAnchorId(h.name)} className="border-t border-border/40 hover:bg-muted/20">
-                <td className="px-3 py-2">
-                  <div className="flex items-center gap-2 justify-center">
+                <td className="px-3 py-2 text-left">
+                  <div className="flex items-center gap-2 justify-start">
                     <img
                       src={heroImg(h.name)}
                       alt={h.name}

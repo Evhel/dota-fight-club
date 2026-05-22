@@ -38,6 +38,7 @@ export interface PlayerStats {
   total_assists: number;
   total_high_fives: number;
   total_chat_messages: number;
+  first_match_index: number; // 1-based ordinal in chronological match list
 }
 
 export interface HeroStats {
@@ -162,11 +163,14 @@ export function computePlayerStats(
     totalAssists = 0,
     totalHighFives = 0,
     totalChat = 0;
+  let firstMatchIndex = 0;
 
-  for (const row of sorted) {
+  for (let idx = 0; idx < sorted.length; idx++) {
+    const row = sorted[idx];
     const m = row.data;
     const side = playerSideInMatch(m, steam_id);
     if (!side) continue;
+    if (!firstMatchIndex) firstMatchIndex = idx + 1;
     const teamPlayers = side === "radiant" ? m.radiant_team : m.dire_team;
     const me = teamPlayers.find((p) => String(p.steam_id) === steam_id)!;
     games += 1;
@@ -316,6 +320,7 @@ export function computePlayerStats(
     total_assists: totalAssists,
     total_high_fives: totalHighFives,
     total_chat_messages: totalChat,
+    first_match_index: firstMatchIndex,
   };
 }
 

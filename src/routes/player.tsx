@@ -12,6 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { PlayerAvatar } from "@/components/PlayerAvatar";
 
 const searchSchema = z.object({ nick: z.string().optional() });
 
@@ -75,9 +76,14 @@ function PlayerPage() {
       </div>
 
       {stats && (
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="max-w-2xl mx-auto w-full space-y-4">
+          <div className="panel p-6 flex flex-col items-center gap-4">
+            <PlayerAvatar steamId={stats.steam_id} name={stats.name} />
+            <h2 className="font-display text-2xl text-glow text-center">{stats.name}</h2>
+          </div>
+
           <div className="panel p-6 space-y-2 text-base">
-            <h2 className="font-display text-2xl text-glow mb-3 text-center">{stats.name}</h2>
+            <Row k="Играет с" v={stats.first_match_index ? `матча №${stats.first_match_index}` : "—"} />
             <Row k="Игр" v={stats.games} />
             <Row k="Винрейт" v={`${stats.winrate}%`} />
             <Row k="Время в играх" v={formatDuration(stats.total_seconds)} />
@@ -120,7 +126,7 @@ function PlayerPage() {
             />
           </div>
 
-          <div className="panel p-6 md:col-span-2">
+          <div className="panel p-6">
             <h3 className="font-display text-xl mb-2 text-center">
               Уникальные герои ({stats.unique_heroes.length})
             </h3>
