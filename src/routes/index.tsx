@@ -286,19 +286,25 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
                   : d.count % 10 >= 2 && d.count % 10 <= 4 && (d.count % 100 < 10 || d.count % 100 >= 20)
                     ? "игры"
                     : "игр";
+              const tip = d.count > 0 ? `${dateLabel} — ${d.count} ${gamesWord}` : "";
               return (
-                <div
-                  key={d.date}
-                  title={d.count > 0 ? `${dateLabel} — ${d.count} ${gamesWord}` : undefined}
-                  className="w-[10px] h-[10px] rounded-[2px]"
-                  style={{
-                    backgroundColor:
-                      d.count === 0
-                        ? "oklch(0.25 0.03 150 / 0.5)"
-                        : `oklch(${0.35 + intensity * 0.35} 0.12 145)`,
-                    cursor: d.count > 0 ? "help" : "default",
-                  }}
-                />
+                <div key={d.date} className="relative group">
+                  <div
+                    className="w-[10px] h-[10px] rounded-[2px]"
+                    style={{
+                      backgroundColor:
+                        d.count === 0
+                          ? "oklch(0.25 0.03 150 / 0.5)"
+                          : `oklch(${0.35 + intensity * 0.35} 0.12 145)`,
+                      cursor: d.count > 0 ? "help" : "default",
+                    }}
+                  />
+                  {tip && (
+                    <div className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 rounded bg-popover text-popover-foreground text-xs whitespace-nowrap shadow-lg border border-border opacity-0 group-hover:opacity-100 transition z-50">
+                      {tip}
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>
