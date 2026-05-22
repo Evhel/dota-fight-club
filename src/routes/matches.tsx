@@ -22,17 +22,17 @@ function MatchesPage() {
     <div className="space-y-4">
       <h1 className="text-3xl font-display text-glow">Все матчи</h1>
       <div className="panel overflow-x-auto">
-        <table className="w-full text-sm">
+        <table className="w-full text-sm text-center">
           <thead className="bg-muted/30">
-            <tr className="text-left">
-              <th className="px-3 py-2">#</th>
-              <th className="px-3 py-2">Дата</th>
-              <th className="px-3 py-2">Режим</th>
-              <th className="px-3 py-2">Длительность</th>
-              <th className="px-3 py-2">Пик</th>
-              <th className="px-3 py-2">Победа</th>
-              <th className="px-3 py-2">Смерти Свет</th>
-              <th className="px-3 py-2">Смерти Тьма</th>
+            <tr>
+              <th className="px-3 py-2 text-center">#</th>
+              <th className="px-3 py-2 text-center">Дата</th>
+              <th className="px-3 py-2 text-center">Режим</th>
+              <th className="px-3 py-2 text-center">Длительность</th>
+              <th className="px-3 py-2 text-center">Пик</th>
+              <th className="px-3 py-2 text-center">Победа</th>
+              <th className="px-3 py-2 text-center">Смерти Свет</th>
+              <th className="px-3 py-2 text-center">Смерти Тьма</th>
               {admin && <th className="px-3 py-2"></th>}
             </tr>
           </thead>

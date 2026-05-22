@@ -43,7 +43,15 @@ function RecordsPage() {
           <tbody>
             {items.map((it) => (
               <tr key={it.label} className="border-t border-border/40">
-                <td className="px-3 py-2 text-muted-foreground">{it.label}</td>
+                <td className="px-3 py-2 text-muted-foreground">
+                  {it.rec ? (
+                    <Link to={`/match/${it.rec.match_id}`} className="hover:text-primary hover:underline">
+                      {it.label}
+                    </Link>
+                  ) : (
+                    it.label
+                  )}
+                </td>
                 {it.rec ? (
                   <>
                     <td className="px-3 py-2">

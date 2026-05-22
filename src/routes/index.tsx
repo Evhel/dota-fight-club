@@ -275,16 +275,28 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
           <div className="grid grid-flow-col grid-rows-7 gap-[3px]">
             {days.map((d) => {
               const intensity = d.count / max;
+              const dateLabel = d.dt.toLocaleDateString("ru-RU", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              });
+              const gamesWord =
+                d.count % 10 === 1 && d.count % 100 !== 11
+                  ? "игра"
+                  : d.count % 10 >= 2 && d.count % 10 <= 4 && (d.count % 100 < 10 || d.count % 100 >= 20)
+                    ? "игры"
+                    : "игр";
               return (
                 <div
                   key={d.date}
-                  title={`${d.date}: ${d.count} игр`}
+                  title={d.count > 0 ? `${dateLabel} — ${d.count} ${gamesWord}` : undefined}
                   className="w-[10px] h-[10px] rounded-[2px]"
                   style={{
                     backgroundColor:
                       d.count === 0
                         ? "oklch(0.25 0.03 150 / 0.5)"
                         : `oklch(${0.35 + intensity * 0.35} 0.12 145)`,
+                    cursor: d.count > 0 ? "help" : "default",
                   }}
                 />
               );
