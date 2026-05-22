@@ -125,12 +125,21 @@ function PlayerPage() {
             </h3>
             <div className="flex flex-wrap gap-2 justify-center">
               {stats.unique_heroes.map((h) => (
-                <span
+                <Link
                   key={h}
-                  className="text-sm px-2 py-1 rounded bg-muted/40 border border-border/50"
+                  to={`/heroes`}
+                  hash={heroAnchorId(h)}
+                  title={h}
+                  className="block rounded overflow-hidden border border-border/50 hover:border-primary hover:shadow-[0_0_8px_var(--primary)] transition"
                 >
-                  {h}
-                </span>
+                  <img
+                    src={heroImg(h)}
+                    alt={h}
+                    loading="lazy"
+                    className="w-14 h-8 object-cover"
+                    onError={(e) => ((e.currentTarget.style.display = "none"))}
+                  />
+                </Link>
               ))}
             </div>
           </div>
