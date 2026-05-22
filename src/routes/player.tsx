@@ -11,7 +11,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Button } from "@/components/ui/button";
 
 const searchSchema = z.object({ nick: z.string().optional() });
 
@@ -52,9 +51,15 @@ function PlayerPage() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-display text-glow">Игрок</h1>
-      <div className="panel p-4 flex flex-wrap items-center gap-2">
-        <Select value={selected} onValueChange={setSelected}>
+      <h1 className="text-3xl font-display text-glow text-center">Игрок</h1>
+      <div className="panel p-4 flex justify-center">
+        <Select
+          value={selected}
+          onValueChange={(val) => {
+            setSelected(val);
+            navigate({ search: { nick: val } });
+          }}
+        >
           <SelectTrigger className="w-72">
             <SelectValue placeholder="Выбери игрока..." />
           </SelectTrigger>
@@ -66,18 +71,12 @@ function PlayerPage() {
             ))}
           </SelectContent>
         </Select>
-        <Button
-          onClick={() => navigate({ search: { nick: selected } })}
-          disabled={!selected}
-        >
-          Найти игрока
-        </Button>
       </div>
 
       {stats && (
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="panel p-6 space-y-2 text-sm">
-            <h2 className="font-display text-2xl text-glow mb-3">{stats.name}</h2>
+          <div className="panel p-6 space-y-2 text-base">
+            <h2 className="font-display text-2xl text-glow mb-3 text-center">{stats.name}</h2>
             <Row k="Игр" v={stats.games} />
             <Row k="Винрейт" v={`${stats.winrate}%`} />
             <Row k="Время в играх" v={formatDuration(stats.total_seconds)} />
@@ -89,16 +88,14 @@ function PlayerPage() {
               v={
                 stats.current_streak.type === "none"
                   ? "—"
-                  : `${stats.current_streak.count} ${
-                      stats.current_streak.type === "win" ? "побед" : "поражений"
-                    }`
+                  : `${stats.current_streak.count}${stats.current_streak.type === "win" ? "+" : "-"}`
               }
             />
             <Row k="Самое частое слово" v={stats.top_word || "—"} />
           </div>
 
-          <div className="panel p-6 space-y-2 text-sm">
-            <h3 className="font-display text-lg mb-2">Рекорды игрока</h3>
+          <div className="panel p-6 space-y-2 text-base">
+            <h3 className="font-display text-xl mb-2 text-center">Рекорды игрока</h3>
             <Row k="Макс. KDA" v={stats.max_kda.value} link={`/match/${stats.max_kda.match_id}`} />
             <Row k="Средний KDA" v={stats.avg_kda} />
             <Row k="Макс. NW" v={stats.max_net_worth.value} link={`/match/${stats.max_net_worth.match_id}`} />
@@ -123,12 +120,14 @@ function PlayerPage() {
           </div>
 
           <div className="panel p-6 md:col-span-2">
-            <h3 className="font-display text-lg mb-2">Уникальные герои ({stats.unique_heroes.length})</h3>
-            <div className="flex flex-wrap gap-2">
+            <h3 className="font-display text-xl mb-2 text-center">
+              Уникальные герои ({stats.unique_heroes.length})
+            </h3>
+            <div className="flex flex-wrap gap-2 justify-center">
               {stats.unique_heroes.map((h) => (
                 <span
                   key={h}
-                  className="text-xs px-2 py-1 rounded bg-muted/40 border border-border/50"
+                  className="text-sm px-2 py-1 rounded bg-muted/40 border border-border/50"
                 >
                   {h}
                 </span>
