@@ -72,14 +72,6 @@ export function PlayerAvatar({ steamId, name }: Props) {
           </span>
         )}
       </div>
-        {url ? (
-          <img src={url} alt={name} className="w-full h-full object-cover" />
-        ) : (
-          <span className="text-3xl font-display text-muted-foreground">
-            {name.slice(0, 1).toUpperCase()}
-          </span>
-        )}
-      </div>
       {admin && (
         <>
           <input
