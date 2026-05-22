@@ -58,7 +58,7 @@ export function PlayerAvatar({ steamId, name }: Props) {
   return (
     <div className="flex flex-col items-center gap-2">
       <div
-        className={`w-28 h-28 rounded-full overflow-hidden border-2 border-primary/60 bg-muted/30 flex items-center justify-center ${
+        className={`w-80 h-[28rem] rounded-lg overflow-hidden border-2 border-primary/60 bg-muted/30 flex items-center justify-center ${
           admin ? "cursor-pointer hover:border-primary" : ""
         }`}
         onClick={() => admin && inputRef.current?.click()}
@@ -67,7 +67,7 @@ export function PlayerAvatar({ steamId, name }: Props) {
         {url ? (
           <img src={url} alt={name} className="w-full h-full object-cover" />
         ) : (
-          <span className="text-3xl font-display text-muted-foreground">
+          <span className="text-7xl font-display text-muted-foreground">
             {name.slice(0, 1).toUpperCase()}
           </span>
         )}

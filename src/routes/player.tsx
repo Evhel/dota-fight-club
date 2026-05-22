@@ -76,61 +76,73 @@ function PlayerPage() {
       </div>
 
       {stats && (
-        <div className="max-w-2xl mx-auto w-full space-y-4">
-          <div className="panel p-6 flex flex-col items-center gap-4">
-            <PlayerAvatar steamId={stats.steam_id} name={stats.name} />
-            <h2 className="font-display text-2xl text-glow text-center">{stats.name}</h2>
+        <div className="max-w-7xl mx-auto w-full space-y-4">
+          {/* Header: avatar + name + key stats */}
+          <div className="panel p-6 flex flex-col lg:flex-row gap-6 items-start">
+            <div className="shrink-0">
+              <PlayerAvatar steamId={stats.steam_id} name={stats.name} />
+            </div>
+
+            <div className="flex-1 min-w-0 w-full space-y-4">
+              <div>
+                <h2 className="font-display text-5xl text-glow break-words">{stats.name}</h2>
+                <p className="text-muted-foreground mt-1">
+                  Играет с матча №{stats.first_match_index || "—"} · {stats.unique_heroes.length} уникальных героев
+                </p>
+              </div>
+
+              {/* Quick stat tiles */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                <Tile label="Игр" value={stats.games} />
+                <Tile label="Винрейт" value={`${stats.winrate}%`} />
+                <Tile label="Время в боях" value={formatDuration(stats.total_seconds)} />
+                <Tile
+                  label="Текущая серия"
+                  value={
+                    stats.current_streak.type === "none"
+                      ? "—"
+                      : `${stats.current_streak.count}${stats.current_streak.type === "win" ? "+" : "-"}`
+                  }
+                />
+                <Tile label="Серия побед (макс)" value={stats.max_win_streak} />
+                <Tile label="Серия поражений (макс)" value={stats.max_loss_streak} />
+                <Tile label="K / D / A" value={`${stats.total_kills}/${stats.total_deaths}/${stats.total_assists}`} />
+                <Tile label="Любимое слово" value={stats.top_word || "—"} />
+              </div>
+
+              {/* Records compact two-column */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1 text-sm">
+                <Row k="Макс. KDA" v={stats.max_kda.value} link={`/match/${stats.max_kda.match_id}`} />
+                <Row k="Средний KDA" v={stats.avg_kda} />
+                <Row k="Макс. NW" v={stats.max_net_worth.value} link={`/match/${stats.max_net_worth.match_id}`} />
+                <Row k="Средний NW" v={stats.avg_net_worth} />
+                <Row k="Макс. крипов" v={stats.max_creeps.value} link={`/match/${stats.max_creeps.match_id}`} />
+                <Row k="Средние крипы" v={stats.avg_creeps} />
+                <Row k="Макс. observer" v={stats.max_obs.value} link={`/match/${stats.max_obs.match_id}`} />
+                <Row k="Макс. sentry" v={stats.max_sen.value} link={`/match/${stats.max_sen.match_id}`} />
+                <Row k="Макс. dewards" v={stats.max_dewards.value} link={`/match/${stats.max_dewards.match_id}`} />
+                <Row k="Любимый герой" v={stats.top_hero_games ? `${stats.top_hero_games.hero} (${stats.top_hero_games.games})` : "—"} />
+                <Row k="Лучший герой (WR)" v={stats.top_hero_winrate ? `${stats.top_hero_winrate.hero} (${stats.top_hero_winrate.winrate}%)` : "—"} />
+                <Row
+                  k="Лучший союзник"
+                  v={stats.best_teammate ? `${stats.best_teammate.name} (${stats.best_teammate.winrate}%)` : "—"}
+                  link={stats.best_teammate ? `/player?nick=${encodeURIComponent(stats.best_teammate.name)}` : undefined}
+                />
+                <Row
+                  k="Худший союзник"
+                  v={stats.worst_teammate ? `${stats.worst_teammate.name} (${stats.worst_teammate.winrate}%)` : "—"}
+                  link={stats.worst_teammate ? `/player?nick=${encodeURIComponent(stats.worst_teammate.name)}` : undefined}
+                />
+              </div>
+            </div>
           </div>
 
-          <div className="panel p-6 space-y-2 text-base">
-            <Row k="Играет с" v={stats.first_match_index ? `матча №${stats.first_match_index}` : "—"} />
-            <Row k="Игр" v={stats.games} />
-            <Row k="Винрейт" v={`${stats.winrate}%`} />
-            <Row k="Время в играх" v={formatDuration(stats.total_seconds)} />
-            <Row k="Уникальных героев" v={stats.unique_heroes.length} />
-            <Row k="Макс. серия побед" v={stats.max_win_streak} />
-            <Row k="Макс. серия поражений" v={stats.max_loss_streak} />
-            <Row
-              k="Текущая серия"
-              v={
-                stats.current_streak.type === "none"
-                  ? "—"
-                  : `${stats.current_streak.count}${stats.current_streak.type === "win" ? "+" : "-"}`
-              }
-            />
-            <Row k="Самое частое слово" v={stats.top_word || "—"} />
-          </div>
-
-          <div className="panel p-6 space-y-2 text-base">
-            <h3 className="font-display text-xl mb-2 text-center">Рекорды игрока</h3>
-            <Row k="Макс. KDA" v={stats.max_kda.value} link={`/match/${stats.max_kda.match_id}`} />
-            <Row k="Средний KDA" v={stats.avg_kda} />
-            <Row k="Макс. NW" v={stats.max_net_worth.value} link={`/match/${stats.max_net_worth.match_id}`} />
-            <Row k="Средний NW" v={stats.avg_net_worth} />
-            <Row k="Макс. крипов" v={stats.max_creeps.value} link={`/match/${stats.max_creeps.match_id}`} />
-            <Row k="Средние крипы" v={stats.avg_creeps} />
-            <Row k="Макс. observer" v={stats.max_obs.value} link={`/match/${stats.max_obs.match_id}`} />
-            <Row k="Макс. sentry" v={stats.max_sen.value} link={`/match/${stats.max_sen.match_id}`} />
-            <Row k="Макс. dewards" v={stats.max_dewards.value} link={`/match/${stats.max_dewards.match_id}`} />
-            <Row k="Любимый герой (игр)" v={stats.top_hero_games ? `${stats.top_hero_games.hero} (${stats.top_hero_games.games})` : "—"} />
-            <Row k="Лучший герой (WR)" v={stats.top_hero_winrate ? `${stats.top_hero_winrate.hero} (${stats.top_hero_winrate.winrate}%)` : "—"} />
-            <Row
-              k="Лучший союзник"
-              v={stats.best_teammate ? `${stats.best_teammate.name} (${stats.best_teammate.winrate}%)` : "—"}
-              link={stats.best_teammate ? `/player?nick=${encodeURIComponent(stats.best_teammate.name)}` : undefined}
-            />
-            <Row
-              k="Худший союзник"
-              v={stats.worst_teammate ? `${stats.worst_teammate.name} (${stats.worst_teammate.winrate}%)` : "—"}
-              link={stats.worst_teammate ? `/player?nick=${encodeURIComponent(stats.worst_teammate.name)}` : undefined}
-            />
-          </div>
-
-          <div className="panel p-6">
-            <h3 className="font-display text-xl mb-2 text-center">
+          {/* Heroes wall */}
+          <div className="panel p-4">
+            <h3 className="font-display text-lg mb-2 text-center">
               Уникальные герои ({stats.unique_heroes.length})
             </h3>
-            <div className="flex flex-wrap gap-2 justify-center">
+            <div className="flex flex-wrap gap-1.5 justify-center">
               {stats.unique_heroes.map((h) => (
                 <Link
                   key={h}
@@ -143,7 +155,7 @@ function PlayerPage() {
                     src={heroImg(h)}
                     alt={h}
                     loading="lazy"
-                    className="w-14 h-8 object-cover"
+                    className="w-12 h-7 object-cover"
                     onError={(e) => ((e.currentTarget.style.display = "none"))}
                   />
                 </Link>
@@ -152,6 +164,15 @@ function PlayerPage() {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+function Tile({ label, value }: { label: string; value: number | string }) {
+  return (
+    <div className="rounded-lg border border-border/40 bg-muted/20 px-3 py-2">
+      <div className="text-xs text-muted-foreground uppercase tracking-wide">{label}</div>
+      <div className="font-display text-xl text-glow mt-0.5 truncate">{value}</div>
     </div>
   );
 }
