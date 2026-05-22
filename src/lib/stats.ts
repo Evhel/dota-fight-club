@@ -38,6 +38,7 @@ export interface PlayerStats {
   total_assists: number;
   total_high_fives: number;
   total_chat_messages: number;
+  first_match_index: number; // 1-based ordinal in chronological match list
 }
 
 export interface HeroStats {
