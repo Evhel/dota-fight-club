@@ -20,18 +20,18 @@ function RecordsPage() {
   }, [matches]);
 
   const items = [
-    { label: "Самое большое количество убийств", rec: records.top_kills },
-    { label: "Самое большое количество смертей", rec: records.top_deaths },
-    { label: "Самое большое количество помощи", rec: records.top_assists },
-    { label: "Лучший KDA с 0 смертей (K+A)", rec: records.top_perfect_kda },
-    { label: "Максимум ценности в золоте", rec: records.top_net_worth },
-    { label: "Максимум ласт-хитов", rec: records.top_creeps },
+    { label: "💀 Самое большое количество убийств", rec: records.top_kills },
+    { label: "☠️ Самое большое количество смертей", rec: records.top_deaths },
+    { label: "🤝 Самое большое количество помощи", rec: records.top_assists },
+    { label: "✨ Лучший KDA с 0 смертей (K+A)", rec: records.top_perfect_kda },
+    { label: "💰 Максимум ценности в золоте", rec: records.top_net_worth },
+    { label: "🗡️ Максимум ласт-хитов", rec: records.top_creeps },
   ];
 
   return (
     <div className="space-y-4">
       <h1 className="text-3xl font-display text-glow text-center">Рекорды</h1>
-      <div className="panel overflow-x-auto">
+      <div className="panel overflow-x-auto max-w-2xl mx-auto">
         <table className="w-full text-base text-center">
           <thead className="bg-muted/30">
             <tr>
