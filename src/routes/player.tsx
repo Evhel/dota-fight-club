@@ -176,9 +176,6 @@ function Tile({ label, value }: { label: string; value: number | string }) {
     </div>
   );
 }
-    </div>
-  );
-}
 
 function Row({ k, v, link }: { k: string; v: number | string; link?: string }) {
   return (
