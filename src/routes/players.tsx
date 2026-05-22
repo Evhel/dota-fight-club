@@ -16,19 +16,19 @@ function PlayersPage() {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-3xl font-display text-glow">Игроки</h1>
+      <h1 className="text-3xl font-display text-glow text-center">Игроки</h1>
       <div className="panel overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead className="bg-muted/30 text-left">
+        <table className="w-full text-base text-center">
+          <thead className="bg-muted/30">
             <tr>
               <th className="px-3 py-2">Ник</th>
               <th className="px-3 py-2">Игр</th>
               <th className="px-3 py-2">WR</th>
-              <th className="px-3 py-2">Время</th>
-              <th className="px-3 py-2">Героев</th>
-              <th className="px-3 py-2">Макс. побед</th>
-              <th className="px-3 py-2">Макс. пораж.</th>
-              <th className="px-3 py-2">Серия</th>
+              <th className="px-3 py-2">Потрачено</th>
+              <th className="px-3 py-2">Уник. героев</th>
+              <th className="px-3 py-2">Серия побед</th>
+              <th className="px-3 py-2">Серия поражений</th>
+              <th className="px-3 py-2">Текущая серия</th>
               <th className="px-3 py-2">Слово</th>
               <th className="px-3 py-2">Лучший союзник</th>
               <th className="px-3 py-2">Худший союзник</th>
@@ -54,7 +54,7 @@ function PlayersPage() {
                 <td className="px-3 py-2">
                   {p.current_streak.type === "none"
                     ? "—"
-                    : `${p.current_streak.count} ${p.current_streak.type === "win" ? "поб." : "пор."}`}
+                    : `${p.current_streak.count}${p.current_streak.type === "win" ? "+" : "-"}`}
                 </td>
                 <td className="px-3 py-2">{p.top_word || "—"}</td>
                 <td className="px-3 py-2">

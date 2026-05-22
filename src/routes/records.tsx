@@ -30,29 +30,46 @@ function RecordsPage() {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-3xl font-display text-glow">Рекорды</h1>
-      <div className="panel divide-y divide-border/40">
-        {items.map((it) => (
-          <div key={it.label} className="flex flex-wrap items-center justify-between gap-3 px-4 py-3">
-            <span className="text-muted-foreground">{it.label}</span>
-            {it.rec ? (
-              <span>
-                <Link
-                  to={`/player?nick=${encodeURIComponent(it.rec.name)}`}
-                  className="text-primary hover:underline"
-                >
-                  {it.rec.name}
-                </Link>
-                {" · "}
-                <Link to={`/match/${it.rec.match_id}`} className="font-medium hover:underline">
-                  {it.rec.value}
-                </Link>
-              </span>
-            ) : (
-              <span>—</span>
-            )}
-          </div>
-        ))}
+      <h1 className="text-3xl font-display text-glow text-center">Рекорды</h1>
+      <div className="panel overflow-x-auto">
+        <table className="w-full text-base text-center">
+          <thead className="bg-muted/30">
+            <tr>
+              <th className="px-3 py-2">Рекорд</th>
+              <th className="px-3 py-2">Игрок</th>
+              <th className="px-3 py-2">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            {items.map((it) => (
+              <tr key={it.label} className="border-t border-border/40">
+                <td className="px-3 py-2 text-muted-foreground">{it.label}</td>
+                {it.rec ? (
+                  <>
+                    <td className="px-3 py-2">
+                      <Link
+                        to={`/player?nick=${encodeURIComponent(it.rec.name)}`}
+                        className="text-primary hover:underline"
+                      >
+                        {it.rec.name}
+                      </Link>
+                    </td>
+                    <td className="px-3 py-2">
+                      <Link to={`/match/${it.rec.match_id}`} className="font-medium hover:underline">
+                        {it.rec.value}
+                      </Link>
+                    </td>
+                  </>
+                ) : (
+                  <>
+                    <td className="px-3 py-2">—</td>
+                    <td className="px-3 py-2">—</td>
+                  </>
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
