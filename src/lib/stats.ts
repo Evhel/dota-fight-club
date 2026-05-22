@@ -163,11 +163,14 @@ export function computePlayerStats(
     totalAssists = 0,
     totalHighFives = 0,
     totalChat = 0;
+  let firstMatchIndex = 0;
 
-  for (const row of sorted) {
+  for (let idx = 0; idx < sorted.length; idx++) {
+    const row = sorted[idx];
     const m = row.data;
     const side = playerSideInMatch(m, steam_id);
     if (!side) continue;
+    if (!firstMatchIndex) firstMatchIndex = idx + 1;
     const teamPlayers = side === "radiant" ? m.radiant_team : m.dire_team;
     const me = teamPlayers.find((p) => String(p.steam_id) === steam_id)!;
     games += 1;
