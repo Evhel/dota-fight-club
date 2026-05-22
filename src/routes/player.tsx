@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities, computePlayerStats, formatDuration } from "@/lib/stats";
+import { heroImg, heroAnchorId } from "@/lib/heroes";
 import { useMemo, useState, useEffect } from "react";
 import { z } from "zod";
 import { zodValidator } from "@tanstack/zod-adapter";
