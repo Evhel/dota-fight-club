@@ -320,6 +320,7 @@ export function computePlayerStats(
     total_assists: totalAssists,
     total_high_fives: totalHighFives,
     total_chat_messages: totalChat,
+    first_match_index: firstMatchIndex,
   };
 }
 
