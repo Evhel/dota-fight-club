@@ -46,8 +46,8 @@ function VsPage() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-display text-glow">Игрок vs Игрок</h1>
-      <div className="panel p-4 flex flex-wrap items-center gap-2">
+      <h1 className="text-3xl font-display text-glow text-center">Игрок vs Игрок</h1>
+      <div className="panel p-4 flex flex-wrap items-center justify-center gap-2">
         <Select value={selected} onValueChange={setSelected}>
           <SelectTrigger className="w-72">
             <SelectValue placeholder="Выбери игрока..." />
@@ -66,7 +66,7 @@ function VsPage() {
       </div>
 
       {rows.length > 0 && (
-        <div className="panel overflow-x-auto">
+        <div className="panel overflow-x-auto max-w-3xl mx-auto">
           <table className="w-full text-sm text-center">
             <thead className="bg-muted/30">
               <tr>
