@@ -12,6 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { PlayerAvatar } from "@/components/PlayerAvatar";
 
 const searchSchema = z.object({ nick: z.string().optional() });
 
