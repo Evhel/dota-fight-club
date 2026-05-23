@@ -276,8 +276,8 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
   }
   const totalDaysWithGames = allActiveDates.length;
 
-  const cell = 9;
-  const gap = 2;
+  const cell = 18;
+  const gap = 3;
   const colW = cell + gap;
 
   return (
