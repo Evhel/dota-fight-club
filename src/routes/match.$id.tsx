@@ -72,7 +72,7 @@ function MatchPage() {
   }) => {
     const draft = buildDraft(teamNum);
     return (
-      <div className="panel p-4 space-y-3">
+      <div className="panel p-4 space-y-3 max-w-3xl mx-auto">
         <div className="flex items-center justify-between">
           <h2 className="font-display text-xl" style={{ color }}>
             {title}
@@ -85,7 +85,21 @@ function MatchPage() {
           </span>
         </div>
         <div className="overflow-x-auto">
-          <table className="w-full text-xs text-center">
+          <table className="w-full text-xs text-center table-fixed">
+            <colgroup>
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "18%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "9%" }} />
+              <col style={{ width: "11%" }} />
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "7%" }} />
+            </colgroup>
             <thead className="text-muted-foreground">
               <tr>
                 <th className="py-1 px-1">Герой</th>
@@ -97,7 +111,7 @@ function MatchPage() {
                 <th className="py-1 px-1">LH/DN</th>
                 <th className="py-1 px-1">GPM/XPM</th>
                 <th className="py-1 px-1">DMG</th>
-                <th className="py-1 px-1">Got DMG</th>
+                <th className="py-1 px-1">Got</th>
                 <th className="py-1 px-1">HEAL</th>
                 <th className="py-1 px-1">BLD</th>
               </tr>
