@@ -52,6 +52,15 @@ export interface DotaMatch {
   chat_message_count: number;
   high_fives: Record<string, number>;
   creep_kills: Record<string, number>;
+  // Optional per-nickname extended stats (may not be in older JSON)
+  last_hits?: Record<string, number>;
+  denies?: Record<string, number>;
+  gpm?: Record<string, number>;
+  xpm?: Record<string, number>;
+  hero_damage?: Record<string, number>;
+  damage_taken?: Record<string, number>;
+  hero_healing?: Record<string, number>;
+  tower_damage?: Record<string, number>;
 }
 
 export interface MatchRow {

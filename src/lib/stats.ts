@@ -36,6 +36,9 @@ export interface PlayerStats {
   total_kills: number;
   total_deaths: number;
   total_assists: number;
+  avg_kills: number;
+  avg_deaths: number;
+  avg_assists: number;
   total_high_fives: number;
   total_chat_messages: number;
   first_match_index: number; // 1-based ordinal in chronological match list
@@ -318,6 +321,9 @@ export function computePlayerStats(
     total_kills: totalKills,
     total_deaths: totalDeaths,
     total_assists: totalAssists,
+    avg_kills: games ? Math.round((totalKills / games) * 10) / 10 : 0,
+    avg_deaths: games ? Math.round((totalDeaths / games) * 10) / 10 : 0,
+    avg_assists: games ? Math.round((totalAssists / games) * 10) / 10 : 0,
     total_high_fives: totalHighFives,
     total_chat_messages: totalChat,
     first_match_index: firstMatchIndex,
@@ -490,7 +496,7 @@ export function computeGlobalStats(
   const mostGames = playerStats.length
     ? { steam_id: playerStats[0].steam_id, name: playerStats[0].name, games: playerStats[0].games }
     : undefined;
-  const eligibleWr = playerStats.filter((p) => p.games >= 3);
+  const eligibleWr = playerStats.filter((p) => p.games >= 10);
   const bestWr = eligibleWr.length
     ? eligibleWr.reduce((a, b) => (b.winrate > a.winrate ? b : a))
     : undefined;

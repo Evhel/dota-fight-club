@@ -1,10 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches, useDeleteMatch } from "@/lib/matches";
-import { matchDeaths } from "@/lib/stats";
+import { buildIdentities } from "@/lib/stats";
+import { heroIcon } from "@/lib/heroes";
 import { useAdmin } from "@/lib/admin";
 import { Button } from "@/components/ui/button";
 import { Trash2 } from "lucide-react";
 import { toast } from "sonner";
+import { useMemo } from "react";
 
 export const Route = createFileRoute("/matches")({
   component: MatchesPage,
@@ -14,8 +16,36 @@ function MatchesPage() {
   const { data: matches = [] } = useMatches();
   const admin = useAdmin();
   const del = useDeleteMatch();
+  const identities = useMemo(() => buildIdentities(matches), [matches]);
   const sorted = [...matches].sort(
     (a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime(),
+  );
+
+  const TeamCell = ({ team }: { team: { nickname: string; steam_id: number; hero: string }[] }) => (
+    <div className="flex gap-1 justify-center">
+      {team.map((p) => {
+        const display = identities.get(String(p.steam_id))?.display_name || p.nickname;
+        return (
+          <Link
+            key={p.steam_id}
+            to={`/player?nick=${encodeURIComponent(display)}`}
+            className="flex flex-col items-center w-12"
+            title={`${display} — ${p.hero}`}
+          >
+            <span className="text-[9px] text-muted-foreground truncate w-full text-center leading-tight">
+              {display}
+            </span>
+            <img
+              src={heroIcon(p.hero)}
+              alt={p.hero}
+              loading="lazy"
+              className="w-7 h-7 rounded border border-border/40"
+              onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
+            />
+          </Link>
+        );
+      })}
+    </div>
   );
 
   return (
@@ -28,62 +58,53 @@ function MatchesPage() {
               <th className="px-3 py-2 text-center">#</th>
               <th className="px-3 py-2 text-center">Дата</th>
               <th className="px-3 py-2 text-center">Режим</th>
-              <th className="px-3 py-2 text-center">Длительность</th>
+              <th className="px-3 py-2 text-center">Длит.</th>
               <th className="px-3 py-2 text-center">Пик</th>
               <th className="px-3 py-2 text-center">Победа</th>
-              <th className="px-3 py-2 text-center">Смерти Свет</th>
-              <th className="px-3 py-2 text-center">Смерти Тьма</th>
+              <th className="px-3 py-2 text-center">Команда света</th>
+              <th className="px-3 py-2 text-center">Команда тьмы</th>
               {admin && <th className="px-3 py-2"></th>}
             </tr>
           </thead>
           <tbody>
-            {sorted.map((m, i) => {
-              const d = matchDeaths(m.data);
-              return (
-                <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
-                  <td className="px-3 py-2 font-mono">{i + 1}</td>
+            {sorted.map((m, i) => (
+              <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
+                <td className="px-3 py-2 font-mono">{i + 1}</td>
+                <td className="px-3 py-2">
+                  <Link to={`/match/${m.match_id}`} className="text-primary hover:underline">
+                    {new Date(m.start_time).toLocaleDateString("ru-RU")}
+                  </Link>
+                </td>
+                <td className="px-3 py-2">{m.data.game_mode}</td>
+                <td className="px-3 py-2">{Math.round(m.data.duration_minutes)} мин</td>
+                <td className="px-3 py-2">{Math.round(m.data.draft_duration_minutes)} мин</td>
+                <td
+                  className="px-3 py-2 font-medium"
+                  style={{ color: m.data.winner === "radiant" ? "var(--radiant)" : "var(--dire)" }}
+                >
+                  {m.data.winner === "radiant" ? "Свет" : "Тьма"}
+                </td>
+                <td className="px-2 py-2"><TeamCell team={m.data.radiant_team} /></td>
+                <td className="px-2 py-2"><TeamCell team={m.data.dire_team} /></td>
+                {admin && (
                   <td className="px-3 py-2">
-                    <Link
-                      to={`/match/${m.match_id}`}
-                      className="text-primary hover:underline"
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      onClick={() => {
+                        if (confirm(`Удалить матч #${m.match_id}?`)) {
+                          del.mutate(m.match_id, {
+                            onSuccess: () => toast.success("Удалено"),
+                          });
+                        }
+                      }}
                     >
-                      {new Date(m.start_time).toLocaleString("ru-RU")}
-                    </Link>
+                      <Trash2 className="h-4 w-4 text-destructive" />
+                    </Button>
                   </td>
-                  <td className="px-3 py-2">{m.data.game_mode}</td>
-                  <td className="px-3 py-2">{Math.round(m.data.duration_minutes)} мин</td>
-                  <td className="px-3 py-2">{Math.round(m.data.draft_duration_minutes)} мин</td>
-                  <td
-                    className="px-3 py-2 font-medium"
-                    style={{
-                      color:
-                        m.data.winner === "radiant" ? "var(--radiant)" : "var(--dire)",
-                    }}
-                  >
-                    {m.data.winner === "radiant" ? "Свет" : "Тьма"}
-                  </td>
-                  <td className="px-3 py-2">{d.radiant}</td>
-                  <td className="px-3 py-2">{d.dire}</td>
-                  {admin && (
-                    <td className="px-3 py-2">
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => {
-                          if (confirm(`Удалить матч #${m.match_id}?`)) {
-                            del.mutate(m.match_id, {
-                              onSuccess: () => toast.success("Удалено"),
-                            });
-                          }
-                        }}
-                      >
-                        <Trash2 className="h-4 w-4 text-destructive" />
-                      </Button>
-                    </td>
-                  )}
-                </tr>
-              );
-            })}
+                )}
+              </tr>
+            ))}
             {sorted.length === 0 && (
               <tr>
                 <td colSpan={admin ? 9 : 8} className="text-center py-6 text-muted-foreground">
