@@ -44,11 +44,6 @@ function Index() {
 
       {isLoading && <p className="text-muted-foreground text-center">Загрузка...</p>}
 
-      <div className="grid lg:grid-cols-2 gap-4">
-        <ActivityCalendar activity={global.activity_by_date} />
-        <WordCloud words={global.word_cloud} />
-      </div>
-
       <div className="grid md:grid-cols-2 gap-4">
         <div className="panel p-4">
           <h2 className="font-display text-xl mb-2 text-center">Общая статистика</h2>
@@ -143,6 +138,11 @@ function Index() {
             )}
           </ul>
         </div>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-4">
+        <ActivityCalendar activity={global.activity_by_date} />
+        <WordCloud words={global.word_cloud} />
       </div>
 
       {players.length === 0 && !isLoading && (
