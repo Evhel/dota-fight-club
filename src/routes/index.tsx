@@ -44,11 +44,6 @@ function Index() {
 
       {isLoading && <p className="text-muted-foreground text-center">Загрузка...</p>}
 
-      <div className="grid lg:grid-cols-2 gap-4">
-        <ActivityCalendar activity={global.activity_by_date} />
-        <WordCloud words={global.word_cloud} />
-      </div>
-
       <div className="grid md:grid-cols-2 gap-4">
         <div className="panel p-4">
           <h2 className="font-display text-xl mb-2 text-center">Общая статистика</h2>
@@ -143,6 +138,11 @@ function Index() {
             )}
           </ul>
         </div>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-4">
+        <ActivityCalendar activity={global.activity_by_date} />
+        <WordCloud words={global.word_cloud} />
       </div>
 
       {players.length === 0 && !isLoading && (
@@ -276,8 +276,8 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
   }
   const totalDaysWithGames = allActiveDates.length;
 
-  const cell = 9;
-  const gap = 2;
+  const cell = 18;
+  const gap = 3;
   const colW = cell + gap;
 
   return (
@@ -326,11 +326,11 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
               );
             })}
           </div>
-          <div className="relative h-4 mt-1" style={{ width: numWeeks * colW - gap }}>
+          <div className="relative h-5 mt-1" style={{ width: numWeeks * colW - gap }}>
             {monthLabels.map((m) => (
               <span
                 key={`${m.label}-${m.week}`}
-                className="absolute text-[10px] text-muted-foreground"
+                className="absolute text-xs text-muted-foreground"
                 style={{ left: m.week * colW }}
               >
                 {m.label}

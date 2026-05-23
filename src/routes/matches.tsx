@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches, useDeleteMatch } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
-import { heroIcon } from "@/lib/heroes";
+import { heroImg } from "@/lib/heroes";
 import { useAdmin } from "@/lib/admin";
 import { Button } from "@/components/ui/button";
 import { Trash2 } from "lucide-react";
@@ -17,9 +17,12 @@ function MatchesPage() {
   const admin = useAdmin();
   const del = useDeleteMatch();
   const identities = useMemo(() => buildIdentities(matches), [matches]);
-  const sorted = [...matches].sort(
+  // Sort ascending to assign chronological #, then reverse for display (newest first)
+  const ascending = [...matches].sort(
     (a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime(),
   );
+  const indexed = ascending.map((m, i) => ({ m, num: i + 1 }));
+  const sorted = [...indexed].reverse();
 
   const TeamCell = ({ team }: { team: { nickname: string; steam_id: number; hero: string }[] }) => (
     <div className="flex gap-1 justify-center">
@@ -29,17 +32,17 @@ function MatchesPage() {
           <Link
             key={p.steam_id}
             to={`/player?nick=${encodeURIComponent(display)}`}
-            className="flex flex-col items-center w-12"
+            className="flex flex-col items-center w-16"
             title={`${display} — ${p.hero}`}
           >
             <span className="text-[9px] text-muted-foreground truncate w-full text-center leading-tight">
               {display}
             </span>
             <img
-              src={heroIcon(p.hero)}
+              src={heroImg(p.hero)}
               alt={p.hero}
               loading="lazy"
-              className="w-7 h-7 rounded border border-border/40"
+              className="w-14 h-8 object-cover rounded border border-border/40"
               onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
             />
           </Link>
@@ -67,9 +70,9 @@ function MatchesPage() {
             </tr>
           </thead>
           <tbody>
-            {sorted.map((m, i) => (
+            {sorted.map(({ m, num }) => (
               <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
-                <td className="px-3 py-2 font-mono">{i + 1}</td>
+                <td className="px-3 py-2 font-mono">{num}</td>
                 <td className="px-3 py-2">
                   <Link to={`/match/${m.match_id}`} className="text-primary hover:underline">
                     {new Date(m.start_time).toLocaleDateString("ru-RU")}

@@ -21,6 +21,8 @@ export interface PlayerStats {
   top_word: string;
   best_teammate?: { name: string; winrate: number; games: number };
   worst_teammate?: { name: string; winrate: number; games: number };
+  best_opponent?: { name: string; winrate: number; games: number };
+  worst_opponent?: { name: string; winrate: number; games: number };
   // per-player records
   max_kda: { value: number; match_id: number };
   avg_kda: number;
@@ -28,6 +30,8 @@ export interface PlayerStats {
   avg_net_worth: number;
   max_creeps: { value: number; match_id: number };
   avg_creeps: number;
+  max_denies: { value: number; match_id: number };
+  avg_denies: number;
   top_hero_games?: { hero: string; games: number };
   top_hero_winrate?: { hero: string; winrate: number; games: number };
   max_obs: { value: number; match_id: number };
@@ -151,6 +155,7 @@ export function computePlayerStats(
   let curStreakCount = 0;
   const wordCount = new Map<string, number>();
   const teammates = new Map<string, { games: number; wins: number }>();
+  const opponents = new Map<string, { games: number; wins: number }>();
 
   let maxKda = { value: -Infinity, match_id: 0 };
   let sumKda = 0;
@@ -158,6 +163,8 @@ export function computePlayerStats(
   let sumNet = 0;
   let maxCreeps = { value: -Infinity, match_id: 0 };
   let sumCreeps = 0;
+  let maxDenies = { value: -Infinity, match_id: 0 };
+  let sumDenies = 0;
   let maxObs = { value: -Infinity, match_id: 0 };
   let maxSen = { value: -Infinity, match_id: 0 };
   let maxDe = { value: -Infinity, match_id: 0 };
@@ -206,6 +213,15 @@ export function computePlayerStats(
       if (won) tm.wins += 1;
       teammates.set(tid, tm);
     }
+    // opponents
+    const oppPlayers = side === "radiant" ? m.dire_team : m.radiant_team;
+    for (const o of oppPlayers) {
+      const oid = String(o.steam_id);
+      const om = opponents.get(oid) || { games: 0, wins: 0 };
+      om.games += 1;
+      if (won) om.wins += 1;
+      opponents.set(oid, om);
+    }
 
     // per-match metrics
     const kda = m.kda?.[me.nickname];
@@ -222,11 +238,14 @@ export function computePlayerStats(
       sumNet += nw;
       if (nw > maxNet.value) maxNet = { value: nw, match_id: m.match_id };
     }
-    const ck = m.creep_kills?.[me.nickname];
+    const ck = m.last_hits?.[me.nickname] ?? m.creep_kills?.[me.nickname];
     if (ck !== undefined) {
       sumCreeps += ck;
       if (ck > maxCreeps.value) maxCreeps = { value: ck, match_id: m.match_id };
     }
+    const dn = m.denies?.[me.nickname] ?? 0;
+    sumDenies += dn;
+    if (dn > maxDenies.value) maxDenies = { value: dn, match_id: m.match_id };
     const wp = m.wards_placed?.[me.nickname];
     if (wp) {
       if (wp.observer > maxObs.value) maxObs = { value: wp.observer, match_id: m.match_id };
@@ -281,15 +300,26 @@ export function computePlayerStats(
     }
   }
 
-  // best/worst teammate (min 2 games together)
+  // best/worst teammate (min 3 games together)
   let best: { name: string; winrate: number; games: number } | undefined;
   let worst: { name: string; winrate: number; games: number } | undefined;
   for (const [tid, tm] of teammates) {
-    if (tm.games < 2) continue;
+    if (tm.games < 3) continue;
     const wr = Math.round((tm.wins / tm.games) * 100);
     const name = identities.get(tid)?.display_name || tid;
     if (!best || wr > best.winrate) best = { name, winrate: wr, games: tm.games };
     if (!worst || wr < worst.winrate) worst = { name, winrate: wr, games: tm.games };
+  }
+
+  // best/worst opponent (min 3 games against). "winrate" here = winrate vs that opponent
+  let bestOpp: { name: string; winrate: number; games: number } | undefined;
+  let worstOpp: { name: string; winrate: number; games: number } | undefined;
+  for (const [oid, om] of opponents) {
+    if (om.games < 3) continue;
+    const wr = Math.round((om.wins / om.games) * 100);
+    const name = identities.get(oid)?.display_name || oid;
+    if (!bestOpp || wr > bestOpp.winrate) bestOpp = { name, winrate: wr, games: om.games };
+    if (!worstOpp || wr < worstOpp.winrate) worstOpp = { name, winrate: wr, games: om.games };
   }
 
   return {
@@ -307,12 +337,16 @@ export function computePlayerStats(
     top_word: topWord,
     best_teammate: best,
     worst_teammate: worst,
+    best_opponent: bestOpp,
+    worst_opponent: worstOpp,
     max_kda: { value: Math.round(maxKda.value === -Infinity ? 0 : maxKda.value), match_id: maxKda.match_id },
     avg_kda: games ? Math.round(sumKda / games) : 0,
     max_net_worth: { value: maxNet.value === -Infinity ? 0 : maxNet.value, match_id: maxNet.match_id },
     avg_net_worth: games ? Math.round(sumNet / games) : 0,
     max_creeps: { value: maxCreeps.value === -Infinity ? 0 : maxCreeps.value, match_id: maxCreeps.match_id },
     avg_creeps: games ? Math.round(sumCreeps / games) : 0,
+    max_denies: { value: maxDenies.value === -Infinity ? 0 : maxDenies.value, match_id: maxDenies.match_id },
+    avg_denies: games ? Math.round(sumDenies / games) : 0,
     top_hero_games: topHeroGames,
     top_hero_winrate: topHeroWr,
     max_obs: { value: maxObs.value === -Infinity ? 0 : maxObs.value, match_id: maxObs.match_id },
@@ -469,7 +503,8 @@ export function computeGlobalStats(
       const disp = identities.get(sidStr)?.display_name || name;
       if (!topNet || nw > topNet.value) topNet = { steam_id: sidStr, name: disp, value: nw, match_id: m.match_id };
     }
-    for (const [name, ck] of Object.entries(m.creep_kills || {})) {
+    const ckSource = m.last_hits || m.creep_kills || {};
+    for (const [name, ck] of Object.entries(ckSource)) {
       const sid = nicknameToSteam(m, name);
       if (!sid) continue;
       const sidStr = String(sid);

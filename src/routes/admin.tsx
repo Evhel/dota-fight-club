@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useAdmin } from "@/lib/admin";
-import { useUploadMatch, useMatches, useDeleteMatch } from "@/lib/matches";
+import { useUploadMatch, useMatches, useDeleteMatch, useUpdateMatchDate } from "@/lib/matches";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useRef, useState } from "react";
@@ -16,6 +16,7 @@ function AdminPage() {
   const admin = useAdmin();
   const upload = useUploadMatch();
   const del = useDeleteMatch();
+  const updDate = useUpdateMatchDate();
   const matches = useMatches();
   const fileRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
@@ -98,32 +99,51 @@ function AdminPage() {
           Учтённые матчи ({matches.data?.length ?? 0})
         </h2>
         <div className="space-y-2 max-h-[400px] overflow-y-auto">
-          {(matches.data || []).map((m) => (
-            <div
-              key={m.match_id}
-              className="flex items-center justify-between px-3 py-2 rounded border border-border/60 hover:bg-muted/30"
-            >
-              <div>
-                <div className="font-mono text-sm">#{m.match_id}</div>
-                <div className="text-xs text-muted-foreground">
-                  {new Date(m.start_time).toLocaleDateString("ru-RU")} · {m.data.game_mode}
-                </div>
-              </div>
-              <Button
-                size="sm"
-                variant="ghost"
-                onClick={() => {
-                  if (confirm(`Удалить матч #${m.match_id}?`)) {
-                    del.mutate(m.match_id, {
-                      onSuccess: () => toast.success("Матч удалён"),
-                    });
-                  }
-                }}
+          {(matches.data || []).map((m) => {
+            const localDate = new Date(m.start_time);
+            // format for datetime-local input (YYYY-MM-DDTHH:MM)
+            const pad = (n: number) => String(n).padStart(2, "0");
+            const value = `${localDate.getFullYear()}-${pad(localDate.getMonth() + 1)}-${pad(localDate.getDate())}T${pad(localDate.getHours())}:${pad(localDate.getMinutes())}`;
+            return (
+              <div
+                key={m.match_id}
+                className="flex items-center justify-between gap-2 px-3 py-2 rounded border border-border/60 hover:bg-muted/30"
               >
-                <Trash2 className="h-4 w-4 text-destructive" />
-              </Button>
-            </div>
-          ))}
+                <div className="min-w-0">
+                  <div className="font-mono text-sm">#{m.match_id}</div>
+                  <div className="text-xs text-muted-foreground">{m.data.game_mode}</div>
+                </div>
+                <Input
+                  type="datetime-local"
+                  defaultValue={value}
+                  className="w-56"
+                  onBlur={(e) => {
+                    const v = e.target.value;
+                    if (!v) return;
+                    const iso = new Date(v).toISOString();
+                    if (iso === new Date(m.start_time).toISOString()) return;
+                    updDate.mutate(
+                      { match_id: m.match_id, start_time: iso },
+                      { onSuccess: () => toast.success("Дата обновлена") },
+                    );
+                  }}
+                />
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  onClick={() => {
+                    if (confirm(`Удалить матч #${m.match_id}?`)) {
+                      del.mutate(m.match_id, {
+                        onSuccess: () => toast.success("Матч удалён"),
+                      });
+                    }
+                  }}
+                >
+                  <Trash2 className="h-4 w-4 text-destructive" />
+                </Button>
+              </div>
+            );
+          })}
           {matches.data && matches.data.length === 0 && (
             <p className="text-sm text-muted-foreground text-center py-6">
               Пока нет загруженных матчей.

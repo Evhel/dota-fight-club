@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities, matchDeaths } from "@/lib/stats";
-import { heroIcon, heroAnchorId } from "@/lib/heroes";
+import { heroImg, heroAnchorId } from "@/lib/heroes";
 import { useMemo } from "react";
 
 export const Route = createFileRoute("/match/$id")({
@@ -72,7 +72,7 @@ function MatchPage() {
   }) => {
     const draft = buildDraft(teamNum);
     return (
-      <div className="panel p-4 space-y-3">
+      <div className="panel p-4 space-y-3 max-w-3xl mx-auto">
         <div className="flex items-center justify-between">
           <h2 className="font-display text-xl" style={{ color }}>
             {title}
@@ -85,7 +85,21 @@ function MatchPage() {
           </span>
         </div>
         <div className="overflow-x-auto">
-          <table className="w-full text-xs text-center">
+          <table className="w-full text-xs text-center table-fixed">
+            <colgroup>
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "18%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "9%" }} />
+              <col style={{ width: "11%" }} />
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "8%" }} />
+              <col style={{ width: "7%" }} />
+            </colgroup>
             <thead className="text-muted-foreground">
               <tr>
                 <th className="py-1 px-1">Герой</th>
@@ -97,7 +111,7 @@ function MatchPage() {
                 <th className="py-1 px-1">LH/DN</th>
                 <th className="py-1 px-1">GPM/XPM</th>
                 <th className="py-1 px-1">DMG</th>
-                <th className="py-1 px-1">Got DMG</th>
+                <th className="py-1 px-1">Got</th>
                 <th className="py-1 px-1">HEAL</th>
                 <th className="py-1 px-1">BLD</th>
               </tr>
@@ -109,8 +123,8 @@ function MatchPage() {
                 const nw = m.net_worth?.[p.nickname] ?? 0;
                 const lh = m.last_hits?.[p.nickname] ?? m.creep_kills?.[p.nickname] ?? 0;
                 const dn = m.denies?.[p.nickname] ?? 0;
-                const gpm = m.gpm?.[p.nickname] ?? 0;
-                const xpm = m.xpm?.[p.nickname] ?? 0;
+                const gpm = m.gpm?.[p.nickname] ?? m.gold_per_minute?.[p.nickname] ?? 0;
+                const xpm = m.xpm?.[p.nickname] ?? m.xp_per_minute?.[p.nickname] ?? 0;
                 const dmg = m.hero_damage?.[p.nickname] ?? 0;
                 const taken = m.damage_taken?.[p.nickname] ?? 0;
                 const heal = m.hero_healing?.[p.nickname] ?? 0;
@@ -120,9 +134,9 @@ function MatchPage() {
                     <td className="py-1 px-1">
                       <Link to={`/heroes`} hash={heroAnchorId(p.hero)} title={p.hero}>
                         <img
-                          src={heroIcon(p.hero)}
+                          src={heroImg(p.hero)}
                           alt={p.hero}
-                          className="w-7 h-7 rounded inline-block hover:ring-2 hover:ring-primary"
+                          className="w-12 h-7 object-cover rounded inline-block hover:ring-2 hover:ring-primary"
                           onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
                         />
                       </Link>
@@ -163,7 +177,7 @@ function MatchPage() {
                   title={`${s.isBan ? "Бан" : "Пик"}: ${s.hero}`}
                 >
                   <img
-                    src={heroIcon(s.hero)}
+                    src={heroImg(s.hero)}
                     alt={s.hero}
                     className="w-8 h-8 rounded border border-border/40"
                     style={{

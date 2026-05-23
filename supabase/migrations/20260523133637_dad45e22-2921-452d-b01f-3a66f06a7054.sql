@@ -1,0 +1,1 @@
+CREATE POLICY "Public can update matches" ON public.matches FOR UPDATE USING (true) WITH CHECK (true);

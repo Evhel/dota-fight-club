@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities, computePlayerStats, formatDuration } from "@/lib/stats";
-import { heroImg, heroAnchorId } from "@/lib/heroes";
+import { heroImg, heroAnchorId, WARD_OBSERVER_ICON, WARD_SENTRY_ICON } from "@/lib/heroes";
 import { useMemo, useState, useEffect } from "react";
 import { z } from "zod";
 import { zodValidator } from "@tanstack/zod-adapter";
@@ -128,38 +128,75 @@ function PlayerPage() {
                   value={`${stats.avg_kills}/${stats.avg_deaths}/${stats.avg_assists}`}
                 />
                 <Tile label="Любимое слово" value={stats.top_word || "—"} />
+
+
+                <Tile
+                  label="Макс.KDA / Ср.KDA"
+                  value={`${stats.max_kda.value} / ${stats.avg_kda}`}
+                />
+                <Tile
+                  label="Макс.NW / Ср.NW"
+                  value={`${(stats.max_net_worth.value / 1000).toFixed(1)}k / ${(stats.avg_net_worth / 1000).toFixed(1)}k`}
+                />
+                <Tile
+                  label="Макс.LH / Ср.LH"
+                  value={`${stats.max_creeps.value} / ${stats.avg_creeps}`}
+                />
+                <Tile
+                  label="Макс.DN / Ср.DN"
+                  value={`${stats.max_denies.value} / ${stats.avg_denies}`}
+                />
+                <TileWithIcon
+                  icon={WARD_OBSERVER_ICON}
+                  label="Макс."
+                  value={stats.max_obs.value}
+                />
+                <TileWithIcon
+                  icon={WARD_SENTRY_ICON}
+                  label="Макс."
+                  value={stats.max_sen.value}
+                />
+                <TileWithIcon
+                  icon={WARD_OBSERVER_ICON}
+                  iconStyle={{ filter: "grayscale(1) brightness(0.7)" }}
+                  label="Макс."
+                  value={stats.max_dewards.value}
+                />
               </div>
 
-              {/* Records grouped by meaning */}
+              {/* Teammates + Opponents */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="rounded-lg border border-border/40 bg-muted/20 p-3 space-y-1 text-sm">
+                  <div className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Союзники (от 3 игр)</div>
+                  {stats.best_teammate ? (
+                    <Link to={`/player?nick=${encodeURIComponent(stats.best_teammate.name)}`} className="flex justify-between hover:underline" style={{ color: "oklch(0.75 0.18 145)" }}>
+                      <span>Лучший</span><span>{stats.best_teammate.name} ({stats.best_teammate.winrate}%)</span>
+                    </Link>
+                  ) : <div className="text-muted-foreground">Лучший: —</div>}
+                  {stats.worst_teammate ? (
+                    <Link to={`/player?nick=${encodeURIComponent(stats.worst_teammate.name)}`} className="flex justify-between hover:underline" style={{ color: "oklch(0.65 0.22 25)" }}>
+                      <span>Худший</span><span>{stats.worst_teammate.name} ({stats.worst_teammate.winrate}%)</span>
+                    </Link>
+                  ) : <div className="text-muted-foreground">Худший: —</div>}
+                </div>
+                <div className="rounded-lg border border-border/40 bg-muted/20 p-3 space-y-1 text-sm">
+                  <div className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Соперники (от 3 игр)</div>
+                  {stats.worst_opponent ? (
+                    <Link to={`/player?nick=${encodeURIComponent(stats.worst_opponent.name)}`} className="flex justify-between hover:underline" style={{ color: "oklch(0.65 0.22 25)" }}>
+                      <span>Боится</span><span>{stats.worst_opponent.name} ({stats.worst_opponent.winrate}%)</span>
+                    </Link>
+                  ) : <div className="text-muted-foreground">Боится: —</div>}
+                  {stats.best_opponent ? (
+                    <Link to={`/player?nick=${encodeURIComponent(stats.best_opponent.name)}`} className="flex justify-between hover:underline" style={{ color: "oklch(0.75 0.18 145)" }}>
+                      <span>Переезжает</span><span>{stats.best_opponent.name} ({stats.best_opponent.winrate}%)</span>
+                    </Link>
+                  ) : <div className="text-muted-foreground">Переезжает: —</div>}
+                </div>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1 text-sm">
-                {/* KDA group */}
-                <Row k="Макс. KDA" v={stats.max_kda.value} link={`/match/${stats.max_kda.match_id}`} />
-                <Row k="Средний KDA" v={stats.avg_kda} />
-                {/* Farm group */}
-                <Row k="Макс. NW" v={`${(stats.max_net_worth.value / 1000).toFixed(1)}k`} link={`/match/${stats.max_net_worth.match_id}`} />
-                <Row k="Средний NW" v={`${(stats.avg_net_worth / 1000).toFixed(1)}k`} />
-                <Row k="Макс. крипов" v={stats.max_creeps.value} link={`/match/${stats.max_creeps.match_id}`} />
-                <Row k="Средние крипы" v={stats.avg_creeps} />
-                {/* Ward group */}
-                <Row k="Макс. observer" v={stats.max_obs.value} link={`/match/${stats.max_obs.match_id}`} />
-                <Row k="Макс. sentry" v={stats.max_sen.value} link={`/match/${stats.max_sen.match_id}`} />
-                <Row k="Макс. dewards" v={stats.max_dewards.value} link={`/match/${stats.max_dewards.match_id}`} />
-                {/* spacer to balance ward group */}
-                <div className="hidden md:block" />
-                {/* Hero group */}
                 <Row k="Любимый герой" v={stats.top_hero_games ? `${stats.top_hero_games.hero} (${stats.top_hero_games.games})` : "—"} />
                 <Row k="Лучший герой (WR)" v={stats.top_hero_winrate ? `${stats.top_hero_winrate.hero} (${stats.top_hero_winrate.winrate}%)` : "—"} />
-                {/* Teammate group */}
-                <Row
-                  k="Лучший союзник"
-                  v={stats.best_teammate ? `${stats.best_teammate.name} (${stats.best_teammate.winrate}%)` : "—"}
-                  link={stats.best_teammate ? `/player?nick=${encodeURIComponent(stats.best_teammate.name)}` : undefined}
-                />
-                <Row
-                  k="Худший союзник"
-                  v={stats.worst_teammate ? `${stats.worst_teammate.name} (${stats.worst_teammate.winrate}%)` : "—"}
-                  link={stats.worst_teammate ? `/player?nick=${encodeURIComponent(stats.worst_teammate.name)}` : undefined}
-                />
               </div>
             </div>
           </div>

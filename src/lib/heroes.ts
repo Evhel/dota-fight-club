@@ -4,12 +4,17 @@
 
 const DISPLAY_TO_SHORT: Record<string, string> = {
   "anti-mage": "antimage",
+  "anti mage": "antimage",
+  "antimage": "antimage",
   "nature's prophet": "furion",
   "natures prophet": "furion",
+  "witch doctor": "witch_doctor",
+  "outworld devourer": "obsidian_destroyer",
+  "ring master": "ringmaster",
+  "ringmaster": "ringmaster",
   "shadow fiend": "nevermore",
   "queen of pain": "queenofpain",
   "wraith king": "skeleton_king",
-  "witch doctor": "witchdoctor",
   "vengeful spirit": "vengefulspirit",
   "treant protector": "treant",
   "shadow shaman": "shadow_shaman",
@@ -74,3 +79,8 @@ export function heroIcon(hero: string): string {
 export function heroAnchorId(hero: string): string {
   return `hero-${heroShortName(hero)}`;
 }
+
+export const WARD_OBSERVER_ICON =
+  "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ward_observer.png";
+export const WARD_SENTRY_ICON =
+  "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ward_sentry.png";
