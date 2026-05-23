@@ -181,10 +181,13 @@ function Row({ k, v }: { k: string; v: number | string }) {
   );
 }
 
-function RecLink({ label, value, to }: { label: string; value: string; to: string }) {
+function RecLink({ label, value, to, icon, iconStyle }: { label: string; value: string; to: string; icon?: string; iconStyle?: React.CSSProperties }) {
   return (
     <li className="flex justify-between gap-3 border-b border-border/40 pb-1">
-      <span className="text-muted-foreground">{label}</span>
+      <span className="text-muted-foreground flex items-center gap-1.5">
+        {icon && <img src={icon} alt="" className="w-4 h-4 inline-block" style={iconStyle} />}
+        {label}
+      </span>
       <Link to={to} className="font-medium text-primary hover:underline text-right">
         {value}
       </Link>
