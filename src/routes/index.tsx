@@ -45,21 +45,24 @@ function Index() {
 
       {isLoading && <p className="text-muted-foreground text-center">Загрузка...</p>}
 
-      <ActivityCalendar activity={global.activity_by_date} />
+      <div className="grid lg:grid-cols-2 gap-4">
+        <ActivityCalendar activity={global.activity_by_date} />
+        <WordCloud words={global.word_cloud} />
+      </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className="panel p-6">
-          <h2 className="font-display text-2xl mb-4 text-center">Общая статистика</h2>
-          <ul className="space-y-2 text-base">
+      <div className="grid md:grid-cols-2 gap-4">
+        <div className="panel p-4">
+          <h2 className="font-display text-xl mb-2 text-center">Общая статистика</h2>
+          <ul className="space-y-1 text-sm">
             <Row k="Всего игр" v={global.total_games} />
             <Row k="Время игр + пиков" v={formatDuration(global.total_seconds)} />
             <Row k="Уникальных бойцов" v={global.total_players} />
             <Row k="Побед сил Света" v={global.radiant_wins} />
             <Row k="Побед сил Тьмы" v={global.dire_wins} />
           </ul>
-          <div className="mt-4">
-            <div className="text-sm text-muted-foreground mb-1 text-center">Игр по режимам</div>
-            <ul className="text-base space-y-1">
+          <div className="mt-3">
+            <div className="text-xs text-muted-foreground mb-1 text-center">Игр по режимам</div>
+            <ul className="text-sm space-y-1">
               {Object.entries(global.modes).map(([m, c]) => (
                 <Row key={m} k={m} v={c} />
               ))}
@@ -67,9 +70,9 @@ function Index() {
           </div>
         </div>
 
-        <div className="panel p-6">
-          <h2 className="font-display text-2xl mb-4 text-center">Рекорды</h2>
-          <ul className="space-y-2 text-base">
+        <div className="panel p-4">
+          <h2 className="font-display text-xl mb-2 text-center">Рекорды</h2>
+          <ul className="space-y-1 text-sm">
             {global.records.shortest_match && (
               <RecLink
                 label="Самая короткая игра"
@@ -120,7 +123,7 @@ function Index() {
             )}
             {global.records.best_winrate_player && (
               <RecLink
-                label="Лучший винрейт"
+                label="Лучший винрейт (от 10 игр)"
                 value={`${global.records.best_winrate_player.name} — ${global.records.best_winrate_player.winrate}%`}
                 to={`/player?nick=${encodeURIComponent(global.records.best_winrate_player.name)}`}
               />
@@ -142,8 +145,6 @@ function Index() {
           </ul>
         </div>
       </div>
-
-      <WordCloud words={global.word_cloud} />
 
       {players.length === 0 && !isLoading && (
         <p className="text-center text-muted-foreground py-8">
