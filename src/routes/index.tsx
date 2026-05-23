@@ -326,11 +326,11 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
               );
             })}
           </div>
-          <div className="relative h-4 mt-1" style={{ width: numWeeks * colW - gap }}>
+          <div className="relative h-5 mt-1" style={{ width: numWeeks * colW - gap }}>
             {monthLabels.map((m) => (
               <span
                 key={`${m.label}-${m.week}`}
-                className="absolute text-[10px] text-muted-foreground"
+                className="absolute text-xs text-muted-foreground"
                 style={{ left: m.week * colW }}
               >
                 {m.label}
