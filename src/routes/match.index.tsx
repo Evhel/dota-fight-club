@@ -15,9 +15,11 @@ export const Route = createFileRoute("/match/")({
 function MatchSearch() {
   const { data: matches = [] } = useMatches();
   const navigate = useNavigate();
-  const sorted = [...matches].sort(
+  const ascending = [...matches].sort(
     (a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime(),
   );
+  const indexed = ascending.map((m, i) => ({ ...m, num: i + 1 }));
+  const sorted = [...indexed].reverse();
 
   return (
     <div className="max-w-md mx-auto space-y-4 panel p-6 mt-8 text-center">
