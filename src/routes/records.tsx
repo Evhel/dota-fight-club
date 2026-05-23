@@ -20,7 +20,8 @@ function RecordsPage() {
   }, [matches]);
 
   const fmtGold = (v: number) => `${(v / 1000).toFixed(1)}k`;
-  const items = [
+  type Item = { label: string; rec: typeof records.top_kills; format?: (v: number) => string };
+  const items: Item[] = [
     { label: "💀 Самое большое количество убийств", rec: records.top_kills },
     { label: "☠️ Самое большое количество смертей", rec: records.top_deaths },
     { label: "🤝 Самое большое количество помощи", rec: records.top_assists },
