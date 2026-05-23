@@ -169,7 +169,7 @@ export function computePlayerStats(
   const teammates = new Map<string, { games: number; wins: number }>();
   const opponents = new Map<string, { games: number; wins: number }>();
 
-  let maxKda = { value: -Infinity, match_id: 0 };
+  let maxKda = { value: -Infinity, match_id: 0, kills: 0, deaths: 0, assists: 0 };
   let sumKda = 0;
   let maxNet = { value: -Infinity, match_id: 0 };
   let sumNet = 0;
@@ -177,6 +177,12 @@ export function computePlayerStats(
   let sumCreeps = 0;
   let maxDenies = { value: -Infinity, match_id: 0 };
   let sumDenies = 0;
+  let maxGpm = { value: -Infinity, match_id: 0 }, sumGpm = 0;
+  let maxXpm = { value: -Infinity, match_id: 0 }, sumXpm = 0;
+  let maxDmg = { value: -Infinity, match_id: 0 }, sumDmg = 0;
+  let maxGot = { value: -Infinity, match_id: 0 }, sumGot = 0;
+  let maxHeal = { value: -Infinity, match_id: 0 }, sumHeal = 0;
+  let maxBld = { value: -Infinity, match_id: 0 }, sumBld = 0;
   let maxObs = { value: -Infinity, match_id: 0 };
   let maxSen = { value: -Infinity, match_id: 0 };
   let maxDe = { value: -Infinity, match_id: 0 };
