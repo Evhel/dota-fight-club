@@ -689,6 +689,13 @@ export function computeGlobalStats(
       top_perfect_kda: topPerfectKda,
       top_net_worth: topNet,
       top_creeps: topCreeps,
+      top_denies: topDenies,
+      top_gpm: topGpm,
+      top_xpm: topXpm,
+      top_dmg: topDmg,
+      top_got: topGot,
+      top_heal: topHeal,
+      top_bld: topBld,
     },
   };
 }
