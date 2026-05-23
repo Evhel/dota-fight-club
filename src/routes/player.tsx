@@ -128,7 +128,7 @@ function PlayerPage() {
                   value={`${stats.avg_kills}/${stats.avg_deaths}/${stats.avg_assists}`}
                 />
                 <Tile label="Любимое слово" value={stats.top_word || "—"} />
-              </div>
+
 
                 <Tile
                   label="Макс.KDA / Ср.KDA"
