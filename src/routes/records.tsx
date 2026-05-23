@@ -20,6 +20,7 @@ function RecordsPage() {
   }, [matches]);
 
   const fmtGold = (v: number) => `${(v / 1000).toFixed(1)}k`;
+  const fmtK = (v: number) => `${(v / 1000).toFixed(1)}k`;
   type Item = { label: string; rec: typeof records.top_kills; format?: (v: number) => string };
   const items: Item[] = [
     { label: "💀 Самое большое количество убийств", rec: records.top_kills },
@@ -28,6 +29,13 @@ function RecordsPage() {
     { label: "✨ Лучший KDA с 0 смертей (K+A)", rec: records.top_perfect_kda },
     { label: "💰 Максимум ценности в золоте", rec: records.top_net_worth, format: fmtGold },
     { label: "🗡️ Максимум ласт-хитов", rec: records.top_creeps },
+    { label: "🛡️ Максимум денаев", rec: records.top_denies },
+    { label: "🪙 Максимум GPM", rec: records.top_gpm },
+    { label: "📘 Максимум XPM", rec: records.top_xpm },
+    { label: "🔥 Максимум урона (DMG)", rec: records.top_dmg, format: fmtK },
+    { label: "🩸 Максимум полученного урона (GotDMG)", rec: records.top_got, format: fmtK },
+    { label: "💚 Максимум лечения (HEAL)", rec: records.top_heal, format: fmtK },
+    { label: "🏰 Максимум урона по строениям (BLD)", rec: records.top_bld, format: fmtK },
   ];
 
   return (

@@ -24,7 +24,7 @@ export interface PlayerStats {
   best_opponent?: { name: string; winrate: number; games: number };
   worst_opponent?: { name: string; winrate: number; games: number };
   // per-player records
-  max_kda: { value: number; match_id: number };
+  max_kda: { value: number; match_id: number; kills: number; deaths: number; assists: number };
   avg_kda: number;
   max_net_worth: { value: number; match_id: number };
   avg_net_worth: number;
@@ -32,6 +32,18 @@ export interface PlayerStats {
   avg_creeps: number;
   max_denies: { value: number; match_id: number };
   avg_denies: number;
+  max_gpm: { value: number; match_id: number };
+  avg_gpm: number;
+  max_xpm: { value: number; match_id: number };
+  avg_xpm: number;
+  max_dmg: { value: number; match_id: number };
+  avg_dmg: number;
+  max_got: { value: number; match_id: number };
+  avg_got: number;
+  max_heal: { value: number; match_id: number };
+  avg_heal: number;
+  max_bld: { value: number; match_id: number };
+  avg_bld: number;
   top_hero_games?: { hero: string; games: number };
   top_hero_winrate?: { hero: string; winrate: number; games: number };
   max_obs: { value: number; match_id: number };
@@ -75,6 +87,13 @@ export interface GlobalRecords {
   top_perfect_kda?: { steam_id: string; name: string; value: number; match_id: number };
   top_net_worth?: { steam_id: string; name: string; value: number; match_id: number };
   top_creeps?: { steam_id: string; name: string; value: number; match_id: number };
+  top_denies?: { steam_id: string; name: string; value: number; match_id: number };
+  top_gpm?: { steam_id: string; name: string; value: number; match_id: number };
+  top_xpm?: { steam_id: string; name: string; value: number; match_id: number };
+  top_dmg?: { steam_id: string; name: string; value: number; match_id: number };
+  top_got?: { steam_id: string; name: string; value: number; match_id: number };
+  top_heal?: { steam_id: string; name: string; value: number; match_id: number };
+  top_bld?: { steam_id: string; name: string; value: number; match_id: number };
 }
 
 const STOP_WORDS = new Set([
@@ -157,7 +176,7 @@ export function computePlayerStats(
   const teammates = new Map<string, { games: number; wins: number }>();
   const opponents = new Map<string, { games: number; wins: number }>();
 
-  let maxKda = { value: -Infinity, match_id: 0 };
+  let maxKda = { value: -Infinity, match_id: 0, kills: 0, deaths: 0, assists: 0 };
   let sumKda = 0;
   let maxNet = { value: -Infinity, match_id: 0 };
   let sumNet = 0;
@@ -165,6 +184,12 @@ export function computePlayerStats(
   let sumCreeps = 0;
   let maxDenies = { value: -Infinity, match_id: 0 };
   let sumDenies = 0;
+  let maxGpm = { value: -Infinity, match_id: 0 }, sumGpm = 0;
+  let maxXpm = { value: -Infinity, match_id: 0 }, sumXpm = 0;
+  let maxDmg = { value: -Infinity, match_id: 0 }, sumDmg = 0;
+  let maxGot = { value: -Infinity, match_id: 0 }, sumGot = 0;
+  let maxHeal = { value: -Infinity, match_id: 0 }, sumHeal = 0;
+  let maxBld = { value: -Infinity, match_id: 0 }, sumBld = 0;
   let maxObs = { value: -Infinity, match_id: 0 };
   let maxSen = { value: -Infinity, match_id: 0 };
   let maxDe = { value: -Infinity, match_id: 0 };
@@ -231,7 +256,7 @@ export function computePlayerStats(
       totalAssists += kda.assists;
       const ratio = kda.kda_ratio ?? (kda.kills + kda.assists) / Math.max(1, kda.deaths);
       sumKda += ratio;
-      if (ratio > maxKda.value) maxKda = { value: ratio, match_id: m.match_id };
+      if (ratio > maxKda.value) maxKda = { value: ratio, match_id: m.match_id, kills: kda.kills, deaths: kda.deaths, assists: kda.assists };
     }
     const nw = m.net_worth?.[me.nickname];
     if (nw !== undefined) {
@@ -246,6 +271,24 @@ export function computePlayerStats(
     const dn = m.denies?.[me.nickname] ?? 0;
     sumDenies += dn;
     if (dn > maxDenies.value) maxDenies = { value: dn, match_id: m.match_id };
+    const gpm = m.gpm?.[me.nickname] ?? m.gold_per_minute?.[me.nickname] ?? 0;
+    sumGpm += gpm;
+    if (gpm > maxGpm.value) maxGpm = { value: gpm, match_id: m.match_id };
+    const xpm = m.xpm?.[me.nickname] ?? m.xp_per_minute?.[me.nickname] ?? 0;
+    sumXpm += xpm;
+    if (xpm > maxXpm.value) maxXpm = { value: xpm, match_id: m.match_id };
+    const dmg = m.hero_damage?.[me.nickname] ?? 0;
+    sumDmg += dmg;
+    if (dmg > maxDmg.value) maxDmg = { value: dmg, match_id: m.match_id };
+    const got = m.damage_taken?.[me.nickname] ?? 0;
+    sumGot += got;
+    if (got > maxGot.value) maxGot = { value: got, match_id: m.match_id };
+    const heal = m.hero_healing?.[me.nickname] ?? 0;
+    sumHeal += heal;
+    if (heal > maxHeal.value) maxHeal = { value: heal, match_id: m.match_id };
+    const bld = m.tower_damage?.[me.nickname] ?? 0;
+    sumBld += bld;
+    if (bld > maxBld.value) maxBld = { value: bld, match_id: m.match_id };
     const wp = m.wards_placed?.[me.nickname];
     if (wp) {
       if (wp.observer > maxObs.value) maxObs = { value: wp.observer, match_id: m.match_id };
@@ -339,14 +382,26 @@ export function computePlayerStats(
     worst_teammate: worst,
     best_opponent: bestOpp,
     worst_opponent: worstOpp,
-    max_kda: { value: Math.round(maxKda.value === -Infinity ? 0 : maxKda.value), match_id: maxKda.match_id },
-    avg_kda: games ? Math.round(sumKda / games) : 0,
+    max_kda: { value: Math.round((maxKda.value === -Infinity ? 0 : maxKda.value) * 10) / 10, match_id: maxKda.match_id, kills: maxKda.kills, deaths: maxKda.deaths, assists: maxKda.assists },
+    avg_kda: games ? Math.round((sumKda / games) * 10) / 10 : 0,
     max_net_worth: { value: maxNet.value === -Infinity ? 0 : maxNet.value, match_id: maxNet.match_id },
     avg_net_worth: games ? Math.round(sumNet / games) : 0,
     max_creeps: { value: maxCreeps.value === -Infinity ? 0 : maxCreeps.value, match_id: maxCreeps.match_id },
     avg_creeps: games ? Math.round(sumCreeps / games) : 0,
     max_denies: { value: maxDenies.value === -Infinity ? 0 : maxDenies.value, match_id: maxDenies.match_id },
     avg_denies: games ? Math.round(sumDenies / games) : 0,
+    max_gpm: { value: maxGpm.value === -Infinity ? 0 : Math.round(maxGpm.value), match_id: maxGpm.match_id },
+    avg_gpm: games ? Math.round(sumGpm / games) : 0,
+    max_xpm: { value: maxXpm.value === -Infinity ? 0 : Math.round(maxXpm.value), match_id: maxXpm.match_id },
+    avg_xpm: games ? Math.round(sumXpm / games) : 0,
+    max_dmg: { value: maxDmg.value === -Infinity ? 0 : Math.round(maxDmg.value), match_id: maxDmg.match_id },
+    avg_dmg: games ? Math.round(sumDmg / games) : 0,
+    max_got: { value: maxGot.value === -Infinity ? 0 : Math.round(maxGot.value), match_id: maxGot.match_id },
+    avg_got: games ? Math.round(sumGot / games) : 0,
+    max_heal: { value: maxHeal.value === -Infinity ? 0 : Math.round(maxHeal.value), match_id: maxHeal.match_id },
+    avg_heal: games ? Math.round(sumHeal / games) : 0,
+    max_bld: { value: maxBld.value === -Infinity ? 0 : Math.round(maxBld.value), match_id: maxBld.match_id },
+    avg_bld: games ? Math.round(sumBld / games) : 0,
     top_hero_games: topHeroGames,
     top_hero_winrate: topHeroWr,
     max_obs: { value: maxObs.value === -Infinity ? 0 : maxObs.value, match_id: maxObs.match_id },
@@ -451,6 +506,24 @@ export function computeGlobalStats(
   let topPerfectKda: GlobalRecords["top_perfect_kda"];
   let topNet: GlobalRecords["top_net_worth"];
   let topCreeps: GlobalRecords["top_creeps"];
+  let topDenies: GlobalRecords["top_denies"];
+  let topGpm: GlobalRecords["top_gpm"];
+  let topXpm: GlobalRecords["top_xpm"];
+  let topDmg: GlobalRecords["top_dmg"];
+  let topGot: GlobalRecords["top_got"];
+  let topHeal: GlobalRecords["top_heal"];
+  let topBld: GlobalRecords["top_bld"];
+
+  const trackTop = (
+    cur: { steam_id: string; name: string; value: number; match_id: number } | undefined,
+    sidStr: string,
+    disp: string,
+    value: number,
+    match_id: number,
+  ) =>
+    !cur || value > cur.value
+      ? { steam_id: sidStr, name: disp, value, match_id }
+      : cur;
 
   const nicknameToSteam = (m: DotaMatch, name: string) =>
     [...m.radiant_team, ...m.dire_team].find((p) => p.nickname === name)?.steam_id;
@@ -510,6 +583,43 @@ export function computeGlobalStats(
       const sidStr = String(sid);
       const disp = identities.get(sidStr)?.display_name || name;
       if (!topCreeps || ck > topCreeps.value) topCreeps = { steam_id: sidStr, name: disp, value: ck, match_id: m.match_id };
+    }
+    for (const [name, v] of Object.entries(m.denies || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topDenies = trackTop(topDenies, sidStr, disp, v, m.match_id);
+    }
+    const gpmSrc = m.gpm || m.gold_per_minute || {};
+    for (const [name, v] of Object.entries(gpmSrc)) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topGpm = trackTop(topGpm, sidStr, disp, Math.round(v), m.match_id);
+    }
+    const xpmSrc = m.xpm || m.xp_per_minute || {};
+    for (const [name, v] of Object.entries(xpmSrc)) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topXpm = trackTop(topXpm, sidStr, disp, Math.round(v), m.match_id);
+    }
+    for (const [name, v] of Object.entries(m.hero_damage || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topDmg = trackTop(topDmg, sidStr, disp, v, m.match_id);
+    }
+    for (const [name, v] of Object.entries(m.damage_taken || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topGot = trackTop(topGot, sidStr, disp, v, m.match_id);
+    }
+    for (const [name, v] of Object.entries(m.hero_healing || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topHeal = trackTop(topHeal, sidStr, disp, v, m.match_id);
+    }
+    for (const [name, v] of Object.entries(m.tower_damage || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topBld = trackTop(topBld, sidStr, disp, v, m.match_id);
     }
     for (const msg of m.chat_after_draft || []) {
       for (const w of tokenize(msg.text)) {
@@ -579,6 +689,13 @@ export function computeGlobalStats(
       top_perfect_kda: topPerfectKda,
       top_net_worth: topNet,
       top_creeps: topCreeps,
+      top_denies: topDenies,
+      top_gpm: topGpm,
+      top_xpm: topXpm,
+      top_dmg: topDmg,
+      top_got: topGot,
+      top_heal: topHeal,
+      top_bld: topBld,
     },
   };
 }

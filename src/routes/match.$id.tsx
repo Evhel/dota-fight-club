@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities, matchDeaths } from "@/lib/stats";
-import { heroImg, heroAnchorId } from "@/lib/heroes";
+import { heroImg, heroIcon, heroAnchorId } from "@/lib/heroes";
 import { useMemo } from "react";
 
 export const Route = createFileRoute("/match/$id")({
@@ -111,7 +111,7 @@ function MatchPage() {
                 <th className="py-1 px-1">LH/DN</th>
                 <th className="py-1 px-1">GPM/XPM</th>
                 <th className="py-1 px-1">DMG</th>
-                <th className="py-1 px-1">Got</th>
+                <th className="py-1 px-1">Got DMG</th>
                 <th className="py-1 px-1">HEAL</th>
                 <th className="py-1 px-1">BLD</th>
               </tr>
@@ -123,12 +123,13 @@ function MatchPage() {
                 const nw = m.net_worth?.[p.nickname] ?? 0;
                 const lh = m.last_hits?.[p.nickname] ?? m.creep_kills?.[p.nickname] ?? 0;
                 const dn = m.denies?.[p.nickname] ?? 0;
-                const gpm = m.gpm?.[p.nickname] ?? m.gold_per_minute?.[p.nickname] ?? 0;
-                const xpm = m.xpm?.[p.nickname] ?? m.xp_per_minute?.[p.nickname] ?? 0;
+                const gpm = Math.round(m.gpm?.[p.nickname] ?? m.gold_per_minute?.[p.nickname] ?? 0);
+                const xpm = Math.round(m.xpm?.[p.nickname] ?? m.xp_per_minute?.[p.nickname] ?? 0);
                 const dmg = m.hero_damage?.[p.nickname] ?? 0;
                 const taken = m.damage_taken?.[p.nickname] ?? 0;
                 const heal = m.hero_healing?.[p.nickname] ?? 0;
                 const bld = m.tower_damage?.[p.nickname] ?? 0;
+                const k1k = (v: number) => `${(v / 1000).toFixed(1)}k`;
                 return (
                   <tr key={p.steam_id} className="border-t border-border/30">
                     <td className="py-1 px-1">
@@ -153,12 +154,12 @@ function MatchPage() {
                     <td className="py-1 px-1">{k?.deaths ?? 0}</td>
                     <td className="py-1 px-1">{k?.assists ?? 0}</td>
                     <td className="py-1 px-1">{(nw / 1000).toFixed(1)}k</td>
-                    <td className="py-1 px-1">{lh}/{dn}</td>
-                    <td className="py-1 px-1">{gpm}/{xpm}</td>
-                    <td className="py-1 px-1">{dmg}</td>
-                    <td className="py-1 px-1">{taken}</td>
-                    <td className="py-1 px-1">{heal}</td>
-                    <td className="py-1 px-1">{bld}</td>
+                    <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.15 80)" }}>{lh}</span>/<span style={{ color: "oklch(0.7 0.15 200)" }}>{dn}</span></td>
+                    <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.18 60)" }}>{gpm}</span>/<span style={{ color: "oklch(0.72 0.18 280)" }}>{xpm}</span></td>
+                    <td className="py-1 px-1">{k1k(dmg)}</td>
+                    <td className="py-1 px-1">{k1k(taken)}</td>
+                    <td className="py-1 px-1">{k1k(heal)}</td>
+                    <td className="py-1 px-1">{k1k(bld)}</td>
                   </tr>
                 );
               })}
@@ -177,7 +178,7 @@ function MatchPage() {
                   title={`${s.isBan ? "Бан" : "Пик"}: ${s.hero}`}
                 >
                   <img
-                    src={heroImg(s.hero)}
+                    src={heroIcon(s.hero)}
                     alt={s.hero}
                     className="w-8 h-8 rounded border border-border/40"
                     style={{

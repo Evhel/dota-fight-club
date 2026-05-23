@@ -7,6 +7,7 @@ import {
   formatDuration,
 } from "@/lib/stats";
 import { useMemo } from "react";
+import { WARD_OBSERVER_ICON, WARD_SENTRY_ICON } from "@/lib/heroes";
 import forest from "@/assets/forest-sword.jpg";
 
 export const Route = createFileRoute("/")({
@@ -83,21 +84,25 @@ function Index() {
             )}
             {global.records.most_obs && (
               <RecLink
-                label="Максимум observer wards"
+                icon={WARD_OBSERVER_ICON}
+                label="Макс."
                 value={`${global.records.most_obs.value} — ${global.records.most_obs.name}`}
                 to={`/match/${global.records.most_obs.match_id}`}
               />
             )}
             {global.records.most_sen && (
               <RecLink
-                label="Максимум sentries"
+                icon={WARD_SENTRY_ICON}
+                label="Макс."
                 value={`${global.records.most_sen.value} — ${global.records.most_sen.name}`}
                 to={`/match/${global.records.most_sen.match_id}`}
               />
             )}
             {global.records.most_dewards && (
               <RecLink
-                label="Максимум wards destroyed"
+                icon={WARD_OBSERVER_ICON}
+                iconStyle={{ filter: "grayscale(1) brightness(0.7)" }}
+                label="Макс."
                 value={`${global.records.most_dewards.value} — ${global.records.most_dewards.name}`}
                 to={`/match/${global.records.most_dewards.match_id}`}
               />
@@ -176,10 +181,13 @@ function Row({ k, v }: { k: string; v: number | string }) {
   );
 }
 
-function RecLink({ label, value, to }: { label: string; value: string; to: string }) {
+function RecLink({ label, value, to, icon, iconStyle }: { label: string; value: string; to: string; icon?: string; iconStyle?: React.CSSProperties }) {
   return (
     <li className="flex justify-between gap-3 border-b border-border/40 pb-1">
-      <span className="text-muted-foreground">{label}</span>
+      <span className="text-muted-foreground flex items-center gap-1.5">
+        {icon && <img src={icon} alt="" className="w-4 h-4 inline-block" style={iconStyle} />}
+        {label}
+      </span>
       <Link to={to} className="font-medium text-primary hover:underline text-right">
         {value}
       </Link>
