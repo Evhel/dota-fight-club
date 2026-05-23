@@ -4,8 +4,14 @@
 
 const DISPLAY_TO_SHORT: Record<string, string> = {
   "anti-mage": "antimage",
+  "anti mage": "antimage",
+  "antimage": "antimage",
   "nature's prophet": "furion",
   "natures prophet": "furion",
+  "witch doctor": "witch_doctor",
+  "outworld devourer": "obsidian_destroyer",
+  "ring master": "ringmaster",
+  "ringmaster": "ringmaster",
   "shadow fiend": "nevermore",
   "queen of pain": "queenofpain",
   "wraith king": "skeleton_king",
