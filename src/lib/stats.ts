@@ -249,7 +249,7 @@ export function computePlayerStats(
       totalAssists += kda.assists;
       const ratio = kda.kda_ratio ?? (kda.kills + kda.assists) / Math.max(1, kda.deaths);
       sumKda += ratio;
-      if (ratio > maxKda.value) maxKda = { value: ratio, match_id: m.match_id };
+      if (ratio > maxKda.value) maxKda = { value: ratio, match_id: m.match_id, kills: kda.kills, deaths: kda.deaths, assists: kda.assists };
     }
     const nw = m.net_worth?.[me.nickname];
     if (nw !== undefined) {
@@ -264,6 +264,24 @@ export function computePlayerStats(
     const dn = m.denies?.[me.nickname] ?? 0;
     sumDenies += dn;
     if (dn > maxDenies.value) maxDenies = { value: dn, match_id: m.match_id };
+    const gpm = m.gpm?.[me.nickname] ?? m.gold_per_minute?.[me.nickname] ?? 0;
+    sumGpm += gpm;
+    if (gpm > maxGpm.value) maxGpm = { value: gpm, match_id: m.match_id };
+    const xpm = m.xpm?.[me.nickname] ?? m.xp_per_minute?.[me.nickname] ?? 0;
+    sumXpm += xpm;
+    if (xpm > maxXpm.value) maxXpm = { value: xpm, match_id: m.match_id };
+    const dmg = m.hero_damage?.[me.nickname] ?? 0;
+    sumDmg += dmg;
+    if (dmg > maxDmg.value) maxDmg = { value: dmg, match_id: m.match_id };
+    const got = m.damage_taken?.[me.nickname] ?? 0;
+    sumGot += got;
+    if (got > maxGot.value) maxGot = { value: got, match_id: m.match_id };
+    const heal = m.hero_healing?.[me.nickname] ?? 0;
+    sumHeal += heal;
+    if (heal > maxHeal.value) maxHeal = { value: heal, match_id: m.match_id };
+    const bld = m.tower_damage?.[me.nickname] ?? 0;
+    sumBld += bld;
+    if (bld > maxBld.value) maxBld = { value: bld, match_id: m.match_id };
     const wp = m.wards_placed?.[me.nickname];
     if (wp) {
       if (wp.observer > maxObs.value) maxObs = { value: wp.observer, match_id: m.match_id };
