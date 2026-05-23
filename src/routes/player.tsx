@@ -162,7 +162,6 @@ function PlayerPage() {
                   label="Макс."
                   value={stats.max_dewards.value}
                 />
-                <Tile k="Любимый герой" value={stats.top_hero_games ? `${stats.top_hero_games.hero} (${stats.top_hero_games.games})` : "—"} label="Любимый герой" />
               </div>
 
               {/* Teammates + Opponents */}
