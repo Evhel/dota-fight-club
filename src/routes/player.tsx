@@ -132,7 +132,7 @@ function PlayerPage() {
 
                 <Tile
                   label="Макс.KDA / Ср.KDA"
-                  value={`${stats.max_kda.value} / ${stats.avg_kda}`}
+                  value={`${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists} / ${stats.avg_kda}`}
                 />
                 <Tile
                   label="Макс.NW / Ср.NW"
@@ -146,21 +146,48 @@ function PlayerPage() {
                   label="Макс.DN / Ср.DN"
                   value={`${stats.max_denies.value} / ${stats.avg_denies}`}
                 />
+                <Tile
+                  label="Макс.GPM / Ср.GPM"
+                  value={`${stats.max_gpm.value} / ${stats.avg_gpm}`}
+                />
+                <Tile
+                  label="Макс.XPM / Ср.XPM"
+                  value={`${stats.max_xpm.value} / ${stats.avg_xpm}`}
+                />
+                <Tile
+                  label="Макс.DMG / Ср.DMG"
+                  value={`${(stats.max_dmg.value / 1000).toFixed(1)}k / ${(stats.avg_dmg / 1000).toFixed(1)}k`}
+                />
+                <Tile
+                  label="Макс.GotDMG / Ср.GotDMG"
+                  value={`${(stats.max_got.value / 1000).toFixed(1)}k / ${(stats.avg_got / 1000).toFixed(1)}k`}
+                />
+                <Tile
+                  label="Макс.HEAL / Ср.HEAL"
+                  value={`${(stats.max_heal.value / 1000).toFixed(1)}k / ${(stats.avg_heal / 1000).toFixed(1)}k`}
+                />
+                <Tile
+                  label="Макс.BLD / Ср.BLD"
+                  value={`${(stats.max_bld.value / 1000).toFixed(1)}k / ${(stats.avg_bld / 1000).toFixed(1)}k`}
+                />
                 <TileWithIcon
                   icon={WARD_OBSERVER_ICON}
                   label="Макс."
                   value={stats.max_obs.value}
+                  iconSize={20}
                 />
                 <TileWithIcon
                   icon={WARD_SENTRY_ICON}
                   label="Макс."
                   value={stats.max_sen.value}
+                  iconSize={20}
                 />
                 <TileWithIcon
                   icon={WARD_OBSERVER_ICON}
                   iconStyle={{ filter: "grayscale(1) brightness(0.7)" }}
                   label="Макс."
                   value={stats.max_dewards.value}
+                  iconSize={20}
                 />
               </div>
 
