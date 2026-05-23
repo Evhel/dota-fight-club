@@ -57,10 +57,13 @@ export interface DotaMatch {
   denies?: Record<string, number>;
   gpm?: Record<string, number>;
   xpm?: Record<string, number>;
+  gold_per_minute?: Record<string, number>;
+  xp_per_minute?: Record<string, number>;
   hero_damage?: Record<string, number>;
   damage_taken?: Record<string, number>;
   hero_healing?: Record<string, number>;
   tower_damage?: Record<string, number>;
+  stuns_dealt?: Record<string, number>;
 }
 
 export interface MatchRow {
