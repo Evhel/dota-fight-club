@@ -155,6 +155,7 @@ export function computePlayerStats(
   let curStreakCount = 0;
   const wordCount = new Map<string, number>();
   const teammates = new Map<string, { games: number; wins: number }>();
+  const opponents = new Map<string, { games: number; wins: number }>();
 
   let maxKda = { value: -Infinity, match_id: 0 };
   let sumKda = 0;
