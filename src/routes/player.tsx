@@ -87,14 +87,24 @@ function PlayerPage() {
               <div>
                 <h2 className="font-display text-5xl text-glow break-words">{stats.name}</h2>
                 <p className="text-muted-foreground mt-1">
-                  Играет с матча №{stats.first_match_index || "—"} · {stats.unique_heroes.length} уникальных героев
+                  Играет с матча №{stats.first_match_index || "—"}
                 </p>
               </div>
 
               {/* Quick stat tiles */}
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
                 <Tile label="Игр" value={stats.games} />
-                <Tile label="Винрейт" value={`${stats.winrate}%`} />
+                <Tile
+                  label="Винрейт"
+                  value={`${stats.winrate}%`}
+                  color={
+                    stats.winrate > 50
+                      ? "oklch(0.75 0.18 145)"
+                      : stats.winrate < 50
+                        ? "oklch(0.65 0.22 25)"
+                        : undefined
+                  }
+                />
                 <Tile label="Время в боях" value={formatDuration(stats.total_seconds)} />
                 <Tile
                   label="Текущая серия"
@@ -103,26 +113,43 @@ function PlayerPage() {
                       ? "—"
                       : `${stats.current_streak.count}${stats.current_streak.type === "win" ? "+" : "-"}`
                   }
+                  color={
+                    stats.current_streak.type === "win"
+                      ? "oklch(0.75 0.18 145)"
+                      : stats.current_streak.type === "loss"
+                        ? "oklch(0.65 0.22 25)"
+                        : undefined
+                  }
                 />
-                <Tile label="Серия побед (макс)" value={stats.max_win_streak} />
-                <Tile label="Серия поражений (макс)" value={stats.max_loss_streak} />
-                <Tile label="K / D / A" value={`${stats.total_kills}/${stats.total_deaths}/${stats.total_assists}`} />
+                <Tile label="max серия побед" value={stats.max_win_streak} />
+                <Tile label="max серия поражений" value={stats.max_loss_streak} />
+                <Tile
+                  label="Средний K/D/A"
+                  value={`${stats.avg_kills}/${stats.avg_deaths}/${stats.avg_assists}`}
+                />
                 <Tile label="Любимое слово" value={stats.top_word || "—"} />
               </div>
 
-              {/* Records compact two-column */}
+              {/* Records grouped by meaning */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1 text-sm">
+                {/* KDA group */}
                 <Row k="Макс. KDA" v={stats.max_kda.value} link={`/match/${stats.max_kda.match_id}`} />
                 <Row k="Средний KDA" v={stats.avg_kda} />
-                <Row k="Макс. NW" v={stats.max_net_worth.value} link={`/match/${stats.max_net_worth.match_id}`} />
-                <Row k="Средний NW" v={stats.avg_net_worth} />
+                {/* Farm group */}
+                <Row k="Макс. NW" v={`${(stats.max_net_worth.value / 1000).toFixed(1)}k`} link={`/match/${stats.max_net_worth.match_id}`} />
+                <Row k="Средний NW" v={`${(stats.avg_net_worth / 1000).toFixed(1)}k`} />
                 <Row k="Макс. крипов" v={stats.max_creeps.value} link={`/match/${stats.max_creeps.match_id}`} />
                 <Row k="Средние крипы" v={stats.avg_creeps} />
+                {/* Ward group */}
                 <Row k="Макс. observer" v={stats.max_obs.value} link={`/match/${stats.max_obs.match_id}`} />
                 <Row k="Макс. sentry" v={stats.max_sen.value} link={`/match/${stats.max_sen.match_id}`} />
                 <Row k="Макс. dewards" v={stats.max_dewards.value} link={`/match/${stats.max_dewards.match_id}`} />
+                {/* spacer to balance ward group */}
+                <div className="hidden md:block" />
+                {/* Hero group */}
                 <Row k="Любимый герой" v={stats.top_hero_games ? `${stats.top_hero_games.hero} (${stats.top_hero_games.games})` : "—"} />
                 <Row k="Лучший герой (WR)" v={stats.top_hero_winrate ? `${stats.top_hero_winrate.hero} (${stats.top_hero_winrate.winrate}%)` : "—"} />
+                {/* Teammate group */}
                 <Row
                   k="Лучший союзник"
                   v={stats.best_teammate ? `${stats.best_teammate.name} (${stats.best_teammate.winrate}%)` : "—"}
@@ -168,11 +195,13 @@ function PlayerPage() {
   );
 }
 
-function Tile({ label, value }: { label: string; value: number | string }) {
+function Tile({ label, value, color }: { label: string; value: number | string; color?: string }) {
   return (
     <div className="rounded-lg border border-border/40 bg-muted/20 px-3 py-2">
       <div className="text-xs text-muted-foreground uppercase tracking-wide">{label}</div>
-      <div className="font-display text-xl text-glow mt-0.5 truncate">{value}</div>
+      <div className="font-display text-xl text-glow mt-0.5 truncate" style={color ? { color } : undefined}>
+        {value}
+      </div>
     </div>
   );
 }
