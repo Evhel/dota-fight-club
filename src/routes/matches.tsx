@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches, useDeleteMatch } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
-import { heroIcon } from "@/lib/heroes";
+import { heroImg } from "@/lib/heroes";
 import { useAdmin } from "@/lib/admin";
 import { Button } from "@/components/ui/button";
 import { Trash2 } from "lucide-react";
