@@ -87,6 +87,13 @@ export interface GlobalRecords {
   top_perfect_kda?: { steam_id: string; name: string; value: number; match_id: number };
   top_net_worth?: { steam_id: string; name: string; value: number; match_id: number };
   top_creeps?: { steam_id: string; name: string; value: number; match_id: number };
+  top_denies?: { steam_id: string; name: string; value: number; match_id: number };
+  top_gpm?: { steam_id: string; name: string; value: number; match_id: number };
+  top_xpm?: { steam_id: string; name: string; value: number; match_id: number };
+  top_dmg?: { steam_id: string; name: string; value: number; match_id: number };
+  top_got?: { steam_id: string; name: string; value: number; match_id: number };
+  top_heal?: { steam_id: string; name: string; value: number; match_id: number };
+  top_bld?: { steam_id: string; name: string; value: number; match_id: number };
 }
 
 const STOP_WORDS = new Set([
