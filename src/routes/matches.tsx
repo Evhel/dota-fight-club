@@ -70,9 +70,9 @@ function MatchesPage() {
             </tr>
           </thead>
           <tbody>
-            {sorted.map((m, i) => (
+            {sorted.map(({ m, num }) => (
               <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
-                <td className="px-3 py-2 font-mono">{i + 1}</td>
+                <td className="px-3 py-2 font-mono">{num}</td>
                 <td className="px-3 py-2">
                   <Link to={`/match/${m.match_id}`} className="text-primary hover:underline">
                     {new Date(m.start_time).toLocaleDateString("ru-RU")}
