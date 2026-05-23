@@ -362,29 +362,6 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
     </div>
   );
 }
-      <div className="mt-6 flex flex-wrap justify-center gap-8 text-base">
-        <div className="text-center">
-          <div className="text-2xl font-display text-glow">{currentStreak}</div>
-          <div className="text-xs uppercase tracking-wider text-muted-foreground">
-            дней сейчас без перерыва
-          </div>
-        </div>
-        <div className="text-center">
-          <div className="text-2xl font-display text-glow">{maxStreak}</div>
-          <div className="text-xs uppercase tracking-wider text-muted-foreground">
-            дней без перерыва (макс.)
-          </div>
-        </div>
-        <div className="text-center">
-          <div className="text-2xl font-display text-glow">{totalDaysWithGames}</div>
-          <div className="text-xs uppercase tracking-wider text-muted-foreground">
-            дней были игры
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function WordCloud({ words }: { words: { word: string; count: number }[] }) {
   // Filter to words mentioned more than 3 times
