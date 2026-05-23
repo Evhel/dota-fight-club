@@ -109,8 +109,8 @@ function MatchPage() {
                 const nw = m.net_worth?.[p.nickname] ?? 0;
                 const lh = m.last_hits?.[p.nickname] ?? m.creep_kills?.[p.nickname] ?? 0;
                 const dn = m.denies?.[p.nickname] ?? 0;
-                const gpm = m.gpm?.[p.nickname] ?? 0;
-                const xpm = m.xpm?.[p.nickname] ?? 0;
+                const gpm = m.gpm?.[p.nickname] ?? m.gold_per_minute?.[p.nickname] ?? 0;
+                const xpm = m.xpm?.[p.nickname] ?? m.xp_per_minute?.[p.nickname] ?? 0;
                 const dmg = m.hero_damage?.[p.nickname] ?? 0;
                 const taken = m.damage_taken?.[p.nickname] ?? 0;
                 const heal = m.hero_healing?.[p.nickname] ?? 0;
@@ -120,9 +120,9 @@ function MatchPage() {
                     <td className="py-1 px-1">
                       <Link to={`/heroes`} hash={heroAnchorId(p.hero)} title={p.hero}>
                         <img
-                          src={heroIcon(p.hero)}
+                          src={heroImg(p.hero)}
                           alt={p.hero}
-                          className="w-7 h-7 rounded inline-block hover:ring-2 hover:ring-primary"
+                          className="w-12 h-7 object-cover rounded inline-block hover:ring-2 hover:ring-primary"
                           onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
                         />
                       </Link>
