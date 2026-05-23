@@ -270,11 +270,11 @@ function Tile({ label, value, color }: { label: string; value: number | string; 
   );
 }
 
-function TileWithIcon({ icon, label, value, iconStyle }: { icon: string; label: string; value: number | string; iconStyle?: React.CSSProperties }) {
+function TileWithIcon({ icon, label, value, iconStyle, iconSize = 16 }: { icon: string; label: string; value: number | string; iconStyle?: React.CSSProperties; iconSize?: number }) {
   return (
     <div className="rounded-lg border border-border/40 bg-muted/20 px-3 py-2">
       <div className="text-xs text-muted-foreground uppercase tracking-wide flex items-center gap-1">
-        <img src={icon} alt="" className="w-4 h-4" style={iconStyle} />
+        <img src={icon} alt="" style={{ width: iconSize, height: iconSize, ...iconStyle }} />
         <span>{label}</span>
       </div>
       <div className="font-display text-xl text-glow mt-0.5 truncate">{value}</div>
