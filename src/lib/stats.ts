@@ -163,6 +163,8 @@ export function computePlayerStats(
   let sumNet = 0;
   let maxCreeps = { value: -Infinity, match_id: 0 };
   let sumCreeps = 0;
+  let maxDenies = { value: -Infinity, match_id: 0 };
+  let sumDenies = 0;
   let maxObs = { value: -Infinity, match_id: 0 };
   let maxSen = { value: -Infinity, match_id: 0 };
   let maxDe = { value: -Infinity, match_id: 0 };
