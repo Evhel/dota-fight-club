@@ -15,7 +15,6 @@ const DISPLAY_TO_SHORT: Record<string, string> = {
   "shadow fiend": "nevermore",
   "queen of pain": "queenofpain",
   "wraith king": "skeleton_king",
-  "witch doctor": "witchdoctor",
   "vengeful spirit": "vengefulspirit",
   "treant protector": "treant",
   "shadow shaman": "shadow_shaman",
