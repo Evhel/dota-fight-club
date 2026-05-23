@@ -79,3 +79,8 @@ export function heroIcon(hero: string): string {
 export function heroAnchorId(hero: string): string {
   return `hero-${heroShortName(hero)}`;
 }
+
+export const WARD_OBSERVER_ICON =
+  "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ward_observer.png";
+export const WARD_SENTRY_ICON =
+  "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ward_sentry.png";
