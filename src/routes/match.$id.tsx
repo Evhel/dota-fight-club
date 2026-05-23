@@ -163,7 +163,7 @@ function MatchPage() {
                   title={`${s.isBan ? "Бан" : "Пик"}: ${s.hero}`}
                 >
                   <img
-                    src={heroIcon(s.hero)}
+                    src={heroImg(s.hero)}
                     alt={s.hero}
                     className="w-8 h-8 rounded border border-border/40"
                     style={{
