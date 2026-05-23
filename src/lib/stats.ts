@@ -584,6 +584,59 @@ export function computeGlobalStats(
       const disp = identities.get(sidStr)?.display_name || name;
       if (!topCreeps || ck > topCreeps.value) topCreeps = { steam_id: sidStr, name: disp, value: ck, match_id: m.match_id };
     }
+    const scanMetric = (
+      src: Record<string, number> | undefined,
+      setter: (cur: typeof topDenies, sid: string, disp: string, v: number) => typeof topDenies,
+    ) => {
+      if (!src) return;
+      for (const [name, v] of Object.entries(src)) {
+        const sid = nicknameToSteam(m, name);
+        if (!sid) continue;
+        const sidStr = String(sid);
+        const disp = identities.get(sidStr)?.display_name || name;
+        const result = setter(undefined, sidStr, disp, v);
+        // unused — just to satisfy typing; real updates below
+        void result;
+      }
+    };
+    void scanMetric;
+    for (const [name, v] of Object.entries(m.denies || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topDenies = trackTop(topDenies, sidStr, disp, v, m.match_id);
+    }
+    const gpmSrc = m.gpm || m.gold_per_minute || {};
+    for (const [name, v] of Object.entries(gpmSrc)) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topGpm = trackTop(topGpm, sidStr, disp, Math.round(v), m.match_id);
+    }
+    const xpmSrc = m.xpm || m.xp_per_minute || {};
+    for (const [name, v] of Object.entries(xpmSrc)) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topXpm = trackTop(topXpm, sidStr, disp, Math.round(v), m.match_id);
+    }
+    for (const [name, v] of Object.entries(m.hero_damage || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topDmg = trackTop(topDmg, sidStr, disp, v, m.match_id);
+    }
+    for (const [name, v] of Object.entries(m.damage_taken || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topGot = trackTop(topGot, sidStr, disp, v, m.match_id);
+    }
+    for (const [name, v] of Object.entries(m.hero_healing || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topHeal = trackTop(topHeal, sidStr, disp, v, m.match_id);
+    }
+    for (const [name, v] of Object.entries(m.tower_damage || {})) {
+      const sid = nicknameToSteam(m, name); if (!sid) continue;
+      const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
+      topBld = trackTop(topBld, sidStr, disp, v, m.match_id);
+    }
     for (const msg of m.chat_after_draft || []) {
       for (const w of tokenize(msg.text)) {
         allWordCount.set(w, (allWordCount.get(w) || 0) + 1);
