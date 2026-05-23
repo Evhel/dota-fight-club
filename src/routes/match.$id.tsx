@@ -154,12 +154,12 @@ function MatchPage() {
                     <td className="py-1 px-1">{k?.deaths ?? 0}</td>
                     <td className="py-1 px-1">{k?.assists ?? 0}</td>
                     <td className="py-1 px-1">{(nw / 1000).toFixed(1)}k</td>
-                    <td className="py-1 px-1">{lh}/{dn}</td>
-                    <td className="py-1 px-1">{gpm}/{xpm}</td>
-                    <td className="py-1 px-1">{dmg}</td>
-                    <td className="py-1 px-1">{taken}</td>
-                    <td className="py-1 px-1">{heal}</td>
-                    <td className="py-1 px-1">{bld}</td>
+                    <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.15 80)" }}>{lh}</span>/<span style={{ color: "oklch(0.7 0.15 200)" }}>{dn}</span></td>
+                    <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.18 60)" }}>{gpm}</span>/<span style={{ color: "oklch(0.72 0.18 280)" }}>{xpm}</span></td>
+                    <td className="py-1 px-1">{k1k(dmg)}</td>
+                    <td className="py-1 px-1">{k1k(taken)}</td>
+                    <td className="py-1 px-1">{k1k(heal)}</td>
+                    <td className="py-1 px-1">{k1k(bld)}</td>
                   </tr>
                 );
               })}
