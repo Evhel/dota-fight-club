@@ -19,12 +19,13 @@ function RecordsPage() {
     return computeGlobalStats(matches, ids, players);
   }, [matches]);
 
+  const fmtGold = (v: number) => `${(v / 1000).toFixed(1)}k`;
   const items = [
     { label: "💀 Самое большое количество убийств", rec: records.top_kills },
     { label: "☠️ Самое большое количество смертей", rec: records.top_deaths },
     { label: "🤝 Самое большое количество помощи", rec: records.top_assists },
     { label: "✨ Лучший KDA с 0 смертей (K+A)", rec: records.top_perfect_kda },
-    { label: "💰 Максимум ценности в золоте", rec: records.top_net_worth },
+    { label: "💰 Максимум ценности в золоте", rec: records.top_net_worth, format: fmtGold },
     { label: "🗡️ Максимум ласт-хитов", rec: records.top_creeps },
   ];
 
@@ -64,7 +65,7 @@ function RecordsPage() {
                     </td>
                     <td className="px-3 py-2">
                       <Link to={`/match/${it.rec.match_id}`} className="font-medium hover:underline">
-                        {it.rec.value}
+                        {it.format ? it.format(it.rec.value) : it.rec.value}
                       </Link>
                     </td>
                   </>

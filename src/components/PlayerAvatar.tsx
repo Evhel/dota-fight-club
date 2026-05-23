@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { useAdmin } from "@/lib/admin";
 
 interface Props {
   steamId: string;
@@ -8,7 +7,6 @@ interface Props {
 }
 
 export function PlayerAvatar({ steamId, name }: Props) {
-  const admin = useAdmin();
   const [url, setUrl] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -58,11 +56,9 @@ export function PlayerAvatar({ steamId, name }: Props) {
   return (
     <div className="flex flex-col items-center gap-2">
       <div
-        className={`w-80 h-[28rem] rounded-lg overflow-hidden border-2 border-primary/60 bg-muted/30 flex items-center justify-center ${
-          admin ? "cursor-pointer hover:border-primary" : ""
-        }`}
-        onClick={() => admin && inputRef.current?.click()}
-        title={admin ? "Загрузить аватарку" : undefined}
+        className="w-80 h-[28rem] rounded-lg overflow-hidden border-2 border-primary/60 bg-muted/30 flex items-center justify-center cursor-pointer hover:border-primary"
+        onClick={() => inputRef.current?.click()}
+        title="Загрузить аватарку"
       >
         {url ? (
           <img src={url} alt={name} className="w-full h-full object-cover" />
@@ -72,25 +68,21 @@ export function PlayerAvatar({ steamId, name }: Props) {
           </span>
         )}
       </div>
-      {admin && (
-        <>
-          <input
-            ref={inputRef}
-            type="file"
-            accept="image/*"
-            className="hidden"
-            onChange={onFile}
-            disabled={busy}
-          />
-          <button
-            onClick={() => inputRef.current?.click()}
-            disabled={busy}
-            className="text-xs text-muted-foreground hover:text-primary underline"
-          >
-            {busy ? "Загрузка..." : url ? "Заменить" : "Загрузить аватарку"}
-          </button>
-        </>
-      )}
+      <input
+        ref={inputRef}
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={onFile}
+        disabled={busy}
+      />
+      <button
+        onClick={() => inputRef.current?.click()}
+        disabled={busy}
+        className="text-xs text-muted-foreground hover:text-primary underline"
+      >
+        {busy ? "Загрузка..." : url ? "Заменить аватарку" : "Загрузить аватарку"}
+      </button>
     </div>
   );
 }
