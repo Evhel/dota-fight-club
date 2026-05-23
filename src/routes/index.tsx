@@ -370,27 +370,24 @@ function WordCloud({ words }: { words: { word: string; count: number }[] }) {
   const max = filtered[0].count;
 
   // Spiral layout aiming toward sphere
-  const W = 800;
-  const H = 500;
+  const W = 500;
+  const H = 280;
   const cx = W / 2;
   const cy = H / 2;
-  // Deterministic positions using a Fibonacci/golden-angle spiral
   const placements = filtered.map((w, i) => {
-    const size = 0.85 + (w.count / max) * 2.2; // rem
-    // spiral radius shrinks for bigger words (place big ones in center)
+    const size = 0.7 + (w.count / max) * 1.6; // rem (smaller)
     const t = i / filtered.length;
-    const angle = i * 2.399; // golden angle
+    const angle = i * 2.399;
     const radius = Math.sqrt(t) * Math.min(W, H) * 0.42;
     const x = cx + Math.cos(angle) * radius;
-    const y = cy + Math.sin(angle) * radius * 0.7; // squash slightly
-    // alpha based on count
+    const y = cy + Math.sin(angle) * radius * 0.7;
     const opacity = 0.55 + (w.count / max) * 0.45;
     return { ...w, x, y, size, opacity };
   });
 
   return (
-    <div className="panel p-6">
-      <h2 className="font-display text-2xl mb-4 text-center">Облако слов из общего чата</h2>
+    <div className="panel p-4">
+      <h2 className="font-display text-xl mb-2 text-center">Облако слов из общего чата</h2>
       <div
         className="relative mx-auto"
         style={{ width: "100%", maxWidth: W, height: H }}
