@@ -213,6 +213,15 @@ export function computePlayerStats(
       if (won) tm.wins += 1;
       teammates.set(tid, tm);
     }
+    // opponents
+    const oppPlayers = side === "radiant" ? m.dire_team : m.radiant_team;
+    for (const o of oppPlayers) {
+      const oid = String(o.steam_id);
+      const om = opponents.get(oid) || { games: 0, wins: 0 };
+      om.games += 1;
+      if (won) om.wins += 1;
+      opponents.set(oid, om);
+    }
 
     // per-match metrics
     const kda = m.kda?.[me.nickname];
@@ -229,11 +238,14 @@ export function computePlayerStats(
       sumNet += nw;
       if (nw > maxNet.value) maxNet = { value: nw, match_id: m.match_id };
     }
-    const ck = m.creep_kills?.[me.nickname];
+    const ck = m.last_hits?.[me.nickname] ?? m.creep_kills?.[me.nickname];
     if (ck !== undefined) {
       sumCreeps += ck;
       if (ck > maxCreeps.value) maxCreeps = { value: ck, match_id: m.match_id };
     }
+    const dn = m.denies?.[me.nickname] ?? 0;
+    sumDenies += dn;
+    if (dn > maxDenies.value) maxDenies = { value: dn, match_id: m.match_id };
     const wp = m.wards_placed?.[me.nickname];
     if (wp) {
       if (wp.observer > maxObs.value) maxObs = { value: wp.observer, match_id: m.match_id };
