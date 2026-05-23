@@ -503,7 +503,8 @@ export function computeGlobalStats(
       const disp = identities.get(sidStr)?.display_name || name;
       if (!topNet || nw > topNet.value) topNet = { steam_id: sidStr, name: disp, value: nw, match_id: m.match_id };
     }
-    for (const [name, ck] of Object.entries(m.creep_kills || {})) {
+    const ckSource = m.last_hits || m.creep_kills || {};
+    for (const [name, ck] of Object.entries(ckSource)) {
       const sid = nicknameToSteam(m, name);
       if (!sid) continue;
       const sidStr = String(sid);
