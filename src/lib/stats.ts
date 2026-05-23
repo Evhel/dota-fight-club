@@ -506,6 +506,24 @@ export function computeGlobalStats(
   let topPerfectKda: GlobalRecords["top_perfect_kda"];
   let topNet: GlobalRecords["top_net_worth"];
   let topCreeps: GlobalRecords["top_creeps"];
+  let topDenies: GlobalRecords["top_denies"];
+  let topGpm: GlobalRecords["top_gpm"];
+  let topXpm: GlobalRecords["top_xpm"];
+  let topDmg: GlobalRecords["top_dmg"];
+  let topGot: GlobalRecords["top_got"];
+  let topHeal: GlobalRecords["top_heal"];
+  let topBld: GlobalRecords["top_bld"];
+
+  const trackTop = (
+    cur: { steam_id: string; name: string; value: number; match_id: number } | undefined,
+    sidStr: string,
+    disp: string,
+    value: number,
+    match_id: number,
+  ) =>
+    !cur || value > cur.value
+      ? { steam_id: sidStr, name: disp, value, match_id }
+      : cur;
 
   const nicknameToSteam = (m: DotaMatch, name: string) =>
     [...m.radiant_team, ...m.dire_team].find((p) => p.nickname === name)?.steam_id;
