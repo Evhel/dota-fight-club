@@ -84,21 +84,25 @@ function Index() {
             )}
             {global.records.most_obs && (
               <RecLink
-                label="Максимум observer wards"
+                icon={WARD_OBSERVER_ICON}
+                label="Макс."
                 value={`${global.records.most_obs.value} — ${global.records.most_obs.name}`}
                 to={`/match/${global.records.most_obs.match_id}`}
               />
             )}
             {global.records.most_sen && (
               <RecLink
-                label="Максимум sentries"
+                icon={WARD_SENTRY_ICON}
+                label="Макс."
                 value={`${global.records.most_sen.value} — ${global.records.most_sen.name}`}
                 to={`/match/${global.records.most_sen.match_id}`}
               />
             )}
             {global.records.most_dewards && (
               <RecLink
-                label="Максимум wards destroyed"
+                icon={WARD_OBSERVER_ICON}
+                iconStyle={{ filter: "grayscale(1) brightness(0.7)" }}
+                label="Макс."
                 value={`${global.records.most_dewards.value} — ${global.records.most_dewards.name}`}
                 to={`/match/${global.records.most_dewards.match_id}`}
               />
