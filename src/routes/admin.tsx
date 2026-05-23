@@ -16,6 +16,7 @@ function AdminPage() {
   const admin = useAdmin();
   const upload = useUploadMatch();
   const del = useDeleteMatch();
+  const updDate = useUpdateMatchDate();
   const matches = useMatches();
   const fileRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
