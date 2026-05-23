@@ -37,9 +37,9 @@ function MatchSearch() {
             <SelectValue placeholder="Выбери номер игры..." />
           </SelectTrigger>
           <SelectContent>
-            {sorted.map((m, idx) => (
+            {sorted.map((m) => (
               <SelectItem key={m.match_id} value={String(m.match_id)}>
-                #{idx + 1} — {new Date(m.start_time).toLocaleDateString("ru-RU")}
+                #{m.num} — {new Date(m.start_time).toLocaleDateString("ru-RU")}
               </SelectItem>
             ))}
           </SelectContent>
