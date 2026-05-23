@@ -106,7 +106,7 @@ function AdminPage() {
               <div>
                 <div className="font-mono text-sm">#{m.match_id}</div>
                 <div className="text-xs text-muted-foreground">
-                  {new Date(m.start_time).toLocaleString("ru-RU")} · {m.data.game_mode}
+                  {new Date(m.start_time).toLocaleDateString("ru-RU")} · {m.data.game_mode}
                 </div>
               </div>
               <Button
