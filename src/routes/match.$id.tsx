@@ -123,12 +123,13 @@ function MatchPage() {
                 const nw = m.net_worth?.[p.nickname] ?? 0;
                 const lh = m.last_hits?.[p.nickname] ?? m.creep_kills?.[p.nickname] ?? 0;
                 const dn = m.denies?.[p.nickname] ?? 0;
-                const gpm = m.gpm?.[p.nickname] ?? m.gold_per_minute?.[p.nickname] ?? 0;
-                const xpm = m.xpm?.[p.nickname] ?? m.xp_per_minute?.[p.nickname] ?? 0;
+                const gpm = Math.round(m.gpm?.[p.nickname] ?? m.gold_per_minute?.[p.nickname] ?? 0);
+                const xpm = Math.round(m.xpm?.[p.nickname] ?? m.xp_per_minute?.[p.nickname] ?? 0);
                 const dmg = m.hero_damage?.[p.nickname] ?? 0;
                 const taken = m.damage_taken?.[p.nickname] ?? 0;
                 const heal = m.hero_healing?.[p.nickname] ?? 0;
                 const bld = m.tower_damage?.[p.nickname] ?? 0;
+                const k1k = (v: number) => `${(v / 1000).toFixed(1)}k`;
                 return (
                   <tr key={p.steam_id} className="border-t border-border/30">
                     <td className="py-1 px-1">
