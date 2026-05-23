@@ -23,20 +23,19 @@ function Index() {
   }, [matches]);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-4">
       <section
-        className="panel p-8 relative overflow-hidden text-center"
+        className="panel p-4 relative overflow-hidden text-center"
         style={{
           backgroundImage: `linear-gradient(120deg, oklch(0.18 0.03 150 / 0.85), oklch(0.18 0.03 150 / 0.4)), url(${forest})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: 260,
         }}
       >
-        <h1 className="text-4xl md:text-5xl font-display text-glow">
+        <h1 className="text-3xl md:text-4xl font-display text-glow">
           Бойцовский Клуб Dota 2
         </h1>
-        <div className="mt-8 flex flex-wrap gap-10 justify-center text-base">
+        <div className="mt-4 flex flex-wrap gap-10 justify-center text-base">
           <Stat label="Игр" value={global.total_games} />
           <Stat label="Бойцов" value={global.total_players} />
           <Stat label="Времени в бою" value={formatDuration(global.total_seconds)} />
