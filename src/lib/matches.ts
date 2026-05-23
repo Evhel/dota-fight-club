@@ -62,3 +62,17 @@ export function useDeleteMatch() {
     onSuccess: () => qc.invalidateQueries({ queryKey: matchesQueryKey }),
   });
 }
+
+export function useUpdateMatchDate() {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: async ({ match_id, start_time }: { match_id: number; start_time: string }) => {
+      const { error } = await supabase
+        .from("matches")
+        .update({ start_time })
+        .eq("match_id", match_id);
+      if (error) throw error;
+    },
+    onSuccess: () => qc.invalidateQueries({ queryKey: matchesQueryKey }),
+  });
+}
