@@ -26,8 +26,8 @@ function PlayersPage() {
               <th className="px-3 py-2">WR</th>
               <th className="px-3 py-2">Потрачено</th>
               <th className="px-3 py-2">Уник. героев</th>
-              <th className="px-3 py-2">Серия побед</th>
-              <th className="px-3 py-2">Серия поражений</th>
+              <th className="px-3 py-2">max серия побед</th>
+              <th className="px-3 py-2">max серия поражений</th>
               <th className="px-3 py-2">Текущая серия</th>
               <th className="px-3 py-2">Слово</th>
               <th className="px-3 py-2">Лучший союзник</th>
@@ -52,9 +52,20 @@ function PlayersPage() {
                 <td className="px-3 py-2">{p.max_win_streak}</td>
                 <td className="px-3 py-2">{p.max_loss_streak}</td>
                 <td className="px-3 py-2">
-                  {p.current_streak.type === "none"
-                    ? "—"
-                    : `${p.current_streak.count}${p.current_streak.type === "win" ? "+" : "-"}`}
+                  {p.current_streak.type === "none" ? (
+                    "—"
+                  ) : (
+                    <span
+                      className={
+                        p.current_streak.type === "win"
+                          ? "text-[oklch(0.75_0.18_145)] font-medium"
+                          : "text-[oklch(0.65_0.22_25)] font-medium"
+                      }
+                    >
+                      {p.current_streak.count}
+                      {p.current_streak.type === "win" ? "+" : "-"}
+                    </span>
+                  )}
                 </td>
                 <td className="px-3 py-2">{p.top_word || "—"}</td>
                 <td className="px-3 py-2">
