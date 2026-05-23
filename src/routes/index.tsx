@@ -7,6 +7,7 @@ import {
   formatDuration,
 } from "@/lib/stats";
 import { useMemo } from "react";
+import { WARD_OBSERVER_ICON, WARD_SENTRY_ICON } from "@/lib/heroes";
 import forest from "@/assets/forest-sword.jpg";
 
 export const Route = createFileRoute("/")({
