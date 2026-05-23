@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities, matchDeaths } from "@/lib/stats";
-import { heroIcon, heroAnchorId } from "@/lib/heroes";
+import { heroImg, heroAnchorId } from "@/lib/heroes";
 import { useMemo } from "react";
 
 export const Route = createFileRoute("/match/$id")({
