@@ -24,7 +24,7 @@ export interface PlayerStats {
   best_opponent?: { name: string; winrate: number; games: number };
   worst_opponent?: { name: string; winrate: number; games: number };
   // per-player records
-  max_kda: { value: number; match_id: number };
+  max_kda: { value: number; match_id: number; kills: number; deaths: number; assists: number };
   avg_kda: number;
   max_net_worth: { value: number; match_id: number };
   avg_net_worth: number;
@@ -32,6 +32,18 @@ export interface PlayerStats {
   avg_creeps: number;
   max_denies: { value: number; match_id: number };
   avg_denies: number;
+  max_gpm: { value: number; match_id: number };
+  avg_gpm: number;
+  max_xpm: { value: number; match_id: number };
+  avg_xpm: number;
+  max_dmg: { value: number; match_id: number };
+  avg_dmg: number;
+  max_got: { value: number; match_id: number };
+  avg_got: number;
+  max_heal: { value: number; match_id: number };
+  avg_heal: number;
+  max_bld: { value: number; match_id: number };
+  avg_bld: number;
   top_hero_games?: { hero: string; games: number };
   top_hero_winrate?: { hero: string; winrate: number; games: number };
   max_obs: { value: number; match_id: number };
