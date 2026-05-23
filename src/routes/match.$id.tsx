@@ -111,7 +111,7 @@ function MatchPage() {
                 <th className="py-1 px-1">LH/DN</th>
                 <th className="py-1 px-1">GPM/XPM</th>
                 <th className="py-1 px-1">DMG</th>
-                <th className="py-1 px-1">Got</th>
+                <th className="py-1 px-1">Got DMG</th>
                 <th className="py-1 px-1">HEAL</th>
                 <th className="py-1 px-1">BLD</th>
               </tr>
