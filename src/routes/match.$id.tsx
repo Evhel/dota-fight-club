@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities, matchDeaths } from "@/lib/stats";
+import { heroIcon, heroAnchorId } from "@/lib/heroes";
 import { useMemo } from "react";
 
 export const Route = createFileRoute("/match/$id")({
@@ -23,103 +24,212 @@ function MatchPage() {
   const m = match.data;
   const d = matchDeaths(m);
 
-  const Team = ({
+  const mins = Math.floor(m.duration_seconds / 60);
+  const secs = Math.floor(m.duration_seconds % 60);
+  const durStr = `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
+
+  const radiantColor = "oklch(0.72 0.16 145)";
+  const direColor = "oklch(0.62 0.20 25)";
+
+  // Determine radiant/dire team numbers in picks/bans by checking which hero list matches
+  const radiantHeroes = new Set(m.radiant_team.map((p) => p.hero));
+  const teamNumbers = new Set([...(m.picks || []), ...(m.bans || [])].map((x) => x.team));
+  let radiantTeamNum = 2;
+  let direTeamNum = 3;
+  for (const t of teamNumbers) {
+    const heroes = (m.picks || []).filter((p) => p.team === t).map((p) => p.hero);
+    if (heroes.some((h) => radiantHeroes.has(h))) {
+      radiantTeamNum = t;
+    } else {
+      direTeamNum = t;
+    }
+  }
+
+  type DraftStep = { hero: string; tick: number; isBan: boolean };
+  const buildDraft = (teamNum: number): DraftStep[] => {
+    const steps: DraftStep[] = [];
+    for (const p of m.picks || []) {
+      if (p.team === teamNum) steps.push({ hero: p.hero, tick: p.tick, isBan: false });
+    }
+    for (const b of m.bans || []) {
+      if (b.team === teamNum) steps.push({ hero: b.hero, tick: b.tick, isBan: true });
+    }
+    return steps.sort((a, b) => a.tick - b.tick);
+  };
+
+  const TeamBlock = ({
     title,
     team,
     color,
     won,
+    teamNum,
   }: {
     title: string;
     team: typeof m.radiant_team;
     color: string;
     won: boolean;
-  }) => (
-    <div className="panel p-5">
-      <div className="flex items-center justify-between mb-3">
-        <h2 className="font-display text-xl" style={{ color }}>
-          {title}
-        </h2>
-        <span
-          className="text-xs px-2 py-0.5 rounded"
-          style={{
-            background: won ? `${color} / 0.2` : "transparent",
-            border: `1px solid ${color}`,
-            color,
-          }}
-        >
-          {won ? "Победа" : "Поражение"}
-        </span>
-      </div>
-      <table className="w-full text-sm">
-        <thead className="text-xs text-muted-foreground">
-          <tr className="text-left">
-            <th className="py-1">Игрок</th>
-            <th>Герой</th>
-            <th>KDA</th>
-            <th>NW</th>
-          </tr>
-        </thead>
-        <tbody>
-          {team.map((p) => {
-            const kda = m.kda?.[p.nickname];
-            const display = identities.get(String(p.steam_id))?.display_name || p.nickname;
-            return (
-              <tr key={p.steam_id} className="border-t border-border/30">
-                <td className="py-1.5">
-                  <Link
-                    to={`/player?nick=${encodeURIComponent(display)}`}
-                    className="hover:text-primary"
-                  >
-                    {display}
-                  </Link>
-                </td>
-                <td>{p.hero}</td>
-                <td>
-                  {kda ? `${kda.kills}/${kda.deaths}/${kda.assists}` : "—"}
-                </td>
-                <td>{Math.round(m.net_worth?.[p.nickname] ?? 0)}</td>
+    teamNum: number;
+  }) => {
+    const draft = buildDraft(teamNum);
+    return (
+      <div className="panel p-4 space-y-3">
+        <div className="flex items-center justify-between">
+          <h2 className="font-display text-xl" style={{ color }}>
+            {title}
+          </h2>
+          <span
+            className="text-xs px-2 py-0.5 rounded border"
+            style={{ borderColor: color, color }}
+          >
+            {won ? "Победа" : "Поражение"}
+          </span>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs text-center">
+            <thead className="text-muted-foreground">
+              <tr>
+                <th className="py-1 px-1">Герой</th>
+                <th className="py-1 px-1 text-left">Игрок</th>
+                <th className="py-1 px-1">K</th>
+                <th className="py-1 px-1">D</th>
+                <th className="py-1 px-1">A</th>
+                <th className="py-1 px-1">NET</th>
+                <th className="py-1 px-1">LH/DN</th>
+                <th className="py-1 px-1">GPM/XPM</th>
+                <th className="py-1 px-1">DMG</th>
+                <th className="py-1 px-1">Got DMG</th>
+                <th className="py-1 px-1">HEAL</th>
+                <th className="py-1 px-1">BLD</th>
               </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
+            </thead>
+            <tbody>
+              {team.map((p) => {
+                const k = m.kda?.[p.nickname];
+                const display = identities.get(String(p.steam_id))?.display_name || p.nickname;
+                const nw = m.net_worth?.[p.nickname] ?? 0;
+                const lh = m.last_hits?.[p.nickname] ?? m.creep_kills?.[p.nickname] ?? 0;
+                const dn = m.denies?.[p.nickname] ?? 0;
+                const gpm = m.gpm?.[p.nickname] ?? 0;
+                const xpm = m.xpm?.[p.nickname] ?? 0;
+                const dmg = m.hero_damage?.[p.nickname] ?? 0;
+                const taken = m.damage_taken?.[p.nickname] ?? 0;
+                const heal = m.hero_healing?.[p.nickname] ?? 0;
+                const bld = m.tower_damage?.[p.nickname] ?? 0;
+                return (
+                  <tr key={p.steam_id} className="border-t border-border/30">
+                    <td className="py-1 px-1">
+                      <Link to={`/heroes`} hash={heroAnchorId(p.hero)} title={p.hero}>
+                        <img
+                          src={heroIcon(p.hero)}
+                          alt={p.hero}
+                          className="w-7 h-7 rounded inline-block hover:ring-2 hover:ring-primary"
+                          onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
+                        />
+                      </Link>
+                    </td>
+                    <td className="py-1 px-1 text-left">
+                      <Link
+                        to={`/player?nick=${encodeURIComponent(display)}`}
+                        className="hover:text-primary"
+                      >
+                        {display}
+                      </Link>
+                    </td>
+                    <td className="py-1 px-1">{k?.kills ?? 0}</td>
+                    <td className="py-1 px-1">{k?.deaths ?? 0}</td>
+                    <td className="py-1 px-1">{k?.assists ?? 0}</td>
+                    <td className="py-1 px-1">{(nw / 1000).toFixed(1)}k</td>
+                    <td className="py-1 px-1">{lh}/{dn}</td>
+                    <td className="py-1 px-1">{gpm}/{xpm}</td>
+                    <td className="py-1 px-1">{dmg}</td>
+                    <td className="py-1 px-1">{taken}</td>
+                    <td className="py-1 px-1">{heal}</td>
+                    <td className="py-1 px-1">{bld}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        {draft.length > 0 && (
+          <div>
+            <div className="text-xs text-muted-foreground mb-1">Порядок пиков и банов</div>
+            <div className="flex flex-wrap gap-1">
+              {draft.map((s, i) => (
+                <Link
+                  key={i}
+                  to={`/heroes`}
+                  hash={heroAnchorId(s.hero)}
+                  title={`${s.isBan ? "Бан" : "Пик"}: ${s.hero}`}
+                >
+                  <img
+                    src={heroIcon(s.hero)}
+                    alt={s.hero}
+                    className="w-8 h-8 rounded border border-border/40"
+                    style={{
+                      filter: s.isBan ? "grayscale(1) brightness(0.6)" : undefined,
+                    }}
+                    onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
+                  />
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  const winnerTitle =
+    m.winner === "radiant" ? "ПОБЕДА СИЛ СВЕТА" : "ПОБЕДА СИЛ ТЬМЫ";
+  const winnerColor = m.winner === "radiant" ? radiantColor : direColor;
 
   return (
     <div className="space-y-6">
-      <div className="panel p-6">
-        <div className="text-xs text-muted-foreground mb-1">Матч #{m.match_id}</div>
-        <h1 className="text-2xl font-display">
-          {new Date(match.start_time).toLocaleString("ru-RU")} · {m.game_mode}
+      <div className="panel p-6 text-center">
+        <div className="text-xs text-muted-foreground mb-2">
+          Матч #{m.match_id} · {new Date(match.start_time).toLocaleDateString("ru-RU")} · {m.game_mode}
+        </div>
+        <h1
+          className="font-display text-4xl md:text-5xl text-glow"
+          style={{ color: winnerColor }}
+        >
+          {winnerTitle}
         </h1>
-        <div className="mt-3 flex flex-wrap gap-4 text-sm">
-          <span>Длительность: {Math.round(m.duration_minutes)} мин</span>
-          <span>Пик: {Math.round(m.draft_duration_minutes)} мин</span>
-          <span>Смертей: Свет {d.radiant} · Тьма {d.dire}</span>
-          <span
-            className="font-medium"
-            style={{ color: m.winner === "radiant" ? "var(--radiant)" : "var(--dire)" }}
+        <div className="mt-4 flex items-center justify-center gap-6">
+          <div
+            className="font-display text-3xl md:text-4xl font-bold"
+            style={{ color: radiantColor }}
           >
-            Победа: {m.winner === "radiant" ? "Свет" : "Тьма"}
-          </span>
+            {d.radiant}
+          </div>
+          <div className="font-mono text-2xl text-foreground">{durStr}</div>
+          <div
+            className="font-display text-3xl md:text-4xl font-bold"
+            style={{ color: direColor }}
+          >
+            {d.dire}
+          </div>
+        </div>
+        <div className="mt-2 text-xs text-muted-foreground">
+          Пик: {Math.round(m.draft_duration_minutes)} мин
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-4">
-        <Team
-          title="Свет (Radiant)"
-          team={m.radiant_team}
-          color="oklch(0.70 0.14 155)"
-          won={m.winner === "radiant"}
-        />
-        <Team
-          title="Тьма (Dire)"
-          team={m.dire_team}
-          color="oklch(0.55 0.10 200)"
-          won={m.winner === "dire"}
-        />
-      </div>
+      <TeamBlock
+        title="Свет (Radiant)"
+        team={m.radiant_team}
+        color={radiantColor}
+        won={m.winner === "radiant"}
+        teamNum={radiantTeamNum}
+      />
+      <TeamBlock
+        title="Тьма (Dire)"
+        team={m.dire_team}
+        color={direColor}
+        won={m.winner === "dire"}
+        teamNum={direTeamNum}
+      />
     </div>
   );
 }
