@@ -14,6 +14,33 @@ export type Database = {
   }
   public: {
     Tables: {
+      awards: {
+        Row: {
+          created_at: string
+          id: string
+          image_url: string
+          name: string
+          player_name: string
+          steam_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          image_url: string
+          name: string
+          player_name: string
+          steam_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          image_url?: string
+          name?: string
+          player_name?: string
+          steam_id?: string
+        }
+        Relationships: []
+      }
       matches: {
         Row: {
           created_at: string
