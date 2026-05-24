@@ -131,8 +131,8 @@ function PlayerPage() {
 
 
                 <Tile
-                  label="Макс.KDA | Ср.KDA"
-                  value={`${stats.max_kda.kills}|${stats.max_kda.deaths}|${stats.max_kda.assists} | ${stats.avg_kda}`}
+                  label="Макс.У/С/П | Ср.KDA"
+                  value={`${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists} | ${stats.avg_kda}`}
                 />
                 <Tile
                   label="Макс.NW | Ср.NW"
