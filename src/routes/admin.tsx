@@ -64,7 +64,10 @@ function AdminPage() {
   return (
     <div className="space-y-8 max-w-4xl mx-auto">
       <div>
+      <div className="flex items-baseline gap-3">
         <h1 className="text-3xl font-display text-glow">Панель администратора</h1>
+        <Link to="/admin/awards" className="text-sm text-primary underline">Награды →</Link>
+      </div>
         <p className="text-muted-foreground mt-1">
           Загружай JSON-файлы матчей. Дубликаты по match_id игнорируются автоматически.
         </p>

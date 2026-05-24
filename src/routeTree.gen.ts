@@ -20,6 +20,7 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as MatchIndexRouteImport } from './routes/match.index'
 import { Route as MatchIdRouteImport } from './routes/match.$id'
+import { Route as AdminAwardsRouteImport } from './routes/admin.awards'
 
 const VsRoute = VsRouteImport.update({
   id: '/vs',
@@ -76,10 +77,15 @@ const MatchIdRoute = MatchIdRouteImport.update({
   path: '/match/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminAwardsRoute = AdminAwardsRouteImport.update({
+  id: '/awards',
+  path: '/awards',
+  getParentRoute: () => AdminRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
+  '/admin': typeof AdminRouteWithChildren
   '/heroes': typeof HeroesRoute
   '/login': typeof LoginRoute
   '/matches': typeof MatchesRoute
@@ -87,12 +93,13 @@ export interface FileRoutesByFullPath {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
+  '/admin/awards': typeof AdminAwardsRoute
   '/match/$id': typeof MatchIdRoute
   '/match/': typeof MatchIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
+  '/admin': typeof AdminRouteWithChildren
   '/heroes': typeof HeroesRoute
   '/login': typeof LoginRoute
   '/matches': typeof MatchesRoute
@@ -100,13 +107,14 @@ export interface FileRoutesByTo {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
+  '/admin/awards': typeof AdminAwardsRoute
   '/match/$id': typeof MatchIdRoute
   '/match': typeof MatchIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
+  '/admin': typeof AdminRouteWithChildren
   '/heroes': typeof HeroesRoute
   '/login': typeof LoginRoute
   '/matches': typeof MatchesRoute
@@ -114,6 +122,7 @@ export interface FileRoutesById {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
+  '/admin/awards': typeof AdminAwardsRoute
   '/match/$id': typeof MatchIdRoute
   '/match/': typeof MatchIndexRoute
 }
@@ -129,6 +138,7 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
+    | '/admin/awards'
     | '/match/$id'
     | '/match/'
   fileRoutesByTo: FileRoutesByTo
@@ -142,6 +152,7 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
+    | '/admin/awards'
     | '/match/$id'
     | '/match'
   id:
@@ -155,13 +166,14 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
+    | '/admin/awards'
     | '/match/$id'
     | '/match/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AdminRoute: typeof AdminRoute
+  AdminRoute: typeof AdminRouteWithChildren
   HeroesRoute: typeof HeroesRoute
   LoginRoute: typeof LoginRoute
   MatchesRoute: typeof MatchesRoute
@@ -252,12 +264,29 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MatchIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/awards': {
+      id: '/admin/awards'
+      path: '/awards'
+      fullPath: '/admin/awards'
+      preLoaderRoute: typeof AdminAwardsRouteImport
+      parentRoute: typeof AdminRoute
+    }
   }
 }
 
+interface AdminRouteChildren {
+  AdminAwardsRoute: typeof AdminAwardsRoute
+}
+
+const AdminRouteChildren: AdminRouteChildren = {
+  AdminAwardsRoute: AdminAwardsRoute,
+}
+
+const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AdminRoute: AdminRoute,
+  AdminRoute: AdminRouteWithChildren,
   HeroesRoute: HeroesRoute,
   LoginRoute: LoginRoute,
   MatchesRoute: MatchesRoute,
