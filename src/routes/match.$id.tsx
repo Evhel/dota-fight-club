@@ -218,6 +218,44 @@ function MatchPage() {
     );
   };
 
+  const TeamDraftRow = ({ side, color }: { side: "radiant" | "dire"; color: string }) => {
+    const picks = draftAll.filter((s) => !s.isBan && s.side === side);
+    const bans = draftAll.filter((s) => s.isBan && s.side === side);
+    if (picks.length === 0 && bans.length === 0) return null;
+    return (
+      <div className="flex flex-wrap items-center gap-3 justify-center mt-2 text-[10px] text-muted-foreground">
+        <div className="flex items-center gap-1">
+          <span className="uppercase tracking-wider mr-1">Пики</span>
+          {picks.map((s, i) => (
+            <Link key={`p${i}`} to="/heroes" hash={heroAnchorId(s.hero)} title={s.hero}>
+              <img
+                src={heroIcon(s.hero)}
+                alt={s.hero}
+                className="w-7 h-7 rounded border-2"
+                style={{ borderColor: color }}
+              />
+            </Link>
+          ))}
+        </div>
+        {bans.length > 0 && (
+          <div className="flex items-center gap-1">
+            <span className="uppercase tracking-wider mr-1">Баны</span>
+            {bans.map((s, i) => (
+              <Link key={`b${i}`} to="/heroes" hash={heroAnchorId(s.hero)} title={s.hero}>
+                <img
+                  src={heroIcon(s.hero)}
+                  alt={s.hero}
+                  className="w-7 h-7 rounded border-2"
+                  style={{ borderColor: "oklch(0.4 0.02 200 / 0.6)", filter: "grayscale(1) brightness(0.6)" }}
+                />
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  };
+
   const winnerTitle =
     m.winner === "radiant" ? "ПОБЕДА СИЛ СВЕТА" : "ПОБЕДА СИЛ ТЬМЫ";
   const winnerColor = m.winner === "radiant" ? radiantColor : direColor;
