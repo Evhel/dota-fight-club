@@ -56,15 +56,12 @@ function MatchPage() {
     team,
     color,
     won,
-    teamNum,
   }: {
     title: string;
     team: typeof m.radiant_team;
     color: string;
     won: boolean;
-    teamNum: number;
   }) => {
-    const draft = buildDraft(teamNum);
     return (
       <div className="panel p-4 space-y-3 max-w-3xl mx-auto">
         <div className="flex items-center justify-between">
@@ -102,8 +99,8 @@ function MatchPage() {
                 <th className="py-1 px-1">D</th>
                 <th className="py-1 px-1">A</th>
                 <th className="py-1 px-1">NET</th>
-                <th className="py-1 px-1">LH/DN</th>
-                <th className="py-1 px-1">GPM/XPM</th>
+                <th className="py-1 px-1">LH|DN</th>
+                <th className="py-1 px-1">GPM|XPM</th>
                 <th className="py-1 px-1">DMG</th>
                 <th className="py-1 px-1">Got DMG</th>
                 <th className="py-1 px-1">HEAL</th>
@@ -148,8 +145,8 @@ function MatchPage() {
                     <td className="py-1 px-1">{k?.deaths ?? 0}</td>
                     <td className="py-1 px-1">{k?.assists ?? 0}</td>
                     <td className="py-1 px-1">{(nw / 1000).toFixed(1)}k</td>
-                    <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.15 80)" }}>{lh}</span>/<span style={{ color: "oklch(0.7 0.15 200)" }}>{dn}</span></td>
-                    <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.18 60)" }}>{gpm}</span>/<span style={{ color: "oklch(0.72 0.18 280)" }}>{xpm}</span></td>
+                    <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.15 80)" }}>{lh}</span>|<span style={{ color: "oklch(0.7 0.15 200)" }}>{dn}</span></td>
+                    <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.18 60)" }}>{gpm}</span>|<span style={{ color: "oklch(0.72 0.18 280)" }}>{xpm}</span></td>
                     <td className="py-1 px-1">{k1k(dmg)}</td>
                     <td className="py-1 px-1">{k1k(taken)}</td>
                     <td className="py-1 px-1">{k1k(heal)}</td>
@@ -160,31 +157,50 @@ function MatchPage() {
             </tbody>
           </table>
         </div>
-        {draft.length > 0 && (
-          <div>
-            <div className="text-xs text-muted-foreground mb-1">Порядок пиков и банов</div>
-            <div className="flex flex-wrap gap-1">
-              {draft.map((s, i) => (
-                <Link
-                  key={i}
-                  to={`/heroes`}
-                  hash={heroAnchorId(s.hero)}
-                  title={`${s.isBan ? "Бан" : "Пик"}: ${s.hero}`}
-                >
-                  <img
-                    src={heroIcon(s.hero)}
-                    alt={s.hero}
-                    className="w-8 h-8 rounded border border-border/40"
-                    style={{
-                      filter: s.isBan ? "grayscale(1) brightness(0.6)" : undefined,
-                    }}
-                    onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
-                  />
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
+      </div>
+    );
+  };
+
+  const DraftStrip = () => {
+    if (draftAll.length === 0) return null;
+    return (
+      <div className="panel p-4 max-w-3xl mx-auto space-y-2">
+        <div className="text-xs text-muted-foreground text-center">Порядок пиков и банов</div>
+        <div className="flex flex-wrap gap-1 justify-center">
+          {draftAll.map((s, i) => {
+            const borderColor = s.isBan
+              ? "oklch(0.4 0.02 200 / 0.6)"
+              : s.side === "radiant"
+                ? radiantColor
+                : s.side === "dire"
+                  ? direColor
+                  : "oklch(0.4 0.02 200 / 0.6)";
+            return (
+              <Link
+                key={i}
+                to={`/heroes`}
+                hash={heroAnchorId(s.hero)}
+                title={`${s.isBan ? "Бан" : `Пик · ${s.side === "radiant" ? "Свет" : s.side === "dire" ? "Тьма" : "?"}`}: ${s.hero}`}
+              >
+                <img
+                  src={heroIcon(s.hero)}
+                  alt={s.hero}
+                  className="w-8 h-8 rounded border-2"
+                  style={{
+                    borderColor,
+                    filter: s.isBan ? "grayscale(1) brightness(0.6)" : undefined,
+                  }}
+                  onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
+                />
+              </Link>
+            );
+          })}
+        </div>
+        <div className="flex gap-3 justify-center text-[10px] text-muted-foreground">
+          <span><span className="inline-block w-3 h-3 rounded border-2 align-middle" style={{ borderColor: radiantColor }} /> Пик Света</span>
+          <span><span className="inline-block w-3 h-3 rounded border-2 align-middle" style={{ borderColor: direColor }} /> Пик Тьмы</span>
+          <span><span className="inline-block w-3 h-3 rounded border-2 align-middle bg-muted-foreground/30" /> Бан</span>
+        </div>
       </div>
     );
   };
