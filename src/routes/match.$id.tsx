@@ -31,31 +31,25 @@ function MatchPage() {
   const radiantColor = "oklch(0.72 0.16 145)";
   const direColor = "oklch(0.62 0.20 25)";
 
-  // Determine radiant/dire team numbers in picks/bans by checking which hero list matches
+  // Build combined chronological draft (picks + bans by tick). Side is inferred
+  // from hero membership in radiant_team / dire_team because the team field in
+  // picks/bans does not reliably map to radiant/dire in CM / CD.
   const radiantHeroes = new Set(m.radiant_team.map((p) => p.hero));
-  const teamNumbers = new Set([...(m.picks || []), ...(m.bans || [])].map((x) => x.team));
-  let radiantTeamNum = 2;
-  let direTeamNum = 3;
-  for (const t of teamNumbers) {
-    const heroes = (m.picks || []).filter((p) => p.team === t).map((p) => p.hero);
-    if (heroes.some((h) => radiantHeroes.has(h))) {
-      radiantTeamNum = t;
-    } else {
-      direTeamNum = t;
-    }
+  const direHeroes = new Set(m.dire_team.map((p) => p.hero));
+  type DraftStep = { hero: string; tick: number; isBan: boolean; side: "radiant" | "dire" | null };
+  const draftAll: DraftStep[] = [];
+  for (const p of m.picks || []) {
+    const side: "radiant" | "dire" | null = radiantHeroes.has(p.hero)
+      ? "radiant"
+      : direHeroes.has(p.hero)
+        ? "dire"
+        : null;
+    draftAll.push({ hero: p.hero, tick: p.tick, isBan: false, side });
   }
-
-  type DraftStep = { hero: string; tick: number; isBan: boolean };
-  const buildDraft = (teamNum: number): DraftStep[] => {
-    const steps: DraftStep[] = [];
-    for (const p of m.picks || []) {
-      if (p.team === teamNum) steps.push({ hero: p.hero, tick: p.tick, isBan: false });
-    }
-    for (const b of m.bans || []) {
-      if (b.team === teamNum) steps.push({ hero: b.hero, tick: b.tick, isBan: true });
-    }
-    return steps.sort((a, b) => a.tick - b.tick);
-  };
+  for (const b of m.bans || []) {
+    draftAll.push({ hero: b.hero, tick: b.tick, isBan: true, side: null });
+  }
+  draftAll.sort((a, b) => a.tick - b.tick);
 
   const TeamBlock = ({
     title,
