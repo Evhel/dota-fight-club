@@ -124,51 +124,51 @@ function PlayerPage() {
                 <Tile label="max серия побед" value={stats.max_win_streak} />
                 <Tile label="max серия поражений" value={stats.max_loss_streak} />
                 <Tile
-                  label="Средний K/D/A"
-                  value={`${stats.avg_kills}/${stats.avg_deaths}/${stats.avg_assists}`}
+                  label="Средний K|D|A"
+                  value={`${stats.avg_kills}|${stats.avg_deaths}|${stats.avg_assists}`}
                 />
                 <Tile label="Любимое слово" value={stats.top_word || "—"} />
 
 
                 <Tile
-                  label="Макс.KDA / Ср.KDA"
-                  value={`${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists} / ${stats.avg_kda}`}
+                  label="Макс.KDA | Ср.KDA"
+                  value={`${stats.max_kda.kills}|${stats.max_kda.deaths}|${stats.max_kda.assists} | ${stats.avg_kda}`}
                 />
                 <Tile
-                  label="Макс.NW / Ср.NW"
-                  value={`${(stats.max_net_worth.value / 1000).toFixed(1)}k / ${(stats.avg_net_worth / 1000).toFixed(1)}k`}
+                  label="Макс.NW | Ср.NW"
+                  value={`${(stats.max_net_worth.value / 1000).toFixed(1)}k | ${(stats.avg_net_worth / 1000).toFixed(1)}k`}
                 />
                 <Tile
-                  label="Макс.LH / Ср.LH"
-                  value={`${stats.max_creeps.value} / ${stats.avg_creeps}`}
+                  label="Макс.LH | Ср.LH"
+                  value={`${stats.max_creeps.value} | ${stats.avg_creeps}`}
                 />
                 <Tile
-                  label="Макс.DN / Ср.DN"
-                  value={`${stats.max_denies.value} / ${stats.avg_denies}`}
+                  label="Макс.DN | Ср.DN"
+                  value={`${stats.max_denies.value} | ${stats.avg_denies}`}
                 />
                 <Tile
-                  label="Макс.GPM / Ср.GPM"
-                  value={`${stats.max_gpm.value} / ${stats.avg_gpm}`}
+                  label="Макс.GPM | Ср.GPM"
+                  value={`${stats.max_gpm.value} | ${stats.avg_gpm}`}
                 />
                 <Tile
-                  label="Макс.XPM / Ср.XPM"
-                  value={`${stats.max_xpm.value} / ${stats.avg_xpm}`}
+                  label="Макс.XPM | Ср.XPM"
+                  value={`${stats.max_xpm.value} | ${stats.avg_xpm}`}
                 />
                 <Tile
-                  label="Макс.DMG / Ср.DMG"
-                  value={`${(stats.max_dmg.value / 1000).toFixed(1)}k / ${(stats.avg_dmg / 1000).toFixed(1)}k`}
+                  label="Макс.DMG | Ср.DMG"
+                  value={`${(stats.max_dmg.value / 1000).toFixed(1)}k | ${(stats.avg_dmg / 1000).toFixed(1)}k`}
                 />
                 <Tile
-                  label="Макс.GotDMG / Ср.GotDMG"
-                  value={`${(stats.max_got.value / 1000).toFixed(1)}k / ${(stats.avg_got / 1000).toFixed(1)}k`}
+                  label="Макс.GotDMG | Ср.GotDMG"
+                  value={`${(stats.max_got.value / 1000).toFixed(1)}k | ${(stats.avg_got / 1000).toFixed(1)}k`}
                 />
                 <Tile
-                  label="Макс.HEAL / Ср.HEAL"
-                  value={`${(stats.max_heal.value / 1000).toFixed(1)}k / ${(stats.avg_heal / 1000).toFixed(1)}k`}
+                  label="Макс.HEAL | Ср.HEAL"
+                  value={`${(stats.max_heal.value / 1000).toFixed(1)}k | ${(stats.avg_heal / 1000).toFixed(1)}k`}
                 />
                 <Tile
-                  label="Макс.BLD / Ср.BLD"
-                  value={`${(stats.max_bld.value / 1000).toFixed(1)}k / ${(stats.avg_bld / 1000).toFixed(1)}k`}
+                  label="Макс.BLD | Ср.BLD"
+                  value={`${(stats.max_bld.value / 1000).toFixed(1)}k | ${(stats.avg_bld / 1000).toFixed(1)}k`}
                 />
                 <TileWithIcon
                   icon={WARD_OBSERVER_ICON}
