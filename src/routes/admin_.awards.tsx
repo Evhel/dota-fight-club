@@ -16,7 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export const Route = createFileRoute("/admin/awards")({
+export const Route = createFileRoute("/admin_/awards")({
   component: AdminAwardsPage,
 });
 
