@@ -260,9 +260,9 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
   let currentStreak = 0;
   {
     const cursor = new Date(today);
-    const todayKey = today.toISOString().slice(0, 10);
+    const todayKey = localKey(today);
     while (true) {
-      const key = cursor.toISOString().slice(0, 10);
+      const key = localKey(cursor);
       if (activity[key]) {
         currentStreak += 1;
         cursor.setDate(cursor.getDate() - 1);
