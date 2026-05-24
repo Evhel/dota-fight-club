@@ -480,6 +480,8 @@ export interface GlobalStats {
   activity_by_date: Record<string, number>;
   records: GlobalRecords;
   word_cloud: { word: string; count: number }[];
+  first_pick_winrate: number;
+  first_pick_total: number;
 }
 
 export function computeGlobalStats(
