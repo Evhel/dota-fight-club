@@ -688,6 +688,8 @@ export function computeGlobalStats(
     modes,
     activity_by_date: activity,
     word_cloud,
+    first_pick_winrate: firstPickTotal ? Math.round((firstPickWins / firstPickTotal) * 100) : 0,
+    first_pick_total: firstPickTotal,
     records: {
       shortest_match: shortest,
       longest_match: longest,
