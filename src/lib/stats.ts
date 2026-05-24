@@ -530,14 +530,34 @@ export function computeGlobalStats(
   const nicknameToSteam = (m: DotaMatch, name: string) =>
     [...m.radiant_team, ...m.dire_team].find((p) => p.nickname === name)?.steam_id;
 
+  let firstPickWins = 0;
+  let firstPickTotal = 0;
+
   for (const row of matches) {
     const m = row.data;
     total_seconds += (m.duration_seconds || 0) + (m.draft_duration_minutes || 0) * 60;
     if (m.winner === "radiant") rad += 1;
     else dire += 1;
     modes[m.game_mode || "Unknown"] = (modes[m.game_mode || "Unknown"] || 0) + 1;
-    const date = row.start_time.slice(0, 10);
+    // Local-date activity key (avoid UTC slice off-by-one)
+    const _d = new Date(row.start_time);
+    const date = `${_d.getFullYear()}-${String(_d.getMonth() + 1).padStart(2, "0")}-${String(_d.getDate()).padStart(2, "0")}`;
     activity[date] = (activity[date] || 0) + 1;
+
+    // First pick winrate: find earliest pick (not ban) by tick, determine side from hero membership
+    const picks = (m.picks || []).slice().sort((a, b) => a.tick - b.tick);
+    const firstPick = picks[0];
+    if (firstPick) {
+      const radHeroes = new Set(m.radiant_team.map((p) => p.hero));
+      const direHeroes = new Set(m.dire_team.map((p) => p.hero));
+      let side: "radiant" | "dire" | null = null;
+      if (radHeroes.has(firstPick.hero)) side = "radiant";
+      else if (direHeroes.has(firstPick.hero)) side = "dire";
+      if (side) {
+        firstPickTotal += 1;
+        if (m.winner === side) firstPickWins += 1;
+      }
+    }
 
     const dur = m.duration_minutes;
     if (!shortest || dur < shortest.minutes) shortest = { match_id: m.match_id, minutes: dur };
