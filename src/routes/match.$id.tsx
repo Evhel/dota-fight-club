@@ -292,18 +292,24 @@ function MatchPage() {
         </div>
       </div>
 
-      <TeamBlock
-        title="Свет (Radiant)"
-        team={m.radiant_team}
-        color={radiantColor}
-        won={m.winner === "radiant"}
-      />
-      <TeamBlock
-        title="Тьма (Dire)"
-        team={m.dire_team}
-        color={direColor}
-        won={m.winner === "dire"}
-      />
+      <div>
+        <TeamBlock
+          title="Свет (Radiant)"
+          team={m.radiant_team}
+          color={radiantColor}
+          won={m.winner === "radiant"}
+        />
+        <TeamDraftRow side="radiant" color={radiantColor} />
+      </div>
+      <div>
+        <TeamBlock
+          title="Тьма (Dire)"
+          team={m.dire_team}
+          color={direColor}
+          won={m.winner === "dire"}
+        />
+        <TeamDraftRow side="dire" color={direColor} />
+      </div>
       <DraftStrip />
     </div>
   );
