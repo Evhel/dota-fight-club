@@ -124,15 +124,15 @@ function PlayerPage() {
                 <Tile label="max серия побед" value={stats.max_win_streak} />
                 <Tile label="max серия поражений" value={stats.max_loss_streak} />
                 <Tile
-                  label="Средний K|D|A"
-                  value={`${stats.avg_kills}|${stats.avg_deaths}|${stats.avg_assists}`}
+                  label="Средний У/С/П"
+                  value={`${stats.avg_kills}/${stats.avg_deaths}/${stats.avg_assists}`}
                 />
                 <Tile label="Любимое слово" value={stats.top_word || "—"} />
 
 
                 <Tile
-                  label="Макс.KDA | Ср.KDA"
-                  value={`${stats.max_kda.kills}|${stats.max_kda.deaths}|${stats.max_kda.assists} | ${stats.avg_kda}`}
+                  label="Макс.У/С/П | Ср.KDA"
+                  value={`${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists} | ${stats.avg_kda}`}
                 />
                 <Tile
                   label="Макс.NW | Ср.NW"

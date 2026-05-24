@@ -31,12 +31,24 @@ function MatchPage() {
   const radiantColor = "oklch(0.72 0.16 145)";
   const direColor = "oklch(0.62 0.20 25)";
 
-  // Build combined chronological draft (picks + bans by tick). Side is inferred
-  // from hero membership in radiant_team / dire_team because the team field in
-  // picks/bans does not reliably map to radiant/dire in CM / CD.
+  // Build combined chronological draft (picks + bans by tick). Side for picks
+  // is inferred from hero membership; the team field in picks/bans does not
+  // reliably map to radiant/dire in CM / CD. For bans, side is inferred via
+  // a team→side map built from picks.
   const radiantHeroes = new Set(m.radiant_team.map((p) => p.hero));
   const direHeroes = new Set(m.dire_team.map((p) => p.hero));
   type DraftStep = { hero: string; tick: number; isBan: boolean; side: "radiant" | "dire" | null };
+  const teamToSide: Record<number, "radiant" | "dire"> = {};
+  for (const p of m.picks || []) {
+    const side: "radiant" | "dire" | null = radiantHeroes.has(p.hero)
+      ? "radiant"
+      : direHeroes.has(p.hero)
+        ? "dire"
+        : null;
+    if (side && p.team !== undefined && teamToSide[p.team] === undefined) {
+      teamToSide[p.team] = side;
+    }
+  }
   const draftAll: DraftStep[] = [];
   for (const p of m.picks || []) {
     const side: "radiant" | "dire" | null = radiantHeroes.has(p.hero)
@@ -47,7 +59,8 @@ function MatchPage() {
     draftAll.push({ hero: p.hero, tick: p.tick, isBan: false, side });
   }
   for (const b of m.bans || []) {
-    draftAll.push({ hero: b.hero, tick: b.tick, isBan: true, side: null });
+    const side = b.team !== undefined ? teamToSide[b.team] ?? null : null;
+    draftAll.push({ hero: b.hero, tick: b.tick, isBan: true, side });
   }
   draftAll.sort((a, b) => a.tick - b.tick);
 
@@ -205,6 +218,44 @@ function MatchPage() {
     );
   };
 
+  const TeamDraftRow = ({ side, color }: { side: "radiant" | "dire"; color: string }) => {
+    const picks = draftAll.filter((s) => !s.isBan && s.side === side);
+    const bans = draftAll.filter((s) => s.isBan && s.side === side);
+    if (picks.length === 0 && bans.length === 0) return null;
+    return (
+      <div className="flex flex-wrap items-center gap-3 justify-center mt-2 text-[10px] text-muted-foreground">
+        <div className="flex items-center gap-1">
+          <span className="uppercase tracking-wider mr-1">Пики</span>
+          {picks.map((s, i) => (
+            <Link key={`p${i}`} to="/heroes" hash={heroAnchorId(s.hero)} title={s.hero}>
+              <img
+                src={heroIcon(s.hero)}
+                alt={s.hero}
+                className="w-7 h-7 rounded border-2"
+                style={{ borderColor: color }}
+              />
+            </Link>
+          ))}
+        </div>
+        {bans.length > 0 && (
+          <div className="flex items-center gap-1">
+            <span className="uppercase tracking-wider mr-1">Баны</span>
+            {bans.map((s, i) => (
+              <Link key={`b${i}`} to="/heroes" hash={heroAnchorId(s.hero)} title={s.hero}>
+                <img
+                  src={heroIcon(s.hero)}
+                  alt={s.hero}
+                  className="w-7 h-7 rounded border-2"
+                  style={{ borderColor: "oklch(0.4 0.02 200 / 0.6)", filter: "grayscale(1) brightness(0.6)" }}
+                />
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  };
+
   const winnerTitle =
     m.winner === "radiant" ? "ПОБЕДА СИЛ СВЕТА" : "ПОБЕДА СИЛ ТЬМЫ";
   const winnerColor = m.winner === "radiant" ? radiantColor : direColor;
@@ -241,18 +292,24 @@ function MatchPage() {
         </div>
       </div>
 
-      <TeamBlock
-        title="Свет (Radiant)"
-        team={m.radiant_team}
-        color={radiantColor}
-        won={m.winner === "radiant"}
-      />
-      <TeamBlock
-        title="Тьма (Dire)"
-        team={m.dire_team}
-        color={direColor}
-        won={m.winner === "dire"}
-      />
+      <div>
+        <TeamBlock
+          title="Свет (Radiant)"
+          team={m.radiant_team}
+          color={radiantColor}
+          won={m.winner === "radiant"}
+        />
+        <TeamDraftRow side="radiant" color={radiantColor} />
+      </div>
+      <div>
+        <TeamBlock
+          title="Тьма (Dire)"
+          team={m.dire_team}
+          color={direColor}
+          won={m.winner === "dire"}
+        />
+        <TeamDraftRow side="dire" color={direColor} />
+      </div>
       <DraftStrip />
     </div>
   );

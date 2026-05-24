@@ -225,10 +225,12 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
 
   const totalDays = Math.round((endOfWeek.getTime() - startDate.getTime()) / 86400000) + 1;
   const days: { date: string; count: number; dt: Date }[] = [];
+  const localKey = (d: Date) =>
+    `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
   for (let i = 0; i < totalDays; i++) {
     const d = new Date(startDate);
     d.setDate(d.getDate() + i);
-    const key = d.toISOString().slice(0, 10);
+    const key = localKey(d);
     days.push({ date: key, count: activity[key] || 0, dt: d });
   }
   const max = Math.max(1, ...days.map((d) => d.count));
@@ -258,9 +260,9 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
   let currentStreak = 0;
   {
     const cursor = new Date(today);
-    const todayKey = today.toISOString().slice(0, 10);
+    const todayKey = localKey(today);
     while (true) {
-      const key = cursor.toISOString().slice(0, 10);
+      const key = localKey(cursor);
       if (activity[key]) {
         currentStreak += 1;
         cursor.setDate(cursor.getDate() - 1);
@@ -374,7 +376,7 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
 
 function WordCloud({ words }: { words: { word: string; count: number }[] }) {
   // Filter to words mentioned more than 3 times
-  const filtered = words.filter((w) => w.count > 3);
+  const filtered = words.filter((w) => w.count >= 2);
   if (filtered.length === 0) return null;
   const max = filtered[0].count;
 
