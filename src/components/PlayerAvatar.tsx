@@ -54,6 +54,9 @@ export function PlayerAvatar({ steamId, name }: Props) {
     }
   }
 
+  const { data: awards = [] } = useAwards();
+  const myAwards = awards.filter((a) => a.steam_id === steamId);
+
   return (
     <div className="flex flex-col items-center gap-2">
       <div
@@ -69,6 +72,22 @@ export function PlayerAvatar({ steamId, name }: Props) {
           </span>
         )}
       </div>
+      {myAwards.length > 0 && (
+        <div className="flex flex-wrap gap-2 justify-center max-w-80">
+          {myAwards.map((a) => (
+            <a
+              key={a.id}
+              href={AWARD_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={a.name}
+              className="hover:scale-110 transition"
+            >
+              <img src={a.image_url} alt={a.name} className="w-16 h-16 object-contain" />
+            </a>
+          ))}
+        </div>
+      )}
       <input
         ref={inputRef}
         type="file"
