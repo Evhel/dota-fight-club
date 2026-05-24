@@ -54,6 +54,7 @@ function Index() {
             <Row k="Уникальных бойцов" v={global.total_players} />
             <Row k="Побед сил Света" v={global.radiant_wins} />
             <Row k="Побед сил Тьмы" v={global.dire_wins} />
+            <Row k="WR фп" v={`${global.first_pick_winrate}%`} />
           </ul>
           <div className="mt-3">
             <div className="text-xs text-muted-foreground mb-1 text-center">Игр по режимам</div>

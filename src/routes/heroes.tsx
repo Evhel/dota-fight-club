@@ -9,7 +9,7 @@ export const Route = createFileRoute("/heroes")({
   component: HeroesPage,
 });
 
-type Sort = "alpha" | "wr" | "games";
+type Sort = "alpha" | "wr" | "games" | "bans" | "first_bans";
 
 function HeroesPage() {
   const { data: matches = [] } = useMatches();
@@ -21,32 +21,50 @@ function HeroesPage() {
     if (sort === "alpha") arr.sort((a, b) => a.name.localeCompare(b.name));
     if (sort === "wr") arr.sort((a, b) => b.winrate - a.winrate);
     if (sort === "games") arr.sort((a, b) => b.games - a.games);
+    if (sort === "bans") arr.sort((a, b) => b.bans - a.bans);
+    if (sort === "first_bans") arr.sort((a, b) => b.first_bans - a.first_bans);
     return arr;
   }, [heroes, sort]);
+
+  const SortBtn = ({ k, label }: { k: Sort; label: string }) => (
+    <Button variant={sort === k ? "default" : "outline"} size="sm" onClick={() => setSort(k)}>
+      {label}
+    </Button>
+  );
+
+  const Th = ({ k, label }: { k: Sort; label: string }) => (
+    <th
+      className="px-3 py-2 text-center cursor-pointer select-none hover:text-primary"
+      onClick={() => setSort(k)}
+    >
+      {label}{sort === k ? " ▼" : ""}
+    </th>
+  );
 
   return (
     <div className="space-y-4">
       <h1 className="text-3xl font-display text-glow text-center">Герои</h1>
-      <div className="flex gap-2 justify-center">
-        <Button variant={sort === "alpha" ? "default" : "outline"} size="sm" onClick={() => setSort("alpha")}>
-          По алфавиту
-        </Button>
-        <Button variant={sort === "wr" ? "default" : "outline"} size="sm" onClick={() => setSort("wr")}>
-          По винрейту
-        </Button>
-        <Button variant={sort === "games" ? "default" : "outline"} size="sm" onClick={() => setSort("games")}>
-          По играм
-        </Button>
+      <div className="flex gap-2 justify-center flex-wrap">
+        <SortBtn k="alpha" label="По алфавиту" />
+        <SortBtn k="wr" label="По винрейту" />
+        <SortBtn k="games" label="По играм" />
+        <SortBtn k="bans" label="По банам" />
+        <SortBtn k="first_bans" label="По первым банам" />
       </div>
       <div className="panel overflow-x-auto max-w-2xl mx-auto">
         <table className="w-full text-sm text-center">
           <thead className="bg-muted/30">
             <tr>
-              <th className="px-3 py-2 text-left">Герой</th>
-              <th className="px-3 py-2 text-center">Игр</th>
-              <th className="px-3 py-2 text-center">Винрейт</th>
-              <th className="px-3 py-2 text-center">Банов</th>
-              <th className="px-3 py-2 text-center">Первых банов</th>
+              <th
+                className="px-3 py-2 text-left cursor-pointer select-none hover:text-primary"
+                onClick={() => setSort("alpha")}
+              >
+                Герой{sort === "alpha" ? " ▼" : ""}
+              </th>
+              <Th k="games" label="Игр" />
+              <Th k="wr" label="Винрейт" />
+              <Th k="bans" label="Банов" />
+              <Th k="first_bans" label="Первых банов" />
             </tr>
           </thead>
           <tbody>
