@@ -376,7 +376,7 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
 
 function WordCloud({ words }: { words: { word: string; count: number }[] }) {
   // Filter to words mentioned more than 3 times
-  const filtered = words.filter((w) => w.count > 3);
+  const filtered = words.filter((w) => w.count >= 2);
   if (filtered.length === 0) return null;
   const max = filtered[0].count;
 
