@@ -246,15 +246,14 @@ function MatchPage() {
         team={m.radiant_team}
         color={radiantColor}
         won={m.winner === "radiant"}
-        teamNum={radiantTeamNum}
       />
       <TeamBlock
         title="Тьма (Dire)"
         team={m.dire_team}
         color={direColor}
         won={m.winner === "dire"}
-        teamNum={direTeamNum}
       />
+      <DraftStrip />
     </div>
   );
 }
