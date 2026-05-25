@@ -231,8 +231,7 @@ function MatchPage() {
               <img
                 src={heroIcon(s.hero)}
                 alt={s.hero}
-                className="w-7 h-7 rounded border-2"
-                style={{ borderColor: color }}
+                className="w-7 h-7 rounded"
               />
             </Link>
           ))}
@@ -245,8 +244,8 @@ function MatchPage() {
                 <img
                   src={heroIcon(s.hero)}
                   alt={s.hero}
-                  className="w-7 h-7 rounded border-2"
-                  style={{ borderColor: "oklch(0.4 0.02 200 / 0.6)", filter: "grayscale(1) brightness(0.6)" }}
+                  className="w-7 h-7 rounded"
+                  style={{ filter: "grayscale(1) brightness(0.6)" }}
                 />
               </Link>
             ))}
