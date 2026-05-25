@@ -102,11 +102,19 @@ const STOP_WORDS = new Set([
 ]);
 
 function tokenize(text: string): string[] {
-  return text
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+  const lower = text.toLowerCase();
+  const words = lower
+    .replace(/[^\p{L}\p{N}\s?!]/gu, " ")
     .split(/\s+/)
-    .filter((w) => w.length >= 2 && !STOP_WORDS.has(w));
+    .flatMap((tok) => {
+      const out: string[] = [];
+      const m = tok.match(/[\p{L}\p{N}]+/gu);
+      if (m) out.push(...m.filter((w) => w.length >= 2 && !STOP_WORDS.has(w)));
+      const punct = tok.match(/[?!]/g);
+      if (punct) out.push(...punct);
+      return out;
+    });
+  return words;
 }
 
 export function buildIdentities(matches: MatchRow[]): Map<string, PlayerIdentity> {
