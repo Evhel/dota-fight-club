@@ -3,6 +3,7 @@ import { useMatches } from "@/lib/matches";
 import { buildIdentities, computeAllPlayerStats, formatDuration } from "@/lib/stats";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useAwards, AWARD_LINK } from "@/lib/awards";
 
 export const Route = createFileRoute("/players")({
   component: PlayersPage,
@@ -23,6 +24,7 @@ type SortKey =
 
 function PlayersPage() {
   const { data: matches = [] } = useMatches();
+  const { data: awards = [] } = useAwards();
   const players = useMemo(() => {
     const ids = buildIdentities(matches);
     return computeAllPlayerStats(matches, ids);
@@ -105,12 +107,29 @@ function PlayersPage() {
             {list.map((p) => (
               <tr key={p.steam_id} className="border-t border-border/40 hover:bg-muted/20">
                 <td className="px-3 py-2">
-                  <Link
-                    to={`/player?nick=${encodeURIComponent(p.name)}`}
-                    className="text-primary hover:underline"
-                  >
-                    {p.name}
-                  </Link>
+                  <div className="flex items-center justify-center gap-1.5">
+                    <Link
+                      to={`/player?nick=${encodeURIComponent(p.name)}`}
+                      className="text-primary hover:underline"
+                    >
+                      {p.name}
+                    </Link>
+                    {awards
+                      .filter((a) => a.steam_id === p.steam_id)
+                      .map((a) => (
+                        <a
+                          key={a.id}
+                          href={AWARD_LINK}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={a.name}
+                          className="inline-block hover:scale-110 transition"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <img src={a.image_url} alt={a.name} className="w-5 h-5 object-contain" />
+                        </a>
+                      ))}
+                  </div>
                 </td>
                 <td className="px-3 py-2">{p.games}</td>
                 <td className="px-3 py-2">{p.winrate}%</td>

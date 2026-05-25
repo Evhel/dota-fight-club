@@ -91,18 +91,17 @@ function MatchPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-xs text-center table-fixed">
             <colgroup>
-              <col style={{ width: "8%" }} />
-              <col style={{ width: "18%" }} />
-              <col style={{ width: "5%" }} />
-              <col style={{ width: "5%" }} />
-              <col style={{ width: "5%" }} />
-              <col style={{ width: "8%" }} />
               <col style={{ width: "9%" }} />
-              <col style={{ width: "11%" }} />
+              <col style={{ width: "20%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "5%" }} />
+              <col style={{ width: "9%" }} />
+              <col style={{ width: "10%" }} />
+              <col style={{ width: "12%" }} />
+              <col style={{ width: "9%" }} />
               <col style={{ width: "8%" }} />
               <col style={{ width: "8%" }} />
-              <col style={{ width: "8%" }} />
-              <col style={{ width: "7%" }} />
             </colgroup>
             <thead className="text-muted-foreground">
               <tr>
@@ -115,7 +114,6 @@ function MatchPage() {
                 <th className="py-1 px-1">LH|DN</th>
                 <th className="py-1 px-1">GPM|XPM</th>
                 <th className="py-1 px-1">DMG</th>
-                <th className="py-1 px-1">Got DMG</th>
                 <th className="py-1 px-1">HEAL</th>
                 <th className="py-1 px-1">BLD</th>
               </tr>
@@ -130,7 +128,6 @@ function MatchPage() {
                 const gpm = Math.round(m.gpm?.[p.nickname] ?? m.gold_per_minute?.[p.nickname] ?? 0);
                 const xpm = Math.round(m.xpm?.[p.nickname] ?? m.xp_per_minute?.[p.nickname] ?? 0);
                 const dmg = m.hero_damage?.[p.nickname] ?? 0;
-                const taken = m.damage_taken?.[p.nickname] ?? 0;
                 const heal = m.hero_healing?.[p.nickname] ?? 0;
                 const bld = m.tower_damage?.[p.nickname] ?? 0;
                 const k1k = (v: number) => `${(v / 1000).toFixed(1)}k`;
@@ -161,7 +158,6 @@ function MatchPage() {
                     <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.15 80)" }}>{lh}</span>|<span style={{ color: "oklch(0.7 0.15 200)" }}>{dn}</span></td>
                     <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.18 60)" }}>{gpm}</span>|<span style={{ color: "oklch(0.72 0.18 280)" }}>{xpm}</span></td>
                     <td className="py-1 px-1">{k1k(dmg)}</td>
-                    <td className="py-1 px-1">{k1k(taken)}</td>
                     <td className="py-1 px-1">{k1k(heal)}</td>
                     <td className="py-1 px-1">{k1k(bld)}</td>
                   </tr>
@@ -231,8 +227,7 @@ function MatchPage() {
               <img
                 src={heroIcon(s.hero)}
                 alt={s.hero}
-                className="w-7 h-7 rounded border-2"
-                style={{ borderColor: color }}
+                className="w-7 h-7 rounded"
               />
             </Link>
           ))}
@@ -245,8 +240,8 @@ function MatchPage() {
                 <img
                   src={heroIcon(s.hero)}
                   alt={s.hero}
-                  className="w-7 h-7 rounded border-2"
-                  style={{ borderColor: "oklch(0.4 0.02 200 / 0.6)", filter: "grayscale(1) brightness(0.6)" }}
+                  className="w-7 h-7 rounded"
+                  style={{ filter: "grayscale(1) brightness(0.6)" }}
                 />
               </Link>
             ))}

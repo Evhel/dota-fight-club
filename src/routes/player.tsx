@@ -121,8 +121,8 @@ function PlayerPage() {
                         : undefined
                   }
                 />
-                <Tile label="max серия побед" value={stats.max_win_streak} />
-                <Tile label="max серия поражений" value={stats.max_loss_streak} />
+                <Tile label="max серия побед" value={stats.max_win_streak} color="oklch(0.75 0.18 145)" />
+                <Tile label="max серия поражений" value={stats.max_loss_streak} color="oklch(0.65 0.22 25)" />
                 <Tile
                   label="Средний У/С/П"
                   value={`${stats.avg_kills}/${stats.avg_deaths}/${stats.avg_assists}`}
@@ -131,8 +131,8 @@ function PlayerPage() {
 
 
                 <Tile
-                  label="Макс.У/С/П | Ср.KDA"
-                  value={`${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists} | ${stats.avg_kda}`}
+                  label="Макс.У/С/П"
+                  value={`${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists}`}
                 />
                 <Tile
                   label="Макс.NW | Ср.NW"
@@ -159,10 +159,6 @@ function PlayerPage() {
                   value={`${(stats.max_dmg.value / 1000).toFixed(1)}k | ${(stats.avg_dmg / 1000).toFixed(1)}k`}
                 />
                 <Tile
-                  label="Макс.GotDMG | Ср.GotDMG"
-                  value={`${(stats.max_got.value / 1000).toFixed(1)}k | ${(stats.avg_got / 1000).toFixed(1)}k`}
-                />
-                <Tile
                   label="Макс.HEAL | Ср.HEAL"
                   value={`${(stats.max_heal.value / 1000).toFixed(1)}k | ${(stats.avg_heal / 1000).toFixed(1)}k`}
                 />
@@ -170,25 +166,23 @@ function PlayerPage() {
                   label="Макс.BLD | Ср.BLD"
                   value={`${(stats.max_bld.value / 1000).toFixed(1)}k | ${(stats.avg_bld / 1000).toFixed(1)}k`}
                 />
-                <TileWithIcon
-                  icon={WARD_OBSERVER_ICON}
-                  label="Макс."
-                  value={stats.max_obs.value}
-                  iconSize={20}
-                />
-                <TileWithIcon
-                  icon={WARD_SENTRY_ICON}
-                  label="Макс."
-                  value={stats.max_sen.value}
-                  iconSize={20}
-                />
-                <TileWithIcon
-                  icon={WARD_OBSERVER_ICON}
-                  iconStyle={{ filter: "grayscale(1) brightness(0.7)" }}
-                  label="Макс."
-                  value={stats.max_dewards.value}
-                  iconSize={20}
-                />
+                <div className="rounded-lg border border-border/40 bg-muted/20 px-3 py-2 col-span-2 sm:col-span-3 md:col-span-2">
+                  <div className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Макс. варды</div>
+                  <div className="flex items-center justify-around gap-2">
+                    <div className="flex items-center gap-1.5">
+                      <img src={WARD_OBSERVER_ICON} alt="obs" style={{ width: 28, height: 28 }} />
+                      <span className="font-display text-xl text-glow">{stats.max_obs.value}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <img src={WARD_SENTRY_ICON} alt="sen" style={{ width: 28, height: 28 }} />
+                      <span className="font-display text-xl text-glow">{stats.max_sen.value}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <img src={WARD_OBSERVER_ICON} alt="de" style={{ width: 28, height: 28, filter: "grayscale(1) brightness(0.7)" }} />
+                      <span className="font-display text-xl text-glow">{stats.max_dewards.value}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Teammates + Opponents */}
@@ -270,17 +264,9 @@ function Tile({ label, value, color }: { label: string; value: number | string; 
   );
 }
 
-function TileWithIcon({ icon, label, value, iconStyle, iconSize = 16 }: { icon: string; label: string; value: number | string; iconStyle?: React.CSSProperties; iconSize?: number }) {
-  return (
-    <div className="rounded-lg border border-border/40 bg-muted/20 px-3 py-2">
-      <div className="text-xs text-muted-foreground uppercase tracking-wide flex items-center gap-1">
-        <img src={icon} alt="" style={{ width: iconSize, height: iconSize, ...iconStyle }} />
-        <span>{label}</span>
-      </div>
-      <div className="font-display text-xl text-glow mt-0.5 truncate">{value}</div>
-    </div>
-  );
-}
+
+
+
 
 function Row({ k, v, link }: { k: string; v: number | string; link?: string }) {
   return (

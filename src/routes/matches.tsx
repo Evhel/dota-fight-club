@@ -83,7 +83,7 @@ function MatchesPage() {
                 <td className="px-3 py-2">{Math.round(m.data.draft_duration_minutes)} мин</td>
                 <td
                   className="px-3 py-2 font-medium"
-                  style={{ color: m.data.winner === "radiant" ? "var(--radiant)" : "var(--dire)" }}
+                  style={{ color: m.data.winner === "radiant" ? "var(--radiant)" : "oklch(0.65 0.22 25)" }}
                 >
                   {m.data.winner === "radiant" ? "Свет" : "Тьма"}
                 </td>

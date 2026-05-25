@@ -62,7 +62,6 @@ export function PlayerAvatar({ steamId, name }: Props) {
       <div
         className="w-80 h-[28rem] rounded-lg overflow-hidden border-2 border-primary/60 bg-muted/30 flex items-center justify-center cursor-pointer hover:border-primary"
         onClick={() => inputRef.current?.click()}
-        title="Загрузить аватарку"
       >
         {url ? (
           <img src={url} alt={name} className="w-full h-full object-cover" />
@@ -96,13 +95,7 @@ export function PlayerAvatar({ steamId, name }: Props) {
         onChange={onFile}
         disabled={busy}
       />
-      <button
-        onClick={() => inputRef.current?.click()}
-        disabled={busy}
-        className="text-xs text-muted-foreground hover:text-primary underline"
-      >
-        {busy ? "Загрузка..." : url ? "Заменить аватарку" : "Загрузить аватарку"}
-      </button>
+      {busy && <div className="text-xs text-muted-foreground">Загрузка...</div>}
     </div>
   );
 }
