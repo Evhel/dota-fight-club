@@ -158,7 +158,6 @@ function MatchPage() {
                     <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.15 80)" }}>{lh}</span>|<span style={{ color: "oklch(0.7 0.15 200)" }}>{dn}</span></td>
                     <td className="py-1 px-1"><span style={{ color: "oklch(0.78 0.18 60)" }}>{gpm}</span>|<span style={{ color: "oklch(0.72 0.18 280)" }}>{xpm}</span></td>
                     <td className="py-1 px-1">{k1k(dmg)}</td>
-                    <td className="py-1 px-1">{k1k(taken)}</td>
                     <td className="py-1 px-1">{k1k(heal)}</td>
                     <td className="py-1 px-1">{k1k(bld)}</td>
                   </tr>
