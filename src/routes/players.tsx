@@ -24,6 +24,7 @@ type SortKey =
 
 function PlayersPage() {
   const { data: matches = [] } = useMatches();
+  const { data: awards = [] } = useAwards();
   const players = useMemo(() => {
     const ids = buildIdentities(matches);
     return computeAllPlayerStats(matches, ids);
