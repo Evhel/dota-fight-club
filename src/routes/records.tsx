@@ -33,7 +33,6 @@ function RecordsPage() {
     { label: "🪙 Максимум GPM", rec: records.top_gpm },
     { label: "📘 Максимум XPM", rec: records.top_xpm },
     { label: "🔥 Максимум урона (DMG)", rec: records.top_dmg, format: fmtK },
-    { label: "🩸 Максимум полученного урона (GotDMG)", rec: records.top_got, format: fmtK },
     { label: "💚 Максимум лечения (HEAL)", rec: records.top_heal, format: fmtK },
     { label: "🏰 Максимум урона по строениям (BLD)", rec: records.top_bld, format: fmtK },
   ];
