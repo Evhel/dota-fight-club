@@ -384,26 +384,59 @@ function ActivityCalendar({ activity }: { activity: Record<string, number> }) {
 }
 
 function WordCloud({ words }: { words: { word: string; count: number }[] }) {
-  // Filter to words mentioned more than 3 times
-  const filtered = words.filter((w) => w.count >= 2);
+  // Filter to words mentioned 3+ times
+  const filtered = words.filter((w) => w.count >= 3);
   if (filtered.length === 0) return null;
   const max = filtered[0].count;
+  const min = filtered[filtered.length - 1].count;
 
-  // Spiral layout aiming toward sphere
-  const W = 500;
-  const H = 280;
+  const W = 560;
+  const H = 320;
   const cx = W / 2;
   const cy = H / 2;
-  const placements = filtered.map((w, i) => {
-    const size = 0.7 + (w.count / max) * 1.6; // rem (smaller)
-    const t = i / filtered.length;
-    const angle = i * 2.399;
-    const radius = Math.sqrt(t) * Math.min(W, H) * 0.42;
-    const x = cx + Math.cos(angle) * radius;
-    const y = cy + Math.sin(angle) * radius * 0.7;
-    const opacity = 0.55 + (w.count / max) * 0.45;
-    return { ...w, x, y, size, opacity };
-  });
+  const PAD = 4;
+
+  type Box = { x: number; y: number; w: number; h: number };
+  const placed: (Box & {
+    word: string;
+    count: number;
+    size: number;
+    lightness: number;
+  })[] = [];
+
+  for (const w of filtered) {
+    const t = max === min ? 1 : (w.count - min) / (max - min);
+    const sizeRem = 0.75 + t * 1.85;
+    const fontPx = sizeRem * 16;
+    // Rough text bbox
+    const bw = w.word.length * fontPx * 0.58 + 6;
+    const bh = fontPx * 1.05;
+    const lightness = 0.55 + t * 0.4; // more frequent → lighter
+    // Spiral search for a non-overlapping spot
+    let placedOk = false;
+    for (let i = 0; i < 1400 && !placedOk; i++) {
+      const angle = i * 0.35;
+      const radius = 4 * Math.sqrt(i);
+      const x = cx + Math.cos(angle) * radius;
+      const y = cy + Math.sin(angle) * radius * 0.7;
+      const box = { x: x - bw / 2, y: y - bh / 2, w: bw, h: bh };
+      if (box.x < 2 || box.y < 2 || box.x + box.w > W - 2 || box.y + box.h > H - 2)
+        continue;
+      const hit = placed.some(
+        (p) =>
+          !(
+            box.x + box.w + PAD < p.x ||
+            p.x + p.w + PAD < box.x ||
+            box.y + box.h + PAD < p.y ||
+            p.y + p.h + PAD < box.y
+          ),
+      );
+      if (!hit) {
+        placed.push({ ...box, word: w.word, count: w.count, size: sizeRem, lightness });
+        placedOk = true;
+      }
+    }
+  }
 
   return (
     <div className="panel p-4">
@@ -412,15 +445,16 @@ function WordCloud({ words }: { words: { word: string; count: number }[] }) {
         className="relative mx-auto"
         style={{ width: "100%", maxWidth: W, height: H }}
       >
-        {placements.map((p) => (
+        {placed.map((p) => (
           <span
             key={p.word}
-            className="absolute text-primary whitespace-nowrap -translate-x-1/2 -translate-y-1/2 select-none"
+            className="absolute whitespace-nowrap select-none font-medium"
             style={{
-              left: `${(p.x / W) * 100}%`,
-              top: `${(p.y / H) * 100}%`,
+              left: `${((p.x + p.w / 2) / W) * 100}%`,
+              top: `${((p.y + p.h / 2) / H) * 100}%`,
+              transform: "translate(-50%, -50%)",
               fontSize: `${p.size}rem`,
-              opacity: p.opacity,
+              color: `oklch(${p.lightness} 0.12 145)`,
               lineHeight: 1,
             }}
             title={`${p.word} — ${p.count}`}
