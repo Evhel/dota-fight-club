@@ -3,6 +3,7 @@ import { useMatches } from "@/lib/matches";
 import { buildIdentities, computeAllPlayerStats, formatDuration } from "@/lib/stats";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useAwards, AWARD_LINK } from "@/lib/awards";
 
 export const Route = createFileRoute("/players")({
   component: PlayersPage,
