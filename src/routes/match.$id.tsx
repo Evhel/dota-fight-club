@@ -129,7 +129,6 @@ function MatchPage() {
                 const xpm = Math.round(m.xpm?.[p.nickname] ?? m.xp_per_minute?.[p.nickname] ?? 0);
                 const dmg = m.hero_damage?.[p.nickname] ?? 0;
                 const heal = m.hero_healing?.[p.nickname] ?? 0;
-                const heal = m.hero_healing?.[p.nickname] ?? 0;
                 const bld = m.tower_damage?.[p.nickname] ?? 0;
                 const k1k = (v: number) => `${(v / 1000).toFixed(1)}k`;
                 return (
