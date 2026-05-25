@@ -36,6 +36,15 @@ function Index() {
         <h1 className="text-3xl md:text-4xl font-display text-glow">
           Бойцовский Клуб Dota 2
         </h1>
+        <div className="text-xl md:text-2xl font-display mt-1">🌟 2 Сезон 🌟</div>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1eWdSEiJrhVUUe84iyFrD9SlGWktPkVfD7UXd-gaUZug/edit?gid=0#gid=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm md:text-base text-muted-foreground hover:text-primary hover:underline mt-1 inline-block"
+        >
+          1 Сезон
+        </a>
         <div className="mt-4 flex flex-wrap gap-10 justify-center text-base">
           <Stat label="Игр" value={global.total_games} />
           <Stat label="Бойцов" value={global.total_players} />
