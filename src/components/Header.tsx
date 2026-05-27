@@ -12,6 +12,7 @@ const NAV = [
   { to: "/player", label: "Игрок" },
   { to: "/records", label: "Рекорды" },
   { to: "/vs", label: "Игрок vs Игрок" },
+  { to: "/connections", label: "Связь" },
 ];
 
 export function Header() {

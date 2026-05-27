@@ -16,6 +16,7 @@ import { Route as PlayerRouteImport } from './routes/player'
 import { Route as MatchesRouteImport } from './routes/matches'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as HeroesRouteImport } from './routes/heroes'
+import { Route as ConnectionsRouteImport } from './routes/connections'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as MatchIndexRouteImport } from './routes/match.index'
@@ -57,6 +58,11 @@ const HeroesRoute = HeroesRouteImport.update({
   path: '/heroes',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ConnectionsRoute = ConnectionsRouteImport.update({
+  id: '/connections',
+  path: '/connections',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminRoute = AdminRouteImport.update({
   id: '/admin',
   path: '/admin',
@@ -86,6 +92,7 @@ const AdminAwardsRoute = AdminAwardsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/connections': typeof ConnectionsRoute
   '/heroes': typeof HeroesRoute
   '/login': typeof LoginRoute
   '/matches': typeof MatchesRoute
@@ -100,6 +107,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/connections': typeof ConnectionsRoute
   '/heroes': typeof HeroesRoute
   '/login': typeof LoginRoute
   '/matches': typeof MatchesRoute
@@ -115,6 +123,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/connections': typeof ConnectionsRoute
   '/heroes': typeof HeroesRoute
   '/login': typeof LoginRoute
   '/matches': typeof MatchesRoute
@@ -131,6 +140,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/admin'
+    | '/connections'
     | '/heroes'
     | '/login'
     | '/matches'
@@ -145,6 +155,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/admin'
+    | '/connections'
     | '/heroes'
     | '/login'
     | '/matches'
@@ -159,6 +170,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/admin'
+    | '/connections'
     | '/heroes'
     | '/login'
     | '/matches'
@@ -174,6 +186,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRoute
+  ConnectionsRoute: typeof ConnectionsRoute
   HeroesRoute: typeof HeroesRoute
   LoginRoute: typeof LoginRoute
   MatchesRoute: typeof MatchesRoute
@@ -237,6 +250,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HeroesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/connections': {
+      id: '/connections'
+      path: '/connections'
+      fullPath: '/connections'
+      preLoaderRoute: typeof ConnectionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin': {
       id: '/admin'
       path: '/admin'
@@ -278,6 +298,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRoute,
+  ConnectionsRoute: ConnectionsRoute,
   HeroesRoute: HeroesRoute,
   LoginRoute: LoginRoute,
   MatchesRoute: MatchesRoute,
