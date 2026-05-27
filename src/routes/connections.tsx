@@ -62,26 +62,35 @@ function ConnectionsPage() {
 
   const identities = useMemo(() => buildIdentities(matches), [matches]);
 
-  // Time slider bounds — fixed range 2013 → now
-  const { minT, maxT } = useMemo(() => {
-    return { minT: TIME_MIN, maxT: Date.now() };
+  const admin = useAdmin();
+  const queryClient = useQueryClient();
+
+  // Milestones: each Jan 1 from 2013..currentYear + season starts + "now".
+  // Slider snaps to these — keeps the number of distinct API requests small.
+  const milestones = useMemo(() => {
+    const now = Date.now();
+    const list: { t: number; label: string; kind: "year" | "season" | "now" }[] = [];
+    const currentYear = new Date(now).getUTCFullYear();
+    for (let y = 2013; y <= currentYear; y++) {
+      list.push({ t: Date.UTC(y, 0, 1), label: String(y), kind: "year" });
+    }
+    list.push({ t: SEASON_1, label: "1 сезон", kind: "season" });
+    list.push({ t: SEASON_2, label: "2 сезон", kind: "season" });
+    list.push({ t: now, label: "сейчас", kind: "now" });
+    list.sort((a, b) => a.t - b.t);
+    return list;
   }, []);
 
-  const [timeT, setTimeT] = useState<number>(maxT);
-  useEffect(() => {
-    setTimeT(maxT);
-  }, [maxT]);
+  const minT = milestones[0].t;
+  const maxT = milestones[milestones.length - 1].t;
 
-  // Debounce slider → "days lookback" for OpenDota API
-  const [debouncedTime, setDebouncedTime] = useState(timeT);
-  useEffect(() => {
-    const id = setTimeout(() => setDebouncedTime(timeT), 500);
-    return () => clearTimeout(id);
-  }, [timeT]);
+  const [milestoneIdx, setMilestoneIdx] = useState(milestones.length - 1);
+  const timeT = milestones[milestoneIdx].t;
+
   const daysParam = useMemo(() => {
-    const d = Math.round((Date.now() - debouncedTime) / (24 * 60 * 60 * 1000));
+    const d = Math.round((Date.now() - timeT) / (24 * 60 * 60 * 1000));
     return d <= 0 ? null : d; // null = all time
-  }, [debouncedTime]);
+  }, [timeT]);
 
   // Layout controls
   const [linkDistance, setLinkDistance] = useState(160);
