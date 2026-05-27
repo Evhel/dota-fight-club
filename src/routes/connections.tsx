@@ -60,20 +60,10 @@ function ConnectionsPage() {
 
   const identities = useMemo(() => buildIdentities(matches), [matches]);
 
-  // Time slider bounds
+  // Time slider bounds — fixed range 2013 → now
   const { minT, maxT } = useMemo(() => {
-    if (!matches.length) {
-      return { minT: SEASON_1, maxT: Date.now() };
-    }
-    let mn = Infinity;
-    let mx = -Infinity;
-    for (const m of matches) {
-      const t = new Date(m.start_time).getTime();
-      if (t < mn) mn = t;
-      if (t > mx) mx = t;
-    }
-    return { minT: Math.min(mn, SEASON_1), maxT: Math.max(mx, Date.now()) };
-  }, [matches]);
+    return { minT: TIME_MIN, maxT: Date.now() };
+  }, []);
 
   const [timeT, setTimeT] = useState<number>(maxT);
   useEffect(() => {
