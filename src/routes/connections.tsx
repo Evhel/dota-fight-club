@@ -97,13 +97,13 @@ function ConnectionsPage() {
     return list;
   }, [identities]);
 
-  // Fetch peers from OpenDota for each roster player (cached 24h in localStorage)
+  // Fetch peers from OpenDota for each roster player (cached 7 days)
   const peerQueries = useQueries({
     queries: roster.map((p) => ({
       queryKey: ["od-peers", p.account_id, daysParam],
       queryFn: () => fetchPeers(p.account_id, daysParam),
-      staleTime: 60 * 60 * 1000,
-      gcTime: 24 * 60 * 60 * 1000,
+      staleTime: WEEK_MS,
+      gcTime: WEEK_MS,
       retry: 1,
     })),
   });
