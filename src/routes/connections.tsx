@@ -35,6 +35,8 @@ interface GraphEdge {
 
 const SEASON_1 = new Date("2026-02-21T00:00:00Z").getTime();
 const SEASON_2 = new Date("2026-05-15T00:00:00Z").getTime();
+const TIME_MIN = new Date("2013-01-01T00:00:00Z").getTime();
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 
 function useAvatars() {
   return useQuery({
@@ -58,20 +60,10 @@ function ConnectionsPage() {
 
   const identities = useMemo(() => buildIdentities(matches), [matches]);
 
-  // Time slider bounds
+  // Time slider bounds — fixed range 2013 → now
   const { minT, maxT } = useMemo(() => {
-    if (!matches.length) {
-      return { minT: SEASON_1, maxT: Date.now() };
-    }
-    let mn = Infinity;
-    let mx = -Infinity;
-    for (const m of matches) {
-      const t = new Date(m.start_time).getTime();
-      if (t < mn) mn = t;
-      if (t > mx) mx = t;
-    }
-    return { minT: Math.min(mn, SEASON_1), maxT: Math.max(mx, Date.now()) };
-  }, [matches]);
+    return { minT: TIME_MIN, maxT: Date.now() };
+  }, []);
 
   const [timeT, setTimeT] = useState<number>(maxT);
   useEffect(() => {
@@ -105,13 +97,13 @@ function ConnectionsPage() {
     return list;
   }, [identities]);
 
-  // Fetch peers from OpenDota for each roster player (cached 24h in localStorage)
+  // Fetch peers from OpenDota for each roster player (cached 7 days)
   const peerQueries = useQueries({
     queries: roster.map((p) => ({
       queryKey: ["od-peers", p.account_id, daysParam],
       queryFn: () => fetchPeers(p.account_id, daysParam),
-      staleTime: 60 * 60 * 1000,
-      gcTime: 24 * 60 * 60 * 1000,
+      staleTime: WEEK_MS,
+      gcTime: WEEK_MS,
       retry: 1,
     })),
   });
@@ -314,6 +306,16 @@ function ConnectionsPage() {
   const span = Math.max(1, maxT - minT);
   const s1Pct = ((SEASON_1 - minT) / span) * 100;
   const s2Pct = ((SEASON_2 - minT) / span) * 100;
+  const yearTicks = useMemo(() => {
+    const ticks: { year: number; pct: number }[] = [];
+    const startYear = new Date(minT).getUTCFullYear();
+    const endYear = new Date(maxT).getUTCFullYear();
+    for (let y = startYear; y <= endYear; y += 2) {
+      const t = Date.UTC(y, 0, 1);
+      ticks.push({ year: y, pct: ((t - minT) / span) * 100 });
+    }
+    return ticks;
+  }, [minT, maxT, span]);
 
   const nodes = nodesStateRef.current.filter((n) => visibleNodeIds.has(n.id));
   const nodeById = new Map(nodes.map((n) => [n.id, n]));
@@ -335,6 +337,53 @@ function ConnectionsPage() {
             Сбросить фильтр
           </button>
         )}
+      </div>
+
+      {/* Full-width time slider */}
+      <div className="rounded-lg border border-border/60 bg-card/40 p-4">
+        <div className="flex justify-between text-xs text-muted-foreground mb-2">
+          <span>Дата (с 2013 по сегодня)</span>
+          <span className="text-foreground">{dateLabel}</span>
+        </div>
+        <div className="relative pt-6 pb-2 w-full">
+          {/* milestone markers */}
+          <div
+            className="absolute top-0 text-[10px] text-amber-400 -translate-x-1/2 z-10"
+            style={{ left: `${s1Pct}%` }}
+            title="Начало 1-го сезона — 21.02.2026"
+          >
+            <div className="text-center whitespace-nowrap">1 сезон</div>
+            <div className="w-px h-4 bg-amber-400 mx-auto" />
+          </div>
+          <div
+            className="absolute top-0 text-[10px] text-emerald-400 -translate-x-1/2 z-10"
+            style={{ left: `${s2Pct}%` }}
+            title="Начало 2-го сезона — 15.05.2026"
+          >
+            <div className="text-center whitespace-nowrap">2 сезон</div>
+            <div className="w-px h-4 bg-emerald-400 mx-auto" />
+          </div>
+          <Slider
+            className="mt-4"
+            min={minT}
+            max={maxT}
+            step={24 * 60 * 60 * 1000}
+            value={[timeT]}
+            onValueChange={(v) => setTimeT(v[0])}
+          />
+          {/* year ticks */}
+          <div className="relative mt-2 h-4 text-[10px] text-muted-foreground">
+            {yearTicks.map((yt) => (
+              <div
+                key={yt.year}
+                className="absolute -translate-x-1/2"
+                style={{ left: `${yt.pct}%` }}
+              >
+                {yt.year}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="grid lg:grid-cols-[1fr_280px] gap-4">
@@ -455,39 +504,6 @@ function ConnectionsPage() {
             />
           </div>
 
-          <div>
-            <div className="flex justify-between text-xs text-muted-foreground mb-2">
-              <span>Дата</span>
-              <span>{dateLabel}</span>
-            </div>
-            <div className="relative pt-4 pb-6">
-              {/* milestone markers */}
-              <div
-                className="absolute top-0 text-[10px] text-amber-400 -translate-x-1/2"
-                style={{ left: `${s1Pct}%` }}
-                title="Начало 1-го сезона"
-              >
-                <div className="text-center whitespace-nowrap">1 сезон</div>
-                <div className="w-px h-3 bg-amber-400 mx-auto" />
-              </div>
-              <div
-                className="absolute top-0 text-[10px] text-emerald-400 -translate-x-1/2"
-                style={{ left: `${s2Pct}%` }}
-                title="Начало 2-го сезона"
-              >
-                <div className="text-center whitespace-nowrap">2 сезон</div>
-                <div className="w-px h-3 bg-emerald-400 mx-auto" />
-              </div>
-              <Slider
-                className="mt-6"
-                min={minT}
-                max={maxT}
-                step={24 * 60 * 60 * 1000}
-                value={[timeT]}
-                onValueChange={(v) => setTimeT(v[0])}
-              />
-            </div>
-          </div>
 
           <div className="text-xs text-muted-foreground space-y-1 pt-2 border-t border-border/60">
             <div>

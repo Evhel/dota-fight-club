@@ -22,10 +22,12 @@ export interface OpenDotaPeer {
   win: number;
 }
 
-const TTL_MS = 24 * 60 * 60 * 1000;
+// Refresh peers data once per week
+const TTL_MS = 7 * 24 * 60 * 60 * 1000;
+const CACHE_VERSION = "v2";
 
 function cacheKey(accountId: number, days: number | null) {
-  return `od-peers:${accountId}:${days ?? "all"}`;
+  return `od-peers:${CACHE_VERSION}:${accountId}:${days ?? "all"}`;
 }
 
 function readCache(accountId: number, days: number | null): OpenDotaPeer[] | null {
