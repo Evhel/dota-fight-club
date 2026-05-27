@@ -317,16 +317,11 @@ function ConnectionsPage() {
   const span = Math.max(1, maxT - minT);
   const s1Pct = ((SEASON_1 - minT) / span) * 100;
   const s2Pct = ((SEASON_2 - minT) / span) * 100;
-  const yearTicks = useMemo(() => {
-    const ticks: { year: number; pct: number }[] = [];
-    const startYear = new Date(minT).getUTCFullYear();
-    const endYear = new Date(maxT).getUTCFullYear();
-    for (let y = startYear; y <= endYear; y += 2) {
-      const t = Date.UTC(y, 0, 1);
-      ticks.push({ year: y, pct: ((t - minT) / span) * 100 });
-    }
-    return ticks;
-  }, [minT, maxT, span]);
+
+  const handleRefresh = () => {
+    clearPeersCache();
+    queryClient.invalidateQueries({ queryKey: ["od-peers"] });
+  };
 
   const nodes = nodesStateRef.current.filter((n) => visibleNodeIds.has(n.id));
   const nodeById = new Map(nodes.map((n) => [n.id, n]));
