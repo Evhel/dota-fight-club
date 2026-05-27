@@ -35,6 +35,8 @@ interface GraphEdge {
 
 const SEASON_1 = new Date("2026-02-21T00:00:00Z").getTime();
 const SEASON_2 = new Date("2026-05-15T00:00:00Z").getTime();
+const TIME_MIN = new Date("2013-01-01T00:00:00Z").getTime();
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 
 function useAvatars() {
   return useQuery({
