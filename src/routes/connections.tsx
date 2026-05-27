@@ -3,9 +3,11 @@ import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { useQueries, useQuery } from "@tanstack/react-query";
+import { useQueries, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Slider } from "@/components/ui/slider";
-import { fetchPeers, steamIdToAccountId } from "@/lib/opendota";
+import { fetchPeers, steamIdToAccountId, clearPeersCache } from "@/lib/opendota";
+import { useAdmin } from "@/lib/admin";
+import { RefreshCw } from "lucide-react";
 
 
 export const Route = createFileRoute("/connections")({
