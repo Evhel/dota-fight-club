@@ -329,6 +329,53 @@ function ConnectionsPage() {
         )}
       </div>
 
+      {/* Full-width time slider */}
+      <div className="rounded-lg border border-border/60 bg-card/40 p-4">
+        <div className="flex justify-between text-xs text-muted-foreground mb-2">
+          <span>Дата (с 2013 по сегодня)</span>
+          <span className="text-foreground">{dateLabel}</span>
+        </div>
+        <div className="relative pt-6 pb-2 w-full">
+          {/* milestone markers */}
+          <div
+            className="absolute top-0 text-[10px] text-amber-400 -translate-x-1/2 z-10"
+            style={{ left: `${s1Pct}%` }}
+            title="Начало 1-го сезона — 21.02.2026"
+          >
+            <div className="text-center whitespace-nowrap">1 сезон</div>
+            <div className="w-px h-4 bg-amber-400 mx-auto" />
+          </div>
+          <div
+            className="absolute top-0 text-[10px] text-emerald-400 -translate-x-1/2 z-10"
+            style={{ left: `${s2Pct}%` }}
+            title="Начало 2-го сезона — 15.05.2026"
+          >
+            <div className="text-center whitespace-nowrap">2 сезон</div>
+            <div className="w-px h-4 bg-emerald-400 mx-auto" />
+          </div>
+          <Slider
+            className="mt-4"
+            min={minT}
+            max={maxT}
+            step={24 * 60 * 60 * 1000}
+            value={[timeT]}
+            onValueChange={(v) => setTimeT(v[0])}
+          />
+          {/* year ticks */}
+          <div className="relative mt-2 h-4 text-[10px] text-muted-foreground">
+            {yearTicks.map((yt) => (
+              <div
+                key={yt.year}
+                className="absolute -translate-x-1/2"
+                style={{ left: `${yt.pct}%` }}
+              >
+                {yt.year}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div className="grid lg:grid-cols-[1fr_280px] gap-4">
         <div className="rounded-lg border border-border/60 bg-card/40 overflow-hidden">
           <svg
