@@ -3,8 +3,10 @@ import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { useQuery } from "@tanstack/react-query";
+import { useQueries, useQuery } from "@tanstack/react-query";
 import { Slider } from "@/components/ui/slider";
+import { fetchPeers, steamIdToAccountId } from "@/lib/opendota";
+
 
 export const Route = createFileRoute("/connections")({
   component: ConnectionsPage,
@@ -76,60 +78,96 @@ function ConnectionsPage() {
     setTimeT(maxT);
   }, [maxT]);
 
+  // Debounce slider → "days lookback" for OpenDota API
+  const [debouncedTime, setDebouncedTime] = useState(timeT);
+  useEffect(() => {
+    const id = setTimeout(() => setDebouncedTime(timeT), 500);
+    return () => clearTimeout(id);
+  }, [timeT]);
+  const daysParam = useMemo(() => {
+    const d = Math.round((Date.now() - debouncedTime) / (24 * 60 * 60 * 1000));
+    return d <= 0 ? null : d; // null = all time
+  }, [debouncedTime]);
+
   // Layout controls
   const [linkDistance, setLinkDistance] = useState(160);
   const [repulsion, setRepulsion] = useState(2200);
 
   const [selected, setSelected] = useState<string | null>(null);
 
-  // Compute pair counts limited by time
-  const { nodes: baseNodes, edges: baseEdges } = useMemo(() => {
-    const pairCounts = new Map<string, number>();
-    const playerGames = new Map<string, number>();
-    const playerMates = new Map<string, Set<string>>();
-
-    for (const m of matches) {
-      const t = new Date(m.start_time).getTime();
-      if (t > timeT) continue;
-      const sides = [m.data.radiant_team, m.data.dire_team];
-      for (const team of sides) {
-        for (const p of team) {
-          const sid = String(p.steam_id);
-          playerGames.set(sid, (playerGames.get(sid) || 0) + 1);
-        }
-        for (let i = 0; i < team.length; i++) {
-          for (let j = i + 1; j < team.length; j++) {
-            const a = String(team[i].steam_id);
-            const b = String(team[j].steam_id);
-            const key = a < b ? `${a}|${b}` : `${b}|${a}`;
-            pairCounts.set(key, (pairCounts.get(key) || 0) + 1);
-            if (!playerMates.has(a)) playerMates.set(a, new Set());
-            if (!playerMates.has(b)) playerMates.set(b, new Set());
-            playerMates.get(a)!.add(b);
-            playerMates.get(b)!.add(a);
-          }
-        }
-      }
+  // Roster from local matches (steam_id list + display names)
+  const roster = useMemo(() => {
+    const list: { steam_id: string; account_id: number; name: string }[] = [];
+    for (const [sid, id] of identities) {
+      const acc = steamIdToAccountId(sid);
+      if (acc != null) list.push({ steam_id: sid, account_id: acc, name: id.display_name });
     }
+    return list;
+  }, [identities]);
+
+  // Fetch peers from OpenDota for each roster player (cached 24h in localStorage)
+  const peerQueries = useQueries({
+    queries: roster.map((p) => ({
+      queryKey: ["od-peers", p.account_id, daysParam],
+      queryFn: () => fetchPeers(p.account_id, daysParam),
+      staleTime: 60 * 60 * 1000,
+      gcTime: 24 * 60 * 60 * 1000,
+      retry: 1,
+    })),
+  });
+
+  const peerLoading = peerQueries.some((q) => q.isLoading);
+  const peerErrors = peerQueries.filter((q) => q.isError).length;
+
+  // Build graph from peer data, restricted to roster members
+  const { baseNodes, baseEdges } = useMemo(() => {
+    const accToSteam = new Map<number, string>();
+    const accToName = new Map<number, string>();
+    for (const p of roster) {
+      accToSteam.set(p.account_id, p.steam_id);
+      accToName.set(p.account_id, p.name);
+    }
+    const playerMates = new Map<string, Set<string>>();
+    const pairCounts = new Map<string, number>();
+
+    roster.forEach((p, i) => {
+      const peers = peerQueries[i]?.data;
+      if (!peers) return;
+      for (const peer of peers) {
+        const otherSid = accToSteam.get(peer.account_id);
+        if (!otherSid) continue; // only show roster members
+        const a = p.steam_id;
+        const b = otherSid;
+        if (a === b) continue;
+        const key = a < b ? `${a}|${b}` : `${b}|${a}`;
+        // OpenDota returns the same pair from both sides; take the max for stability
+        const prev = pairCounts.get(key) || 0;
+        if (peer.with_games > prev) pairCounts.set(key, peer.with_games);
+        if (!playerMates.has(a)) playerMates.set(a, new Set());
+        if (peer.with_games > 0) playerMates.get(a)!.add(b);
+      }
+    });
 
     const edges: GraphEdge[] = [];
     for (const [k, g] of pairCounts) {
+      if (g <= 0) continue;
       const [a, b] = k.split("|");
       edges.push({ a, b, games: g });
     }
 
-    const nodes: Omit<GraphNode, "x" | "y" | "vx" | "vy" | "r">[] = [];
-    for (const [sid, games] of playerGames) {
-      const id = identities.get(sid);
-      nodes.push({
-        id: sid,
-        name: id?.display_name || sid,
-        degree: playerMates.get(sid)?.size || 0,
-        games,
-      });
-    }
-    return { nodes, edges };
-  }, [matches, timeT, identities]);
+    const nodes: Omit<GraphNode, "x" | "y" | "vx" | "vy" | "r">[] = roster.map((p) => ({
+      id: p.steam_id,
+      name: p.name,
+      degree: playerMates.get(p.steam_id)?.size || 0,
+      games: peerQueries[roster.indexOf(p)]?.data?.reduce(
+        (s, x) => s + (accToSteam.has(x.account_id) ? x.with_games : 0),
+        0,
+      ) ?? 0,
+    }));
+
+    return { baseNodes: nodes, baseEdges: edges };
+  }, [roster, peerQueries.map((q) => q.dataUpdatedAt).join(",")]); // eslint-disable-line react-hooks/exhaustive-deps
+
 
   // Filter graph by selected node
   const visibleNodeIds = useMemo(() => {
@@ -452,10 +490,19 @@ function ConnectionsPage() {
           </div>
 
           <div className="text-xs text-muted-foreground space-y-1 pt-2 border-t border-border/60">
+            <div>
+              Источник: <span className="text-foreground">OpenDota API</span>
+              {peerLoading && <span className="text-amber-400"> · загрузка…</span>}
+              {peerErrors > 0 && (
+                <span className="text-red-400"> · ошибок: {peerErrors}</span>
+              )}
+            </div>
+            <div>Период: с <span className="text-foreground">{dateLabel}</span> по сегодня</div>
             <div>Игроков: <span className="text-foreground">{nodes.length}</span></div>
             <div>Связей: <span className="text-foreground">{filteredEdges.length}</span></div>
             <div>Макс. игр в паре: <span className="text-foreground">{maxGames}</span></div>
           </div>
+
         </div>
       </div>
     </div>
