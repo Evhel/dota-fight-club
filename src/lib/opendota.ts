@@ -68,3 +68,18 @@ export async function fetchPeers(
   writeCache(accountId, days, json);
   return json;
 }
+
+export function clearPeersCache(): number {
+  if (typeof window === "undefined") return 0;
+  let n = 0;
+  const keys: string[] = [];
+  for (let i = 0; i < window.localStorage.length; i++) {
+    const k = window.localStorage.key(i);
+    if (k && k.startsWith("od-peers:")) keys.push(k);
+  }
+  for (const k of keys) {
+    window.localStorage.removeItem(k);
+    n++;
+  }
+  return n;
+}

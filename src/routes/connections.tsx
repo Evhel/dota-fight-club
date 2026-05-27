@@ -3,9 +3,11 @@ import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { useQueries, useQuery } from "@tanstack/react-query";
+import { useQueries, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Slider } from "@/components/ui/slider";
-import { fetchPeers, steamIdToAccountId } from "@/lib/opendota";
+import { fetchPeers, steamIdToAccountId, clearPeersCache } from "@/lib/opendota";
+import { useAdmin } from "@/lib/admin";
+import { RefreshCw } from "lucide-react";
 
 
 export const Route = createFileRoute("/connections")({
@@ -60,26 +62,35 @@ function ConnectionsPage() {
 
   const identities = useMemo(() => buildIdentities(matches), [matches]);
 
-  // Time slider bounds — fixed range 2013 → now
-  const { minT, maxT } = useMemo(() => {
-    return { minT: TIME_MIN, maxT: Date.now() };
+  const admin = useAdmin();
+  const queryClient = useQueryClient();
+
+  // Milestones: each Jan 1 from 2013..currentYear + season starts + "now".
+  // Slider snaps to these — keeps the number of distinct API requests small.
+  const milestones = useMemo(() => {
+    const now = Date.now();
+    const list: { t: number; label: string; kind: "year" | "season" | "now" }[] = [];
+    const currentYear = new Date(now).getUTCFullYear();
+    for (let y = 2013; y <= currentYear; y++) {
+      list.push({ t: Date.UTC(y, 0, 1), label: String(y), kind: "year" });
+    }
+    list.push({ t: SEASON_1, label: "1 сезон", kind: "season" });
+    list.push({ t: SEASON_2, label: "2 сезон", kind: "season" });
+    list.push({ t: now, label: "сейчас", kind: "now" });
+    list.sort((a, b) => a.t - b.t);
+    return list;
   }, []);
 
-  const [timeT, setTimeT] = useState<number>(maxT);
-  useEffect(() => {
-    setTimeT(maxT);
-  }, [maxT]);
+  const minT = milestones[0].t;
+  const maxT = milestones[milestones.length - 1].t;
 
-  // Debounce slider → "days lookback" for OpenDota API
-  const [debouncedTime, setDebouncedTime] = useState(timeT);
-  useEffect(() => {
-    const id = setTimeout(() => setDebouncedTime(timeT), 500);
-    return () => clearTimeout(id);
-  }, [timeT]);
+  const [milestoneIdx, setMilestoneIdx] = useState(milestones.length - 1);
+  const timeT = milestones[milestoneIdx].t;
+
   const daysParam = useMemo(() => {
-    const d = Math.round((Date.now() - debouncedTime) / (24 * 60 * 60 * 1000));
+    const d = Math.round((Date.now() - timeT) / (24 * 60 * 60 * 1000));
     return d <= 0 ? null : d; // null = all time
-  }, [debouncedTime]);
+  }, [timeT]);
 
   // Layout controls
   const [linkDistance, setLinkDistance] = useState(160);
@@ -306,16 +317,11 @@ function ConnectionsPage() {
   const span = Math.max(1, maxT - minT);
   const s1Pct = ((SEASON_1 - minT) / span) * 100;
   const s2Pct = ((SEASON_2 - minT) / span) * 100;
-  const yearTicks = useMemo(() => {
-    const ticks: { year: number; pct: number }[] = [];
-    const startYear = new Date(minT).getUTCFullYear();
-    const endYear = new Date(maxT).getUTCFullYear();
-    for (let y = startYear; y <= endYear; y += 2) {
-      const t = Date.UTC(y, 0, 1);
-      ticks.push({ year: y, pct: ((t - minT) / span) * 100 });
-    }
-    return ticks;
-  }, [minT, maxT, span]);
+
+  const handleRefresh = () => {
+    clearPeersCache();
+    queryClient.invalidateQueries({ queryKey: ["od-peers"] });
+  };
 
   const nodes = nodesStateRef.current.filter((n) => visibleNodeIds.has(n.id));
   const nodeById = new Map(nodes.map((n) => [n.id, n]));
@@ -337,51 +343,57 @@ function ConnectionsPage() {
             Сбросить фильтр
           </button>
         )}
+        {admin && (
+          <button
+            onClick={handleRefresh}
+            className="px-3 py-1.5 rounded-md text-sm bg-primary/15 hover:bg-primary/25 border border-primary/40 text-primary inline-flex items-center gap-1.5"
+            title="Очистить кэш и заново подгрузить данные с OpenDota"
+          >
+            <RefreshCw className="w-3.5 h-3.5" />
+            Обновить сейчас
+          </button>
+        )}
       </div>
 
-      {/* Full-width time slider */}
+      {/* Full-width time slider — snaps to milestones (years + seasons + now) */}
       <div className="rounded-lg border border-border/60 bg-card/40 p-4">
         <div className="flex justify-between text-xs text-muted-foreground mb-2">
-          <span>Дата (с 2013 по сегодня)</span>
+          <span>Дата (снэп по вехам — данные подгружаются только для них)</span>
           <span className="text-foreground">{dateLabel}</span>
         </div>
-        <div className="relative pt-6 pb-2 w-full">
-          {/* milestone markers */}
-          <div
-            className="absolute top-0 text-[10px] text-amber-400 -translate-x-1/2 z-10"
-            style={{ left: `${s1Pct}%` }}
-            title="Начало 1-го сезона — 21.02.2026"
-          >
-            <div className="text-center whitespace-nowrap">1 сезон</div>
-            <div className="w-px h-4 bg-amber-400 mx-auto" />
-          </div>
-          <div
-            className="absolute top-0 text-[10px] text-emerald-400 -translate-x-1/2 z-10"
-            style={{ left: `${s2Pct}%` }}
-            title="Начало 2-го сезона — 15.05.2026"
-          >
-            <div className="text-center whitespace-nowrap">2 сезон</div>
-            <div className="w-px h-4 bg-emerald-400 mx-auto" />
-          </div>
+        <div className="relative pt-2 pb-2 w-full">
           <Slider
-            className="mt-4"
-            min={minT}
-            max={maxT}
-            step={24 * 60 * 60 * 1000}
-            value={[timeT]}
-            onValueChange={(v) => setTimeT(v[0])}
+            min={0}
+            max={milestones.length - 1}
+            step={1}
+            value={[milestoneIdx]}
+            onValueChange={(v) => setMilestoneIdx(v[0])}
           />
-          {/* year ticks */}
-          <div className="relative mt-2 h-4 text-[10px] text-muted-foreground">
-            {yearTicks.map((yt) => (
-              <div
-                key={yt.year}
-                className="absolute -translate-x-1/2"
-                style={{ left: `${yt.pct}%` }}
-              >
-                {yt.year}
-              </div>
-            ))}
+          {/* milestone tick labels */}
+          <div className="relative mt-3 h-8 text-[10px]">
+            {milestones.map((m, i) => {
+              const pct = ((m.t - minT) / span) * 100;
+              const color =
+                m.kind === "season"
+                  ? i === milestones.findIndex((x) => x.t === SEASON_1)
+                    ? "text-amber-400"
+                    : "text-emerald-400"
+                  : m.kind === "now"
+                    ? "text-foreground"
+                    : "text-muted-foreground";
+              return (
+                <div
+                  key={`${m.kind}-${m.t}`}
+                  className={`absolute -translate-x-1/2 cursor-pointer ${color} ${milestoneIdx === i ? "font-bold" : ""}`}
+                  style={{ left: `${pct}%` }}
+                  onClick={() => setMilestoneIdx(i)}
+                  title={new Date(m.t).toLocaleDateString("ru-RU")}
+                >
+                  <div className="w-px h-2 bg-current mx-auto mb-0.5" />
+                  <div className="whitespace-nowrap">{m.label}</div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
