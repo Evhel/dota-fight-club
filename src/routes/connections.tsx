@@ -343,51 +343,57 @@ function ConnectionsPage() {
             Сбросить фильтр
           </button>
         )}
+        {admin && (
+          <button
+            onClick={handleRefresh}
+            className="px-3 py-1.5 rounded-md text-sm bg-primary/15 hover:bg-primary/25 border border-primary/40 text-primary inline-flex items-center gap-1.5"
+            title="Очистить кэш и заново подгрузить данные с OpenDota"
+          >
+            <RefreshCw className="w-3.5 h-3.5" />
+            Обновить сейчас
+          </button>
+        )}
       </div>
 
-      {/* Full-width time slider */}
+      {/* Full-width time slider — snaps to milestones (years + seasons + now) */}
       <div className="rounded-lg border border-border/60 bg-card/40 p-4">
         <div className="flex justify-between text-xs text-muted-foreground mb-2">
-          <span>Дата (с 2013 по сегодня)</span>
+          <span>Дата (снэп по вехам — данные подгружаются только для них)</span>
           <span className="text-foreground">{dateLabel}</span>
         </div>
-        <div className="relative pt-6 pb-2 w-full">
-          {/* milestone markers */}
-          <div
-            className="absolute top-0 text-[10px] text-amber-400 -translate-x-1/2 z-10"
-            style={{ left: `${s1Pct}%` }}
-            title="Начало 1-го сезона — 21.02.2026"
-          >
-            <div className="text-center whitespace-nowrap">1 сезон</div>
-            <div className="w-px h-4 bg-amber-400 mx-auto" />
-          </div>
-          <div
-            className="absolute top-0 text-[10px] text-emerald-400 -translate-x-1/2 z-10"
-            style={{ left: `${s2Pct}%` }}
-            title="Начало 2-го сезона — 15.05.2026"
-          >
-            <div className="text-center whitespace-nowrap">2 сезон</div>
-            <div className="w-px h-4 bg-emerald-400 mx-auto" />
-          </div>
+        <div className="relative pt-2 pb-2 w-full">
           <Slider
-            className="mt-4"
-            min={minT}
-            max={maxT}
-            step={24 * 60 * 60 * 1000}
-            value={[timeT]}
-            onValueChange={(v) => setTimeT(v[0])}
+            min={0}
+            max={milestones.length - 1}
+            step={1}
+            value={[milestoneIdx]}
+            onValueChange={(v) => setMilestoneIdx(v[0])}
           />
-          {/* year ticks */}
-          <div className="relative mt-2 h-4 text-[10px] text-muted-foreground">
-            {yearTicks.map((yt) => (
-              <div
-                key={yt.year}
-                className="absolute -translate-x-1/2"
-                style={{ left: `${yt.pct}%` }}
-              >
-                {yt.year}
-              </div>
-            ))}
+          {/* milestone tick labels */}
+          <div className="relative mt-3 h-8 text-[10px]">
+            {milestones.map((m, i) => {
+              const pct = ((m.t - minT) / span) * 100;
+              const color =
+                m.kind === "season"
+                  ? i === milestones.findIndex((x) => x.t === SEASON_1)
+                    ? "text-amber-400"
+                    : "text-emerald-400"
+                  : m.kind === "now"
+                    ? "text-foreground"
+                    : "text-muted-foreground";
+              return (
+                <div
+                  key={`${m.kind}-${m.t}`}
+                  className={`absolute -translate-x-1/2 cursor-pointer ${color} ${milestoneIdx === i ? "font-bold" : ""}`}
+                  style={{ left: `${pct}%` }}
+                  onClick={() => setMilestoneIdx(i)}
+                  title={new Date(m.t).toLocaleDateString("ru-RU")}
+                >
+                  <div className="w-px h-2 bg-current mx-auto mb-0.5" />
+                  <div className="whitespace-nowrap">{m.label}</div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
