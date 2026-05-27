@@ -490,10 +490,19 @@ function ConnectionsPage() {
           </div>
 
           <div className="text-xs text-muted-foreground space-y-1 pt-2 border-t border-border/60">
+            <div>
+              Источник: <span className="text-foreground">OpenDota API</span>
+              {peerLoading && <span className="text-amber-400"> · загрузка…</span>}
+              {peerErrors > 0 && (
+                <span className="text-red-400"> · ошибок: {peerErrors}</span>
+              )}
+            </div>
+            <div>Период: с <span className="text-foreground">{dateLabel}</span> по сегодня</div>
             <div>Игроков: <span className="text-foreground">{nodes.length}</span></div>
             <div>Связей: <span className="text-foreground">{filteredEdges.length}</span></div>
             <div>Макс. игр в паре: <span className="text-foreground">{maxGames}</span></div>
           </div>
+
         </div>
       </div>
     </div>
