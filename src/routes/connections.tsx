@@ -504,39 +504,6 @@ function ConnectionsPage() {
             />
           </div>
 
-          <div>
-            <div className="flex justify-between text-xs text-muted-foreground mb-2">
-              <span>Дата</span>
-              <span>{dateLabel}</span>
-            </div>
-            <div className="relative pt-4 pb-6">
-              {/* milestone markers */}
-              <div
-                className="absolute top-0 text-[10px] text-amber-400 -translate-x-1/2"
-                style={{ left: `${s1Pct}%` }}
-                title="Начало 1-го сезона"
-              >
-                <div className="text-center whitespace-nowrap">1 сезон</div>
-                <div className="w-px h-3 bg-amber-400 mx-auto" />
-              </div>
-              <div
-                className="absolute top-0 text-[10px] text-emerald-400 -translate-x-1/2"
-                style={{ left: `${s2Pct}%` }}
-                title="Начало 2-го сезона"
-              >
-                <div className="text-center whitespace-nowrap">2 сезон</div>
-                <div className="w-px h-3 bg-emerald-400 mx-auto" />
-              </div>
-              <Slider
-                className="mt-6"
-                min={minT}
-                max={maxT}
-                step={24 * 60 * 60 * 1000}
-                value={[timeT]}
-                onValueChange={(v) => setTimeT(v[0])}
-              />
-            </div>
-          </div>
 
           <div className="text-xs text-muted-foreground space-y-1 pt-2 border-t border-border/60">
             <div>
