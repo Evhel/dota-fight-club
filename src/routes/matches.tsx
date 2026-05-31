@@ -16,6 +16,7 @@ function MatchesPage() {
   const { data: matches = [] } = useMatches();
   const admin = useAdmin();
   const del = useDeleteMatch();
+  const updDate = useUpdateMatchDate();
   const identities = useMemo(() => buildIdentities(matches), [matches]);
   // Sort ascending to assign chronological #, then reverse for display (newest first)
   const ascending = [...matches].sort(
@@ -23,6 +24,14 @@ function MatchesPage() {
   );
   const indexed = ascending.map((m, i) => ({ m, num: i + 1 }));
   const sorted = [...indexed].reverse();
+
+  // Swap start_time between two matches (used by reorder arrows)
+  const swapTimes = (a: typeof sorted[number]["m"], b: typeof sorted[number]["m"]) => {
+    const aTime = a.start_time;
+    const bTime = b.start_time;
+    updDate.mutate({ match_id: a.match_id, start_time: bTime });
+    updDate.mutate({ match_id: b.match_id, start_time: aTime });
+  };
 
   const TeamCell = ({ team }: { team: { nickname: string; steam_id: number; hero: string }[] }) => (
     <div className="flex gap-1 justify-center">
