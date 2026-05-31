@@ -79,7 +79,7 @@ function MatchesPage() {
             </tr>
           </thead>
           <tbody>
-            {sorted.map(({ m, num }) => (
+            {sorted.map(({ m, num }, idx) => (
               <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
                 <td className="px-3 py-2 font-mono">{num}</td>
                 <td className="px-3 py-2">
@@ -100,19 +100,39 @@ function MatchesPage() {
                 <td className="px-2 py-2"><TeamCell team={m.data.dire_team} /></td>
                 {admin && (
                   <td className="px-3 py-2">
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      onClick={() => {
-                        if (confirm(`Удалить матч #${m.match_id}?`)) {
-                          del.mutate(m.match_id, {
-                            onSuccess: () => toast.success("Удалено"),
-                          });
-                        }
-                      }}
-                    >
-                      <Trash2 className="h-4 w-4 text-destructive" />
-                    </Button>
+                    <div className="flex items-center justify-end gap-1">
+                      <div className="flex flex-col">
+                        <button
+                          className="text-muted-foreground hover:text-primary disabled:opacity-30"
+                          disabled={idx === 0}
+                          title="Переместить выше (новее)"
+                          onClick={() => swapTimes(m, sorted[idx - 1].m)}
+                        >
+                          <ChevronUp className="h-4 w-4" />
+                        </button>
+                        <button
+                          className="text-muted-foreground hover:text-primary disabled:opacity-30"
+                          disabled={idx === sorted.length - 1}
+                          title="Переместить ниже (старее)"
+                          onClick={() => swapTimes(m, sorted[idx + 1].m)}
+                        >
+                          <ChevronDown className="h-4 w-4" />
+                        </button>
+                      </div>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        onClick={() => {
+                          if (confirm(`Удалить матч #${m.match_id}?`)) {
+                            del.mutate(m.match_id, {
+                              onSuccess: () => toast.success("Удалено"),
+                            });
+                          }
+                        }}
+                      >
+                        <Trash2 className="h-4 w-4 text-destructive" />
+                      </Button>
+                    </div>
                   </td>
                 )}
               </tr>
