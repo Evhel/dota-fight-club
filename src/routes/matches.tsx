@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useMatches, useDeleteMatch } from "@/lib/matches";
+import { useMatches, useDeleteMatch, useUpdateMatchDate } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
 import { heroImg } from "@/lib/heroes";
 import { useAdmin } from "@/lib/admin";
 import { Button } from "@/components/ui/button";
-import { Trash2 } from "lucide-react";
+import { Trash2, ChevronUp, ChevronDown } from "lucide-react";
 import { toast } from "sonner";
 import { useMemo } from "react";
 
@@ -16,6 +16,7 @@ function MatchesPage() {
   const { data: matches = [] } = useMatches();
   const admin = useAdmin();
   const del = useDeleteMatch();
+  const updDate = useUpdateMatchDate();
   const identities = useMemo(() => buildIdentities(matches), [matches]);
   // Sort ascending to assign chronological #, then reverse for display (newest first)
   const ascending = [...matches].sort(
@@ -23,6 +24,14 @@ function MatchesPage() {
   );
   const indexed = ascending.map((m, i) => ({ m, num: i + 1 }));
   const sorted = [...indexed].reverse();
+
+  // Swap start_time between two matches (used by reorder arrows)
+  const swapTimes = (a: typeof sorted[number]["m"], b: typeof sorted[number]["m"]) => {
+    const aTime = a.start_time;
+    const bTime = b.start_time;
+    updDate.mutate({ match_id: a.match_id, start_time: bTime });
+    updDate.mutate({ match_id: b.match_id, start_time: aTime });
+  };
 
   const TeamCell = ({ team }: { team: { nickname: string; steam_id: number; hero: string }[] }) => (
     <div className="flex gap-1 justify-center">
@@ -70,7 +79,7 @@ function MatchesPage() {
             </tr>
           </thead>
           <tbody>
-            {sorted.map(({ m, num }) => (
+            {sorted.map(({ m, num }, idx) => (
               <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
                 <td className="px-3 py-2 font-mono">{num}</td>
                 <td className="px-3 py-2">
@@ -91,19 +100,39 @@ function MatchesPage() {
                 <td className="px-2 py-2"><TeamCell team={m.data.dire_team} /></td>
                 {admin && (
                   <td className="px-3 py-2">
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      onClick={() => {
-                        if (confirm(`Удалить матч #${m.match_id}?`)) {
-                          del.mutate(m.match_id, {
-                            onSuccess: () => toast.success("Удалено"),
-                          });
-                        }
-                      }}
-                    >
-                      <Trash2 className="h-4 w-4 text-destructive" />
-                    </Button>
+                    <div className="flex items-center justify-end gap-1">
+                      <div className="flex flex-col">
+                        <button
+                          className="text-muted-foreground hover:text-primary disabled:opacity-30"
+                          disabled={idx === 0}
+                          title="Переместить выше (новее)"
+                          onClick={() => swapTimes(m, sorted[idx - 1].m)}
+                        >
+                          <ChevronUp className="h-4 w-4" />
+                        </button>
+                        <button
+                          className="text-muted-foreground hover:text-primary disabled:opacity-30"
+                          disabled={idx === sorted.length - 1}
+                          title="Переместить ниже (старее)"
+                          onClick={() => swapTimes(m, sorted[idx + 1].m)}
+                        >
+                          <ChevronDown className="h-4 w-4" />
+                        </button>
+                      </div>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        onClick={() => {
+                          if (confirm(`Удалить матч #${m.match_id}?`)) {
+                            del.mutate(m.match_id, {
+                              onSuccess: () => toast.success("Удалено"),
+                            });
+                          }
+                        }}
+                      >
+                        <Trash2 className="h-4 w-4 text-destructive" />
+                      </Button>
+                    </div>
                   </td>
                 )}
               </tr>
