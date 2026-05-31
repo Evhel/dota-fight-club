@@ -6,6 +6,22 @@ import type { MatchRow, DotaMatch } from "./types";
 export const matchesQueryKey = ["matches"] as const;
 
 export function useMatches() {
+  const qc = useQueryClient();
+  useEffect(() => {
+    const channel = supabase
+      .channel("matches-live")
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "matches" },
+        () => {
+          qc.invalidateQueries({ queryKey: matchesQueryKey });
+        },
+      )
+      .subscribe();
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [qc]);
   return useQuery({
     queryKey: matchesQueryKey,
     queryFn: async (): Promise<MatchRow[]> => {
