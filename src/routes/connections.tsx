@@ -71,7 +71,7 @@ function ConnectionsPage() {
   useEffect(() => setTimeT(maxT), [maxT]);
 
   const [linkDistance, setLinkDistance] = useState(180);
-  const [repulsion, setRepulsion] = useState(3000);
+  const [repulsion, setRepulsion] = useState(8000);
   const [minGames, setMinGames] = useState(1);
 
   const [selected, setSelected] = useState<string | null>(null);

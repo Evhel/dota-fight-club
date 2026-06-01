@@ -247,8 +247,124 @@ function PlayerPage() {
               ))}
             </div>
           </div>
+
+          <MatchHistory steamId={stats.steam_id} matches={matches} />
         </div>
       )}
+    </div>
+  );
+}
+
+function MatchHistory({ steamId, matches }: { steamId: string; matches: ReturnType<typeof useMatches>["data"] extends infer T ? T : never }) {
+  const rows = useMemo(() => {
+    const sorted = [...(matches || [])].sort(
+      (a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime(),
+    );
+    let winStreak = 0;
+    let lossStreak = 0;
+    const out: Array<{
+      match_id: number;
+      date: string;
+      hero: string;
+      won: boolean;
+      k: number;
+      d: number;
+      a: number;
+      streak: { type: "win" | "loss"; count: number };
+    }> = [];
+    for (const row of sorted) {
+      const m = row.data;
+      const side = m.radiant_team.some((p) => String(p.steam_id) === steamId)
+        ? "radiant"
+        : m.dire_team.some((p) => String(p.steam_id) === steamId)
+          ? "dire"
+          : null;
+      if (!side) continue;
+      const teamPlayers = side === "radiant" ? m.radiant_team : m.dire_team;
+      const me = teamPlayers.find((p) => String(p.steam_id) === steamId)!;
+      const won = m.winner === side;
+      if (won) {
+        winStreak += 1;
+        lossStreak = 0;
+      } else {
+        lossStreak += 1;
+        winStreak = 0;
+      }
+      const kda = m.kda?.[me.nickname];
+      out.push({
+        match_id: m.match_id,
+        date: row.start_time,
+        hero: me.hero,
+        won,
+        k: kda?.kills ?? 0,
+        d: kda?.deaths ?? 0,
+        a: kda?.assists ?? 0,
+        streak: won
+          ? { type: "win", count: winStreak }
+          : { type: "loss", count: lossStreak },
+      });
+    }
+    return out.reverse();
+  }, [matches, steamId]);
+
+  if (rows.length === 0) return null;
+
+  return (
+    <div className="panel p-4">
+      <h3 className="font-display text-lg mb-3 text-center">История матчей ({rows.length})</h3>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead className="text-xs text-muted-foreground uppercase">
+            <tr className="border-b border-border/40">
+              <th className="text-left py-2 px-2">Дата</th>
+              <th className="text-left py-2 px-2">Герой</th>
+              <th className="text-left py-2 px-2">Результат</th>
+              <th className="text-left py-2 px-2">У/С/П</th>
+              <th className="text-left py-2 px-2">Серия</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => {
+              const dt = new Date(r.date);
+              const dateStr = dt.toLocaleDateString("ru-RU", {
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric",
+              });
+              const winColor = "oklch(0.75 0.18 145)";
+              const lossColor = "oklch(0.65 0.22 25)";
+              return (
+                <tr key={r.match_id} className="border-b border-border/20 hover:bg-muted/20">
+                  <td className="py-1.5 px-2 whitespace-nowrap">
+                    <Link to={`/match/$id`} params={{ id: String(r.match_id) }} className="hover:underline text-primary">
+                      {dateStr}
+                    </Link>
+                  </td>
+                  <td className="py-1.5 px-2">
+                    <div className="flex items-center gap-2">
+                      <img
+                        src={heroImg(r.hero)}
+                        alt={r.hero}
+                        loading="lazy"
+                        className="w-10 h-6 object-cover rounded"
+                        onError={(e) => ((e.currentTarget.style.display = "none"))}
+                      />
+                      <span>{r.hero}</span>
+                    </div>
+                  </td>
+                  <td className="py-1.5 px-2 font-medium" style={{ color: r.won ? winColor : lossColor }}>
+                    {r.won ? "Победа" : "Поражение"}
+                  </td>
+                  <td className="py-1.5 px-2 whitespace-nowrap">{r.k}/{r.d}/{r.a}</td>
+                  <td className="py-1.5 px-2 whitespace-nowrap font-medium" style={{ color: r.streak.type === "win" ? winColor : lossColor }}>
+                    {r.streak.count}{r.streak.type === "win" ? "+" : "-"}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
