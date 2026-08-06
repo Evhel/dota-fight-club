@@ -1,157 +1,61 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { useAdmin } from "@/lib/admin";
-import { useUploadMatch, useMatches, useDeleteMatch, useUpdateMatchDate } from "@/lib/matches";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useRef, useState } from "react";
-import { toast } from "sonner";
-import { Upload, Trash2, Shield } from "lucide-react";
-import type { DotaMatch } from "@/lib/types";
+import { createFileRoute } from "@tanstack/react-router";
+import { useMatches } from "@/lib/matches";
+import { useAwards } from "@/lib/awards";
+import { STATIC_AVATARS } from "@/lib/static-data";
+import { FolderOpen } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
   component: AdminPage,
+  head: () => ({
+    meta: [{ title: "Данные проекта — Бойцовский Клуб Dota 2" }],
+  }),
 });
 
 function AdminPage() {
-  const admin = useAdmin();
-  const upload = useUploadMatch();
-  const del = useDeleteMatch();
-  const updDate = useUpdateMatchDate();
   const matches = useMatches();
-  const fileRef = useRef<HTMLInputElement>(null);
-  const [busy, setBusy] = useState(false);
-
-  if (!admin) {
-    return (
-      <div className="max-w-md mx-auto mt-16 panel p-8 text-center">
-        <Shield className="h-8 w-8 mx-auto mb-3 text-muted-foreground" />
-        <p className="mb-4">Доступ только для администратора.</p>
-        <Link to="/login" className="text-primary underline">
-          Войти
-        </Link>
-      </div>
-    );
-  }
-
-  const handleFiles = async (files: FileList | null) => {
-    if (!files || files.length === 0) return;
-    setBusy(true);
-    let added = 0,
-      dup = 0,
-      err = 0;
-    for (const file of Array.from(files)) {
-      try {
-        const text = await file.text();
-        const json = JSON.parse(text) as DotaMatch;
-        if (!json.match_id) throw new Error("Нет match_id");
-        const r = await upload.mutateAsync(json);
-        if (r.status === "added") added++;
-        else dup++;
-      } catch (e) {
-        err++;
-        console.error(file.name, e);
-      }
-    }
-    setBusy(false);
-    if (fileRef.current) fileRef.current.value = "";
-    const parts: string[] = [];
-    if (added) parts.push(`Добавлено: ${added}`);
-    if (dup) parts.push(`Уже учтено: ${dup}`);
-    if (err) parts.push(`Ошибок: ${err}`);
-    toast[err ? "warning" : "success"](parts.join(" · ") || "Готово");
-  };
+  const awards = useAwards();
 
   return (
-    <div className="space-y-8 max-w-4xl mx-auto">
+    <div className="space-y-6 max-w-3xl mx-auto">
       <div>
-      <div className="flex items-baseline gap-3">
-        <h1 className="text-3xl font-display text-glow">Панель администратора</h1>
-        <Link to="/admin/awards" className="text-sm text-primary underline">Награды →</Link>
-      </div>
+        <h1 className="text-3xl font-display text-glow">Данные проекта</h1>
         <p className="text-muted-foreground mt-1">
-          Загружай JSON-файлы матчей. Дубликаты по match_id игнорируются автоматически.
+          Сайт больше не использует базу данных — все данные лежат файлами в репозитории.
         </p>
       </div>
 
       <div className="panel p-6 space-y-4">
         <h2 className="font-display text-xl flex items-center gap-2">
-          <Upload className="h-5 w-5" /> Добавить матч
+          <FolderOpen className="h-5 w-5" /> Как добавить данные
         </h2>
-        <Input
-          ref={fileRef}
-          type="file"
-          accept=".json,application/json"
-          multiple
-          disabled={busy}
-          onChange={(e) => handleFiles(e.target.files)}
-        />
-        <Button
-          disabled={busy}
-          onClick={() => fileRef.current?.click()}
-          className="w-full sm:w-auto"
-        >
-          {busy ? "Загрузка..." : "Выбрать файлы"}
-        </Button>
-        <p className="text-xs text-muted-foreground">
-          Можно выбрать один или сразу несколько файлов.
-        </p>
-      </div>
-
-      <div className="panel p-6">
-        <h2 className="font-display text-xl mb-4">
-          Учтённые матчи ({matches.data?.length ?? 0})
-        </h2>
-        <div className="space-y-2 max-h-[400px] overflow-y-auto">
-          {(matches.data || []).map((m) => {
-            const localDate = new Date(m.start_time);
-            // format for datetime-local input (YYYY-MM-DDTHH:MM)
-            const pad = (n: number) => String(n).padStart(2, "0");
-            const value = `${localDate.getFullYear()}-${pad(localDate.getMonth() + 1)}-${pad(localDate.getDate())}T${pad(localDate.getHours())}:${pad(localDate.getMinutes())}`;
-            return (
-              <div
-                key={m.match_id}
-                className="flex items-center justify-between gap-2 px-3 py-2 rounded border border-border/60 hover:bg-muted/30"
-              >
-                <div className="min-w-0">
-                  <div className="font-mono text-sm">#{m.match_id}</div>
-                  <div className="text-xs text-muted-foreground">{m.data.game_mode}</div>
-                </div>
-                <Input
-                  type="datetime-local"
-                  defaultValue={value}
-                  className="w-56"
-                  onBlur={(e) => {
-                    const v = e.target.value;
-                    if (!v) return;
-                    const iso = new Date(v).toISOString();
-                    if (iso === new Date(m.start_time).toISOString()) return;
-                    updDate.mutate(
-                      { match_id: m.match_id, start_time: iso },
-                      { onSuccess: () => toast.success("Дата обновлена") },
-                    );
-                  }}
-                />
-                <Button
-                  size="sm"
-                  variant="ghost"
-                  onClick={() => {
-                    if (confirm(`Удалить матч #${m.match_id}?`)) {
-                      del.mutate(m.match_id, {
-                        onSuccess: () => toast.success("Матч удалён"),
-                      });
-                    }
-                  }}
-                >
-                  <Trash2 className="h-4 w-4 text-destructive" />
-                </Button>
-              </div>
-            );
-          })}
-          {matches.data && matches.data.length === 0 && (
-            <p className="text-sm text-muted-foreground text-center py-6">
-              Пока нет загруженных матчей.
+        <div className="space-y-4 text-sm">
+          <div>
+            <div className="font-medium">1. Матчи ({matches.data?.length ?? 0})</div>
+            <p className="text-muted-foreground">
+              Положи JSON-файл матча в папку <code className="text-primary">src/data/matches/</code>.
+              Имя файла любое, удобнее <code className="text-primary">&lt;match_id&gt;.json</code>.
+              Дубликаты по match_id отбрасываются автоматически.
             </p>
-          )}
+          </div>
+          <div>
+            <div className="font-medium">2. Аватарки ({STATIC_AVATARS.size})</div>
+            <p className="text-muted-foreground">
+              Картинку — в <code className="text-primary">public/avatars/</code>, строку — в{" "}
+              <code className="text-primary">public/avatars/avatars.txt</code> в формате{" "}
+              <code className="text-primary">steam_id = имя_файла</code>.
+            </p>
+          </div>
+          <div>
+            <div className="font-medium">3. Награды ({awards.data?.length ?? 0})</div>
+            <p className="text-muted-foreground">
+              Картинку — в <code className="text-primary">public/awards/</code>, строку — в{" "}
+              <code className="text-primary">public/awards/awards.txt</code> в формате{" "}
+              <code className="text-primary">steam_id | имя_файла | Название награды</code>.
+            </p>
+          </div>
+          <p className="text-muted-foreground">
+            После изменений — коммит и пуш в GitHub, сайт пересоберётся сам.
+          </p>
         </div>
       </div>
     </div>
