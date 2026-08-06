@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
-import { useQuery } from "@tanstack/react-query";
+import { STATIC_AVATARS } from "@/lib/static-data";
 import { Slider } from "@/components/ui/slider";
+
 
 export const Route = createFileRoute("/connections")({
   component: ConnectionsPage,
