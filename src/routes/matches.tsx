@@ -1,11 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useMatches, useDeleteMatch, useUpdateMatchDate } from "@/lib/matches";
+import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
 import { heroImg } from "@/lib/heroes";
-import { useAdmin } from "@/lib/admin";
-import { Button } from "@/components/ui/button";
-import { Trash2, ChevronUp, ChevronDown } from "lucide-react";
-import { toast } from "sonner";
 import { useMemo } from "react";
 
 export const Route = createFileRoute("/matches")({
@@ -14,9 +10,6 @@ export const Route = createFileRoute("/matches")({
 
 function MatchesPage() {
   const { data: matches = [] } = useMatches();
-  const admin = useAdmin();
-  const del = useDeleteMatch();
-  const updDate = useUpdateMatchDate();
   const identities = useMemo(() => buildIdentities(matches), [matches]);
   // Sort ascending to assign chronological #, then reverse for display (newest first)
   const ascending = [...matches].sort(
@@ -25,13 +18,6 @@ function MatchesPage() {
   const indexed = ascending.map((m, i) => ({ m, num: i + 1 }));
   const sorted = [...indexed].reverse();
 
-  // Swap start_time between two matches (used by reorder arrows)
-  const swapTimes = (a: typeof sorted[number]["m"], b: typeof sorted[number]["m"]) => {
-    const aTime = a.start_time;
-    const bTime = b.start_time;
-    updDate.mutate({ match_id: a.match_id, start_time: bTime });
-    updDate.mutate({ match_id: b.match_id, start_time: aTime });
-  };
 
   const TeamCell = ({ team }: { team: { nickname: string; steam_id: number; hero: string }[] }) => (
     <div className="flex gap-1 justify-center">
@@ -75,11 +61,11 @@ function MatchesPage() {
               <th className="px-3 py-2 text-center">Победа</th>
               <th className="px-3 py-2 text-center">Команда света</th>
               <th className="px-3 py-2 text-center">Команда тьмы</th>
-              {admin && <th className="px-3 py-2"></th>}
             </tr>
+
           </thead>
           <tbody>
-            {sorted.map(({ m, num }, idx) => (
+            {sorted.map(({ m, num }) => (
               <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
                 <td className="px-3 py-2 font-mono">{num}</td>
                 <td className="px-3 py-2">
@@ -98,48 +84,12 @@ function MatchesPage() {
                 </td>
                 <td className="px-2 py-2"><TeamCell team={m.data.radiant_team} /></td>
                 <td className="px-2 py-2"><TeamCell team={m.data.dire_team} /></td>
-                {admin && (
-                  <td className="px-3 py-2">
-                    <div className="flex items-center justify-end gap-1">
-                      <div className="flex flex-col">
-                        <button
-                          className="text-muted-foreground hover:text-primary disabled:opacity-30"
-                          disabled={idx === 0}
-                          title="Переместить выше (новее)"
-                          onClick={() => swapTimes(m, sorted[idx - 1].m)}
-                        >
-                          <ChevronUp className="h-4 w-4" />
-                        </button>
-                        <button
-                          className="text-muted-foreground hover:text-primary disabled:opacity-30"
-                          disabled={idx === sorted.length - 1}
-                          title="Переместить ниже (старее)"
-                          onClick={() => swapTimes(m, sorted[idx + 1].m)}
-                        >
-                          <ChevronDown className="h-4 w-4" />
-                        </button>
-                      </div>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => {
-                          if (confirm(`Удалить матч #${m.match_id}?`)) {
-                            del.mutate(m.match_id, {
-                              onSuccess: () => toast.success("Удалено"),
-                            });
-                          }
-                        }}
-                      >
-                        <Trash2 className="h-4 w-4 text-destructive" />
-                      </Button>
-                    </div>
-                  </td>
-                )}
               </tr>
             ))}
             {sorted.length === 0 && (
               <tr>
-                <td colSpan={admin ? 9 : 8} className="text-center py-6 text-muted-foreground">
+                <td colSpan={8} className="text-center py-6 text-muted-foreground">
+
                   Матчей пока нет.
                 </td>
               </tr>

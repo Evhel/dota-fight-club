@@ -21,7 +21,6 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as MatchIndexRouteImport } from './routes/match.index'
 import { Route as MatchIdRouteImport } from './routes/match.$id'
-import { Route as AdminAwardsRouteImport } from './routes/admin_.awards'
 
 const VsRoute = VsRouteImport.update({
   id: '/vs',
@@ -83,11 +82,6 @@ const MatchIdRoute = MatchIdRouteImport.update({
   path: '/match/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AdminAwardsRoute = AdminAwardsRouteImport.update({
-  id: '/admin_/awards',
-  path: '/admin/awards',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -100,7 +94,6 @@ export interface FileRoutesByFullPath {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
-  '/admin/awards': typeof AdminAwardsRoute
   '/match/$id': typeof MatchIdRoute
   '/match/': typeof MatchIndexRoute
 }
@@ -115,7 +108,6 @@ export interface FileRoutesByTo {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
-  '/admin/awards': typeof AdminAwardsRoute
   '/match/$id': typeof MatchIdRoute
   '/match': typeof MatchIndexRoute
 }
@@ -131,7 +123,6 @@ export interface FileRoutesById {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
-  '/admin_/awards': typeof AdminAwardsRoute
   '/match/$id': typeof MatchIdRoute
   '/match/': typeof MatchIndexRoute
 }
@@ -148,7 +139,6 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
-    | '/admin/awards'
     | '/match/$id'
     | '/match/'
   fileRoutesByTo: FileRoutesByTo
@@ -163,7 +153,6 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
-    | '/admin/awards'
     | '/match/$id'
     | '/match'
   id:
@@ -178,7 +167,6 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
-    | '/admin_/awards'
     | '/match/$id'
     | '/match/'
   fileRoutesById: FileRoutesById
@@ -194,7 +182,6 @@ export interface RootRouteChildren {
   PlayersRoute: typeof PlayersRoute
   RecordsRoute: typeof RecordsRoute
   VsRoute: typeof VsRoute
-  AdminAwardsRoute: typeof AdminAwardsRoute
   MatchIdRoute: typeof MatchIdRoute
   MatchIndexRoute: typeof MatchIndexRoute
 }
@@ -285,13 +272,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MatchIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/admin_/awards': {
-      id: '/admin_/awards'
-      path: '/admin/awards'
-      fullPath: '/admin/awards'
-      preLoaderRoute: typeof AdminAwardsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -306,20 +286,9 @@ const rootRouteChildren: RootRouteChildren = {
   PlayersRoute: PlayersRoute,
   RecordsRoute: RecordsRoute,
   VsRoute: VsRoute,
-  AdminAwardsRoute: AdminAwardsRoute,
   MatchIdRoute: MatchIdRoute,
   MatchIndexRoute: MatchIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

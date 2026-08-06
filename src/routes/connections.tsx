@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
-import { useQuery } from "@tanstack/react-query";
+import { STATIC_AVATARS } from "@/lib/static-data";
 import { Slider } from "@/components/ui/slider";
+
 
 export const Route = createFileRoute("/connections")({
   component: ConnectionsPage,
@@ -34,25 +34,10 @@ interface GraphEdge {
 const SEASON_1 = new Date("2026-02-21T00:00:00Z").getTime();
 const SEASON_2 = new Date("2026-05-15T00:00:00Z").getTime();
 
-function useAvatars() {
-  return useQuery({
-    queryKey: ["player_avatars_all"],
-    queryFn: async () => {
-      const { data, error } = await supabase
-        .from("player_avatars")
-        .select("steam_id, avatar_url");
-      if (error) throw error;
-      const map = new Map<string, string>();
-      for (const r of data || []) map.set(String(r.steam_id), r.avatar_url);
-      return map;
-    },
-    staleTime: 5 * 60_000,
-  });
-}
-
 function ConnectionsPage() {
   const { data: matches = [] } = useMatches();
-  const { data: avatars } = useAvatars();
+  const avatars = STATIC_AVATARS;
+
 
   const identities = useMemo(() => buildIdentities(matches), [matches]);
 
