@@ -107,13 +107,13 @@ function tokenize(text: string): string[] {
     .replace(/[^\p{L}\p{N}\s?!]/gu, " ")
     .split(/\s+/)
     .flatMap((tok) => {
-      const out: string[] = [];
+      if (!tok) return [];
+      // «?» и «!» считаем только если это отдельное слово (отделено пробелами)
+      if (/^[?!]+$/.test(tok)) return tok.split("");
       const m = tok.match(/[\p{L}\p{N}]+/gu);
-      if (m) out.push(...m.filter((w) => w.length >= 2 && !STOP_WORDS.has(w)));
-      const punct = tok.match(/[?!]/g);
-      if (punct) out.push(...punct);
-      return out;
+      return m ? m.filter((w) => w.length >= 2 && !STOP_WORDS.has(w)) : [];
     });
+
   return words;
 }
 

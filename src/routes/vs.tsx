@@ -44,6 +44,41 @@ function VsPage() {
     return computeVsStats(steamId, matches, identities);
   }, [steamId, matches, identities]);
 
+  type SortKey = "name" | "total" | "same_team" | "same_winrate" | "opp_team" | "opp_winrate";
+  const [sortKey, setSortKey] = useState<SortKey>("total");
+  const [sortAsc, setSortAsc] = useState(false);
+
+  const sortedRows = useMemo(() => {
+    const arr = [...rows];
+    arr.sort((a, b) => {
+      const av = a[sortKey];
+      const bv = b[sortKey];
+      const cmp =
+        typeof av === "string" || typeof bv === "string"
+          ? String(av).localeCompare(String(bv), "ru")
+          : Number(av) - Number(bv);
+      return sortAsc ? cmp : -cmp;
+    });
+    return arr;
+  }, [rows, sortKey, sortAsc]);
+
+  const toggleSort = (k: SortKey) => {
+    if (k === sortKey) setSortAsc((v) => !v);
+    else {
+      setSortKey(k);
+      setSortAsc(k === "name");
+    }
+  };
+
+  const columns: { key: SortKey; label: string }[] = [
+    { key: "name", label: "Игрок" },
+    { key: "total", label: "Всего" },
+    { key: "same_team", label: "В одной команде" },
+    { key: "same_winrate", label: "WR вместе" },
+    { key: "opp_team", label: "Против" },
+    { key: "opp_winrate", label: "WR против" },
+  ];
+
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-display text-glow text-center">Игрок vs Игрок</h1>
@@ -70,19 +105,23 @@ function VsPage() {
           <table className="w-full text-sm text-center">
             <thead className="bg-muted/30">
               <tr>
-                <th className="px-3 py-2 text-center">Игрок</th>
-                <th className="px-3 py-2 text-center">Всего</th>
-                <th className="px-3 py-2 text-center">В одной команде</th>
-                <th className="px-3 py-2 text-center">WR вместе</th>
-                <th className="px-3 py-2 text-center">Против</th>
-                <th className="px-3 py-2 text-center">WR против</th>
+                {columns.map((c) => (
+                  <th
+                    key={c.key}
+                    onClick={() => toggleSort(c.key)}
+                    className="px-3 py-2 text-center cursor-pointer select-none hover:text-primary"
+                  >
+                    {c.label}
+                    {sortKey === c.key ? (sortAsc ? " ▲" : " ▼") : ""}
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
-              {rows.map((r) => (
+              {sortedRows.map((r) => (
                 <tr key={r.steam_id} className="border-t border-border/40 hover:bg-muted/20">
                   <td className="px-3 py-2">
-                    <Link to={`/player?nick=${encodeURIComponent(r.name)}`} className="text-primary hover:underline">
+                    <Link to="/player" search={{ nick: r.name }} className="text-primary hover:underline">
                       {r.name}
                     </Link>
                   </td>

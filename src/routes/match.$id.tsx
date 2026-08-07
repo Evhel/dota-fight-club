@@ -145,7 +145,7 @@ function MatchPage() {
                     </td>
                     <td className="py-1 px-1 text-left">
                       <Link
-                        to={`/player?nick=${encodeURIComponent(display)}`}
+                        to="/player" search={{ nick: display }}
                         className="hover:text-primary"
                       >
                         {display}
