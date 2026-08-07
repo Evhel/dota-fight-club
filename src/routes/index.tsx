@@ -82,14 +82,14 @@ function Index() {
               <RecLink
                 label="Самая короткая игра"
                 value={`${Math.round(global.records.shortest_match.minutes)} мин`}
-                to="/match/$id" params={{ id: String(global.records.shortest_match.match_id) }}
+                to={`/match/${global.records.shortest_match.match_id}`}
               />
             )}
             {global.records.longest_match && (
               <RecLink
                 label="Самая длинная игра"
                 value={`${Math.round(global.records.longest_match.minutes)} мин`}
-                to="/match/$id" params={{ id: String(global.records.longest_match.match_id) }}
+                to={`/match/${global.records.longest_match.match_id}`}
               />
             )}
             {global.records.most_obs && (
@@ -97,7 +97,7 @@ function Index() {
                 icon={WARD_OBSERVER_ICON}
                 label="Макс."
                 value={`${global.records.most_obs.value} — ${global.records.most_obs.name}`}
-                to="/match/$id" params={{ id: String(global.records.most_obs.match_id) }}
+                to={`/match/${global.records.most_obs.match_id}`}
               />
             )}
             {global.records.most_sen && (
@@ -105,7 +105,7 @@ function Index() {
                 icon={WARD_SENTRY_ICON}
                 label="Макс."
                 value={`${global.records.most_sen.value} — ${global.records.most_sen.name}`}
-                to="/match/$id" params={{ id: String(global.records.most_sen.match_id) }}
+                to={`/match/${global.records.most_sen.match_id}`}
               />
             )}
             {global.records.most_dewards && (
@@ -114,7 +114,7 @@ function Index() {
                 iconStyle={{ filter: "grayscale(1) brightness(0.7)" }}
                 label="Макс."
                 value={`${global.records.most_dewards.value} — ${global.records.most_dewards.name}`}
-                to="/match/$id" params={{ id: String(global.records.most_dewards.match_id) }}
+                to={`/match/${global.records.most_dewards.match_id}`}
               />
             )}
             {global.records.top_word && (
@@ -127,28 +127,28 @@ function Index() {
               <RecLink
                 label="Больше всего игр"
                 value={`${global.records.most_games_player.name} — ${global.records.most_games_player.games}`}
-                to="/player" search={{ nick: global.records.most_games_player.name }}
+                to={`/player?nick=${encodeURIComponent(global.records.most_games_player.name)}`}
               />
             )}
             {global.records.best_winrate_player && (
               <RecLink
                 label="Лучший винрейт (от 10 игр)"
                 value={`${global.records.best_winrate_player.name} — ${global.records.best_winrate_player.winrate}%`}
-                to="/player" search={{ nick: global.records.best_winrate_player.name }}
+                to={`/player?nick=${encodeURIComponent(global.records.best_winrate_player.name)}`}
               />
             )}
             {global.records.most_chat_player && (
               <RecLink
                 label="Наспамил фраз"
                 value={`${global.records.most_chat_player.name} — ${global.records.most_chat_player.messages}`}
-                to="/player" search={{ nick: global.records.most_chat_player.name }}
+                to={`/player?nick=${encodeURIComponent(global.records.most_chat_player.name)}`}
               />
             )}
             {global.records.most_high_fives_player && (
               <RecLink
                 label="Больше всех пятюнь"
                 value={`${global.records.most_high_fives_player.name} — ${global.records.most_high_fives_player.high_fives}`}
-                to="/player" search={{ nick: global.records.most_high_fives_player.name }}
+                to={`/player?nick=${encodeURIComponent(global.records.most_high_fives_player.name)}`}
               />
             )}
           </ul>
