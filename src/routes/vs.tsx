@@ -137,11 +137,5 @@ function VsPage() {
         </div>
       )}
     </div>
-
-            </tbody>
-          </table>
-        </div>
-      )}
-    </div>
   );
 }
