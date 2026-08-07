@@ -54,7 +54,7 @@ function RecordsPage() {
               <tr key={it.label} className="border-t border-border/40">
                 <td className="px-3 py-2 text-muted-foreground">
                   {it.rec ? (
-                    <Link to={`/match/${it.rec.match_id}`} className="hover:text-primary hover:underline">
+                    <Link to="/match/$id" params={{ id: String(it.rec.match_id) }} className="hover:text-primary hover:underline">
                       {it.label}
                     </Link>
                   ) : (
@@ -65,14 +65,14 @@ function RecordsPage() {
                   <>
                     <td className="px-3 py-2">
                       <Link
-                        to={`/player?nick=${encodeURIComponent(it.rec.name)}`}
+                        to="/player" search={{ nick: it.rec.name }}
                         className="text-primary hover:underline"
                       >
                         {it.rec.name}
                       </Link>
                     </td>
                     <td className="px-3 py-2">
-                      <Link to={`/match/${it.rec.match_id}`} className="font-medium hover:underline">
+                      <Link to="/match/$id" params={{ id: String(it.rec.match_id) }} className="font-medium hover:underline">
                         {it.format ? it.format(it.rec.value) : it.rec.value}
                       </Link>
                     </td>

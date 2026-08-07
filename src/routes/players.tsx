@@ -109,7 +109,7 @@ function PlayersPage() {
                 <td className="px-3 py-2">
                   <div className="flex items-center justify-center gap-1.5">
                     <Link
-                      to={`/player?nick=${encodeURIComponent(p.name)}`}
+                      to="/player" search={{ nick: p.name }}
                       className="text-primary hover:underline"
                     >
                       {p.name}

@@ -26,7 +26,7 @@ function MatchesPage() {
         return (
           <Link
             key={p.steam_id}
-            to={`/player?nick=${encodeURIComponent(display)}`}
+            to="/player" search={{ nick: display }}
             className="flex flex-col items-center w-16"
             title={`${display} — ${p.hero}`}
           >
@@ -69,7 +69,7 @@ function MatchesPage() {
               <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
                 <td className="px-3 py-2 font-mono">{num}</td>
                 <td className="px-3 py-2">
-                  <Link to={`/match/${m.match_id}`} className="text-primary hover:underline">
+                  <Link to="/match/$id" params={{ id: String(m.match_id) }} className="text-primary hover:underline">
                     {new Date(m.start_time).toLocaleDateString("ru-RU")}
                   </Link>
                 </td>

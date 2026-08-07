@@ -190,12 +190,12 @@ function PlayerPage() {
                 <div className="rounded-lg border border-border/40 bg-muted/20 p-3 space-y-1 text-sm">
                   <div className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Союзники (от 3 игр)</div>
                   {stats.best_teammate ? (
-                    <Link to={`/player?nick=${encodeURIComponent(stats.best_teammate.name)}`} className="flex justify-between hover:underline" style={{ color: "oklch(0.75 0.18 145)" }}>
+                    <Link to="/player" search={{ nick: stats.best_teammate.name }} className="flex justify-between hover:underline" style={{ color: "oklch(0.75 0.18 145)" }}>
                       <span>Лучший</span><span>{stats.best_teammate.name} ({stats.best_teammate.winrate}%)</span>
                     </Link>
                   ) : <div className="text-muted-foreground">Лучший: —</div>}
                   {stats.worst_teammate ? (
-                    <Link to={`/player?nick=${encodeURIComponent(stats.worst_teammate.name)}`} className="flex justify-between hover:underline" style={{ color: "oklch(0.65 0.22 25)" }}>
+                    <Link to="/player" search={{ nick: stats.worst_teammate.name }} className="flex justify-between hover:underline" style={{ color: "oklch(0.65 0.22 25)" }}>
                       <span>Худший</span><span>{stats.worst_teammate.name} ({stats.worst_teammate.winrate}%)</span>
                     </Link>
                   ) : <div className="text-muted-foreground">Худший: —</div>}
@@ -203,12 +203,12 @@ function PlayerPage() {
                 <div className="rounded-lg border border-border/40 bg-muted/20 p-3 space-y-1 text-sm">
                   <div className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Соперники (от 3 игр)</div>
                   {stats.worst_opponent ? (
-                    <Link to={`/player?nick=${encodeURIComponent(stats.worst_opponent.name)}`} className="flex justify-between hover:underline" style={{ color: "oklch(0.65 0.22 25)" }}>
+                    <Link to="/player" search={{ nick: stats.worst_opponent.name }} className="flex justify-between hover:underline" style={{ color: "oklch(0.65 0.22 25)" }}>
                       <span>Боится</span><span>{stats.worst_opponent.name} ({stats.worst_opponent.winrate}%)</span>
                     </Link>
                   ) : <div className="text-muted-foreground">Боится: —</div>}
                   {stats.best_opponent ? (
-                    <Link to={`/player?nick=${encodeURIComponent(stats.best_opponent.name)}`} className="flex justify-between hover:underline" style={{ color: "oklch(0.75 0.18 145)" }}>
+                    <Link to="/player" search={{ nick: stats.best_opponent.name }} className="flex justify-between hover:underline" style={{ color: "oklch(0.75 0.18 145)" }}>
                       <span>Переезжает</span><span>{stats.best_opponent.name} ({stats.best_opponent.winrate}%)</span>
                     </Link>
                   ) : <div className="text-muted-foreground">Переезжает: —</div>}

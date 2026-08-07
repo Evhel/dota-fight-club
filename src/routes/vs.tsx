@@ -82,7 +82,7 @@ function VsPage() {
               {rows.map((r) => (
                 <tr key={r.steam_id} className="border-t border-border/40 hover:bg-muted/20">
                   <td className="px-3 py-2">
-                    <Link to={`/player?nick=${encodeURIComponent(r.name)}`} className="text-primary hover:underline">
+                    <Link to="/player" search={{ nick: r.name }} className="text-primary hover:underline">
                       {r.name}
                     </Link>
                   </td>
