@@ -10,11 +10,12 @@ function publicUrl(folder: string, file: string) {
   return `${BASE}${folder}/${encodeURIComponent(file)}`;
 }
 
+// Время без указания зоны трактуется как московское (UTC+3)
 function normalizeTime(s: string): string {
   if (!s) return new Date(0).toISOString();
   const hasZone = /(Z|[+-]\d{2}:?\d{2})$/.test(s);
   const iso = s.includes("T") ? s : s.replace(" ", "T");
-  const d = new Date(hasZone ? iso : `${iso}Z`);
+  const d = new Date(hasZone ? iso : `${iso}+03:00`);
   return isNaN(d.getTime()) ? new Date(0).toISOString() : d.toISOString();
 }
 
