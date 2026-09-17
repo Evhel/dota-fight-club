@@ -1,0 +1,744 @@
+{
+  "match_id": 8997800500,
+  "start_time": "2026-09-13 22:59:26",
+  "start_timestamp": 1789329566.424355,
+  "duration_minutes": 52.47,
+  "duration_seconds": 3148.27,
+  "draft_duration_minutes": 10.59,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "Veronika SuperStar",
+    "team_tag": "VeronikaSS",
+    "team_id": 4213499
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "radiant_team": [
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Abaddon"
+    },
+    {
+      "nickname": "Mat' v mute",
+      "steam_id": 76561199222816532,
+      "hero": "Magnus"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Troll Warlord"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Zeus"
+    },
+    {
+      "nickname": "мелман",
+      "steam_id": 76561198974599395,
+      "hero": "Silencer"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Phantom Assassin"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Dragon Knight"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Underlord"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Winter Wyvern"
+    },
+    {
+      "nickname": "Потные Яйца",
+      "steam_id": 76561198026499354,
+      "hero": "Crystal Maiden"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Underlord",
+      "tick": 5845
+    },
+    {
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 6711
+    },
+    {
+      "team": 3,
+      "hero": "Silencer",
+      "tick": 7685
+    },
+    {
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 9797
+    },
+    {
+      "team": 2,
+      "hero": "Crystal Maiden",
+      "tick": 10911
+    },
+    {
+      "team": 2,
+      "hero": "Troll Warlord",
+      "tick": 12349
+    },
+    {
+      "team": 3,
+      "hero": "Magnus",
+      "tick": 15993
+    },
+    {
+      "team": 3,
+      "hero": "Dragon Knight",
+      "tick": 18331
+    },
+    {
+      "team": 2,
+      "hero": "Phantom Assassin",
+      "tick": 19443
+    },
+    {
+      "team": 2,
+      "hero": "Zeus",
+      "tick": 20553
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Hoodwink",
+      "tick": 1489
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 1561
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 2751
+    },
+    {
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 3893
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 4787
+    },
+    {
+      "team": 3,
+      "hero": "Dawnbreaker",
+      "tick": 4917
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Hoodwink",
+      "tick": 1489,
+      "game_time_sec": 49.63333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 1561,
+      "game_time_sec": 52.03333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 2751,
+      "game_time_sec": 91.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 3893,
+      "game_time_sec": 129.76666666666668
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Techies",
+      "tick": 4787,
+      "game_time_sec": 159.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Dawnbreaker",
+      "tick": 4917,
+      "game_time_sec": 163.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Underlord",
+      "tick": 5845,
+      "game_time_sec": 194.83333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 6711,
+      "game_time_sec": 223.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Silencer",
+      "tick": 7685,
+      "game_time_sec": 256.1666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 9797,
+      "game_time_sec": 326.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Crystal Maiden",
+      "tick": 10911,
+      "game_time_sec": 363.7
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Troll Warlord",
+      "tick": 12349,
+      "game_time_sec": 411.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Magnus",
+      "tick": 15993,
+      "game_time_sec": 533.1
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Dragon Knight",
+      "tick": 18331,
+      "game_time_sec": 611.0333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Phantom Assassin",
+      "tick": 19443,
+      "game_time_sec": 648.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Zeus",
+      "tick": 20553,
+      "game_time_sec": 685.1
+    }
+  ],
+  "total_deaths": 77,
+  "kda": {
+    "Davros": {
+      "kills": 11,
+      "deaths": 6,
+      "assists": 21,
+      "kda_ratio": 5.33
+    },
+    "Mat' v mute": {
+      "kills": 3,
+      "deaths": 7,
+      "assists": 24,
+      "kda_ratio": 3.86
+    },
+    "Donnie": {
+      "kills": 13,
+      "deaths": 5,
+      "assists": 17,
+      "kda_ratio": 6.0
+    },
+    "nerd": {
+      "kills": 16,
+      "deaths": 1,
+      "assists": 17,
+      "kda_ratio": 33.0
+    },
+    "мелман": {
+      "kills": 7,
+      "deaths": 8,
+      "assists": 22,
+      "kda_ratio": 3.62
+    },
+    "jMogwai": {
+      "kills": 8,
+      "deaths": 8,
+      "assists": 7,
+      "kda_ratio": 1.88
+    },
+    "Профессор вкусных каш": {
+      "kills": 11,
+      "deaths": 6,
+      "assists": 9,
+      "kda_ratio": 3.33
+    },
+    "???&": {
+      "kills": 1,
+      "deaths": 6,
+      "assists": 12,
+      "kda_ratio": 2.17
+    },
+    "13": {
+      "kills": 3,
+      "deaths": 17,
+      "assists": 14,
+      "kda_ratio": 1.0
+    },
+    "Потные Яйца": {
+      "kills": 1,
+      "deaths": 13,
+      "assists": 10,
+      "kda_ratio": 0.85
+    }
+  },
+  "net_worth": {
+    "Davros": 27224,
+    "Mat' v mute": 13572,
+    "Donnie": 32841,
+    "nerd": 31167,
+    "мелман": 13977,
+    "jMogwai": 27377,
+    "Профессор вкусных каш": 23462,
+    "???&": 17616,
+    "13": 7482,
+    "Потные Яйца": 8357
+  },
+  "last_hits": {
+    "Davros": 343,
+    "Mat' v mute": 36,
+    "Donnie": 466,
+    "nerd": 393,
+    "мелман": 61,
+    "jMogwai": 538,
+    "Профессор вкусных каш": 334,
+    "???&": 288,
+    "13": 23,
+    "Потные Яйца": 27
+  },
+  "denies": {
+    "Davros": 18,
+    "Mat' v mute": 5,
+    "Donnie": 11,
+    "nerd": 8,
+    "мелман": 1,
+    "jMogwai": 12,
+    "Профессор вкусных каш": 3,
+    "???&": 2,
+    "13": 2,
+    "Потные Яйца": 1
+  },
+  "gold_per_minute": {
+    "Davros": 525.64,
+    "Mat' v mute": 305.62,
+    "Donnie": 642.2,
+    "nerd": 625.6,
+    "мелман": 279.41,
+    "jMogwai": 617.39,
+    "Профессор вкусных каш": 493.28,
+    "???&": 390.02,
+    "13": 195.23,
+    "Потные Яйца": 179.17
+  },
+  "xp_per_minute": {
+    "Davros": 690.09,
+    "Mat' v mute": 442.22,
+    "Donnie": 905.47,
+    "nerd": 922.56,
+    "мелман": 414.32,
+    "jMogwai": 1002.38,
+    "Профессор вкусных каш": 699.91,
+    "???&": 416.84,
+    "13": 240.48,
+    "Потные Яйца": 196.77
+  },
+  "hero_damage": {
+    "Davros": 30084,
+    "Mat' v mute": 15499,
+    "Donnie": 33846,
+    "nerd": 56768,
+    "мелман": 15614,
+    "jMogwai": 56766,
+    "Профессор вкусных каш": 33553,
+    "???&": 23372,
+    "13": 11720,
+    "Потные Яйца": 15674
+  },
+  "damage_taken": {
+    "Davros": 46122,
+    "Mat' v mute": 24167,
+    "Donnie": 65419,
+    "nerd": 36037,
+    "мелман": 23607,
+    "jMogwai": 47985,
+    "Профессор вкусных каш": 44856,
+    "???&": 36026,
+    "13": 22339,
+    "Потные Яйца": 23542
+  },
+  "hero_healing": {
+    "Davros": 35419,
+    "Mat' v mute": 10568,
+    "Donnie": 24226,
+    "nerd": 23099,
+    "мелман": 5950,
+    "jMogwai": 31537,
+    "Профессор вкусных каш": 25211,
+    "???&": 22131,
+    "13": 10709,
+    "Потные Яйца": 7861
+  },
+  "tower_damage": {
+    "Davros": 4249,
+    "Mat' v mute": 218,
+    "Donnie": 8135,
+    "nerd": 367,
+    "мелман": 400,
+    "jMogwai": 1332,
+    "Профессор вкусных каш": 2168,
+    "???&": 134,
+    "13": 0,
+    "Потные Яйца": 0
+  },
+  "stuns_dealt": {
+    "Davros": 17.17,
+    "Mat' v mute": 111.94,
+    "Donnie": 150.1,
+    "nerd": 70.93,
+    "мелман": 0.0,
+    "jMogwai": 26.77,
+    "Профессор вкусных каш": 89.4,
+    "???&": 289.8,
+    "13": 84.45,
+    "Потные Яйца": 65.09
+  },
+  "wards_placed": {
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Mat' v mute": {
+      "observer": 9,
+      "sentry": 24,
+      "total": 33
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "мелман": {
+      "observer": 9,
+      "sentry": 13,
+      "total": 22
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 7,
+      "sentry": 23,
+      "total": 30
+    },
+    "Потные Яйца": {
+      "observer": 9,
+      "sentry": 8,
+      "total": 17
+    }
+  },
+  "wards_destroyed": {
+    "Davros": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Mat' v mute": {
+      "observer": 6,
+      "sentry": 7,
+      "total": 13
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 3,
+      "sentry": 4,
+      "total": 7
+    },
+    "мелман": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 13,
+      "total": 14
+    },
+    "Потные Яйца": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    }
+  },
+  "wards_events_count": 107,
+  "chat_after_draft": [
+    {
+      "tick": 40194,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "гуля афк"
+    },
+    {
+      "tick": 40302,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "подожди не много пж"
+    },
+    {
+      "tick": 40406,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "я ща приду"
+    },
+    {
+      "tick": 42224,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "как вам детское видео"
+    },
+    {
+      "tick": 42404,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "че"
+    },
+    {
+      "tick": 42526,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "в дискорде"
+    },
+    {
+      "tick": 42578,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ох уж эти дети"
+    },
+    {
+      "tick": 43532,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "аххахахаха"
+    },
+    {
+      "tick": 43602,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "ладно"
+    },
+    {
+      "tick": 43682,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "стоило того"
+    },
+    {
+      "tick": 44838,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "все я тут"
+    },
+    {
+      "tick": 45060,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "го?"
+    },
+    {
+      "tick": 45130,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "все реди?"
+    },
+    {
+      "tick": 45408,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "газ"
+    },
+    {
+      "tick": 47592,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "че"
+    },
+    {
+      "tick": 48020,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "курьер приехал"
+    },
+    {
+      "tick": 49992,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "пока ждем вопрос есть"
+    },
+    {
+      "tick": 50496,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "нект кто-то остается?"
+    },
+    {
+      "tick": 50794,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "ну я мейби могу"
+    },
+    {
+      "tick": 51884,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "у мелмана плюс один вроде желание имеет играть"
+    },
+    {
+      "tick": 51928,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "подождем..."
+    },
+    {
+      "tick": 52214,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "мелман видно завтра на работу не пойдет)"
+    },
+    {
+      "tick": 52500,
+      "channel": "all",
+      "player_slot": 4,
+      "text": ")"
+    },
+    {
+      "tick": 52908,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "г?"
+    },
+    {
+      "tick": 53006,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "г?"
+    },
+    {
+      "tick": 53216,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "сори денис пропал"
+    },
+    {
+      "tick": 53332,
+      "channel": "all",
+      "player_slot": 6,
+      "text": ")))))))))"
+    },
+    {
+      "tick": 53462,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "день пауз"
+    }
+  ],
+  "chat_message_count": 28,
+  "high_fives": {
+    "Davros": 0,
+    "Mat' v mute": 3,
+    "Donnie": 4,
+    "nerd": 1,
+    "мелман": 0,
+    "jMogwai": 0,
+    "Профессор вкусных каш": 0,
+    "???&": 0,
+    "13": 0,
+    "Потные Яйца": 0
+  }
+}

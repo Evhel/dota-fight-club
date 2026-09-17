@@ -1,0 +1,846 @@
+{
+  "match_id": 9000774429,
+  "start_time": "2026-09-15 22:59:52",
+  "start_timestamp": 1789502392.655721,
+  "duration_minutes": 69.66,
+  "duration_seconds": 4179.57,
+  "draft_duration_minutes": 9.57,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "Veronika SuperStar",
+    "team_tag": "VeronikaSS",
+    "team_id": 4213499
+  },
+  "dire_team_info": {
+    "team_name": "Reptil(0)ed",
+    "team_tag": "RTD",
+    "team_id": 998016
+  },
+  "radiant_team": [
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Medusa"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Puck"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Spirit Breaker"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": 76561198078638066,
+      "hero": "Tidehunter"
+    },
+    {
+      "nickname": "Capy",
+      "steam_id": 76561198009445320,
+      "hero": "Undying"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Sven"
+    },
+    {
+      "nickname": "Itadori Yuji",
+      "steam_id": 76561199642307932,
+      "hero": "Void Spirit"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Kunkka"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Skywrath Mage"
+    },
+    {
+      "nickname": "Mat' v mute",
+      "steam_id": 76561199222816532,
+      "hero": "Grimstroke"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Kunkka",
+      "tick": 8770
+    },
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 8830
+    },
+    {
+      "team": 3,
+      "hero": "Spirit Breaker",
+      "tick": 10292
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 11384
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 12150
+    },
+    {
+      "team": 2,
+      "hero": "Tidehunter",
+      "tick": 12374
+    },
+    {
+      "team": 3,
+      "hero": "Puck",
+      "tick": 14576
+    },
+    {
+      "team": 3,
+      "hero": "Sven",
+      "tick": 16440
+    },
+    {
+      "team": 2,
+      "hero": "Skywrath Mage",
+      "tick": 18298
+    },
+    {
+      "team": 2,
+      "hero": "Medusa",
+      "tick": 18418
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 1196
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 1374
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 3392
+    },
+    {
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 4044
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 4926
+    },
+    {
+      "team": 3,
+      "hero": "Sand King",
+      "tick": 7596
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 1196,
+      "game_time_sec": 39.86666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 1374,
+      "game_time_sec": 45.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 3392,
+      "game_time_sec": 113.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 4044,
+      "game_time_sec": 134.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 4926,
+      "game_time_sec": 164.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Sand King",
+      "tick": 7596,
+      "game_time_sec": 253.2
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Kunkka",
+      "tick": 8770,
+      "game_time_sec": 292.3333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Undying",
+      "tick": 8830,
+      "game_time_sec": 294.3333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Spirit Breaker",
+      "tick": 10292,
+      "game_time_sec": 343.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 11384,
+      "game_time_sec": 379.46666666666664
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 12150,
+      "game_time_sec": 405.0
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Tidehunter",
+      "tick": 12374,
+      "game_time_sec": 412.46666666666664
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Puck",
+      "tick": 14576,
+      "game_time_sec": 485.8666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Sven",
+      "tick": 16440,
+      "game_time_sec": 548.0
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Skywrath Mage",
+      "tick": 18298,
+      "game_time_sec": 609.9333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Medusa",
+      "tick": 18418,
+      "game_time_sec": 613.9333333333333
+    }
+  ],
+  "total_deaths": 106,
+  "kda": {
+    "Профессор вкусных каш": {
+      "kills": 12,
+      "deaths": 6,
+      "assists": 18,
+      "kda_ratio": 5.0
+    },
+    "nerd": {
+      "kills": 7,
+      "deaths": 10,
+      "assists": 27,
+      "kda_ratio": 3.4
+    },
+    "Davros": {
+      "kills": 2,
+      "deaths": 15,
+      "assists": 25,
+      "kda_ratio": 1.8
+    },
+    "DeR meis+eR": {
+      "kills": 14,
+      "deaths": 9,
+      "assists": 26,
+      "kda_ratio": 4.44
+    },
+    "Capy": {
+      "kills": 16,
+      "deaths": 15,
+      "assists": 22,
+      "kda_ratio": 2.53
+    },
+    "???&": {
+      "kills": 20,
+      "deaths": 5,
+      "assists": 15,
+      "kda_ratio": 7.0
+    },
+    "Itadori Yuji": {
+      "kills": 17,
+      "deaths": 12,
+      "assists": 25,
+      "kda_ratio": 3.5
+    },
+    "Donnie": {
+      "kills": 8,
+      "deaths": 9,
+      "assists": 32,
+      "kda_ratio": 4.44
+    },
+    "13": {
+      "kills": 1,
+      "deaths": 15,
+      "assists": 32,
+      "kda_ratio": 2.2
+    },
+    "Mat' v mute": {
+      "kills": 8,
+      "deaths": 10,
+      "assists": 33,
+      "kda_ratio": 4.1
+    }
+  },
+  "net_worth": {
+    "Профессор вкусных каш": 37914,
+    "nerd": 24194,
+    "Davros": 16053,
+    "DeR meis+eR": 28957,
+    "Capy": 18282,
+    "???&": 43724,
+    "Itadori Yuji": 24988,
+    "Donnie": 26542,
+    "13": 11232,
+    "Mat' v mute": 17795
+  },
+  "last_hits": {
+    "Профессор вкусных каш": 741,
+    "nerd": 405,
+    "Davros": 144,
+    "DeR meis+eR": 446,
+    "Capy": 113,
+    "???&": 690,
+    "Itadori Yuji": 282,
+    "Donnie": 376,
+    "13": 33,
+    "Mat' v mute": 96
+  },
+  "denies": {
+    "Профессор вкусных каш": 25,
+    "nerd": 5,
+    "Davros": 8,
+    "DeR meis+eR": 17,
+    "Capy": 1,
+    "???&": 3,
+    "Itadori Yuji": 11,
+    "Donnie": 10,
+    "13": 1,
+    "Mat' v mute": 2
+  },
+  "gold_per_minute": {
+    "Профессор вкусных каш": 646.95,
+    "nerd": 444.58,
+    "Davros": 308.29,
+    "DeR meis+eR": 511.3,
+    "Capy": 368.64,
+    "???&": 723.49,
+    "Itadori Yuji": 463.63,
+    "Donnie": 476.85,
+    "13": 241.14,
+    "Mat' v mute": 340.57
+  },
+  "xp_per_minute": {
+    "Профессор вкусных каш": 786.76,
+    "nerd": 763.97,
+    "Davros": 526.27,
+    "DeR meis+eR": 850.22,
+    "Capy": 595.2,
+    "???&": 924.5,
+    "Itadori Yuji": 776.56,
+    "Donnie": 842.38,
+    "13": 468.64,
+    "Mat' v mute": 467.9
+  },
+  "hero_damage": {
+    "Профессор вкусных каш": 91916,
+    "nerd": 38485,
+    "Davros": 20081,
+    "DeR meis+eR": 51708,
+    "Capy": 32288,
+    "???&": 127039,
+    "Itadori Yuji": 57997,
+    "Donnie": 67249,
+    "13": 29640,
+    "Mat' v mute": 31681
+  },
+  "damage_taken": {
+    "Профессор вкусных каш": 36790,
+    "nerd": 55373,
+    "Davros": 65188,
+    "DeR meis+eR": 98260,
+    "Capy": 79272,
+    "???&": 92218,
+    "Itadori Yuji": 68342,
+    "Donnie": 69003,
+    "13": 29365,
+    "Mat' v mute": 48390
+  },
+  "hero_healing": {
+    "Профессор вкусных каш": 2192,
+    "nerd": 28408,
+    "Davros": 23998,
+    "DeR meis+eR": 41326,
+    "Capy": 40374,
+    "???&": 48915,
+    "Itadori Yuji": 22012,
+    "Donnie": 31779,
+    "13": 9213,
+    "Mat' v mute": 9763
+  },
+  "tower_damage": {
+    "Профессор вкусных каш": 8709,
+    "nerd": 1950,
+    "Davros": 336,
+    "DeR meis+eR": 2347,
+    "Capy": 352,
+    "???&": 12450,
+    "Itadori Yuji": 231,
+    "Donnie": 1261,
+    "13": 138,
+    "Mat' v mute": 188
+  },
+  "stuns_dealt": {
+    "Профессор вкусных каш": 128.77,
+    "nerd": 57.7,
+    "Davros": 212.5,
+    "DeR meis+eR": 162.97,
+    "Capy": 1.75,
+    "???&": 106.72,
+    "Itadori Yuji": 0.0,
+    "Donnie": 310.96,
+    "13": 31.84,
+    "Mat' v mute": 43.49
+  },
+  "wards_placed": {
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 2,
+      "total": 4
+    },
+    "Davros": {
+      "observer": 8,
+      "sentry": 19,
+      "total": 27
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Capy": {
+      "observer": 17,
+      "sentry": 29,
+      "total": 46
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Itadori Yuji": {
+      "observer": 3,
+      "sentry": 1,
+      "total": 4
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 12,
+      "sentry": 15,
+      "total": 27
+    },
+    "Mat' v mute": {
+      "observer": 11,
+      "sentry": 33,
+      "total": 44
+    }
+  },
+  "wards_destroyed": {
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 2,
+      "total": 4
+    },
+    "Davros": {
+      "observer": 2,
+      "sentry": 9,
+      "total": 11
+    },
+    "DeR meis+eR": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Capy": {
+      "observer": 2,
+      "sentry": 4,
+      "total": 6
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Itadori Yuji": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 3,
+      "sentry": 6,
+      "total": 9
+    },
+    "Mat' v mute": {
+      "observer": 3,
+      "sentry": 13,
+      "total": 16
+    }
+  },
+  "wards_events_count": 152,
+  "chat_after_draft": [
+    {
+      "tick": 22023,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "тактическая "
+    },
+    {
+      "tick": 22107,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "от гули"
+    },
+    {
+      "tick": 24265,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "гера"
+    },
+    {
+      "tick": 24349,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "а"
+    },
+    {
+      "tick": 24485,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "г"
+    },
+    {
+      "tick": 24537,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "ты готов?"
+    },
+    {
+      "tick": 24605,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "я"
+    },
+    {
+      "tick": 24651,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "да"
+    },
+    {
+      "tick": 24709,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "вссегда"
+    },
+    {
+      "tick": 24749,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "г тогда"
+    },
+    {
+      "tick": 24903,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "когда не надо уезжать правда"
+    },
+    {
+      "tick": 28811,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "cjhb"
+    },
+    {
+      "tick": 28863,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "сори"
+    },
+    {
+      "tick": 41223,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "а где пятый"
+    },
+    {
+      "tick": 48847,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "хватит сосать медузе"
+    },
+    {
+      "tick": 71943,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "г?"
+    },
+    {
+      "tick": 72987,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "че там"
+    },
+    {
+      "tick": 73203,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "гуля попросила"
+    },
+    {
+      "tick": 73511,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "че было"
+    },
+    {
+      "tick": 73695,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "почему дисс и из доты кикнуло"
+    },
+    {
+      "tick": 73887,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "я уже провайдеру кидал"
+    },
+    {
+      "tick": 74229,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "мало кинул"
+    },
+    {
+      "tick": 74719,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "Г"
+    },
+    {
+      "tick": 74777,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "г?"
+    },
+    {
+      "tick": 76011,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "хорошие паузы"
+    },
+    {
+      "tick": 76053,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "тактический дудос был получается"
+    },
+    {
+      "tick": 76959,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "пауза с вас началась дима"
+    },
+    {
+      "tick": 77133,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "волна дудоса"
+    },
+    {
+      "tick": 78108,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "г?"
+    },
+    {
+      "tick": 78284,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "тсоп"
+    },
+    {
+      "tick": 78358,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "пинг 400"
+    },
+    {
+      "tick": 78384,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "))"
+    },
+    {
+      "tick": 79625,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "г?"
+    },
+    {
+      "tick": 81965,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "найс пауза дима"
+    },
+    {
+      "tick": 86851,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "))"
+    },
+    {
+      "tick": 101756,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "он тильтанул"
+    },
+    {
+      "tick": 101918,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "и задудосил сам себя"
+    },
+    {
+      "tick": 104843,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "го?"
+    },
+    {
+      "tick": 104871,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "г?"
+    },
+    {
+      "tick": 104951,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "-"
+    },
+    {
+      "tick": 104951,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "не"
+    },
+    {
+      "tick": 105115,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "г"
+    },
+    {
+      "tick": 105145,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "п"
+    },
+    {
+      "tick": 138207,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "dota 2 rabotaet kak chasi"
+    },
+    {
+      "tick": 138265,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "go?"
+    }
+  ],
+  "chat_message_count": 45,
+  "high_fives": {
+    "Профессор вкусных каш": 1,
+    "nerd": 0,
+    "Davros": 0,
+    "DeR meis+eR": 0,
+    "Capy": 1,
+    "???&": 0,
+    "Itadori Yuji": 0,
+    "Donnie": 1,
+    "13": 1,
+    "Mat' v mute": 0
+  }
+}

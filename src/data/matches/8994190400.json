@@ -1,0 +1,702 @@
+{
+  "match_id": 404255808,
+  "start_time": "2026-09-12 17:41:40",
+  "start_timestamp": 1789224100.278816,
+  "duration_minutes": 43.76,
+  "duration_seconds": 2625.87,
+  "draft_duration_minutes": 14.31,
+  "winner": "dire",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "CuKATOP",
+    "team_tag": "CKTP",
+    "team_id": 1302077
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Shadow Fiend"
+    },
+    {
+      "nickname": "Потные Яйца",
+      "steam_id": 76561198026499354,
+      "hero": "Ogre Magi"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Snapfire"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Kunkka"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Shadow Shaman"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Arc Warden"
+    },
+    {
+      "nickname": "P0Druga",
+      "steam_id": 76561199783912739,
+      "hero": "Lich"
+    },
+    {
+      "nickname": "Itadori Yuji",
+      "steam_id": 76561199642307932,
+      "hero": "Juggernaut"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Timbersaw"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Spirit Breaker"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Ogre Magi",
+      "tick": 7849
+    },
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 8479
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 12487
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Shaman",
+      "tick": 14509
+    },
+    {
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 15405
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 16297
+    },
+    {
+      "team": 2,
+      "hero": "Juggernaut",
+      "tick": 17287
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Fiend",
+      "tick": 18179
+    },
+    {
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 25901
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 27103
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 1345
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 1937
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 2463
+    },
+    {
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 3111
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 4285
+    },
+    {
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 6065
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 6975
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 9743
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 10645
+    },
+    {
+      "team": 3,
+      "hero": "Underlord",
+      "tick": 11637
+    },
+    {
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 19073
+    },
+    {
+      "team": 2,
+      "hero": "Puck",
+      "tick": 20539
+    },
+    {
+      "team": 3,
+      "hero": "Lina",
+      "tick": 22259
+    },
+    {
+      "team": 2,
+      "hero": "Outworld Devourer",
+      "tick": 24435
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 1345,
+      "game_time_sec": 44.833333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kez",
+      "tick": 1937,
+      "game_time_sec": 64.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 2463,
+      "game_time_sec": 82.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 3111,
+      "game_time_sec": 103.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 4285,
+      "game_time_sec": 142.83333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 6065,
+      "game_time_sec": 202.16666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 6975,
+      "game_time_sec": 232.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Ogre Magi",
+      "tick": 7849,
+      "game_time_sec": 261.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lich",
+      "tick": 8479,
+      "game_time_sec": 282.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 9743,
+      "game_time_sec": 324.76666666666665
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Marci",
+      "tick": 10645,
+      "game_time_sec": 354.8333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Underlord",
+      "tick": 11637,
+      "game_time_sec": 387.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 12487,
+      "game_time_sec": 416.23333333333335
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Shadow Shaman",
+      "tick": 14509,
+      "game_time_sec": 483.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 15405,
+      "game_time_sec": 513.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 16297,
+      "game_time_sec": 543.2333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Juggernaut",
+      "tick": 17287,
+      "game_time_sec": 576.2333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Shadow Fiend",
+      "tick": 18179,
+      "game_time_sec": 605.9666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 19073,
+      "game_time_sec": 635.7666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Puck",
+      "tick": 20539,
+      "game_time_sec": 684.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lina",
+      "tick": 22259,
+      "game_time_sec": 741.9666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Outworld Devourer",
+      "tick": 24435,
+      "game_time_sec": 814.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 25901,
+      "game_time_sec": 863.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 27103,
+      "game_time_sec": 903.4333333333333
+    }
+  ],
+  "total_deaths": 94,
+  "kda": {
+    "???&": {
+      "kills": 9,
+      "deaths": 8,
+      "assists": 15,
+      "kda_ratio": 3.0
+    },
+    "Потные Яйца": {
+      "kills": 3,
+      "deaths": 12,
+      "assists": 18,
+      "kda_ratio": 1.75
+    },
+    "Профессор вкусных каш": {
+      "kills": 12,
+      "deaths": 7,
+      "assists": 11,
+      "kda_ratio": 3.29
+    },
+    "nerd": {
+      "kills": 12,
+      "deaths": 6,
+      "assists": 19,
+      "kda_ratio": 5.17
+    },
+    "13": {
+      "kills": 3,
+      "deaths": 17,
+      "assists": 17,
+      "kda_ratio": 1.18
+    },
+    "jMogwai": {
+      "kills": 7,
+      "deaths": 7,
+      "assists": 25,
+      "kda_ratio": 4.57
+    },
+    "P0Druga": {
+      "kills": 5,
+      "deaths": 13,
+      "assists": 14,
+      "kda_ratio": 1.46
+    },
+    "Itadori Yuji": {
+      "kills": 19,
+      "deaths": 6,
+      "assists": 12,
+      "kda_ratio": 5.17
+    },
+    "Donnie": {
+      "kills": 17,
+      "deaths": 5,
+      "assists": 15,
+      "kda_ratio": 6.4
+    },
+    "Davros": {
+      "kills": 1,
+      "deaths": 13,
+      "assists": 31,
+      "kda_ratio": 2.46
+    }
+  },
+  "net_worth": {
+    "???&": 18404,
+    "Потные Яйца": 10243,
+    "Профессор вкусных каш": 22936,
+    "nerd": 21516,
+    "13": 10299,
+    "jMogwai": 30155,
+    "P0Druga": 12622,
+    "Itadori Yuji": 33605,
+    "Donnie": 27948,
+    "Davros": 14063
+  },
+  "last_hits": {
+    "???&": 332,
+    "Потные Яйца": 41,
+    "Профессор вкусных каш": 299,
+    "nerd": 323,
+    "13": 57,
+    "jMogwai": 330,
+    "P0Druga": 46,
+    "Itadori Yuji": 457,
+    "Donnie": 311,
+    "Davros": 68
+  },
+  "denies": {
+    "???&": 8,
+    "Потные Яйца": 0,
+    "Профессор вкусных каш": 5,
+    "nerd": 5,
+    "13": 3,
+    "jMogwai": 21,
+    "P0Druga": 13,
+    "Itadori Yuji": 17,
+    "Donnie": 10,
+    "Davros": 2
+  },
+  "gold_per_minute": {
+    "???&": 526.89,
+    "Потные Яйца": 265.44,
+    "Профессор вкусных каш": 574.51,
+    "nerd": 599.87,
+    "13": 317.08,
+    "jMogwai": 749.49,
+    "P0Druga": 327.57,
+    "Itadori Yuji": 794.39,
+    "Donnie": 655.85,
+    "Davros": 346.17
+  },
+  "xp_per_minute": {
+    "???&": 688.16,
+    "Потные Яйца": 395.3,
+    "Профессор вкусных каш": 792.86,
+    "nerd": 756.39,
+    "13": 360.36,
+    "jMogwai": 770.74,
+    "P0Druga": 406.33,
+    "Itadori Yuji": 1363.85,
+    "Donnie": 1051.13,
+    "Davros": 439.12
+  },
+  "hero_damage": {
+    "???&": 28404,
+    "Потные Яйца": 24429,
+    "Профессор вкусных каш": 37779,
+    "nerd": 42214,
+    "13": 5446,
+    "jMogwai": 50196,
+    "P0Druga": 13280,
+    "Itadori Yuji": 88812,
+    "Donnie": 46413,
+    "Davros": 12028
+  },
+  "damage_taken": {
+    "???&": 47487,
+    "Потные Яйца": 40379,
+    "Профессор вкусных каш": 64406,
+    "nerd": 62591,
+    "13": 40033,
+    "jMogwai": 63435,
+    "P0Druga": 17511,
+    "Itadori Yuji": 31940,
+    "Donnie": 52569,
+    "Davros": 34718
+  },
+  "hero_healing": {
+    "???&": 19885,
+    "Потные Яйца": 15749,
+    "Профессор вкусных каш": 26747,
+    "nerd": 31189,
+    "13": 11476,
+    "jMogwai": 17014,
+    "P0Druga": 5639,
+    "Itadori Yuji": 19395,
+    "Donnie": 36266,
+    "Davros": 16228
+  },
+  "tower_damage": {
+    "???&": 3936,
+    "Потные Яйца": 242,
+    "Профессор вкусных каш": 600,
+    "nerd": 1565,
+    "13": 511,
+    "jMogwai": 4947,
+    "P0Druga": 0,
+    "Itadori Yuji": 10993,
+    "Donnie": 749,
+    "Davros": 24
+  },
+  "stuns_dealt": {
+    "???&": 23.57,
+    "Потные Яйца": 132.33,
+    "Профессор вкусных каш": 33.15,
+    "nerd": 142.15,
+    "13": 203.52,
+    "jMogwai": 43.27,
+    "P0Druga": 27.6,
+    "Itadori Yuji": 0.0,
+    "Donnie": 0.0,
+    "Davros": 152.37
+  },
+  "wards_placed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Потные Яйца": {
+      "observer": 5,
+      "sentry": 6,
+      "total": 11
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "13": {
+      "observer": 12,
+      "sentry": 21,
+      "total": 33
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "P0Druga": {
+      "observer": 10,
+      "sentry": 26,
+      "total": 36
+    },
+    "Itadori Yuji": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 6,
+      "sentry": 9,
+      "total": 15
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Потные Яйца": {
+      "observer": 1,
+      "sentry": 6,
+      "total": 7
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "13": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "P0Druga": {
+      "observer": 4,
+      "sentry": 11,
+      "total": 15
+    },
+    "Itadori Yuji": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    }
+  },
+  "wards_events_count": 99,
+  "chat_after_draft": [
+    {
+      "tick": 27585,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "по заказу чисто"
+    },
+    {
+      "tick": 27981,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "нассы на меня "
+    },
+    {
+      "tick": 29381,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "гера вылетел"
+    },
+    {
+      "tick": 29469,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "ы"
+    },
+    {
+      "tick": 30069,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "g"
+    }
+  ],
+  "chat_message_count": 5,
+  "high_fives": {
+    "???&": 0,
+    "Потные Яйца": 0,
+    "Профессор вкусных каш": 0,
+    "nerd": 0,
+    "13": 0,
+    "jMogwai": 0,
+    "P0Druga": 0,
+    "Itadori Yuji": 0,
+    "Donnie": 0,
+    "Davros": 0
+  }
+}

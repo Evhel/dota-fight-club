@@ -1,0 +1,612 @@
+{
+  "match_id": 9000914203,
+  "start_time": "2026-09-16 01:12:51",
+  "start_timestamp": 1789510371.516124,
+  "duration_minutes": 55.12,
+  "duration_seconds": 3306.97,
+  "draft_duration_minutes": 11.3,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "Reptil(0)ed",
+    "team_tag": "RTD",
+    "team_id": 998016
+  },
+  "dire_team_info": {
+    "team_name": "ауе татары",
+    "team_tag": "ауе татары",
+    "team_id": 8725285
+  },
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Sven"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Death Prophet"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Enchantress"
+    },
+    {
+      "nickname": "P0Druga",
+      "steam_id": 76561199783912739,
+      "hero": "Zeus"
+    },
+    {
+      "nickname": "мелман",
+      "steam_id": 76561198974599395,
+      "hero": "Nyx Assassin"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "Itadori Yuji",
+      "steam_id": 76561199642307932,
+      "hero": "Ogre Magi"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Lifestealer"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": 76561198078638066,
+      "hero": "Batrider"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Weaver"
+    },
+    {
+      "nickname": "плечо сто",
+      "steam_id": 76561199105241321,
+      "hero": "Lina"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 11181
+    },
+    {
+      "team": 2,
+      "hero": "Enchantress",
+      "tick": 12617
+    },
+    {
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 13769
+    },
+    {
+      "team": 3,
+      "hero": "Weaver",
+      "tick": 14637
+    },
+    {
+      "team": 2,
+      "hero": "Ogre Magi",
+      "tick": 15577
+    },
+    {
+      "team": 2,
+      "hero": "Death Prophet",
+      "tick": 16447
+    },
+    {
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 17699
+    },
+    {
+      "team": 3,
+      "hero": "Batrider",
+      "tick": 19621
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 20199
+    },
+    {
+      "team": 2,
+      "hero": "Sven",
+      "tick": 21503
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 1157
+    },
+    {
+      "team": 3,
+      "hero": "Dark Seer",
+      "tick": 2811
+    },
+    {
+      "team": 2,
+      "hero": "Riki",
+      "tick": 4537
+    },
+    {
+      "team": 3,
+      "hero": "Beastmaster",
+      "tick": 5705
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 8019
+    },
+    {
+      "team": 3,
+      "hero": "Magnus",
+      "tick": 10021
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 1157,
+      "game_time_sec": 38.56666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Dark Seer",
+      "tick": 2811,
+      "game_time_sec": 93.7
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Riki",
+      "tick": 4537,
+      "game_time_sec": 151.23333333333332
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Beastmaster",
+      "tick": 5705,
+      "game_time_sec": 190.16666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 8019,
+      "game_time_sec": 267.3
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Magnus",
+      "tick": 10021,
+      "game_time_sec": 334.03333333333336
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 11181,
+      "game_time_sec": 372.7
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Enchantress",
+      "tick": 12617,
+      "game_time_sec": 420.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 13769,
+      "game_time_sec": 458.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Weaver",
+      "tick": 14637,
+      "game_time_sec": 487.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ogre Magi",
+      "tick": 15577,
+      "game_time_sec": 519.2333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Death Prophet",
+      "tick": 16447,
+      "game_time_sec": 548.2333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 17699,
+      "game_time_sec": 589.9666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Batrider",
+      "tick": 19621,
+      "game_time_sec": 654.0333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lina",
+      "tick": 20199,
+      "game_time_sec": 673.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Sven",
+      "tick": 21503,
+      "game_time_sec": 716.7666666666667
+    }
+  ],
+  "total_deaths": 93,
+  "kda": {
+    "???&": {
+      "kills": 6,
+      "deaths": 6,
+      "assists": 15,
+      "kda_ratio": 3.5
+    },
+    "nerd": {
+      "kills": 17,
+      "deaths": 8,
+      "assists": 13,
+      "kda_ratio": 3.75
+    },
+    "Davros": {
+      "kills": 14,
+      "deaths": 11,
+      "assists": 17,
+      "kda_ratio": 2.82
+    },
+    "P0Druga": {
+      "kills": 2,
+      "deaths": 12,
+      "assists": 30,
+      "kda_ratio": 2.67
+    },
+    "мелман": {
+      "kills": 6,
+      "deaths": 11,
+      "assists": 23,
+      "kda_ratio": 2.64
+    },
+    "Itadori Yuji": {
+      "kills": 10,
+      "deaths": 11,
+      "assists": 29,
+      "kda_ratio": 3.55
+    },
+    "Donnie": {
+      "kills": 13,
+      "deaths": 9,
+      "assists": 19,
+      "kda_ratio": 3.56
+    },
+    "DeR meis+eR": {
+      "kills": 5,
+      "deaths": 7,
+      "assists": 24,
+      "kda_ratio": 4.14
+    },
+    "13": {
+      "kills": 3,
+      "deaths": 12,
+      "assists": 22,
+      "kda_ratio": 2.08
+    },
+    "плечо сто": {
+      "kills": 17,
+      "deaths": 6,
+      "assists": 12,
+      "kda_ratio": 4.83
+    }
+  },
+  "net_worth": {
+    "???&": 33439,
+    "nerd": 27530,
+    "Davros": 22308,
+    "P0Druga": 15278,
+    "мелман": 15191,
+    "Itadori Yuji": 18756,
+    "Donnie": 33556,
+    "DeR meis+eR": 19752,
+    "13": 14729,
+    "плечо сто": 32348
+  },
+  "last_hits": {
+    "???&": 566,
+    "nerd": 430,
+    "Davros": 189,
+    "P0Druga": 70,
+    "мелман": 20,
+    "Itadori Yuji": 86,
+    "Donnie": 556,
+    "DeR meis+eR": 256,
+    "13": 147,
+    "плечо сто": 571
+  },
+  "denies": {
+    "???&": 8,
+    "nerd": 8,
+    "Davros": 15,
+    "P0Druga": 1,
+    "мелман": 6,
+    "Itadori Yuji": 2,
+    "Donnie": 25,
+    "DeR meis+eR": 7,
+    "13": 3,
+    "плечо сто": 5
+  },
+  "gold_per_minute": {
+    "???&": 661.73,
+    "nerd": 637.09,
+    "Davros": 472.37,
+    "P0Druga": 321.58,
+    "мелман": 309.15,
+    "Itadori Yuji": 447.47,
+    "Donnie": 642.92,
+    "DeR meis+eR": 404.04,
+    "13": 322.97,
+    "плечо сто": 691.69
+  },
+  "xp_per_minute": {
+    "???&": 1126.24,
+    "nerd": 922.38,
+    "Davros": 711.81,
+    "P0Druga": 496.99,
+    "мелман": 534.78,
+    "Itadori Yuji": 645.02,
+    "Donnie": 936.57,
+    "DeR meis+eR": 692.66,
+    "13": 584.51,
+    "плечо сто": 931.72
+  },
+  "hero_damage": {
+    "???&": 70743,
+    "nerd": 52960,
+    "Davros": 36608,
+    "P0Druga": 35938,
+    "мелман": 25667,
+    "Itadori Yuji": 37870,
+    "Donnie": 43856,
+    "DeR meis+eR": 28093,
+    "13": 21260,
+    "плечо сто": 50856
+  },
+  "damage_taken": {
+    "???&": 59615,
+    "nerd": 62410,
+    "Davros": 52590,
+    "P0Druga": 27619,
+    "мелман": 32065,
+    "Itadori Yuji": 53014,
+    "Donnie": 126147,
+    "DeR meis+eR": 70933,
+    "13": 45805,
+    "плечо сто": 47802
+  },
+  "hero_healing": {
+    "???&": 37276,
+    "nerd": 38600,
+    "Davros": 26462,
+    "P0Druga": 9274,
+    "мелман": 13383,
+    "Itadori Yuji": 23155,
+    "Donnie": 60029,
+    "DeR meis+eR": 40455,
+    "13": 18095,
+    "плечо сто": 24732
+  },
+  "tower_damage": {
+    "???&": 8792,
+    "nerd": 6762,
+    "Davros": 1537,
+    "P0Druga": 86,
+    "мелман": 529,
+    "Itadori Yuji": 0,
+    "Donnie": 3381,
+    "DeR meis+eR": 380,
+    "13": 409,
+    "плечо сто": 2367
+  },
+  "stuns_dealt": {
+    "???&": 101.1,
+    "nerd": 67.13,
+    "Davros": 201.27,
+    "P0Druga": 57.11,
+    "мелман": 165.18,
+    "Itadori Yuji": 297.25,
+    "Donnie": 34.13,
+    "DeR meis+eR": 177.8,
+    "13": 0.0,
+    "плечо сто": 125.41
+  },
+  "wards_placed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "P0Druga": {
+      "observer": 7,
+      "sentry": 22,
+      "total": 29
+    },
+    "мелман": {
+      "observer": 11,
+      "sentry": 16,
+      "total": 27
+    },
+    "Itadori Yuji": {
+      "observer": 17,
+      "sentry": 35,
+      "total": 52
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "13": {
+      "observer": 2,
+      "sentry": 6,
+      "total": 8
+    },
+    "плечо сто": {
+      "observer": 3,
+      "sentry": 1,
+      "total": 4
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 4,
+      "total": 6
+    },
+    "Davros": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "P0Druga": {
+      "observer": 1,
+      "sentry": 7,
+      "total": 8
+    },
+    "мелман": {
+      "observer": 3,
+      "sentry": 3,
+      "total": 6
+    },
+    "Itadori Yuji": {
+      "observer": 4,
+      "sentry": 9,
+      "total": 13
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "плечо сто": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_events_count": 124,
+  "chat_after_draft": [
+    {
+      "tick": 47577,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "ща"
+    },
+    {
+      "tick": 48183,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "g?"
+    },
+    {
+      "tick": 86579,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "г*?"
+    },
+    {
+      "tick": 87405,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "g?"
+    },
+    {
+      "tick": 87465,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "г"
+    },
+    {
+      "tick": 96277,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "gg"
+    }
+  ],
+  "chat_message_count": 6,
+  "high_fives": {
+    "???&": 0,
+    "nerd": 0,
+    "Davros": 0,
+    "P0Druga": 0,
+    "мелман": 1,
+    "Itadori Yuji": 2,
+    "Donnie": 0,
+    "DeR meis+eR": 0,
+    "13": 0,
+    "плечо сто": 0
+  }
+}

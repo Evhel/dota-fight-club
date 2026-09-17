@@ -1,0 +1,708 @@
+{
+  "match_id": 8924678975,
+  "start_time": "2026-08-01 23:43:47",
+  "start_timestamp": 1785617027.193078,
+  "duration_minutes": 25.69,
+  "duration_seconds": 1541.67,
+  "draft_duration_minutes": 8.99,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "Всех приветсвую, всем саламалейкум",
+    "team_tag": "SALAM",
+    "team_id": 10129669
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Ember Spirit"
+    },
+    {
+      "nickname": "P0Druga",
+      "steam_id": 76561199783912739,
+      "hero": "Silencer"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Enchantress"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": 76561198040946408,
+      "hero": "Nyx Assassin"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Lifestealer"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "Osaki",
+      "steam_id": 76561198306408521,
+      "hero": "Crystal Maiden"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Wraith King"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Slark"
+    },
+    {
+      "nickname": "betrayed",
+      "steam_id": 76561198319233727,
+      "hero": "Dark Willow"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Grimstroke"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Wraith King",
+      "tick": 5696
+    },
+    {
+      "team": 2,
+      "hero": "Silencer",
+      "tick": 7264
+    },
+    {
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 8210
+    },
+    {
+      "team": 3,
+      "hero": "Crystal Maiden",
+      "tick": 9114
+    },
+    {
+      "team": 2,
+      "hero": "Slark",
+      "tick": 12368
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 13630
+    },
+    {
+      "team": 3,
+      "hero": "Ember Spirit",
+      "tick": 13722
+    },
+    {
+      "team": 3,
+      "hero": "Dark Willow",
+      "tick": 14972
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 16126
+    },
+    {
+      "team": 2,
+      "hero": "Enchantress",
+      "tick": 16878
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Arc Warden",
+      "tick": 688
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1522
+    },
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 1686
+    },
+    {
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 2508
+    },
+    {
+      "team": 2,
+      "hero": "Void Spirit",
+      "tick": 4064
+    },
+    {
+      "team": 3,
+      "hero": "Troll Warlord",
+      "tick": 4922
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Arc Warden",
+      "tick": 688,
+      "game_time_sec": 22.933333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1522,
+      "game_time_sec": 50.733333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 1686,
+      "game_time_sec": 56.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 2508,
+      "game_time_sec": 83.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Void Spirit",
+      "tick": 4064,
+      "game_time_sec": 135.46666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Troll Warlord",
+      "tick": 4922,
+      "game_time_sec": 164.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Wraith King",
+      "tick": 5696,
+      "game_time_sec": 189.86666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Silencer",
+      "tick": 7264,
+      "game_time_sec": 242.13333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 8210,
+      "game_time_sec": 273.6666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Crystal Maiden",
+      "tick": 9114,
+      "game_time_sec": 303.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Slark",
+      "tick": 12368,
+      "game_time_sec": 412.26666666666665
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 13630,
+      "game_time_sec": 454.3333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Ember Spirit",
+      "tick": 13722,
+      "game_time_sec": 457.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Dark Willow",
+      "tick": 14972,
+      "game_time_sec": 499.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 16126,
+      "game_time_sec": 537.5333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Enchantress",
+      "tick": 16878,
+      "game_time_sec": 562.6
+    }
+  ],
+  "total_deaths": 49,
+  "kda": {
+    "jMogwai": {
+      "kills": 17,
+      "deaths": 0,
+      "assists": 14,
+      "kda_ratio": 31.0
+    },
+    "P0Druga": {
+      "kills": 3,
+      "deaths": 5,
+      "assists": 14,
+      "kda_ratio": 3.4
+    },
+    "Davros": {
+      "kills": 9,
+      "deaths": 1,
+      "assists": 13,
+      "kda_ratio": 22.0
+    },
+    "Kando!JeJe": {
+      "kills": 6,
+      "deaths": 2,
+      "assists": 20,
+      "kda_ratio": 13.0
+    },
+    "???&": {
+      "kills": 5,
+      "deaths": 1,
+      "assists": 7,
+      "kda_ratio": 12.0
+    },
+    "Osaki": {
+      "kills": 2,
+      "deaths": 7,
+      "assists": 1,
+      "kda_ratio": 0.43
+    },
+    "Donnie": {
+      "kills": 0,
+      "deaths": 5,
+      "assists": 1,
+      "kda_ratio": 0.2
+    },
+    "Профессор вкусных каш": {
+      "kills": 1,
+      "deaths": 6,
+      "assists": 2,
+      "kda_ratio": 0.5
+    },
+    "betrayed": {
+      "kills": 3,
+      "deaths": 9,
+      "assists": 1,
+      "kda_ratio": 0.44
+    },
+    "13": {
+      "kills": 3,
+      "deaths": 13,
+      "assists": 2,
+      "kda_ratio": 0.38
+    }
+  },
+  "net_worth": {
+    "jMogwai": 13948,
+    "P0Druga": 5862,
+    "Davros": 10636,
+    "Kando!JeJe": 6987,
+    "???&": 13454,
+    "Osaki": 1,
+    "Donnie": 1,
+    "Профессор вкусных каш": 1,
+    "betrayed": 16110,
+    "13": 151
+  },
+  "last_hits": {
+    "jMogwai": 138,
+    "P0Druga": 10,
+    "Davros": 87,
+    "Kando!JeJe": 30,
+    "???&": 190,
+    "Osaki": 6,
+    "Donnie": 122,
+    "Профессор вкусных каш": 71,
+    "betrayed": 54,
+    "13": 10
+  },
+  "denies": {
+    "jMogwai": 10,
+    "P0Druga": 1,
+    "Davros": 18,
+    "Kando!JeJe": 0,
+    "???&": 6,
+    "Osaki": 0,
+    "Donnie": 10,
+    "Профессор вкусных каш": 16,
+    "betrayed": 1,
+    "13": 2
+  },
+  "gold_per_minute": {
+    "jMogwai": 538.91,
+    "P0Druga": 235.62,
+    "Davros": 400.86,
+    "Kando!JeJe": 293.88,
+    "???&": 505.13,
+    "Osaki": 138.24,
+    "Donnie": 337.82,
+    "Профессор вкусных каш": 235.73,
+    "betrayed": 653.92,
+    "13": 315.83
+  },
+  "xp_per_minute": {
+    "jMogwai": 597.56,
+    "P0Druga": 258.81,
+    "Davros": 434.69,
+    "Kando!JeJe": 306.72,
+    "???&": 475.51,
+    "Osaki": 136.37,
+    "Donnie": 285.9,
+    "Профессор вкусных каш": 230.63,
+    "betrayed": 265.23,
+    "13": 128.94
+  },
+  "hero_damage": {
+    "jMogwai": 28167,
+    "P0Druga": 6443,
+    "Davros": 10195,
+    "Kando!JeJe": 5549,
+    "???&": 13581,
+    "Osaki": 5260,
+    "Donnie": 6712,
+    "Профессор вкусных каш": 7271,
+    "betrayed": 8632,
+    "13": 5165
+  },
+  "damage_taken": {
+    "jMogwai": 22834,
+    "P0Druga": 8776,
+    "Davros": 12916,
+    "Kando!JeJe": 7783,
+    "???&": 21783,
+    "Osaki": 7895,
+    "Donnie": 21835,
+    "Профессор вкусных каш": 20095,
+    "betrayed": 16691,
+    "13": 13519
+  },
+  "hero_healing": {
+    "jMogwai": 16756,
+    "P0Druga": 4231,
+    "Davros": 13866,
+    "Kando!JeJe": 4474,
+    "???&": 19518,
+    "Osaki": 1867,
+    "Donnie": 12624,
+    "Профессор вкусных каш": 14544,
+    "betrayed": 4943,
+    "13": 2720
+  },
+  "tower_damage": {
+    "jMogwai": 2453,
+    "P0Druga": 993,
+    "Davros": 2980,
+    "Kando!JeJe": 945,
+    "???&": 4046,
+    "Osaki": 0,
+    "Donnie": 0,
+    "Профессор вкусных каш": 0,
+    "betrayed": 164,
+    "13": 0
+  },
+  "stuns_dealt": {
+    "jMogwai": 109.77,
+    "P0Druga": 0.0,
+    "Davros": 25.57,
+    "Kando!JeJe": 55.8,
+    "???&": 0.0,
+    "Osaki": 86.4,
+    "Donnie": 20.0,
+    "Профессор вкусных каш": 0.0,
+    "betrayed": 207.23,
+    "13": 31.32
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 4,
+      "sentry": 0,
+      "total": 4
+    },
+    "P0Druga": {
+      "observer": 2,
+      "sentry": 6,
+      "total": 8
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 4,
+      "sentry": 12,
+      "total": 16
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 3,
+      "sentry": 5,
+      "total": 8
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "betrayed": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 6,
+      "sentry": 11,
+      "total": 17
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "P0Druga": {
+      "observer": 2,
+      "sentry": 3,
+      "total": 5
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Kando!JeJe": {
+      "observer": 2,
+      "sentry": 3,
+      "total": 5
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "betrayed": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 2,
+      "sentry": 3,
+      "total": 5
+    }
+  },
+  "wards_events_count": 53,
+  "chat_after_draft": [
+    {
+      "tick": 27235,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "пиво"
+    },
+    {
+      "tick": 54073,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "пп"
+    },
+    {
+      "tick": 54139,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "gg"
+    },
+    {
+      "tick": 54785,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "мага"
+    },
+    {
+      "tick": 54839,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "можно проверить"
+    },
+    {
+      "tick": 54909,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "работает аган или нет"
+    },
+    {
+      "tick": 54945,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "?"
+    },
+    {
+      "tick": 55057,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "uj"
+    },
+    {
+      "tick": 55101,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "го"
+    },
+    {
+      "tick": 55237,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "на миду"
+    },
+    {
+      "tick": 55365,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "давай"
+    },
+    {
+      "tick": 55465,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "кастанешь скелетов"
+    },
+    {
+      "tick": 55485,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "?"
+    },
+    {
+      "tick": 55565,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "да"
+    },
+    {
+      "tick": 55599,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "ПОБОЛЬШЕ"
+    },
+    {
+      "tick": 55643,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "надо"
+    },
+    {
+      "tick": 55801,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "гг"
+    },
+    {
+      "tick": 56713,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "gg"
+    },
+    {
+      "tick": 57519,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "gg"
+    },
+    {
+      "tick": 60195,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "("
+    },
+    {
+      "tick": 60545,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "gg"
+    },
+    {
+      "tick": 61961,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "1 vs 9"
+    }
+  ],
+  "chat_message_count": 22,
+  "high_fives": {
+    "jMogwai": 0,
+    "P0Druga": 0,
+    "Davros": 1,
+    "Kando!JeJe": 0,
+    "???&": 0,
+    "Osaki": 0,
+    "Donnie": 1,
+    "Профессор вкусных каш": 0,
+    "betrayed": 0,
+    "13": 0
+  }
+}

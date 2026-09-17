@@ -1,0 +1,702 @@
+{
+  "match_id": 8924741333,
+  "start_time": "2026-08-08 00:57:30",
+  "start_timestamp": 1786139850.102316,
+  "duration_minutes": 30.32,
+  "duration_seconds": 1819.27,
+  "draft_duration_minutes": 11.98,
+  "winner": "radiant",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "dlya trenirovok",
+    "team_tag": "DLT",
+    "team_id": 1387268
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Marci"
+    },
+    {
+      "nickname": "I want to die",
+      "steam_id": 76561199222816532,
+      "hero": "Drow Ranger"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Wraith King"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": 76561198040946408,
+      "hero": "Lion"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Witch Doctor"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "P0Druga",
+      "steam_id": 76561199783912739,
+      "hero": "Warlock"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Axe"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Spirit Breaker"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Lone Druid"
+    },
+    {
+      "nickname": "betrayed",
+      "steam_id": 76561198319233727,
+      "hero": "Huskar"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 4971
+    },
+    {
+      "team": 2,
+      "hero": "Warlock",
+      "tick": 6271
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 11077
+    },
+    {
+      "team": 2,
+      "hero": "Lion",
+      "tick": 11891
+    },
+    {
+      "team": 3,
+      "hero": "Wraith King",
+      "tick": 14829
+    },
+    {
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 16277
+    },
+    {
+      "team": 2,
+      "hero": "Axe",
+      "tick": 17133
+    },
+    {
+      "team": 2,
+      "hero": "Drow Ranger",
+      "tick": 17945
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 22097
+    },
+    {
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 22293
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 721
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1251
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 1799
+    },
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 2783
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 3369
+    },
+    {
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 4383
+    },
+    {
+      "team": 2,
+      "hero": "Kez",
+      "tick": 4873
+    },
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 6517
+    },
+    {
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 7949
+    },
+    {
+      "team": 3,
+      "hero": "Tinker",
+      "tick": 9751
+    },
+    {
+      "team": 3,
+      "hero": "Rubick",
+      "tick": 18659
+    },
+    {
+      "team": 2,
+      "hero": "Queen of Pain",
+      "tick": 19581
+    },
+    {
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 20497
+    },
+    {
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 21719
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lich",
+      "tick": 721,
+      "game_time_sec": 24.033333333333335
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1251,
+      "game_time_sec": 41.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 1799,
+      "game_time_sec": 59.96666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 2783,
+      "game_time_sec": 92.76666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 3369,
+      "game_time_sec": 112.3
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 4383,
+      "game_time_sec": 146.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Kez",
+      "tick": 4873,
+      "game_time_sec": 162.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 4971,
+      "game_time_sec": 165.7
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Warlock",
+      "tick": 6271,
+      "game_time_sec": 209.03333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 6517,
+      "game_time_sec": 217.23333333333332
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 7949,
+      "game_time_sec": 264.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Tinker",
+      "tick": 9751,
+      "game_time_sec": 325.03333333333336
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 11077,
+      "game_time_sec": 369.23333333333335
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lion",
+      "tick": 11891,
+      "game_time_sec": 396.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Wraith King",
+      "tick": 14829,
+      "game_time_sec": 494.3
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 16277,
+      "game_time_sec": 542.5666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Axe",
+      "tick": 17133,
+      "game_time_sec": 571.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Drow Ranger",
+      "tick": 17945,
+      "game_time_sec": 598.1666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Rubick",
+      "tick": 18659,
+      "game_time_sec": 621.9666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Queen of Pain",
+      "tick": 19581,
+      "game_time_sec": 652.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 20497,
+      "game_time_sec": 683.2333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 21719,
+      "game_time_sec": 723.9666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Marci",
+      "tick": 22097,
+      "game_time_sec": 736.5666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 22293,
+      "game_time_sec": 743.1
+    }
+  ],
+  "total_deaths": 36,
+  "kda": {
+    "jMogwai": {
+      "kills": 14,
+      "deaths": 1,
+      "assists": 6,
+      "kda_ratio": 20.0
+    },
+    "I want to die": {
+      "kills": 3,
+      "deaths": 2,
+      "assists": 11,
+      "kda_ratio": 7.0
+    },
+    "Профессор вкусных каш": {
+      "kills": 4,
+      "deaths": 1,
+      "assists": 6,
+      "kda_ratio": 10.0
+    },
+    "Kando!JeJe": {
+      "kills": 2,
+      "deaths": 2,
+      "assists": 12,
+      "kda_ratio": 7.0
+    },
+    "13": {
+      "kills": 4,
+      "deaths": 3,
+      "assists": 18,
+      "kda_ratio": 7.33
+    },
+    "P0Druga": {
+      "kills": 0,
+      "deaths": 4,
+      "assists": 3,
+      "kda_ratio": 0.75
+    },
+    "Donnie": {
+      "kills": 4,
+      "deaths": 7,
+      "assists": 1,
+      "kda_ratio": 0.71
+    },
+    "Davros": {
+      "kills": 1,
+      "deaths": 7,
+      "assists": 7,
+      "kda_ratio": 1.14
+    },
+    "???&": {
+      "kills": 3,
+      "deaths": 2,
+      "assists": 0,
+      "kda_ratio": 1.5
+    },
+    "betrayed": {
+      "kills": 1,
+      "deaths": 7,
+      "assists": 1,
+      "kda_ratio": 0.29
+    }
+  },
+  "net_worth": {
+    "jMogwai": 14248,
+    "I want to die": 14089,
+    "Профессор вкусных каш": 13577,
+    "Kando!JeJe": 6570,
+    "13": 7611,
+    "P0Druga": 4735,
+    "Donnie": 8778,
+    "Davros": 5598,
+    "???&": 13116,
+    "betrayed": 9121
+  },
+  "last_hits": {
+    "jMogwai": 115,
+    "I want to die": 211,
+    "Профессор вкусных каш": 187,
+    "Kando!JeJe": 11,
+    "13": 11,
+    "P0Druga": 27,
+    "Donnie": 180,
+    "Davros": 47,
+    "???&": 264,
+    "betrayed": 171
+  },
+  "denies": {
+    "jMogwai": 13,
+    "I want to die": 32,
+    "Профессор вкусных каш": 7,
+    "Kando!JeJe": 0,
+    "13": 3,
+    "P0Druga": 3,
+    "Donnie": 9,
+    "Davros": 6,
+    "???&": 4,
+    "betrayed": 10
+  },
+  "gold_per_minute": {
+    "jMogwai": 424.32,
+    "I want to die": 437.95,
+    "Профессор вкусных каш": 396.03,
+    "Kando!JeJe": 180.77,
+    "13": 238.84,
+    "P0Druga": 150.75,
+    "Donnie": 324.23,
+    "Davros": 195.61,
+    "???&": 402.29,
+    "betrayed": 318.75
+  },
+  "xp_per_minute": {
+    "jMogwai": 478.38,
+    "I want to die": 405.82,
+    "Профессор вкусных каш": 414.07,
+    "Kando!JeJe": 280.79,
+    "13": 297.52,
+    "P0Druga": 139.8,
+    "Donnie": 408.99,
+    "Davros": 226.87,
+    "???&": 495.03,
+    "betrayed": 420.86
+  },
+  "hero_damage": {
+    "jMogwai": 17060,
+    "I want to die": 11074,
+    "Профессор вкусных каш": 7379,
+    "Kando!JeJe": 6350,
+    "13": 6837,
+    "P0Druga": 3040,
+    "Donnie": 5671,
+    "Davros": 5511,
+    "???&": 2387,
+    "betrayed": 44334
+  },
+  "damage_taken": {
+    "jMogwai": 19703,
+    "I want to die": 10286,
+    "Профессор вкусных каш": 19438,
+    "Kando!JeJe": 6839,
+    "13": 10411,
+    "P0Druga": 7101,
+    "Donnie": 24763,
+    "Davros": 16689,
+    "???&": 6897,
+    "betrayed": 63140
+  },
+  "hero_healing": {
+    "jMogwai": 14014,
+    "I want to die": 5162,
+    "Профессор вкусных каш": 14459,
+    "Kando!JeJe": 4212,
+    "13": 9922,
+    "P0Druga": 5682,
+    "Donnie": 13468,
+    "Davros": 4673,
+    "???&": 9939,
+    "betrayed": 39320
+  },
+  "tower_damage": {
+    "jMogwai": 3208,
+    "I want to die": 1830,
+    "Профессор вкусных каш": 1942,
+    "Kando!JeJe": 417,
+    "13": 388,
+    "P0Druga": 0,
+    "Donnie": 0,
+    "Davros": 0,
+    "???&": 139,
+    "betrayed": 0
+  },
+  "stuns_dealt": {
+    "jMogwai": 56.93,
+    "I want to die": 0.0,
+    "Профессор вкусных каш": 30.1,
+    "Kando!JeJe": 127.79,
+    "13": 40.3,
+    "P0Druga": 0.0,
+    "Donnie": 30.6,
+    "Davros": 66.57,
+    "???&": 32.83,
+    "betrayed": 0.0
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "I want to die": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 5,
+      "sentry": 14,
+      "total": 19
+    },
+    "13": {
+      "observer": 5,
+      "sentry": 10,
+      "total": 15
+    },
+    "P0Druga": {
+      "observer": 2,
+      "sentry": 10,
+      "total": 12
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 6,
+      "sentry": 10,
+      "total": 16
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "betrayed": {
+      "observer": 4,
+      "sentry": 3,
+      "total": 7
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "I want to die": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 2,
+      "sentry": 6,
+      "total": 8
+    },
+    "13": {
+      "observer": 0,
+      "sentry": 5,
+      "total": 5
+    },
+    "P0Druga": {
+      "observer": 0,
+      "sentry": 6,
+      "total": 6
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 1,
+      "sentry": 3,
+      "total": 4
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "betrayed": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    }
+  },
+  "wards_events_count": 75,
+  "chat_after_draft": [
+    {
+      "tick": 36617,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "даша"
+    },
+    {
+      "tick": 36691,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "попросила"
+    },
+    {
+      "tick": 37387,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "г?"
+    },
+    {
+      "tick": 76831,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "пп"
+    },
+    {
+      "tick": 76881,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "gg"
+    }
+  ],
+  "chat_message_count": 5,
+  "high_fives": {
+    "jMogwai": 1,
+    "I want to die": 0,
+    "Профессор вкусных каш": 0,
+    "Kando!JeJe": 0,
+    "13": 0,
+    "P0Druga": 0,
+    "Donnie": 0,
+    "Davros": 0,
+    "???&": 0,
+    "betrayed": 0
+  }
+}

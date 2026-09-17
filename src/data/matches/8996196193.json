@@ -1,0 +1,612 @@
+{
+  "match_id": 8996196193,
+  "start_time": "2026-09-13 03:32:24",
+  "start_timestamp": 1789259544.454094,
+  "duration_minutes": 55.24,
+  "duration_seconds": 3314.27,
+  "draft_duration_minutes": 10.25,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "CuKATOP",
+    "team_tag": "CKTP",
+    "team_id": 1302077
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "radiant_team": [
+    {
+      "nickname": "мелман",
+      "steam_id": 76561198974599395,
+      "hero": "Techies"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Riki"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Warlock"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Magnus"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Dawnbreaker"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Invoker"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Bloodseeker"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Witch Doctor"
+    },
+    {
+      "nickname": "Itadori Yuji",
+      "steam_id": 76561199642307932,
+      "hero": "Vengeful Spirit"
+    },
+    {
+      "nickname": "Capy",
+      "steam_id": 76561198009445320,
+      "hero": "Ogre Magi"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Witch Doctor",
+      "tick": 6885
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 8659
+    },
+    {
+      "team": 3,
+      "hero": "Warlock",
+      "tick": 10251
+    },
+    {
+      "team": 3,
+      "hero": "Vengeful Spirit",
+      "tick": 10361
+    },
+    {
+      "team": 2,
+      "hero": "Bloodseeker",
+      "tick": 10407
+    },
+    {
+      "team": 2,
+      "hero": "Magnus",
+      "tick": 11773
+    },
+    {
+      "team": 3,
+      "hero": "Riki",
+      "tick": 13137
+    },
+    {
+      "team": 3,
+      "hero": "Ogre Magi",
+      "tick": 13785
+    },
+    {
+      "team": 2,
+      "hero": "Invoker",
+      "tick": 18157
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 19359
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 913
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2135
+    },
+    {
+      "team": 2,
+      "hero": "Slardar",
+      "tick": 2967
+    },
+    {
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 3885
+    },
+    {
+      "team": 2,
+      "hero": "Terrorblade",
+      "tick": 5117
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 6703
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 913,
+      "game_time_sec": 30.433333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2135,
+      "game_time_sec": 71.16666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Slardar",
+      "tick": 2967,
+      "game_time_sec": 98.9
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 3885,
+      "game_time_sec": 129.5
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Terrorblade",
+      "tick": 5117,
+      "game_time_sec": 170.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 6703,
+      "game_time_sec": 223.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Witch Doctor",
+      "tick": 6885,
+      "game_time_sec": 229.5
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Techies",
+      "tick": 8659,
+      "game_time_sec": 288.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Warlock",
+      "tick": 10251,
+      "game_time_sec": 341.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Vengeful Spirit",
+      "tick": 10361,
+      "game_time_sec": 345.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Bloodseeker",
+      "tick": 10407,
+      "game_time_sec": 346.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Magnus",
+      "tick": 11773,
+      "game_time_sec": 392.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Riki",
+      "tick": 13137,
+      "game_time_sec": 437.9
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Ogre Magi",
+      "tick": 13785,
+      "game_time_sec": 459.5
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Invoker",
+      "tick": 18157,
+      "game_time_sec": 605.2333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 19359,
+      "game_time_sec": 645.3
+    }
+  ],
+  "total_deaths": 105,
+  "kda": {
+    "мелман": {
+      "kills": 9,
+      "deaths": 8,
+      "assists": 28,
+      "kda_ratio": 4.62
+    },
+    "???&": {
+      "kills": 19,
+      "deaths": 9,
+      "assists": 28,
+      "kda_ratio": 5.22
+    },
+    "Davros": {
+      "kills": 8,
+      "deaths": 10,
+      "assists": 32,
+      "kda_ratio": 4.0
+    },
+    "Donnie": {
+      "kills": 5,
+      "deaths": 6,
+      "assists": 26,
+      "kda_ratio": 5.17
+    },
+    "Профессор вкусных каш": {
+      "kills": 28,
+      "deaths": 3,
+      "assists": 24,
+      "kda_ratio": 17.33
+    },
+    "jMogwai": {
+      "kills": 7,
+      "deaths": 9,
+      "assists": 14,
+      "kda_ratio": 2.33
+    },
+    "nerd": {
+      "kills": 6,
+      "deaths": 14,
+      "assists": 14,
+      "kda_ratio": 1.43
+    },
+    "13": {
+      "kills": 6,
+      "deaths": 21,
+      "assists": 17,
+      "kda_ratio": 1.1
+    },
+    "Itadori Yuji": {
+      "kills": 7,
+      "deaths": 13,
+      "assists": 14,
+      "kda_ratio": 1.62
+    },
+    "Capy": {
+      "kills": 7,
+      "deaths": 12,
+      "assists": 17,
+      "kda_ratio": 2.0
+    }
+  },
+  "net_worth": {
+    "мелман": 23692,
+    "???&": 30554,
+    "Davros": 19758,
+    "Donnie": 31331,
+    "Профессор вкусных каш": 41503,
+    "jMogwai": 24695,
+    "nerd": 25426,
+    "13": 16076,
+    "Itadori Yuji": 32933,
+    "Capy": 18687
+  },
+  "last_hits": {
+    "мелман": 267,
+    "???&": 312,
+    "Davros": 138,
+    "Donnie": 433,
+    "Профессор вкусных каш": 470,
+    "jMogwai": 362,
+    "nerd": 499,
+    "13": 72,
+    "Itadori Yuji": 608,
+    "Capy": 130
+  },
+  "denies": {
+    "мелман": 4,
+    "???&": 6,
+    "Davros": 6,
+    "Donnie": 9,
+    "Профессор вкусных каш": 12,
+    "jMogwai": 15,
+    "nerd": 4,
+    "13": 3,
+    "Itadori Yuji": 13,
+    "Capy": 8
+  },
+  "gold_per_minute": {
+    "мелман": 463.96,
+    "???&": 567.62,
+    "Davros": 416.36,
+    "Donnie": 581.41,
+    "Профессор вкусных каш": 774.18,
+    "jMogwai": 536.41,
+    "nerd": 570.73,
+    "13": 381.68,
+    "Itadori Yuji": 691.1,
+    "Capy": 454.13
+  },
+  "xp_per_minute": {
+    "мелман": 814.1,
+    "???&": 1033.48,
+    "Davros": 744.92,
+    "Donnie": 1078.59,
+    "Профессор вкусных каш": 1165.87,
+    "jMogwai": 680.57,
+    "nerd": 708.83,
+    "13": 657.85,
+    "Itadori Yuji": 888.9,
+    "Capy": 576.67
+  },
+  "hero_damage": {
+    "мелман": 57333,
+    "???&": 55275,
+    "Davros": 22868,
+    "Donnie": 43908,
+    "Профессор вкусных каш": 120688,
+    "jMogwai": 45766,
+    "nerd": 86957,
+    "13": 21636,
+    "Itadori Yuji": 65792,
+    "Capy": 28377
+  },
+  "damage_taken": {
+    "мелман": 46639,
+    "???&": 111578,
+    "Davros": 31282,
+    "Donnie": 63907,
+    "Профессор вкусных каш": 58550,
+    "jMogwai": 45566,
+    "nerd": 147232,
+    "13": 53290,
+    "Itadori Yuji": 111251,
+    "Capy": 67126
+  },
+  "hero_healing": {
+    "мелман": 15609,
+    "???&": 21573,
+    "Davros": 21776,
+    "Donnie": 30489,
+    "Профессор вкусных каш": 53735,
+    "jMogwai": 19322,
+    "nerd": 63268,
+    "13": 27771,
+    "Itadori Yuji": 15962,
+    "Capy": 22764
+  },
+  "tower_damage": {
+    "мелман": 622,
+    "???&": 6079,
+    "Davros": 678,
+    "Donnie": 3462,
+    "Профессор вкусных каш": 4110,
+    "jMogwai": 701,
+    "nerd": 2732,
+    "13": 0,
+    "Itadori Yuji": 4671,
+    "Capy": 4
+  },
+  "stuns_dealt": {
+    "мелман": 38.18,
+    "???&": 23.2,
+    "Davros": 51.27,
+    "Donnie": 173.74,
+    "Профессор вкусных каш": 42.63,
+    "jMogwai": 237.53,
+    "nerd": 10.43,
+    "13": 111.37,
+    "Itadori Yuji": 105.43,
+    "Capy": 130.84
+  },
+  "wards_placed": {
+    "мелман": {
+      "observer": 7,
+      "sentry": 8,
+      "total": 15
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 15,
+      "sentry": 33,
+      "total": 48
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "13": {
+      "observer": 12,
+      "sentry": 21,
+      "total": 33
+    },
+    "Itadori Yuji": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Capy": {
+      "observer": 8,
+      "sentry": 23,
+      "total": 31
+    }
+  },
+  "wards_destroyed": {
+    "мелман": {
+      "observer": 2,
+      "sentry": 2,
+      "total": 4
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "Davros": {
+      "observer": 5,
+      "sentry": 7,
+      "total": 12
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 10,
+      "total": 11
+    },
+    "Itadori Yuji": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Capy": {
+      "observer": 3,
+      "sentry": 6,
+      "total": 9
+    }
+  },
+  "wards_events_count": 131,
+  "chat_after_draft": [
+    {
+      "tick": 23555,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "г"
+    },
+    {
+      "tick": 23593,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "г?"
+    },
+    {
+      "tick": 36147,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "Мелман"
+    },
+    {
+      "tick": 36315,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "а"
+    },
+    {
+      "tick": 36465,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "Как ты"
+    },
+    {
+      "tick": 86389,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "тильт..."
+    }
+  ],
+  "chat_message_count": 6,
+  "high_fives": {
+    "мелман": 0,
+    "???&": 0,
+    "Davros": 0,
+    "Donnie": 0,
+    "Профессор вкусных каш": 0,
+    "jMogwai": 0,
+    "nerd": 0,
+    "13": 0,
+    "Itadori Yuji": 1,
+    "Capy": 0
+  }
+}

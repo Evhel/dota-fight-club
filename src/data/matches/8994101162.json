@@ -1,0 +1,660 @@
+{
+  "match_id": 8994101162,
+  "start_time": "2026-09-11 23:44:30",
+  "start_timestamp": 1789159470.09459,
+  "duration_minutes": 37.36,
+  "duration_seconds": 2241.83,
+  "draft_duration_minutes": 10.95,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "Всех приветсвую, всем саламалейкум",
+    "team_tag": "SALAM",
+    "team_id": 10129669
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Storm Spirit"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Witch Doctor"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Dragon Knight"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Spectre"
+    },
+    {
+      "nickname": "Потные Яйца",
+      "steam_id": 76561198026499354,
+      "hero": "Ancient Apparition"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Mirana"
+    },
+    {
+      "nickname": "Mat' v mute",
+      "steam_id": 76561199222816532,
+      "hero": "Snapfire"
+    },
+    {
+      "nickname": "P0Druga",
+      "steam_id": 76561199783912739,
+      "hero": "Jakiro"
+    },
+    {
+      "nickname": "Itadori Yuji",
+      "steam_id": 76561199642307932,
+      "hero": "Morphling"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Legion Commander"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Snapfire",
+      "tick": 7987
+    },
+    {
+      "team": 2,
+      "hero": "Ancient Apparition",
+      "tick": 9637
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 10811
+    },
+    {
+      "team": 3,
+      "hero": "Legion Commander",
+      "tick": 12285
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 13541
+    },
+    {
+      "team": 2,
+      "hero": "Dragon Knight",
+      "tick": 14953
+    },
+    {
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 15821
+    },
+    {
+      "team": 3,
+      "hero": "Morphling",
+      "tick": 18203
+    },
+    {
+      "team": 2,
+      "hero": "Mirana",
+      "tick": 19161
+    },
+    {
+      "team": 2,
+      "hero": "Storm Spirit",
+      "tick": 20663
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 947
+    },
+    {
+      "team": 3,
+      "hero": "Centaur Warrunner",
+      "tick": 1957
+    },
+    {
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 2833
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 3715
+    },
+    {
+      "team": 2,
+      "hero": "Tinker",
+      "tick": 5343
+    },
+    {
+      "team": 3,
+      "hero": "Ember Spirit",
+      "tick": 6489
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Marci",
+      "tick": 947,
+      "game_time_sec": 31.566666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Centaur Warrunner",
+      "tick": 1957,
+      "game_time_sec": 65.23333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 2833,
+      "game_time_sec": 94.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Axe",
+      "tick": 3715,
+      "game_time_sec": 123.83333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Tinker",
+      "tick": 5343,
+      "game_time_sec": 178.1
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Ember Spirit",
+      "tick": 6489,
+      "game_time_sec": 216.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Snapfire",
+      "tick": 7987,
+      "game_time_sec": 266.23333333333335
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ancient Apparition",
+      "tick": 9637,
+      "game_time_sec": 321.23333333333335
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 10811,
+      "game_time_sec": 360.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Legion Commander",
+      "tick": 12285,
+      "game_time_sec": 409.5
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 13541,
+      "game_time_sec": 451.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dragon Knight",
+      "tick": 14953,
+      "game_time_sec": 498.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 15821,
+      "game_time_sec": 527.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Morphling",
+      "tick": 18203,
+      "game_time_sec": 606.7666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Mirana",
+      "tick": 19161,
+      "game_time_sec": 638.7
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Storm Spirit",
+      "tick": 20663,
+      "game_time_sec": 688.7666666666667
+    }
+  ],
+  "total_deaths": 97,
+  "kda": {
+    "jMogwai": {
+      "kills": 27,
+      "deaths": 2,
+      "assists": 18,
+      "kda_ratio": 22.5
+    },
+    "Davros": {
+      "kills": 6,
+      "deaths": 11,
+      "assists": 34,
+      "kda_ratio": 3.64
+    },
+    "???&": {
+      "kills": 11,
+      "deaths": 7,
+      "assists": 15,
+      "kda_ratio": 3.71
+    },
+    "Профессор вкусных каш": {
+      "kills": 13,
+      "deaths": 5,
+      "assists": 22,
+      "kda_ratio": 7.0
+    },
+    "Потные Яйца": {
+      "kills": 1,
+      "deaths": 13,
+      "assists": 20,
+      "kda_ratio": 1.62
+    },
+    "nerd": {
+      "kills": 12,
+      "deaths": 12,
+      "assists": 7,
+      "kda_ratio": 1.58
+    },
+    "Mat' v mute": {
+      "kills": 2,
+      "deaths": 11,
+      "assists": 18,
+      "kda_ratio": 1.82
+    },
+    "P0Druga": {
+      "kills": 2,
+      "deaths": 15,
+      "assists": 12,
+      "kda_ratio": 0.93
+    },
+    "Itadori Yuji": {
+      "kills": 8,
+      "deaths": 9,
+      "assists": 5,
+      "kda_ratio": 1.44
+    },
+    "Donnie": {
+      "kills": 14,
+      "deaths": 12,
+      "assists": 12,
+      "kda_ratio": 2.17
+    }
+  },
+  "net_worth": {
+    "jMogwai": 28201,
+    "Davros": 12831,
+    "???&": 18517,
+    "Профессор вкусных каш": 20904,
+    "Потные Яйца": 8774,
+    "nerd": 14308,
+    "Mat' v mute": 8466,
+    "P0Druga": 6584,
+    "Itadori Yuji": 16728,
+    "Donnie": 14759
+  },
+  "last_hits": {
+    "jMogwai": 279,
+    "Davros": 19,
+    "???&": 175,
+    "Профессор вкусных каш": 267,
+    "Потные Яйца": 20,
+    "nerd": 170,
+    "Mat' v mute": 39,
+    "P0Druga": 16,
+    "Itadori Yuji": 244,
+    "Donnie": 140
+  },
+  "denies": {
+    "jMogwai": 10,
+    "Davros": 2,
+    "???&": 4,
+    "Профессор вкусных каш": 21,
+    "Потные Яйца": 1,
+    "nerd": 5,
+    "Mat' v mute": 5,
+    "P0Druga": 0,
+    "Itadori Yuji": 10,
+    "Donnie": 9
+  },
+  "gold_per_minute": {
+    "jMogwai": 739.06,
+    "Davros": 370.6,
+    "???&": 526.79,
+    "Профессор вкусных каш": 539.88,
+    "Потные Яйца": 221.39,
+    "nerd": 435.74,
+    "Mat' v mute": 283.24,
+    "P0Druga": 222.57,
+    "Itadori Yuji": 478.08,
+    "Donnie": 449.15
+  },
+  "xp_per_minute": {
+    "jMogwai": 1255.14,
+    "Davros": 486.49,
+    "???&": 745.16,
+    "Профессор вкусных каш": 801.5,
+    "Потные Яйца": 351.3,
+    "nerd": 543.39,
+    "Mat' v mute": 319.83,
+    "P0Druga": 288.57,
+    "Itadori Yuji": 589.93,
+    "Donnie": 641.53
+  },
+  "hero_damage": {
+    "jMogwai": 43780,
+    "Davros": 12415,
+    "???&": 26897,
+    "Профессор вкусных каш": 25721,
+    "Потные Яйца": 13863,
+    "nerd": 16263,
+    "Mat' v mute": 22051,
+    "P0Druga": 13547,
+    "Itadori Yuji": 13409,
+    "Donnie": 35894
+  },
+  "damage_taken": {
+    "jMogwai": 35592,
+    "Davros": 20078,
+    "???&": 40078,
+    "Профессор вкусных каш": 48881,
+    "Потные Яйца": 17309,
+    "nerd": 37673,
+    "Mat' v mute": 28750,
+    "P0Druga": 23485,
+    "Itadori Yuji": 35550,
+    "Donnie": 37150
+  },
+  "hero_healing": {
+    "jMogwai": 26016,
+    "Davros": 14168,
+    "???&": 20426,
+    "Профессор вкусных каш": 15630,
+    "Потные Яйца": 3786,
+    "nerd": 12032,
+    "Mat' v mute": 9847,
+    "P0Druga": 4518,
+    "Itadori Yuji": 7550,
+    "Donnie": 15295
+  },
+  "tower_damage": {
+    "jMogwai": 3548,
+    "Davros": 472,
+    "???&": 5572,
+    "Профессор вкусных каш": 1894,
+    "Потные Яйца": 513,
+    "nerd": 1308,
+    "Mat' v mute": 0,
+    "P0Druga": 281,
+    "Itadori Yuji": 0,
+    "Donnie": 0
+  },
+  "stuns_dealt": {
+    "jMogwai": 111.73,
+    "Davros": 75.43,
+    "???&": 96.17,
+    "Профессор вкусных каш": 0.0,
+    "Потные Яйца": 43.17,
+    "nerd": 62.71,
+    "Mat' v mute": 51.2,
+    "P0Druga": 87.33,
+    "Itadori Yuji": 19.1,
+    "Donnie": 120.2
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "Davros": {
+      "observer": 8,
+      "sentry": 16,
+      "total": 24
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Потные Яйца": {
+      "observer": 5,
+      "sentry": 2,
+      "total": 7
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Mat' v mute": {
+      "observer": 6,
+      "sentry": 18,
+      "total": 24
+    },
+    "P0Druga": {
+      "observer": 5,
+      "sentry": 11,
+      "total": 16
+    },
+    "Itadori Yuji": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "Потные Яйца": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Mat' v mute": {
+      "observer": 4,
+      "sentry": 3,
+      "total": 7
+    },
+    "P0Druga": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "Itadori Yuji": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_events_count": 76,
+  "chat_after_draft": [
+    {
+      "tick": 23627,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "как думаете"
+    },
+    {
+      "tick": 23693,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "че"
+    },
+    {
+      "tick": 23843,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "даже не знаю"
+    },
+    {
+      "tick": 23863,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "случилось"
+    },
+    {
+      "tick": 23965,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "опа"
+    },
+    {
+      "tick": 24923,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "мага давай смешное ченибудь"
+    },
+    {
+      "tick": 25021,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "6767 там"
+    },
+    {
+      "tick": 25185,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "30 сек кд"
+    },
+    {
+      "tick": 25231,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "сори"
+    },
+    {
+      "tick": 25273,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "жду"
+    },
+    {
+      "tick": 25931,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "г?"
+    },
+    {
+      "tick": 55817,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "давно не играл)"
+    },
+    {
+      "tick": 92617,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "дайте 10 сек"
+    },
+    {
+      "tick": 92719,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "стоп"
+    }
+  ],
+  "chat_message_count": 14,
+  "high_fives": {
+    "jMogwai": 0,
+    "Davros": 0,
+    "???&": 0,
+    "Профессор вкусных каш": 1,
+    "Потные Яйца": 0,
+    "nerd": 1,
+    "Mat' v mute": 0,
+    "P0Druga": 1,
+    "Itadori Yuji": 1,
+    "Donnie": 1
+  }
+}

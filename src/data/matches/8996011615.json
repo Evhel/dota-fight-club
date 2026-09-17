@@ -1,0 +1,684 @@
+{
+  "match_id": 8996011615,
+  "start_time": "2026-09-13 02:15:58",
+  "start_timestamp": 1789254958.641606,
+  "duration_minutes": 57.88,
+  "duration_seconds": 3472.87,
+  "draft_duration_minutes": 12.39,
+  "winner": "dire",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "Всех приветсвую, всем саламалейкум",
+    "team_tag": "SALAM",
+    "team_id": 10129669
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Void Spirit"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Monkey King"
+    },
+    {
+      "nickname": "Capy",
+      "steam_id": 76561198009445320,
+      "hero": "Skywrath Mage"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Shadow Shaman"
+    },
+    {
+      "nickname": "Itadori Yuji",
+      "steam_id": 76561199642307932,
+      "hero": "Pangolier"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Lifestealer"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Undying"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Phoenix"
+    },
+    {
+      "nickname": "мелман",
+      "steam_id": 76561198974599395,
+      "hero": "Rubick"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Centaur Warrunner"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 4899
+    },
+    {
+      "team": 2,
+      "hero": "Rubick",
+      "tick": 6527
+    },
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 10637
+    },
+    {
+      "team": 2,
+      "hero": "Skywrath Mage",
+      "tick": 12879
+    },
+    {
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 14617
+    },
+    {
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 17321
+    },
+    {
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 17465
+    },
+    {
+      "team": 2,
+      "hero": "Monkey King",
+      "tick": 18357
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 23201
+    },
+    {
+      "team": 3,
+      "hero": "Phoenix",
+      "tick": 24083
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 1781
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 2051
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2121
+    },
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 2207
+    },
+    {
+      "team": 3,
+      "hero": "Hoodwink",
+      "tick": 2931
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3689
+    },
+    {
+      "team": 2,
+      "hero": "Witch Doctor",
+      "tick": 4327
+    },
+    {
+      "team": 2,
+      "hero": "Doom",
+      "tick": 7993
+    },
+    {
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 8705
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 9757
+    },
+    {
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 18657
+    },
+    {
+      "team": 2,
+      "hero": "Huskar",
+      "tick": 19575
+    },
+    {
+      "team": 3,
+      "hero": "Outworld Devourer",
+      "tick": 20411
+    },
+    {
+      "team": 2,
+      "hero": "Meepo",
+      "tick": 22221
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 1781,
+      "game_time_sec": 59.36666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 2051,
+      "game_time_sec": 68.36666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2121,
+      "game_time_sec": 70.7
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 2207,
+      "game_time_sec": 73.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Hoodwink",
+      "tick": 2931,
+      "game_time_sec": 97.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3689,
+      "game_time_sec": 122.96666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Witch Doctor",
+      "tick": 4327,
+      "game_time_sec": 144.23333333333332
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 4899,
+      "game_time_sec": 163.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Rubick",
+      "tick": 6527,
+      "game_time_sec": 217.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Doom",
+      "tick": 7993,
+      "game_time_sec": 266.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 8705,
+      "game_time_sec": 290.1666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Marci",
+      "tick": 9757,
+      "game_time_sec": 325.23333333333335
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Undying",
+      "tick": 10637,
+      "game_time_sec": 354.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Skywrath Mage",
+      "tick": 12879,
+      "game_time_sec": 429.3
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 14617,
+      "game_time_sec": 487.23333333333335
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 17321,
+      "game_time_sec": 577.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 17465,
+      "game_time_sec": 582.1666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Monkey King",
+      "tick": 18357,
+      "game_time_sec": 611.9
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 18657,
+      "game_time_sec": 621.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Huskar",
+      "tick": 19575,
+      "game_time_sec": 652.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Outworld Devourer",
+      "tick": 20411,
+      "game_time_sec": 680.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Meepo",
+      "tick": 22221,
+      "game_time_sec": 740.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 23201,
+      "game_time_sec": 773.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Phoenix",
+      "tick": 24083,
+      "game_time_sec": 802.7666666666667
+    }
+  ],
+  "total_deaths": 112,
+  "kda": {
+    "jMogwai": {
+      "kills": 16,
+      "deaths": 6,
+      "assists": 17,
+      "kda_ratio": 5.5
+    },
+    "nerd": {
+      "kills": 8,
+      "deaths": 16,
+      "assists": 16,
+      "kda_ratio": 1.5
+    },
+    "Capy": {
+      "kills": 11,
+      "deaths": 12,
+      "assists": 27,
+      "kda_ratio": 3.17
+    },
+    "13": {
+      "kills": 0,
+      "deaths": 21,
+      "assists": 23,
+      "kda_ratio": 1.1
+    },
+    "Itadori Yuji": {
+      "kills": 12,
+      "deaths": 9,
+      "assists": 21,
+      "kda_ratio": 3.67
+    },
+    "???&": {
+      "kills": 20,
+      "deaths": 8,
+      "assists": 30,
+      "kda_ratio": 6.25
+    },
+    "Davros": {
+      "kills": 4,
+      "deaths": 15,
+      "assists": 31,
+      "kda_ratio": 2.33
+    },
+    "Профессор вкусных каш": {
+      "kills": 17,
+      "deaths": 6,
+      "assists": 24,
+      "kda_ratio": 6.83
+    },
+    "мелман": {
+      "kills": 10,
+      "deaths": 10,
+      "assists": 33,
+      "kda_ratio": 4.3
+    },
+    "Donnie": {
+      "kills": 13,
+      "deaths": 9,
+      "assists": 39,
+      "kda_ratio": 5.78
+    }
+  },
+  "net_worth": {
+    "jMogwai": 29283,
+    "nerd": 26546,
+    "Capy": 18929,
+    "13": 15983,
+    "Itadori Yuji": 32443,
+    "???&": 38254,
+    "Davros": 21889,
+    "Профессор вкусных каш": 30448,
+    "мелман": 19766,
+    "Donnie": 34971
+  },
+  "last_hits": {
+    "jMogwai": 360,
+    "nerd": 388,
+    "Capy": 129,
+    "13": 101,
+    "Itadori Yuji": 531,
+    "???&": 406,
+    "Davros": 170,
+    "Профессор вкусных каш": 341,
+    "мелман": 140,
+    "Donnie": 391
+  },
+  "denies": {
+    "jMogwai": 18,
+    "nerd": 11,
+    "Capy": 0,
+    "13": 3,
+    "Itadori Yuji": 6,
+    "???&": 3,
+    "Davros": 3,
+    "Профессор вкусных каш": 10,
+    "мелман": 2,
+    "Donnie": 11
+  },
+  "gold_per_minute": {
+    "jMogwai": 608.28,
+    "nerd": 547.33,
+    "Capy": 396.71,
+    "13": 318.95,
+    "Itadori Yuji": 711.16,
+    "???&": 684.35,
+    "Davros": 407.99,
+    "Профессор вкусных каш": 614.47,
+    "мелман": 409.82,
+    "Donnie": 653.79
+  },
+  "xp_per_minute": {
+    "jMogwai": 947.34,
+    "nerd": 657.21,
+    "Capy": 654.89,
+    "13": 463.61,
+    "Itadori Yuji": 1112.63,
+    "???&": 1089.85,
+    "Davros": 736.77,
+    "Профессор вкусных каш": 1019.83,
+    "мелман": 867.28,
+    "Donnie": 1041.79
+  },
+  "hero_damage": {
+    "jMogwai": 70123,
+    "nerd": 79612,
+    "Capy": 69765,
+    "13": 11230,
+    "Itadori Yuji": 107007,
+    "???&": 76448,
+    "Davros": 15438,
+    "Профессор вкусных каш": 136565,
+    "мелман": 31348,
+    "Donnie": 112826
+  },
+  "damage_taken": {
+    "jMogwai": 114413,
+    "nerd": 65178,
+    "Capy": 37770,
+    "13": 40861,
+    "Itadori Yuji": 51732,
+    "???&": 117067,
+    "Davros": 72367,
+    "Профессор вкусных каш": 138263,
+    "мелман": 34478,
+    "Donnie": 172858
+  },
+  "hero_healing": {
+    "jMogwai": 46986,
+    "nerd": 25227,
+    "Capy": 11052,
+    "13": 11220,
+    "Itadori Yuji": 25807,
+    "???&": 54263,
+    "Davros": 34915,
+    "Профессор вкусных каш": 111700,
+    "мелман": 12375,
+    "Donnie": 109350
+  },
+  "tower_damage": {
+    "jMogwai": 3785,
+    "nerd": 2199,
+    "Capy": 51,
+    "13": 158,
+    "Itadori Yuji": 1239,
+    "???&": 10808,
+    "Davros": 387,
+    "Профессор вкусных каш": 1664,
+    "мелман": 853,
+    "Donnie": 4908
+  },
+  "stuns_dealt": {
+    "jMogwai": 0.0,
+    "nerd": 92.33,
+    "Capy": 99.77,
+    "13": 274.13,
+    "Itadori Yuji": 135.5,
+    "???&": 36.8,
+    "Davros": 0.0,
+    "Профессор вкусных каш": 29.98,
+    "мелман": 236.01,
+    "Donnie": 236.91
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Capy": {
+      "observer": 12,
+      "sentry": 22,
+      "total": 34
+    },
+    "13": {
+      "observer": 9,
+      "sentry": 18,
+      "total": 27
+    },
+    "Itadori Yuji": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 7,
+      "sentry": 13,
+      "total": 20
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "мелман": {
+      "observer": 17,
+      "sentry": 27,
+      "total": 44
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Capy": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "13": {
+      "observer": 2,
+      "sentry": 4,
+      "total": 6
+    },
+    "Itadori Yuji": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 2,
+      "sentry": 6,
+      "total": 8
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "мелман": {
+      "observer": 2,
+      "sentry": 8,
+      "total": 10
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    }
+  },
+  "wards_events_count": 128,
+  "chat_after_draft": [
+    {
+      "tick": 27740,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "муса я думал ты на макаке"
+    },
+    {
+      "tick": 28142,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "1000-7&"
+    }
+  ],
+  "chat_message_count": 2,
+  "high_fives": {
+    "jMogwai": 0,
+    "nerd": 3,
+    "Capy": 0,
+    "13": 0,
+    "Itadori Yuji": 0,
+    "???&": 0,
+    "Davros": 0,
+    "Профессор вкусных каш": 1,
+    "мелман": 0,
+    "Donnie": 3
+  }
+}

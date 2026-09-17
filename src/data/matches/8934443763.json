@@ -1,0 +1,666 @@
+{
+  "match_id": 8934443763,
+  "start_time": "2026-08-08 00:38:38",
+  "start_timestamp": 1786138718.67247,
+  "duration_minutes": 49.11,
+  "duration_seconds": 2946.33,
+  "draft_duration_minutes": 9.05,
+  "winner": "dire",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "dlya trenirovok",
+    "team_tag": "DLT",
+    "team_id": 1387268
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Shadow Fiend"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Vengeful Spirit"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Pangolier"
+    },
+    {
+      "nickname": "Capy",
+      "steam_id": 76561198009445320,
+      "hero": "Techies"
+    },
+    {
+      "nickname": "oR",
+      "steam_id": 76561198088828615,
+      "hero": "Clinkz"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Lone Druid"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": 76561198040946408,
+      "hero": "Spirit Breaker"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Mars"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Dawnbreaker"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Shadow Shaman"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 3879
+    },
+    {
+      "team": 2,
+      "hero": "Pangolier",
+      "tick": 4755
+    },
+    {
+      "team": 3,
+      "hero": "Vengeful Spirit",
+      "tick": 5575
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 6421
+    },
+    {
+      "team": 2,
+      "hero": "Mars",
+      "tick": 7399
+    },
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 10515
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 11639
+    },
+    {
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 14425
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 15225
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Fiend",
+      "tick": 17481
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 1195
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 1347
+    },
+    {
+      "team": 2,
+      "hero": "Arc Warden",
+      "tick": 1443
+    },
+    {
+      "team": 3,
+      "hero": "Riki",
+      "tick": 1959
+    },
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 2023
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 2115
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 1195,
+      "game_time_sec": 39.833333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 1347,
+      "game_time_sec": 44.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Arc Warden",
+      "tick": 1443,
+      "game_time_sec": 48.1
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Riki",
+      "tick": 1959,
+      "game_time_sec": 65.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 2023,
+      "game_time_sec": 67.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 2115,
+      "game_time_sec": 70.5
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 3879,
+      "game_time_sec": 129.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Pangolier",
+      "tick": 4755,
+      "game_time_sec": 158.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Vengeful Spirit",
+      "tick": 5575,
+      "game_time_sec": 185.83333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 6421,
+      "game_time_sec": 214.03333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Mars",
+      "tick": 7399,
+      "game_time_sec": 246.63333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 10515,
+      "game_time_sec": 350.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Techies",
+      "tick": 11639,
+      "game_time_sec": 387.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 14425,
+      "game_time_sec": 480.8333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 15225,
+      "game_time_sec": 507.5
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Shadow Fiend",
+      "tick": 17481,
+      "game_time_sec": 582.7
+    }
+  ],
+  "total_deaths": 86,
+  "kda": {
+    "jMogwai": {
+      "kills": 13,
+      "deaths": 7,
+      "assists": 8,
+      "kda_ratio": 3.0
+    },
+    "Davros": {
+      "kills": 0,
+      "deaths": 15,
+      "assists": 17,
+      "kda_ratio": 1.13
+    },
+    "nerd": {
+      "kills": 9,
+      "deaths": 11,
+      "assists": 10,
+      "kda_ratio": 1.73
+    },
+    "Capy": {
+      "kills": 3,
+      "deaths": 8,
+      "assists": 20,
+      "kda_ratio": 2.88
+    },
+    "oR": {
+      "kills": 6,
+      "deaths": 13,
+      "assists": 7,
+      "kda_ratio": 1.0
+    },
+    "???&": {
+      "kills": 15,
+      "deaths": 2,
+      "assists": 23,
+      "kda_ratio": 19.0
+    },
+    "Kando!JeJe": {
+      "kills": 4,
+      "deaths": 10,
+      "assists": 20,
+      "kda_ratio": 2.4
+    },
+    "Donnie": {
+      "kills": 15,
+      "deaths": 6,
+      "assists": 25,
+      "kda_ratio": 6.67
+    },
+    "Профессор вкусных каш": {
+      "kills": 17,
+      "deaths": 3,
+      "assists": 25,
+      "kda_ratio": 14.0
+    },
+    "13": {
+      "kills": 2,
+      "deaths": 11,
+      "assists": 36,
+      "kda_ratio": 3.45
+    }
+  },
+  "net_worth": {
+    "jMogwai": 24902,
+    "Davros": 10504,
+    "nerd": 20292,
+    "Capy": 14403,
+    "oR": 19481,
+    "???&": 36565,
+    "Kando!JeJe": 12639,
+    "Donnie": 25487,
+    "Профессор вкусных каш": 31470,
+    "13": 13989
+  },
+  "last_hits": {
+    "jMogwai": 499,
+    "Davros": 38,
+    "nerd": 314,
+    "Capy": 90,
+    "oR": 217,
+    "???&": 484,
+    "Kando!JeJe": 48,
+    "Donnie": 309,
+    "Профессор вкусных каш": 361,
+    "13": 51
+  },
+  "denies": {
+    "jMogwai": 27,
+    "Davros": 10,
+    "nerd": 8,
+    "Capy": 1,
+    "oR": 6,
+    "???&": 1,
+    "Kando!JeJe": 0,
+    "Donnie": 13,
+    "Профессор вкусных каш": 12,
+    "13": 7
+  },
+  "gold_per_minute": {
+    "jMogwai": 607.49,
+    "Davros": 270.15,
+    "nerd": 535.58,
+    "Capy": 308.97,
+    "oR": 431.85,
+    "???&": 716.09,
+    "Kando!JeJe": 278.2,
+    "Donnie": 564.78,
+    "Профессор вкусных каш": 643.61,
+    "13": 305.32
+  },
+  "xp_per_minute": {
+    "jMogwai": 726.56,
+    "Davros": 437.47,
+    "nerd": 759.26,
+    "Capy": 466.63,
+    "oR": 497.76,
+    "???&": 817.69,
+    "Kando!JeJe": 555.82,
+    "Donnie": 921.73,
+    "Профессор вкусных каш": 1000.66,
+    "13": 469.07
+  },
+  "hero_damage": {
+    "jMogwai": 40475,
+    "Davros": 16508,
+    "nerd": 43447,
+    "Capy": 66370,
+    "oR": 16764,
+    "???&": 9469,
+    "Kando!JeJe": 14219,
+    "Donnie": 52291,
+    "Профессор вкусных каш": 72682,
+    "13": 6016
+  },
+  "damage_taken": {
+    "jMogwai": 65024,
+    "Davros": 35881,
+    "nerd": 49710,
+    "Capy": 36283,
+    "oR": 52055,
+    "???&": 21190,
+    "Kando!JeJe": 30187,
+    "Donnie": 41720,
+    "Профессор вкусных каш": 46681,
+    "13": 26004
+  },
+  "hero_healing": {
+    "jMogwai": 22857,
+    "Davros": 8953,
+    "nerd": 18190,
+    "Capy": 10403,
+    "oR": 13409,
+    "???&": 34641,
+    "Kando!JeJe": 12329,
+    "Donnie": 26412,
+    "Профессор вкусных каш": 38103,
+    "13": 10710
+  },
+  "tower_damage": {
+    "jMogwai": 7730,
+    "Davros": 345,
+    "nerd": 2206,
+    "Capy": 187,
+    "oR": 4103,
+    "???&": 109,
+    "Kando!JeJe": 592,
+    "Donnie": 1079,
+    "Профессор вкусных каш": 2261,
+    "13": 28
+  },
+  "stuns_dealt": {
+    "jMogwai": 31.9,
+    "Davros": 127.61,
+    "nerd": 128.01,
+    "Capy": 44.12,
+    "oR": 0.0,
+    "???&": 127.04,
+    "Kando!JeJe": 133.6,
+    "Donnie": 111.21,
+    "Профессор вкусных каш": 82.43,
+    "13": 174.33
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 14,
+      "sentry": 30,
+      "total": 44
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Capy": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "oR": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 12,
+      "sentry": 23,
+      "total": 35
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Профессор вкусных каш": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "13": {
+      "observer": 7,
+      "sentry": 18,
+      "total": 25
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Capy": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "oR": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 3,
+      "sentry": 8,
+      "total": 11
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    }
+  },
+  "wards_events_count": 115,
+  "chat_after_draft": [
+    {
+      "tick": 20324,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "гера?"
+    },
+    {
+      "tick": 20402,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "нуда"
+    },
+    {
+      "tick": 20490,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "кто еще"
+    },
+    {
+      "tick": 20520,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "база"
+    },
+    {
+      "tick": 22060,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "салам алейкум)"
+    },
+    {
+      "tick": 22356,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "газ?"
+    },
+    {
+      "tick": 22460,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "ваалейкум братик"
+    },
+    {
+      "tick": 22568,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "Газ?"
+    },
+    {
+      "tick": 22612,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "г?"
+    },
+    {
+      "tick": 22934,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "сорри я думала в команде с даней )"
+    },
+    {
+      "tick": 77098,
+      "channel": "all",
+      "player_slot": 8,
+      "text": ")_)"
+    },
+    {
+      "tick": 77102,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "1 на 1"
+    },
+    {
+      "tick": 77230,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ЧВ"
+    },
+    {
+      "tick": 77358,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "я до конца мне похуй"
+    },
+    {
+      "tick": 109396,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "gG"
+    }
+  ],
+  "chat_message_count": 15,
+  "high_fives": {
+    "jMogwai": 0,
+    "Davros": 0,
+    "nerd": 1,
+    "Capy": 0,
+    "oR": 0,
+    "???&": 0,
+    "Kando!JeJe": 0,
+    "Donnie": 1,
+    "Профессор вкусных каш": 0,
+    "13": 0
+  }
+}
