@@ -1,0 +1,1062 @@
+{
+  "match_id": 9017818743,
+  "start_time": "2026-09-27 01:52:47",
+  "start_timestamp": 1790463167.01292,
+  "duration_minutes": 54.21,
+  "duration_seconds": 3252.57,
+  "draft_duration_minutes": 9.28,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "dlya trenirovok",
+    "team_tag": "DLT",
+    "team_id": 1387268
+  },
+  "dire_team_info": {
+    "team_name": "CuKATOP",
+    "team_tag": "CKTP",
+    "team_id": 1302077
+  },
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Medusa"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Death Prophet"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Axe"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": 76561198306408521,
+      "hero": "Lion"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Skywrath Mage"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Nyx Assassin"
+    },
+    {
+      "nickname": "oR",
+      "steam_id": 76561198088828615,
+      "hero": "Earthshaker"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Juggernaut"
+    },
+    {
+      "nickname": "‡_SaNyA_‡",
+      "steam_id": 76561198209002068,
+      "hero": "Silencer"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Jakiro"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Earthshaker",
+      "tick": 5011
+    },
+    {
+      "team": 2,
+      "hero": "Skywrath Mage",
+      "tick": 6911
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 8425
+    },
+    {
+      "team": 3,
+      "hero": "Jakiro",
+      "tick": 9023
+    },
+    {
+      "team": 2,
+      "hero": "Silencer",
+      "tick": 10769
+    },
+    {
+      "team": 2,
+      "hero": "Lion",
+      "tick": 12649
+    },
+    {
+      "team": 3,
+      "hero": "Medusa",
+      "tick": 13521
+    },
+    {
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 14755
+    },
+    {
+      "team": 2,
+      "hero": "Juggernaut",
+      "tick": 15873
+    },
+    {
+      "team": 2,
+      "hero": "Death Prophet",
+      "tick": 17919
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 1207
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 1305
+    },
+    {
+      "team": 2,
+      "hero": "Riki",
+      "tick": 2085
+    },
+    {
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 2135
+    },
+    {
+      "team": 2,
+      "hero": "Naga Siren",
+      "tick": 3973
+    },
+    {
+      "team": 3,
+      "hero": "Undying",
+      "tick": 4837
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 1207,
+      "game_time_sec": 40.233333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kez",
+      "tick": 1305,
+      "game_time_sec": 43.5
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Riki",
+      "tick": 2085,
+      "game_time_sec": 69.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 2135,
+      "game_time_sec": 71.16666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Naga Siren",
+      "tick": 3973,
+      "game_time_sec": 132.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Undying",
+      "tick": 4837,
+      "game_time_sec": 161.23333333333332
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Earthshaker",
+      "tick": 5011,
+      "game_time_sec": 167.03333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Skywrath Mage",
+      "tick": 6911,
+      "game_time_sec": 230.36666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Axe",
+      "tick": 8425,
+      "game_time_sec": 280.8333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Jakiro",
+      "tick": 9023,
+      "game_time_sec": 300.76666666666665
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Silencer",
+      "tick": 10769,
+      "game_time_sec": 358.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lion",
+      "tick": 12649,
+      "game_time_sec": 421.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Medusa",
+      "tick": 13521,
+      "game_time_sec": 450.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 14755,
+      "game_time_sec": 491.8333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Juggernaut",
+      "tick": 15873,
+      "game_time_sec": 529.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Death Prophet",
+      "tick": 17919,
+      "game_time_sec": 597.3
+    }
+  ],
+  "total_deaths": 85,
+  "kda": {
+    "???&": {
+      "kills": 12,
+      "deaths": 2,
+      "assists": 13,
+      "kda_ratio": 12.5
+    },
+    "nerd": {
+      "kills": 8,
+      "deaths": 12,
+      "assists": 25,
+      "kda_ratio": 2.75
+    },
+    "Donnie": {
+      "kills": 21,
+      "deaths": 10,
+      "assists": 16,
+      "kda_ratio": 3.7
+    },
+    "Osaki": {
+      "kills": 1,
+      "deaths": 7,
+      "assists": 16,
+      "kda_ratio": 2.43
+    },
+    "13": {
+      "kills": 4,
+      "deaths": 8,
+      "assists": 29,
+      "kda_ratio": 4.12
+    },
+    "Профессор вкусных каш": {
+      "kills": 2,
+      "deaths": 8,
+      "assists": 23,
+      "kda_ratio": 3.12
+    },
+    "oR": {
+      "kills": 12,
+      "deaths": 7,
+      "assists": 18,
+      "kda_ratio": 4.29
+    },
+    "jMogwai": {
+      "kills": 14,
+      "deaths": 8,
+      "assists": 7,
+      "kda_ratio": 2.62
+    },
+    "‡_SaNyA_‡": {
+      "kills": 9,
+      "deaths": 10,
+      "assists": 21,
+      "kda_ratio": 3.0
+    },
+    "Davros": {
+      "kills": 1,
+      "deaths": 13,
+      "assists": 19,
+      "kda_ratio": 1.54
+    }
+  },
+  "net_worth": {
+    "???&": 40507,
+    "nerd": 22995,
+    "Donnie": 24564,
+    "Osaki": 13706,
+    "13": 15270,
+    "Профессор вкусных каш": 17216,
+    "oR": 29514,
+    "jMogwai": 33260,
+    "‡_SaNyA_‡": 15384,
+    "Davros": 12901
+  },
+  "last_hits": {
+    "???&": 559,
+    "nerd": 309,
+    "Donnie": 221,
+    "Osaki": 13,
+    "13": 17,
+    "Профессор вкусных каш": 171,
+    "oR": 474,
+    "jMogwai": 612,
+    "‡_SaNyA_‡": 73,
+    "Davros": 86
+  },
+  "denies": {
+    "???&": 2,
+    "nerd": 10,
+    "Donnie": 9,
+    "Osaki": 2,
+    "13": 1,
+    "Профессор вкусных каш": 35,
+    "oR": 28,
+    "jMogwai": 16,
+    "‡_SaNyA_‡": 5,
+    "Davros": 4
+  },
+  "gold_per_minute": {
+    "???&": 754.67,
+    "nerd": 540.96,
+    "Donnie": 509.63,
+    "Osaki": 241.82,
+    "13": 281.08,
+    "Профессор вкусных каш": 404.01,
+    "oR": 638.47,
+    "jMogwai": 710.41,
+    "‡_SaNyA_‡": 344.44,
+    "Davros": 323.12
+  },
+  "xp_per_minute": {
+    "???&": 998.96,
+    "nerd": 639.19,
+    "Donnie": 649.2,
+    "Osaki": 585.95,
+    "13": 520.35,
+    "Профессор вкусных каш": 578.57,
+    "oR": 779.44,
+    "jMogwai": 868.83,
+    "‡_SaNyA_‡": 639.39,
+    "Davros": 477.78
+  },
+  "hero_damage": {
+    "???&": 72171,
+    "nerd": 54320,
+    "Donnie": 54021,
+    "Osaki": 13430,
+    "13": 35004,
+    "Профессор вкусных каш": 20131,
+    "oR": 51491,
+    "jMogwai": 77202,
+    "‡_SaNyA_‡": 23225,
+    "Davros": 20748
+  },
+  "damage_taken": {
+    "???&": 30634,
+    "nerd": 74926,
+    "Donnie": 89074,
+    "Osaki": 19962,
+    "13": 26294,
+    "Профессор вкусных каш": 46958,
+    "oR": 70653,
+    "jMogwai": 120187,
+    "‡_SaNyA_‡": 34324,
+    "Davros": 37682
+  },
+  "hero_healing": {
+    "???&": 1214,
+    "nerd": 31245,
+    "Donnie": 29394,
+    "Osaki": 10122,
+    "13": 10304,
+    "Профессор вкусных каш": 21209,
+    "oR": 41748,
+    "jMogwai": 40104,
+    "‡_SaNyA_‡": 15673,
+    "Davros": 15423
+  },
+  "tower_damage": {
+    "???&": 12130,
+    "nerd": 5835,
+    "Donnie": 285,
+    "Osaki": 0,
+    "13": 367,
+    "Профессор вкусных каш": 0,
+    "oR": 1180,
+    "jMogwai": 6179,
+    "‡_SaNyA_‡": 235,
+    "Davros": 354
+  },
+  "stuns_dealt": {
+    "???&": 109.5,
+    "nerd": 44.62,
+    "Donnie": 172.57,
+    "Osaki": 213.37,
+    "13": 40.24,
+    "Профессор вкусных каш": 250.14,
+    "oR": 445.95,
+    "jMogwai": 2.43,
+    "‡_SaNyA_‡": 0.0,
+    "Davros": 140.66
+  },
+  "wards_placed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 11,
+      "sentry": 17,
+      "total": 28
+    },
+    "13": {
+      "observer": 6,
+      "sentry": 17,
+      "total": 23
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "oR": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "‡_SaNyA_‡": {
+      "observer": 9,
+      "sentry": 16,
+      "total": 25
+    },
+    "Davros": {
+      "observer": 13,
+      "sentry": 28,
+      "total": 41
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "nerd": {
+      "observer": 3,
+      "sentry": 5,
+      "total": 8
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 3,
+      "sentry": 4,
+      "total": 7
+    },
+    "13": {
+      "observer": 2,
+      "sentry": 5,
+      "total": 7
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "oR": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "‡_SaNyA_‡": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "Davros": {
+      "observer": 6,
+      "sentry": 5,
+      "total": 11
+    }
+  },
+  "wards_events_count": 127,
+  "chat_after_draft": [
+    {
+      "tick": 20787,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "герман греф"
+    },
+    {
+      "tick": 21291,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "абуз облака чата"
+    },
+    {
+      "tick": 21415,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "я тебя могну"
+    },
+    {
+      "tick": 21463,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "я тебя могну"
+    },
+    {
+      "tick": 21491,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "я тебя могну"
+    },
+    {
+      "tick": 21525,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "я тебя могну"
+    },
+    {
+      "tick": 21551,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "я тебя могну"
+    },
+    {
+      "tick": 21575,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "могну"
+    },
+    {
+      "tick": 21583,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "я тебя могну"
+    },
+    {
+      "tick": 21659,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "могнул"
+    },
+    {
+      "tick": 21783,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "буду могать"
+    },
+    {
+      "tick": 22729,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "г"
+    },
+    {
+      "tick": 23125,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ну че погнали"
+    },
+    {
+      "tick": 23523,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "даня вылетел"
+    },
+    {
+      "tick": 23631,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "а уи зе идиоис"
+    },
+    {
+      "tick": 24367,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "даня наконец на джаге мид"
+    },
+    {
+      "tick": 24407,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "верим?"
+    },
+    {
+      "tick": 24815,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "нет"
+    },
+    {
+      "tick": 27685,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "дайте информацию"
+    },
+    {
+      "tick": 27959,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "от меня что требуется"
+    },
+    {
+      "tick": 27999,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "какие то траблы у дани"
+    },
+    {
+      "tick": 28101,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "по кнопкам"
+    },
+    {
+      "tick": 28279,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "отключили клавиатуру"
+    },
+    {
+      "tick": 28353,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "оправдания?"
+    },
+    {
+      "tick": 28627,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "будт"
+    },
+    {
+      "tick": 28695,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "еще не придумал"
+    },
+    {
+      "tick": 28809,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "давай"
+    },
+    {
+      "tick": 28881,
+      "channel": "all",
+      "player_slot": 9,
+      "text": " Мужик приходит к врачу "
+    },
+    {
+      "tick": 29139,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "— Доктор, у меня что-то с памятью."
+    },
+    {
+      "tick": 29249,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "— А давно?"
+    },
+    {
+      "tick": 29359,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "— Что давно?"
+    },
+    {
+      "tick": 29485,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "))"
+    },
+    {
+      "tick": 29553,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "))"
+    },
+    {
+      "tick": 29655,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "встретились у врача как-то еврей и гитлер"
+    },
+    {
+      "tick": 29701,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "))"
+    },
+    {
+      "tick": 30327,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "это конец анекдота"
+    },
+    {
+      "tick": 30469,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "помянем"
+    },
+    {
+      "tick": 31047,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "в чем плюс 28 летних девушек? "
+    },
+    {
+      "tick": 31129,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "их 20"
+    },
+    {
+      "tick": 31371,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "на подум"
+    },
+    {
+      "tick": 31401,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "))"
+    },
+    {
+      "tick": 31563,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "сложно"
+    },
+    {
+      "tick": 31685,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "а"
+    },
+    {
+      "tick": 31801,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "че звал сларк"
+    },
+    {
+      "tick": 32233,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "от меня что требуется"
+    },
+    {
+      "tick": 32583,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "ника"
+    },
+    {
+      "tick": 32695,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "че у него там"
+    },
+    {
+      "tick": 32753,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "заебал"
+    },
+    {
+      "tick": 33167,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "Почему если девушка переспала с кучей парней, то она - шлюха, а если то же самое сделает парень, так он сразу пидор?"
+    },
+    {
+      "tick": 33485,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "D"
+    },
+    {
+      "tick": 33509,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "у него f1 не работает, самая важная кнопка"
+    },
+    {
+      "tick": 33607,
+      "channel": "all",
+      "player_slot": 1,
+      "text": ""
+    },
+    {
+      "tick": 34045,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "пусть забиндит на ф2"
+    },
+    {
+      "tick": 34277,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "Приходит араб на церемонию вручения оскара и его спрашивают что он тут делает.."
+    },
+    {
+      "tick": 34391,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "а он отвечает я номинирован "
+    },
+    {
+      "tick": 34421,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "Андрей не хотел заводить детей (совершеннолетних, Жень!) пока дети не начали заводить Андрея"
+    },
+    {
+      "tick": 34551,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "насмешка не работает"
+    },
+    {
+      "tick": 35311,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "он в днс поехал?"
+    },
+    {
+      "tick": 35435,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "а я все чаще замечаю"
+    },
+    {
+      "tick": 35751,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "что скоро всем наступит нам пиздец"
+    },
+    {
+      "tick": 36337,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "почему девушка негра плачет? "
+    },
+    {
+      "tick": 36589,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "принимает близко к сердцу"
+    },
+    {
+      "tick": 36917,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "Едет русская женщина в поезде"
+    },
+    {
+      "tick": 37045,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "На станции к ней купэ заходит украинский мужчина, снимает обувь, от ног исходит ужасная вонь"
+    },
+    {
+      "tick": 37260,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "Женщина говорит"
+    },
+    {
+      "tick": 37314,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "у вас че там книжка анекдотов?"
+    },
+    {
+      "tick": 37380,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "- Мужчина, а вы носки меняете?"
+    },
+    {
+      "tick": 37610,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "-Тiлкi на сало"
+    },
+    {
+      "tick": 37734,
+      "channel": "all",
+      "player_slot": 1,
+      "text": ")"
+    },
+    {
+      "tick": 37924,
+      "channel": "all",
+      "player_slot": 1,
+      "text": ""
+    },
+    {
+      "tick": 38320,
+      "channel": "all",
+      "player_slot": 1,
+      "text": ""
+    },
+    {
+      "tick": 38884,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "—алло,это начальник штаба Навального?"
+    },
+    {
+      "tick": 38984,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "—да (шёпотом)"
+    },
+    {
+      "tick": 39078,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "—а почему шёпотом"
+    },
+    {
+      "tick": 39184,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "—извиняюсь , конечно, но у меня сейчас алгебра"
+    },
+    {
+      "tick": 39288,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "хахаха"
+    },
+    {
+      "tick": 39554,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "длинное тире"
+    },
+    {
+      "tick": 39644,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "палишься"
+    },
+    {
+      "tick": 39752,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "это копия с пикабу"
+    },
+    {
+      "tick": 39760,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "газ*"
+    },
+    {
+      "tick": 39830,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "?"
+    }
+  ],
+  "chat_message_count": 81,
+  "high_fives": {
+    "???&": 0,
+    "nerd": 1,
+    "Donnie": 0,
+    "Osaki": 0,
+    "13": 1,
+    "Профессор вкусных каш": 0,
+    "oR": 0,
+    "jMogwai": 0,
+    "‡_SaNyA_‡": 0,
+    "Davros": 0
+  }
+}

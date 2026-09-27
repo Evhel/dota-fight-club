@@ -1,0 +1,642 @@
+{
+  "match_id": 9016137085,
+  "start_time": "2026-09-26 15:30:20",
+  "start_timestamp": 1790425820.238202,
+  "duration_minutes": 42.58,
+  "duration_seconds": 2554.9,
+  "draft_duration_minutes": 9.86,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "Evil Kittens Multigaming",
+    "team_tag": "EKM",
+    "team_id": 695511
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Templar Assassin"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Beastmaster"
+    },
+    {
+      "nickname": "Спортсмен",
+      "steam_id": 76561198020458182,
+      "hero": "Winter Wyvern"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": 76561198040946408,
+      "hero": "Jakiro"
+    },
+    {
+      "nickname": "ренальда",
+      "steam_id": 76561198213414847,
+      "hero": "Storm Spirit"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Terrorblade"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Shadow Shaman"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": 76561199222816532,
+      "hero": "Bounty Hunter"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Dragon Knight"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Doom"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Doom",
+      "tick": 6076
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 7810
+    },
+    {
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 8522
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 9838
+    },
+    {
+      "team": 2,
+      "hero": "Terrorblade",
+      "tick": 11334
+    },
+    {
+      "team": 2,
+      "hero": "Storm Spirit",
+      "tick": 12284
+    },
+    {
+      "team": 3,
+      "hero": "Beastmaster",
+      "tick": 13838
+    },
+    {
+      "team": 3,
+      "hero": "Dragon Knight",
+      "tick": 15168
+    },
+    {
+      "team": 2,
+      "hero": "Bounty Hunter",
+      "tick": 16482
+    },
+    {
+      "team": 2,
+      "hero": "Templar Assassin",
+      "tick": 19534
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Arc Warden",
+      "tick": 1780
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1818
+    },
+    {
+      "team": 2,
+      "hero": "Drow Ranger",
+      "tick": 2918
+    },
+    {
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 2966
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 5064
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 5216
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Arc Warden",
+      "tick": 1780,
+      "game_time_sec": 59.333333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1818,
+      "game_time_sec": 60.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Drow Ranger",
+      "tick": 2918,
+      "game_time_sec": 97.26666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 2966,
+      "game_time_sec": 98.86666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lina",
+      "tick": 5064,
+      "game_time_sec": 168.8
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Techies",
+      "tick": 5216,
+      "game_time_sec": 173.86666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Doom",
+      "tick": 6076,
+      "game_time_sec": 202.53333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 7810,
+      "game_time_sec": 260.3333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 8522,
+      "game_time_sec": 284.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 9838,
+      "game_time_sec": 327.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Terrorblade",
+      "tick": 11334,
+      "game_time_sec": 377.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Storm Spirit",
+      "tick": 12284,
+      "game_time_sec": 409.46666666666664
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Beastmaster",
+      "tick": 13838,
+      "game_time_sec": 461.26666666666665
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Dragon Knight",
+      "tick": 15168,
+      "game_time_sec": 505.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Bounty Hunter",
+      "tick": 16482,
+      "game_time_sec": 549.4
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Templar Assassin",
+      "tick": 19534,
+      "game_time_sec": 651.1333333333333
+    }
+  ],
+  "total_deaths": 71,
+  "kda": {
+    "jMogwai": {
+      "kills": 8,
+      "deaths": 2,
+      "assists": 18,
+      "kda_ratio": 13.0
+    },
+    "nerd": {
+      "kills": 16,
+      "deaths": 9,
+      "assists": 19,
+      "kda_ratio": 3.89
+    },
+    "Спортсмен": {
+      "kills": 6,
+      "deaths": 4,
+      "assists": 19,
+      "kda_ratio": 6.25
+    },
+    "Kando!JeJe": {
+      "kills": 4,
+      "deaths": 3,
+      "assists": 17,
+      "kda_ratio": 7.0
+    },
+    "ренальда": {
+      "kills": 11,
+      "deaths": 7,
+      "assists": 15,
+      "kda_ratio": 3.71
+    },
+    "???&": {
+      "kills": 6,
+      "deaths": 8,
+      "assists": 7,
+      "kda_ratio": 1.62
+    },
+    "Davros": {
+      "kills": 3,
+      "deaths": 11,
+      "assists": 14,
+      "kda_ratio": 1.55
+    },
+    "Communication": {
+      "kills": 1,
+      "deaths": 13,
+      "assists": 15,
+      "kda_ratio": 1.23
+    },
+    "Профессор вкусных каш": {
+      "kills": 11,
+      "deaths": 4,
+      "assists": 8,
+      "kda_ratio": 4.75
+    },
+    "Donnie": {
+      "kills": 3,
+      "deaths": 10,
+      "assists": 13,
+      "kda_ratio": 1.6
+    }
+  },
+  "net_worth": {
+    "jMogwai": 27734,
+    "nerd": 25228,
+    "Спортсмен": 15251,
+    "Kando!JeJe": 11377,
+    "ренальда": 21865,
+    "???&": 22043,
+    "Davros": 12406,
+    "Communication": 10131,
+    "Профессор вкусных каш": 23476,
+    "Donnie": 18551
+  },
+  "last_hits": {
+    "jMogwai": 351,
+    "nerd": 298,
+    "Спортсмен": 51,
+    "Kando!JeJe": 44,
+    "ренальда": 267,
+    "???&": 385,
+    "Davros": 117,
+    "Communication": 44,
+    "Профессор вкусных каш": 343,
+    "Donnie": 225
+  },
+  "denies": {
+    "jMogwai": 15,
+    "nerd": 4,
+    "Спортсмен": 3,
+    "Kando!JeJe": 2,
+    "ренальда": 2,
+    "???&": 10,
+    "Davros": 2,
+    "Communication": 1,
+    "Профессор вкусных каш": 4,
+    "Donnie": 11
+  },
+  "gold_per_minute": {
+    "jMogwai": 677.92,
+    "nerd": 696.14,
+    "Спортсмен": 400.29,
+    "Kando!JeJe": 292.45,
+    "ренальда": 573.32,
+    "???&": 562.07,
+    "Davros": 363.11,
+    "Communication": 279.42,
+    "Профессор вкусных каш": 620.08,
+    "Donnie": 497.54
+  },
+  "xp_per_minute": {
+    "jMogwai": 935.17,
+    "nerd": 746.87,
+    "Спортсмен": 649.46,
+    "Kando!JeJe": 477.22,
+    "ренальда": 762.32,
+    "???&": 698.09,
+    "Davros": 466.82,
+    "Communication": 454.09,
+    "Профессор вкусных каш": 967.01,
+    "Donnie": 601.78
+  },
+  "hero_damage": {
+    "jMogwai": 102145,
+    "nerd": 36867,
+    "Спортсмен": 25051,
+    "Kando!JeJe": 15496,
+    "ренальда": 28521,
+    "???&": 34651,
+    "Davros": 9691,
+    "Communication": 9837,
+    "Профессор вкусных каш": 32914,
+    "Donnie": 19695
+  },
+  "damage_taken": {
+    "jMogwai": 25706,
+    "nerd": 30830,
+    "Спортсмен": 12166,
+    "Kando!JeJe": 12957,
+    "ренальда": 29747,
+    "???&": 188067,
+    "Davros": 27424,
+    "Communication": 31273,
+    "Профессор вкусных каш": 51168,
+    "Donnie": 38329
+  },
+  "hero_healing": {
+    "jMogwai": 15146,
+    "nerd": 16474,
+    "Спортсмен": 17844,
+    "Kando!JeJe": 8289,
+    "ренальда": 15586,
+    "???&": 24580,
+    "Davros": 11717,
+    "Communication": 11435,
+    "Профессор вкусных каш": 29475,
+    "Donnie": 16418
+  },
+  "tower_damage": {
+    "jMogwai": 6913,
+    "nerd": 2332,
+    "Спортсмен": 314,
+    "Kando!JeJe": 914,
+    "ренальда": 1715,
+    "???&": 734,
+    "Davros": 0,
+    "Communication": 0,
+    "Профессор вкусных каш": 1126,
+    "Donnie": 0
+  },
+  "stuns_dealt": {
+    "jMogwai": 0.0,
+    "nerd": 89.52,
+    "Спортсмен": 123.43,
+    "Kando!JeJe": 88.63,
+    "ренальда": 79.87,
+    "???&": 32.53,
+    "Davros": 172.8,
+    "Communication": 61.1,
+    "Профессор вкусных каш": 118.57,
+    "Donnie": 47.86
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Спортсмен": {
+      "observer": 3,
+      "sentry": 7,
+      "total": 10
+    },
+    "Kando!JeJe": {
+      "observer": 10,
+      "sentry": 27,
+      "total": 37
+    },
+    "ренальда": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 10,
+      "sentry": 16,
+      "total": 26
+    },
+    "Communication": {
+      "observer": 5,
+      "sentry": 17,
+      "total": 22
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Спортсмен": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "Kando!JeJe": {
+      "observer": 0,
+      "sentry": 7,
+      "total": 7
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 3,
+      "sentry": 1,
+      "total": 4
+    },
+    "Communication": {
+      "observer": 0,
+      "sentry": 5,
+      "total": 5
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_events_count": 101,
+  "chat_after_draft": [
+    {
+      "tick": 24429,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "))"
+    },
+    {
+      "tick": 24617,
+      "channel": "all",
+      "player_slot": 8,
+      "text": ")"
+    },
+    {
+      "tick": 70765,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "не забейте"
+    },
+    {
+      "tick": 70829,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "у меня илья"
+    },
+    {
+      "tick": 70939,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "под мельдонием"
+    },
+    {
+      "tick": 70999,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "пишите"
+    },
+    {
+      "tick": 71097,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "че сидим"
+    },
+    {
+      "tick": 93689,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "братик дима"
+    },
+    {
+      "tick": 93775,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "где молоток"
+    },
+    {
+      "tick": 94499,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "у меня в жопе"
+    },
+    {
+      "tick": 94699,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "xD"
+    }
+  ],
+  "chat_message_count": 11,
+  "high_fives": {
+    "jMogwai": 0,
+    "nerd": 0,
+    "Спортсмен": 0,
+    "Kando!JeJe": 0,
+    "ренальда": 0,
+    "???&": 0,
+    "Davros": 0,
+    "Communication": 0,
+    "Профессор вкусных каш": 1,
+    "Donnie": 0
+  }
+}

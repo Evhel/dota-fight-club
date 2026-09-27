@@ -1,0 +1,630 @@
+{
+  "match_id": 9005517693,
+  "start_time": "2026-09-20 03:55:25",
+  "start_timestamp": 1789865725.884666,
+  "duration_minutes": 56.84,
+  "duration_seconds": 3410.33,
+  "draft_duration_minutes": 9.13,
+  "winner": "dire",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "dlya trenirovok",
+    "team_tag": "DLT",
+    "team_id": 1387268
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Spectre"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Kunkka"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Phoenix"
+    },
+    {
+      "nickname": "oR",
+      "steam_id": 76561198088828615,
+      "hero": "Queen Of Pain"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Clockwerk"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "Mat' v mute",
+      "steam_id": 76561199222816532,
+      "hero": "Grimstroke"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Sniper"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Centaur Warrunner"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Spirit Breaker"
+    },
+    {
+      "nickname": "Как же он сияет",
+      "steam_id": 76561199642307932,
+      "hero": "Beastmaster"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 8786
+    },
+    {
+      "team": 2,
+      "hero": "Queen of Pain",
+      "tick": 10606
+    },
+    {
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 11902
+    },
+    {
+      "team": 3,
+      "hero": "Grimstroke",
+      "tick": 12632
+    },
+    {
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 12812
+    },
+    {
+      "team": 2,
+      "hero": "Phoenix",
+      "tick": 14130
+    },
+    {
+      "team": 3,
+      "hero": "Clockwerk",
+      "tick": 14998
+    },
+    {
+      "team": 3,
+      "hero": "Beastmaster",
+      "tick": 16384
+    },
+    {
+      "team": 2,
+      "hero": "Sniper",
+      "tick": 18834
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 19236
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 2804
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3804
+    },
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 3876
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 4840
+    },
+    {
+      "team": 2,
+      "hero": "Naga Siren",
+      "tick": 5736
+    },
+    {
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 8552
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 2804,
+      "game_time_sec": 93.46666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3804,
+      "game_time_sec": 126.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 3876,
+      "game_time_sec": 129.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Techies",
+      "tick": 4840,
+      "game_time_sec": 161.33333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Naga Siren",
+      "tick": 5736,
+      "game_time_sec": 191.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 8552,
+      "game_time_sec": 285.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 8786,
+      "game_time_sec": 292.8666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Queen of Pain",
+      "tick": 10606,
+      "game_time_sec": 353.53333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 11902,
+      "game_time_sec": 396.73333333333335
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Grimstroke",
+      "tick": 12632,
+      "game_time_sec": 421.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 12812,
+      "game_time_sec": 427.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Phoenix",
+      "tick": 14130,
+      "game_time_sec": 471.0
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Clockwerk",
+      "tick": 14998,
+      "game_time_sec": 499.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Beastmaster",
+      "tick": 16384,
+      "game_time_sec": 546.1333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Sniper",
+      "tick": 18834,
+      "game_time_sec": 627.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 19236,
+      "game_time_sec": 641.2
+    }
+  ],
+  "total_deaths": 109,
+  "kda": {
+    "???&": {
+      "kills": 19,
+      "deaths": 6,
+      "assists": 18,
+      "kda_ratio": 6.17
+    },
+    "nerd": {
+      "kills": 8,
+      "deaths": 12,
+      "assists": 36,
+      "kda_ratio": 3.67
+    },
+    "Профессор вкусных каш": {
+      "kills": 12,
+      "deaths": 9,
+      "assists": 25,
+      "kda_ratio": 4.11
+    },
+    "oR": {
+      "kills": 13,
+      "deaths": 13,
+      "assists": 11,
+      "kda_ratio": 1.85
+    },
+    "Davros": {
+      "kills": 4,
+      "deaths": 13,
+      "assists": 23,
+      "kda_ratio": 2.08
+    },
+    "Mat' v mute": {
+      "kills": 7,
+      "deaths": 10,
+      "assists": 29,
+      "kda_ratio": 3.6
+    },
+    "jMogwai": {
+      "kills": 10,
+      "deaths": 14,
+      "assists": 26,
+      "kda_ratio": 2.57
+    },
+    "Donnie": {
+      "kills": 17,
+      "deaths": 8,
+      "assists": 22,
+      "kda_ratio": 4.88
+    },
+    "13": {
+      "kills": 8,
+      "deaths": 13,
+      "assists": 34,
+      "kda_ratio": 3.23
+    },
+    "Как же он сияет": {
+      "kills": 10,
+      "deaths": 11,
+      "assists": 25,
+      "kda_ratio": 3.18
+    }
+  },
+  "net_worth": {
+    "???&": 30334,
+    "nerd": 25675,
+    "Профессор вкусных каш": 18896,
+    "oR": 24058,
+    "Davros": 16391,
+    "Mat' v mute": 16554,
+    "jMogwai": 28867,
+    "Donnie": 33948,
+    "13": 14435,
+    "Как же он сияет": 25334
+  },
+  "last_hits": {
+    "???&": 442,
+    "nerd": 401,
+    "Профессор вкусных каш": 147,
+    "oR": 444,
+    "Davros": 99,
+    "Mat' v mute": 66,
+    "jMogwai": 400,
+    "Donnie": 436,
+    "13": 49,
+    "Как же он сияет": 317
+  },
+  "denies": {
+    "???&": 2,
+    "nerd": 14,
+    "Профессор вкусных каш": 1,
+    "oR": 12,
+    "Davros": 5,
+    "Mat' v mute": 6,
+    "jMogwai": 28,
+    "Donnie": 23,
+    "13": 0,
+    "Как же он сияет": 11
+  },
+  "gold_per_minute": {
+    "???&": 628.07,
+    "nerd": 600.21,
+    "Профессор вкусных каш": 422.72,
+    "oR": 569.35,
+    "Davros": 390.63,
+    "Mat' v mute": 391.62,
+    "jMogwai": 620.98,
+    "Donnie": 703.2,
+    "13": 338.92,
+    "Как же он сияет": 578.57
+  },
+  "xp_per_minute": {
+    "???&": 1081.3,
+    "nerd": 879.08,
+    "Профессор вкусных каш": 698.24,
+    "oR": 821.43,
+    "Davros": 872.92,
+    "Mat' v mute": 690.72,
+    "jMogwai": 880.47,
+    "Donnie": 1133.03,
+    "13": 529.02,
+    "Как же он сияет": 891.03
+  },
+  "hero_damage": {
+    "???&": 71070,
+    "nerd": 61228,
+    "Профессор вкусных каш": 82207,
+    "oR": 43155,
+    "Davros": 20592,
+    "Mat' v mute": 48705,
+    "jMogwai": 78527,
+    "Donnie": 178974,
+    "13": 24689,
+    "Как же он сияет": 49531
+  },
+  "damage_taken": {
+    "???&": 180637,
+    "nerd": 65078,
+    "Профессор вкусных каш": 62753,
+    "oR": 79197,
+    "Davros": 40059,
+    "Mat' v mute": 29379,
+    "jMogwai": 50821,
+    "Donnie": 186313,
+    "13": 50788,
+    "Как же он сияет": 55211
+  },
+  "hero_healing": {
+    "???&": 37877,
+    "nerd": 25253,
+    "Профессор вкусных каш": 46507,
+    "oR": 41476,
+    "Davros": 15994,
+    "Mat' v mute": 16912,
+    "jMogwai": 23035,
+    "Donnie": 128420,
+    "13": 24079,
+    "Как же он сияет": 24813
+  },
+  "tower_damage": {
+    "???&": 5634,
+    "nerd": 1568,
+    "Профессор вкусных каш": 348,
+    "oR": 793,
+    "Davros": 0,
+    "Mat' v mute": 570,
+    "jMogwai": 4472,
+    "Donnie": 6628,
+    "13": 255,
+    "Как же он сияет": 2051
+  },
+  "stuns_dealt": {
+    "???&": 0.0,
+    "nerd": 149.55,
+    "Профессор вкусных каш": 38.56,
+    "oR": 0.0,
+    "Davros": 124.83,
+    "Mat' v mute": 99.72,
+    "jMogwai": 0.65,
+    "Donnie": 246.6,
+    "13": 209.34,
+    "Как же он сияет": 147.8
+  },
+  "wards_placed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 9,
+      "total": 9
+    },
+    "oR": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "Davros": {
+      "observer": 18,
+      "sentry": 25,
+      "total": 43
+    },
+    "Mat' v mute": {
+      "observer": 13,
+      "sentry": 33,
+      "total": 46
+    },
+    "jMogwai": {
+      "observer": 4,
+      "sentry": 2,
+      "total": 6
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 8,
+      "sentry": 13,
+      "total": 21
+    },
+    "Как же он сияет": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 2,
+      "sentry": 5,
+      "total": 7
+    },
+    "oR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 3,
+      "sentry": 7,
+      "total": 10
+    },
+    "Mat' v mute": {
+      "observer": 3,
+      "sentry": 7,
+      "total": 10
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 2,
+      "total": 4
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "13": {
+      "observer": 0,
+      "sentry": 5,
+      "total": 5
+    },
+    "Как же он сияет": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    }
+  },
+  "wards_events_count": 131,
+  "chat_after_draft": [
+    {
+      "tick": 24675,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "гоз"
+    },
+    {
+      "tick": 24705,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "GAS&"
+    },
+    {
+      "tick": 41485,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "МЫШКА СЕЛА"
+    },
+    {
+      "tick": 41509,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "СОРИ"
+    },
+    {
+      "tick": 41533,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ГО"
+    },
+    {
+      "tick": 88769,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "г?"
+    },
+    {
+      "tick": 124609,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "))"
+    },
+    {
+      "tick": 126659,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "не, я ебал"
+    },
+    {
+      "tick": 129169,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "))"
+    }
+  ],
+  "chat_message_count": 9,
+  "high_fives": {
+    "???&": 0,
+    "nerd": 0,
+    "Профессор вкусных каш": 0,
+    "oR": 0,
+    "Davros": 0,
+    "Mat' v mute": 0,
+    "jMogwai": 0,
+    "Donnie": 0,
+    "13": 0,
+    "Как же он сияет": 0
+  }
+}

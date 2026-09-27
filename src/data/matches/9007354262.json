@@ -1,0 +1,575 @@
+{
+  "match_id": 9007354262,
+  "start_time": "2026-09-20 04:05:46",
+  "start_timestamp": 1789866346.454089,
+  "duration_minutes": 52.98,
+  "duration_seconds": 3178.53,
+  "draft_duration_minutes": 10.78,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "ауе татары",
+    "team_tag": "ауе татары",
+    "team_id": 8725285
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Lina"
+    },
+    {
+      "nickname": "Mat' v mute",
+      "steam_id": 76561199222816532,
+      "hero": "Zeus"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Razor"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Wraith King"
+    },
+    {
+      "nickname": "мелман",
+      "steam_id": 76561198974599395,
+      "hero": "Nyx Assassin"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Sniper"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Legion Commander"
+    },
+    {
+      "nickname": "Как же он сияет",
+      "steam_id": 76561199642307932,
+      "hero": "Juggernaut"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Viper"
+    },
+    {
+      "nickname": "baal",
+      "steam_id": 76561199105241321,
+      "hero": "Bane"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Bane",
+      "tick": 9905
+    },
+    {
+      "team": 2,
+      "hero": "Wraith King",
+      "tick": 10709
+    },
+    {
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 11029
+    },
+    {
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 12429
+    },
+    {
+      "team": 2,
+      "hero": "Viper",
+      "tick": 13899
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 15289
+    },
+    {
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 16251
+    },
+    {
+      "team": 3,
+      "hero": "Sniper",
+      "tick": 18489
+    },
+    {
+      "team": 2,
+      "hero": "Legion Commander",
+      "tick": 19263
+    },
+    {
+      "team": 2,
+      "hero": "Razor",
+      "tick": 21241
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Shadow Fiend",
+      "tick": 1833
+    },
+    {
+      "team": 3,
+      "hero": "Primal Beast",
+      "tick": 2773
+    },
+    {
+      "team": 2,
+      "hero": "Meepo",
+      "tick": 2997
+    },
+    {
+      "team": 3,
+      "hero": "Brewmaster",
+      "tick": 5157
+    },
+    {
+      "team": 2,
+      "hero": "Anti-Mage",
+      "tick": 6833
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 9149
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Shadow Fiend",
+      "tick": 1833,
+      "game_time_sec": 61.1
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Primal Beast",
+      "tick": 2773,
+      "game_time_sec": 92.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Meepo",
+      "tick": 2997,
+      "game_time_sec": 99.9
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Brewmaster",
+      "tick": 5157,
+      "game_time_sec": 171.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Anti-Mage",
+      "tick": 6833,
+      "game_time_sec": 227.76666666666668
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 9149,
+      "game_time_sec": 304.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Bane",
+      "tick": 9905,
+      "game_time_sec": 330.1666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Wraith King",
+      "tick": 10709,
+      "game_time_sec": 356.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 11029,
+      "game_time_sec": 367.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 12429,
+      "game_time_sec": 414.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Viper",
+      "tick": 13899,
+      "game_time_sec": 463.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lina",
+      "tick": 15289,
+      "game_time_sec": 509.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 16251,
+      "game_time_sec": 541.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Sniper",
+      "tick": 18489,
+      "game_time_sec": 616.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Legion Commander",
+      "tick": 19263,
+      "game_time_sec": 642.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Razor",
+      "tick": 21241,
+      "game_time_sec": 708.0333333333333
+    }
+  ],
+  "total_deaths": 105,
+  "kda": {
+    "jMogwai": {
+      "kills": 15,
+      "deaths": 9,
+      "assists": 13,
+      "kda_ratio": 3.11
+    },
+    "Mat' v mute": {
+      "kills": 2,
+      "deaths": 11,
+      "assists": 33,
+      "kda_ratio": 3.18
+    },
+    "???&": {
+      "kills": 9,
+      "deaths": 7,
+      "assists": 23,
+      "kda_ratio": 4.57
+    },
+    "Davros": {
+      "kills": 12,
+      "deaths": 8,
+      "assists": 21,
+      "kda_ratio": 4.12
+    },
+    "мелман": {
+      "kills": 16,
+      "deaths": 16,
+      "assists": 25,
+      "kda_ratio": 2.56
+    },
+    "nerd": {
+      "kills": 15,
+      "deaths": 8,
+      "assists": 15,
+      "kda_ratio": 3.75
+    },
+    "Donnie": {
+      "kills": 11,
+      "deaths": 6,
+      "assists": 13,
+      "kda_ratio": 4.0
+    },
+    "Как же он сияет": {
+      "kills": 18,
+      "deaths": 11,
+      "assists": 8,
+      "kda_ratio": 2.36
+    },
+    "13": {
+      "kills": 5,
+      "deaths": 15,
+      "assists": 25,
+      "kda_ratio": 2.0
+    },
+    "baal": {
+      "kills": 1,
+      "deaths": 14,
+      "assists": 14,
+      "kda_ratio": 1.07
+    }
+  },
+  "net_worth": {
+    "jMogwai": 36983,
+    "Mat' v mute": 18086,
+    "???&": 31279,
+    "Davros": 32265,
+    "мелман": 17047,
+    "nerd": 29630,
+    "Donnie": 23157,
+    "Как же он сияет": 28131,
+    "13": 12607,
+    "baal": 8328
+  },
+  "last_hits": {
+    "jMogwai": 466,
+    "Mat' v mute": 79,
+    "???&": 414,
+    "Davros": 428,
+    "мелман": 27,
+    "nerd": 608,
+    "Donnie": 388,
+    "Как же он сияет": 503,
+    "13": 122,
+    "baal": 45
+  },
+  "denies": {
+    "jMogwai": 13,
+    "Mat' v mute": 5,
+    "???&": 15,
+    "Davros": 2,
+    "мелман": 3,
+    "nerd": 9,
+    "Donnie": 9,
+    "Как же он сияет": 9,
+    "13": 1,
+    "baal": 1
+  },
+  "gold_per_minute": {
+    "jMogwai": 672.9,
+    "Mat' v mute": 376.36,
+    "???&": 619.57,
+    "Davros": 615.96,
+    "мелман": 353.65,
+    "nerd": 688.28,
+    "Donnie": 527.68,
+    "Как же он сияет": 627.99,
+    "13": 315.03,
+    "baal": 251.59
+  },
+  "xp_per_minute": {
+    "jMogwai": 1111.85,
+    "Mat' v mute": 710.61,
+    "???&": 901.15,
+    "Davros": 1077.5,
+    "мелман": 709.25,
+    "nerd": 958.1,
+    "Donnie": 834.88,
+    "Как же он сияет": 1003.46,
+    "13": 525.03,
+    "baal": 426.71
+  },
+  "hero_damage": {
+    "jMogwai": 44854,
+    "Mat' v mute": 28132,
+    "???&": 32407,
+    "Davros": 46867,
+    "мелман": 27657,
+    "nerd": 90766,
+    "Donnie": 36555,
+    "Как же он сияет": 89925,
+    "13": 22081,
+    "baal": 9599
+  },
+  "damage_taken": {
+    "jMogwai": 51003,
+    "Mat' v mute": 33546,
+    "???&": 99068,
+    "Davros": 91594,
+    "мелман": 43560,
+    "nerd": 40420,
+    "Donnie": 59536,
+    "Как же он сияет": 49897,
+    "13": 42157,
+    "baal": 34487
+  },
+  "hero_healing": {
+    "jMogwai": 24989,
+    "Mat' v mute": 14618,
+    "???&": 28229,
+    "Davros": 34649,
+    "мелман": 8566,
+    "nerd": 16137,
+    "Donnie": 33321,
+    "Как же он сияет": 18589,
+    "13": 10358,
+    "baal": 10402
+  },
+  "tower_damage": {
+    "jMogwai": 5031,
+    "Mat' v mute": 40,
+    "???&": 6395,
+    "Davros": 3448,
+    "мелман": 285,
+    "nerd": 4778,
+    "Donnie": 1181,
+    "Как же он сияет": 583,
+    "13": 550,
+    "baal": 9
+  },
+  "stuns_dealt": {
+    "jMogwai": 109.85,
+    "Mat' v mute": 43.15,
+    "???&": 0.0,
+    "Davros": 132.62,
+    "мелман": 164.67,
+    "nerd": 3.85,
+    "Donnie": 135.8,
+    "Как же он сияет": 0.0,
+    "13": 24.0,
+    "baal": 181.19
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "Mat' v mute": {
+      "observer": 4,
+      "sentry": 22,
+      "total": 26
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "мелман": {
+      "observer": 17,
+      "sentry": 23,
+      "total": 40
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Как же он сияет": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 6,
+      "sentry": 15,
+      "total": 21
+    },
+    "baal": {
+      "observer": 13,
+      "sentry": 30,
+      "total": 43
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Mat' v mute": {
+      "observer": 4,
+      "sentry": 16,
+      "total": 20
+    },
+    "???&": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "мелман": {
+      "observer": 2,
+      "sentry": 5,
+      "total": 7
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Как же он сияет": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "13": {
+      "observer": 3,
+      "sentry": 6,
+      "total": 9
+    },
+    "baal": {
+      "observer": 5,
+      "sentry": 6,
+      "total": 11
+    }
+  },
+  "wards_events_count": 135,
+  "chat_after_draft": [],
+  "chat_message_count": 0,
+  "high_fives": {
+    "jMogwai": 0,
+    "Mat' v mute": 0,
+    "???&": 0,
+    "Davros": 0,
+    "мелман": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Как же он сияет": 0,
+    "13": 0,
+    "baal": 0
+  }
+}

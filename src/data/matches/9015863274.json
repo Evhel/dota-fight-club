@@ -1,0 +1,738 @@
+{
+  "match_id": 9015863274,
+  "start_time": "2026-09-25 21:26:54",
+  "start_timestamp": 1790360814.116865,
+  "duration_minutes": 51.02,
+  "duration_seconds": 3061.07,
+  "draft_duration_minutes": 12.25,
+  "winner": "dire",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "dlya trenirovok",
+    "team_tag": "DLT",
+    "team_id": 1387268
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Earthshaker"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": 76561199222816532,
+      "hero": "Silencer"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Sven"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": 76561198306408521,
+      "hero": "Winter Wyvern"
+    },
+    {
+      "nickname": "Спортсмен",
+      "steam_id": 76561198020458182,
+      "hero": "Centaur Warrunner"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Drow Ranger"
+    },
+    {
+      "nickname": "IXA",
+      "steam_id": 76561198213414847,
+      "hero": "Invoker"
+    },
+    {
+      "nickname": "Noxxion",
+      "steam_id": 76561198072867743,
+      "hero": "Hoodwink"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Mars"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Enchantress"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 4016
+    },
+    {
+      "team": 2,
+      "hero": "Enchantress",
+      "tick": 6200
+    },
+    {
+      "team": 2,
+      "hero": "Hoodwink",
+      "tick": 10248
+    },
+    {
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 11142
+    },
+    {
+      "team": 3,
+      "hero": "Silencer",
+      "tick": 12004
+    },
+    {
+      "team": 3,
+      "hero": "Mars",
+      "tick": 12766
+    },
+    {
+      "team": 2,
+      "hero": "Invoker",
+      "tick": 13988
+    },
+    {
+      "team": 2,
+      "hero": "Earthshaker",
+      "tick": 15478
+    },
+    {
+      "team": 3,
+      "hero": "Sven",
+      "tick": 21916
+    },
+    {
+      "team": 3,
+      "hero": "Drow Ranger",
+      "tick": 22898
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 842
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 914
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 978
+    },
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 1062
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1644
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 1688
+    },
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 2220
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 6282
+    },
+    {
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 7684
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 8898
+    },
+    {
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 16488
+    },
+    {
+      "team": 2,
+      "hero": "Phantom Lancer",
+      "tick": 17038
+    },
+    {
+      "team": 3,
+      "hero": "Clinkz",
+      "tick": 17662
+    },
+    {
+      "team": 2,
+      "hero": "Medusa",
+      "tick": 19944
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lina",
+      "tick": 842,
+      "game_time_sec": 28.066666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 914,
+      "game_time_sec": 30.466666666666665
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kez",
+      "tick": 978,
+      "game_time_sec": 32.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 1062,
+      "game_time_sec": 35.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1644,
+      "game_time_sec": 54.8
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Techies",
+      "tick": 1688,
+      "game_time_sec": 56.266666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 2220,
+      "game_time_sec": 74.0
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 4016,
+      "game_time_sec": 133.86666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Enchantress",
+      "tick": 6200,
+      "game_time_sec": 206.66666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 6282,
+      "game_time_sec": 209.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 7684,
+      "game_time_sec": 256.1333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Marci",
+      "tick": 8898,
+      "game_time_sec": 296.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Hoodwink",
+      "tick": 10248,
+      "game_time_sec": 341.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 11142,
+      "game_time_sec": 371.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Silencer",
+      "tick": 12004,
+      "game_time_sec": 400.1333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Mars",
+      "tick": 12766,
+      "game_time_sec": 425.53333333333336
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Invoker",
+      "tick": 13988,
+      "game_time_sec": 466.26666666666665
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Earthshaker",
+      "tick": 15478,
+      "game_time_sec": 515.9333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 16488,
+      "game_time_sec": 549.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Phantom Lancer",
+      "tick": 17038,
+      "game_time_sec": 567.9333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Clinkz",
+      "tick": 17662,
+      "game_time_sec": 588.7333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Medusa",
+      "tick": 19944,
+      "game_time_sec": 664.8
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Sven",
+      "tick": 21916,
+      "game_time_sec": 730.5333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Drow Ranger",
+      "tick": 22898,
+      "game_time_sec": 763.2666666666667
+    }
+  ],
+  "total_deaths": 77,
+  "kda": {
+    "jMogwai": {
+      "kills": 11,
+      "deaths": 8,
+      "assists": 15,
+      "kda_ratio": 3.25
+    },
+    "Communication": {
+      "kills": 5,
+      "deaths": 12,
+      "assists": 18,
+      "kda_ratio": 1.92
+    },
+    "Профессор вкусных каш": {
+      "kills": 9,
+      "deaths": 7,
+      "assists": 5,
+      "kda_ratio": 2.0
+    },
+    "Osaki": {
+      "kills": 3,
+      "deaths": 12,
+      "assists": 11,
+      "kda_ratio": 1.17
+    },
+    "Спортсмен": {
+      "kills": 5,
+      "deaths": 5,
+      "assists": 21,
+      "kda_ratio": 5.2
+    },
+    "???&": {
+      "kills": 4,
+      "deaths": 4,
+      "assists": 15,
+      "kda_ratio": 4.75
+    },
+    "IXA": {
+      "kills": 22,
+      "deaths": 9,
+      "assists": 10,
+      "kda_ratio": 3.56
+    },
+    "Noxxion": {
+      "kills": 3,
+      "deaths": 7,
+      "assists": 16,
+      "kda_ratio": 2.71
+    },
+    "Donnie": {
+      "kills": 1,
+      "deaths": 7,
+      "assists": 16,
+      "kda_ratio": 2.43
+    },
+    "Davros": {
+      "kills": 13,
+      "deaths": 6,
+      "assists": 9,
+      "kda_ratio": 3.67
+    }
+  },
+  "net_worth": {
+    "jMogwai": 22808,
+    "Communication": 9360,
+    "Профессор вкусных каш": 28909,
+    "Osaki": 9125,
+    "Спортсмен": 31847,
+    "???&": 31453,
+    "IXA": 26343,
+    "Noxxion": 15251,
+    "Donnie": 20718,
+    "Davros": 15040
+  },
+  "last_hits": {
+    "jMogwai": 418,
+    "Communication": 72,
+    "Профессор вкусных каш": 654,
+    "Osaki": 56,
+    "Спортсмен": 450,
+    "???&": 436,
+    "IXA": 229,
+    "Noxxion": 42,
+    "Donnie": 263,
+    "Davros": 68
+  },
+  "denies": {
+    "jMogwai": 12,
+    "Communication": 3,
+    "Профессор вкусных каш": 8,
+    "Osaki": 1,
+    "Спортсмен": 21,
+    "???&": 5,
+    "IXA": 5,
+    "Noxxion": 8,
+    "Donnie": 36,
+    "Davros": 3
+  },
+  "gold_per_minute": {
+    "jMogwai": 603.42,
+    "Communication": 301.88,
+    "Профессор вкусных каш": 641.19,
+    "Osaki": 236.78,
+    "Спортсмен": 626.45,
+    "???&": 647.95,
+    "IXA": 563.78,
+    "Noxxion": 304.17,
+    "Donnie": 434.79,
+    "Davros": 370.18
+  },
+  "xp_per_minute": {
+    "jMogwai": 976.52,
+    "Communication": 388.0,
+    "Профессор вкусных каш": 946.81,
+    "Osaki": 401.08,
+    "Спортсмен": 906.94,
+    "???&": 751.03,
+    "IXA": 914.72,
+    "Noxxion": 383.79,
+    "Donnie": 631.35,
+    "Davros": 594.4
+  },
+  "hero_damage": {
+    "jMogwai": 75105,
+    "Communication": 20300,
+    "Профессор вкусных каш": 55898,
+    "Osaki": 13580,
+    "Спортсмен": 110311,
+    "???&": 61137,
+    "IXA": 54527,
+    "Noxxion": 14779,
+    "Donnie": 34182,
+    "Davros": 21016
+  },
+  "damage_taken": {
+    "jMogwai": 69038,
+    "Communication": 28527,
+    "Профессор вкусных каш": 63362,
+    "Osaki": 29812,
+    "Спортсмен": 142142,
+    "???&": 87991,
+    "IXA": 49603,
+    "Noxxion": 25858,
+    "Donnie": 50367,
+    "Davros": 45426
+  },
+  "hero_healing": {
+    "jMogwai": 35569,
+    "Communication": 12563,
+    "Профессор вкусных каш": 33721,
+    "Osaki": 13634,
+    "Спортсмен": 104677,
+    "???&": 12524,
+    "IXA": 15997,
+    "Noxxion": 13066,
+    "Donnie": 22004,
+    "Davros": 33097
+  },
+  "tower_damage": {
+    "jMogwai": 487,
+    "Communication": 0,
+    "Профессор вкусных каш": 534,
+    "Osaki": 15,
+    "Спортсмен": 673,
+    "???&": 11943,
+    "IXA": 1999,
+    "Noxxion": 23,
+    "Donnie": 0,
+    "Davros": 257
+  },
+  "stuns_dealt": {
+    "jMogwai": 452.71,
+    "Communication": 0.0,
+    "Профессор вкусных каш": 58.65,
+    "Osaki": 84.32,
+    "Спортсмен": 117.3,
+    "???&": 0.0,
+    "IXA": 223.75,
+    "Noxxion": 71.47,
+    "Donnie": 150.3,
+    "Davros": 155.37
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "Communication": {
+      "observer": 9,
+      "sentry": 27,
+      "total": 36
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 9,
+      "sentry": 13,
+      "total": 22
+    },
+    "Спортсмен": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "IXA": {
+      "observer": 3,
+      "sentry": 1,
+      "total": 4
+    },
+    "Noxxion": {
+      "observer": 12,
+      "sentry": 12,
+      "total": 24
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 6,
+      "sentry": 18,
+      "total": 24
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "Communication": {
+      "observer": 4,
+      "sentry": 7,
+      "total": 11
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "Спортсмен": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "IXA": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Noxxion": {
+      "observer": 1,
+      "sentry": 7,
+      "total": 8
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 2,
+      "sentry": 9,
+      "total": 11
+    }
+  },
+  "wards_events_count": 115,
+  "chat_after_draft": [
+    {
+      "tick": 25602,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ШУУУУУУУУУУУУУ"
+    },
+    {
+      "tick": 25756,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "СЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮ"
+    },
+    {
+      "tick": 26130,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "денис у нас мага на марсе"
+    },
+    {
+      "tick": 26252,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "на сколько из 10 ты рад?"
+    },
+    {
+      "tick": 26858,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "копья в никуда"
+    },
+    {
+      "tick": 26946,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "готовьтесь"
+    },
+    {
+      "tick": 56408,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "страшно вообще-то"
+    },
+    {
+      "tick": 87428,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "а че баг на марсе никогда не пофиксят?"
+    },
+    {
+      "tick": 93838,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "тряси"
+    },
+    {
+      "tick": 113588,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "щащаща"
+    },
+    {
+      "tick": 117464,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "АХУЕЛ"
+    }
+  ],
+  "chat_message_count": 11,
+  "high_fives": {
+    "jMogwai": 4,
+    "Communication": 1,
+    "Профессор вкусных каш": 2,
+    "Osaki": 0,
+    "Спортсмен": 0,
+    "???&": 0,
+    "IXA": 1,
+    "Noxxion": 0,
+    "Donnie": 2,
+    "Davros": 1
+  }
+}

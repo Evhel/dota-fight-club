@@ -1,0 +1,630 @@
+{
+  "match_id": 9010292992,
+  "start_time": "2026-09-22 00:25:10",
+  "start_timestamp": 1790025910.695936,
+  "duration_minutes": 38.83,
+  "duration_seconds": 2329.9,
+  "draft_duration_minutes": 11.31,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "4 v tanke + 4eh",
+    "team_tag": "4+4",
+    "team_id": 1773074
+  },
+  "dire_team_info": {
+    "team_name": "BALTIKA",
+    "team_tag": "8",
+    "team_id": 4616603
+  },
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Juggernaut"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Legion Commander"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Shadow Shaman"
+    },
+    {
+      "nickname": "Облепиховая мышь",
+      "steam_id": 76561198870458846,
+      "hero": "Skywrath Mage"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Void Spirit"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Ursa"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Zeus"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": 76561198078638066,
+      "hero": "Kunkka"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": 76561199222816532,
+      "hero": "Snapfire"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Undying"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 10078
+    },
+    {
+      "team": 2,
+      "hero": "Legion Commander",
+      "tick": 11186
+    },
+    {
+      "team": 3,
+      "hero": "Skywrath Mage",
+      "tick": 12066
+    },
+    {
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 14308
+    },
+    {
+      "team": 2,
+      "hero": "Snapfire",
+      "tick": 14440
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Shaman",
+      "tick": 15810
+    },
+    {
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 17424
+    },
+    {
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 18726
+    },
+    {
+      "team": 2,
+      "hero": "Ursa",
+      "tick": 19614
+    },
+    {
+      "team": 2,
+      "hero": "Void Spirit",
+      "tick": 21114
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 750
+    },
+    {
+      "team": 3,
+      "hero": "Batrider",
+      "tick": 2834
+    },
+    {
+      "team": 2,
+      "hero": "Lone Druid",
+      "tick": 4730
+    },
+    {
+      "team": 3,
+      "hero": "Doom",
+      "tick": 5892
+    },
+    {
+      "team": 2,
+      "hero": "Razor",
+      "tick": 7238
+    },
+    {
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 8532
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Marci",
+      "tick": 750,
+      "game_time_sec": 25.0
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Batrider",
+      "tick": 2834,
+      "game_time_sec": 94.46666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lone Druid",
+      "tick": 4730,
+      "game_time_sec": 157.66666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Doom",
+      "tick": 5892,
+      "game_time_sec": 196.4
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Razor",
+      "tick": 7238,
+      "game_time_sec": 241.26666666666668
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 8532,
+      "game_time_sec": 284.4
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Undying",
+      "tick": 10078,
+      "game_time_sec": 335.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Legion Commander",
+      "tick": 11186,
+      "game_time_sec": 372.8666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Skywrath Mage",
+      "tick": 12066,
+      "game_time_sec": 402.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 14308,
+      "game_time_sec": 476.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Snapfire",
+      "tick": 14440,
+      "game_time_sec": 481.3333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Shadow Shaman",
+      "tick": 15810,
+      "game_time_sec": 527.0
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 17424,
+      "game_time_sec": 580.8
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 18726,
+      "game_time_sec": 624.2
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ursa",
+      "tick": 19614,
+      "game_time_sec": 653.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Void Spirit",
+      "tick": 21114,
+      "game_time_sec": 703.8
+    }
+  ],
+  "total_deaths": 84,
+  "kda": {
+    "???&": {
+      "kills": 13,
+      "deaths": 2,
+      "assists": 8,
+      "kda_ratio": 10.5
+    },
+    "Профессор вкусных каш": {
+      "kills": 7,
+      "deaths": 8,
+      "assists": 22,
+      "kda_ratio": 3.62
+    },
+    "Davros": {
+      "kills": 2,
+      "deaths": 6,
+      "assists": 20,
+      "kda_ratio": 3.67
+    },
+    "Облепиховая мышь": {
+      "kills": 9,
+      "deaths": 11,
+      "assists": 20,
+      "kda_ratio": 2.64
+    },
+    "jMogwai": {
+      "kills": 19,
+      "deaths": 6,
+      "assists": 18,
+      "kda_ratio": 6.17
+    },
+    "Donnie": {
+      "kills": 15,
+      "deaths": 10,
+      "assists": 9,
+      "kda_ratio": 2.4
+    },
+    "nerd": {
+      "kills": 8,
+      "deaths": 9,
+      "assists": 16,
+      "kda_ratio": 2.67
+    },
+    "DeR meis+eR": {
+      "kills": 3,
+      "deaths": 7,
+      "assists": 13,
+      "kda_ratio": 2.29
+    },
+    "Communication": {
+      "kills": 4,
+      "deaths": 7,
+      "assists": 14,
+      "kda_ratio": 2.57
+    },
+    "13": {
+      "kills": 2,
+      "deaths": 18,
+      "assists": 18,
+      "kda_ratio": 1.11
+    }
+  },
+  "net_worth": {
+    "???&": 28634,
+    "Профессор вкусных каш": 16942,
+    "Davros": 13450,
+    "Облепиховая мышь": 12395,
+    "jMogwai": 20753,
+    "Donnie": 20834,
+    "nerd": 18398,
+    "DeR meis+eR": 15251,
+    "Communication": 9271,
+    "13": 7286
+  },
+  "last_hits": {
+    "???&": 389,
+    "Профессор вкусных каш": 135,
+    "Davros": 106,
+    "Облепиховая мышь": 40,
+    "jMogwai": 172,
+    "Donnie": 256,
+    "nerd": 222,
+    "DeR meis+eR": 229,
+    "Communication": 66,
+    "13": 33
+  },
+  "denies": {
+    "???&": 5,
+    "Профессор вкусных каш": 4,
+    "Davros": 7,
+    "Облепиховая мышь": 4,
+    "jMogwai": 18,
+    "Donnie": 22,
+    "nerd": 6,
+    "DeR meis+eR": 15,
+    "Communication": 8,
+    "13": 1
+  },
+  "gold_per_minute": {
+    "???&": 742.41,
+    "Профессор вкусных каш": 424.78,
+    "Davros": 382.99,
+    "Облепиховая мышь": 367.17,
+    "jMogwai": 563.12,
+    "Donnie": 591.42,
+    "nerd": 537.47,
+    "DeR meis+eR": 438.74,
+    "Communication": 329.58,
+    "13": 223.58
+  },
+  "xp_per_minute": {
+    "???&": 1023.7,
+    "Профессор вкусных каш": 588.9,
+    "Davros": 481.26,
+    "Облепиховая мышь": 542.83,
+    "jMogwai": 885.8,
+    "Donnie": 916.16,
+    "nerd": 638.04,
+    "DeR meis+eR": 570.1,
+    "Communication": 427.77,
+    "13": 388.83
+  },
+  "hero_damage": {
+    "???&": 71108,
+    "Профессор вкусных каш": 23977,
+    "Davros": 8461,
+    "Облепиховая мышь": 22848,
+    "jMogwai": 37801,
+    "Donnie": 40107,
+    "nerd": 51550,
+    "DeR meis+eR": 25221,
+    "Communication": 23346,
+    "13": 6638
+  },
+  "damage_taken": {
+    "???&": 70329,
+    "Профессор вкусных каш": 39880,
+    "Davros": 22857,
+    "Облепиховая мышь": 20865,
+    "jMogwai": 49509,
+    "Donnie": 48111,
+    "nerd": 33478,
+    "DeR meis+eR": 40206,
+    "Communication": 24297,
+    "13": 44791
+  },
+  "hero_healing": {
+    "???&": 38867,
+    "Профессор вкусных каш": 28051,
+    "Davros": 15462,
+    "Облепиховая мышь": 8934,
+    "jMogwai": 31432,
+    "Donnie": 19303,
+    "nerd": 11674,
+    "DeR meis+eR": 17843,
+    "Communication": 10609,
+    "13": 12080
+  },
+  "tower_damage": {
+    "???&": 13026,
+    "Профессор вкусных каш": 907,
+    "Davros": 568,
+    "Облепиховая мышь": 263,
+    "jMogwai": 1351,
+    "Donnie": 46,
+    "nerd": 503,
+    "DeR meis+eR": 23,
+    "Communication": 28,
+    "13": 97
+  },
+  "stuns_dealt": {
+    "???&": 11.5,
+    "Профессор вкусных каш": 85.37,
+    "Davros": 172.14,
+    "Облепиховая мышь": 20.0,
+    "jMogwai": 10.0,
+    "Donnie": 31.5,
+    "nerd": 33.65,
+    "DeR meis+eR": 101.1,
+    "Communication": 27.57,
+    "13": 0.0
+  },
+  "wards_placed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 9,
+      "sentry": 15,
+      "total": 24
+    },
+    "Облепиховая мышь": {
+      "observer": 4,
+      "sentry": 14,
+      "total": 18
+    },
+    "jMogwai": {
+      "observer": 5,
+      "sentry": 0,
+      "total": 5
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Communication": {
+      "observer": 4,
+      "sentry": 22,
+      "total": 26
+    },
+    "13": {
+      "observer": 8,
+      "sentry": 8,
+      "total": 16
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 7,
+      "total": 7
+    },
+    "Облепиховая мышь": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 3,
+      "sentry": 3,
+      "total": 6
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Communication": {
+      "observer": 4,
+      "sentry": 7,
+      "total": 11
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    }
+  },
+  "wards_events_count": 92,
+  "chat_after_draft": [
+    {
+      "tick": 23690,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "геральт"
+    },
+    {
+      "tick": 24202,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "героиновая альтушка"
+    },
+    {
+      "tick": 25528,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "гера вылетел"
+    },
+    {
+      "tick": 25556,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "го?"
+    },
+    {
+      "tick": 25686,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "г"
+    },
+    {
+      "tick": 26204,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "та за шо"
+    },
+    {
+      "tick": 26674,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "про усы в тему"
+    },
+    {
+      "tick": 26980,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "не брился 3 дня"
+    },
+    {
+      "tick": 27448,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "зевс не бритый с первой доты"
+    }
+  ],
+  "chat_message_count": 9,
+  "high_fives": {
+    "???&": 0,
+    "Профессор вкусных каш": 0,
+    "Davros": 0,
+    "Облепиховая мышь": 1,
+    "jMogwai": 0,
+    "Donnie": 0,
+    "nerd": 0,
+    "DeR meis+eR": 0,
+    "Communication": 0,
+    "13": 0
+  }
+}

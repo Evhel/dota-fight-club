@@ -1,0 +1,708 @@
+{
+  "match_id": 9007157481,
+  "start_time": "2026-09-20 00:26:13",
+  "start_timestamp": 1789853173.322541,
+  "duration_minutes": 45.46,
+  "duration_seconds": 2727.67,
+  "draft_duration_minutes": 11.93,
+  "winner": "radiant",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "MEME PRIDE",
+    "team_tag": "memos",
+    "team_id": 2519070
+  },
+  "radiant_team": [
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Witch Doctor"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Razor"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": 76561198078638066,
+      "hero": "Mars"
+    },
+    {
+      "nickname": "Mat' v mute",
+      "steam_id": 76561199222816532,
+      "hero": "Silencer"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Marci"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Lifestealer"
+    },
+    {
+      "nickname": "Молочный Козлик",
+      "steam_id": 76561199217674941,
+      "hero": "Lion"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Slardar"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Dazzle"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Pangolier"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 4528
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 5506
+    },
+    {
+      "team": 2,
+      "hero": "Lion",
+      "tick": 8646
+    },
+    {
+      "team": 2,
+      "hero": "Mars",
+      "tick": 9522
+    },
+    {
+      "team": 3,
+      "hero": "Silencer",
+      "tick": 10040
+    },
+    {
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 11149
+    },
+    {
+      "team": 2,
+      "hero": "Slardar",
+      "tick": 13261
+    },
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 15405
+    },
+    {
+      "team": 3,
+      "hero": "Razor",
+      "tick": 21135
+    },
+    {
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 22751
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Riki",
+      "tick": 1272
+    },
+    {
+      "team": 3,
+      "hero": "Primal Beast",
+      "tick": 1836
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 1944
+    },
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 2004
+    },
+    {
+      "team": 3,
+      "hero": "Abaddon",
+      "tick": 2706
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3474
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 4440
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 6490
+    },
+    {
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 6726
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 6972
+    },
+    {
+      "team": 3,
+      "hero": "Outworld Devourer",
+      "tick": 18041
+    },
+    {
+      "team": 2,
+      "hero": "Naga Siren",
+      "tick": 18115
+    },
+    {
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 18657
+    },
+    {
+      "team": 2,
+      "hero": "Terrorblade",
+      "tick": 19869
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Riki",
+      "tick": 1272,
+      "game_time_sec": 42.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Primal Beast",
+      "tick": 1836,
+      "game_time_sec": 61.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kez",
+      "tick": 1944,
+      "game_time_sec": 64.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 2004,
+      "game_time_sec": 66.8
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Abaddon",
+      "tick": 2706,
+      "game_time_sec": 90.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3474,
+      "game_time_sec": 115.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Techies",
+      "tick": 4440,
+      "game_time_sec": 148.0
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 4528,
+      "game_time_sec": 150.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 5506,
+      "game_time_sec": 183.53333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 6490,
+      "game_time_sec": 216.33333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 6726,
+      "game_time_sec": 224.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Axe",
+      "tick": 6972,
+      "game_time_sec": 232.4
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lion",
+      "tick": 8646,
+      "game_time_sec": 288.2
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Mars",
+      "tick": 9522,
+      "game_time_sec": 317.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Silencer",
+      "tick": 10040,
+      "game_time_sec": 334.6666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 11149,
+      "game_time_sec": 371.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Slardar",
+      "tick": 13261,
+      "game_time_sec": 442.03333333333336
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Marci",
+      "tick": 15405,
+      "game_time_sec": 513.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Outworld Devourer",
+      "tick": 18041,
+      "game_time_sec": 601.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Naga Siren",
+      "tick": 18115,
+      "game_time_sec": 603.8333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 18657,
+      "game_time_sec": 621.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Terrorblade",
+      "tick": 19869,
+      "game_time_sec": 662.3
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Razor",
+      "tick": 21135,
+      "game_time_sec": 704.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 22751,
+      "game_time_sec": 758.3666666666667
+    }
+  ],
+  "total_deaths": 92,
+  "kda": {
+    "13": {
+      "kills": 4,
+      "deaths": 13,
+      "assists": 16,
+      "kda_ratio": 1.54
+    },
+    "nerd": {
+      "kills": 26,
+      "deaths": 6,
+      "assists": 18,
+      "kda_ratio": 7.33
+    },
+    "DeR meis+eR": {
+      "kills": 5,
+      "deaths": 7,
+      "assists": 26,
+      "kda_ratio": 4.43
+    },
+    "Mat' v mute": {
+      "kills": 5,
+      "deaths": 6,
+      "assists": 34,
+      "kda_ratio": 6.5
+    },
+    "jMogwai": {
+      "kills": 9,
+      "deaths": 10,
+      "assists": 15,
+      "kda_ratio": 2.4
+    },
+    "???&": {
+      "kills": 14,
+      "deaths": 6,
+      "assists": 18,
+      "kda_ratio": 5.33
+    },
+    "Молочный Козлик": {
+      "kills": 1,
+      "deaths": 17,
+      "assists": 14,
+      "kda_ratio": 0.88
+    },
+    "Donnie": {
+      "kills": 9,
+      "deaths": 10,
+      "assists": 17,
+      "kda_ratio": 2.6
+    },
+    "Davros": {
+      "kills": 4,
+      "deaths": 10,
+      "assists": 20,
+      "kda_ratio": 2.4
+    },
+    "Профессор вкусных каш": {
+      "kills": 12,
+      "deaths": 7,
+      "assists": 15,
+      "kda_ratio": 3.86
+    }
+  },
+  "net_worth": {
+    "13": 12379,
+    "nerd": 32231,
+    "DeR meis+eR": 18266,
+    "Mat' v mute": 13044,
+    "jMogwai": 20691,
+    "???&": 23556,
+    "Молочный Козлик": 7071,
+    "Donnie": 17770,
+    "Davros": 12658,
+    "Профессор вкусных каш": 20751
+  },
+  "last_hits": {
+    "13": 28,
+    "nerd": 339,
+    "DeR meis+eR": 202,
+    "Mat' v mute": 43,
+    "jMogwai": 205,
+    "???&": 367,
+    "Молочный Козлик": 34,
+    "Donnie": 212,
+    "Davros": 122,
+    "Профессор вкусных каш": 311
+  },
+  "denies": {
+    "13": 3,
+    "nerd": 23,
+    "DeR meis+eR": 5,
+    "Mat' v mute": 1,
+    "jMogwai": 24,
+    "???&": 12,
+    "Молочный Козлик": 2,
+    "Donnie": 15,
+    "Davros": 4,
+    "Профессор вкусных каш": 8
+  },
+  "gold_per_minute": {
+    "13": 302.32,
+    "nerd": 739.71,
+    "DeR meis+eR": 421.35,
+    "Mat' v mute": 329.78,
+    "jMogwai": 480.39,
+    "???&": 596.64,
+    "Молочный Козлик": 211.5,
+    "Donnie": 423.48,
+    "Davros": 332.13,
+    "Профессор вкусных каш": 532.5
+  },
+  "xp_per_minute": {
+    "13": 432.88,
+    "nerd": 1200.32,
+    "DeR meis+eR": 519.52,
+    "Mat' v mute": 383.36,
+    "jMogwai": 620.51,
+    "???&": 913.92,
+    "Молочный Козлик": 400.96,
+    "Donnie": 587.03,
+    "Davros": 539.78,
+    "Профессор вкусных каш": 818.74
+  },
+  "hero_damage": {
+    "13": 9121,
+    "nerd": 78612,
+    "DeR meis+eR": 40362,
+    "Mat' v mute": 14468,
+    "jMogwai": 49892,
+    "???&": 63150,
+    "Молочный Козлик": 14989,
+    "Donnie": 24921,
+    "Davros": 30248,
+    "Профессор вкусных каш": 39286
+  },
+  "damage_taken": {
+    "13": 24821,
+    "nerd": 93204,
+    "DeR meis+eR": 33046,
+    "Mat' v mute": 17514,
+    "jMogwai": 42636,
+    "???&": 102066,
+    "Молочный Козлик": 28661,
+    "Donnie": 56005,
+    "Davros": 53885,
+    "Профессор вкусных каш": 35654
+  },
+  "hero_healing": {
+    "13": 11723,
+    "nerd": 27123,
+    "DeR meis+eR": 21212,
+    "Mat' v mute": 8763,
+    "jMogwai": 19759,
+    "???&": 40145,
+    "Молочный Козлик": 5889,
+    "Donnie": 18371,
+    "Davros": 27155,
+    "Профессор вкусных каш": 19440
+  },
+  "tower_damage": {
+    "13": 607,
+    "nerd": 12075,
+    "DeR meis+eR": 545,
+    "Mat' v mute": 702,
+    "jMogwai": 3729,
+    "???&": 2700,
+    "Молочный Козлик": 0,
+    "Donnie": 94,
+    "Davros": 0,
+    "Профессор вкусных каш": 454
+  },
+  "stuns_dealt": {
+    "13": 70.85,
+    "nerd": 0.0,
+    "DeR meis+eR": 91.27,
+    "Mat' v mute": 0.0,
+    "jMogwai": 90.53,
+    "???&": 0.0,
+    "Молочный Козлик": 195.32,
+    "Donnie": 143.2,
+    "Davros": 52.83,
+    "Профессор вкусных каш": 102.08
+  },
+  "wards_placed": {
+    "13": {
+      "observer": 9,
+      "sentry": 11,
+      "total": 20
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "Mat' v mute": {
+      "observer": 7,
+      "sentry": 23,
+      "total": 30
+    },
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Молочный Козлик": {
+      "observer": 10,
+      "sentry": 19,
+      "total": 29
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 7,
+      "sentry": 16,
+      "total": 23
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "13": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "Mat' v mute": {
+      "observer": 3,
+      "sentry": 6,
+      "total": 9
+    },
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Молочный Козлик": {
+      "observer": 3,
+      "sentry": 7,
+      "total": 10
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 3,
+      "sentry": 6,
+      "total": 9
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    }
+  },
+  "wards_events_count": 108,
+  "chat_after_draft": [
+    {
+      "tick": 74318,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "20 сек, надо по жопе дать мелким"
+    },
+    {
+      "tick": 74594,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "20 ударов по попи"
+    },
+    {
+      "tick": 75484,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "Г?"
+    },
+    {
+      "tick": 75640,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "не"
+    },
+    {
+      "tick": 76730,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "г?"
+    },
+    {
+      "tick": 76758,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "г"
+    }
+  ],
+  "chat_message_count": 6,
+  "high_fives": {
+    "13": 0,
+    "nerd": 1,
+    "DeR meis+eR": 0,
+    "Mat' v mute": 0,
+    "jMogwai": 4,
+    "???&": 0,
+    "Молочный Козлик": 0,
+    "Donnie": 1,
+    "Davros": 0,
+    "Профессор вкусных каш": 0
+  }
+}

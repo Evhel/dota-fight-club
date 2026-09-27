@@ -1,0 +1,720 @@
+{
+  "match_id": 9016205624,
+  "start_time": "2026-09-26 18:22:59",
+  "start_timestamp": 1790436179.992487,
+  "duration_minutes": 70.41,
+  "duration_seconds": 4224.53,
+  "draft_duration_minutes": 12.57,
+  "winner": "radiant",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "dlya trenirovok",
+    "team_tag": "DLT",
+    "team_id": 1387268
+  },
+  "dire_team_info": {
+    "team_name": "maxPLUS4",
+    "team_tag": "MXPL",
+    "team_id": 7118167
+  },
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Necrophos"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Bristleback"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": 76561198040946408,
+      "hero": "Windranger"
+    },
+    {
+      "nickname": "ренальда",
+      "steam_id": 76561198213414847,
+      "hero": "Invoker"
+    },
+    {
+      "nickname": "fuRy7ane",
+      "steam_id": 76561198000432767,
+      "hero": "Magnus"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Zeus"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": 76561199222816532,
+      "hero": "Spirit Breaker"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Muerta"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": 76561198306408521,
+      "hero": "Ring Master"
+    },
+    {
+      "nickname": "Спортсмен",
+      "steam_id": 76561198020458182,
+      "hero": "Dawnbreaker"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 6047
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 7247
+    },
+    {
+      "team": 2,
+      "hero": "Ring Master",
+      "tick": 11095
+    },
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 11989
+    },
+    {
+      "team": 3,
+      "hero": "Magnus",
+      "tick": 12699
+    },
+    {
+      "team": 3,
+      "hero": "Muerta",
+      "tick": 13721
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 14825
+    },
+    {
+      "team": 2,
+      "hero": "Invoker",
+      "tick": 16747
+    },
+    {
+      "team": 3,
+      "hero": "Bristleback",
+      "tick": 20195
+    },
+    {
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 23817
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Kez",
+      "tick": 1189
+    },
+    {
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 1797
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1863
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 2723
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 4349
+    },
+    {
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 4743
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 4783
+    },
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 8791
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 9731
+    },
+    {
+      "team": 3,
+      "hero": "Wraith King",
+      "tick": 10911
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 18119
+    },
+    {
+      "team": 2,
+      "hero": "Silencer",
+      "tick": 18173
+    },
+    {
+      "team": 3,
+      "hero": "Ember Spirit",
+      "tick": 19061
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 19345
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Kez",
+      "tick": 1189,
+      "game_time_sec": 39.63333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 1797,
+      "game_time_sec": 59.9
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1863,
+      "game_time_sec": 62.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 2723,
+      "game_time_sec": 90.76666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Techies",
+      "tick": 4349,
+      "game_time_sec": 144.96666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 4743,
+      "game_time_sec": 158.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lina",
+      "tick": 4783,
+      "game_time_sec": 159.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 6047,
+      "game_time_sec": 201.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 7247,
+      "game_time_sec": 241.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Marci",
+      "tick": 8791,
+      "game_time_sec": 293.03333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 9731,
+      "game_time_sec": 324.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Wraith King",
+      "tick": 10911,
+      "game_time_sec": 363.7
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ring Master",
+      "tick": 11095,
+      "game_time_sec": 369.8333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 11989,
+      "game_time_sec": 399.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Magnus",
+      "tick": 12699,
+      "game_time_sec": 423.3
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Muerta",
+      "tick": 13721,
+      "game_time_sec": 457.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 14825,
+      "game_time_sec": 494.1666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Invoker",
+      "tick": 16747,
+      "game_time_sec": 558.2333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 18119,
+      "game_time_sec": 603.9666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Silencer",
+      "tick": 18173,
+      "game_time_sec": 605.7666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Ember Spirit",
+      "tick": 19061,
+      "game_time_sec": 635.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 19345,
+      "game_time_sec": 644.8333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Bristleback",
+      "tick": 20195,
+      "game_time_sec": 673.1666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 23817,
+      "game_time_sec": 793.9
+    }
+  ],
+  "total_deaths": 94,
+  "kda": {
+    "???&": {
+      "kills": 19,
+      "deaths": 10,
+      "assists": 11,
+      "kda_ratio": 3.0
+    },
+    "Donnie": {
+      "kills": 10,
+      "deaths": 13,
+      "assists": 19,
+      "kda_ratio": 2.23
+    },
+    "Kando!JeJe": {
+      "kills": 1,
+      "deaths": 11,
+      "assists": 13,
+      "kda_ratio": 1.27
+    },
+    "ренальда": {
+      "kills": 10,
+      "deaths": 6,
+      "assists": 20,
+      "kda_ratio": 5.0
+    },
+    "fuRy7ane": {
+      "kills": 0,
+      "deaths": 14,
+      "assists": 21,
+      "kda_ratio": 1.5
+    },
+    "nerd": {
+      "kills": 18,
+      "deaths": 7,
+      "assists": 27,
+      "kda_ratio": 6.43
+    },
+    "Communication": {
+      "kills": 4,
+      "deaths": 14,
+      "assists": 31,
+      "kda_ratio": 2.5
+    },
+    "jMogwai": {
+      "kills": 16,
+      "deaths": 7,
+      "assists": 17,
+      "kda_ratio": 4.71
+    },
+    "Osaki": {
+      "kills": 2,
+      "deaths": 8,
+      "assists": 20,
+      "kda_ratio": 2.75
+    },
+    "Спортсмен": {
+      "kills": 12,
+      "deaths": 4,
+      "assists": 22,
+      "kda_ratio": 8.5
+    }
+  },
+  "net_worth": {
+    "???&": 41705,
+    "Donnie": 37902,
+    "Kando!JeJe": 16762,
+    "ренальда": 32768,
+    "fuRy7ane": 14156,
+    "nerd": 33677,
+    "Communication": 18498,
+    "jMogwai": 37135,
+    "Osaki": 13575,
+    "Спортсмен": 35481
+  },
+  "last_hits": {
+    "???&": 590,
+    "Donnie": 504,
+    "Kando!JeJe": 132,
+    "ренальда": 401,
+    "fuRy7ane": 65,
+    "nerd": 639,
+    "Communication": 167,
+    "jMogwai": 628,
+    "Osaki": 51,
+    "Спортсмен": 601
+  },
+  "denies": {
+    "???&": 6,
+    "Donnie": 24,
+    "Kando!JeJe": 0,
+    "ренальда": 8,
+    "fuRy7ane": 7,
+    "nerd": 8,
+    "Communication": 0,
+    "jMogwai": 27,
+    "Osaki": 1,
+    "Спортсмен": 11
+  },
+  "gold_per_minute": {
+    "???&": 656.85,
+    "Donnie": 585.42,
+    "Kando!JeJe": 265.65,
+    "ренальда": 533.82,
+    "fuRy7ane": 244.77,
+    "nerd": 665.13,
+    "Communication": 351.12,
+    "jMogwai": 628.19,
+    "Osaki": 222.5,
+    "Спортсмен": 625.86
+  },
+  "xp_per_minute": {
+    "???&": 858.37,
+    "Donnie": 914.66,
+    "Kando!JeJe": 484.14,
+    "ренальда": 768.91,
+    "fuRy7ane": 386.47,
+    "nerd": 914.66,
+    "Communication": 691.39,
+    "jMogwai": 805.92,
+    "Osaki": 518.76,
+    "Спортсмен": 914.66
+  },
+  "hero_damage": {
+    "???&": 53641,
+    "Donnie": 87194,
+    "Kando!JeJe": 11309,
+    "ренальда": 52688,
+    "fuRy7ane": 10645,
+    "nerd": 98719,
+    "Communication": 23804,
+    "jMogwai": 99741,
+    "Osaki": 13600,
+    "Спортсмен": 85050
+  },
+  "damage_taken": {
+    "???&": 101193,
+    "Donnie": 157864,
+    "Kando!JeJe": 51444,
+    "ренальда": 57110,
+    "fuRy7ane": 51962,
+    "nerd": 74309,
+    "Communication": 65608,
+    "jMogwai": 67841,
+    "Osaki": 30684,
+    "Спортсмен": 83413
+  },
+  "hero_healing": {
+    "???&": 69962,
+    "Donnie": 68889,
+    "Kando!JeJe": 21756,
+    "ренальда": 32974,
+    "fuRy7ane": 13448,
+    "nerd": 44663,
+    "Communication": 33470,
+    "jMogwai": 36827,
+    "Osaki": 12954,
+    "Спортсмен": 75962
+  },
+  "tower_damage": {
+    "???&": 2736,
+    "Donnie": 5488,
+    "Kando!JeJe": 1118,
+    "ренальда": 3187,
+    "fuRy7ane": 133,
+    "nerd": 887,
+    "Communication": 0,
+    "jMogwai": 4973,
+    "Osaki": 0,
+    "Спортсмен": 915
+  },
+  "stuns_dealt": {
+    "???&": 35.17,
+    "Donnie": 0.0,
+    "Kando!JeJe": 89.79,
+    "ренальда": 219.56,
+    "fuRy7ane": 107.79,
+    "nerd": 181.05,
+    "Communication": 361.67,
+    "jMogwai": 81.19,
+    "Osaki": 75.87,
+    "Спортсмен": 122.97
+  },
+  "wards_placed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 8,
+      "sentry": 24,
+      "total": 32
+    },
+    "ренальда": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "fuRy7ane": {
+      "observer": 20,
+      "sentry": 18,
+      "total": 38
+    },
+    "nerd": {
+      "observer": 3,
+      "sentry": 1,
+      "total": 4
+    },
+    "Communication": {
+      "observer": 14,
+      "sentry": 35,
+      "total": 49
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 11,
+      "sentry": 21,
+      "total": 32
+    },
+    "Спортсмен": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Kando!JeJe": {
+      "observer": 1,
+      "sentry": 7,
+      "total": 8
+    },
+    "ренальда": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "fuRy7ane": {
+      "observer": 2,
+      "sentry": 5,
+      "total": 7
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Communication": {
+      "observer": 5,
+      "sentry": 10,
+      "total": 15
+    },
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "Спортсмен": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_events_count": 158,
+  "chat_after_draft": [
+    {
+      "tick": 28636,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "г"
+    },
+    {
+      "tick": 40606,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "ахуительные баши"
+    },
+    {
+      "tick": 44309,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "г?"
+    },
+    {
+      "tick": 94335,
+      "channel": "all",
+      "player_slot": 3,
+      "text": ")"
+    },
+    {
+      "tick": 94713,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "писаем"
+    },
+    {
+      "tick": 97953,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "г"
+    },
+    {
+      "tick": 157115,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "ez"
+    },
+    {
+      "tick": 157314,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "))"
+    }
+  ],
+  "chat_message_count": 8,
+  "high_fives": {
+    "???&": 0,
+    "Donnie": 0,
+    "Kando!JeJe": 0,
+    "ренальда": 0,
+    "fuRy7ane": 0,
+    "nerd": 2,
+    "Communication": 1,
+    "jMogwai": 0,
+    "Osaki": 0,
+    "Спортсмен": 2
+  }
+}

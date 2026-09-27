@@ -1,0 +1,984 @@
+{
+  "match_id": 9007286007,
+  "start_time": "2026-09-20 03:40:30",
+  "start_timestamp": 1789864830.840069,
+  "duration_minutes": 72.04,
+  "duration_seconds": 4322.1,
+  "draft_duration_minutes": 14.93,
+  "winner": "radiant",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "BALTIKA",
+    "team_tag": "8",
+    "team_id": 4616603
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "radiant_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Windranger"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Lifestealer"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Grimstroke"
+    },
+    {
+      "nickname": "K_z",
+      "steam_id": 76561199051682987,
+      "hero": "Lion"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Doom"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Lone Druid"
+    },
+    {
+      "nickname": "Mat' v mute",
+      "steam_id": 76561199222816532,
+      "hero": "Techies"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Dazzle"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": 76561198078638066,
+      "hero": "Centaur Warrunner"
+    },
+    {
+      "nickname": "Как же он сияет",
+      "steam_id": 76561199642307932,
+      "hero": "Wraith King"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 6133
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 6719
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 10469
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 15425
+    },
+    {
+      "team": 3,
+      "hero": "Doom",
+      "tick": 17165
+    },
+    {
+      "team": 3,
+      "hero": "Wraith King",
+      "tick": 19469
+    },
+    {
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 20403
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 21557
+    },
+    {
+      "team": 3,
+      "hero": "Lion",
+      "tick": 25145
+    },
+    {
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 27917
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Kez",
+      "tick": 1041
+    },
+    {
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 1965
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 1999
+    },
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 2119
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 3209
+    },
+    {
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 3593
+    },
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 3637
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 8311
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 9209
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 10229
+    },
+    {
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 22587
+    },
+    {
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 23649
+    },
+    {
+      "team": 3,
+      "hero": "Tinker",
+      "tick": 23731
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 24793
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Kez",
+      "tick": 1041,
+      "game_time_sec": 34.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 1965,
+      "game_time_sec": 65.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 1999,
+      "game_time_sec": 66.63333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 2119,
+      "game_time_sec": 70.63333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Marci",
+      "tick": 3209,
+      "game_time_sec": 106.96666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 3593,
+      "game_time_sec": 119.76666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 3637,
+      "game_time_sec": 121.23333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 6133,
+      "game_time_sec": 204.43333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 6719,
+      "game_time_sec": 223.96666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 8311,
+      "game_time_sec": 277.03333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 9209,
+      "game_time_sec": 306.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Axe",
+      "tick": 10229,
+      "game_time_sec": 340.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Techies",
+      "tick": 10469,
+      "game_time_sec": 348.96666666666664
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 15425,
+      "game_time_sec": 514.1666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Doom",
+      "tick": 17165,
+      "game_time_sec": 572.1666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Wraith King",
+      "tick": 19469,
+      "game_time_sec": 648.9666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 20403,
+      "game_time_sec": 680.1
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 21557,
+      "game_time_sec": 718.5666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 22587,
+      "game_time_sec": 752.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ember Spirit",
+      "tick": 23649,
+      "game_time_sec": 788.3
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Tinker",
+      "tick": 23731,
+      "game_time_sec": 791.0333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lina",
+      "tick": 24793,
+      "game_time_sec": 826.4333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lion",
+      "tick": 25145,
+      "game_time_sec": 838.1666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 27917,
+      "game_time_sec": 930.5666666666667
+    }
+  ],
+  "total_deaths": 128,
+  "kda": {
+    "nerd": {
+      "kills": 10,
+      "deaths": 16,
+      "assists": 27,
+      "kda_ratio": 2.31
+    },
+    "???&": {
+      "kills": 21,
+      "deaths": 6,
+      "assists": 24,
+      "kda_ratio": 7.5
+    },
+    "13": {
+      "kills": 3,
+      "deaths": 17,
+      "assists": 31,
+      "kda_ratio": 2.0
+    },
+    "K_z": {
+      "kills": 19,
+      "deaths": 17,
+      "assists": 28,
+      "kda_ratio": 2.76
+    },
+    "Donnie": {
+      "kills": 9,
+      "deaths": 10,
+      "assists": 37,
+      "kda_ratio": 4.6
+    },
+    "jMogwai": {
+      "kills": 16,
+      "deaths": 10,
+      "assists": 15,
+      "kda_ratio": 3.1
+    },
+    "Mat' v mute": {
+      "kills": 8,
+      "deaths": 18,
+      "assists": 26,
+      "kda_ratio": 1.89
+    },
+    "Davros": {
+      "kills": 11,
+      "deaths": 16,
+      "assists": 25,
+      "kda_ratio": 2.25
+    },
+    "DeR meis+eR": {
+      "kills": 5,
+      "deaths": 10,
+      "assists": 32,
+      "kda_ratio": 3.7
+    },
+    "Как же он сияет": {
+      "kills": 26,
+      "deaths": 8,
+      "assists": 16,
+      "kda_ratio": 5.25
+    }
+  },
+  "net_worth": {
+    "nerd": 20632,
+    "???&": 49146,
+    "13": 13413,
+    "K_z": 32290,
+    "Donnie": 33460,
+    "jMogwai": 45866,
+    "Mat' v mute": 19417,
+    "Davros": 20538,
+    "DeR meis+eR": 28048,
+    "Как же он сияет": 45025
+  },
+  "last_hits": {
+    "nerd": 297,
+    "???&": 863,
+    "13": 87,
+    "K_z": 370,
+    "Donnie": 387,
+    "jMogwai": 734,
+    "Mat' v mute": 204,
+    "Davros": 154,
+    "DeR meis+eR": 455,
+    "Как же он сияет": 663
+  },
+  "denies": {
+    "nerd": 5,
+    "???&": 1,
+    "13": 1,
+    "K_z": 3,
+    "Donnie": 15,
+    "jMogwai": 8,
+    "Mat' v mute": 1,
+    "Davros": 8,
+    "DeR meis+eR": 21,
+    "Как же он сияет": 15
+  },
+  "gold_per_minute": {
+    "nerd": 419.56,
+    "???&": 775.69,
+    "13": 276.74,
+    "K_z": 514.15,
+    "Donnie": 593.09,
+    "jMogwai": 682.75,
+    "Mat' v mute": 397.89,
+    "Davros": 378.16,
+    "DeR meis+eR": 500.85,
+    "Как же он сияет": 752.93
+  },
+  "xp_per_minute": {
+    "nerd": 706.56,
+    "???&": 894.01,
+    "13": 584.99,
+    "K_z": 784.02,
+    "Donnie": 894.01,
+    "jMogwai": 894.01,
+    "Mat' v mute": 666.08,
+    "Davros": 680.31,
+    "DeR meis+eR": 752.84,
+    "Как же он сияет": 894.01
+  },
+  "hero_damage": {
+    "nerd": 48948,
+    "???&": 138758,
+    "13": 26873,
+    "K_z": 89875,
+    "Donnie": 77716,
+    "jMogwai": 13367,
+    "Mat' v mute": 119385,
+    "Davros": 79244,
+    "DeR meis+eR": 75204,
+    "Как же он сияет": 138517
+  },
+  "damage_taken": {
+    "nerd": 70108,
+    "???&": 171180,
+    "13": 53147,
+    "K_z": 76715,
+    "Donnie": 108943,
+    "jMogwai": 66593,
+    "Mat' v mute": 66153,
+    "Davros": 87101,
+    "DeR meis+eR": 138289,
+    "Как же он сияет": 103519
+  },
+  "hero_healing": {
+    "nerd": 25851,
+    "???&": 97796,
+    "13": 16667,
+    "K_z": 22362,
+    "Donnie": 49004,
+    "jMogwai": 68996,
+    "Mat' v mute": 25223,
+    "Davros": 44569,
+    "DeR meis+eR": 84872,
+    "Как же он сияет": 38731
+  },
+  "tower_damage": {
+    "nerd": 1638,
+    "???&": 12127,
+    "13": 130,
+    "K_z": 17,
+    "Donnie": 145,
+    "jMogwai": 429,
+    "Mat' v mute": 171,
+    "Davros": 105,
+    "DeR meis+eR": 1361,
+    "Как же он сияет": 1759
+  },
+  "stuns_dealt": {
+    "nerd": 232.12,
+    "???&": 91.27,
+    "13": 123.05,
+    "K_z": 501.12,
+    "Donnie": 191.35,
+    "jMogwai": 197.17,
+    "Mat' v mute": 66.12,
+    "Davros": 89.73,
+    "DeR meis+eR": 159.87,
+    "Как же он сияет": 222.38
+  },
+  "wards_placed": {
+    "nerd": {
+      "observer": 17,
+      "sentry": 20,
+      "total": 37
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 7,
+      "sentry": 25,
+      "total": 32
+    },
+    "K_z": {
+      "observer": 5,
+      "sentry": 8,
+      "total": 13
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Mat' v mute": {
+      "observer": 19,
+      "sentry": 45,
+      "total": 64
+    },
+    "Davros": {
+      "observer": 8,
+      "sentry": 11,
+      "total": 19
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Как же он сияет": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "nerd": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "13": {
+      "observer": 2,
+      "sentry": 8,
+      "total": 10
+    },
+    "K_z": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Mat' v mute": {
+      "observer": 8,
+      "sentry": 8,
+      "total": 16
+    },
+    "Davros": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Как же он сияет": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_events_count": 167,
+  "chat_after_draft": [
+    {
+      "tick": 30439,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "муса, здарова"
+    },
+    {
+      "tick": 30813,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "понял"
+    },
+    {
+      "tick": 30865,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "муса"
+    },
+    {
+      "tick": 30957,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "че молчишь"
+    },
+    {
+      "tick": 31057,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "поздоровались же"
+    },
+    {
+      "tick": 31085,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "чЕ ТАМ"
+    },
+    {
+      "tick": 31287,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "саламулю кинь хоть"
+    },
+    {
+      "tick": 31289,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "МЕЧ СИЯЕТ"
+    },
+    {
+      "tick": 31303,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "он стратегию на игру нам задает"
+    },
+    {
+      "tick": 31377,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "не мешайте"
+    },
+    {
+      "tick": 31467,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "поздаровались"
+    },
+    {
+      "tick": 31671,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "меня не было"
+    },
+    {
+      "tick": 31749,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "Я зашел"
+    },
+    {
+      "tick": 31821,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "Поздаровался"
+    },
+    {
+      "tick": 31997,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "Денис, он хорошо командует?"
+    },
+    {
+      "tick": 32267,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "очень хорошо"
+    },
+    {
+      "tick": 32327,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "че вы хотите"
+    },
+    {
+      "tick": 32579,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "объясни им тоже что по игре делать надо"
+    },
+    {
+      "tick": 67619,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "мы пока хз"
+    },
+    {
+      "tick": 67655,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "что тут"
+    },
+    {
+      "tick": 67887,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "а что там"
+    },
+    {
+      "tick": 68099,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "мага поставил и отошел"
+    },
+    {
+      "tick": 68283,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "мб позвонили по работе "
+    },
+    {
+      "tick": 68759,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "если пайп там будет на кенте только"
+    },
+    {
+      "tick": 68843,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "бля"
+    },
+    {
+      "tick": 68851,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "вот что бывает когда уходишь с работы в обед..."
+    },
+    {
+      "tick": 69129,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "звонят по работе в 3 часа ночи..."
+    },
+    {
+      "tick": 69147,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "сори г?"
+    },
+    {
+      "tick": 73869,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "позвонили с другой работы"
+    },
+    {
+      "tick": 73931,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "гуле"
+    },
+    {
+      "tick": 74128,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "3 ночи"
+    },
+    {
+      "tick": 74370,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "привет спишь?"
+    },
+    {
+      "tick": 74376,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "она в тюмени сейчас"
+    },
+    {
+      "tick": 74762,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "г"
+    },
+    {
+      "tick": 83900,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "гере позвонили"
+    },
+    {
+      "tick": 83930,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "с 3 работы"
+    },
+    {
+      "tick": 83958,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "по работе"
+    },
+    {
+      "tick": 84184,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "сори"
+    },
+    {
+      "tick": 84226,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "пакет"
+    },
+    {
+      "tick": 85018,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "вам не звонят?"
+    },
+    {
+      "tick": 85088,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "никому"
+    },
+    {
+      "tick": 85296,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "добавьте уже всех с работы в конфу в тимсе просто"
+    },
+    {
+      "tick": 85382,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "чтобы не паузить"
+    },
+    {
+      "tick": 88008,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "ало"
+    },
+    {
+      "tick": 88042,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "3 часа"
+    },
+    {
+      "tick": 88100,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "вы рофлите?"
+    },
+    {
+      "tick": 88338,
+      "channel": "all",
+      "player_slot": 7,
+      "text": ""
+    },
+    {
+      "tick": 88560,
+      "channel": "all",
+      "player_slot": 0,
+      "text": ""
+    },
+    {
+      "tick": 88910,
+      "channel": "all",
+      "player_slot": 0,
+      "text": ""
+    },
+    {
+      "tick": 88966,
+      "channel": "all",
+      "player_slot": 7,
+      "text": ""
+    },
+    {
+      "tick": 89158,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "г"
+    },
+    {
+      "tick": 89162,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "г?"
+    }
+  ],
+  "chat_message_count": 52,
+  "high_fives": {
+    "nerd": 0,
+    "???&": 0,
+    "13": 0,
+    "K_z": 0,
+    "Donnie": 0,
+    "jMogwai": 0,
+    "Mat' v mute": 0,
+    "Davros": 0,
+    "DeR meis+eR": 0,
+    "Как же он сияет": 0
+  }
+}
