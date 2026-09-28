@@ -132,8 +132,8 @@ function PlayerPage() {
 
                 <RecordTile
                   label="Макс.У/С/П"
-                  value={`${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists}`}
-                  matchId={stats.max_kda.match_id}
+                  max={stats.max_kda}
+                  format={() => `${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists}`}
                 />
                 <RecordTile
                   label="Макс.NW | Ср.NW"
