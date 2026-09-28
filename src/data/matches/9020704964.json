@@ -1,0 +1,726 @@
+{
+  "match_id": 9020704964,
+  "start_time": "2026-09-28 21:22:18",
+  "start_timestamp": 1790619738.656092,
+  "duration_minutes": 53.61,
+  "duration_seconds": 3216.53,
+  "draft_duration_minutes": 10.47,
+  "winner": "radiant",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "yajitsu",
+    "team_tag": "",
+    "team_id": 5921409
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "radiant_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Weaver"
+    },
+    {
+      "nickname": "Noxxion",
+      "steam_id": 76561198072867743,
+      "hero": "Ancient Apparition"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Tidehunter"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": 76561199222816532,
+      "hero": "Lich"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Outworld Devourer"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Juggernaut"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Phoenix"
+    },
+    {
+      "nickname": "‡_SaNyA_‡",
+      "steam_id": 76561198209002068,
+      "hero": "Undying"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Templar Assassin"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": 76561198306408521,
+      "hero": "Shadow Demon"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 8139
+    },
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 9155
+    },
+    {
+      "team": 3,
+      "hero": "Tidehunter",
+      "tick": 9661
+    },
+    {
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 11359
+    },
+    {
+      "team": 2,
+      "hero": "Phoenix",
+      "tick": 11487
+    },
+    {
+      "team": 2,
+      "hero": "Ancient Apparition",
+      "tick": 14661
+    },
+    {
+      "team": 3,
+      "hero": "Outworld Devourer",
+      "tick": 15527
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Demon",
+      "tick": 17921
+    },
+    {
+      "team": 2,
+      "hero": "Templar Assassin",
+      "tick": 19365
+    },
+    {
+      "team": 2,
+      "hero": "Weaver",
+      "tick": 20227
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 1387
+    },
+    {
+      "team": 3,
+      "hero": "Broodmother",
+      "tick": 1509
+    },
+    {
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 2715
+    },
+    {
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 4089
+    },
+    {
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 5275
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 7127
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 1387,
+      "game_time_sec": 46.233333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Broodmother",
+      "tick": 1509,
+      "game_time_sec": 50.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 2715,
+      "game_time_sec": 90.5
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 4089,
+      "game_time_sec": 136.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Centaur Warrunner",
+      "tick": 5275,
+      "game_time_sec": 175.83333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 7127,
+      "game_time_sec": 237.56666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Undying",
+      "tick": 8139,
+      "game_time_sec": 271.3
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lich",
+      "tick": 9155,
+      "game_time_sec": 305.1666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Tidehunter",
+      "tick": 9661,
+      "game_time_sec": 322.03333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 11359,
+      "game_time_sec": 378.6333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Phoenix",
+      "tick": 11487,
+      "game_time_sec": 382.9
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ancient Apparition",
+      "tick": 14661,
+      "game_time_sec": 488.7
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Outworld Devourer",
+      "tick": 15527,
+      "game_time_sec": 517.5666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Shadow Demon",
+      "tick": 17921,
+      "game_time_sec": 597.3666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Templar Assassin",
+      "tick": 19365,
+      "game_time_sec": 645.5
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Weaver",
+      "tick": 20227,
+      "game_time_sec": 674.2333333333333
+    }
+  ],
+  "total_deaths": 97,
+  "kda": {
+    "nerd": {
+      "kills": 23,
+      "deaths": 5,
+      "assists": 21,
+      "kda_ratio": 8.8
+    },
+    "Noxxion": {
+      "kills": 5,
+      "deaths": 10,
+      "assists": 25,
+      "kda_ratio": 3.0
+    },
+    "Davros": {
+      "kills": 5,
+      "deaths": 7,
+      "assists": 26,
+      "kda_ratio": 4.43
+    },
+    "Communication": {
+      "kills": 7,
+      "deaths": 7,
+      "assists": 26,
+      "kda_ratio": 4.71
+    },
+    "Donnie": {
+      "kills": 20,
+      "deaths": 8,
+      "assists": 13,
+      "kda_ratio": 4.12
+    },
+    "???&": {
+      "kills": 19,
+      "deaths": 7,
+      "assists": 12,
+      "kda_ratio": 4.43
+    },
+    "Профессор вкусных каш": {
+      "kills": 6,
+      "deaths": 14,
+      "assists": 19,
+      "kda_ratio": 1.79
+    },
+    "‡_SaNyA_‡": {
+      "kills": 2,
+      "deaths": 21,
+      "assists": 18,
+      "kda_ratio": 0.95
+    },
+    "jMogwai": {
+      "kills": 8,
+      "deaths": 8,
+      "assists": 9,
+      "kda_ratio": 2.12
+    },
+    "Osaki": {
+      "kills": 2,
+      "deaths": 10,
+      "assists": 17,
+      "kda_ratio": 1.9
+    }
+  },
+  "net_worth": {
+    "nerd": 34907,
+    "Noxxion": 21135,
+    "Davros": 24921,
+    "Communication": 16188,
+    "Donnie": 26140,
+    "???&": 33583,
+    "Профессор вкусных каш": 19111,
+    "‡_SaNyA_‡": 11432,
+    "jMogwai": 26661,
+    "Osaki": 7514
+  },
+  "last_hits": {
+    "nerd": 362,
+    "Noxxion": 101,
+    "Davros": 298,
+    "Communication": 116,
+    "Donnie": 258,
+    "???&": 575,
+    "Профессор вкусных каш": 254,
+    "‡_SaNyA_‡": 88,
+    "jMogwai": 472,
+    "Osaki": 28
+  },
+  "denies": {
+    "nerd": 14,
+    "Noxxion": 4,
+    "Davros": 9,
+    "Communication": 14,
+    "Donnie": 43,
+    "???&": 10,
+    "Профессор вкусных каш": 7,
+    "‡_SaNyA_‡": 2,
+    "jMogwai": 11,
+    "Osaki": 2
+  },
+  "gold_per_minute": {
+    "nerd": 722.49,
+    "Noxxion": 397.6,
+    "Davros": 521.29,
+    "Communication": 408.38,
+    "Donnie": 556.16,
+    "???&": 754.67,
+    "Профессор вкусных каш": 474.81,
+    "‡_SaNyA_‡": 294.67,
+    "jMogwai": 596.23,
+    "Osaki": 220.52
+  },
+  "xp_per_minute": {
+    "nerd": 1078.1,
+    "Noxxion": 658.7,
+    "Davros": 861.78,
+    "Communication": 625.06,
+    "Donnie": 869.28,
+    "???&": 1201.29,
+    "Профессор вкусных каш": 569.57,
+    "‡_SaNyA_‡": 578.11,
+    "jMogwai": 1041.02,
+    "Osaki": 394.41
+  },
+  "hero_damage": {
+    "nerd": 94672,
+    "Noxxion": 24979,
+    "Davros": 35352,
+    "Communication": 24304,
+    "Donnie": 47414,
+    "???&": 112062,
+    "Профессор вкусных каш": 65425,
+    "‡_SaNyA_‡": 20524,
+    "jMogwai": 61175,
+    "Osaki": 27744
+  },
+  "damage_taken": {
+    "nerd": 85397,
+    "Noxxion": 31338,
+    "Davros": 71997,
+    "Communication": 29366,
+    "Donnie": 59727,
+    "???&": 87413,
+    "Профессор вкусных каш": 70375,
+    "‡_SaNyA_‡": 57691,
+    "jMogwai": 31488,
+    "Osaki": 66774
+  },
+  "hero_healing": {
+    "nerd": 27636,
+    "Noxxion": 14138,
+    "Davros": 27952,
+    "Communication": 14171,
+    "Donnie": 18939,
+    "???&": 27406,
+    "Профессор вкусных каш": 37567,
+    "‡_SaNyA_‡": 14450,
+    "jMogwai": 11452,
+    "Osaki": 9385
+  },
+  "tower_damage": {
+    "nerd": 9750,
+    "Noxxion": 595,
+    "Davros": 2622,
+    "Communication": 485,
+    "Donnie": 788,
+    "???&": 3437,
+    "Профессор вкусных каш": 369,
+    "‡_SaNyA_‡": 307,
+    "jMogwai": 1998,
+    "Osaki": 0
+  },
+  "stuns_dealt": {
+    "nerd": 0.0,
+    "Noxxion": 79.23,
+    "Davros": 92.4,
+    "Communication": 88.5,
+    "Donnie": 284.68,
+    "???&": 13.93,
+    "Профессор вкусных каш": 21.57,
+    "‡_SaNyA_‡": 0.0,
+    "jMogwai": 10.4,
+    "Osaki": 77.32
+  },
+  "wards_placed": {
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Noxxion": {
+      "observer": 5,
+      "sentry": 8,
+      "total": 13
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Communication": {
+      "observer": 15,
+      "sentry": 35,
+      "total": 50
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "‡_SaNyA_‡": {
+      "observer": 10,
+      "sentry": 21,
+      "total": 31
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "Osaki": {
+      "observer": 10,
+      "sentry": 20,
+      "total": 30
+    }
+  },
+  "wards_destroyed": {
+    "nerd": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "Noxxion": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "Communication": {
+      "observer": 3,
+      "sentry": 11,
+      "total": 14
+    },
+    "Donnie": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "‡_SaNyA_‡": {
+      "observer": 1,
+      "sentry": 8,
+      "total": 9
+    },
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "Osaki": {
+      "observer": 5,
+      "sentry": 4,
+      "total": 9
+    }
+  },
+  "wards_events_count": 129,
+  "chat_after_draft": [
+    {
+      "tick": 23825,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "Дима не гори пж"
+    },
+    {
+      "tick": 23891,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "дима, на коронке не проиграй уже"
+    },
+    {
+      "tick": 24233,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "дима лох"
+    },
+    {
+      "tick": 26287,
+      "channel": "all",
+      "player_slot": 6,
+      "text": ")"
+    },
+    {
+      "tick": 27485,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ты че"
+    },
+    {
+      "tick": 31019,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "курьер у геры"
+    },
+    {
+      "tick": 31225,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "давай Дима, давай"
+    },
+    {
+      "tick": 31243,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "курьер танго принем"
+    },
+    {
+      "tick": 31595,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "кто задрота позвал на мид?"
+    },
+    {
+      "tick": 31831,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "Мага"
+    },
+    {
+      "tick": 31833,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "я"
+    },
+    {
+      "tick": 32051,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "че тебе надо на денисе"
+    },
+    {
+      "tick": 32167,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "илья меня обижаеть на линии"
+    },
+    {
+      "tick": 32275,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "быдло"
+    },
+    {
+      "tick": 32491,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "реально илья извинись"
+    },
+    {
+      "tick": 32773,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "я сюда зашел чтоб потеть на миду чтоли"
+    },
+    {
+      "tick": 32877,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "да"
+    },
+    {
+      "tick": 34065,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "го"
+    },
+    {
+      "tick": 36859,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "да вы чо"
+    },
+    {
+      "tick": 37193,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "прижали в дереву"
+    },
+    {
+      "tick": 47721,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ы"
+    },
+    {
+      "tick": 48147,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "кто знал"
+    },
+    {
+      "tick": 49553,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "троекратный обсер"
+    },
+    {
+      "tick": 49721,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "доволен?"
+    },
+    {
+      "tick": 49905,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "чут чут"
+    }
+  ],
+  "chat_message_count": 25,
+  "high_fives": {
+    "nerd": 0,
+    "Noxxion": 1,
+    "Davros": 2,
+    "Communication": 4,
+    "Donnie": 3,
+    "???&": 0,
+    "Профессор вкусных каш": 0,
+    "‡_SaNyA_‡": 0,
+    "jMogwai": 0,
+    "Osaki": 0
+  }
+}
