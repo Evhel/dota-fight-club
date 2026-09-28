@@ -130,57 +130,65 @@ function PlayerPage() {
                 <Tile label="Любимое слово" value={stats.top_word || "—"} />
 
 
-                <Tile
+                <RecordTile
                   label="Макс.У/С/П"
                   value={`${stats.max_kda.kills}/${stats.max_kda.deaths}/${stats.max_kda.assists}`}
+                  matchId={stats.max_kda.match_id}
                 />
-                <Tile
+                <RecordTile
                   label="Макс.NW | Ср.NW"
-                  value={`${(stats.max_net_worth.value / 1000).toFixed(1)}k | ${(stats.avg_net_worth / 1000).toFixed(1)}k`}
+                  max={stats.max_net_worth}
+                  value={` | ${(stats.avg_net_worth / 1000).toFixed(1)}k`}
+                  format={(v) => `${(v / 1000).toFixed(1)}k`}
                 />
-                <Tile
+                <RecordTile
                   label="Макс.LH | Ср.LH"
-                  value={`${stats.max_creeps.value} | ${stats.avg_creeps}`}
+                  max={stats.max_creeps}
+                  value={` | ${stats.avg_creeps}`}
+                  format={(v) => `${v}`}
                 />
-                <Tile
+                <RecordTile
                   label="Макс.DN | Ср.DN"
-                  value={`${stats.max_denies.value} | ${stats.avg_denies}`}
+                  max={stats.max_denies}
+                  value={` | ${stats.avg_denies}`}
+                  format={(v) => `${v}`}
                 />
-                <Tile
+                <RecordTile
                   label="Макс.GPM | Ср.GPM"
-                  value={`${stats.max_gpm.value} | ${stats.avg_gpm}`}
+                  max={stats.max_gpm}
+                  value={` | ${stats.avg_gpm}`}
+                  format={(v) => `${v}`}
                 />
-                <Tile
+                <RecordTile
                   label="Макс.XPM | Ср.XPM"
-                  value={`${stats.max_xpm.value} | ${stats.avg_xpm}`}
+                  max={stats.max_xpm}
+                  value={` | ${stats.avg_xpm}`}
+                  format={(v) => `${v}`}
                 />
-                <Tile
+                <RecordTile
                   label="Макс.DMG | Ср.DMG"
-                  value={`${(stats.max_dmg.value / 1000).toFixed(1)}k | ${(stats.avg_dmg / 1000).toFixed(1)}k`}
+                  max={stats.max_dmg}
+                  value={` | ${(stats.avg_dmg / 1000).toFixed(1)}k`}
+                  format={(v) => `${(v / 1000).toFixed(1)}k`}
                 />
-                <Tile
+                <RecordTile
                   label="Макс.HEAL | Ср.HEAL"
-                  value={`${(stats.max_heal.value / 1000).toFixed(1)}k | ${(stats.avg_heal / 1000).toFixed(1)}k`}
+                  max={stats.max_heal}
+                  value={` | ${(stats.avg_heal / 1000).toFixed(1)}k`}
+                  format={(v) => `${(v / 1000).toFixed(1)}k`}
                 />
-                <Tile
+                <RecordTile
                   label="Макс.BLD | Ср.BLD"
-                  value={`${(stats.max_bld.value / 1000).toFixed(1)}k | ${(stats.avg_bld / 1000).toFixed(1)}k`}
+                  max={stats.max_bld}
+                  value={` | ${(stats.avg_bld / 1000).toFixed(1)}k`}
+                  format={(v) => `${(v / 1000).toFixed(1)}k`}
                 />
                 <div className="rounded-lg border border-border/40 bg-muted/20 px-3 py-2 col-span-2 sm:col-span-3 md:col-span-2">
                   <div className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Макс. варды</div>
                   <div className="flex items-center justify-around gap-2">
-                    <div className="flex items-center gap-1.5">
-                      <img src={WARD_OBSERVER_ICON} alt="obs" style={{ width: 28, height: 28 }} />
-                      <span className="font-display text-xl text-glow">{stats.max_obs.value}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <img src={WARD_SENTRY_ICON} alt="sen" style={{ width: 28, height: 28 }} />
-                      <span className="font-display text-xl text-glow">{stats.max_sen.value}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <img src={WARD_OBSERVER_ICON} alt="de" style={{ width: 28, height: 28, filter: "grayscale(1) brightness(0.7)" }} />
-                      <span className="font-display text-xl text-glow">{stats.max_dewards.value}</span>
-                    </div>
+                    <WardLink icon={WARD_OBSERVER_ICON} alt="obs" value={stats.max_obs.value} matchId={stats.max_obs.match_id} />
+                    <WardLink icon={WARD_SENTRY_ICON} alt="sen" value={stats.max_sen.value} matchId={stats.max_sen.match_id} />
+                    <WardLink icon={WARD_OBSERVER_ICON} alt="de" value={stats.max_dewards.value} matchId={stats.max_dewards.match_id} grayscale />
                   </div>
                 </div>
               </div>
@@ -377,6 +385,59 @@ function Tile({ label, value, color }: { label: string; value: number | string; 
         {value}
       </div>
     </div>
+  );
+}
+
+interface MaxStat { value: number; match_id: number }
+
+function RecordTile({ label, value, max, format }: {
+  label: string;
+  value?: string;
+  max?: MaxStat;
+  format: (v: number) => string;
+}) {
+  if (!max || !max.match_id) {
+    return <Tile label={label} value={max ? format(max.value) : "—"} />;
+  }
+  return (
+    <Link
+      to="/match/$id"
+      params={{ id: String(max.match_id) }}
+      className="block rounded-lg border border-border/40 bg-muted/20 px-3 py-2 hover:border-primary hover:shadow-[0_0_8px_var(--primary)] transition"
+      title={`Матч ${max.match_id}`}
+    >
+      <div className="text-xs text-muted-foreground uppercase tracking-wide">{label}</div>
+      <div className="font-display text-xl text-glow mt-0.5 truncate">
+        {format(max.value)}
+        <span className="text-glow opacity-60">{value}</span>
+      </div>
+    </Link>
+  );
+}
+
+function WardLink({ icon, alt, value, matchId, grayscale }: {
+  icon: string;
+  alt: string;
+  value: number;
+  matchId: number;
+  grayscale?: boolean;
+}) {
+  const inner = (
+    <>
+      <img src={icon} alt={alt} style={{ width: 28, height: 28, filter: grayscale ? "grayscale(1) brightness(0.7)" : undefined }} />
+      <span className="font-display text-xl text-glow">{value}</span>
+    </>
+  );
+  if (!matchId) return <div className="flex items-center gap-1.5">{inner}</div>;
+  return (
+    <Link
+      to="/match/$id"
+      params={{ id: String(matchId) }}
+      className="flex items-center gap-1.5 hover:opacity-80 transition"
+      title={`Матч ${matchId}`}
+    >
+      {inner}
+    </Link>
   );
 }
 
