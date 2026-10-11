@@ -1,0 +1,744 @@
+{
+  "match_id": 9026413992,
+  "start_time": "2026-10-02 22:24:52",
+  "start_timestamp": 1790969092.37724,
+  "duration_minutes": 48.62,
+  "duration_seconds": 2917.13,
+  "draft_duration_minutes": 9.2,
+  "winner": "dire",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "maxPLUS4",
+    "team_tag": "MXPL",
+    "team_id": 7118167
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Lone Druid"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Timbersaw"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Witch Doctor"
+    },
+    {
+      "nickname": "ренальда",
+      "steam_id": 76561198213414847,
+      "hero": "Lina"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": 76561198306408521,
+      "hero": "Winter Wyvern"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Zeus"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Clinkz"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Abaddon"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": 76561199222816532,
+      "hero": "Lich"
+    },
+    {
+      "nickname": "Noxxion",
+      "steam_id": 76561198072867743,
+      "hero": "Grimstroke"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 3526
+    },
+    {
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 3744
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 6080
+    },
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 6742
+    },
+    {
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 6850
+    },
+    {
+      "team": 3,
+      "hero": "Lich",
+      "tick": 6936
+    },
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 8420
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 8966
+    },
+    {
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 15376
+    },
+    {
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 16902
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 350
+    },
+    {
+      "team": 3,
+      "hero": "Enchantress",
+      "tick": 900
+    },
+    {
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 1118
+    },
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 1302
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 2282
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2832
+    },
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 3328
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 4274
+    },
+    {
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 5118
+    },
+    {
+      "team": 3,
+      "hero": "Invoker",
+      "tick": 5172
+    },
+    {
+      "team": 3,
+      "hero": "Ember Spirit",
+      "tick": 9616
+    },
+    {
+      "team": 2,
+      "hero": "Drow Ranger",
+      "tick": 10934
+    },
+    {
+      "team": 3,
+      "hero": "Puck",
+      "tick": 11504
+    },
+    {
+      "team": 2,
+      "hero": "Meepo",
+      "tick": 14596
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 350,
+      "game_time_sec": 11.666666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Enchantress",
+      "tick": 900,
+      "game_time_sec": 30.0
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 1118,
+      "game_time_sec": 37.266666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Marci",
+      "tick": 1302,
+      "game_time_sec": 43.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Techies",
+      "tick": 2282,
+      "game_time_sec": 76.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2832,
+      "game_time_sec": 94.4
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 3328,
+      "game_time_sec": 110.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 3526,
+      "game_time_sec": 117.53333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 3744,
+      "game_time_sec": 124.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 4274,
+      "game_time_sec": 142.46666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 5118,
+      "game_time_sec": 170.6
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Invoker",
+      "tick": 5172,
+      "game_time_sec": 172.4
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 6080,
+      "game_time_sec": 202.66666666666666
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 6742,
+      "game_time_sec": 224.73333333333332
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 6850,
+      "game_time_sec": 228.33333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lich",
+      "tick": 6936,
+      "game_time_sec": 231.2
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 8420,
+      "game_time_sec": 280.6666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lina",
+      "tick": 8966,
+      "game_time_sec": 298.8666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Ember Spirit",
+      "tick": 9616,
+      "game_time_sec": 320.53333333333336
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Drow Ranger",
+      "tick": 10934,
+      "game_time_sec": 364.46666666666664
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Puck",
+      "tick": 11504,
+      "game_time_sec": 383.46666666666664
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Meepo",
+      "tick": 14596,
+      "game_time_sec": 486.53333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Lone Druid",
+      "tick": 15376,
+      "game_time_sec": 512.5333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Zeus",
+      "tick": 16902,
+      "game_time_sec": 563.4
+    }
+  ],
+  "total_deaths": 64,
+  "kda": {
+    "jMogwai": {
+      "kills": 4,
+      "deaths": 7,
+      "assists": 2,
+      "kda_ratio": 0.86
+    },
+    "Donnie": {
+      "kills": 0,
+      "deaths": 9,
+      "assists": 4,
+      "kda_ratio": 0.44
+    },
+    "13": {
+      "kills": 0,
+      "deaths": 11,
+      "assists": 6,
+      "kda_ratio": 0.55
+    },
+    "ренальда": {
+      "kills": 15,
+      "deaths": 3,
+      "assists": 0,
+      "kda_ratio": 5.0
+    },
+    "Osaki": {
+      "kills": 1,
+      "deaths": 13,
+      "assists": 5,
+      "kda_ratio": 0.46
+    },
+    "nerd": {
+      "kills": 10,
+      "deaths": 4,
+      "assists": 19,
+      "kda_ratio": 7.25
+    },
+    "???&": {
+      "kills": 21,
+      "deaths": 3,
+      "assists": 8,
+      "kda_ratio": 9.67
+    },
+    "Davros": {
+      "kills": 6,
+      "deaths": 6,
+      "assists": 12,
+      "kda_ratio": 3.0
+    },
+    "Communication": {
+      "kills": 5,
+      "deaths": 3,
+      "assists": 23,
+      "kda_ratio": 9.33
+    },
+    "Noxxion": {
+      "kills": 0,
+      "deaths": 5,
+      "assists": 16,
+      "kda_ratio": 3.2
+    }
+  },
+  "net_worth": {
+    "jMogwai": 26755,
+    "Donnie": 19349,
+    "13": 8089,
+    "ренальда": 29251,
+    "Osaki": 6753,
+    "nerd": 29941,
+    "???&": 37927,
+    "Davros": 24448,
+    "Communication": 14183,
+    "Noxxion": 14827
+  },
+  "last_hits": {
+    "jMogwai": 567,
+    "Donnie": 400,
+    "13": 19,
+    "ренальда": 433,
+    "Osaki": 41,
+    "nerd": 431,
+    "???&": 464,
+    "Davros": 345,
+    "Communication": 41,
+    "Noxxion": 99
+  },
+  "denies": {
+    "jMogwai": 10,
+    "Donnie": 5,
+    "13": 3,
+    "ренальда": 3,
+    "Osaki": 1,
+    "nerd": 8,
+    "???&": 21,
+    "Davros": 19,
+    "Communication": 11,
+    "Noxxion": 1
+  },
+  "gold_per_minute": {
+    "jMogwai": 580.49,
+    "Donnie": 487.71,
+    "13": 217.82,
+    "ренальда": 708.51,
+    "Osaki": 178.78,
+    "nerd": 659.66,
+    "???&": 810.49,
+    "Davros": 532.08,
+    "Communication": 344.62,
+    "Noxxion": 295.69
+  },
+  "xp_per_minute": {
+    "jMogwai": 561.67,
+    "Donnie": 695.37,
+    "13": 275.04,
+    "ренальда": 1234.38,
+    "Osaki": 240.73,
+    "nerd": 955.55,
+    "???&": 897.55,
+    "Davros": 648.35,
+    "Communication": 525.33,
+    "Noxxion": 576.07
+  },
+  "hero_damage": {
+    "jMogwai": 3200,
+    "Donnie": 18428,
+    "13": 7011,
+    "ренальда": 37975,
+    "Osaki": 7629,
+    "nerd": 77228,
+    "???&": 60007,
+    "Davros": 20476,
+    "Communication": 20895,
+    "Noxxion": 13838
+  },
+  "damage_taken": {
+    "jMogwai": 35943,
+    "Donnie": 64899,
+    "13": 21993,
+    "ренальда": 37110,
+    "Osaki": 22727,
+    "nerd": 25968,
+    "???&": 24098,
+    "Davros": 40762,
+    "Communication": 15027,
+    "Noxxion": 21049
+  },
+  "hero_healing": {
+    "jMogwai": 39664,
+    "Donnie": 35274,
+    "13": 12612,
+    "ренальда": 20250,
+    "Osaki": 8138,
+    "nerd": 17889,
+    "???&": 7128,
+    "Davros": 31750,
+    "Communication": 9653,
+    "Noxxion": 10300
+  },
+  "tower_damage": {
+    "jMogwai": 0,
+    "Donnie": 0,
+    "13": 0,
+    "ренальда": 1470,
+    "Osaki": 0,
+    "nerd": 452,
+    "???&": 14753,
+    "Davros": 2236,
+    "Communication": 0,
+    "Noxxion": 313
+  },
+  "stuns_dealt": {
+    "jMogwai": 53.07,
+    "Donnie": 0.0,
+    "13": 60.63,
+    "ренальда": 57.8,
+    "Osaki": 68.53,
+    "nerd": 87.1,
+    "???&": 0.0,
+    "Davros": 20.0,
+    "Communication": 99.71,
+    "Noxxion": 21.36
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 12,
+      "sentry": 22,
+      "total": 34
+    },
+    "ренальда": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Osaki": {
+      "observer": 7,
+      "sentry": 19,
+      "total": 26
+    },
+    "nerd": {
+      "observer": 5,
+      "sentry": 0,
+      "total": 5
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Communication": {
+      "observer": 11,
+      "sentry": 31,
+      "total": 42
+    },
+    "Noxxion": {
+      "observer": 5,
+      "sentry": 5,
+      "total": 10
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Donnie": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 8,
+      "total": 9
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 3,
+      "sentry": 4,
+      "total": 7
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 2,
+      "total": 4
+    },
+    "???&": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Communication": {
+      "observer": 7,
+      "sentry": 9,
+      "total": 16
+    },
+    "Noxxion": {
+      "observer": 0,
+      "sentry": 4,
+      "total": 4
+    }
+  },
+  "wards_events_count": 119,
+  "chat_after_draft": [
+    {
+      "tick": 20377,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "герыч вылетел"
+    },
+    {
+      "tick": 20697,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "читы врубать"
+    },
+    {
+      "tick": 22457,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "г"
+    },
+    {
+      "tick": 22469,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "г?"
+    },
+    {
+      "tick": 37591,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "что ей сницааааа"
+    },
+    {
+      "tick": 37835,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "пхпххп"
+    },
+    {
+      "tick": 43799,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "СДАВАЙСЯ"
+    },
+    {
+      "tick": 55423,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "зорик ты ахуел"
+    },
+    {
+      "tick": 55503,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "((((((((((("
+    },
+    {
+      "tick": 77917,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "siuuuu"
+    },
+    {
+      "tick": 100965,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "чапалах"
+    },
+    {
+      "tick": 101057,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "от лины"
+    }
+  ],
+  "chat_message_count": 12,
+  "high_fives": {
+    "jMogwai": 0,
+    "Donnie": 1,
+    "13": 0,
+    "ренальда": 0,
+    "Osaki": 0,
+    "nerd": 3,
+    "???&": 0,
+    "Davros": 0,
+    "Communication": 1,
+    "Noxxion": 1
+  }
+}

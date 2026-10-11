@@ -1,0 +1,726 @@
+{
+  "match_id": 9026324211,
+  "start_time": "2026-10-02 21:36:24",
+  "start_timestamp": 1790966184.906788,
+  "duration_minutes": 31.89,
+  "duration_seconds": 1913.53,
+  "draft_duration_minutes": 6.99,
+  "winner": "dire",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "maxPLUS4",
+    "team_tag": "MXPL",
+    "team_id": 7118167
+  },
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Anti Mage"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": 76561198306408521,
+      "hero": "Shadow Demon"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Kunkka"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Earth Spirit"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": "Ancient Apparition"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Spectre"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Bane"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": 76561199222816532,
+      "hero": "Techies"
+    },
+    {
+      "nickname": "ренальда",
+      "steam_id": 76561198213414847,
+      "hero": "Snapfire"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Abaddon"
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 5230
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Demon",
+      "tick": 6136
+    },
+    {
+      "team": 3,
+      "hero": "Ancient Apparition",
+      "tick": 7346
+    },
+    {
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 7606
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 7650
+    },
+    {
+      "team": 2,
+      "hero": "Earth Spirit",
+      "tick": 10378
+    },
+    {
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 12372
+    },
+    {
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 12894
+    },
+    {
+      "team": 2,
+      "hero": "Bane",
+      "tick": 12948
+    },
+    {
+      "team": 2,
+      "hero": "Anti-Mage",
+      "tick": 13972
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 1384
+    },
+    {
+      "team": 3,
+      "hero": "Invoker",
+      "tick": 1446
+    },
+    {
+      "team": 2,
+      "hero": "Lone Druid",
+      "tick": 2804
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Fiend",
+      "tick": 2868
+    },
+    {
+      "team": 2,
+      "hero": "Night Stalker",
+      "tick": 4184
+    },
+    {
+      "team": 3,
+      "hero": "Tinker",
+      "tick": 4462
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 1384,
+      "game_time_sec": 46.13333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Invoker",
+      "tick": 1446,
+      "game_time_sec": 48.2
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lone Druid",
+      "tick": 2804,
+      "game_time_sec": 93.46666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Shadow Fiend",
+      "tick": 2868,
+      "game_time_sec": 95.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Night Stalker",
+      "tick": 4184,
+      "game_time_sec": 139.46666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Tinker",
+      "tick": 4462,
+      "game_time_sec": 148.73333333333332
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 5230,
+      "game_time_sec": 174.33333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Shadow Demon",
+      "tick": 6136,
+      "game_time_sec": 204.53333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Ancient Apparition",
+      "tick": 7346,
+      "game_time_sec": 244.86666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 7606,
+      "game_time_sec": 253.53333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Techies",
+      "tick": 7650,
+      "game_time_sec": 255.0
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Earth Spirit",
+      "tick": 10378,
+      "game_time_sec": 345.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Kunkka",
+      "tick": 12372,
+      "game_time_sec": 412.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Snapfire",
+      "tick": 12894,
+      "game_time_sec": 429.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Bane",
+      "tick": 12948,
+      "game_time_sec": 431.6
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Anti-Mage",
+      "tick": 13972,
+      "game_time_sec": 465.73333333333335
+    }
+  ],
+  "total_deaths": 67,
+  "kda": {
+    "jMogwai": {
+      "kills": 4,
+      "deaths": 10,
+      "assists": 4,
+      "kda_ratio": 0.8
+    },
+    "Osaki": {
+      "kills": 0,
+      "deaths": 12,
+      "assists": 3,
+      "kda_ratio": 0.25
+    },
+    "Donnie": {
+      "kills": 2,
+      "deaths": 9,
+      "assists": 6,
+      "kda_ratio": 0.89
+    },
+    "Профессор вкусных каш": {
+      "kills": 3,
+      "deaths": 9,
+      "assists": 5,
+      "kda_ratio": 0.89
+    },
+    "Davros": {
+      "kills": 4,
+      "deaths": 14,
+      "assists": 7,
+      "kda_ratio": 0.79
+    },
+    "nerd": {
+      "kills": 18,
+      "deaths": 1,
+      "assists": 17,
+      "kda_ratio": 35.0
+    },
+    "13": {
+      "kills": 4,
+      "deaths": 3,
+      "assists": 27,
+      "kda_ratio": 10.33
+    },
+    "Communication": {
+      "kills": 10,
+      "deaths": 4,
+      "assists": 19,
+      "kda_ratio": 7.25
+    },
+    "ренальда": {
+      "kills": 12,
+      "deaths": 1,
+      "assists": 17,
+      "kda_ratio": 29.0
+    },
+    "???&": {
+      "kills": 10,
+      "deaths": 4,
+      "assists": 23,
+      "kda_ratio": 8.25
+    }
+  },
+  "net_worth": {
+    "jMogwai": 11087,
+    "Osaki": 3549,
+    "Donnie": 11291,
+    "Профессор вкусных каш": 9614,
+    "Davros": 6933,
+    "nerd": 18667,
+    "13": 9834,
+    "Communication": 11130,
+    "ренальда": 18831,
+    "???&": 15731
+  },
+  "last_hits": {
+    "jMogwai": 206,
+    "Osaki": 20,
+    "Donnie": 155,
+    "Профессор вкусных каш": 117,
+    "Davros": 27,
+    "nerd": 232,
+    "13": 16,
+    "Communication": 58,
+    "ренальда": 196,
+    "???&": 171
+  },
+  "denies": {
+    "jMogwai": 15,
+    "Osaki": 0,
+    "Donnie": 10,
+    "Профессор вкусных каш": 2,
+    "Davros": 3,
+    "nerd": 19,
+    "13": 8,
+    "Communication": 0,
+    "ренальда": 9,
+    "???&": 5
+  },
+  "gold_per_minute": {
+    "jMogwai": 424.81,
+    "Osaki": 158.03,
+    "Donnie": 385.23,
+    "Профессор вкусных каш": 358.55,
+    "Davros": 284.9,
+    "nerd": 587.42,
+    "13": 269.91,
+    "Communication": 371.81,
+    "ренальда": 555.72,
+    "???&": 475.32
+  },
+  "xp_per_minute": {
+    "jMogwai": 619.96,
+    "Osaki": 241.16,
+    "Donnie": 410.57,
+    "Профессор вкусных каш": 506.68,
+    "Davros": 270.22,
+    "nerd": 687.25,
+    "13": 328.32,
+    "Communication": 366.39,
+    "ренальда": 639.59,
+    "???&": 607.2
+  },
+  "hero_damage": {
+    "jMogwai": 12089,
+    "Osaki": 20125,
+    "Donnie": 27225,
+    "Профессор вкусных каш": 21753,
+    "Davros": 17453,
+    "nerd": 29835,
+    "13": 11655,
+    "Communication": 29396,
+    "ренальда": 27989,
+    "???&": 22380
+  },
+  "damage_taken": {
+    "jMogwai": 39757,
+    "Osaki": 50854,
+    "Donnie": 28111,
+    "Профессор вкусных каш": 36027,
+    "Davros": 19157,
+    "nerd": 44310,
+    "13": 16675,
+    "Communication": 18820,
+    "ренальда": 23110,
+    "???&": 21265
+  },
+  "hero_healing": {
+    "jMogwai": 17070,
+    "Osaki": 4773,
+    "Donnie": 13486,
+    "Профессор вкусных каш": 18236,
+    "Davros": 6736,
+    "nerd": 12415,
+    "13": 10548,
+    "Communication": 11897,
+    "ренальда": 18327,
+    "???&": 13482
+  },
+  "tower_damage": {
+    "jMogwai": 230,
+    "Osaki": 489,
+    "Donnie": 0,
+    "Профессор вкусных каш": 0,
+    "Davros": 74,
+    "nerd": 4174,
+    "13": 400,
+    "Communication": 498,
+    "ренальда": 2472,
+    "???&": 4188
+  },
+  "stuns_dealt": {
+    "jMogwai": 6.83,
+    "Osaki": 56.5,
+    "Donnie": 93.72,
+    "Профессор вкусных каш": 34.57,
+    "Davros": 28.73,
+    "nerd": 0.0,
+    "13": 71.69,
+    "Communication": 61.2,
+    "ренальда": 69.3,
+    "???&": 0.0
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 7,
+      "sentry": 13,
+      "total": 20
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 6,
+      "sentry": 13,
+      "total": 19
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "Communication": {
+      "observer": 9,
+      "sentry": 21,
+      "total": 30
+    },
+    "ренальда": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 7,
+      "total": 8
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 5,
+      "total": 5
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "Communication": {
+      "observer": 4,
+      "sentry": 6,
+      "total": 10
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    }
+  },
+  "wards_events_count": 77,
+  "chat_after_draft": [
+    {
+      "tick": 17590,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "gyl9 nonpocuJla nau3y"
+    },
+    {
+      "tick": 17826,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "хуясе"
+    },
+    {
+      "tick": 17918,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "это че за язык"
+    },
+    {
+      "tick": 18006,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "cs1.6"
+    },
+    {
+      "tick": 18104,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "гера"
+    },
+    {
+      "tick": 18264,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "Mara"
+    },
+    {
+      "tick": 18372,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ты всех трахнул на спектре на линии"
+    },
+    {
+      "tick": 18378,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "4e"
+    },
+    {
+      "tick": 18554,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ща приколим как со мной будет"
+    },
+    {
+      "tick": 18732,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "gaBau)"
+    },
+    {
+      "tick": 18978,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "только у тебя денис ска на течисе"
+    },
+    {
+      "tick": 19190,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "gg)"
+    },
+    {
+      "tick": 19196,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "сам такой"
+    },
+    {
+      "tick": 22168,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "g"
+    },
+    {
+      "tick": 22240,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "спс"
+    },
+    {
+      "tick": 23018,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "гера"
+    },
+    {
+      "tick": 23128,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "a"
+    },
+    {
+      "tick": 23152,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "гулю бери на линию"
+    },
+    {
+      "tick": 23326,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "дениса шли домой"
+    },
+    {
+      "tick": 23396,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "денис хочет топ"
+    },
+    {
+      "tick": 23578,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "гггггггг"
+    },
+    {
+      "tick": 23626,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "я тут если шо"
+    },
+    {
+      "tick": 23690,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "мы готовы"
+    },
+    {
+      "tick": 23778,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "МОЯ ИГРА"
+    },
+    {
+      "tick": 23820,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "МОЯ ИГРА"
+    }
+  ],
+  "chat_message_count": 25,
+  "high_fives": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "Donnie": 1,
+    "Профессор вкусных каш": 0,
+    "Davros": 0,
+    "nerd": 2,
+    "13": 0,
+    "Communication": 1,
+    "ренальда": 1,
+    "???&": 0
+  }
+}

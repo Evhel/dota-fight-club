@@ -1,0 +1,574 @@
+{
+  "match_id": 444198401,
+  "start_time": "2026-10-10 00:42:58",
+  "start_timestamp": 1791582178.825368,
+  "duration_minutes": 11.83,
+  "duration_seconds": 709.8,
+  "draft_duration_minutes": 10.09,
+  "winner": "dire",
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "radiant_team_info": {
+    "team_name": "maxPLUS4",
+    "team_tag": "MXPL",
+    "team_id": 7118167
+  },
+  "dire_team_info": {
+    "team_name": "BALTIKA",
+    "team_tag": "8",
+    "team_id": 4616603
+  },
+  "radiant_team": [],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": ""
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": 76561198306408521,
+      "hero": ""
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": 76561198078638066,
+      "hero": ""
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": 76561198262536558,
+      "hero": ""
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": ""
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": ""
+    },
+    {
+      "nickname": "Облепиховая мышь",
+      "steam_id": 76561198870458846,
+      "hero": ""
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": ""
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": ""
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": ""
+    }
+  ],
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Hoodwink",
+      "tick": 7988
+    },
+    {
+      "team": 2,
+      "hero": "Ancient Apparition",
+      "tick": 8148
+    },
+    {
+      "team": 3,
+      "hero": "Death Prophet",
+      "tick": 9426
+    },
+    {
+      "team": 3,
+      "hero": "Crystal Maiden",
+      "tick": 11308
+    },
+    {
+      "team": 2,
+      "hero": "Mars",
+      "tick": 12194
+    },
+    {
+      "team": 2,
+      "hero": "Clockwerk",
+      "tick": 13098
+    },
+    {
+      "team": 3,
+      "hero": "Luna",
+      "tick": 14000
+    },
+    {
+      "team": 3,
+      "hero": "Sniper",
+      "tick": 14906
+    },
+    {
+      "team": 2,
+      "hero": "Tiny",
+      "tick": 15932
+    },
+    {
+      "team": 2,
+      "hero": "Keeper of the Light",
+      "tick": 19224
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Kez",
+      "tick": 1056
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1096
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 2402
+    },
+    {
+      "team": 3,
+      "hero": "Earth Spirit",
+      "tick": 3554
+    },
+    {
+      "team": 2,
+      "hero": "Enchantress",
+      "tick": 5634
+    },
+    {
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 7104
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Kez",
+      "tick": 1056,
+      "game_time_sec": 35.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1096,
+      "game_time_sec": 36.53333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 2402,
+      "game_time_sec": 80.06666666666666
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Earth Spirit",
+      "tick": 3554,
+      "game_time_sec": 118.46666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Enchantress",
+      "tick": 5634,
+      "game_time_sec": 187.8
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 7104,
+      "game_time_sec": 236.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Hoodwink",
+      "tick": 7988,
+      "game_time_sec": 266.26666666666665
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Ancient Apparition",
+      "tick": 8148,
+      "game_time_sec": 271.6
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Death Prophet",
+      "tick": 9426,
+      "game_time_sec": 314.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Crystal Maiden",
+      "tick": 11308,
+      "game_time_sec": 376.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Mars",
+      "tick": 12194,
+      "game_time_sec": 406.46666666666664
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Clockwerk",
+      "tick": 13098,
+      "game_time_sec": 436.6
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Luna",
+      "tick": 14000,
+      "game_time_sec": 466.6666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Sniper",
+      "tick": 14906,
+      "game_time_sec": 496.8666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Tiny",
+      "tick": 15932,
+      "game_time_sec": 531.0666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Keeper of the Light",
+      "tick": 19224,
+      "game_time_sec": 640.8
+    }
+  ],
+  "total_deaths": 0,
+  "kda": {
+    "jMogwai": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "Osaki": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "DeR meis+eR": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "Davros": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "nerd": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "Donnie": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "Облепиховая мышь": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "Профессор вкусных каш": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "13": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    },
+    "???&": {
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda_ratio": 0.0
+    }
+  },
+  "net_worth": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "DeR meis+eR": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Облепиховая мышь": 0,
+    "Профессор вкусных каш": 0,
+    "13": 0,
+    "???&": 0
+  },
+  "last_hits": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "DeR meis+eR": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Облепиховая мышь": 0,
+    "Профессор вкусных каш": 0,
+    "13": 0,
+    "???&": 0
+  },
+  "denies": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "DeR meis+eR": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Облепиховая мышь": 0,
+    "Профессор вкусных каш": 0,
+    "13": 0,
+    "???&": 0
+  },
+  "gold_per_minute": {
+    "jMogwai": 0.0,
+    "Osaki": 0.0,
+    "DeR meis+eR": 0.0,
+    "Davros": 0.0,
+    "nerd": 0.0,
+    "Donnie": 0.0,
+    "Облепиховая мышь": 0.0,
+    "Профессор вкусных каш": 0.0,
+    "13": 0.0,
+    "???&": 0.0
+  },
+  "xp_per_minute": {
+    "jMogwai": 0.0,
+    "Osaki": 0.0,
+    "DeR meis+eR": 0.0,
+    "Davros": 0.0,
+    "nerd": 0.0,
+    "Donnie": 0.0,
+    "Облепиховая мышь": 0.0,
+    "Профессор вкусных каш": 0.0,
+    "13": 0.0,
+    "???&": 0.0
+  },
+  "hero_damage": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "DeR meis+eR": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Облепиховая мышь": 0,
+    "Профессор вкусных каш": 0,
+    "13": 0,
+    "???&": 0
+  },
+  "damage_taken": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "DeR meis+eR": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Облепиховая мышь": 0,
+    "Профессор вкусных каш": 0,
+    "13": 0,
+    "???&": 0
+  },
+  "hero_healing": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "DeR meis+eR": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Облепиховая мышь": 0,
+    "Профессор вкусных каш": 0,
+    "13": 0,
+    "???&": 0
+  },
+  "tower_damage": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "DeR meis+eR": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Облепиховая мышь": 0,
+    "Профессор вкусных каш": 0,
+    "13": 0,
+    "???&": 0
+  },
+  "stuns_dealt": {
+    "jMogwai": 0.0,
+    "Osaki": 0.0,
+    "DeR meis+eR": 0.0,
+    "Davros": 0.0,
+    "nerd": 0.0,
+    "Donnie": 0.0,
+    "Облепиховая мышь": 0.0,
+    "Профессор вкусных каш": 0.0,
+    "13": 0.0,
+    "???&": 0.0
+  },
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Облепиховая мышь": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Облепиховая мышь": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_events_count": 0,
+  "chat_after_draft": [],
+  "chat_message_count": 0,
+  "high_fives": {
+    "jMogwai": 0,
+    "Osaki": 0,
+    "DeR meis+eR": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Облепиховая мышь": 0,
+    "Профессор вкусных каш": 0,
+    "13": 0,
+    "???&": 0
+  }
+}

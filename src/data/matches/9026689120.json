@@ -1,0 +1,702 @@
+{
+  "match_id": 9026689120,
+  "start_time": "2026-10-03 10:33:21",
+  "start_timestamp": 1791704001.483885,
+  "duration_minutes": 43.65,
+  "duration_seconds": 2618.77,
+  "draft_duration_minutes": 12.65,
+  "winner": "radiant",
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "radiant_team_info": {
+    "team_name": "CuKATOP",
+    "team_tag": "CKTP",
+    "team_id": 1302077
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "radiant_team": [
+    {
+      "nickname": "Donnie",
+      "steam_id": 76561198108151943,
+      "hero": "Axe"
+    },
+    {
+      "nickname": "13",
+      "steam_id": 76561198315265037,
+      "hero": "Spirit Breaker"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": 76561198024572250,
+      "hero": "Riki"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": 76561198069163159,
+      "hero": "Abaddon"
+    },
+    {
+      "nickname": "NativeX",
+      "steam_id": 76561198015722400,
+      "hero": "Silencer"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": 76561198025641132,
+      "hero": "Kez"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": 76561198074554802,
+      "hero": "Alchemist"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": 76561198040946408,
+      "hero": "Hoodwink"
+    },
+    {
+      "nickname": "uwuntermensch",
+      "steam_id": 76561198133094078,
+      "hero": "Legion Commander"
+    },
+    {
+      "nickname": "Потные Яйца",
+      "steam_id": 76561198026499354,
+      "hero": "Undying"
+    }
+  ],
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Silencer",
+      "tick": 5108
+    },
+    {
+      "team": 2,
+      "hero": "Kez",
+      "tick": 5130
+    },
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 8220
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 9268
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 10842
+    },
+    {
+      "team": 3,
+      "hero": "Hoodwink",
+      "tick": 11006
+    },
+    {
+      "team": 2,
+      "hero": "Legion Commander",
+      "tick": 13614
+    },
+    {
+      "team": 2,
+      "hero": "Riki",
+      "tick": 14944
+    },
+    {
+      "team": 3,
+      "hero": "Abaddon",
+      "tick": 22008
+    },
+    {
+      "team": 3,
+      "hero": "Alchemist",
+      "tick": 23644
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 876
+    },
+    {
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 1600
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 1634
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 1992
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3488
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 4106
+    },
+    {
+      "team": 2,
+      "hero": "Doom",
+      "tick": 4284
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 6176
+    },
+    {
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 7212
+    },
+    {
+      "team": 3,
+      "hero": "Primal Beast",
+      "tick": 7254
+    },
+    {
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 15832
+    },
+    {
+      "team": 2,
+      "hero": "Outworld Devourer",
+      "tick": 16738
+    },
+    {
+      "team": 3,
+      "hero": "Bloodseeker",
+      "tick": 17878
+    },
+    {
+      "team": 2,
+      "hero": "Zeus",
+      "tick": 20076
+    }
+  ],
+  "draft_order": [
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Marci",
+      "tick": 876,
+      "game_time_sec": 29.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 1600,
+      "game_time_sec": 53.333333333333336
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 1634,
+      "game_time_sec": 54.46666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 1992,
+      "game_time_sec": 66.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3488,
+      "game_time_sec": 116.26666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 4106,
+      "game_time_sec": 136.86666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Doom",
+      "tick": 4284,
+      "game_time_sec": 142.8
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Silencer",
+      "tick": 5108,
+      "game_time_sec": 170.26666666666668
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Kez",
+      "tick": 5130,
+      "game_time_sec": 171.0
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 6176,
+      "game_time_sec": 205.86666666666667
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 7212,
+      "game_time_sec": 240.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Primal Beast",
+      "tick": 7254,
+      "game_time_sec": 241.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Undying",
+      "tick": 8220,
+      "game_time_sec": 274.0
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 9268,
+      "game_time_sec": 308.93333333333334
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Axe",
+      "tick": 10842,
+      "game_time_sec": 361.4
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Hoodwink",
+      "tick": 11006,
+      "game_time_sec": 366.8666666666667
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Legion Commander",
+      "tick": 13614,
+      "game_time_sec": 453.8
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Riki",
+      "tick": 14944,
+      "game_time_sec": 498.1333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 15832,
+      "game_time_sec": 527.7333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Outworld Devourer",
+      "tick": 16738,
+      "game_time_sec": 557.9333333333333
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Bloodseeker",
+      "tick": 17878,
+      "game_time_sec": 595.9333333333333
+    },
+    {
+      "order": 0,
+      "team": 2,
+      "hero": "Zeus",
+      "tick": 20076,
+      "game_time_sec": 669.2
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Abaddon",
+      "tick": 22008,
+      "game_time_sec": 733.6
+    },
+    {
+      "order": 0,
+      "team": 3,
+      "hero": "Alchemist",
+      "tick": 23644,
+      "game_time_sec": 788.1333333333333
+    }
+  ],
+  "total_deaths": 81,
+  "kda": {
+    "Donnie": {
+      "kills": 28,
+      "deaths": 4,
+      "assists": 17,
+      "kda_ratio": 11.25
+    },
+    "13": {
+      "kills": 4,
+      "deaths": 7,
+      "assists": 38,
+      "kda_ratio": 6.0
+    },
+    "???&": {
+      "kills": 14,
+      "deaths": 3,
+      "assists": 20,
+      "kda_ratio": 11.33
+    },
+    "Профессор вкусных каш": {
+      "kills": 11,
+      "deaths": 1,
+      "assists": 19,
+      "kda_ratio": 30.0
+    },
+    "NativeX": {
+      "kills": 1,
+      "deaths": 7,
+      "assists": 24,
+      "kda_ratio": 3.57
+    },
+    "jMogwai": {
+      "kills": 9,
+      "deaths": 9,
+      "assists": 4,
+      "kda_ratio": 1.44
+    },
+    "nerd": {
+      "kills": 1,
+      "deaths": 12,
+      "assists": 7,
+      "kda_ratio": 0.67
+    },
+    "Kando!JeJe": {
+      "kills": 5,
+      "deaths": 10,
+      "assists": 10,
+      "kda_ratio": 1.5
+    },
+    "uwuntermensch": {
+      "kills": 4,
+      "deaths": 13,
+      "assists": 8,
+      "kda_ratio": 0.92
+    },
+    "Потные Яйца": {
+      "kills": 3,
+      "deaths": 15,
+      "assists": 11,
+      "kda_ratio": 0.93
+    }
+  },
+  "net_worth": {
+    "Donnie": 28019,
+    "13": 15415,
+    "???&": 22813,
+    "Профессор вкусных каш": 30489,
+    "NativeX": 10201,
+    "jMogwai": 21357,
+    "nerd": 12786,
+    "Kando!JeJe": 8202,
+    "uwuntermensch": 14685,
+    "Потные Яйца": 7742
+  },
+  "last_hits": {
+    "Donnie": 294,
+    "13": 65,
+    "???&": 211,
+    "Профессор вкусных каш": 431,
+    "NativeX": 35,
+    "jMogwai": 270,
+    "nerd": 327,
+    "Kando!JeJe": 73,
+    "uwuntermensch": 145,
+    "Потные Яйца": 51
+  },
+  "denies": {
+    "Donnie": 21,
+    "13": 2,
+    "???&": 6,
+    "Профессор вкусных каш": 14,
+    "NativeX": 4,
+    "jMogwai": 19,
+    "nerd": 4,
+    "Kando!JeJe": 0,
+    "uwuntermensch": 5,
+    "Потные Яйца": 0
+  },
+  "gold_per_minute": {
+    "Donnie": 678.3,
+    "13": 373.76,
+    "???&": 519.36,
+    "Профессор вкусных каш": 704.87,
+    "NativeX": 249.8,
+    "jMogwai": 457.29,
+    "nerd": 528.04,
+    "Kando!JeJe": 260.57,
+    "uwuntermensch": 291.18,
+    "Потные Яйца": 237.34
+  },
+  "xp_per_minute": {
+    "Donnie": 913.32,
+    "13": 733.35,
+    "???&": 1022.54,
+    "Профессор вкусных каш": 886.36,
+    "NativeX": 365.58,
+    "jMogwai": 599.43,
+    "nerd": 524.38,
+    "Kando!JeJe": 354.65,
+    "uwuntermensch": 367.68,
+    "Потные Яйца": 395.59
+  },
+  "hero_damage": {
+    "Donnie": 57397,
+    "13": 22251,
+    "???&": 26418,
+    "Профессор вкусных каш": 22200,
+    "NativeX": 8583,
+    "jMogwai": 48532,
+    "nerd": 18334,
+    "Kando!JeJe": 13788,
+    "uwuntermensch": 21238,
+    "Потные Яйца": 7707
+  },
+  "damage_taken": {
+    "Donnie": 45542,
+    "13": 34967,
+    "???&": 29081,
+    "Профессор вкусных каш": 36381,
+    "NativeX": 15678,
+    "jMogwai": 35151,
+    "nerd": 42063,
+    "Kando!JeJe": 17662,
+    "uwuntermensch": 38452,
+    "Потные Яйца": 35299
+  },
+  "hero_healing": {
+    "Donnie": 28932,
+    "13": 19839,
+    "???&": 18928,
+    "Профессор вкусных каш": 26866,
+    "NativeX": 7438,
+    "jMogwai": 13141,
+    "nerd": 20360,
+    "Kando!JeJe": 6115,
+    "uwuntermensch": 14789,
+    "Потные Яйца": 10756
+  },
+  "tower_damage": {
+    "Donnie": 504,
+    "13": 1578,
+    "???&": 3971,
+    "Профессор вкусных каш": 9472,
+    "NativeX": 957,
+    "jMogwai": 0,
+    "nerd": 656,
+    "Kando!JeJe": 0,
+    "uwuntermensch": 23,
+    "Потные Яйца": 102
+  },
+  "stuns_dealt": {
+    "Donnie": 184.95,
+    "13": 199.67,
+    "???&": 13.6,
+    "Профессор вкусных каш": 0.0,
+    "NativeX": 0.0,
+    "jMogwai": 25.1,
+    "nerd": 76.05,
+    "Kando!JeJe": 94.92,
+    "uwuntermensch": 61.6,
+    "Потные Яйца": 0.0
+  },
+  "wards_placed": {
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 16,
+      "sentry": 12,
+      "total": 28
+    },
+    "???&": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "NativeX": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Kando!JeJe": {
+      "observer": 3,
+      "sentry": 22,
+      "total": 25
+    },
+    "uwuntermensch": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Потные Яйца": {
+      "observer": 9,
+      "sentry": 7,
+      "total": 16
+    }
+  },
+  "wards_destroyed": {
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 4,
+      "sentry": 5,
+      "total": 9
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "NativeX": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 4,
+      "sentry": 6,
+      "total": 10
+    },
+    "uwuntermensch": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Потные Яйца": {
+      "observer": 2,
+      "sentry": 2,
+      "total": 4
+    }
+  },
+  "wards_events_count": 75,
+  "chat_after_draft": [
+    {
+      "tick": 31023,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "на илью микрофон напал"
+    },
+    {
+      "tick": 31095,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "ГО?"
+    },
+    {
+      "tick": 31191,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "0_)"
+    },
+    {
+      "tick": 68096,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "G&"
+    },
+    {
+      "tick": 73206,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "Г"
+    }
+  ],
+  "chat_message_count": 5,
+  "high_fives": {
+    "Donnie": 0,
+    "13": 0,
+    "???&": 0,
+    "Профессор вкусных каш": 0,
+    "NativeX": 0,
+    "jMogwai": 0,
+    "nerd": 1,
+    "Kando!JeJe": 0,
+    "uwuntermensch": 0,
+    "Потные Яйца": 0
+  }
+}
