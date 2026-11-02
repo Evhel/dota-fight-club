@@ -699,5 +699,6 @@
     "Donnie": 0,
     "Davros": 0
   },
-  "match_id_source": "filename_64bit_recovery"
+  "match_id_source": "filename_64bit_recovery",
+  "start_time_source": "legacy_file_time"
 }

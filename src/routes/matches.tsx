@@ -71,10 +71,10 @@ function MatchesPage() {
                 <td className="px-3 py-2 font-mono">{num}</td>
                 <td className="px-3 py-2">
                   <Link to="/match/$id" params={{ id: String(m.match_id) }} className="text-primary hover:underline"
-                    title={m.data.start_time_source === "replay_match_details" ? "Время начала из записи матча, МСК" : "Дата старого импорта: исходная запись пока не найдена"}>
+                    title={m.data.start_time_source === "replay_match_details" ? "Время начала из записи матча, МСК" : m.data.start_time_source === "legacy_file_time" ? "Дата и время сохранены из прежней версии сайта, МСК" : "Дата старого импорта: исходная запись пока не найдена"}>
                     {new Date(m.start_time).toLocaleDateString("ru-RU", { timeZone: "Europe/Moscow" })}
                     <span className="block text-xs text-muted-foreground">
-                      {m.data.start_time_source === "replay_match_details"
+                      {m.data.start_time_source === "replay_match_details" || m.data.start_time_source === "legacy_file_time"
                         ? new Date(m.start_time).toLocaleTimeString("ru-RU", { timeZone: "Europe/Moscow", hour: "2-digit", minute: "2-digit" }) + " МСК"
                         : "дата не подтверждена"}
                     </span>
