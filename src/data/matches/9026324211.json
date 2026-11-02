@@ -1,9 +1,9 @@
 {
   "match_id": 9026324211,
-  "start_time": "2026-10-02 21:36:24",
-  "start_timestamp": 1790966184.906788,
-  "duration_minutes": 31.89,
-  "duration_seconds": 1913.53,
+  "start_time": "2026-10-02T18:09:20Z",
+  "start_timestamp": 1790964560,
+  "duration_minutes": 30.47,
+  "duration_seconds": 1828,
   "draft_duration_minutes": 6.99,
   "winner": "dire",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
-      "hero": "Anti Mage"
+      "steam_id": "76561198025641132",
+      "hero": "Anti-Mage"
     },
     {
       "nickname": "Osaki",
-      "steam_id": 76561198306408521,
+      "steam_id": "76561198306408521",
       "hero": "Shadow Demon"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Kunkka"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Earth Spirit"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Ancient Apparition"
     }
   ],
   "dire_team": [
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Spectre"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Bane"
     },
     {
       "nickname": "Communication",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Techies"
     },
     {
       "nickname": "ренальда",
-      "steam_id": 76561198213414847,
+      "steam_id": "76561198213414847",
       "hero": "Snapfire"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Abaddon"
     }
   ],
@@ -370,76 +370,76 @@
     "???&": 5
   },
   "gold_per_minute": {
-    "jMogwai": 424.81,
-    "Osaki": 158.03,
-    "Donnie": 385.23,
-    "Профессор вкусных каш": 358.55,
-    "Davros": 284.9,
-    "nerd": 587.42,
-    "13": 269.91,
-    "Communication": 371.81,
-    "ренальда": 555.72,
-    "???&": 475.32
+    "jMogwai": 448,
+    "Osaki": 166,
+    "Donnie": 404,
+    "Профессор вкусных каш": 377,
+    "Davros": 300,
+    "nerd": 654,
+    "13": 302,
+    "Communication": 418,
+    "ренальда": 620,
+    "???&": 519
   },
   "xp_per_minute": {
-    "jMogwai": 619.96,
-    "Osaki": 241.16,
-    "Donnie": 410.57,
-    "Профессор вкусных каш": 506.68,
-    "Davros": 270.22,
-    "nerd": 687.25,
-    "13": 328.32,
-    "Communication": 366.39,
-    "ренальда": 639.59,
-    "???&": 607.2
+    "jMogwai": 660,
+    "Osaki": 253,
+    "Donnie": 430,
+    "Профессор вкусных каш": 530,
+    "Davros": 282,
+    "nerd": 792,
+    "13": 416,
+    "Communication": 456,
+    "ренальда": 742,
+    "???&": 708
   },
   "hero_damage": {
-    "jMogwai": 12089,
-    "Osaki": 20125,
-    "Donnie": 27225,
-    "Профессор вкусных каш": 21753,
-    "Davros": 17453,
-    "nerd": 29835,
-    "13": 11655,
-    "Communication": 29396,
-    "ренальда": 27989,
-    "???&": 22380
+    "jMogwai": 12293,
+    "Osaki": 5301,
+    "Donnie": 13146,
+    "Профессор вкусных каш": 17282,
+    "Davros": 10271,
+    "nerd": 33551,
+    "13": 12035,
+    "Communication": 17768,
+    "ренальда": 23833,
+    "???&": 19196
   },
   "damage_taken": {
-    "jMogwai": 39757,
-    "Osaki": 50854,
-    "Donnie": 28111,
-    "Профессор вкусных каш": 36027,
-    "Davros": 19157,
-    "nerd": 44310,
-    "13": 16675,
-    "Communication": 18820,
-    "ренальда": 23110,
-    "???&": 21265
+    "jMogwai": 21658,
+    "Osaki": 14985,
+    "Donnie": 22890,
+    "Профессор вкусных каш": 30217,
+    "Davros": 16633,
+    "nerd": 11482,
+    "13": 12496,
+    "Communication": 8187,
+    "ренальда": 11768,
+    "???&": 13988
   },
   "hero_healing": {
-    "jMogwai": 17070,
-    "Osaki": 4773,
-    "Donnie": 13486,
-    "Профессор вкусных каш": 18236,
-    "Davros": 6736,
-    "nerd": 12415,
-    "13": 10548,
-    "Communication": 11897,
-    "ренальда": 18327,
-    "???&": 13482
+    "jMogwai": 0,
+    "Osaki": 0,
+    "Donnie": 0,
+    "Профессор вкусных каш": 0,
+    "Davros": 0,
+    "nerd": 0,
+    "13": 125,
+    "Communication": 0,
+    "ренальда": 444,
+    "???&": 125
   },
   "tower_damage": {
     "jMogwai": 230,
-    "Osaki": 489,
+    "Osaki": 0,
     "Donnie": 0,
     "Профессор вкусных каш": 0,
     "Davros": 74,
-    "nerd": 4174,
-    "13": 400,
-    "Communication": 498,
-    "ренальда": 2472,
-    "???&": 4188
+    "nerd": 7393,
+    "13": 454,
+    "Communication": 1238,
+    "ренальда": 3005,
+    "???&": 6612
   },
   "stuns_dealt": {
     "jMogwai": 6.83,
@@ -722,5 +722,11 @@
     "Communication": 1,
     "ренальда": 1,
     "???&": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

@@ -3,6 +3,7 @@ import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
 import { heroImg } from "@/lib/heroes";
 import { useMemo } from "react";
+import type { MatchPlayer } from "@/lib/types";
 
 export const Route = createFileRoute("/matches")({
   component: MatchesPage,
@@ -19,7 +20,7 @@ function MatchesPage() {
   const sorted = [...indexed].reverse();
 
 
-  const TeamCell = ({ team }: { team: { nickname: string; steam_id: number; hero: string }[] }) => (
+  const TeamCell = ({ team }: { team: MatchPlayer[] }) => (
     <div className="flex gap-1 justify-center">
       {team.map((p) => {
         const display = identities.get(String(p.steam_id))?.display_name || p.nickname;
@@ -69,8 +70,14 @@ function MatchesPage() {
               <tr key={m.match_id} className="border-t border-border/40 hover:bg-muted/20">
                 <td className="px-3 py-2 font-mono">{num}</td>
                 <td className="px-3 py-2">
-                  <Link to="/match/$id" params={{ id: String(m.match_id) }} className="text-primary hover:underline">
-                    {new Date(m.start_time).toLocaleDateString("ru-RU")}
+                  <Link to="/match/$id" params={{ id: String(m.match_id) }} className="text-primary hover:underline"
+                    title={m.data.start_time_source === "replay_match_details" ? "Время начала из записи матча, МСК" : "Дата старого импорта: исходная запись пока не найдена"}>
+                    {new Date(m.start_time).toLocaleDateString("ru-RU", { timeZone: "Europe/Moscow" })}
+                    <span className="block text-xs text-muted-foreground">
+                      {m.data.start_time_source === "replay_match_details"
+                        ? new Date(m.start_time).toLocaleTimeString("ru-RU", { timeZone: "Europe/Moscow", hour: "2-digit", minute: "2-digit" }) + " МСК"
+                        : "дата не подтверждена"}
+                    </span>
                   </Link>
                 </td>
                 <td className="px-3 py-2">{m.data.game_mode}</td>

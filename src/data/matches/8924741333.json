@@ -1,9 +1,9 @@
 {
   "match_id": 8924741333,
-  "start_time": "2026-08-08 00:57:30",
-  "start_timestamp": 1786139850.102316,
-  "duration_minutes": 30.32,
-  "duration_seconds": 1819.27,
+  "start_time": "2026-08-01T20:24:36Z",
+  "start_timestamp": 1785615876,
+  "duration_minutes": 27.05,
+  "duration_seconds": 1623,
   "draft_duration_minutes": 11.98,
   "winner": "radiant",
   "game_mode_id": 2,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Marci"
     },
     {
       "nickname": "I want to die",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Drow Ranger"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Wraith King"
     },
     {
       "nickname": "Kando!JeJe",
-      "steam_id": 76561198040946408,
+      "steam_id": "76561198040946408",
       "hero": "Lion"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Witch Doctor"
     }
   ],
   "dire_team": [
     {
       "nickname": "P0Druga",
-      "steam_id": 76561199783912739,
+      "steam_id": "76561199783912739",
       "hero": "Warlock"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Axe"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Spirit Breaker"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Lone Druid"
     },
     {
       "nickname": "betrayed",
-      "steam_id": 76561198319233727,
+      "steam_id": "76561198319233727",
       "hero": "Huskar"
     }
   ],
@@ -466,75 +466,75 @@
     "betrayed": 10
   },
   "gold_per_minute": {
-    "jMogwai": 424.32,
-    "I want to die": 437.95,
-    "Профессор вкусных каш": 396.03,
-    "Kando!JeJe": 180.77,
-    "13": 238.84,
-    "P0Druga": 150.75,
-    "Donnie": 324.23,
-    "Davros": 195.61,
-    "???&": 402.29,
-    "betrayed": 318.75
+    "jMogwai": 536,
+    "I want to die": 524,
+    "Профессор вкусных каш": 500,
+    "Kando!JeJe": 224,
+    "13": 299,
+    "P0Druga": 181,
+    "Donnie": 373,
+    "Davros": 229,
+    "???&": 480,
+    "betrayed": 363
   },
   "xp_per_minute": {
-    "jMogwai": 478.38,
-    "I want to die": 405.82,
-    "Профессор вкусных каш": 414.07,
-    "Kando!JeJe": 280.79,
-    "13": 297.52,
-    "P0Druga": 139.8,
-    "Donnie": 408.99,
-    "Davros": 226.87,
-    "???&": 495.03,
-    "betrayed": 420.86
+    "jMogwai": 613,
+    "I want to die": 508,
+    "Профессор вкусных каш": 541,
+    "Kando!JeJe": 314,
+    "13": 410,
+    "P0Druga": 156,
+    "Donnie": 473,
+    "Davros": 269,
+    "???&": 580,
+    "betrayed": 475
   },
   "hero_damage": {
-    "jMogwai": 17060,
-    "I want to die": 11074,
-    "Профессор вкусных каш": 7379,
-    "Kando!JeJe": 6350,
-    "13": 6837,
-    "P0Druga": 3040,
-    "Donnie": 5671,
-    "Davros": 5511,
-    "???&": 2387,
-    "betrayed": 44334
+    "jMogwai": 21899,
+    "I want to die": 13896,
+    "Профессор вкусных каш": 11385,
+    "Kando!JeJe": 6263,
+    "13": 8996,
+    "P0Druga": 3796,
+    "Donnie": 9522,
+    "Davros": 5891,
+    "???&": 11916,
+    "betrayed": 9481
   },
   "damage_taken": {
-    "jMogwai": 19703,
-    "I want to die": 10286,
-    "Профессор вкусных каш": 19438,
-    "Kando!JeJe": 6839,
-    "13": 10411,
-    "P0Druga": 7101,
-    "Donnie": 24763,
-    "Davros": 16689,
-    "???&": 6897,
-    "betrayed": 63140
+    "jMogwai": 12861,
+    "I want to die": 7384,
+    "Профессор вкусных каш": 8753,
+    "Kando!JeJe": 3995,
+    "13": 7217,
+    "P0Druga": 4576,
+    "Donnie": 15164,
+    "Davros": 12892,
+    "???&": 19441,
+    "betrayed": 10366
   },
   "hero_healing": {
-    "jMogwai": 14014,
-    "I want to die": 5162,
-    "Профессор вкусных каш": 14459,
-    "Kando!JeJe": 4212,
-    "13": 9922,
-    "P0Druga": 5682,
-    "Donnie": 13468,
-    "Davros": 4673,
-    "???&": 9939,
-    "betrayed": 39320
+    "jMogwai": 173,
+    "I want to die": 0,
+    "Профессор вкусных каш": 0,
+    "Kando!JeJe": 0,
+    "13": 4492,
+    "P0Druga": 2892,
+    "Donnie": 0,
+    "Davros": 0,
+    "???&": 0,
+    "betrayed": 0
   },
   "tower_damage": {
-    "jMogwai": 3208,
-    "I want to die": 1830,
-    "Профессор вкусных каш": 1942,
+    "jMogwai": 5569,
+    "I want to die": 2670,
+    "Профессор вкусных каш": 3716,
     "Kando!JeJe": 417,
-    "13": 388,
+    "13": 427,
     "P0Druga": 0,
     "Donnie": 0,
     "Davros": 0,
-    "???&": 139,
+    "???&": 616,
     "betrayed": 0
   },
   "stuns_dealt": {
@@ -698,5 +698,11 @@
     "Davros": 0,
     "???&": 0,
     "betrayed": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

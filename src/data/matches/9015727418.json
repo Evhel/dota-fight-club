@@ -1,9 +1,9 @@
 {
   "match_id": 9015727418,
-  "start_time": "2026-09-25 19:58:41",
-  "start_timestamp": 1790355521.77638,
-  "duration_minutes": 57.63,
-  "duration_seconds": 3457.53,
+  "start_time": "2026-09-25T16:41:31Z",
+  "start_timestamp": 1790354491,
+  "duration_minutes": 57.03,
+  "duration_seconds": 3422,
   "draft_duration_minutes": 9.81,
   "winner": "dire",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Enigma"
     },
     {
       "nickname": "Noxxion",
-      "steam_id": 76561198072867743,
+      "steam_id": "76561198072867743",
       "hero": "Skywrath Mage"
     },
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
-      "hero": "Queen Of Pain"
+      "steam_id": "76561198025641132",
+      "hero": "Queen of Pain"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Sven"
     },
     {
       "nickname": "Спортсмен",
-      "steam_id": 76561198020458182,
+      "steam_id": "76561198020458182",
       "hero": "Abaddon"
     }
   ],
   "dire_team": [
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Ursa"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Enchantress"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Pangolier"
     },
     {
       "nickname": "Communication",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Ancient Apparition"
     },
     {
       "nickname": "IXA",
-      "steam_id": 76561198213414847,
+      "steam_id": "76561198213414847",
       "hero": "Shadow Fiend"
     }
   ],
@@ -370,76 +370,76 @@
     "IXA": 7
   },
   "gold_per_minute": {
-    "Профессор вкусных каш": 470.94,
-    "Noxxion": 385.45,
-    "jMogwai": 628.42,
-    "Donnie": 643.13,
-    "Спортсмен": 343.15,
-    "???&": 668.92,
-    "Davros": 396.04,
-    "nerd": 629.89,
-    "Communication": 310.85,
-    "IXA": 657.68
+    "Профессор вкусных каш": 476,
+    "Noxxion": 389,
+    "jMogwai": 634,
+    "Donnie": 650,
+    "Спортсмен": 346,
+    "???&": 675,
+    "Davros": 400,
+    "nerd": 636,
+    "Communication": 314,
+    "IXA": 664
   },
   "xp_per_minute": {
-    "Профессор вкусных каш": 751.44,
-    "Noxxion": 655.25,
-    "jMogwai": 941.96,
-    "Donnie": 890.79,
-    "Спортсмен": 635.43,
-    "???&": 929.78,
-    "Davros": 681.85,
-    "nerd": 964.47,
-    "Communication": 572.44,
-    "IXA": 936.44
+    "Профессор вкусных каш": 759,
+    "Noxxion": 661,
+    "jMogwai": 952,
+    "Donnie": 900,
+    "Спортсмен": 642,
+    "???&": 939,
+    "Davros": 689,
+    "nerd": 974,
+    "Communication": 580,
+    "IXA": 945
   },
   "hero_damage": {
-    "Профессор вкусных каш": 40259,
-    "Noxxion": 32455,
-    "jMogwai": 78073,
-    "Donnie": 74140,
-    "Спортсмен": 27434,
-    "???&": 39797,
-    "Davros": 30706,
-    "nerd": 50829,
-    "Communication": 29750,
-    "IXA": 27014
+    "Профессор вкусных каш": 37227,
+    "Noxxion": 32150,
+    "jMogwai": 61120,
+    "Donnie": 38056,
+    "Спортсмен": 12943,
+    "???&": 39618,
+    "Davros": 29874,
+    "nerd": 50820,
+    "Communication": 21636,
+    "IXA": 26974
   },
   "damage_taken": {
-    "Профессор вкусных каш": 54193,
-    "Noxxion": 35935,
-    "jMogwai": 79144,
-    "Donnie": 57311,
-    "Спортсмен": 40229,
-    "???&": 79220,
-    "Davros": 66062,
-    "nerd": 53180,
-    "Communication": 26556,
-    "IXA": 64425
+    "Профессор вкусных каш": 30582,
+    "Noxxion": 30619,
+    "jMogwai": 48465,
+    "Donnie": 37442,
+    "Спортсмен": 19631,
+    "???&": 40511,
+    "Davros": 52445,
+    "nerd": 33993,
+    "Communication": 21851,
+    "IXA": 32696
   },
   "hero_healing": {
-    "Профессор вкусных каш": 31491,
-    "Noxxion": 12069,
-    "jMogwai": 43989,
-    "Donnie": 30021,
-    "Спортсмен": 43381,
-    "???&": 41350,
-    "Davros": 46577,
-    "nerd": 30162,
-    "Communication": 10625,
-    "IXA": 24405
+    "Профессор вкусных каш": 0,
+    "Noxxion": 125,
+    "jMogwai": 0,
+    "Donnie": 0,
+    "Спортсмен": 14498,
+    "???&": 0,
+    "Davros": 7770,
+    "nerd": 0,
+    "Communication": 464,
+    "IXA": 0
   },
   "tower_damage": {
-    "Профессор вкусных каш": 329,
+    "Профессор вкусных каш": 874,
     "Noxxion": 0,
     "jMogwai": 585,
     "Donnie": 0,
     "Спортсмен": 55,
-    "???&": 11017,
-    "Davros": 967,
-    "nerd": 341,
-    "Communication": 0,
-    "IXA": 2836
+    "???&": 20773,
+    "Davros": 2353,
+    "nerd": 762,
+    "Communication": 187,
+    "IXA": 4791
   },
   "stuns_dealt": {
     "Профессор вкусных каш": 131.39,
@@ -674,5 +674,11 @@
     "nerd": 1,
     "Communication": 0,
     "IXA": 1
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

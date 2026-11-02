@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "node scripts/validate-matches.mjs && vite build",
+    "check:data": "node scripts/validate-matches.mjs",
+    "build:pages": "node scripts/validate-matches.mjs && vite build --config vite.static.config.ts && node scripts/prepare-pages.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",

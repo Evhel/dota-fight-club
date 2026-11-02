@@ -1,9 +1,9 @@
 {
   "match_id": 9026509764,
-  "start_time": "2026-10-02 23:29:26",
-  "start_timestamp": 1790972966.625653,
-  "duration_minutes": 38.39,
-  "duration_seconds": 2303.27,
+  "start_time": "2026-10-02T20:16:35Z",
+  "start_timestamp": 1790972195,
+  "duration_minutes": 35.3,
+  "duration_seconds": 2118,
   "draft_duration_minutes": 8.32,
   "winner": "radiant",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Pugna"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Crystal Maiden"
     },
     {
       "nickname": "Communication",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Ancient Apparition"
     },
     {
       "nickname": "ренальда",
-      "steam_id": 76561198213414847,
+      "steam_id": "76561198213414847",
       "hero": "Juggernaut"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Legion Commander"
     }
   ],
   "dire_team": [
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Oracle"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Enigma"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Terrorblade"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Beastmaster"
     },
     {
       "nickname": "Kando!JeJe",
-      "steam_id": 76561198040946408,
+      "steam_id": "76561198040946408",
       "hero": "Witch Doctor"
     }
   ],
@@ -340,7 +340,7 @@
     "ренальда": 27307,
     "Профессор вкусных каш": 12399,
     "Davros": 6652,
-    "???&": 15892,
+    "???&": 15891,
     "Donnie": 17407,
     "nerd": 15772,
     "Kando!JeJe": 7840
@@ -370,75 +370,75 @@
     "Kando!JeJe": 3
   },
   "gold_per_minute": {
-    "jMogwai": 578.8,
-    "13": 299.31,
-    "Communication": 346.52,
-    "ренальда": 691.47,
-    "Профессор вкусных каш": 346.62,
-    "Davros": 231.25,
-    "???&": 469.03,
-    "Donnie": 513.73,
-    "nerd": 497.79,
-    "Kando!JeJe": 248.07
+    "jMogwai": 651,
+    "13": 334,
+    "Communication": 393,
+    "ренальда": 801,
+    "Профессор вкусных каш": 385,
+    "Davros": 256,
+    "???&": 515,
+    "Donnie": 585,
+    "nerd": 566,
+    "Kando!JeJe": 283
   },
   "xp_per_minute": {
-    "jMogwai": 798.2,
-    "13": 440.64,
-    "Communication": 500.97,
-    "ренальда": 909.93,
-    "Профессор вкусных каш": 391.37,
-    "Davros": 252.92,
-    "???&": 684.33,
-    "Donnie": 582.01,
-    "nerd": 589.8,
-    "Kando!JeJe": 276.83
+    "jMogwai": 871,
+    "13": 496,
+    "Communication": 544,
+    "ренальда": 1166,
+    "Профессор вкусных каш": 446,
+    "Davros": 275,
+    "???&": 743,
+    "Donnie": 702,
+    "nerd": 716,
+    "Kando!JeJe": 301
   },
   "hero_damage": {
-    "jMogwai": 48543,
-    "13": 24354,
-    "Communication": 20745,
-    "ренальда": 56740,
-    "Профессор вкусных каш": 14084,
-    "Davros": 8000,
-    "???&": 30593,
-    "Donnie": 26200,
-    "nerd": 25520,
-    "Kando!JeJe": 13022
+    "jMogwai": 36904,
+    "13": 13804,
+    "Communication": 14192,
+    "ренальда": 31211,
+    "Профессор вкусных каш": 14720,
+    "Davros": 5368,
+    "???&": 29343,
+    "Donnie": 20429,
+    "nerd": 23799,
+    "Kando!JeJe": 18384
   },
   "damage_taken": {
-    "jMogwai": 37544,
-    "13": 13120,
-    "Communication": 12167,
-    "ренальда": 46208,
-    "Профессор вкусных каш": 24901,
-    "Davros": 20706,
-    "???&": 32230,
-    "Donnie": 149663,
-    "nerd": 50672,
-    "Kando!JeJe": 21910
+    "jMogwai": 25061,
+    "13": 14319,
+    "Communication": 9602,
+    "ренальда": 22554,
+    "Профессор вкусных каш": 25787,
+    "Davros": 16460,
+    "???&": 19352,
+    "Donnie": 26772,
+    "nerd": 31536,
+    "Kando!JeJe": 15533
   },
   "hero_healing": {
-    "jMogwai": 24540,
-    "13": 6396,
-    "Communication": 7896,
-    "ренальда": 22085,
-    "Профессор вкусных каш": 19236,
-    "Davros": 11806,
-    "???&": 13269,
-    "Donnie": 19846,
-    "nerd": 14355,
-    "Kando!JeJe": 8920
+    "jMogwai": 1422,
+    "13": 0,
+    "Communication": 0,
+    "ренальда": 3816,
+    "Профессор вкусных каш": 6117,
+    "Davros": 3866,
+    "???&": 216,
+    "Donnie": 0,
+    "nerd": 0,
+    "Kando!JeJe": 361
   },
   "tower_damage": {
-    "jMogwai": 11837,
-    "13": 185,
-    "Communication": 162,
-    "ренальда": 4368,
-    "Профессор вкусных каш": 1103,
+    "jMogwai": 19327,
+    "13": 401,
+    "Communication": 262,
+    "ренальда": 8127,
+    "Профессор вкусных каш": 2840,
     "Davros": 33,
-    "???&": 317,
-    "Donnie": 415,
-    "nerd": 371,
+    "???&": 1799,
+    "Donnie": 151,
+    "nerd": 1510,
     "Kando!JeJe": 0
   },
   "stuns_dealt": {
@@ -626,5 +626,11 @@
     "Donnie": 0,
     "nerd": 0,
     "Kando!JeJe": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

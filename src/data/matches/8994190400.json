@@ -1,5 +1,5 @@
 {
-  "match_id": 404255808,
+  "match_id": 8994190400,
   "start_time": "2026-09-12 17:41:40",
   "start_timestamp": 1789224100.278816,
   "duration_minutes": 43.76,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Shadow Fiend"
     },
     {
       "nickname": "Потные Яйца",
-      "steam_id": 76561198026499354,
+      "steam_id": "76561198026499354",
       "hero": "Ogre Magi"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Snapfire"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Kunkka"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Shadow Shaman"
     }
   ],
   "dire_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Arc Warden"
     },
     {
       "nickname": "P0Druga",
-      "steam_id": 76561199783912739,
+      "steam_id": "76561199783912739",
       "hero": "Lich"
     },
     {
       "nickname": "Itadori Yuji",
-      "steam_id": 76561199642307932,
+      "steam_id": "76561199642307932",
       "hero": "Juggernaut"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Timbersaw"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Spirit Breaker"
     }
   ],
@@ -698,5 +698,6 @@
     "Itadori Yuji": 0,
     "Donnie": 0,
     "Davros": 0
-  }
+  },
+  "match_id_source": "filename_64bit_recovery"
 }

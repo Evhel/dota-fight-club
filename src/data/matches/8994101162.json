@@ -1,9 +1,9 @@
 {
   "match_id": 8994101162,
-  "start_time": "2026-09-11 23:44:30",
-  "start_timestamp": 1789159470.09459,
-  "duration_minutes": 37.36,
-  "duration_seconds": 2241.83,
+  "start_time": "2026-09-11T20:26:48Z",
+  "start_timestamp": 1789158408,
+  "duration_minutes": 35.93,
+  "duration_seconds": 2156,
   "draft_duration_minutes": 10.95,
   "winner": "radiant",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Storm Spirit"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Witch Doctor"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Dragon Knight"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Spectre"
     },
     {
       "nickname": "Потные Яйца",
-      "steam_id": 76561198026499354,
+      "steam_id": "76561198026499354",
       "hero": "Ancient Apparition"
     }
   ],
   "dire_team": [
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Mirana"
     },
     {
       "nickname": "Mat' v mute",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Snapfire"
     },
     {
       "nickname": "P0Druga",
-      "steam_id": 76561199783912739,
+      "steam_id": "76561199783912739",
       "hero": "Jakiro"
     },
     {
       "nickname": "Itadori Yuji",
-      "steam_id": 76561199642307932,
+      "steam_id": "76561199642307932",
       "hero": "Morphling"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Legion Commander"
     }
   ],
@@ -370,71 +370,71 @@
     "Donnie": 9
   },
   "gold_per_minute": {
-    "jMogwai": 739.06,
-    "Davros": 370.6,
-    "???&": 526.79,
-    "Профессор вкусных каш": 539.88,
-    "Потные Яйца": 221.39,
-    "nerd": 435.74,
-    "Mat' v mute": 283.24,
-    "P0Druga": 222.57,
-    "Itadori Yuji": 478.08,
-    "Donnie": 449.15
+    "jMogwai": 810,
+    "Davros": 415,
+    "???&": 558,
+    "Профессор вкусных каш": 605,
+    "Потные Яйца": 254,
+    "nerd": 476,
+    "Mat' v mute": 300,
+    "P0Druga": 237,
+    "Itadori Yuji": 505,
+    "Donnie": 475
   },
   "xp_per_minute": {
-    "jMogwai": 1255.14,
-    "Davros": 486.49,
-    "???&": 745.16,
-    "Профессор вкусных каш": 801.5,
-    "Потные Яйца": 351.3,
-    "nerd": 543.39,
-    "Mat' v mute": 319.83,
-    "P0Druga": 288.57,
-    "Itadori Yuji": 589.93,
-    "Donnie": 641.53
+    "jMogwai": 1392,
+    "Davros": 595,
+    "???&": 774,
+    "Профессор вкусных каш": 924,
+    "Потные Яйца": 417,
+    "nerd": 596,
+    "Mat' v mute": 333,
+    "P0Druga": 301,
+    "Itadori Yuji": 613,
+    "Donnie": 696
   },
   "hero_damage": {
-    "jMogwai": 43780,
-    "Davros": 12415,
-    "???&": 26897,
-    "Профессор вкусных каш": 25721,
-    "Потные Яйца": 13863,
-    "nerd": 16263,
-    "Mat' v mute": 22051,
-    "P0Druga": 13547,
-    "Itadori Yuji": 13409,
-    "Donnie": 35894
+    "jMogwai": 42984,
+    "Davros": 22372,
+    "???&": 23409,
+    "Профессор вкусных каш": 28851,
+    "Потные Яйца": 10777,
+    "nerd": 16165,
+    "Mat' v mute": 19564,
+    "P0Druga": 12383,
+    "Itadori Yuji": 12224,
+    "Donnie": 32749
   },
   "damage_taken": {
-    "jMogwai": 35592,
-    "Davros": 20078,
-    "???&": 40078,
-    "Профессор вкусных каш": 48881,
-    "Потные Яйца": 17309,
-    "nerd": 37673,
-    "Mat' v mute": 28750,
-    "P0Druga": 23485,
-    "Itadori Yuji": 35550,
-    "Donnie": 37150
+    "jMogwai": 18850,
+    "Davros": 17288,
+    "???&": 26855,
+    "Профессор вкусных каш": 15454,
+    "Потные Яйца": 14638,
+    "nerd": 25884,
+    "Mat' v mute": 25595,
+    "P0Druga": 22210,
+    "Itadori Yuji": 23710,
+    "Donnie": 29671
   },
   "hero_healing": {
-    "jMogwai": 26016,
-    "Davros": 14168,
-    "???&": 20426,
-    "Профессор вкусных каш": 15630,
-    "Потные Яйца": 3786,
-    "nerd": 12032,
-    "Mat' v mute": 9847,
-    "P0Druga": 4518,
-    "Itadori Yuji": 7550,
-    "Donnie": 15295
+    "jMogwai": 0,
+    "Davros": 9084,
+    "???&": 0,
+    "Профессор вкусных каш": 0,
+    "Потные Яйца": 0,
+    "nerd": 106,
+    "Mat' v mute": 0,
+    "P0Druga": 0,
+    "Itadori Yuji": 0,
+    "Donnie": 512
   },
   "tower_damage": {
-    "jMogwai": 3548,
-    "Davros": 472,
-    "???&": 5572,
-    "Профессор вкусных каш": 1894,
-    "Потные Яйца": 513,
+    "jMogwai": 7004,
+    "Davros": 739,
+    "???&": 7851,
+    "Профессор вкусных каш": 3038,
+    "Потные Яйца": 920,
     "nerd": 1308,
     "Mat' v mute": 0,
     "P0Druga": 281,
@@ -656,5 +656,11 @@
     "P0Druga": 1,
     "Itadori Yuji": 1,
     "Donnie": 1
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

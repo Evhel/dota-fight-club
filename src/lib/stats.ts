@@ -1,5 +1,9 @@
 import type { ChatMessage, DotaMatch, MatchRow } from "./types";
 
+function hasVerifiedCombat(match: DotaMatch): boolean {
+  return match.data_quality?.terminal_stats_source === "replay_match_details";
+}
+
 export interface PlayerIdentity {
   steam_id: string;
   display_name: string; // first nickname ever used
@@ -195,6 +199,7 @@ export function computePlayerStats(
   let maxGpm = { value: -Infinity, match_id: 0 }, sumGpm = 0;
   let maxXpm = { value: -Infinity, match_id: 0 }, sumXpm = 0;
   let maxDmg = { value: -Infinity, match_id: 0 }, sumDmg = 0;
+  let verifiedCombatGames = 0;
   let maxGot = { value: -Infinity, match_id: 0 }, sumGot = 0;
   let maxHeal = { value: -Infinity, match_id: 0 }, sumHeal = 0;
   let maxBld = { value: -Infinity, match_id: 0 }, sumBld = 0;
@@ -285,13 +290,15 @@ export function computePlayerStats(
     const xpm = m.xpm?.[me.nickname] ?? m.xp_per_minute?.[me.nickname] ?? 0;
     sumXpm += xpm;
     if (xpm > maxXpm.value) maxXpm = { value: xpm, match_id: m.match_id };
-    const dmg = m.hero_damage?.[me.nickname] ?? 0;
+    const verifiedCombat = hasVerifiedCombat(m);
+    if (verifiedCombat) verifiedCombatGames++;
+    const dmg = verifiedCombat ? m.hero_damage?.[me.nickname] ?? 0 : 0;
     sumDmg += dmg;
     if (dmg > maxDmg.value) maxDmg = { value: dmg, match_id: m.match_id };
     const got = m.damage_taken?.[me.nickname] ?? 0;
     sumGot += got;
     if (got > maxGot.value) maxGot = { value: got, match_id: m.match_id };
-    const heal = m.hero_healing?.[me.nickname] ?? 0;
+    const heal = verifiedCombat ? m.hero_healing?.[me.nickname] ?? 0 : 0;
     sumHeal += heal;
     if (heal > maxHeal.value) maxHeal = { value: heal, match_id: m.match_id };
     const bld = m.tower_damage?.[me.nickname] ?? 0;
@@ -403,11 +410,11 @@ export function computePlayerStats(
     max_xpm: { value: maxXpm.value === -Infinity ? 0 : Math.round(maxXpm.value), match_id: maxXpm.match_id },
     avg_xpm: games ? Math.round(sumXpm / games) : 0,
     max_dmg: { value: maxDmg.value === -Infinity ? 0 : Math.round(maxDmg.value), match_id: maxDmg.match_id },
-    avg_dmg: games ? Math.round(sumDmg / games) : 0,
+    avg_dmg: verifiedCombatGames ? Math.round(sumDmg / verifiedCombatGames) : 0,
     max_got: { value: maxGot.value === -Infinity ? 0 : Math.round(maxGot.value), match_id: maxGot.match_id },
     avg_got: games ? Math.round(sumGot / games) : 0,
     max_heal: { value: maxHeal.value === -Infinity ? 0 : Math.round(maxHeal.value), match_id: maxHeal.match_id },
-    avg_heal: games ? Math.round(sumHeal / games) : 0,
+    avg_heal: verifiedCombatGames ? Math.round(sumHeal / verifiedCombatGames) : 0,
     max_bld: { value: maxBld.value === -Infinity ? 0 : Math.round(maxBld.value), match_id: maxBld.match_id },
     avg_bld: games ? Math.round(sumBld / games) : 0,
     top_hero_games: topHeroGames,
@@ -631,7 +638,7 @@ export function computeGlobalStats(
       const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
       topXpm = trackTop(topXpm, sidStr, disp, Math.round(v), m.match_id);
     }
-    for (const [name, v] of Object.entries(m.hero_damage || {})) {
+    for (const [name, v] of Object.entries(hasVerifiedCombat(m) ? m.hero_damage || {} : {})) {
       const sid = nicknameToSteam(m, name); if (!sid) continue;
       const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
       topDmg = trackTop(topDmg, sidStr, disp, v, m.match_id);
@@ -641,7 +648,7 @@ export function computeGlobalStats(
       const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
       topGot = trackTop(topGot, sidStr, disp, v, m.match_id);
     }
-    for (const [name, v] of Object.entries(m.hero_healing || {})) {
+    for (const [name, v] of Object.entries(hasVerifiedCombat(m) ? m.hero_healing || {} : {})) {
       const sid = nicknameToSteam(m, name); if (!sid) continue;
       const sidStr = String(sid); const disp = identities.get(sidStr)?.display_name || name;
       topHeal = trackTop(topHeal, sidStr, disp, v, m.match_id);

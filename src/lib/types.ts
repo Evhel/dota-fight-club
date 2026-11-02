@@ -1,6 +1,6 @@
 export interface MatchPlayer {
   nickname: string;
-  steam_id: number;
+  steam_id: string | number;
   hero: string;
 }
 
@@ -28,6 +28,8 @@ export interface DotaMatch {
   match_id: number;
   start_time: string;
   start_timestamp: number;
+  start_time_source?: "replay_match_details" | "legacy_file_time";
+  data_quality?: { terminal_stats_source?: string; parser_version?: string; parse_error?: string | null };
   duration_minutes: number;
   duration_seconds: number;
   draft_duration_minutes: number;

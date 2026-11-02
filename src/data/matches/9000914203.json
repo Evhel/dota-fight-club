@@ -1,9 +1,9 @@
 {
   "match_id": 9000914203,
-  "start_time": "2026-09-16 01:12:51",
-  "start_timestamp": 1789510371.516124,
-  "duration_minutes": 55.12,
-  "duration_seconds": 3306.97,
+  "start_time": "2026-09-15T21:57:08Z",
+  "start_timestamp": 1789509428,
+  "duration_minutes": 52.6,
+  "duration_seconds": 3156,
   "draft_duration_minutes": 11.3,
   "winner": "radiant",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Sven"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Death Prophet"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Enchantress"
     },
     {
       "nickname": "P0Druga",
-      "steam_id": 76561199783912739,
+      "steam_id": "76561199783912739",
       "hero": "Zeus"
     },
     {
       "nickname": "мелман",
-      "steam_id": 76561198974599395,
+      "steam_id": "76561198974599395",
       "hero": "Nyx Assassin"
     }
   ],
   "dire_team": [
     {
       "nickname": "Itadori Yuji",
-      "steam_id": 76561199642307932,
+      "steam_id": "76561199642307932",
       "hero": "Ogre Magi"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Lifestealer"
     },
     {
       "nickname": "DeR meis+eR",
-      "steam_id": 76561198078638066,
+      "steam_id": "76561198078638066",
       "hero": "Batrider"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Weaver"
     },
     {
       "nickname": "плечо сто",
-      "steam_id": 76561199105241321,
+      "steam_id": "76561199105241321",
       "hero": "Lina"
     }
   ],
@@ -370,73 +370,73 @@
     "плечо сто": 5
   },
   "gold_per_minute": {
-    "???&": 661.73,
-    "nerd": 637.09,
-    "Davros": 472.37,
-    "P0Druga": 321.58,
-    "мелман": 309.15,
-    "Itadori Yuji": 447.47,
-    "Donnie": 642.92,
-    "DeR meis+eR": 404.04,
-    "13": 322.97,
-    "плечо сто": 691.69
+    "???&": 699,
+    "nerd": 671,
+    "Davros": 499,
+    "P0Druga": 342,
+    "мелман": 327,
+    "Itadori Yuji": 469,
+    "Donnie": 745,
+    "DeR meis+eR": 424,
+    "13": 339,
+    "плечо сто": 725
   },
   "xp_per_minute": {
-    "???&": 1126.24,
-    "nerd": 922.38,
-    "Davros": 711.81,
-    "P0Druga": 496.99,
-    "мелман": 534.78,
-    "Itadori Yuji": 645.02,
-    "Donnie": 936.57,
-    "DeR meis+eR": 692.66,
-    "13": 584.51,
-    "плечо сто": 931.72
+    "???&": 1183,
+    "nerd": 966,
+    "Davros": 748,
+    "P0Druga": 524,
+    "мелман": 560,
+    "Itadori Yuji": 675,
+    "Donnie": 1217,
+    "DeR meis+eR": 725,
+    "13": 612,
+    "плечо сто": 976
   },
   "hero_damage": {
-    "???&": 70743,
-    "nerd": 52960,
-    "Davros": 36608,
-    "P0Druga": 35938,
-    "мелман": 25667,
-    "Itadori Yuji": 37870,
-    "Donnie": 43856,
-    "DeR meis+eR": 28093,
-    "13": 21260,
-    "плечо сто": 50856
+    "???&": 47523,
+    "nerd": 47636,
+    "Davros": 34640,
+    "P0Druga": 35288,
+    "мелман": 24075,
+    "Itadori Yuji": 37681,
+    "Donnie": 55180,
+    "DeR meis+eR": 25311,
+    "13": 18563,
+    "плечо сто": 49490
   },
   "damage_taken": {
-    "???&": 59615,
-    "nerd": 62410,
-    "Davros": 52590,
-    "P0Druga": 27619,
-    "мелман": 32065,
-    "Itadori Yuji": 53014,
-    "Donnie": 126147,
-    "DeR meis+eR": 70933,
-    "13": 45805,
-    "плечо сто": 47802
+    "???&": 44242,
+    "nerd": 50200,
+    "Davros": 43193,
+    "P0Druga": 20823,
+    "мелман": 27746,
+    "Itadori Yuji": 35799,
+    "Donnie": 59245,
+    "DeR meis+eR": 36430,
+    "13": 29539,
+    "плечо сто": 26931
   },
   "hero_healing": {
-    "???&": 37276,
-    "nerd": 38600,
-    "Davros": 26462,
-    "P0Druga": 9274,
-    "мелман": 13383,
-    "Itadori Yuji": 23155,
-    "Donnie": 60029,
-    "DeR meis+eR": 40455,
-    "13": 18095,
-    "плечо сто": 24732
+    "???&": 0,
+    "nerd": 106,
+    "Davros": 2137,
+    "P0Druga": 900,
+    "мелман": 0,
+    "Itadori Yuji": 0,
+    "Donnie": 3366,
+    "DeR meis+eR": 900,
+    "13": 0,
+    "плечо сто": 297
   },
   "tower_damage": {
-    "???&": 8792,
-    "nerd": 6762,
-    "Davros": 1537,
+    "???&": 16516,
+    "nerd": 7453,
+    "Davros": 3275,
     "P0Druga": 86,
-    "мелман": 529,
-    "Itadori Yuji": 0,
-    "Donnie": 3381,
+    "мелман": 700,
+    "Itadori Yuji": 128,
+    "Donnie": 6815,
     "DeR meis+eR": 380,
     "13": 409,
     "плечо сто": 2367
@@ -608,5 +608,11 @@
     "DeR meis+eR": 0,
     "13": 0,
     "плечо сто": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

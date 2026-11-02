@@ -1,9 +1,9 @@
 {
   "match_id": 9026413992,
-  "start_time": "2026-10-02 22:24:52",
-  "start_timestamp": 1790969092.37724,
-  "duration_minutes": 48.62,
-  "duration_seconds": 2917.13,
+  "start_time": "2026-10-02T19:09:22Z",
+  "start_timestamp": 1790968162,
+  "duration_minutes": 47.2,
+  "duration_seconds": 2832,
   "draft_duration_minutes": 9.2,
   "winner": "dire",
   "game_mode_id": 2,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Lone Druid"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Timbersaw"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Witch Doctor"
     },
     {
       "nickname": "ренальда",
-      "steam_id": 76561198213414847,
+      "steam_id": "76561198213414847",
       "hero": "Lina"
     },
     {
       "nickname": "Osaki",
-      "steam_id": 76561198306408521,
+      "steam_id": "76561198306408521",
       "hero": "Winter Wyvern"
     }
   ],
   "dire_team": [
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Zeus"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Clinkz"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Abaddon"
     },
     {
       "nickname": "Communication",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Lich"
     },
     {
       "nickname": "Noxxion",
-      "steam_id": 76561198072867743,
+      "steam_id": "76561198072867743",
       "hero": "Grimstroke"
     }
   ],
@@ -466,76 +466,76 @@
     "Noxxion": 1
   },
   "gold_per_minute": {
-    "jMogwai": 580.49,
-    "Donnie": 487.71,
-    "13": 217.82,
-    "ренальда": 708.51,
-    "Osaki": 178.78,
-    "nerd": 659.66,
-    "???&": 810.49,
-    "Davros": 532.08,
-    "Communication": 344.62,
-    "Noxxion": 295.69
+    "jMogwai": 598,
+    "Donnie": 502,
+    "13": 224,
+    "ренальда": 730,
+    "Osaki": 184,
+    "nerd": 691,
+    "???&": 846,
+    "Davros": 563,
+    "Communication": 358,
+    "Noxxion": 308
   },
   "xp_per_minute": {
-    "jMogwai": 561.67,
-    "Donnie": 695.37,
-    "13": 275.04,
-    "ренальда": 1234.38,
-    "Osaki": 240.73,
-    "nerd": 955.55,
-    "???&": 897.55,
-    "Davros": 648.35,
-    "Communication": 525.33,
-    "Noxxion": 576.07
+    "jMogwai": 578,
+    "Donnie": 716,
+    "13": 283,
+    "ренальда": 1271,
+    "Osaki": 247,
+    "nerd": 991,
+    "???&": 936,
+    "Davros": 681,
+    "Communication": 541,
+    "Noxxion": 593
   },
   "hero_damage": {
-    "jMogwai": 3200,
-    "Donnie": 18428,
-    "13": 7011,
-    "ренальда": 37975,
+    "jMogwai": 16577,
+    "Donnie": 13328,
+    "13": 7404,
+    "ренальда": 35418,
     "Osaki": 7629,
-    "nerd": 77228,
-    "???&": 60007,
-    "Davros": 20476,
-    "Communication": 20895,
-    "Noxxion": 13838
+    "nerd": 77579,
+    "???&": 54942,
+    "Davros": 18470,
+    "Communication": 20745,
+    "Noxxion": 13613
   },
   "damage_taken": {
-    "jMogwai": 35943,
-    "Donnie": 64899,
-    "13": 21993,
-    "ренальда": 37110,
-    "Osaki": 22727,
-    "nerd": 25968,
-    "???&": 24098,
-    "Davros": 40762,
-    "Communication": 15027,
-    "Noxxion": 21049
+    "jMogwai": 81618,
+    "Donnie": 41324,
+    "13": 18800,
+    "ренальда": 24472,
+    "Osaki": 19135,
+    "nerd": 14790,
+    "???&": 18993,
+    "Davros": 22552,
+    "Communication": 10565,
+    "Noxxion": 13377
   },
   "hero_healing": {
-    "jMogwai": 39664,
-    "Donnie": 35274,
-    "13": 12612,
-    "ренальда": 20250,
-    "Osaki": 8138,
-    "nerd": 17889,
-    "???&": 7128,
-    "Davros": 31750,
-    "Communication": 9653,
-    "Noxxion": 10300
+    "jMogwai": 0,
+    "Donnie": 0,
+    "13": 3007,
+    "ренальда": 0,
+    "Osaki": 1801,
+    "nerd": 106,
+    "???&": 0,
+    "Davros": 2015,
+    "Communication": 125,
+    "Noxxion": 199
   },
   "tower_damage": {
-    "jMogwai": 0,
+    "jMogwai": 3697,
     "Donnie": 0,
     "13": 0,
     "ренальда": 1470,
     "Osaki": 0,
-    "nerd": 452,
-    "???&": 14753,
-    "Davros": 2236,
+    "nerd": 1314,
+    "???&": 24779,
+    "Davros": 3446,
     "Communication": 0,
-    "Noxxion": 313
+    "Noxxion": 635
   },
   "stuns_dealt": {
     "jMogwai": 53.07,
@@ -740,5 +740,11 @@
     "Davros": 0,
     "Communication": 1,
     "Noxxion": 1
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

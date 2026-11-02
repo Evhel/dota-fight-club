@@ -1,9 +1,9 @@
 {
   "match_id": 9026689120,
-  "start_time": "2026-10-03 10:33:21",
-  "start_timestamp": 1791704001.483885,
-  "duration_minutes": 43.65,
-  "duration_seconds": 2618.77,
+  "start_time": "2026-10-02T23:27:02Z",
+  "start_timestamp": 1790983622,
+  "duration_minutes": 39.75,
+  "duration_seconds": 2385,
   "draft_duration_minutes": 12.65,
   "winner": "radiant",
   "game_mode_id": 2,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Axe"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Spirit Breaker"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Riki"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Abaddon"
     },
     {
       "nickname": "NativeX",
-      "steam_id": 76561198015722400,
+      "steam_id": "76561198015722400",
       "hero": "Silencer"
     }
   ],
   "dire_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Kez"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Alchemist"
     },
     {
       "nickname": "Kando!JeJe",
-      "steam_id": 76561198040946408,
+      "steam_id": "76561198040946408",
       "hero": "Hoodwink"
     },
     {
       "nickname": "uwuntermensch",
-      "steam_id": 76561198133094078,
+      "steam_id": "76561198133094078",
       "hero": "Legion Commander"
     },
     {
       "nickname": "Потные Яйца",
-      "steam_id": 76561198026499354,
+      "steam_id": "76561198026499354",
       "hero": "Undying"
     }
   ],
@@ -466,71 +466,71 @@
     "Потные Яйца": 0
   },
   "gold_per_minute": {
-    "Donnie": 678.3,
-    "13": 373.76,
-    "???&": 519.36,
-    "Профессор вкусных каш": 704.87,
-    "NativeX": 249.8,
-    "jMogwai": 457.29,
-    "nerd": 528.04,
-    "Kando!JeJe": 260.57,
-    "uwuntermensch": 291.18,
-    "Потные Яйца": 237.34
+    "Donnie": 748,
+    "13": 414,
+    "???&": 578,
+    "Профессор вкусных каш": 778,
+    "NativeX": 278,
+    "jMogwai": 502,
+    "nerd": 580,
+    "Kando!JeJe": 286,
+    "uwuntermensch": 320,
+    "Потные Яйца": 261
   },
   "xp_per_minute": {
-    "Donnie": 913.32,
-    "13": 733.35,
-    "???&": 1022.54,
-    "Профессор вкусных каш": 886.36,
-    "NativeX": 365.58,
-    "jMogwai": 599.43,
-    "nerd": 524.38,
-    "Kando!JeJe": 354.65,
-    "uwuntermensch": 367.68,
-    "Потные Яйца": 395.59
+    "Donnie": 1002,
+    "13": 805,
+    "???&": 1122,
+    "Профессор вкусных каш": 976,
+    "NativeX": 406,
+    "jMogwai": 658,
+    "nerd": 575,
+    "Kando!JeJe": 389,
+    "uwuntermensch": 403,
+    "Потные Яйца": 434
   },
   "hero_damage": {
-    "Donnie": 57397,
-    "13": 22251,
+    "Donnie": 55052,
+    "13": 21566,
     "???&": 26418,
-    "Профессор вкусных каш": 22200,
-    "NativeX": 8583,
-    "jMogwai": 48532,
-    "nerd": 18334,
-    "Kando!JeJe": 13788,
-    "uwuntermensch": 21238,
-    "Потные Яйца": 7707
+    "Профессор вкусных каш": 19823,
+    "NativeX": 8577,
+    "jMogwai": 30569,
+    "nerd": 14742,
+    "Kando!JeJe": 12780,
+    "uwuntermensch": 20326,
+    "Потные Яйца": 12467
   },
   "damage_taken": {
-    "Donnie": 45542,
-    "13": 34967,
-    "???&": 29081,
-    "Профессор вкусных каш": 36381,
-    "NativeX": 15678,
-    "jMogwai": 35151,
-    "nerd": 42063,
-    "Kando!JeJe": 17662,
-    "uwuntermensch": 38452,
-    "Потные Яйца": 35299
+    "Donnie": 22882,
+    "13": 22316,
+    "???&": 19400,
+    "Профессор вкусных каш": 14185,
+    "NativeX": 12101,
+    "jMogwai": 24186,
+    "nerd": 24726,
+    "Kando!JeJe": 15654,
+    "uwuntermensch": 30308,
+    "Потные Яйца": 32930
   },
   "hero_healing": {
-    "Donnie": 28932,
-    "13": 19839,
-    "???&": 18928,
-    "Профессор вкусных каш": 26866,
-    "NativeX": 7438,
-    "jMogwai": 13141,
-    "nerd": 20360,
-    "Kando!JeJe": 6115,
-    "uwuntermensch": 14789,
-    "Потные Яйца": 10756
+    "Donnie": 0,
+    "13": 0,
+    "???&": 130,
+    "Профессор вкусных каш": 3397,
+    "NativeX": 0,
+    "jMogwai": 0,
+    "nerd": 0,
+    "Kando!JeJe": 0,
+    "uwuntermensch": 336,
+    "Потные Яйца": 2808
   },
   "tower_damage": {
-    "Donnie": 504,
-    "13": 1578,
-    "???&": 3971,
-    "Профессор вкусных каш": 9472,
-    "NativeX": 957,
+    "Donnie": 763,
+    "13": 2157,
+    "???&": 5696,
+    "Профессор вкусных каш": 18000,
+    "NativeX": 2177,
     "jMogwai": 0,
     "nerd": 656,
     "Kando!JeJe": 0,
@@ -698,5 +698,11 @@
     "Kando!JeJe": 0,
     "uwuntermensch": 0,
     "Потные Яйца": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

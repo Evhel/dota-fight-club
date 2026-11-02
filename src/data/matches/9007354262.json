@@ -1,9 +1,9 @@
 {
   "match_id": 9007354262,
-  "start_time": "2026-09-20 04:05:46",
-  "start_timestamp": 1789866346.454089,
-  "duration_minutes": 52.98,
-  "duration_seconds": 3178.53,
+  "start_time": "2026-09-20T00:44:59Z",
+  "start_timestamp": 1789865099,
+  "duration_minutes": 51.55,
+  "duration_seconds": 3093,
   "draft_duration_minutes": 10.78,
   "winner": "radiant",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Lina"
     },
     {
       "nickname": "Mat' v mute",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Zeus"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Razor"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Wraith King"
     },
     {
       "nickname": "мелман",
-      "steam_id": 76561198974599395,
+      "steam_id": "76561198974599395",
       "hero": "Nyx Assassin"
     }
   ],
   "dire_team": [
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Sniper"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Legion Commander"
     },
     {
       "nickname": "Как же он сияет",
-      "steam_id": 76561199642307932,
+      "steam_id": "76561199642307932",
       "hero": "Juggernaut"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Viper"
     },
     {
       "nickname": "baal",
-      "steam_id": 76561199105241321,
+      "steam_id": "76561199105241321",
       "hero": "Bane"
     }
   ],
@@ -370,71 +370,71 @@
     "baal": 1
   },
   "gold_per_minute": {
-    "jMogwai": 672.9,
-    "Mat' v mute": 376.36,
-    "???&": 619.57,
-    "Davros": 615.96,
-    "мелман": 353.65,
-    "nerd": 688.28,
-    "Donnie": 527.68,
-    "Как же он сияет": 627.99,
-    "13": 315.03,
-    "baal": 251.59
+    "jMogwai": 734,
+    "Mat' v mute": 411,
+    "???&": 676,
+    "Davros": 666,
+    "мелман": 388,
+    "nerd": 708,
+    "Donnie": 544,
+    "Как же он сияет": 646,
+    "13": 324,
+    "baal": 259
   },
   "xp_per_minute": {
-    "jMogwai": 1111.85,
-    "Mat' v mute": 710.61,
-    "???&": 901.15,
-    "Davros": 1077.5,
-    "мелман": 709.25,
-    "nerd": 958.1,
-    "Donnie": 834.88,
-    "Как же он сияет": 1003.46,
-    "13": 525.03,
-    "baal": 426.71
+    "jMogwai": 1230,
+    "Mat' v mute": 773,
+    "???&": 969,
+    "Davros": 1161,
+    "мелман": 771,
+    "nerd": 984,
+    "Donnie": 858,
+    "Как же он сияет": 1031,
+    "13": 540,
+    "baal": 438
   },
   "hero_damage": {
-    "jMogwai": 44854,
-    "Mat' v mute": 28132,
-    "???&": 32407,
-    "Davros": 46867,
-    "мелман": 27657,
-    "nerd": 90766,
-    "Donnie": 36555,
-    "Как же он сияет": 89925,
-    "13": 22081,
-    "baal": 9599
+    "jMogwai": 31530,
+    "Mat' v mute": 28388,
+    "???&": 32175,
+    "Davros": 34633,
+    "мелман": 27896,
+    "nerd": 56387,
+    "Donnie": 33466,
+    "Как же он сияет": 42978,
+    "13": 24107,
+    "baal": 7706
   },
   "damage_taken": {
-    "jMogwai": 51003,
-    "Mat' v mute": 33546,
-    "???&": 99068,
-    "Davros": 91594,
-    "мелман": 43560,
-    "nerd": 40420,
-    "Donnie": 59536,
-    "Как же он сияет": 49897,
-    "13": 42157,
-    "baal": 34487
+    "jMogwai": 25035,
+    "Mat' v mute": 23627,
+    "???&": 36715,
+    "Davros": 50912,
+    "мелман": 28054,
+    "nerd": 29588,
+    "Donnie": 34670,
+    "Как же он сияет": 31709,
+    "13": 31560,
+    "baal": 27095
   },
   "hero_healing": {
-    "jMogwai": 24989,
-    "Mat' v mute": 14618,
-    "???&": 28229,
-    "Davros": 34649,
-    "мелман": 8566,
-    "nerd": 16137,
-    "Donnie": 33321,
-    "Как же он сияет": 18589,
-    "13": 10358,
-    "baal": 10402
+    "jMogwai": 0,
+    "Mat' v mute": 0,
+    "???&": 0,
+    "Davros": 0,
+    "мелман": 125,
+    "nerd": 0,
+    "Donnie": 1080,
+    "Как же он сияет": 3254,
+    "13": 0,
+    "baal": 63
   },
   "tower_damage": {
-    "jMogwai": 5031,
-    "Mat' v mute": 40,
-    "???&": 6395,
-    "Davros": 3448,
-    "мелман": 285,
+    "jMogwai": 7358,
+    "Mat' v mute": 144,
+    "???&": 8610,
+    "Davros": 7996,
+    "мелман": 383,
     "nerd": 4778,
     "Donnie": 1181,
     "Как же он сияет": 583,
@@ -571,5 +571,11 @@
     "Как же он сияет": 0,
     "13": 0,
     "baal": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

@@ -1,9 +1,9 @@
 {
   "match_id": 9016205624,
-  "start_time": "2026-09-26 18:22:59",
-  "start_timestamp": 1790436179.992487,
-  "duration_minutes": 70.41,
-  "duration_seconds": 4224.53,
+  "start_time": "2026-09-25T22:41:01Z",
+  "start_timestamp": 1790376061,
+  "duration_minutes": 65.57,
+  "duration_seconds": 3934,
   "draft_duration_minutes": 12.57,
   "winner": "radiant",
   "game_mode_id": 2,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Necrophos"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Bristleback"
     },
     {
       "nickname": "Kando!JeJe",
-      "steam_id": 76561198040946408,
+      "steam_id": "76561198040946408",
       "hero": "Windranger"
     },
     {
       "nickname": "ренальда",
-      "steam_id": 76561198213414847,
+      "steam_id": "76561198213414847",
       "hero": "Invoker"
     },
     {
       "nickname": "fuRy7ane",
-      "steam_id": 76561198000432767,
+      "steam_id": "76561198000432767",
       "hero": "Magnus"
     }
   ],
   "dire_team": [
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Zeus"
     },
     {
       "nickname": "Communication",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Spirit Breaker"
     },
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Muerta"
     },
     {
       "nickname": "Osaki",
-      "steam_id": 76561198306408521,
+      "steam_id": "76561198306408521",
       "hero": "Ring Master"
     },
     {
       "nickname": "Спортсмен",
-      "steam_id": 76561198020458182,
+      "steam_id": "76561198020458182",
       "hero": "Dawnbreaker"
     }
   ],
@@ -466,71 +466,71 @@
     "Спортсмен": 11
   },
   "gold_per_minute": {
-    "???&": 656.85,
-    "Donnie": 585.42,
-    "Kando!JeJe": 265.65,
-    "ренальда": 533.82,
-    "fuRy7ane": 244.77,
-    "nerd": 665.13,
-    "Communication": 351.12,
-    "jMogwai": 628.19,
-    "Osaki": 222.5,
-    "Спортсмен": 625.86
+    "???&": 730,
+    "Donnie": 654,
+    "Kando!JeJe": 308,
+    "ренальда": 597,
+    "fuRy7ane": 280,
+    "nerd": 718,
+    "Communication": 378,
+    "jMogwai": 676,
+    "Osaki": 241,
+    "Спортсмен": 673
   },
   "xp_per_minute": {
-    "???&": 858.37,
-    "Donnie": 914.66,
-    "Kando!JeJe": 484.14,
-    "ренальда": 768.91,
-    "fuRy7ane": 386.47,
-    "nerd": 914.66,
-    "Communication": 691.39,
-    "jMogwai": 805.92,
-    "Osaki": 518.76,
-    "Спортсмен": 914.66
+    "???&": 967,
+    "Donnie": 1063,
+    "Kando!JeJe": 563,
+    "ренальда": 872,
+    "fuRy7ane": 469,
+    "nerd": 1001,
+    "Communication": 742,
+    "jMogwai": 865,
+    "Osaki": 559,
+    "Спортсмен": 1130
   },
   "hero_damage": {
-    "???&": 53641,
-    "Donnie": 87194,
-    "Kando!JeJe": 11309,
-    "ренальда": 52688,
-    "fuRy7ane": 10645,
-    "nerd": 98719,
-    "Communication": 23804,
-    "jMogwai": 99741,
-    "Osaki": 13600,
-    "Спортсмен": 85050
+    "???&": 57440,
+    "Donnie": 88156,
+    "Kando!JeJe": 10753,
+    "ренальда": 61085,
+    "fuRy7ane": 11540,
+    "nerd": 101896,
+    "Communication": 23454,
+    "jMogwai": 65889,
+    "Osaki": 15671,
+    "Спортсмен": 53280
   },
   "damage_taken": {
-    "???&": 101193,
-    "Donnie": 157864,
-    "Kando!JeJe": 51444,
-    "ренальда": 57110,
-    "fuRy7ane": 51962,
-    "nerd": 74309,
-    "Communication": 65608,
-    "jMogwai": 67841,
-    "Osaki": 30684,
-    "Спортсмен": 83413
+    "???&": 59613,
+    "Donnie": 88310,
+    "Kando!JeJe": 30336,
+    "ренальда": 43926,
+    "fuRy7ane": 38005,
+    "nerd": 42015,
+    "Communication": 48316,
+    "jMogwai": 48676,
+    "Osaki": 21725,
+    "Спортсмен": 64893
   },
   "hero_healing": {
-    "???&": 69962,
-    "Donnie": 68889,
-    "Kando!JeJe": 21756,
-    "ренальда": 32974,
-    "fuRy7ane": 13448,
-    "nerd": 44663,
-    "Communication": 33470,
-    "jMogwai": 36827,
-    "Osaki": 12954,
-    "Спортсмен": 75962
+    "???&": 11773,
+    "Donnie": 0,
+    "Kando!JeJe": 0,
+    "ренальда": 0,
+    "fuRy7ane": 0,
+    "nerd": 0,
+    "Communication": 900,
+    "jMogwai": 0,
+    "Osaki": 125,
+    "Спортсмен": 12939
   },
   "tower_damage": {
-    "???&": 2736,
-    "Donnie": 5488,
-    "Kando!JeJe": 1118,
-    "ренальда": 3187,
-    "fuRy7ane": 133,
+    "???&": 4537,
+    "Donnie": 13092,
+    "Kando!JeJe": 2490,
+    "ренальда": 10704,
+    "fuRy7ane": 222,
     "nerd": 887,
     "Communication": 0,
     "jMogwai": 4973,
@@ -716,5 +716,11 @@
     "jMogwai": 0,
     "Osaki": 0,
     "Спортсмен": 2
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

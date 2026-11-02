@@ -1,9 +1,9 @@
 {
   "match_id": 9032581042,
-  "start_time": "2026-10-07 22:21:52",
-  "start_timestamp": 1791400912.82597,
-  "duration_minutes": 42.29,
-  "duration_seconds": 2537.27,
+  "start_time": "2026-10-06T19:37:22Z",
+  "start_timestamp": 1791315442,
+  "duration_minutes": 40.6,
+  "duration_seconds": 2436,
   "draft_duration_minutes": 9.45,
   "winner": "dire",
   "game_mode_id": 2,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Troll Warlord"
     },
     {
       "nickname": "P0Druga",
-      "steam_id": 76561199783912739,
+      "steam_id": "76561199783912739",
       "hero": "Lich"
     },
     {
       "nickname": "мелман",
-      "steam_id": 76561198974599395,
+      "steam_id": "76561198974599395",
       "hero": "Axe"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Spirit Breaker"
     },
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Earthshaker"
     }
   ],
   "dire_team": [
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Lifestealer"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Timbersaw"
     },
     {
       "nickname": "Kando!JeJe",
-      "steam_id": 76561198040946408,
+      "steam_id": "76561198040946408",
       "hero": "Ogre Magi"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Viper"
     },
     {
       "nickname": "Osaki",
-      "steam_id": 76561198306408521,
+      "steam_id": "76561198306408521",
       "hero": "Shadow Shaman"
     }
   ],
@@ -466,64 +466,64 @@
     "Osaki": 3
   },
   "gold_per_minute": {
-    "Donnie": 527.69,
-    "P0Druga": 281.43,
-    "мелман": 413.17,
-    "13": 257.05,
-    "jMogwai": 541.95,
-    "nerd": 618.45,
-    "Профессор вкусных каш": 635.81,
-    "Kando!JeJe": 353.84,
-    "Davros": 402.53,
-    "Osaki": 290.63
+    "Donnie": 551,
+    "P0Druga": 295,
+    "мелман": 432,
+    "13": 269,
+    "jMogwai": 577,
+    "nerd": 681,
+    "Профессор вкусных каш": 726,
+    "Kando!JeJe": 402,
+    "Davros": 465,
+    "Osaki": 328
   },
   "xp_per_minute": {
-    "Donnie": 689.73,
-    "P0Druga": 427.19,
-    "мелман": 601.14,
-    "13": 446.58,
-    "jMogwai": 790.46,
-    "nerd": 823.36,
-    "Профессор вкусных каш": 768.54,
-    "Kando!JeJe": 478.41,
-    "Davros": 510.6,
-    "Osaki": 391.72
+    "Donnie": 718,
+    "P0Druga": 450,
+    "мелман": 627,
+    "13": 466,
+    "jMogwai": 842,
+    "nerd": 929,
+    "Профессор вкусных каш": 874,
+    "Kando!JeJe": 571,
+    "Davros": 613,
+    "Osaki": 478
   },
   "hero_damage": {
-    "Donnie": 24239,
-    "P0Druga": 16996,
-    "мелман": 21332,
-    "13": 13872,
-    "jMogwai": 38915,
-    "nerd": 37401,
-    "Профессор вкусных каш": 33980,
-    "Kando!JeJe": 15750,
-    "Davros": 18917,
-    "Osaki": 7516
+    "Donnie": 23973,
+    "P0Druga": 17489,
+    "мелман": 21911,
+    "13": 14800,
+    "jMogwai": 35853,
+    "nerd": 37143,
+    "Профессор вкусных каш": 33780,
+    "Kando!JeJe": 12990,
+    "Davros": 17215,
+    "Osaki": 13681
   },
   "damage_taken": {
-    "Donnie": 50628,
-    "P0Druga": 19421,
-    "мелман": 31416,
-    "13": 27469,
-    "jMogwai": 40228,
-    "nerd": 51771,
-    "Профессор вкусных каш": 48103,
-    "Kando!JeJe": 24102,
-    "Davros": 29284,
-    "Osaki": 16424
+    "Donnie": 28405,
+    "P0Druga": 15847,
+    "мелман": 22344,
+    "13": 21137,
+    "jMogwai": 27076,
+    "nerd": 35600,
+    "Профессор вкусных каш": 35835,
+    "Kando!JeJe": 14805,
+    "Davros": 15684,
+    "Osaki": 11614
   },
   "hero_healing": {
-    "Donnie": 20716,
-    "P0Druga": 7784,
-    "мелман": 22582,
-    "13": 10115,
-    "jMogwai": 21355,
-    "nerd": 36879,
-    "Профессор вкусных каш": 27563,
-    "Kando!JeJe": 13668,
-    "Davros": 13240,
-    "Osaki": 8222
+    "Donnie": 0,
+    "P0Druga": 0,
+    "мелман": 0,
+    "13": 125,
+    "jMogwai": 0,
+    "nerd": 1852,
+    "Профессор вкусных каш": 0,
+    "Kando!JeJe": 0,
+    "Davros": 1044,
+    "Osaki": 0
   },
   "tower_damage": {
     "Donnie": 137,
@@ -531,11 +531,11 @@
     "мелман": 243,
     "13": 241,
     "jMogwai": 451,
-    "nerd": 10621,
-    "Профессор вкусных каш": 1946,
-    "Kando!JeJe": 549,
-    "Davros": 3241,
-    "Osaki": 364
+    "nerd": 13273,
+    "Профессор вкусных каш": 3423,
+    "Kando!JeJe": 1519,
+    "Davros": 4989,
+    "Osaki": 3809
   },
   "stuns_dealt": {
     "Donnie": 90.95,
@@ -752,5 +752,11 @@
     "Kando!JeJe": 0,
     "Davros": 0,
     "Osaki": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

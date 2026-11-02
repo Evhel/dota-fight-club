@@ -1,9 +1,9 @@
 {
   "match_id": 9028266777,
-  "start_time": "2026-10-04 10:47:06",
-  "start_timestamp": 1791704826.839715,
-  "duration_minutes": 32.95,
-  "duration_seconds": 1976.83,
+  "start_time": "2026-10-03T22:14:55Z",
+  "start_timestamp": 1791065695,
+  "duration_minutes": 31.75,
+  "duration_seconds": 1905,
   "draft_duration_minutes": 10.23,
   "winner": "radiant",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Axe"
     },
     {
       "nickname": "Kando!JeJe",
-      "steam_id": 76561198040946408,
+      "steam_id": "76561198040946408",
       "hero": "Enchantress"
     },
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Storm Spirit"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Silencer"
     },
     {
       "nickname": "Communication",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Luna"
     }
   ],
   "dire_team": [
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Shadow Fiend"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Bristleback"
     },
     {
       "nickname": "Osaki",
-      "steam_id": 76561198306408521,
+      "steam_id": "76561198306408521",
       "hero": "Ring Master"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Medusa"
     },
     {
       "nickname": "мелман",
-      "steam_id": 76561198974599395,
+      "steam_id": "76561198974599395",
       "hero": "Nyx Assassin"
     }
   ],
@@ -370,71 +370,71 @@
     "мелман": 9
   },
   "gold_per_minute": {
-    "Профессор вкусных каш": 461.28,
-    "Kando!JeJe": 227.73,
-    "jMogwai": 692.23,
-    "13": 266.88,
-    "Communication": 596.74,
-    "nerd": 469.11,
-    "Donnie": 432.42,
-    "Osaki": 169.63,
-    "???&": 531.73,
-    "мелман": 204.11
+    "Профессор вкусных каш": 479,
+    "Kando!JeJe": 237,
+    "jMogwai": 731,
+    "13": 277,
+    "Communication": 620,
+    "nerd": 487,
+    "Donnie": 449,
+    "Osaki": 178,
+    "???&": 552,
+    "мелман": 212
   },
   "xp_per_minute": {
-    "Профессор вкусных каш": 519.1,
-    "Kando!JeJe": 417.49,
-    "jMogwai": 1138.4,
-    "13": 348.65,
-    "Communication": 717.45,
-    "nerd": 510.42,
-    "Donnie": 544.9,
-    "Osaki": 248.88,
-    "???&": 640.96,
-    "мелман": 372.11
+    "Профессор вкусных каш": 538,
+    "Kando!JeJe": 433,
+    "jMogwai": 1218,
+    "13": 364,
+    "Communication": 746,
+    "nerd": 529,
+    "Donnie": 565,
+    "Osaki": 258,
+    "???&": 664,
+    "мелман": 385
   },
   "hero_damage": {
-    "Профессор вкусных каш": 6789,
+    "Профессор вкусных каш": 6759,
     "Kando!JeJe": 2617,
-    "jMogwai": 41472,
-    "13": 8041,
-    "Communication": 19072,
-    "nerd": 17611,
-    "Donnie": 25677,
-    "Osaki": 4635,
-    "???&": 13338,
-    "мелман": 9891
+    "jMogwai": 35027,
+    "13": 7728,
+    "Communication": 14478,
+    "nerd": 16763,
+    "Donnie": 22119,
+    "Osaki": 4692,
+    "???&": 12417,
+    "мелман": 9816
   },
   "damage_taken": {
-    "Профессор вкусных каш": 27772,
-    "Kando!JeJe": 13102,
-    "jMogwai": 35555,
-    "13": 13745,
-    "Communication": 29926,
-    "nerd": 25637,
-    "Donnie": 34197,
-    "Osaki": 11981,
-    "???&": 9677,
-    "мелман": 15905
+    "Профессор вкусных каш": 14657,
+    "Kando!JeJe": 9344,
+    "jMogwai": 19541,
+    "13": 10050,
+    "Communication": 12215,
+    "nerd": 19715,
+    "Donnie": 21829,
+    "Osaki": 10082,
+    "???&": 2692,
+    "мелман": 11423
   },
   "hero_healing": {
-    "Профессор вкусных каш": 19883,
-    "Kando!JeJe": 17863,
-    "jMogwai": 27344,
-    "13": 8249,
-    "Communication": 17001,
-    "nerd": 11536,
-    "Donnie": 20477,
-    "Osaki": 2736,
-    "???&": 597,
-    "мелман": 6631
+    "Профессор вкусных каш": 0,
+    "Kando!JeJe": 7552,
+    "jMogwai": 0,
+    "13": 0,
+    "Communication": 0,
+    "nerd": 0,
+    "Donnie": 0,
+    "Osaki": 0,
+    "???&": 0,
+    "мелман": 0
   },
   "tower_damage": {
-    "Профессор вкусных каш": 1586,
-    "Kando!JeJe": 1179,
-    "jMogwai": 3556,
-    "13": 306,
-    "Communication": 6499,
+    "Профессор вкусных каш": 1891,
+    "Kando!JeJe": 1545,
+    "jMogwai": 5185,
+    "13": 440,
+    "Communication": 10714,
     "nerd": 1386,
     "Donnie": 62,
     "Osaki": 56,
@@ -620,5 +620,11 @@
     "Osaki": 0,
     "???&": 0,
     "мелман": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

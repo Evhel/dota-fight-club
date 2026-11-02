@@ -1,9 +1,9 @@
 {
   "match_id": 9010356543,
-  "start_time": "2026-09-23 21:44:03",
-  "start_timestamp": 1790189043.766592,
-  "duration_minutes": 3.7,
-  "duration_seconds": 221.8,
+  "start_time": "2026-09-21T21:11:57Z",
+  "start_timestamp": 1790025117,
+  "duration_minutes": 0.7,
+  "duration_seconds": 42,
   "draft_duration_minutes": 11.68,
   "winner": "dire",
   "game_mode_id": 2,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Spectre"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Storm Spirit"
     },
     {
       "nickname": "Communication",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Dark Willow"
     },
     {
       "nickname": "DeR meis+eR",
-      "steam_id": 76561198078638066,
+      "steam_id": "76561198078638066",
       "hero": "Centaur Warrunner"
     },
     {
       "nickname": "СУМАТОХА",
-      "steam_id": 76561199642307932,
+      "steam_id": "76561199642307932",
       "hero": "Skywrath Mage"
     }
   ],
   "dire_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Windranger"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Dazzle"
     },
     {
       "nickname": "Облепиховая мышь",
-      "steam_id": 76561198870458846,
+      "steam_id": "76561198870458846",
       "hero": "Bane"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Timbersaw"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Terrorblade"
     }
   ],
@@ -466,28 +466,28 @@
     "nerd": 0
   },
   "gold_per_minute": {
-    "???&": 39.22,
-    "Профессор вкусных каш": 51.94,
-    "Communication": 39.22,
-    "DeR meis+eR": 48.42,
-    "СУМАТОХА": 39.22,
-    "jMogwai": 39.22,
-    "Davros": 39.22,
-    "Облепиховая мышь": 39.22,
-    "Donnie": 49.77,
-    "nerd": 39.22
+    "???&": 202,
+    "Профессор вкусных каш": 268,
+    "Communication": 202,
+    "DeR meis+eR": 250,
+    "СУМАТОХА": 202,
+    "jMogwai": 202,
+    "Davros": 202,
+    "Облепиховая мышь": 202,
+    "Donnie": 257,
+    "nerd": 202
   },
   "xp_per_minute": {
-    "???&": 0.0,
-    "Профессор вкусных каш": 57.08,
-    "Communication": 0.0,
-    "DeR meis+eR": 7.57,
-    "СУМАТОХА": 7.57,
-    "jMogwai": 15.42,
-    "Davros": 7.57,
-    "Облепиховая мышь": 7.57,
-    "Donnie": 7.57,
-    "nerd": 0.0
+    "???&": 0,
+    "Профессор вкусных каш": 295,
+    "Communication": 0,
+    "DeR meis+eR": 39,
+    "СУМАТОХА": 39,
+    "jMogwai": 79,
+    "Davros": 39,
+    "Облепиховая мышь": 39,
+    "Donnie": 39,
+    "nerd": 0
   },
   "hero_damage": {
     "???&": 0,
@@ -499,31 +499,31 @@
     "Davros": 0,
     "Облепиховая мышь": 143,
     "Donnie": 0,
-    "nerd": 1
+    "nerd": 0
   },
   "damage_taken": {
-    "???&": 167,
-    "Профессор вкусных каш": 27,
-    "Communication": 0,
-    "DeR meis+eR": 0,
-    "СУМАТОХА": 0,
-    "jMogwai": 164,
-    "Davros": 0,
-    "Облепиховая мышь": 43,
-    "Donnie": 73,
-    "nerd": 224
-  },
-  "hero_healing": {
-    "???&": 29,
+    "???&": 143,
     "Профессор вкусных каш": 0,
     "Communication": 0,
     "DeR meis+eR": 0,
     "СУМАТОХА": 0,
-    "jMogwai": 41,
+    "jMogwai": 138,
     "Davros": 0,
     "Облепиховая мышь": 0,
     "Donnie": 0,
-    "nerd": 55
+    "nerd": 168
+  },
+  "hero_healing": {
+    "???&": 0,
+    "Профессор вкусных каш": 0,
+    "Communication": 0,
+    "DeR meis+eR": 0,
+    "СУМАТОХА": 0,
+    "jMogwai": 0,
+    "Davros": 0,
+    "Облепиховая мышь": 0,
+    "Donnie": 0,
+    "nerd": 0
   },
   "tower_damage": {
     "???&": 0,
@@ -728,5 +728,11 @@
     "Облепиховая мышь": 0,
     "Donnie": 0,
     "nerd": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

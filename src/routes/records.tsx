@@ -40,6 +40,10 @@ function RecordsPage() {
   return (
     <div className="space-y-4">
       <h1 className="text-3xl font-display text-glow text-center">Рекорды</h1>
+      <p className="text-sm text-muted-foreground text-center">
+        Урон и лечение — по итоговой статистике Dota, без урона по иллюзиям.
+        Проверено матчей: {matches.filter((m) => m.data.data_quality?.terminal_stats_source === "replay_match_details").length} из {matches.length}.
+      </p>
       <div className="panel overflow-x-auto max-w-2xl mx-auto">
         <table className="w-full text-base text-center">
           <thead className="bg-muted/30">

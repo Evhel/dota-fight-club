@@ -29,7 +29,9 @@ const byId = new Map<number, MatchRow>();
 for (const raw of Object.values(modules)) {
   const data = raw as DotaMatch;
   if (!data || !data.match_id) continue;
-  const start_time = normalizeTime(data.start_time);
+  const start_time = data.start_time_source === "replay_match_details"
+    ? new Date(data.start_timestamp * 1000).toISOString()
+    : normalizeTime(data.start_time);
   byId.set(Number(data.match_id), {
     match_id: Number(data.match_id),
     start_time,
@@ -39,7 +41,7 @@ for (const raw of Object.values(modules)) {
 }
 
 export const STATIC_MATCHES: MatchRow[] = [...byId.values()].sort(
-  (a, b) => new Date(b.start_time).getTime() - new Date(a.start_time).getTime(),
+  (a, b) => new Date(b.start_time).getTime() - new Date(a.start_time).getTime() || b.match_id - a.match_id,
 );
 
 function lines(raw: string): string[] {

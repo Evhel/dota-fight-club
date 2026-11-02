@@ -1,9 +1,9 @@
 {
   "match_id": 9007240751,
-  "start_time": "2026-09-20 02:57:56",
-  "start_timestamp": 1789862276.725167,
-  "duration_minutes": 34.66,
-  "duration_seconds": 2079.43,
+  "start_time": "2026-09-19T22:11:37Z",
+  "start_timestamp": 1789855897,
+  "duration_minutes": 33.23,
+  "duration_seconds": 1994,
   "draft_duration_minutes": 6.77,
   "winner": "radiant",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Troll Warlord"
     },
     {
       "nickname": "DeR meis+eR",
-      "steam_id": 76561198078638066,
+      "steam_id": "76561198078638066",
       "hero": "Dawnbreaker"
     },
     {
       "nickname": "Mat' v mute",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Techies"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Lich"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Riki"
     }
   ],
   "dire_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Storm Spirit"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Skywrath Mage"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Largo"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Shadow Shaman"
     },
     {
       "nickname": "K_z",
-      "steam_id": 76561199051682987,
+      "steam_id": "76561199051682987",
       "hero": "Faceless Void"
     }
   ],
@@ -337,11 +337,11 @@
     "Donnie": 20454,
     "DeR meis+eR": 19577,
     "Mat' v mute": 10249,
-    "Davros": 10142,
+    "Davros": 10141,
     "???&": 16424,
     "jMogwai": 12142,
     "nerd": 6139,
-    "Профессор вкусных каш": 11437,
+    "Профессор вкусных каш": 11436,
     "13": 5415,
     "K_z": 13344
   },
@@ -370,71 +370,71 @@
     "K_z": 10
   },
   "gold_per_minute": {
-    "Donnie": 580.72,
-    "DeR meis+eR": 573.56,
-    "Mat' v mute": 330.9,
-    "Davros": 265.8,
-    "???&": 471.5,
-    "jMogwai": 392.13,
-    "nerd": 258.45,
-    "Профессор вкусных каш": 358.94,
-    "13": 179.24,
-    "K_z": 388.78
+    "Donnie": 620,
+    "DeR meis+eR": 611,
+    "Mat' v mute": 355,
+    "Davros": 290,
+    "???&": 518,
+    "jMogwai": 409,
+    "nerd": 270,
+    "Профессор вкусных каш": 375,
+    "13": 188,
+    "K_z": 410
   },
   "xp_per_minute": {
-    "Donnie": 705.6,
-    "DeR meis+eR": 722.39,
-    "Mat' v mute": 453.47,
-    "Davros": 425.65,
-    "???&": 755.14,
-    "jMogwai": 471.82,
-    "nerd": 228.84,
-    "Профессор вкусных каш": 451.83,
-    "13": 190.29,
-    "K_z": 531.09
+    "Donnie": 737,
+    "DeR meis+eR": 755,
+    "Mat' v mute": 475,
+    "Davros": 479,
+    "???&": 910,
+    "jMogwai": 491,
+    "nerd": 238,
+    "Профессор вкусных каш": 471,
+    "13": 198,
+    "K_z": 559
   },
   "hero_damage": {
-    "Donnie": 13008,
-    "DeR meis+eR": 35566,
-    "Mat' v mute": 25875,
-    "Davros": 14521,
-    "???&": 18992,
-    "jMogwai": 24337,
-    "nerd": 11568,
-    "Профессор вкусных каш": 14545,
-    "13": 3251,
-    "K_z": 9208
+    "Donnie": 12817,
+    "DeR meis+eR": 21023,
+    "Mat' v mute": 17195,
+    "Davros": 14203,
+    "???&": 19873,
+    "jMogwai": 18999,
+    "nerd": 11296,
+    "Профессор вкусных каш": 9445,
+    "13": 7397,
+    "K_z": 4251
   },
   "damage_taken": {
-    "Donnie": 22057,
-    "DeR meis+eR": 26074,
-    "Mat' v mute": 22564,
-    "Davros": 14928,
-    "???&": 23116,
-    "jMogwai": 35171,
-    "nerd": 22674,
-    "Профессор вкусных каш": 35264,
-    "13": 22542,
-    "K_z": 23999
+    "Donnie": 11779,
+    "DeR meis+eR": 7834,
+    "Mat' v mute": 7845,
+    "Davros": 10299,
+    "???&": 13631,
+    "jMogwai": 20000,
+    "nerd": 17655,
+    "Профессор вкусных каш": 21359,
+    "13": 18576,
+    "K_z": 7521
   },
   "hero_healing": {
-    "Donnie": 14827,
-    "DeR meis+eR": 31720,
-    "Mat' v mute": 15394,
-    "Davros": 8167,
-    "???&": 12708,
-    "jMogwai": 21316,
-    "nerd": 5665,
-    "Профессор вкусных каш": 25285,
-    "13": 9129,
-    "K_z": 22186
+    "Donnie": 0,
+    "DeR meis+eR": 7644,
+    "Mat' v mute": 0,
+    "Davros": 250,
+    "???&": 0,
+    "jMogwai": 106,
+    "nerd": 125,
+    "Профессор вкусных каш": 1703,
+    "13": 0,
+    "K_z": 0
   },
   "tower_damage": {
-    "Donnie": 7925,
-    "DeR meis+eR": 2914,
-    "Mat' v mute": 598,
+    "Donnie": 10478,
+    "DeR meis+eR": 3753,
+    "Mat' v mute": 778,
     "Davros": 623,
-    "???&": 1145,
+    "???&": 1403,
     "jMogwai": 124,
     "nerd": 45,
     "Профессор вкусных каш": 29,
@@ -608,5 +608,11 @@
     "Профессор вкусных каш": 2,
     "13": 0,
     "K_z": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

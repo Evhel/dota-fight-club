@@ -1,9 +1,9 @@
 {
   "match_id": 8996109784,
-  "start_time": "2026-09-13 02:40:36",
-  "start_timestamp": 1789256436.192061,
-  "duration_minutes": 33.42,
-  "duration_seconds": 2004.93,
+  "start_time": "2026-09-12T22:27:42Z",
+  "start_timestamp": 1789252062,
+  "duration_minutes": 30.67,
+  "duration_seconds": 1840,
   "draft_duration_minutes": 9.3,
   "winner": "radiant",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Zeus"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Dark Willow"
     },
     {
       "nickname": "мелман",
-      "steam_id": 76561198974599395,
+      "steam_id": "76561198974599395",
       "hero": "Winter Wyvern"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Weaver"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Chaos Knight"
     }
   ],
   "dire_team": [
     {
       "nickname": "Capy",
-      "steam_id": 76561198009445320,
+      "steam_id": "76561198009445320",
       "hero": "Lich"
     },
     {
       "nickname": "Itadori Yuji",
-      "steam_id": 76561199642307932,
+      "steam_id": "76561199642307932",
       "hero": "Sniper"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Magnus"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Mirana"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Earthshaker"
     }
   ],
@@ -342,7 +342,7 @@
     "Capy": 6093,
     "Itadori Yuji": 11608,
     "Профессор вкусных каш": 11738,
-    "Davros": 7396,
+    "Davros": 7395,
     "Donnie": 10863
   },
   "last_hits": {
@@ -370,71 +370,71 @@
     "Donnie": 6
   },
   "gold_per_minute": {
-    "jMogwai": 536.85,
-    "13": 265.74,
-    "мелман": 248.6,
-    "???&": 572.82,
-    "nerd": 508.6,
-    "Capy": 216.52,
-    "Itadori Yuji": 392.42,
-    "Профессор вкусных каш": 387.39,
-    "Davros": 271.46,
-    "Donnie": 358.87
+    "jMogwai": 584,
+    "13": 289,
+    "мелман": 270,
+    "???&": 624,
+    "nerd": 554,
+    "Capy": 235,
+    "Itadori Yuji": 427,
+    "Профессор вкусных каш": 422,
+    "Davros": 295,
+    "Donnie": 391
   },
   "xp_per_minute": {
-    "jMogwai": 730.32,
-    "13": 372.19,
-    "мелман": 417.74,
-    "???&": 757.91,
-    "nerd": 599.6,
-    "Capy": 286.03,
-    "Itadori Yuji": 512.7,
-    "Профессор вкусных каш": 513.53,
-    "Davros": 339.06,
-    "Donnie": 349.33
+    "jMogwai": 795,
+    "13": 405,
+    "мелман": 455,
+    "???&": 825,
+    "nerd": 653,
+    "Capy": 311,
+    "Itadori Yuji": 558,
+    "Профессор вкусных каш": 559,
+    "Davros": 369,
+    "Donnie": 380
   },
   "hero_damage": {
-    "jMogwai": 31937,
-    "13": 8531,
-    "мелман": 9383,
-    "???&": 24733,
-    "nerd": 35865,
-    "Capy": 10317,
-    "Itadori Yuji": 22966,
-    "Профессор вкусных каш": 23271,
-    "Davros": 14856,
-    "Donnie": 14788
+    "jMogwai": 30904,
+    "13": 8381,
+    "мелман": 9233,
+    "???&": 17429,
+    "nerd": 13565,
+    "Capy": 6779,
+    "Itadori Yuji": 21797,
+    "Профессор вкусных каш": 8765,
+    "Davros": 10323,
+    "Donnie": 10787
   },
   "damage_taken": {
-    "jMogwai": 22158,
-    "13": 13972,
-    "мелман": 14558,
-    "???&": 24450,
-    "nerd": 84737,
-    "Capy": 16723,
-    "Itadori Yuji": 21305,
-    "Профессор вкусных каш": 28094,
-    "Davros": 14354,
-    "Donnie": 28790
+    "jMogwai": 9002,
+    "13": 9770,
+    "мелман": 11705,
+    "???&": 15579,
+    "nerd": 12395,
+    "Capy": 14513,
+    "Itadori Yuji": 13768,
+    "Профессор вкусных каш": 16973,
+    "Davros": 12787,
+    "Donnie": 21460
   },
   "hero_healing": {
-    "jMogwai": 17995,
-    "13": 7089,
-    "мелман": 10363,
-    "???&": 13075,
-    "nerd": 37144,
-    "Capy": 4682,
-    "Itadori Yuji": 7192,
-    "Профессор вкусных каш": 15079,
-    "Davros": 6464,
-    "Donnie": 12917
+    "jMogwai": 0,
+    "13": 0,
+    "мелман": 2888,
+    "???&": 0,
+    "nerd": 0,
+    "Capy": 0,
+    "Itadori Yuji": 0,
+    "Профессор вкусных каш": 0,
+    "Davros": 0,
+    "Donnie": 0
   },
   "tower_damage": {
-    "jMogwai": 736,
-    "13": 512,
-    "мелман": 775,
-    "???&": 4638,
-    "nerd": 2667,
+    "jMogwai": 908,
+    "13": 569,
+    "мелман": 833,
+    "???&": 6841,
+    "nerd": 2724,
     "Capy": 0,
     "Itadori Yuji": 483,
     "Профессор вкусных каш": 0,
@@ -602,5 +602,11 @@
     "Профессор вкусных каш": 1,
     "Davros": 1,
     "Donnie": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

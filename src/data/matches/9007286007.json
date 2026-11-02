@@ -1,9 +1,9 @@
 {
   "match_id": 9007286007,
-  "start_time": "2026-09-20 03:40:30",
-  "start_timestamp": 1789864830.840069,
-  "duration_minutes": 72.04,
-  "duration_seconds": 4322.1,
+  "start_time": "2026-09-19T23:02:48Z",
+  "start_timestamp": 1789858968,
+  "duration_minutes": 65.58,
+  "duration_seconds": 3935,
   "draft_duration_minutes": 14.93,
   "winner": "radiant",
   "game_mode_id": 2,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Windranger"
     },
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Lifestealer"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Grimstroke"
     },
     {
       "nickname": "K_z",
-      "steam_id": 76561199051682987,
+      "steam_id": "76561199051682987",
       "hero": "Lion"
     },
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Doom"
     }
   ],
   "dire_team": [
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Lone Druid"
     },
     {
       "nickname": "Mat' v mute",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Techies"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Dazzle"
     },
     {
       "nickname": "DeR meis+eR",
-      "steam_id": 76561198078638066,
+      "steam_id": "76561198078638066",
       "hero": "Centaur Warrunner"
     },
     {
       "nickname": "Как же он сияет",
-      "steam_id": 76561199642307932,
+      "steam_id": "76561199642307932",
       "hero": "Wraith King"
     }
   ],
@@ -466,76 +466,76 @@
     "Как же он сияет": 15
   },
   "gold_per_minute": {
-    "nerd": 419.56,
-    "???&": 775.69,
-    "13": 276.74,
-    "K_z": 514.15,
-    "Donnie": 593.09,
-    "jMogwai": 682.75,
-    "Mat' v mute": 397.89,
-    "Davros": 378.16,
-    "DeR meis+eR": 500.85,
-    "Как же он сияет": 752.93
+    "nerd": 481,
+    "???&": 863,
+    "13": 309,
+    "K_z": 610,
+    "Donnie": 661,
+    "jMogwai": 755,
+    "Mat' v mute": 440,
+    "Davros": 418,
+    "DeR meis+eR": 553,
+    "Как же он сияет": 831
   },
   "xp_per_minute": {
-    "nerd": 706.56,
-    "???&": 894.01,
-    "13": 584.99,
-    "K_z": 784.02,
-    "Donnie": 894.01,
-    "jMogwai": 894.01,
-    "Mat' v mute": 666.08,
-    "Davros": 680.31,
-    "DeR meis+eR": 752.84,
-    "Как же он сияет": 894.01
+    "nerd": 831,
+    "???&": 1099,
+    "13": 642,
+    "K_z": 919,
+    "Donnie": 1006,
+    "jMogwai": 1057,
+    "Mat' v mute": 731,
+    "Davros": 747,
+    "DeR meis+eR": 826,
+    "Как же он сияет": 1313
   },
   "hero_damage": {
-    "nerd": 48948,
-    "???&": 138758,
-    "13": 26873,
-    "K_z": 89875,
-    "Donnie": 77716,
-    "jMogwai": 13367,
-    "Mat' v mute": 119385,
-    "Davros": 79244,
-    "DeR meis+eR": 75204,
-    "Как же он сияет": 138517
+    "nerd": 46161,
+    "???&": 128039,
+    "13": 26771,
+    "K_z": 99088,
+    "Donnie": 79528,
+    "jMogwai": 78908,
+    "Mat' v mute": 88402,
+    "Davros": 35806,
+    "DeR meis+eR": 29260,
+    "Как же он сияет": 89540
   },
   "damage_taken": {
-    "nerd": 70108,
-    "???&": 171180,
-    "13": 53147,
-    "K_z": 76715,
-    "Donnie": 108943,
-    "jMogwai": 66593,
-    "Mat' v mute": 66153,
-    "Davros": 87101,
-    "DeR meis+eR": 138289,
-    "Как же он сияет": 103519
+    "nerd": 57524,
+    "???&": 86684,
+    "13": 41502,
+    "K_z": 55658,
+    "Donnie": 80548,
+    "jMogwai": 138556,
+    "Mat' v mute": 41666,
+    "Davros": 42409,
+    "DeR meis+eR": 75780,
+    "Как же он сияет": 78559
   },
   "hero_healing": {
-    "nerd": 25851,
-    "???&": 97796,
-    "13": 16667,
-    "K_z": 22362,
-    "Donnie": 49004,
-    "jMogwai": 68996,
-    "Mat' v mute": 25223,
-    "Davros": 44569,
-    "DeR meis+eR": 84872,
-    "Как же он сияет": 38731
+    "nerd": 1285,
+    "???&": 13075,
+    "13": 2641,
+    "K_z": 0,
+    "Donnie": 0,
+    "jMogwai": 0,
+    "Mat' v mute": 0,
+    "Davros": 20633,
+    "DeR meis+eR": 125,
+    "Как же он сияет": 0
   },
   "tower_damage": {
     "nerd": 1638,
-    "???&": 12127,
-    "13": 130,
-    "K_z": 17,
-    "Donnie": 145,
-    "jMogwai": 429,
+    "???&": 18317,
+    "13": 257,
+    "K_z": 635,
+    "Donnie": 579,
+    "jMogwai": 21332,
     "Mat' v mute": 171,
     "Davros": 105,
-    "DeR meis+eR": 1361,
-    "Как же он сияет": 1759
+    "DeR meis+eR": 2672,
+    "Как же он сияет": 3444
   },
   "stuns_dealt": {
     "nerd": 232.12,
@@ -980,5 +980,11 @@
     "Davros": 0,
     "DeR meis+eR": 0,
     "Как же он сияет": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }

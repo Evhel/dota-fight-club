@@ -1,9 +1,9 @@
 {
   "match_id": 9010292992,
-  "start_time": "2026-09-22 00:25:10",
-  "start_timestamp": 1790025910.695936,
-  "duration_minutes": 38.83,
-  "duration_seconds": 2329.9,
+  "start_time": "2026-09-21T20:09:14Z",
+  "start_timestamp": 1790021354,
+  "duration_minutes": 38.23,
+  "duration_seconds": 2294,
   "draft_duration_minutes": 11.31,
   "winner": "radiant",
   "game_mode_id": 16,
@@ -21,54 +21,54 @@
   "radiant_team": [
     {
       "nickname": "???&",
-      "steam_id": 76561198024572250,
+      "steam_id": "76561198024572250",
       "hero": "Juggernaut"
     },
     {
       "nickname": "Профессор вкусных каш",
-      "steam_id": 76561198069163159,
+      "steam_id": "76561198069163159",
       "hero": "Legion Commander"
     },
     {
       "nickname": "Davros",
-      "steam_id": 76561198262536558,
+      "steam_id": "76561198262536558",
       "hero": "Shadow Shaman"
     },
     {
       "nickname": "Облепиховая мышь",
-      "steam_id": 76561198870458846,
+      "steam_id": "76561198870458846",
       "hero": "Skywrath Mage"
     },
     {
       "nickname": "jMogwai",
-      "steam_id": 76561198025641132,
+      "steam_id": "76561198025641132",
       "hero": "Void Spirit"
     }
   ],
   "dire_team": [
     {
       "nickname": "Donnie",
-      "steam_id": 76561198108151943,
+      "steam_id": "76561198108151943",
       "hero": "Ursa"
     },
     {
       "nickname": "nerd",
-      "steam_id": 76561198074554802,
+      "steam_id": "76561198074554802",
       "hero": "Zeus"
     },
     {
       "nickname": "DeR meis+eR",
-      "steam_id": 76561198078638066,
+      "steam_id": "76561198078638066",
       "hero": "Kunkka"
     },
     {
       "nickname": "Communication",
-      "steam_id": 76561199222816532,
+      "steam_id": "76561199222816532",
       "hero": "Snapfire"
     },
     {
       "nickname": "13",
-      "steam_id": 76561198315265037,
+      "steam_id": "76561198315265037",
       "hero": "Undying"
     }
   ],
@@ -370,71 +370,71 @@
     "13": 1
   },
   "gold_per_minute": {
-    "???&": 742.41,
-    "Профессор вкусных каш": 424.78,
-    "Davros": 382.99,
-    "Облепиховая мышь": 367.17,
-    "jMogwai": 563.12,
-    "Donnie": 591.42,
-    "nerd": 537.47,
-    "DeR meis+eR": 438.74,
-    "Communication": 329.58,
-    "13": 223.58
+    "???&": 766,
+    "Профессор вкусных каш": 440,
+    "Davros": 398,
+    "Облепиховая мышь": 387,
+    "jMogwai": 579,
+    "Donnie": 601,
+    "nerd": 546,
+    "DeR meis+eR": 446,
+    "Communication": 335,
+    "13": 227
   },
   "xp_per_minute": {
-    "???&": 1023.7,
-    "Профессор вкусных каш": 588.9,
-    "Davros": 481.26,
-    "Облепиховая мышь": 542.83,
-    "jMogwai": 885.8,
-    "Donnie": 916.16,
-    "nerd": 638.04,
-    "DeR meis+eR": 570.1,
-    "Communication": 427.77,
-    "13": 388.83
+    "???&": 1039,
+    "Профессор вкусных каш": 603,
+    "Davros": 494,
+    "Облепиховая мышь": 553,
+    "jMogwai": 899,
+    "Donnie": 930,
+    "nerd": 647,
+    "DeR meis+eR": 578,
+    "Communication": 434,
+    "13": 394
   },
   "hero_damage": {
-    "???&": 71108,
+    "???&": 34435,
     "Профессор вкусных каш": 23977,
-    "Davros": 8461,
-    "Облепиховая мышь": 22848,
+    "Davros": 12782,
+    "Облепиховая мышь": 22773,
     "jMogwai": 37801,
-    "Donnie": 40107,
-    "nerd": 51550,
-    "DeR meis+eR": 25221,
-    "Communication": 23346,
-    "13": 6638
+    "Donnie": 35748,
+    "nerd": 43967,
+    "DeR meis+eR": 14505,
+    "Communication": 17632,
+    "13": 10572
   },
   "damage_taken": {
-    "???&": 70329,
-    "Профессор вкусных каш": 39880,
-    "Davros": 22857,
-    "Облепиховая мышь": 20865,
-    "jMogwai": 49509,
-    "Donnie": 48111,
-    "nerd": 33478,
-    "DeR meis+eR": 40206,
-    "Communication": 24297,
-    "13": 44791
+    "???&": 26771,
+    "Профессор вкусных каш": 28566,
+    "Davros": 17430,
+    "Облепиховая мышь": 15908,
+    "jMogwai": 33749,
+    "Donnie": 29867,
+    "nerd": 20972,
+    "DeR meis+eR": 25505,
+    "Communication": 20803,
+    "13": 34621
   },
   "hero_healing": {
-    "???&": 38867,
-    "Профессор вкусных каш": 28051,
-    "Davros": 15462,
-    "Облепиховая мышь": 8934,
-    "jMogwai": 31432,
-    "Donnie": 19303,
-    "nerd": 11674,
-    "DeR meis+eR": 17843,
-    "Communication": 10609,
-    "13": 12080
+    "???&": 15163,
+    "Профессор вкусных каш": 4416,
+    "Davros": 0,
+    "Облепиховая мышь": 0,
+    "jMogwai": 726,
+    "Donnie": 0,
+    "nerd": 110,
+    "DeR meis+eR": 125,
+    "Communication": 0,
+    "13": 1222
   },
   "tower_damage": {
-    "???&": 13026,
-    "Профессор вкусных каш": 907,
-    "Davros": 568,
-    "Облепиховая мышь": 263,
-    "jMogwai": 1351,
+    "???&": 21877,
+    "Профессор вкусных каш": 1674,
+    "Davros": 6587,
+    "Облепиховая мышь": 831,
+    "jMogwai": 2499,
     "Donnie": 46,
     "nerd": 503,
     "DeR meis+eR": 23,
@@ -626,5 +626,11 @@
     "DeR meis+eR": 0,
     "Communication": 0,
     "13": 0
+  },
+  "league_id": 0,
+  "start_time_source": "replay_match_details",
+  "data_quality": {
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
   }
 }
