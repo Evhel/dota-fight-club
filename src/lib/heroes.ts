@@ -1,6 +1,9 @@
 // Helpers for Dota 2 hero images.
 // Heroes may come either as internal names ("npc_dota_hero_antimage")
 // or as display names ("Anti-Mage", "Nature's Prophet").
+import { HERO_CATALOG } from "./hero-catalog.ts";
+
+const CATALOG_TO_SHORT = Object.fromEntries(Object.entries(HERO_CATALOG).map(([slug, name]) => [name.toLowerCase(), slug]));
 
 const DISPLAY_TO_SHORT: Record<string, string> = {
   "anti-mage": "antimage",
@@ -65,6 +68,7 @@ export function heroShortName(hero: string): string {
   if (hero.startsWith("npc_dota_hero_")) return hero.slice("npc_dota_hero_".length);
   const k = hero.trim().toLowerCase();
   if (DISPLAY_TO_SHORT[k]) return DISPLAY_TO_SHORT[k];
+  if (CATALOG_TO_SHORT[k]) return CATALOG_TO_SHORT[k];
   return k.replace(/['']/g, "").replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
 }
 

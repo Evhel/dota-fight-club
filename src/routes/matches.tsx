@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
-import { heroImg } from "@/lib/heroes";
+import { heroImg, heroShortName } from "@/lib/heroes";
 import { useMemo } from "react";
 import type { MatchPlayer } from "@/lib/types";
 
@@ -25,15 +25,14 @@ function MatchesPage() {
       {team.map((p) => {
         const display = identities.get(String(p.steam_id))?.display_name || p.nickname;
         return (
-          <Link
+          <div
             key={p.steam_id}
-            to="/player" search={{ nick: display }}
             className="flex flex-col items-center w-16"
-            title={`${display} — ${p.hero}`}
           >
-            <span className="text-[9px] text-muted-foreground truncate w-full text-center leading-tight">
+            <Link to="/player" search={{ nick: display }} title={display} className="text-[9px] text-muted-foreground truncate w-full text-center leading-tight hover:text-primary">
               {display}
-            </span>
+            </Link>
+            <Link to="/hero/$hero" params={{ hero: heroShortName(p.hero) }} title={p.hero}>
             <img
               src={heroImg(p.hero)}
               alt={p.hero}
@@ -41,7 +40,8 @@ function MatchesPage() {
               className="w-14 h-8 object-cover rounded border border-border/40"
               onError={(e) => ((e.currentTarget.style.opacity = "0.3"))}
             />
-          </Link>
+            </Link>
+          </div>
         );
       })}
     </div>

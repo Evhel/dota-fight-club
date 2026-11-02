@@ -1,626 +1,667 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { ArrowDown, ArrowRight, Network, RotateCcw, Search, Swords, Users } from "lucide-react";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities } from "@/lib/stats";
-import { useEffect, useMemo, useRef, useState } from "react";
 import { STATIC_AVATARS } from "@/lib/static-data";
-import { Slider } from "@/components/ui/slider";
-
+import {
+  computeConnections,
+  connectionScore,
+  connectionMatches,
+  filterConnectionDates,
+  moscowDate,
+} from "@/lib/connections";
+import type { ConnectionMode } from "@/lib/connections";
+import { heroImg, heroShortName } from "@/lib/heroes";
 
 export const Route = createFileRoute("/connections")({
-  component: ConnectionsPage,
-  head: () => ({
-    meta: [{ title: "Связь — Бойцовский Клуб Dota 2" }],
+  validateSearch: (search: Record<string, unknown>): { player?: string } => ({
+    player: typeof search.player === "string" ? search.player : undefined,
   }),
+  component: ConnectionsPage,
+  head: () => ({ meta: [{ title: "Связь — Бойцовский клуб Dota 2" }] }),
 });
 
-interface GraphNode {
-  id: string;
-  name: string;
-  degree: number;
-  games: number;
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-  r: number;
-}
-
-interface GraphEdge {
-  a: string;
-  b: string;
-  games: number;
-}
-
-const SEASON_1 = new Date("2026-02-21T00:00:00Z").getTime();
-const SEASON_2 = new Date("2026-05-15T00:00:00Z").getTime();
+const MODES: { value: ConnectionMode; label: string; description: string }[] = [
+  { value: "together", label: "Напарники", description: "Игры в одной команде" },
+  { value: "opponents", label: "Соперники", description: "Игры по разные стороны" },
+  { value: "all", label: "Все встречи", description: "Все матчи с участием обоих игроков" },
+];
+const inputClass =
+  "w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring";
 
 function ConnectionsPage() {
   const { data: matches = [] } = useMatches();
-  const avatars = STATIC_AVATARS;
-
-
+  const search = Route.useSearch();
+  const navigate = Route.useNavigate();
   const identities = useMemo(() => buildIdentities(matches), [matches]);
-
-  const { minT, maxT } = useMemo(() => {
-    if (!matches.length) return { minT: SEASON_1, maxT: Date.now() };
-    let mn = Infinity, mx = -Infinity;
-    for (const m of matches) {
-      const t = new Date(m.start_time).getTime();
-      if (t < mn) mn = t;
-      if (t > mx) mx = t;
-    }
-    return { minT: Math.min(mn, SEASON_1), maxT: Math.max(mx, Date.now()) };
-  }, [matches]);
-
-  const [timeT, setTimeT] = useState<number>(maxT);
-  useEffect(() => setTimeT(maxT), [maxT]);
-
-  const [linkDistance, setLinkDistance] = useState(180);
-  const [repulsion, setRepulsion] = useState(8000);
-  const [minGames, setMinGames] = useState(1);
-
-  const [selected, setSelected] = useState<string | null>(null);
-  const [hovered, setHovered] = useState<string | null>(null);
-
-  // Zoom & pan
-  const [zoom, setZoom] = useState(1);
-  const [pan, setPan] = useState({ x: 0, y: 0 });
-  const dragRef = useRef<{ x: number; y: number; px: number; py: number } | null>(null);
-
-  const { nodes: baseNodes, edges: baseEdges } = useMemo(() => {
-    const pairCounts = new Map<string, number>();
-    const playerGames = new Map<string, number>();
-    const playerMates = new Map<string, Set<string>>();
-
-    for (const m of matches) {
-      const t = new Date(m.start_time).getTime();
-      if (t > timeT) continue;
-      const sides = [m.data.radiant_team, m.data.dire_team];
-      for (const team of sides) {
-        for (const p of team) {
-          const sid = String(p.steam_id);
-          playerGames.set(sid, (playerGames.get(sid) || 0) + 1);
-        }
-        for (let i = 0; i < team.length; i++) {
-          for (let j = i + 1; j < team.length; j++) {
-            const a = String(team[i].steam_id);
-            const b = String(team[j].steam_id);
-            const key = a < b ? `${a}|${b}` : `${b}|${a}`;
-            pairCounts.set(key, (pairCounts.get(key) || 0) + 1);
-            if (!playerMates.has(a)) playerMates.set(a, new Set());
-            if (!playerMates.has(b)) playerMates.set(b, new Set());
-            playerMates.get(a)!.add(b);
-            playerMates.get(b)!.add(a);
-          }
-        }
-      }
-    }
-
-    const edges: GraphEdge[] = [];
-    for (const [k, g] of pairCounts) {
-      const [a, b] = k.split("|");
-      edges.push({ a, b, games: g });
-    }
-
-    const nodes: Omit<GraphNode, "x" | "y" | "vx" | "vy" | "r">[] = [];
-    for (const [sid, games] of playerGames) {
-      const id = identities.get(sid);
-      nodes.push({
-        id: sid,
-        name: id?.display_name || sid,
-        degree: playerMates.get(sid)?.size || 0,
-        games,
-      });
-    }
-    return { nodes, edges };
-  }, [matches, timeT, identities]);
-
-  // Apply min-games filter to edges + drop isolated nodes
-  const filteredEdgesByMin = useMemo(
-    () => baseEdges.filter((e) => e.games >= minGames),
-    [baseEdges, minGames],
-  );
-
-  const visibleNodeIds = useMemo(() => {
-    if (selected) {
-      const s = new Set<string>([selected]);
-      for (const e of filteredEdgesByMin) {
-        if (e.a === selected) s.add(e.b);
-        else if (e.b === selected) s.add(e.a);
-      }
-      return s;
-    }
-    // hide isolated nodes once a filter removes their edges
-    if (minGames > 1) {
-      const s = new Set<string>();
-      for (const e of filteredEdgesByMin) {
-        s.add(e.a);
-        s.add(e.b);
-      }
-      return s;
-    }
-    return new Set(baseNodes.map((n) => n.id));
-  }, [selected, baseNodes, filteredEdgesByMin, minGames]);
-
-  const filteredEdges = useMemo(
+  const people = useMemo(
     () =>
-      selected
-        ? filteredEdgesByMin.filter((e) => e.a === selected || e.b === selected)
-        : filteredEdgesByMin,
-    [selected, filteredEdgesByMin],
+      [...identities.values()].sort(
+        (a, b) =>
+          b.match_count - a.match_count || a.display_name.localeCompare(b.display_name, "ru"),
+      ),
+    [identities],
   );
-
-  const maxDegree = useMemo(
-    () => Math.max(1, ...baseNodes.map((n) => n.degree)),
-    [baseNodes],
+  const playerId =
+    search.player && identities.has(search.player) ? search.player : people[0]?.steam_id || "";
+  const name = identities.get(playerId)?.display_name || "Игрок";
+  const [mode, setMode] = useState<ConnectionMode>("together");
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
+  const [minGames, setMinGames] = useState(3);
+  const [query, setQuery] = useState("");
+  const [sort, setSort] = useState<{
+    key: "name" | "games" | "wins" | "losses" | "winrate";
+    asc: boolean;
+  }>({ key: "games", asc: false });
+  const [peerId, setPeerId] = useState<string | null>(null);
+  const [showMap, setShowMap] = useState(false);
+  const [historyLimit, setHistoryLimit] = useState(10);
+  const historyRef = useRef<HTMLElement>(null);
+  const dateRange = useMemo(
+    () =>
+      matches
+        .map((row) => moscowDate(row.start_time))
+        .filter(Boolean)
+        .sort(),
+    [matches],
   );
-  const maxGames = useMemo(
-    () => Math.max(1, ...baseEdges.map((e) => e.games)),
-    [baseEdges],
+  const periodMatches = useMemo(
+    () => filterConnectionDates(matches, from, to),
+    [matches, from, to],
   );
-  const overallMaxGames = useMemo(
-    () => Math.max(1, ...baseEdges.map((e) => e.games)),
-    [baseEdges],
+  const relations = useMemo(
+    () => computeConnections(playerId, periodMatches, identities),
+    [playerId, periodMatches, identities],
   );
-
-  const positionsRef = useRef<Map<string, { x: number; y: number; vx: number; vy: number }>>(
-    new Map(),
+  const rows = useMemo(
+    () =>
+      relations
+        .map((row) => ({ ...row, ...connectionScore(row, mode) }))
+        .filter(
+          (row) =>
+            row.games >= minGames &&
+            row.name.toLocaleLowerCase("ru").includes(query.trim().toLocaleLowerCase("ru")),
+        )
+        .sort((a, b) => {
+          const cmp =
+            sort.key === "name" ? a.name.localeCompare(b.name, "ru") : a[sort.key] - b[sort.key];
+          return (sort.asc ? cmp : -cmp) || b.games - a.games || a.name.localeCompare(b.name, "ru");
+        }),
+    [relations, mode, minGames, query, sort],
   );
-
-  const W = 1200;
-  const H = 760;
-
-  const simNodes: GraphNode[] = useMemo(() => {
-    const arr: GraphNode[] = baseNodes.map((n, i) => {
-      const prev = positionsRef.current.get(n.id);
-      const angle = (i / Math.max(1, baseNodes.length)) * Math.PI * 2;
-      // log-ish scale so a few super-connected nodes don't dwarf the rest
-      const t = Math.log(1 + n.degree) / Math.log(1 + maxDegree);
-      const r = 22 + t * 34;
-      return {
-        ...n,
-        r,
-        x: prev?.x ?? W / 2 + Math.cos(angle) * 260,
-        y: prev?.y ?? H / 2 + Math.sin(angle) * 220,
-        vx: prev?.vx ?? 0,
-        vy: prev?.vy ?? 0,
-      };
-    });
-    return arr;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [baseNodes, maxDegree]);
-
-  const [, setTick] = useState(0);
-  const nodesStateRef = useRef<GraphNode[]>(simNodes);
+  const strongest = [...rows].sort((a, b) => b.games - a.games)[0];
+  const best = [...rows]
+    .filter((row) => row.games >= 3)
+    .sort((a, b) => b.winrate - a.winrate || b.games - a.games)[0];
+  const ownGames = useMemo(
+    () =>
+      periodMatches.filter((row) =>
+        [...row.data.radiant_team, ...row.data.dire_team].some(
+          (p) => String(p.steam_id) === playerId,
+        ),
+      ).length,
+    [periodMatches, playerId],
+  );
+  const peer = rows.find((row) => row.steam_id === peerId);
+  const history = useMemo(
+    () => (peerId ? connectionMatches(periodMatches, playerId, peerId, mode) : []),
+    [periodMatches, playerId, peerId, mode],
+  );
+  const mapRows = useMemo(
+    () =>
+      [...rows]
+        .sort((a, b) => b.games - a.games || a.name.localeCompare(b.name, "ru"))
+        .slice(0, 10),
+    [rows],
+  );
+  const invalidRange = Boolean(from && to && from > to);
   useEffect(() => {
-    nodesStateRef.current = simNodes;
-  }, [simNodes]);
-
-  useEffect(() => {
-    let raf = 0;
-    let running = true;
-    const idMap = new Map<string, GraphNode>();
-    for (const n of nodesStateRef.current) idMap.set(n.id, n);
-
-    function step() {
-      if (!running) return;
-      const nodes = nodesStateRef.current;
-      const cx = W / 2;
-      const cy = H / 2;
-      for (let i = 0; i < nodes.length; i++) {
-        for (let j = i + 1; j < nodes.length; j++) {
-          const a = nodes[i];
-          const b = nodes[j];
-          const dx = b.x - a.x;
-          const dy = b.y - a.y;
-          let dist2 = dx * dx + dy * dy;
-          if (dist2 < 1) dist2 = 1;
-          const dist = Math.sqrt(dist2);
-          // hard collision repulsion when overlapping
-          const minDist = a.r + b.r + 12;
-          let f = repulsion / dist2;
-          if (dist < minDist) f += (minDist - dist) * 0.4;
-          const fx = (dx / dist) * f;
-          const fy = (dy / dist) * f;
-          a.vx -= fx;
-          a.vy -= fy;
-          b.vx += fx;
-          b.vy += fy;
-        }
-      }
-      for (const e of filteredEdges) {
-        const a = idMap.get(e.a);
-        const b = idMap.get(e.b);
-        if (!a || !b) continue;
-        const dx = b.x - a.x;
-        const dy = b.y - a.y;
-        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
-        const strength = 0.03 * (e.games / maxGames + 0.2);
-        const target = linkDistance;
-        const diff = dist - target;
-        const fx = (dx / dist) * diff * strength;
-        const fy = (dy / dist) * diff * strength;
-        a.vx += fx;
-        a.vy += fy;
-        b.vx -= fx;
-        b.vy -= fy;
-      }
-      for (const n of nodes) {
-        n.vx += (cx - n.x) * 0.005;
-        n.vy += (cy - n.y) * 0.005;
-        n.vx *= 0.82;
-        n.vy *= 0.82;
-        n.x += n.vx;
-        n.y += n.vy;
-        n.x = Math.max(n.r + 4, Math.min(W - n.r - 4, n.x));
-        n.y = Math.max(n.r + 4, Math.min(H - n.r - 4, n.y));
-        positionsRef.current.set(n.id, { x: n.x, y: n.y, vx: n.vx, vy: n.vy });
-      }
-      setTick((t) => (t + 1) % 1_000_000);
-      raf = requestAnimationFrame(step);
-    }
-    raf = requestAnimationFrame(step);
-    return () => {
-      running = false;
-      cancelAnimationFrame(raf);
-    };
-  }, [filteredEdges, linkDistance, repulsion, maxGames, simNodes.length]);
-
-  const dateLabel = new Date(timeT).toLocaleDateString("ru-RU", {
-    day: "2-digit",
-    month: "long",
-    year: "numeric",
-  });
-
-  const span = Math.max(1, maxT - minT);
-  const s1Pct = ((SEASON_1 - minT) / span) * 100;
-  const s2Pct = ((SEASON_2 - minT) / span) * 100;
-
-  const nodes = nodesStateRef.current.filter((n) => visibleNodeIds.has(n.id));
-  const nodeById = new Map(nodes.map((n) => [n.id, n]));
-
-  // Neighbors of hovered/selected node for highlighting
-  const focusId = hovered || selected;
-  const focusNeighbors = useMemo(() => {
-    if (!focusId) return null;
-    const s = new Set<string>([focusId]);
-    for (const e of filteredEdges) {
-      if (e.a === focusId) s.add(e.b);
-      else if (e.b === focusId) s.add(e.a);
-    }
-    return s;
-  }, [focusId, filteredEdges]);
-
-  // Edge color based on relative strength
-  const edgeColor = (g: number) => {
-    const t = g / maxGames;
-    if (t > 0.66) return "oklch(0.78 0.18 70)"; // amber
-    if (t > 0.33) return "oklch(0.7 0.15 200)"; // teal
-    return "oklch(0.55 0.08 260)"; // muted blue
+    if (peerId) historyRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [peerId]);
+  const choosePeer = (id: string) => {
+    if (peerId === id) historyRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setPeerId(id);
+    setHistoryLimit(10);
   };
-
-  const onWheel = (e: React.WheelEvent) => {
-    e.preventDefault();
-    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
-    setZoom((z) => Math.max(0.4, Math.min(4, z * factor)));
+  const reset = () => {
+    setFrom("");
+    setTo("");
+    setMinGames(3);
+    setQuery("");
+    setMode("together");
+    setPeerId(null);
+    setSort({ key: "games", asc: false });
   };
+  const toggleSort = (key: typeof sort.key) =>
+    setSort((previous) => ({ key, asc: previous.key === key ? !previous.asc : key === "name" }));
 
   return (
-    <div className="container mx-auto px-4 py-6 space-y-6">
-      <div className="flex items-center justify-between gap-4 flex-wrap">
+    <div className="space-y-6">
+      <header className="flex items-start justify-between gap-4 flex-wrap">
         <div>
-          <h1 className="font-display text-3xl text-glow">Связь</h1>
-          <p className="text-sm text-muted-foreground">
-            Граф совместных матчей. Кликни на игрока — увидишь только его связи.
-            Колесо — зум, перетаскивание фона — панорама.
+          <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground mb-2">
+            Люди клуба
+          </p>
+          <h1 className="font-display text-3xl sm:text-4xl text-glow">Связь</h1>
+          <p className="text-sm text-muted-foreground mt-3 max-w-2xl">
+            С кем чаще играешь, с кем побеждаешь и против кого сложнее всего. Выбери игрока и
+            посмотри историю каждой пары.
           </p>
         </div>
-        <div className="flex gap-2">
-          {(zoom !== 1 || pan.x !== 0 || pan.y !== 0) && (
-            <button
-              onClick={() => {
-                setZoom(1);
-                setPan({ x: 0, y: 0 });
+        <button
+          className="inline-flex items-center gap-2 rounded-md border border-border px-3 py-2 text-sm hover:bg-muted"
+          onClick={reset}
+        >
+          <RotateCcw size={15} />
+          Сбросить фильтры
+        </button>
+      </header>
+
+      <section className="panel p-4 sm:p-5 space-y-5" aria-label="Фильтры связей">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_.7fr] gap-4">
+          <label className="space-y-2 text-sm">
+            <span className="text-muted-foreground">Чьи связи</span>
+            <select
+              aria-label="Чьи связи"
+              className={inputClass}
+              value={playerId}
+              onChange={(e) => {
+                navigate({ search: { player: e.target.value } });
+                setPeerId(null);
               }}
-              className="px-3 py-1.5 rounded-md text-sm bg-muted hover:bg-muted/70 border border-border"
             >
-              Сбросить вид
-            </button>
-          )}
-          {selected && (
-            <button
-              onClick={() => setSelected(null)}
-              className="px-3 py-1.5 rounded-md text-sm bg-muted hover:bg-muted/70 border border-border"
-            >
-              Сбросить фильтр
-            </button>
-          )}
+              <option value="" disabled>
+                Выбрать игрока
+              </option>
+              {people.map((p) => (
+                <option key={p.steam_id} value={p.steam_id}>
+                  {p.display_name} · игр: {p.match_count}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="space-y-2 text-sm">
+            <span className="text-muted-foreground">С даты · МСК</span>
+            <input
+              aria-label="С даты"
+              type="date"
+              className={`${inputClass} [color-scheme:dark]`}
+              min={dateRange[0]}
+              max={to || dateRange.at(-1)}
+              value={from}
+              onInput={(e) => setFrom(e.currentTarget.value)}
+            />
+          </label>
+          <label className="space-y-2 text-sm">
+            <span className="text-muted-foreground">По дату включительно · МСК</span>
+            <input
+              aria-label="По дату включительно"
+              type="date"
+              className={`${inputClass} [color-scheme:dark]`}
+              min={from || dateRange[0]}
+              max={dateRange.at(-1)}
+              value={to}
+              onInput={(e) => setTo(e.currentTarget.value)}
+            />
+          </label>
+          <label className="space-y-2 text-sm">
+            <span className="text-muted-foreground">Минимум игр в паре</span>
+            <input
+              aria-label="Минимум игр в паре"
+              type="number"
+              min={1}
+              max={Math.max(1, matches.length)}
+              value={minGames}
+              onChange={(e) =>
+                setMinGames(
+                  Math.min(Math.max(1, Number(e.target.value) || 1), Math.max(1, matches.length)),
+                )
+              }
+              className={inputClass}
+            />
+          </label>
+        </div>
+        <div className="flex items-center justify-between gap-3 flex-wrap">
+          <div
+            className="inline-flex flex-wrap gap-1 rounded-lg bg-background/60 p-1"
+            role="group"
+            aria-label="Вид связи"
+          >
+            {MODES.map((item) => (
+              <button
+                key={item.value}
+                aria-pressed={mode === item.value}
+                onClick={() => {
+                  setMode(item.value);
+                  setPeerId(null);
+                }}
+                title={item.description}
+                className={`rounded-md px-4 py-2 text-sm transition ${mode === item.value ? "bg-primary/20 text-foreground ring-1 ring-primary/40" : "text-muted-foreground hover:text-foreground"}`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+          <button
+            aria-expanded={showMap}
+            aria-controls="connection-map"
+            onClick={() => setShowMap((value) => !value)}
+            className="inline-flex items-center gap-2 text-sm rounded-md border border-border px-3 py-2 hover:bg-muted"
+          >
+            <Network size={16} />
+            {showMap ? "Скрыть карту" : "Показать карту связей"}
+          </button>
+        </div>
+        {invalidRange && (
+          <p role="alert" className="text-sm text-red-300">
+            Начальная дата должна быть не позже конечной.
+          </p>
+        )}
+      </section>
+
+      <div className="flex items-center gap-3">
+        <Avatar id={playerId} name={name} />
+        <div>
+          <Link
+            to="/player"
+            search={{ nick: name }}
+            className="text-xl font-display hover:text-primary"
+          >
+            {name}
+          </Link>
+          <p className="text-xs text-muted-foreground mt-1">
+            {MODES.find((item) => item.value === mode)?.description} ·{" "}
+            {from || to ? "выбранный период" : "всё время"}
+          </p>
         </div>
       </div>
+      <div className="grid grid-cols-2 xl:grid-cols-4 gap-3">
+        <Metric label="Матчей игрока в периоде" value={ownGames} />
+        <Metric label="Связей в списке" value={rows.length} />
+        <Metric
+          label="Чаще всего встречались"
+          value={strongest?.name || "—"}
+          detail={strongest ? `Матчей: ${strongest.games}` : "Нет подходящих игр"}
+        />
+        <Metric
+          label="Лучший винрейт пары · от 3 игр"
+          value={best ? `${best.winrate}%` : "—"}
+          detail={best ? `${best.name} · ${best.wins} из ${best.games}` : "Недостаточно матчей"}
+        />
+      </div>
 
-      <div className="grid lg:grid-cols-[1fr_280px] gap-4">
-        <div
-          className="rounded-lg border border-border/60 bg-card/40 overflow-hidden relative"
-          style={{
-            backgroundImage:
-              "radial-gradient(oklch(0.5 0.02 260 / 0.15) 1px, transparent 1px)",
-            backgroundSize: "26px 26px",
-          }}
+      {showMap && (
+        <section
+          id="connection-map"
+          className="panel p-4 sm:p-5 space-y-3"
+          aria-label="Карта связей"
         >
-          <svg
-            viewBox={`0 0 ${W} ${H}`}
-            className="w-full h-auto cursor-grab active:cursor-grabbing"
-            onWheel={onWheel}
-            onPointerDown={(e) => {
-              if ((e.target as SVGElement).closest("[data-node]")) return;
-              (e.target as SVGElement).setPointerCapture?.(e.pointerId);
-              dragRef.current = { x: e.clientX, y: e.clientY, px: pan.x, py: pan.y };
-            }}
-            onPointerMove={(e) => {
-              if (!dragRef.current) return;
-              const dx = e.clientX - dragRef.current.x;
-              const dy = e.clientY - dragRef.current.y;
-              setPan({ x: dragRef.current.px + dx, y: dragRef.current.py + dy });
-            }}
-            onPointerUp={() => (dragRef.current = null)}
-            onPointerLeave={() => (dragRef.current = null)}
-          >
-            <g transform={`translate(${pan.x},${pan.y}) scale(${zoom}) translate(${(1 - 1) * 0},0)`}>
-              {/* edges */}
-              {filteredEdges.map((e) => {
-                const a = nodeById.get(e.a);
-                const b = nodeById.get(e.b);
-                if (!a || !b) return null;
-                const t = e.games / maxGames;
-                const w = 0.6 + t * 5.5;
-                const isFocus =
-                  !focusId || e.a === focusId || e.b === focusId;
-                const op = isFocus ? 0.35 + t * 0.55 : 0.05;
-                return (
-                  <line
-                    key={`${e.a}-${e.b}`}
-                    x1={a.x}
-                    y1={a.y}
-                    x2={b.x}
-                    y2={b.y}
-                    stroke={edgeColor(e.games)}
-                    strokeOpacity={op}
-                    strokeWidth={w}
-                    strokeLinecap="round"
-                  />
-                );
-              })}
-              {/* edge labels on focus */}
-              {focusId &&
-                filteredEdges
-                  .filter((e) => e.a === focusId || e.b === focusId)
-                  .map((e) => {
-                    const a = nodeById.get(e.a);
-                    const b = nodeById.get(e.b);
-                    if (!a || !b) return null;
-                    const mx = (a.x + b.x) / 2;
-                    const my = (a.y + b.y) / 2;
-                    return (
-                      <g key={`lbl-${e.a}-${e.b}`} style={{ pointerEvents: "none" }}>
-                        <rect
-                          x={mx - 12}
-                          y={my - 9}
-                          width={24}
-                          height={16}
-                          rx={4}
-                          fill="oklch(0.15 0.02 260 / 0.9)"
-                          stroke="oklch(0.4 0.08 260)"
-                        />
-                        <text
-                          x={mx}
-                          y={my + 3}
-                          textAnchor="middle"
-                          fontSize={11}
-                          fill="oklch(0.95 0.05 80)"
-                          fontWeight={600}
-                        >
-                          {e.games}
-                        </text>
-                      </g>
-                    );
-                  })}
-              {/* nodes */}
-              {nodes.map((n) => {
-                const url = avatars?.get(n.id);
-                const clipId = `clip-${n.id}`;
-                const isFocus = !focusId || focusNeighbors?.has(n.id);
-                const isSelected = selected === n.id;
-                const ringColor = isSelected
-                  ? "oklch(0.85 0.2 80)"
-                  : hovered === n.id
-                    ? "oklch(0.85 0.15 200)"
-                    : "oklch(0.55 0.12 260)";
-                return (
-                  <g
-                    key={n.id}
-                    data-node
-                    transform={`translate(${n.x},${n.y})`}
-                    className="cursor-pointer"
-                    opacity={isFocus ? 1 : 0.25}
-                    onClick={() => setSelected(selected === n.id ? null : n.id)}
-                    onMouseEnter={() => setHovered(n.id)}
-                    onMouseLeave={() => setHovered((h) => (h === n.id ? null : h))}
-                  >
-                    <defs>
-                      <clipPath id={clipId}>
-                        <circle cx={0} cy={0} r={n.r} />
-                      </clipPath>
-                    </defs>
-                    <circle
-                      cx={0}
-                      cy={0}
-                      r={n.r + 3}
-                      fill="oklch(0.18 0.02 260)"
-                      stroke={ringColor}
-                      strokeWidth={isSelected ? 3.5 : 2}
+          <div className="flex justify-between gap-3 flex-wrap">
+            <h2 className="font-display text-xl">Карта связей {name}</h2>
+            <span className="text-xs text-muted-foreground">
+              До 10 самых частых связей · полный список ниже
+            </span>
+          </div>
+          {mapRows.length ? (
+            <div className="overflow-x-auto">
+              <svg
+                viewBox="0 0 800 540"
+                className="w-full min-w-[600px] max-h-[540px]"
+                role="group"
+                aria-label="Выбери игрока на карте, чтобы открыть общие матчи"
+              >
+                {mapRows.map((row, i) => {
+                  const angle = -Math.PI / 2 + (i / mapRows.length) * Math.PI * 2;
+                  const x = 400 + Math.cos(angle) * 270;
+                  const y = 250 + Math.sin(angle) * 185;
+                  return (
+                    <line
+                      key={row.steam_id}
+                      x1={400}
+                      y1={250}
+                      x2={x}
+                      y2={y}
+                      stroke={mode === "opponents" ? "#7dd3fc" : "#6ee7b7"}
+                      strokeOpacity={peerId && peerId !== row.steam_id ? 0.12 : 0.4}
+                      strokeWidth={1 + (4 * row.games) / (strongest?.games || 1)}
                     />
-                    {url ? (
-                      <image
-                        href={url}
-                        x={-n.r}
-                        y={-n.r}
-                        width={n.r * 2}
-                        height={n.r * 2}
-                        clipPath={`url(#${clipId})`}
-                        preserveAspectRatio="xMidYMid slice"
-                      />
-                    ) : (
-                      <>
-                        <circle cx={0} cy={0} r={n.r} fill="oklch(0.3 0.05 260)" />
-                        <text
-                          textAnchor="middle"
-                          dominantBaseline="central"
-                          fill="oklch(0.9 0.05 260)"
-                          fontSize={n.r * 0.8}
-                          fontFamily="serif"
-                          fontWeight={600}
-                        >
-                          {n.name.slice(0, 1).toUpperCase()}
-                        </text>
-                      </>
-                    )}
-                    {/* name with bg pill */}
-                    <g style={{ pointerEvents: "none" }}>
-                      <rect
-                        x={-(n.name.length * 3.6 + 8)}
-                        y={n.r + 6}
-                        width={n.name.length * 7.2 + 16}
-                        height={16}
-                        rx={4}
-                        fill="oklch(0.15 0.02 260 / 0.85)"
+                  );
+                })}
+                <circle
+                  cx={400}
+                  cy={250}
+                  r={40}
+                  fill="var(--card)"
+                  stroke="var(--primary)"
+                  strokeWidth={2}
+                />
+                <text
+                  x={400}
+                  y={250}
+                  textAnchor="middle"
+                  dominantBaseline="middle"
+                  fill="var(--foreground)"
+                  fontSize={14}
+                  fontWeight={600}
+                >
+                  {name.length > 20 ? name.slice(0, 18) + "…" : name}
+                </text>
+                <text
+                  x={400}
+                  y={310}
+                  textAnchor="middle"
+                  fill="var(--muted-foreground)"
+                  fontSize={12}
+                >
+                  выбранный игрок
+                </text>
+                {mapRows.map((row, i) => {
+                  const angle = -Math.PI / 2 + (i / mapRows.length) * Math.PI * 2;
+                  const x = 400 + Math.cos(angle) * 270;
+                  const y = 250 + Math.sin(angle) * 185;
+                  return (
+                    <g
+                      key={row.steam_id}
+                      role="button"
+                      tabIndex={0}
+                      aria-label={`Матчи с ${row.name}: ${row.games}`}
+                      onClick={() => choosePeer(row.steam_id)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          choosePeer(row.steam_id);
+                        }
+                      }}
+                      className="cursor-pointer outline-none group"
+                      transform={`translate(${x},${y})`}
+                    >
+                      <title>
+                        {row.name} · игр: {row.games} · {row.winrate}% побед
+                      </title>
+                      <circle
+                        r={27}
+                        fill="var(--card)"
+                        stroke={peerId === row.steam_id ? "#6ee7b7" : "var(--border)"}
+                        strokeWidth={2}
+                        className="group-hover:stroke-primary group-focus:stroke-primary"
                       />
                       <text
-                        y={n.r + 17}
                         textAnchor="middle"
-                        fill="oklch(0.95 0.02 260)"
-                        fontSize={11}
-                        fontWeight={500}
+                        dominantBaseline="middle"
+                        fill="var(--foreground)"
+                        fontSize={17}
                       >
-                        {n.name}
+                        {row.name.slice(0, 1).toLocaleUpperCase("ru")}
+                      </text>
+                      <text y={47} textAnchor="middle" fill="var(--foreground)" fontSize={12}>
+                        {row.name.length > 22 ? row.name.slice(0, 20) + "…" : row.name}
+                      </text>
+                      <text y={64} textAnchor="middle" fill="var(--muted-foreground)" fontSize={11}>
+                        Игр: {row.games} · {row.winrate}% побед
                       </text>
                     </g>
-                  </g>
-                );
-              })}
-            </g>
-          </svg>
+                  );
+                })}
+              </svg>
+            </div>
+          ) : (
+            <p className="text-muted-foreground py-8 text-center">
+              Нет связей по выбранным фильтрам.
+            </p>
+          )}
+          <p className="text-xs text-muted-foreground">
+            Толщина линии — число матчей. Нажми на игрока, чтобы открыть историю пары.
+          </p>
+        </section>
+      )}
+
+      <section className="space-y-3" aria-label="Таблица связей">
+        <div className="flex gap-3 items-center justify-between flex-wrap">
+          <h2 className="font-display text-2xl">
+            {MODES.find((item) => item.value === mode)?.label}
+          </h2>
+          <label className="relative w-full sm:w-64">
+            <Search className="absolute left-3 top-3 text-muted-foreground" size={15} />
+            <span className="sr-only">Найти связь по игроку</span>
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Найти игрока…"
+              className={`${inputClass} pl-9`}
+            />
+          </label>
         </div>
-
-        <div className="space-y-5 p-4 rounded-lg border border-border/60 bg-card/40">
-          <div>
-            <div className="flex justify-between text-xs text-muted-foreground mb-2">
-              <span>Расстояние между игроками</span>
-              <span>{linkDistance}px</span>
-            </div>
-            <Slider
-              min={60}
-              max={400}
-              step={10}
-              value={[linkDistance]}
-              onValueChange={(v) => setLinkDistance(v[0])}
-            />
-          </div>
-          <div>
-            <div className="flex justify-between text-xs text-muted-foreground mb-2">
-              <span>Отталкивание</span>
-              <span>{repulsion}</span>
-            </div>
-            <Slider
-              min={400}
-              max={8000}
-              step={100}
-              value={[repulsion]}
-              onValueChange={(v) => setRepulsion(v[0])}
-            />
-          </div>
-          <div>
-            <div className="flex justify-between text-xs text-muted-foreground mb-2">
-              <span>Мин. совместных игр</span>
-              <span>≥ {minGames}</span>
-            </div>
-            <Slider
-              min={1}
-              max={Math.max(2, overallMaxGames)}
-              step={1}
-              value={[minGames]}
-              onValueChange={(v) => setMinGames(v[0])}
-            />
-          </div>
-          <div>
-            <div className="flex justify-between text-xs text-muted-foreground mb-2">
-              <span>Зум</span>
-              <span>{zoom.toFixed(2)}×</span>
-            </div>
-            <Slider
-              min={0.4}
-              max={4}
-              step={0.05}
-              value={[zoom]}
-              onValueChange={(v) => setZoom(v[0])}
-            />
-          </div>
-
-          <div>
-            <div className="flex justify-between text-xs text-muted-foreground mb-2">
-              <span>Дата</span>
-              <span>{dateLabel}</span>
-            </div>
-            <div className="relative pt-4 pb-6">
-              <div
-                className="absolute top-0 text-[10px] text-amber-400 -translate-x-1/2"
-                style={{ left: `${s1Pct}%` }}
-                title="Начало 1-го сезона"
-              >
-                <div className="text-center whitespace-nowrap">1 сезон</div>
-                <div className="w-px h-3 bg-amber-400 mx-auto" />
-              </div>
-              <div
-                className="absolute top-0 text-[10px] text-emerald-400 -translate-x-1/2"
-                style={{ left: `${s2Pct}%` }}
-                title="Начало 2-го сезона"
-              >
-                <div className="text-center whitespace-nowrap">2 сезон</div>
-                <div className="w-px h-3 bg-emerald-400 mx-auto" />
-              </div>
-              <Slider
-                className="mt-6"
-                min={minT}
-                max={maxT}
-                step={24 * 60 * 60 * 1000}
-                value={[timeT]}
-                onValueChange={(v) => setTimeT(v[0])}
-              />
-            </div>
-          </div>
-
-          <div className="text-xs text-muted-foreground space-y-1 pt-2 border-t border-border/60">
-            <div>Игроков: <span className="text-foreground">{nodes.length}</span></div>
-            <div>Связей: <span className="text-foreground">{filteredEdges.length}</span></div>
-            <div>Макс. игр в паре: <span className="text-foreground">{maxGames}</span></div>
-          </div>
-
-          <div className="text-xs space-y-1 pt-2 border-t border-border/60">
-            <div className="text-muted-foreground mb-1">Толщина связи = число игр</div>
-            <div className="flex items-center gap-2">
-              <span className="inline-block w-6 h-[2px]" style={{ background: "oklch(0.55 0.08 260)" }} />
-              <span>редко</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="inline-block w-6 h-[3.5px]" style={{ background: "oklch(0.7 0.15 200)" }} />
-              <span>часто</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="inline-block w-6 h-[5px]" style={{ background: "oklch(0.78 0.18 70)" }} />
-              <span>максимум</span>
-            </div>
-          </div>
+        <p className="text-xs text-muted-foreground">
+          Победы и винрейт считаются для {name}. В режиме «Соперники» это победы над соперником.
+        </p>
+        <div className="panel overflow-x-auto">
+          <table className="w-full min-w-[650px] text-sm text-center">
+            <thead className="bg-muted/30">
+              <tr>
+                {(
+                  [
+                    ["name", "Игрок"],
+                    ["games", "Матчей"],
+                    ["wins", "Побед"],
+                    ["losses", "Поражений"],
+                    ["winrate", "Винрейт"],
+                  ] as const
+                ).map(([key, label]) => (
+                  <th
+                    key={key}
+                    className={`px-4 py-3 ${key === "name" ? "text-left" : ""}`}
+                    aria-sort={sort.key === key ? (sort.asc ? "ascending" : "descending") : "none"}
+                  >
+                    <button
+                      onClick={() => toggleSort(key)}
+                      className="hover:text-primary inline-flex gap-1 items-center"
+                    >
+                      {label}
+                      {sort.key === key && (
+                        <ArrowDown size={12} className={sort.asc ? "rotate-180" : ""} />
+                      )}
+                    </button>
+                  </th>
+                ))}
+                <th className="px-4 py-3">История</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row) => (
+                <tr
+                  key={row.steam_id}
+                  className={`border-t border-border/40 hover:bg-muted/20 ${row.steam_id === peerId ? "bg-primary/10" : ""}`}
+                >
+                  <td className="px-4 py-3 text-left">
+                    <div className="flex gap-3 items-center">
+                      <Avatar id={row.steam_id} name={row.name} small />
+                      <div>
+                        <Link
+                          to="/player"
+                          search={{ nick: row.name }}
+                          className="hover:text-primary hover:underline"
+                        >
+                          {row.name}
+                        </Link>
+                        <p className="text-[11px] text-muted-foreground mt-1">
+                          {row.together} вместе · {row.opponents} против
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="px-4 py-3 font-mono">{row.games}</td>
+                  <td className="px-4 py-3 font-mono text-emerald-300">{row.wins}</td>
+                  <td className="px-4 py-3 font-mono text-slate-300">{row.losses}</td>
+                  <td className="px-4 py-3">
+                    <div className="font-mono">{row.winrate}%</div>
+                    <div className="w-16 h-1 mx-auto mt-2 rounded-full bg-muted overflow-hidden">
+                      <div
+                        className="h-full bg-emerald-400/70"
+                        style={{ width: `${row.winrate}%` }}
+                      />
+                    </div>
+                  </td>
+                  <td className="px-4 py-3">
+                    <button
+                      onClick={() => choosePeer(row.steam_id)}
+                      className="inline-flex items-center gap-1 rounded-md border border-border px-3 py-1.5 hover:bg-muted"
+                      aria-label={`Открыть матчи с ${row.name}`}
+                    >
+                      Матчи
+                      <ArrowRight size={13} />
+                    </button>
+                  </td>
+                </tr>
+              ))}
+              {!rows.length && (
+                <tr>
+                  <td colSpan={6} className="p-10 text-muted-foreground">
+                    <Users className="mx-auto mb-3" />
+                    <p>Нет связей по выбранным фильтрам.</p>
+                    <p className="text-xs mt-2">
+                      Выбери другой период, уменьши минимум игр или очисти поиск.
+                    </p>
+                    <button
+                      className="mt-4 text-foreground underline"
+                      onClick={() => {
+                        setMinGames(1);
+                        setFrom("");
+                        setTo("");
+                        setQuery("");
+                      }}
+                    >
+                      Показать все встречи в этом режиме
+                    </button>
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
         </div>
-      </div>
+      </section>
+
+      {peer && (
+        <section ref={historyRef} id="pair-history" className="space-y-4 scroll-mt-36">
+          <div className="flex justify-between items-start gap-3">
+            <div>
+              <h2 className="font-display text-2xl">
+                {name} <span className="text-muted-foreground">и</span> {peer.name}
+              </h2>
+              <p className="text-sm text-muted-foreground mt-2">
+                Матчей: {peer.games} · Победы: {peer.wins} · Поражения: {peer.losses} · Винрейт{" "}
+                {name}: {peer.winrate}%
+              </p>
+            </div>
+            <button
+              onClick={() => setPeerId(null)}
+              className="border border-border rounded-md px-3 py-2 text-sm hover:bg-muted"
+            >
+              Закрыть
+            </button>
+          </div>
+          <div className="panel overflow-x-auto">
+            <table className="w-full min-w-[600px] text-sm text-left">
+              <thead className="bg-muted/30">
+                <tr>
+                  <th className="px-4 py-3">Матч · МСК</th>
+                  <th className="px-4 py-3">Герои</th>
+                  <th className="px-4 py-3">Стороны</th>
+                  <th className="px-4 py-3">Результат {name}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {history.slice(0, historyLimit).map(({ row, player, other, together, won }) => (
+                  <tr key={row.match_id} className="border-t border-border/40 hover:bg-muted/20">
+                    <td className="px-4 py-3">
+                      <Link
+                        to="/match/$id"
+                        params={{ id: String(row.match_id) }}
+                        className="hover:text-primary hover:underline"
+                      >
+                        {new Date(row.start_time).toLocaleString("ru-RU", {
+                          timeZone: "Europe/Moscow",
+                          dateStyle: "short",
+                          timeStyle: "short",
+                        })}
+                        <span className="block text-xs text-muted-foreground">#{row.match_id}</span>
+                      </Link>
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex items-center gap-2">
+                        <HeroPortrait hero={player.hero} />
+                        <Swords size={13} className="text-muted-foreground" />
+                        <HeroPortrait hero={other.hero} />
+                      </div>
+                    </td>
+                    <td className="px-4 py-3 text-muted-foreground">
+                      {together ? "В одной команде" : "Соперники"}
+                    </td>
+                    <td className={`px-4 py-3 ${won ? "text-emerald-300" : "text-slate-300"}`}>
+                      {won ? "Победа" : "Поражение"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {history.length > historyLimit && (
+            <button
+              onClick={() => setHistoryLimit((value) => value + 10)}
+              className="w-full border border-border rounded-md py-3 text-sm hover:bg-muted"
+            >
+              Показать ещё: {Math.min(10, history.length - historyLimit)}
+            </button>
+          )}
+        </section>
+      )}
     </div>
+  );
+}
+
+function Metric({
+  label,
+  value,
+  detail,
+}: {
+  label: string;
+  value: string | number;
+  detail?: string;
+}) {
+  return (
+    <div className="panel p-4 sm:p-5">
+      <p className="text-xs text-muted-foreground">{label}</p>
+      <p className="text-xl sm:text-2xl font-mono mt-3 break-words">{value}</p>
+      {detail && <p className="text-xs text-muted-foreground mt-2">{detail}</p>}
+    </div>
+  );
+}
+function Avatar({ id, name, small = false }: { id: string; name: string; small?: boolean }) {
+  const url = STATIC_AVATARS.get(id);
+  return url ? (
+    <img
+      src={url}
+      alt=""
+      className={`${small ? "w-8 h-8" : "w-12 h-12"} rounded-full object-cover border border-border shrink-0`}
+    />
+  ) : (
+    <span
+      aria-hidden="true"
+      className={`${small ? "w-8 h-8 text-sm" : "w-12 h-12 text-xl"} rounded-full bg-primary/10 border border-border flex items-center justify-center shrink-0`}
+    >
+      {name.slice(0, 1).toLocaleUpperCase("ru")}
+    </span>
+  );
+}
+function HeroPortrait({ hero }: { hero: string }) {
+  return (
+    <Link to="/hero/$hero" params={{ hero: heroShortName(hero) }} title={hero}>
+      <img
+        src={heroImg(hero)}
+        alt={hero}
+        className="w-12 h-7 rounded object-cover border border-border"
+      />
+    </Link>
   );
 }

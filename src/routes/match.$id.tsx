@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities, matchDeaths } from "@/lib/stats";
-import { heroImg, heroIcon, heroAnchorId } from "@/lib/heroes";
+import { heroImg, heroIcon, heroShortName } from "@/lib/heroes";
 import { useMemo } from "react";
 
 export const Route = createFileRoute("/match/$id")({
@@ -134,7 +134,7 @@ function MatchPage() {
                 return (
                   <tr key={p.steam_id} className="border-t border-border/30">
                     <td className="py-1 px-1">
-                      <Link to={`/heroes`} hash={heroAnchorId(p.hero)} title={p.hero}>
+                      <Link to="/hero/$hero" params={{ hero: heroShortName(p.hero) }} title={p.hero}>
                         <img
                           src={heroImg(p.hero)}
                           alt={p.hero}
@@ -187,8 +187,8 @@ function MatchPage() {
             return (
               <Link
                 key={i}
-                to={`/heroes`}
-                hash={heroAnchorId(s.hero)}
+                to="/hero/$hero"
+                params={{ hero: heroShortName(s.hero) }}
                 title={`${s.isBan ? "Бан" : `Пик · ${s.side === "radiant" ? "Свет" : s.side === "dire" ? "Тьма" : "?"}`}: ${s.hero}`}
               >
                 <img
@@ -223,7 +223,7 @@ function MatchPage() {
         <div className="flex items-center gap-1">
           <span className="uppercase tracking-wider mr-1">Пики</span>
           {picks.map((s, i) => (
-            <Link key={`p${i}`} to="/heroes" hash={heroAnchorId(s.hero)} title={s.hero}>
+            <Link key={`p${i}`} to="/hero/$hero" params={{ hero: heroShortName(s.hero) }} title={s.hero}>
               <img
                 src={heroIcon(s.hero)}
                 alt={s.hero}
@@ -236,7 +236,7 @@ function MatchPage() {
           <div className="flex items-center gap-1">
             <span className="uppercase tracking-wider mr-1">Баны</span>
             {bans.map((s, i) => (
-              <Link key={`b${i}`} to="/heroes" hash={heroAnchorId(s.hero)} title={s.hero}>
+              <Link key={`b${i}`} to="/hero/$hero" params={{ hero: heroShortName(s.hero) }} title={s.hero}>
                 <img
                   src={heroIcon(s.hero)}
                   alt={s.hero}

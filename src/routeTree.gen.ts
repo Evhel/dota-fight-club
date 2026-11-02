@@ -21,6 +21,7 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as MatchIndexRouteImport } from './routes/match.index'
 import { Route as MatchIdRouteImport } from './routes/match.$id'
+import { Route as HeroHeroRouteImport } from './routes/hero.$hero'
 
 const VsRoute = VsRouteImport.update({
   id: '/vs',
@@ -82,6 +83,11 @@ const MatchIdRoute = MatchIdRouteImport.update({
   path: '/match/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HeroHeroRoute = HeroHeroRouteImport.update({
+  id: '/hero/$hero',
+  path: '/hero/$hero',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -94,6 +100,7 @@ export interface FileRoutesByFullPath {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
+  '/hero/$hero': typeof HeroHeroRoute
   '/match/$id': typeof MatchIdRoute
   '/match/': typeof MatchIndexRoute
 }
@@ -108,6 +115,7 @@ export interface FileRoutesByTo {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
+  '/hero/$hero': typeof HeroHeroRoute
   '/match/$id': typeof MatchIdRoute
   '/match': typeof MatchIndexRoute
 }
@@ -123,6 +131,7 @@ export interface FileRoutesById {
   '/players': typeof PlayersRoute
   '/records': typeof RecordsRoute
   '/vs': typeof VsRoute
+  '/hero/$hero': typeof HeroHeroRoute
   '/match/$id': typeof MatchIdRoute
   '/match/': typeof MatchIndexRoute
 }
@@ -139,6 +148,7 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
+    | '/hero/$hero'
     | '/match/$id'
     | '/match/'
   fileRoutesByTo: FileRoutesByTo
@@ -153,6 +163,7 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
+    | '/hero/$hero'
     | '/match/$id'
     | '/match'
   id:
@@ -167,6 +178,7 @@ export interface FileRouteTypes {
     | '/players'
     | '/records'
     | '/vs'
+    | '/hero/$hero'
     | '/match/$id'
     | '/match/'
   fileRoutesById: FileRoutesById
@@ -182,6 +194,7 @@ export interface RootRouteChildren {
   PlayersRoute: typeof PlayersRoute
   RecordsRoute: typeof RecordsRoute
   VsRoute: typeof VsRoute
+  HeroHeroRoute: typeof HeroHeroRoute
   MatchIdRoute: typeof MatchIdRoute
   MatchIndexRoute: typeof MatchIndexRoute
 }
@@ -272,6 +285,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MatchIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/hero/$hero': {
+      id: '/hero/$hero'
+      path: '/hero/$hero'
+      fullPath: '/hero/$hero'
+      preLoaderRoute: typeof HeroHeroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -286,6 +306,7 @@ const rootRouteChildren: RootRouteChildren = {
   PlayersRoute: PlayersRoute,
   RecordsRoute: RecordsRoute,
   VsRoute: VsRoute,
+  HeroHeroRoute: HeroHeroRoute,
   MatchIdRoute: MatchIdRoute,
   MatchIndexRoute: MatchIndexRoute,
 }

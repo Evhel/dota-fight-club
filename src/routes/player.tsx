@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMatches } from "@/lib/matches";
 import { buildIdentities, computePlayerStats, formatDuration } from "@/lib/stats";
-import { heroImg, heroAnchorId, WARD_OBSERVER_ICON, WARD_SENTRY_ICON } from "@/lib/heroes";
+import { heroImg, heroShortName, WARD_OBSERVER_ICON, WARD_SENTRY_ICON } from "@/lib/heroes";
 import { useMemo, useState, useEffect } from "react";
 import { z } from "zod";
 import { zodValidator } from "@tanstack/zod-adapter";
@@ -224,8 +224,8 @@ function PlayerPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1 text-sm">
-                <Row k="Любимый герой" v={stats.top_hero_games ? `${stats.top_hero_games.hero} (${stats.top_hero_games.games})` : "—"} />
-                <Row k="Лучший герой (WR)" v={stats.top_hero_winrate ? `${stats.top_hero_winrate.hero} (${stats.top_hero_winrate.winrate}%)` : "—"} />
+                <Row k="Любимый герой" v={stats.top_hero_games ? <Link to="/hero/$hero" params={{ hero: heroShortName(stats.top_hero_games.hero) }} className="hover:text-primary hover:underline">{stats.top_hero_games.hero} ({stats.top_hero_games.games})</Link> : "—"} />
+                <Row k="Лучший герой (WR)" v={stats.top_hero_winrate ? <Link to="/hero/$hero" params={{ hero: heroShortName(stats.top_hero_winrate.hero) }} className="hover:text-primary hover:underline">{stats.top_hero_winrate.hero} ({stats.top_hero_winrate.winrate}%)</Link> : "—"} />
               </div>
             </div>
           </div>
@@ -239,8 +239,8 @@ function PlayerPage() {
               {stats.unique_heroes.map((h) => (
                 <Link
                   key={h}
-                  to={`/heroes`}
-                  hash={heroAnchorId(h)}
+                  to="/hero/$hero"
+                  params={{ hero: heroShortName(h) }}
                   title={h}
                   className="block rounded overflow-hidden border border-border/50 hover:border-primary hover:shadow-[0_0_8px_var(--primary)] transition"
                 >
@@ -349,7 +349,7 @@ function MatchHistory({ steamId, matches }: { steamId: string; matches: ReturnTy
                     </Link>
                   </td>
                   <td className="py-1.5 px-2">
-                    <div className="flex items-center gap-2">
+                    <Link to="/hero/$hero" params={{ hero: heroShortName(r.hero) }} className="flex items-center gap-2 hover:text-primary">
                       <img
                         src={heroImg(r.hero)}
                         alt={r.hero}
@@ -358,7 +358,7 @@ function MatchHistory({ steamId, matches }: { steamId: string; matches: ReturnTy
                         onError={(e) => ((e.currentTarget.style.display = "none"))}
                       />
                       <span>{r.hero}</span>
-                    </div>
+                    </Link>
                   </td>
                   <td className="py-1.5 px-2 font-medium" style={{ color: r.won ? winColor : lossColor }}>
                     {r.won ? "Победа" : "Поражение"}
@@ -445,7 +445,7 @@ function WardLink({ icon, alt, value, matchId, grayscale }: {
 
 
 
-function Row({ k, v, link }: { k: string; v: number | string; link?: string }) {
+function Row({ k, v, link }: { k: string; v: React.ReactNode; link?: string }) {
   return (
     <div className="flex justify-between gap-3 border-b border-border/30 pb-1">
       <span className="text-muted-foreground">{k}</span>

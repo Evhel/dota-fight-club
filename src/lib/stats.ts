@@ -1,4 +1,6 @@
 import type { ChatMessage, DotaMatch, MatchRow } from "./types";
+import { heroShortName } from "./heroes.ts";
+import { HERO_CATALOG } from "./hero-catalog.ts";
 
 function hasVerifiedCombat(match: DotaMatch): boolean {
   return match.data_quality?.terminal_stats_source === "replay_match_details";
@@ -448,33 +450,41 @@ export function computeAllPlayerStats(
 }
 
 export function computeHeroStats(matches: MatchRow[]): HeroStats[] {
-  const map = new Map<string, { games: number; wins: number; bans: number; firstBans: number }>();
+  const map = new Map<string, { name: string; games: number; wins: number; bans: number; firstBans: number }>(
+    Object.entries(HERO_CATALOG).map(([slug, name]) => [slug, { name, games: 0, wins: 0, bans: 0, firstBans: 0 }]),
+  );
+  const getHero = (name: string) => {
+    const key = heroShortName(name);
+    let hero = map.get(key);
+    if (!hero) {
+      hero = { name, games: 0, wins: 0, bans: 0, firstBans: 0 };
+      map.set(key, hero);
+    }
+    return hero;
+  };
   for (const row of matches) {
     const m = row.data;
     for (const p of m.radiant_team) {
-      const h = map.get(p.hero) || { games: 0, wins: 0, bans: 0, firstBans: 0 };
+      const h = getHero(p.hero);
       h.games += 1;
       if (m.winner === "radiant") h.wins += 1;
-      map.set(p.hero, h);
     }
     for (const p of m.dire_team) {
-      const h = map.get(p.hero) || { games: 0, wins: 0, bans: 0, firstBans: 0 };
+      const h = getHero(p.hero);
       h.games += 1;
       if (m.winner === "dire") h.wins += 1;
-      map.set(p.hero, h);
     }
     const bans = (m.bans || []).slice().sort((a, b) => a.tick - b.tick);
     bans.forEach((b, i) => {
-      const h = map.get(b.hero) || { games: 0, wins: 0, bans: 0, firstBans: 0 };
+      const h = getHero(b.hero);
       h.bans += 1;
       if (i === 0) h.firstBans += 1;
-      map.set(b.hero, h);
     });
   }
   const out: HeroStats[] = [];
-  for (const [name, v] of map) {
+  for (const v of map.values()) {
     out.push({
-      name,
+      name: v.name,
       games: v.games,
       wins: v.wins,
       winrate: v.games ? Math.round((v.wins / v.games) * 100) : 0,
