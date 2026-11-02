@@ -1,0 +1,621 @@
+{
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 6948
+    },
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 8008
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 8172
+    },
+    {
+      "team": 3,
+      "hero": "Abaddon",
+      "tick": 9574
+    },
+    {
+      "team": 3,
+      "hero": "Mars",
+      "tick": 12012
+    },
+    {
+      "team": 2,
+      "hero": "Omniknight",
+      "tick": 14060
+    },
+    {
+      "team": 2,
+      "hero": "Nature's Prophet",
+      "tick": 16966
+    },
+    {
+      "team": 3,
+      "hero": "Bloodseeker",
+      "tick": 17848
+    },
+    {
+      "team": 3,
+      "hero": "Weaver",
+      "tick": 18832
+    },
+    {
+      "team": 2,
+      "hero": "Templar Assassin",
+      "tick": 20274
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 900
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 1562
+    },
+    {
+      "team": 2,
+      "hero": "Beastmaster",
+      "tick": 3626
+    },
+    {
+      "team": 3,
+      "hero": "Dawnbreaker",
+      "tick": 3884
+    },
+    {
+      "team": 2,
+      "hero": "Pangolier",
+      "tick": 4996
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 5678
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 900,
+      "order": 0,
+      "game_time_sec": 30.0
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 1562,
+      "order": 1,
+      "game_time_sec": 52.06666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Beastmaster",
+      "tick": 3626,
+      "order": 2,
+      "game_time_sec": 120.86666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Dawnbreaker",
+      "tick": 3884,
+      "order": 3,
+      "game_time_sec": 129.46666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Pangolier",
+      "tick": 4996,
+      "order": 4,
+      "game_time_sec": 166.53333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 5678,
+      "order": 5,
+      "game_time_sec": 189.26666666666668
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Shaman",
+      "tick": 6948,
+      "order": 6,
+      "game_time_sec": 231.6
+    },
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 8008,
+      "order": 7,
+      "game_time_sec": 266.93333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 8172,
+      "order": 8,
+      "game_time_sec": 272.4
+    },
+    {
+      "team": 3,
+      "hero": "Abaddon",
+      "tick": 9574,
+      "order": 9,
+      "game_time_sec": 319.1333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Mars",
+      "tick": 12012,
+      "order": 10,
+      "game_time_sec": 400.4
+    },
+    {
+      "team": 2,
+      "hero": "Omniknight",
+      "tick": 14060,
+      "order": 11,
+      "game_time_sec": 468.6666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Nature's Prophet",
+      "tick": 16966,
+      "order": 12,
+      "game_time_sec": 565.5333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Bloodseeker",
+      "tick": 17848,
+      "order": 13,
+      "game_time_sec": 594.9333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Weaver",
+      "tick": 18832,
+      "order": 14,
+      "game_time_sec": 627.7333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Templar Assassin",
+      "tick": 20274,
+      "order": 15,
+      "game_time_sec": 675.8
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 10.76,
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "13": {
+      "observer": 9,
+      "sentry": 20,
+      "total": 29
+    },
+    "nerd": {
+      "observer": 4,
+      "sentry": 0,
+      "total": 4
+    },
+    "Osaki": {
+      "observer": 6,
+      "sentry": 16,
+      "total": 22
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "MANEKA": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 8,
+      "sentry": 23,
+      "total": 31
+    },
+    "Davros": {
+      "observer": 9,
+      "sentry": 14,
+      "total": 23
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 7,
+      "total": 8
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "MANEKA": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "Kando!JeJe": {
+      "observer": 4,
+      "sentry": 7,
+      "total": 11
+    },
+    "Davros": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    }
+  },
+  "high_fives": {
+    "jMogwai": 1,
+    "DeR meis+eR": 0,
+    "13": 1,
+    "nerd": 0,
+    "Osaki": 1,
+    "Donnie": 2,
+    "MANEKA": 0,
+    "???&": 0,
+    "Kando!JeJe": 0,
+    "Davros": 0
+  },
+  "stuns_dealt": {
+    "jMogwai": 0.0,
+    "DeR meis+eR": 0.0,
+    "13": 26.31,
+    "nerd": 0.0,
+    "Osaki": 45.97,
+    "Donnie": 134.53,
+    "MANEKA": 15.93,
+    "???&": 0.0,
+    "Kando!JeJe": 212.93,
+    "Davros": 0.0
+  },
+  "damage_taken": {
+    "jMogwai": 16733,
+    "DeR meis+eR": 34683,
+    "13": 15596,
+    "nerd": 19457,
+    "Osaki": 18001,
+    "Donnie": 25117,
+    "MANEKA": 25081,
+    "???&": 31181,
+    "Kando!JeJe": 13482,
+    "Davros": 15212
+  },
+  "chat_after_draft": [
+    {
+      "tick": 24096,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "г"
+    },
+    {
+      "tick": 60442,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "и нахуя вам там варды"
+    },
+    {
+      "tick": 79014,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "суки бросили меня"
+    },
+    {
+      "tick": 79044,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "ливаю"
+    },
+    {
+      "tick": 105154,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "всем споки"
+    },
+    {
+      "tick": 105180,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "не сносите"
+    }
+  ],
+  "chat_message_count": 6,
+  "wards_events_count": 114,
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "Всех приветсвую, всем саламалейкум",
+    "team_tag": "SALAM",
+    "team_id": 10129669
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
+  },
+  "match_id": 9069247152,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "dire",
+  "start_timestamp": 1793402580,
+  "start_time": "2026-10-30T23:23:00Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 2634,
+  "duration_minutes": 43.9,
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Templar Assassin"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": "76561198078638066",
+      "hero": "Omniknight"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Grimstroke"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Nature's Prophet"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Lich"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Mars"
+    },
+    {
+      "nickname": "MANEKA",
+      "steam_id": "76561198872694033",
+      "hero": "Bloodseeker"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Weaver"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Shadow Shaman"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Abaddon"
+    }
+  ],
+  "kda": {
+    "jMogwai": {
+      "kills": 4,
+      "deaths": 7,
+      "assists": 8,
+      "kda_ratio": 1.71
+    },
+    "DeR meis+eR": {
+      "kills": 3,
+      "deaths": 10,
+      "assists": 10,
+      "kda_ratio": 1.3
+    },
+    "13": {
+      "kills": 1,
+      "deaths": 12,
+      "assists": 11,
+      "kda_ratio": 1.0
+    },
+    "nerd": {
+      "kills": 11,
+      "deaths": 8,
+      "assists": 9,
+      "kda_ratio": 2.5
+    },
+    "Osaki": {
+      "kills": 3,
+      "deaths": 13,
+      "assists": 9,
+      "kda_ratio": 0.92
+    },
+    "Donnie": {
+      "kills": 6,
+      "deaths": 5,
+      "assists": 35,
+      "kda_ratio": 8.2
+    },
+    "MANEKA": {
+      "kills": 12,
+      "deaths": 5,
+      "assists": 13,
+      "kda_ratio": 5.0
+    },
+    "???&": {
+      "kills": 22,
+      "deaths": 5,
+      "assists": 16,
+      "kda_ratio": 7.6
+    },
+    "Kando!JeJe": {
+      "kills": 5,
+      "deaths": 4,
+      "assists": 22,
+      "kda_ratio": 6.75
+    },
+    "Davros": {
+      "kills": 5,
+      "deaths": 5,
+      "assists": 19,
+      "kda_ratio": 4.8
+    }
+  },
+  "net_worth": {
+    "jMogwai": 22865,
+    "DeR meis+eR": 13095,
+    "13": 8421,
+    "nerd": 27072,
+    "Osaki": 9773,
+    "Donnie": 24505,
+    "MANEKA": 25743,
+    "???&": 34861,
+    "Kando!JeJe": 12864,
+    "Davros": 15686
+  },
+  "last_hits": {
+    "jMogwai": 412,
+    "DeR meis+eR": 215,
+    "13": 32,
+    "nerd": 442,
+    "Osaki": 40,
+    "Donnie": 341,
+    "MANEKA": 378,
+    "???&": 426,
+    "Kando!JeJe": 59,
+    "Davros": 111
+  },
+  "denies": {
+    "jMogwai": 12,
+    "DeR meis+eR": 12,
+    "13": 6,
+    "nerd": 9,
+    "Osaki": 6,
+    "Donnie": 12,
+    "MANEKA": 19,
+    "???&": 4,
+    "Kando!JeJe": 0,
+    "Davros": 8
+  },
+  "gold_per_minute": {
+    "jMogwai": 571,
+    "DeR meis+eR": 380,
+    "13": 242,
+    "nerd": 689,
+    "Osaki": 237,
+    "Donnie": 601,
+    "MANEKA": 628,
+    "???&": 835,
+    "Kando!JeJe": 338,
+    "Davros": 396
+  },
+  "xp_per_minute": {
+    "jMogwai": 742,
+    "DeR meis+eR": 446,
+    "13": 337,
+    "nerd": 886,
+    "Osaki": 370,
+    "Donnie": 940,
+    "MANEKA": 791,
+    "???&": 1073,
+    "Kando!JeJe": 668,
+    "Davros": 635
+  },
+  "hero_damage": {
+    "jMogwai": 23433,
+    "DeR meis+eR": 22591,
+    "13": 10682,
+    "nerd": 40042,
+    "Osaki": 13325,
+    "Donnie": 24465,
+    "MANEKA": 22344,
+    "???&": 37911,
+    "Kando!JeJe": 11646,
+    "Davros": 8104
+  },
+  "hero_healing": {
+    "jMogwai": 0,
+    "DeR meis+eR": 2695,
+    "13": 90,
+    "nerd": 0,
+    "Osaki": 0,
+    "Donnie": 574,
+    "MANEKA": 0,
+    "???&": 0,
+    "Kando!JeJe": 125,
+    "Davros": 11835
+  },
+  "tower_damage": {
+    "jMogwai": 3944,
+    "DeR meis+eR": 35,
+    "13": 0,
+    "nerd": 4525,
+    "Osaki": 24,
+    "Donnie": 3342,
+    "MANEKA": 3558,
+    "???&": 27881,
+    "Kando!JeJe": 743,
+    "Davros": 2338
+  },
+  "total_deaths": 74
+}

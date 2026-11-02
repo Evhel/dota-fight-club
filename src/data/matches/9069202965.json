@@ -1,0 +1,819 @@
+{
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 5832
+    },
+    {
+      "team": 3,
+      "hero": "Grimstroke",
+      "tick": 7496
+    },
+    {
+      "team": 3,
+      "hero": "Dark Willow",
+      "tick": 11690
+    },
+    {
+      "team": 2,
+      "hero": "Axe",
+      "tick": 12086
+    },
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 12434
+    },
+    {
+      "team": 3,
+      "hero": "Ursa",
+      "tick": 14066
+    },
+    {
+      "team": 3,
+      "hero": "Mars",
+      "tick": 15230
+    },
+    {
+      "team": 2,
+      "hero": "Mirana",
+      "tick": 18010
+    },
+    {
+      "team": 2,
+      "hero": "Morphling",
+      "tick": 23332
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 24210
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 828
+    },
+    {
+      "team": 3,
+      "hero": "Clinkz",
+      "tick": 1468
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 2254
+    },
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 2854
+    },
+    {
+      "team": 3,
+      "hero": "Doom",
+      "tick": 3712
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 5038
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 5552
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 8012
+    },
+    {
+      "team": 3,
+      "hero": "Jakiro",
+      "tick": 8780
+    },
+    {
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 9660
+    },
+    {
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 18902
+    },
+    {
+      "team": 2,
+      "hero": "Tinker",
+      "tick": 19822
+    },
+    {
+      "team": 3,
+      "hero": "Earthshaker",
+      "tick": 19866
+    },
+    {
+      "team": 2,
+      "hero": "Arc Warden",
+      "tick": 20750
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 828,
+      "order": 0,
+      "game_time_sec": 27.6
+    },
+    {
+      "team": 3,
+      "hero": "Clinkz",
+      "tick": 1468,
+      "order": 1,
+      "game_time_sec": 48.93333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 2254,
+      "order": 2,
+      "game_time_sec": 75.13333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 2854,
+      "order": 3,
+      "game_time_sec": 95.13333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Doom",
+      "tick": 3712,
+      "order": 4,
+      "game_time_sec": 123.73333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 5038,
+      "order": 5,
+      "game_time_sec": 167.93333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 5552,
+      "order": 6,
+      "game_time_sec": 185.06666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 5832,
+      "order": 7,
+      "game_time_sec": 194.4
+    },
+    {
+      "team": 3,
+      "hero": "Grimstroke",
+      "tick": 7496,
+      "order": 8,
+      "game_time_sec": 249.86666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 8012,
+      "order": 9,
+      "game_time_sec": 267.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Jakiro",
+      "tick": 8780,
+      "order": 10,
+      "game_time_sec": 292.6666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 9660,
+      "order": 11,
+      "game_time_sec": 322.0
+    },
+    {
+      "team": 3,
+      "hero": "Dark Willow",
+      "tick": 11690,
+      "order": 12,
+      "game_time_sec": 389.6666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Axe",
+      "tick": 12086,
+      "order": 13,
+      "game_time_sec": 402.8666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 12434,
+      "order": 14,
+      "game_time_sec": 414.46666666666664
+    },
+    {
+      "team": 3,
+      "hero": "Ursa",
+      "tick": 14066,
+      "order": 15,
+      "game_time_sec": 468.8666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Mars",
+      "tick": 15230,
+      "order": 16,
+      "game_time_sec": 507.6666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Mirana",
+      "tick": 18010,
+      "order": 17,
+      "game_time_sec": 600.3333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 18902,
+      "order": 18,
+      "game_time_sec": 630.0666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Tinker",
+      "tick": 19822,
+      "order": 19,
+      "game_time_sec": 660.7333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Earthshaker",
+      "tick": 19866,
+      "order": 20,
+      "game_time_sec": 662.2
+    },
+    {
+      "team": 2,
+      "hero": "Arc Warden",
+      "tick": 20750,
+      "order": 21,
+      "game_time_sec": 691.6666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Morphling",
+      "tick": 23332,
+      "order": 22,
+      "game_time_sec": 777.7333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 24210,
+      "order": 23,
+      "game_time_sec": 807.0
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 12.99,
+  "wards_placed": {
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "MANEKA": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "Davros": {
+      "observer": 4,
+      "sentry": 10,
+      "total": 14
+    },
+    "Osaki": {
+      "observer": 5,
+      "sentry": 9,
+      "total": 14
+    },
+    "13": {
+      "observer": 7,
+      "sentry": 14,
+      "total": 21
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Kando!JeJe": {
+      "observer": 4,
+      "sentry": 9,
+      "total": 13
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    }
+  },
+  "wards_destroyed": {
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "MANEKA": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 2,
+      "sentry": 4,
+      "total": 6
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "13": {
+      "observer": 5,
+      "sentry": 4,
+      "total": 9
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "high_fives": {
+    "jMogwai": 2,
+    "MANEKA": 1,
+    "nerd": 1,
+    "Davros": 0,
+    "Osaki": 0,
+    "13": 0,
+    "Donnie": 0,
+    "???&": 0,
+    "Kando!JeJe": 0,
+    "DeR meis+eR": 0
+  },
+  "stuns_dealt": {
+    "jMogwai": 24.63,
+    "MANEKA": 126.97,
+    "nerd": 53.88,
+    "Davros": 33.63,
+    "Osaki": 0.0,
+    "13": 23.28,
+    "Donnie": 0.0,
+    "???&": 0.0,
+    "Kando!JeJe": 193.23,
+    "DeR meis+eR": 77.0
+  },
+  "damage_taken": {
+    "jMogwai": 10549,
+    "MANEKA": 16217,
+    "nerd": 12538,
+    "Davros": 14644,
+    "Osaki": 5644,
+    "13": 12455,
+    "Donnie": 16069,
+    "???&": 20271,
+    "Kando!JeJe": 8277,
+    "DeR meis+eR": 22050
+  },
+  "chat_after_draft": [
+    {
+      "tick": 29052,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "ГУЛЯ ПОПРОСИЛА"
+    },
+    {
+      "tick": 29170,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "2 min pls"
+    },
+    {
+      "tick": 32418,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "че там епт"
+    },
+    {
+      "tick": 32468,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "Г"
+    },
+    {
+      "tick": 32624,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "еще одна пауза "
+    },
+    {
+      "tick": 32734,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "и я засыпаю мне похуй"
+    },
+    {
+      "tick": 56506,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "гипно стрела "
+    },
+    {
+      "tick": 58764,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "даня ебал геру..."
+    },
+    {
+      "tick": 58930,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "D"
+    },
+    {
+      "tick": 82194,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "ЙОУ"
+    },
+    {
+      "tick": 82244,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "ЧУВАКИ"
+    },
+    {
+      "tick": 82322,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "че это было"
+    },
+    {
+      "tick": 82632,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "в плане"
+    },
+    {
+      "tick": 82710,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "нормально играйте "
+    },
+    {
+      "tick": 82772,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "че дудосите"
+    },
+    {
+      "tick": 82912,
+      "channel": "all",
+      "player_slot": 0,
+      "text": " у нас у 5 завислор"
+    },
+    {
+      "tick": 83220,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "по другому не выиграть"
+    },
+    {
+      "tick": 83422,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "я тебя могну"
+    },
+    {
+      "tick": 83470,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "гера прайме ясен хуй"
+    },
+    {
+      "tick": 83604,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "я тебя ебну"
+    },
+    {
+      "tick": 83654,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "ебну"
+    },
+    {
+      "tick": 83782,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "ты ахуел"
+    },
+    {
+      "tick": 86656,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "gg"
+    }
+  ],
+  "chat_message_count": 23,
+  "wards_events_count": 70,
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "BALTIKA",
+    "team_tag": "8",
+    "team_id": 4616603
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
+  },
+  "match_id": 9069202965,
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "league_id": 0,
+  "winner": "radiant",
+  "start_timestamp": 1793399288,
+  "start_time": "2026-10-30T22:28:08Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 1771,
+  "duration_minutes": 29.52,
+  "radiant_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Morphling"
+    },
+    {
+      "nickname": "MANEKA",
+      "steam_id": "76561198872694033",
+      "hero": "Axe"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Mirana"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Dazzle"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Undying"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Grimstroke"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Ursa"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Void Spirit"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Dark Willow"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": "76561198078638066",
+      "hero": "Mars"
+    }
+  ],
+  "kda": {
+    "jMogwai": {
+      "kills": 8,
+      "deaths": 3,
+      "assists": 11,
+      "kda_ratio": 6.33
+    },
+    "MANEKA": {
+      "kills": 15,
+      "deaths": 3,
+      "assists": 15,
+      "kda_ratio": 10.0
+    },
+    "nerd": {
+      "kills": 13,
+      "deaths": 3,
+      "assists": 13,
+      "kda_ratio": 8.67
+    },
+    "Davros": {
+      "kills": 7,
+      "deaths": 4,
+      "assists": 23,
+      "kda_ratio": 7.5
+    },
+    "Osaki": {
+      "kills": 1,
+      "deaths": 0,
+      "assists": 11,
+      "kda_ratio": 12.0
+    },
+    "13": {
+      "kills": 3,
+      "deaths": 11,
+      "assists": 6,
+      "kda_ratio": 0.82
+    },
+    "Donnie": {
+      "kills": 1,
+      "deaths": 9,
+      "assists": 3,
+      "kda_ratio": 0.44
+    },
+    "???&": {
+      "kills": 5,
+      "deaths": 8,
+      "assists": 5,
+      "kda_ratio": 1.25
+    },
+    "Kando!JeJe": {
+      "kills": 1,
+      "deaths": 7,
+      "assists": 8,
+      "kda_ratio": 1.29
+    },
+    "DeR meis+eR": {
+      "kills": 1,
+      "deaths": 9,
+      "assists": 4,
+      "kda_ratio": 0.56
+    }
+  },
+  "net_worth": {
+    "jMogwai": 15941,
+    "MANEKA": 14821,
+    "nerd": 15996,
+    "Davros": 10206,
+    "Osaki": 8013,
+    "13": 6747,
+    "Donnie": 11532,
+    "???&": 10874,
+    "Kando!JeJe": 4983,
+    "DeR meis+eR": 9761
+  },
+  "last_hits": {
+    "jMogwai": 211,
+    "MANEKA": 151,
+    "nerd": 172,
+    "Davros": 68,
+    "Osaki": 47,
+    "13": 21,
+    "Donnie": 207,
+    "???&": 132,
+    "Kando!JeJe": 18,
+    "DeR meis+eR": 152
+  },
+  "denies": {
+    "jMogwai": 17,
+    "MANEKA": 17,
+    "nerd": 15,
+    "Davros": 7,
+    "Osaki": 0,
+    "13": 0,
+    "Donnie": 5,
+    "???&": 3,
+    "Kando!JeJe": 0,
+    "DeR meis+eR": 7
+  },
+  "gold_per_minute": {
+    "jMogwai": 546,
+    "MANEKA": 539,
+    "nerd": 572,
+    "Davros": 370,
+    "Osaki": 251,
+    "13": 273,
+    "Donnie": 417,
+    "???&": 413,
+    "Kando!JeJe": 202,
+    "DeR meis+eR": 374
+  },
+  "xp_per_minute": {
+    "jMogwai": 636,
+    "MANEKA": 634,
+    "nerd": 761,
+    "Davros": 538,
+    "Osaki": 413,
+    "13": 326,
+    "Donnie": 562,
+    "???&": 490,
+    "Kando!JeJe": 293,
+    "DeR meis+eR": 455
+  },
+  "hero_damage": {
+    "jMogwai": 14570,
+    "MANEKA": 20132,
+    "nerd": 28002,
+    "Davros": 13446,
+    "Osaki": 4828,
+    "13": 8655,
+    "Donnie": 13422,
+    "???&": 15891,
+    "Kando!JeJe": 9453,
+    "DeR meis+eR": 12171
+  },
+  "hero_healing": {
+    "jMogwai": 1366,
+    "MANEKA": 0,
+    "nerd": 216,
+    "Davros": 8032,
+    "Osaki": 4436,
+    "13": 0,
+    "Donnie": 0,
+    "???&": 0,
+    "Kando!JeJe": 0,
+    "DeR meis+eR": 0
+  },
+  "tower_damage": {
+    "jMogwai": 5020,
+    "MANEKA": 452,
+    "nerd": 4038,
+    "Davros": 849,
+    "Osaki": 0,
+    "13": 0,
+    "Donnie": 0,
+    "???&": 0,
+    "Kando!JeJe": 90,
+    "DeR meis+eR": 186
+  },
+  "total_deaths": 57
+}

@@ -1,0 +1,657 @@
+{
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Death Prophet",
+      "tick": 6170
+    },
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 7830
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 8622
+    },
+    {
+      "team": 3,
+      "hero": "Warlock",
+      "tick": 9494
+    },
+    {
+      "team": 3,
+      "hero": "Disruptor",
+      "tick": 10376
+    },
+    {
+      "team": 2,
+      "hero": "Hoodwink",
+      "tick": 11178
+    },
+    {
+      "team": 2,
+      "hero": "Juggernaut",
+      "tick": 11998
+    },
+    {
+      "team": 3,
+      "hero": "Sven",
+      "tick": 13388
+    },
+    {
+      "team": 3,
+      "hero": "Io",
+      "tick": 14044
+    },
+    {
+      "team": 2,
+      "hero": "Dragon Knight",
+      "tick": 15566
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 374
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 588
+    },
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 1592
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2172
+    },
+    {
+      "team": 2,
+      "hero": "Earthshaker",
+      "tick": 2792
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3928
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 374,
+      "order": 0,
+      "game_time_sec": 12.466666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 588,
+      "order": 1,
+      "game_time_sec": 19.6
+    },
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 1592,
+      "order": 2,
+      "game_time_sec": 53.06666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2172,
+      "order": 3,
+      "game_time_sec": 72.4
+    },
+    {
+      "team": 2,
+      "hero": "Earthshaker",
+      "tick": 2792,
+      "order": 4,
+      "game_time_sec": 93.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 3928,
+      "order": 5,
+      "game_time_sec": 130.93333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Death Prophet",
+      "tick": 6170,
+      "order": 6,
+      "game_time_sec": 205.66666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 7830,
+      "order": 7,
+      "game_time_sec": 261.0
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 8622,
+      "order": 8,
+      "game_time_sec": 287.4
+    },
+    {
+      "team": 3,
+      "hero": "Warlock",
+      "tick": 9494,
+      "order": 9,
+      "game_time_sec": 316.46666666666664
+    },
+    {
+      "team": 3,
+      "hero": "Disruptor",
+      "tick": 10376,
+      "order": 10,
+      "game_time_sec": 345.8666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Hoodwink",
+      "tick": 11178,
+      "order": 11,
+      "game_time_sec": 372.6
+    },
+    {
+      "team": 2,
+      "hero": "Juggernaut",
+      "tick": 11998,
+      "order": 12,
+      "game_time_sec": 399.93333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Sven",
+      "tick": 13388,
+      "order": 13,
+      "game_time_sec": 446.26666666666665
+    },
+    {
+      "team": 3,
+      "hero": "Io",
+      "tick": 14044,
+      "order": 14,
+      "game_time_sec": 468.1333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Dragon Knight",
+      "tick": 15566,
+      "order": 15,
+      "game_time_sec": 518.8666666666667
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 8.44,
+  "wards_placed": {
+    "Kando!JeJe": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 5,
+      "sentry": 13,
+      "total": 18
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "MANEKA": {
+      "observer": 6,
+      "sentry": 1,
+      "total": 7
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Osaki": {
+      "observer": 4,
+      "sentry": 8,
+      "total": 12
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 5,
+      "sentry": 11,
+      "total": 16
+    }
+  },
+  "wards_destroyed": {
+    "Kando!JeJe": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 2,
+      "sentry": 2,
+      "total": 4
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "MANEKA": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Osaki": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    }
+  },
+  "high_fives": {
+    "Kando!JeJe": 0,
+    "???&": 0,
+    "DeR meis+eR": 0,
+    "Donnie": 4,
+    "MANEKA": 1,
+    "jMogwai": 1,
+    "Osaki": 0,
+    "nerd": 7,
+    "Davros": 0,
+    "13": 0
+  },
+  "stuns_dealt": {
+    "Kando!JeJe": 41.35,
+    "???&": 0.0,
+    "DeR meis+eR": 98.63,
+    "Donnie": 105.97,
+    "MANEKA": 73.17,
+    "jMogwai": 0.0,
+    "Osaki": 8.0,
+    "nerd": 58.17,
+    "Davros": 0.0,
+    "13": 0.0
+  },
+  "damage_taken": {
+    "Kando!JeJe": 8906,
+    "???&": 13372,
+    "DeR meis+eR": 5146,
+    "Donnie": 16412,
+    "MANEKA": 12267,
+    "jMogwai": 15260,
+    "Osaki": 12353,
+    "nerd": 22106,
+    "Davros": 17597,
+    "13": 13490
+  },
+  "chat_after_draft": [
+    {
+      "tick": 18418,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "гера вылетел"
+    },
+    {
+      "tick": 19530,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "я"
+    },
+    {
+      "tick": 19550,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "тебя могну"
+    },
+    {
+      "tick": 19582,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "г"
+    },
+    {
+      "tick": 19764,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "я тебя ебну"
+    },
+    {
+      "tick": 19822,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "ебну"
+    },
+    {
+      "tick": 20158,
+      "channel": "all",
+      "player_slot": 7,
+      "text": ""
+    },
+    {
+      "tick": 20496,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "гера легенда того рот ебал"
+    },
+    {
+      "tick": 20562,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "я ебанулся отойдите"
+    },
+    {
+      "tick": 22618,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "э"
+    },
+    {
+      "tick": 22814,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "гера тыц же брат мой"
+    },
+    {
+      "tick": 55288,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "сори гуляВ"
+    }
+  ],
+  "chat_message_count": 12,
+  "wards_events_count": 60,
+  "radiant_team_info": {
+    "team_name": "Reptil(0)ed",
+    "team_tag": "RTD",
+    "team_id": 998016
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
+  },
+  "match_id": 9069160627,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "radiant",
+  "start_timestamp": 1793396623,
+  "start_time": "2026-10-30T21:43:43Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 1653,
+  "duration_minutes": 27.55,
+  "radiant_team": [
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Jakiro"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Juggernaut"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": "76561198078638066",
+      "hero": "Hoodwink"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Dragon Knight"
+    },
+    {
+      "nickname": "MANEKA",
+      "steam_id": "76561198872694033",
+      "hero": "Pudge"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Io"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Warlock"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Sven"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Death Prophet"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Disruptor"
+    }
+  ],
+  "kda": {
+    "Kando!JeJe": {
+      "kills": 2,
+      "deaths": 2,
+      "assists": 18,
+      "kda_ratio": 10.0
+    },
+    "???&": {
+      "kills": 13,
+      "deaths": 0,
+      "assists": 9,
+      "kda_ratio": 22.0
+    },
+    "DeR meis+eR": {
+      "kills": 7,
+      "deaths": 1,
+      "assists": 27,
+      "kda_ratio": 34.0
+    },
+    "Donnie": {
+      "kills": 21,
+      "deaths": 2,
+      "assists": 12,
+      "kda_ratio": 16.5
+    },
+    "MANEKA": {
+      "kills": 3,
+      "deaths": 4,
+      "assists": 10,
+      "kda_ratio": 3.25
+    },
+    "jMogwai": {
+      "kills": 5,
+      "deaths": 5,
+      "assists": 3,
+      "kda_ratio": 1.6
+    },
+    "Osaki": {
+      "kills": 0,
+      "deaths": 9,
+      "assists": 4,
+      "kda_ratio": 0.44
+    },
+    "nerd": {
+      "kills": 0,
+      "deaths": 9,
+      "assists": 4,
+      "kda_ratio": 0.44
+    },
+    "Davros": {
+      "kills": 3,
+      "deaths": 8,
+      "assists": 3,
+      "kda_ratio": 0.75
+    },
+    "13": {
+      "kills": 1,
+      "deaths": 15,
+      "assists": 5,
+      "kda_ratio": 0.4
+    }
+  },
+  "net_worth": {
+    "Kando!JeJe": 7828,
+    "???&": 20148,
+    "DeR meis+eR": 9475,
+    "Donnie": 19615,
+    "MANEKA": 8942,
+    "jMogwai": 8982,
+    "Osaki": 4032,
+    "nerd": 8524,
+    "Davros": 10220,
+    "13": 5884
+  },
+  "last_hits": {
+    "Kando!JeJe": 24,
+    "???&": 228,
+    "DeR meis+eR": 30,
+    "Donnie": 195,
+    "MANEKA": 67,
+    "jMogwai": 156,
+    "Osaki": 27,
+    "nerd": 177,
+    "Davros": 158,
+    "13": 11
+  },
+  "denies": {
+    "Kando!JeJe": 0,
+    "???&": 8,
+    "DeR meis+eR": 2,
+    "Donnie": 16,
+    "MANEKA": 9,
+    "jMogwai": 11,
+    "Osaki": 1,
+    "nerd": 5,
+    "Davros": 10,
+    "13": 1
+  },
+  "gold_per_minute": {
+    "Kando!JeJe": 294,
+    "???&": 715,
+    "DeR meis+eR": 380,
+    "Donnie": 740,
+    "MANEKA": 349,
+    "jMogwai": 405,
+    "Osaki": 178,
+    "nerd": 375,
+    "Davros": 430,
+    "13": 213
+  },
+  "xp_per_minute": {
+    "Kando!JeJe": 361,
+    "???&": 716,
+    "DeR meis+eR": 606,
+    "Donnie": 738,
+    "MANEKA": 411,
+    "jMogwai": 551,
+    "Osaki": 229,
+    "nerd": 402,
+    "Davros": 540,
+    "13": 207
+  },
+  "hero_damage": {
+    "Kando!JeJe": 9855,
+    "???&": 17715,
+    "DeR meis+eR": 16045,
+    "Donnie": 28443,
+    "MANEKA": 8748,
+    "jMogwai": 17451,
+    "Osaki": 9936,
+    "nerd": 7781,
+    "Davros": 12737,
+    "13": 8198
+  },
+  "hero_healing": {
+    "Kando!JeJe": 0,
+    "???&": 9832,
+    "DeR meis+eR": 3147,
+    "Donnie": 0,
+    "MANEKA": 125,
+    "jMogwai": 4468,
+    "Osaki": 2681,
+    "nerd": 0,
+    "Davros": 0,
+    "13": 0
+  },
+  "tower_damage": {
+    "Kando!JeJe": 3087,
+    "???&": 14500,
+    "DeR meis+eR": 1163,
+    "Donnie": 7787,
+    "MANEKA": 753,
+    "jMogwai": 128,
+    "Osaki": 0,
+    "nerd": 0,
+    "Davros": 0,
+    "13": 0
+  },
+  "total_deaths": 55
+}

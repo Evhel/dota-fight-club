@@ -1,0 +1,717 @@
+{
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 5630
+    },
+    {
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 7502
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 11134
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 12780
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 14582
+    },
+    {
+      "team": 3,
+      "hero": "Legion Commander",
+      "tick": 16370
+    },
+    {
+      "team": 3,
+      "hero": "Gyrocopter",
+      "tick": 18704
+    },
+    {
+      "team": 2,
+      "hero": "Phantom Assassin",
+      "tick": 19534
+    },
+    {
+      "team": 2,
+      "hero": "Doom",
+      "tick": 23072
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 24288
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Kez",
+      "tick": 1048
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 1968
+    },
+    {
+      "team": 3,
+      "hero": "Lina",
+      "tick": 2578
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 2820
+    },
+    {
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 3398
+    },
+    {
+      "team": 3,
+      "hero": "Invoker",
+      "tick": 3598
+    },
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 3964
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 8548
+    },
+    {
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 9680
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 10000
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 20414
+    },
+    {
+      "team": 2,
+      "hero": "Primal Beast",
+      "tick": 21308
+    },
+    {
+      "team": 3,
+      "hero": "Storm Spirit",
+      "tick": 22578
+    },
+    {
+      "team": 2,
+      "hero": "Slardar",
+      "tick": 22646
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Kez",
+      "tick": 1048,
+      "order": 0,
+      "game_time_sec": 34.93333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 1968,
+      "order": 1,
+      "game_time_sec": 65.6
+    },
+    {
+      "team": 3,
+      "hero": "Lina",
+      "tick": 2578,
+      "order": 2,
+      "game_time_sec": 85.93333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 2820,
+      "order": 3,
+      "game_time_sec": 94.0
+    },
+    {
+      "team": 3,
+      "hero": "Pudge",
+      "tick": 3398,
+      "order": 4,
+      "game_time_sec": 113.26666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Invoker",
+      "tick": 3598,
+      "order": 5,
+      "game_time_sec": 119.93333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 3964,
+      "order": 6,
+      "game_time_sec": 132.13333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 5630,
+      "order": 7,
+      "game_time_sec": 187.66666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 7502,
+      "order": 8,
+      "game_time_sec": 250.06666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 8548,
+      "order": 9,
+      "game_time_sec": 284.93333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 9680,
+      "order": 10,
+      "game_time_sec": 322.6666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 10000,
+      "order": 11,
+      "game_time_sec": 333.3333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 11134,
+      "order": 12,
+      "game_time_sec": 371.1333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 12780,
+      "order": 13,
+      "game_time_sec": 426.0
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 14582,
+      "order": 14,
+      "game_time_sec": 486.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Legion Commander",
+      "tick": 16370,
+      "order": 15,
+      "game_time_sec": 545.6666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Gyrocopter",
+      "tick": 18704,
+      "order": 16,
+      "game_time_sec": 623.4666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Phantom Assassin",
+      "tick": 19534,
+      "order": 17,
+      "game_time_sec": 651.1333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 20414,
+      "order": 18,
+      "game_time_sec": 680.4666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Primal Beast",
+      "tick": 21308,
+      "order": 19,
+      "game_time_sec": 710.2666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Storm Spirit",
+      "tick": 22578,
+      "order": 20,
+      "game_time_sec": 752.6
+    },
+    {
+      "team": 2,
+      "hero": "Slardar",
+      "tick": 22646,
+      "order": 21,
+      "game_time_sec": 754.8666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Doom",
+      "tick": 23072,
+      "order": 22,
+      "game_time_sec": 769.0666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 24288,
+      "order": 23,
+      "game_time_sec": 809.6
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 12.91,
+  "wards_placed": {
+    "???&": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 4,
+      "sentry": 13,
+      "total": 17
+    },
+    "Kando!JeJe": {
+      "observer": 4,
+      "sentry": 10,
+      "total": 14
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "Osaki": {
+      "observer": 7,
+      "sentry": 12,
+      "total": 19
+    },
+    "13": {
+      "observer": 4,
+      "sentry": 11,
+      "total": 15
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "Kando!JeJe": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "13": {
+      "observer": 0,
+      "sentry": 7,
+      "total": 7
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    }
+  },
+  "high_fives": {
+    "???&": 0,
+    "Donnie": 0,
+    "Davros": 0,
+    "Kando!JeJe": 1,
+    "ренальда": 1,
+    "jMogwai": 0,
+    "Osaki": 0,
+    "13": 0,
+    "nerd": 0,
+    "Профессор вкусных каш": 0
+  },
+  "stuns_dealt": {
+    "???&": 39.15,
+    "Donnie": 32.83,
+    "Davros": 18.16,
+    "Kando!JeJe": 33.32,
+    "ренальда": 0.0,
+    "jMogwai": 10.0,
+    "Osaki": 27.77,
+    "13": 81.4,
+    "nerd": 62.03,
+    "Профессор вкусных каш": 56.57
+  },
+  "damage_taken": {
+    "???&": 15927,
+    "Donnie": 20147,
+    "Davros": 13734,
+    "Kando!JeJe": 10985,
+    "ренальда": 16541,
+    "jMogwai": 18199,
+    "Osaki": 4002,
+    "13": 9796,
+    "nerd": 13558,
+    "Профессор вкусных каш": 14986
+  },
+  "chat_after_draft": [
+    {
+      "tick": 26970,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "danya afk"
+    },
+    {
+      "tick": 27130,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "g"
+    },
+    {
+      "tick": 27208,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "гера ты не вылетел разве"
+    },
+    {
+      "tick": 27334,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "ne)"
+    },
+    {
+      "tick": 30572,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "думал испугаешь чтоли"
+    },
+    {
+      "tick": 30720,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "своими ракеткамиэ"
+    }
+  ],
+  "chat_message_count": 6,
+  "wards_events_count": 69,
+  "radiant_team_info": {
+    "team_name": "TEAM_CENA",
+    "team_tag": "CENA",
+    "team_id": 2627656
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
+  },
+  "match_id": 9037249472,
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "league_id": 0,
+  "winner": "dire",
+  "start_timestamp": 1791583048,
+  "start_time": "2026-10-09T21:57:28Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 1757,
+  "duration_minutes": 29.28,
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Windranger"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Doom"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Grimstroke"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Jakiro"
+    },
+    {
+      "nickname": "ренальда",
+      "steam_id": "76561198213414847",
+      "hero": "Phantom Assassin"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Void Spirit"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Winter Wyvern"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Witch Doctor"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Gyrocopter"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": "76561198069163159",
+      "hero": "Legion Commander"
+    }
+  ],
+  "kda": {
+    "???&": {
+      "kills": 5,
+      "deaths": 6,
+      "assists": 5,
+      "kda_ratio": 1.67
+    },
+    "Donnie": {
+      "kills": 2,
+      "deaths": 7,
+      "assists": 8,
+      "kda_ratio": 1.43
+    },
+    "Davros": {
+      "kills": 0,
+      "deaths": 11,
+      "assists": 5,
+      "kda_ratio": 0.45
+    },
+    "Kando!JeJe": {
+      "kills": 2,
+      "deaths": 8,
+      "assists": 6,
+      "kda_ratio": 1.0
+    },
+    "ренальда": {
+      "kills": 8,
+      "deaths": 8,
+      "assists": 2,
+      "kda_ratio": 1.25
+    },
+    "jMogwai": {
+      "kills": 13,
+      "deaths": 5,
+      "assists": 13,
+      "kda_ratio": 5.2
+    },
+    "Osaki": {
+      "kills": 4,
+      "deaths": 0,
+      "assists": 13,
+      "kda_ratio": 17.0
+    },
+    "13": {
+      "kills": 5,
+      "deaths": 6,
+      "assists": 17,
+      "kda_ratio": 3.67
+    },
+    "nerd": {
+      "kills": 14,
+      "deaths": 5,
+      "assists": 8,
+      "kda_ratio": 4.4
+    },
+    "Профессор вкусных каш": {
+      "kills": 4,
+      "deaths": 2,
+      "assists": 19,
+      "kda_ratio": 11.5
+    }
+  },
+  "net_worth": {
+    "???&": 9967,
+    "Donnie": 11047,
+    "Davros": 4783,
+    "Kando!JeJe": 4620,
+    "ренальда": 15614,
+    "jMogwai": 16773,
+    "Osaki": 7840,
+    "13": 9851,
+    "nerd": 18808,
+    "Профессор вкусных каш": 14703
+  },
+  "last_hits": {
+    "???&": 138,
+    "Donnie": 123,
+    "Davros": 17,
+    "Kando!JeJe": 27,
+    "ренальда": 252,
+    "jMogwai": 163,
+    "Osaki": 14,
+    "13": 14,
+    "nerd": 240,
+    "Профессор вкусных каш": 169
+  },
+  "denies": {
+    "???&": 3,
+    "Donnie": 10,
+    "Davros": 2,
+    "Kando!JeJe": 1,
+    "ренальда": 6,
+    "jMogwai": 18,
+    "Osaki": 0,
+    "13": 8,
+    "nerd": 12,
+    "Профессор вкусных каш": 17
+  },
+  "gold_per_minute": {
+    "???&": 378,
+    "Donnie": 422,
+    "Davros": 190,
+    "Kando!JeJe": 206,
+    "ренальда": 555,
+    "jMogwai": 587,
+    "Osaki": 286,
+    "13": 309,
+    "nerd": 699,
+    "Профессор вкусных каш": 511
+  },
+  "xp_per_minute": {
+    "???&": 542,
+    "Donnie": 362,
+    "Davros": 229,
+    "Kando!JeJe": 287,
+    "ренальда": 654,
+    "jMogwai": 751,
+    "Osaki": 436,
+    "13": 425,
+    "nerd": 661,
+    "Профессор вкусных каш": 627
+  },
+  "hero_damage": {
+    "???&": 19783,
+    "Donnie": 8991,
+    "Davros": 9639,
+    "Kando!JeJe": 7429,
+    "ренальда": 14699,
+    "jMogwai": 22453,
+    "Osaki": 5777,
+    "13": 10958,
+    "nerd": 22996,
+    "Профессор вкусных каш": 15204
+  },
+  "hero_healing": {
+    "???&": 0,
+    "Donnie": 0,
+    "Davros": 0,
+    "Kando!JeJe": 0,
+    "ренальда": 0,
+    "jMogwai": 1530,
+    "Osaki": 4899,
+    "13": 4356,
+    "nerd": 0,
+    "Профессор вкусных каш": 1728
+  },
+  "tower_damage": {
+    "???&": 1188,
+    "Donnie": 0,
+    "Davros": 94,
+    "Kando!JeJe": 0,
+    "ренальда": 681,
+    "jMogwai": 1435,
+    "Osaki": 0,
+    "13": 166,
+    "nerd": 11799,
+    "Профессор вкусных каш": 4328
+  },
+  "total_deaths": 58
+}

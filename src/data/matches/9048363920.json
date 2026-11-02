@@ -1,0 +1,609 @@
+{
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Wraith King",
+      "tick": 5354
+    },
+    {
+      "team": 2,
+      "hero": "Dark Willow",
+      "tick": 6974
+    },
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 8564
+    },
+    {
+      "team": 3,
+      "hero": "Treant Protector",
+      "tick": 10056
+    },
+    {
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 11092
+    },
+    {
+      "team": 2,
+      "hero": "Weaver",
+      "tick": 11994
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 13846
+    },
+    {
+      "team": 3,
+      "hero": "Oracle",
+      "tick": 16850
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 18124
+    },
+    {
+      "team": 2,
+      "hero": "Monkey King",
+      "tick": 19940
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 2
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 1872
+    },
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 1958
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 2878
+    },
+    {
+      "team": 2,
+      "hero": "Troll Warlord",
+      "tick": 3938
+    },
+    {
+      "team": 3,
+      "hero": "Abaddon",
+      "tick": 4886
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Timbersaw",
+      "tick": 2,
+      "order": 0,
+      "game_time_sec": 0.06666666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 1872,
+      "order": 1,
+      "game_time_sec": 62.4
+    },
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 1958,
+      "order": 2,
+      "game_time_sec": 65.26666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 2878,
+      "order": 3,
+      "game_time_sec": 95.93333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Troll Warlord",
+      "tick": 3938,
+      "order": 4,
+      "game_time_sec": 131.26666666666668
+    },
+    {
+      "team": 3,
+      "hero": "Abaddon",
+      "tick": 4886,
+      "order": 5,
+      "game_time_sec": 162.86666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Wraith King",
+      "tick": 5354,
+      "order": 6,
+      "game_time_sec": 178.46666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Dark Willow",
+      "tick": 6974,
+      "order": 7,
+      "game_time_sec": 232.46666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 8564,
+      "order": 8,
+      "game_time_sec": 285.46666666666664
+    },
+    {
+      "team": 3,
+      "hero": "Treant Protector",
+      "tick": 10056,
+      "order": 9,
+      "game_time_sec": 335.2
+    },
+    {
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 11092,
+      "order": 10,
+      "game_time_sec": 369.73333333333335
+    },
+    {
+      "team": 2,
+      "hero": "Weaver",
+      "tick": 11994,
+      "order": 11,
+      "game_time_sec": 399.8
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 13846,
+      "order": 12,
+      "game_time_sec": 461.53333333333336
+    },
+    {
+      "team": 3,
+      "hero": "Oracle",
+      "tick": 16850,
+      "order": 13,
+      "game_time_sec": 561.6666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Void Spirit",
+      "tick": 18124,
+      "order": 14,
+      "game_time_sec": 604.1333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Monkey King",
+      "tick": 19940,
+      "order": 15,
+      "game_time_sec": 664.6666666666666
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 11.08,
+  "wards_placed": {
+    "???&": {
+      "observer": 7,
+      "sentry": 16,
+      "total": 23
+    },
+    "baal": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "ПОТРОШИТЕЛЬ": {
+      "observer": 10,
+      "sentry": 15,
+      "total": 25
+    },
+    "i lost my sanity": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Communication": {
+      "observer": 9,
+      "sentry": 24,
+      "total": 33
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 6,
+      "sentry": 11,
+      "total": 17
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 3,
+      "sentry": 3,
+      "total": 6
+    },
+    "baal": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "ПОТРОШИТЕЛЬ": {
+      "observer": 2,
+      "sentry": 3,
+      "total": 5
+    },
+    "i lost my sanity": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Communication": {
+      "observer": 1,
+      "sentry": 7,
+      "total": 8
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 3,
+      "sentry": 5,
+      "total": 8
+    }
+  },
+  "high_fives": {
+    "???&": 0,
+    "baal": 0,
+    "ПОТРОШИТЕЛЬ": 1,
+    "i lost my sanity": 0,
+    "Donnie": 2,
+    "jMogwai": 1,
+    "nerd": 0,
+    "Communication": 1,
+    "Davros": 0,
+    "13": 1
+  },
+  "stuns_dealt": {
+    "???&": 92.87,
+    "baal": 87.1,
+    "ПОТРОШИТЕЛЬ": 352.87,
+    "i lost my sanity": 0.0,
+    "Donnie": 74.39,
+    "jMogwai": 0.0,
+    "nerd": 0.0,
+    "Communication": 121.9,
+    "Davros": 85.1,
+    "13": 139.5
+  },
+  "damage_taken": {
+    "???&": 21535,
+    "baal": 21995,
+    "ПОТРОШИТЕЛЬ": 21885,
+    "i lost my sanity": 13936,
+    "Donnie": 30654,
+    "jMogwai": 35264,
+    "nerd": 24631,
+    "Communication": 29053,
+    "Davros": 35026,
+    "13": 21387
+  },
+  "chat_after_draft": [
+    {
+      "tick": 24738,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "г"
+    },
+    {
+      "tick": 34110,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "мб хватит спаммить?"
+    },
+    {
+      "tick": 61004,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "лагает сказал"
+    },
+    {
+      "tick": 62528,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "g"
+    }
+  ],
+  "chat_message_count": 4,
+  "wards_events_count": 100,
+  "radiant_team_info": {
+    "team_name": "ауе татары",
+    "team_tag": "ауе татары",
+    "team_id": 8725285
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
+  },
+  "match_id": 9048363920,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "radiant",
+  "start_timestamp": 1792192536,
+  "start_time": "2026-10-16T23:15:36Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 2420,
+  "duration_minutes": 40.33,
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Lich"
+    },
+    {
+      "nickname": "baal",
+      "steam_id": "76561199105241321",
+      "hero": "Monkey King"
+    },
+    {
+      "nickname": "ПОТРОШИТЕЛЬ",
+      "steam_id": "76561199582996702",
+      "hero": "Dark Willow"
+    },
+    {
+      "nickname": "i lost my sanity",
+      "steam_id": "76561198874592955",
+      "hero": "Weaver"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Dawnbreaker"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Void Spirit"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Juggernaut"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": "76561199222816532",
+      "hero": "Treant Protector"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Wraith King"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Oracle"
+    }
+  ],
+  "kda": {
+    "???&": {
+      "kills": 8,
+      "deaths": 8,
+      "assists": 31,
+      "kda_ratio": 4.88
+    },
+    "baal": {
+      "kills": 7,
+      "deaths": 2,
+      "assists": 27,
+      "kda_ratio": 17.0
+    },
+    "ПОТРОШИТЕЛЬ": {
+      "kills": 9,
+      "deaths": 9,
+      "assists": 25,
+      "kda_ratio": 3.78
+    },
+    "i lost my sanity": {
+      "kills": 11,
+      "deaths": 0,
+      "assists": 16,
+      "kda_ratio": 27.0
+    },
+    "Donnie": {
+      "kills": 21,
+      "deaths": 4,
+      "assists": 21,
+      "kda_ratio": 10.5
+    },
+    "jMogwai": {
+      "kills": 8,
+      "deaths": 9,
+      "assists": 9,
+      "kda_ratio": 1.89
+    },
+    "nerd": {
+      "kills": 6,
+      "deaths": 10,
+      "assists": 8,
+      "kda_ratio": 1.4
+    },
+    "Communication": {
+      "kills": 3,
+      "deaths": 16,
+      "assists": 14,
+      "kda_ratio": 1.06
+    },
+    "Davros": {
+      "kills": 3,
+      "deaths": 6,
+      "assists": 6,
+      "kda_ratio": 1.5
+    },
+    "13": {
+      "kills": 3,
+      "deaths": 15,
+      "assists": 18,
+      "kda_ratio": 1.4
+    }
+  },
+  "net_worth": {
+    "???&": 15005,
+    "baal": 22421,
+    "ПОТРОШИТЕЛЬ": 12189,
+    "i lost my sanity": 28736,
+    "Donnie": 22256,
+    "jMogwai": 16092,
+    "nerd": 19093,
+    "Communication": 7164,
+    "Davros": 15426,
+    "13": 9311
+  },
+  "last_hits": {
+    "???&": 94,
+    "baal": 258,
+    "ПОТРОШИТЕЛЬ": 54,
+    "i lost my sanity": 473,
+    "Donnie": 272,
+    "jMogwai": 190,
+    "nerd": 331,
+    "Communication": 29,
+    "Davros": 320,
+    "13": 22
+  },
+  "denies": {
+    "???&": 15,
+    "baal": 8,
+    "ПОТРОШИТЕЛЬ": 2,
+    "i lost my sanity": 5,
+    "Donnie": 16,
+    "jMogwai": 9,
+    "nerd": 8,
+    "Communication": 2,
+    "Davros": 6,
+    "13": 2
+  },
+  "gold_per_minute": {
+    "???&": 422,
+    "baal": 556,
+    "ПОТРОШИТЕЛЬ": 409,
+    "i lost my sanity": 723,
+    "Donnie": 588,
+    "jMogwai": 436,
+    "nerd": 526,
+    "Communication": 238,
+    "Davros": 477,
+    "13": 256
+  },
+  "xp_per_minute": {
+    "???&": 660,
+    "baal": 806,
+    "ПОТРОШИТЕЛЬ": 581,
+    "i lost my sanity": 985,
+    "Donnie": 804,
+    "jMogwai": 658,
+    "nerd": 763,
+    "Communication": 322,
+    "Davros": 588,
+    "13": 334
+  },
+  "hero_damage": {
+    "???&": 22107,
+    "baal": 30345,
+    "ПОТРОШИТЕЛЬ": 19780,
+    "i lost my sanity": 36088,
+    "Donnie": 37236,
+    "jMogwai": 34379,
+    "nerd": 22678,
+    "Communication": 10153,
+    "Davros": 33047,
+    "13": 9748
+  },
+  "hero_healing": {
+    "???&": 195,
+    "baal": 120,
+    "ПОТРОШИТЕЛЬ": 1624,
+    "i lost my sanity": 0,
+    "Donnie": 7958,
+    "jMogwai": 264,
+    "nerd": 4217,
+    "Communication": 3145,
+    "Davros": 0,
+    "13": 5327
+  },
+  "tower_damage": {
+    "???&": 133,
+    "baal": 8334,
+    "ПОТРОШИТЕЛЬ": 546,
+    "i lost my sanity": 17508,
+    "Donnie": 6581,
+    "jMogwai": 0,
+    "nerd": 3049,
+    "Communication": 0,
+    "Davros": 1468,
+    "13": 0
+  },
+  "total_deaths": 79
+}

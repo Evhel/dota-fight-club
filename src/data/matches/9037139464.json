@@ -1,0 +1,951 @@
+{
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 8768
+    },
+    {
+      "team": 3,
+      "hero": "Earthshaker",
+      "tick": 9660
+    },
+    {
+      "team": 3,
+      "hero": "Ursa",
+      "tick": 11110
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 12756
+    },
+    {
+      "team": 2,
+      "hero": "Pangolier",
+      "tick": 15538
+    },
+    {
+      "team": 3,
+      "hero": "Jakiro",
+      "tick": 16510
+    },
+    {
+      "team": 3,
+      "hero": "Dragon Knight",
+      "tick": 17374
+    },
+    {
+      "team": 2,
+      "hero": "Legion Commander",
+      "tick": 18276
+    },
+    {
+      "team": 2,
+      "hero": "Terrorblade",
+      "tick": 19234
+    },
+    {
+      "team": 3,
+      "hero": "Mirana",
+      "tick": 20108
+    }
+  ],
+  "bans": [
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 1158
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 1464
+    },
+    {
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 2438
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 4786
+    },
+    {
+      "team": 3,
+      "hero": "Storm Spirit",
+      "tick": 5668
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 6828
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 1158,
+      "order": 0,
+      "game_time_sec": 38.6
+    },
+    {
+      "team": 2,
+      "hero": "Dazzle",
+      "tick": 1464,
+      "order": 1,
+      "game_time_sec": 48.8
+    },
+    {
+      "team": 3,
+      "hero": "Naga Siren",
+      "tick": 2438,
+      "order": 2,
+      "game_time_sec": 81.26666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 4786,
+      "order": 3,
+      "game_time_sec": 159.53333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Storm Spirit",
+      "tick": 5668,
+      "order": 4,
+      "game_time_sec": 188.93333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Spirit Breaker",
+      "tick": 6828,
+      "order": 5,
+      "game_time_sec": 227.6
+    },
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 8768,
+      "order": 6,
+      "game_time_sec": 292.26666666666665
+    },
+    {
+      "team": 3,
+      "hero": "Earthshaker",
+      "tick": 9660,
+      "order": 7,
+      "game_time_sec": 322.0
+    },
+    {
+      "team": 3,
+      "hero": "Ursa",
+      "tick": 11110,
+      "order": 8,
+      "game_time_sec": 370.3333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Grimstroke",
+      "tick": 12756,
+      "order": 9,
+      "game_time_sec": 425.2
+    },
+    {
+      "team": 2,
+      "hero": "Pangolier",
+      "tick": 15538,
+      "order": 10,
+      "game_time_sec": 517.9333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Jakiro",
+      "tick": 16510,
+      "order": 11,
+      "game_time_sec": 550.3333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Dragon Knight",
+      "tick": 17374,
+      "order": 12,
+      "game_time_sec": 579.1333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Legion Commander",
+      "tick": 18276,
+      "order": 13,
+      "game_time_sec": 609.2
+    },
+    {
+      "team": 2,
+      "hero": "Terrorblade",
+      "tick": 19234,
+      "order": 14,
+      "game_time_sec": 641.1333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Mirana",
+      "tick": 20108,
+      "order": 15,
+      "game_time_sec": 670.2666666666667
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 10.53,
+  "wards_placed": {
+    "13": {
+      "observer": 9,
+      "sentry": 15,
+      "total": 24
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 8,
+      "sentry": 22,
+      "total": 30
+    },
+    "Профессор вкусных каш": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 10,
+      "sentry": 15,
+      "total": 25
+    },
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "Kando!JeJe": {
+      "observer": 7,
+      "sentry": 24,
+      "total": 31
+    }
+  },
+  "wards_destroyed": {
+    "13": {
+      "observer": 4,
+      "sentry": 5,
+      "total": 9
+    },
+    "Donnie": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Davros": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 2,
+      "sentry": 5,
+      "total": 7
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Kando!JeJe": {
+      "observer": 4,
+      "sentry": 1,
+      "total": 5
+    }
+  },
+  "high_fives": {
+    "13": 0,
+    "Donnie": 0,
+    "Davros": 0,
+    "Профессор вкусных каш": 0,
+    "ренальда": 0,
+    "nerd": 1,
+    "???&": 0,
+    "Osaki": 0,
+    "jMogwai": 0,
+    "Kando!JeJe": 0
+  },
+  "stuns_dealt": {
+    "13": 64.96,
+    "Donnie": 127.9,
+    "Davros": 0.0,
+    "Профессор вкусных каш": 68.74,
+    "ренальда": 0.0,
+    "nerd": 185.0,
+    "???&": 41.0,
+    "Osaki": 61.04,
+    "jMogwai": 330.26,
+    "Kando!JeJe": 149.75
+  },
+  "damage_taken": {
+    "13": 21275,
+    "Donnie": 36969,
+    "Davros": 38363,
+    "Профессор вкусных каш": 20952,
+    "ренальда": 20675,
+    "nerd": 38637,
+    "???&": 26740,
+    "Osaki": 10286,
+    "jMogwai": 23862,
+    "Kando!JeJe": 11413
+  },
+  "chat_after_draft": [
+    {
+      "tick": 25434,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "че там"
+    },
+    {
+      "tick": 25532,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "гера ты где"
+    },
+    {
+      "tick": 25760,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "что-то даня ливнул, хз"
+    },
+    {
+      "tick": 25878,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "у меня дискорд вылетел"
+    },
+    {
+      "tick": 26050,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "из за геры я думаю"
+    },
+    {
+      "tick": 28540,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "илюха"
+    },
+    {
+      "tick": 28678,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "зачем урсу"
+    },
+    {
+      "tick": 28858,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "ты хочешь душить меня?"
+    },
+    {
+      "tick": 28922,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "прост"
+    },
+    {
+      "tick": 29274,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "фростморн жаждет крови"
+    },
+    {
+      "tick": 29416,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "D"
+    },
+    {
+      "tick": 29748,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "у тебя не фростморн расслабся братишка"
+    },
+    {
+      "tick": 30282,
+      "channel": "all",
+      "player_slot": 5,
+      "text": ""
+    },
+    {
+      "tick": 30460,
+      "channel": "all",
+      "player_slot": 4,
+      "text": ""
+    },
+    {
+      "tick": 30462,
+      "channel": "all",
+      "player_slot": 1,
+      "text": ""
+    },
+    {
+      "tick": 31478,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "          "
+    },
+    {
+      "tick": 32574,
+      "channel": "all",
+      "player_slot": 5,
+      "text": ""
+    },
+    {
+      "tick": 33038,
+      "channel": "all",
+      "player_slot": 4,
+      "text": ""
+    },
+    {
+      "tick": 33378,
+      "channel": "all",
+      "player_slot": 5,
+      "text": ""
+    },
+    {
+      "tick": 34072,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "гера"
+    },
+    {
+      "tick": 34148,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "а"
+    },
+    {
+      "tick": 34322,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "если я тебя дуэлить буду "
+    },
+    {
+      "tick": 34470,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "поддашься в дуэли?"
+    },
+    {
+      "tick": 34558,
+      "channel": "all",
+      "player_slot": 5,
+      "text": ")"
+    },
+    {
+      "tick": 35096,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "не хочется просто диме винстрик в 20 побед портить"
+    },
+    {
+      "tick": 35226,
+      "channel": "all",
+      "player_slot": 3,
+      "text": ")"
+    },
+    {
+      "tick": 35274,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "если не считать проигрыши"
+    },
+    {
+      "tick": 35382,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "dct"
+    },
+    {
+      "tick": 36416,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "у дани комп не включается кстати"
+    },
+    {
+      "tick": 43384,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "Рассказывает дед внуку про войну: "
+    },
+    {
+      "tick": 43634,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "— Захватили в плен немцы, и говорят: сосите или расстреляем!"
+    },
+    {
+      "tick": 43762,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "— Дед, и ты сосал?!"
+    },
+    {
+      "tick": 43894,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "— Нет, внучек, меня расстреляли."
+    },
+    {
+      "tick": 44018,
+      "channel": "all",
+      "player_slot": 5,
+      "text": ")"
+    },
+    {
+      "tick": 44052,
+      "channel": "all",
+      "player_slot": 3,
+      "text": ")"
+    },
+    {
+      "tick": 44054,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "))"
+    },
+    {
+      "tick": 45074,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "гера "
+    },
+    {
+      "tick": 45146,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "я на мид иду"
+    },
+    {
+      "tick": 45226,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "ты тоже?"
+    },
+    {
+      "tick": 45354,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "не, там дядя"
+    },
+    {
+      "tick": 45492,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "все понял"
+    },
+    {
+      "tick": 45540,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "дядя не надо"
+    },
+    {
+      "tick": 45588,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "кинул меня"
+    },
+    {
+      "tick": 45620,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "газуй обратно"
+    },
+    {
+      "tick": 46300,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "го"
+    },
+    {
+      "tick": 51780,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "шо"
+    },
+    {
+      "tick": 52118,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "даньку майнер подрубили"
+    },
+    {
+      "tick": 52120,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "я бы даже сказал "
+    },
+    {
+      "tick": 52148,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "что"
+    },
+    {
+      "tick": 52246,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "г"
+    },
+    {
+      "tick": 67852,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "кто задудосил"
+    },
+    {
+      "tick": 68122,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "г"
+    },
+    {
+      "tick": 68302,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "у меня просто звук отстает на секунду"
+    },
+    {
+      "tick": 68392,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "я скоро с ума сойду"
+    },
+    {
+      "tick": 73322,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "сори андриал играть"
+    },
+    {
+      "tick": 73388,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "я или сделаю "
+    },
+    {
+      "tick": 73438,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "или ливну"
+    },
+    {
+      "tick": 95314,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "газ"
+    },
+    {
+      "tick": 95464,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "гуля афк"
+    },
+    {
+      "tick": 95648,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "к"
+    },
+    {
+      "tick": 95910,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "газ"
+    }
+  ],
+  "chat_message_count": 61,
+  "wards_events_count": 116,
+  "radiant_team_info": {
+    "team_name": "CuKATOP",
+    "team_tag": "CKTP",
+    "team_id": 1302077
+  },
+  "dire_team_info": {
+    "team_name": "Reptil(0)ed",
+    "team_tag": "RTD",
+    "team_id": 998016
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.0.0"
+  },
+  "match_id": 9037139464,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "dire",
+  "start_timestamp": 1791577458,
+  "start_time": "2026-10-09T20:24:18Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 2808,
+  "duration_minutes": 46.8,
+  "radiant_team": [
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Grimstroke"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Legion Commander"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Undying"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": "76561198069163159",
+      "hero": "Pangolier"
+    },
+    {
+      "nickname": "ренальда",
+      "steam_id": "76561198213414847",
+      "hero": "Terrorblade"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Dragon Knight"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Ursa"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Mirana"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Earthshaker"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Jakiro"
+    }
+  ],
+  "kda": {
+    "13": {
+      "kills": 2,
+      "deaths": 15,
+      "assists": 12,
+      "kda_ratio": 0.93
+    },
+    "Donnie": {
+      "kills": 13,
+      "deaths": 10,
+      "assists": 9,
+      "kda_ratio": 2.2
+    },
+    "Davros": {
+      "kills": 4,
+      "deaths": 14,
+      "assists": 12,
+      "kda_ratio": 1.14
+    },
+    "Профессор вкусных каш": {
+      "kills": 1,
+      "deaths": 5,
+      "assists": 14,
+      "kda_ratio": 3.0
+    },
+    "ренальда": {
+      "kills": 8,
+      "deaths": 7,
+      "assists": 6,
+      "kda_ratio": 2.0
+    },
+    "nerd": {
+      "kills": 16,
+      "deaths": 4,
+      "assists": 21,
+      "kda_ratio": 9.25
+    },
+    "???&": {
+      "kills": 18,
+      "deaths": 7,
+      "assists": 11,
+      "kda_ratio": 4.14
+    },
+    "Osaki": {
+      "kills": 2,
+      "deaths": 6,
+      "assists": 24,
+      "kda_ratio": 4.33
+    },
+    "jMogwai": {
+      "kills": 12,
+      "deaths": 6,
+      "assists": 18,
+      "kda_ratio": 5.0
+    },
+    "Kando!JeJe": {
+      "kills": 3,
+      "deaths": 6,
+      "assists": 30,
+      "kda_ratio": 5.5
+    }
+  },
+  "net_worth": {
+    "13": 10817,
+    "Donnie": 19617,
+    "Davros": 11724,
+    "Профессор вкусных каш": 21044,
+    "ренальда": 28411,
+    "nerd": 32724,
+    "???&": 30025,
+    "Osaki": 12064,
+    "jMogwai": 26021,
+    "Kando!JeJe": 17112
+  },
+  "last_hits": {
+    "13": 39,
+    "Donnie": 267,
+    "Davros": 76,
+    "Профессор вкусных каш": 319,
+    "ренальда": 579,
+    "nerd": 392,
+    "???&": 446,
+    "Osaki": 52,
+    "jMogwai": 335,
+    "Kando!JeJe": 125
+  },
+  "denies": {
+    "13": 3,
+    "Donnie": 21,
+    "Davros": 4,
+    "Профессор вкусных каш": 9,
+    "ренальда": 7,
+    "nerd": 9,
+    "???&": 4,
+    "Osaki": 1,
+    "jMogwai": 22,
+    "Kando!JeJe": 3
+  },
+  "gold_per_minute": {
+    "13": 261,
+    "Donnie": 525,
+    "Davros": 341,
+    "Профессор вкусных каш": 489,
+    "ренальда": 713,
+    "nerd": 768,
+    "???&": 691,
+    "Osaki": 298,
+    "jMogwai": 611,
+    "Kando!JeJe": 380
+  },
+  "xp_per_minute": {
+    "13": 386,
+    "Donnie": 694,
+    "Davros": 441,
+    "Профессор вкусных каш": 754,
+    "ренальда": 774,
+    "nerd": 1119,
+    "???&": 989,
+    "Osaki": 569,
+    "jMogwai": 866,
+    "Kando!JeJe": 607
+  },
+  "hero_damage": {
+    "13": 14014,
+    "Donnie": 36200,
+    "Davros": 15918,
+    "Профессор вкусных каш": 20344,
+    "ренальда": 24462,
+    "nerd": 47827,
+    "???&": 32191,
+    "Osaki": 10585,
+    "jMogwai": 35618,
+    "Kando!JeJe": 12013
+  },
+  "hero_healing": {
+    "13": 125,
+    "Donnie": 504,
+    "Davros": 6818,
+    "Профессор вкусных каш": 0,
+    "ренальда": 0,
+    "nerd": 0,
+    "???&": 0,
+    "Osaki": 1379,
+    "jMogwai": 0,
+    "Kando!JeJe": 0
+  },
+  "tower_damage": {
+    "13": 264,
+    "Donnie": 0,
+    "Davros": 16,
+    "Профессор вкусных каш": 1397,
+    "ренальда": 9723,
+    "nerd": 11930,
+    "???&": 7822,
+    "Osaki": 372,
+    "jMogwai": 4276,
+    "Kando!JeJe": 2728
+  },
+  "total_deaths": 80
+}
