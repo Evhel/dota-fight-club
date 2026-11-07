@@ -1,0 +1,609 @@
+{
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Primal Beast",
+      "tick": 5922
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Shaman",
+      "tick": 7308
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 9080
+    },
+    {
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 11104
+    },
+    {
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 12600
+    },
+    {
+      "team": 2,
+      "hero": "Viper",
+      "tick": 14026
+    },
+    {
+      "team": 2,
+      "hero": "Death Prophet",
+      "tick": 15486
+    },
+    {
+      "team": 3,
+      "hero": "Queen of Pain",
+      "tick": 16358
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 18230
+    },
+    {
+      "team": 2,
+      "hero": "Gyrocopter",
+      "tick": 20484
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 966
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1194
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 2934
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 3620
+    },
+    {
+      "team": 2,
+      "hero": "Bloodseeker",
+      "tick": 4844
+    },
+    {
+      "team": 3,
+      "hero": "Night Stalker",
+      "tick": 5012
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 966,
+      "order": 0,
+      "game_time_sec": 32.2
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 1194,
+      "order": 1,
+      "game_time_sec": 39.8
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 2934,
+      "order": 2,
+      "game_time_sec": 97.8
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 3620,
+      "order": 3,
+      "game_time_sec": 120.66666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Bloodseeker",
+      "tick": 4844,
+      "order": 4,
+      "game_time_sec": 161.46666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Night Stalker",
+      "tick": 5012,
+      "order": 5,
+      "game_time_sec": 167.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Primal Beast",
+      "tick": 5922,
+      "order": 6,
+      "game_time_sec": 197.4
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Shaman",
+      "tick": 7308,
+      "order": 7,
+      "game_time_sec": 243.6
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 9080,
+      "order": 8,
+      "game_time_sec": 302.6666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Winter Wyvern",
+      "tick": 11104,
+      "order": 9,
+      "game_time_sec": 370.1333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 12600,
+      "order": 10,
+      "game_time_sec": 420.0
+    },
+    {
+      "team": 2,
+      "hero": "Viper",
+      "tick": 14026,
+      "order": 11,
+      "game_time_sec": 467.53333333333336
+    },
+    {
+      "team": 2,
+      "hero": "Death Prophet",
+      "tick": 15486,
+      "order": 12,
+      "game_time_sec": 516.2
+    },
+    {
+      "team": 3,
+      "hero": "Queen of Pain",
+      "tick": 16358,
+      "order": 13,
+      "game_time_sec": 545.2666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 18230,
+      "order": 14,
+      "game_time_sec": 607.6666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Gyrocopter",
+      "tick": 20484,
+      "order": 15,
+      "game_time_sec": 682.8
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 10.84,
+  "wards_placed": {
+    "nerd": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "13": {
+      "observer": 4,
+      "sentry": 12,
+      "total": 16
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "P0Druga": {
+      "observer": 10,
+      "sentry": 19,
+      "total": 29
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Kando!JeJe": {
+      "observer": 4,
+      "sentry": 11,
+      "total": 15
+    },
+    "Села на лицо": {
+      "observer": 4,
+      "sentry": 1,
+      "total": 5
+    },
+    "jMogwai": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "Osaki": {
+      "observer": 7,
+      "sentry": 17,
+      "total": 24
+    }
+  },
+  "wards_destroyed": {
+    "nerd": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 4,
+      "total": 5
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "P0Druga": {
+      "observer": 4,
+      "sentry": 6,
+      "total": 10
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Kando!JeJe": {
+      "observer": 0,
+      "sentry": 6,
+      "total": 6
+    },
+    "Села на лицо": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 0,
+      "sentry": 5,
+      "total": 5
+    }
+  },
+  "high_fives": {
+    "nerd": 0,
+    "Davros": 0,
+    "13": 0,
+    "???&": 0,
+    "P0Druga": 0,
+    "Donnie": 0,
+    "Kando!JeJe": 0,
+    "Села на лицо": 0,
+    "jMogwai": 0,
+    "Osaki": 0
+  },
+  "stuns_dealt": {
+    "nerd": 0.0,
+    "Davros": 0.0,
+    "13": 62.48,
+    "???&": 84.5,
+    "P0Druga": 175.27,
+    "Donnie": 105.27,
+    "Kando!JeJe": 75.33,
+    "Села на лицо": 0.0,
+    "jMogwai": 0.0,
+    "Osaki": 61.43
+  },
+  "damage_taken": {
+    "nerd": 22128,
+    "Davros": 19273,
+    "13": 13811,
+    "???&": 15266,
+    "P0Druga": 7004,
+    "Donnie": 32078,
+    "Kando!JeJe": 14218,
+    "Села на лицо": 19445,
+    "jMogwai": 32966,
+    "Osaki": 15873
+  },
+  "chat_after_draft": [
+    {
+      "tick": 21358,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "))"
+    },
+    {
+      "tick": 21634,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "эх был бы од думает гера"
+    },
+    {
+      "tick": 22804,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "илюха заставил"
+    },
+    {
+      "tick": 23034,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "гера легенда"
+    }
+  ],
+  "chat_message_count": 4,
+  "wards_events_count": 93,
+  "radiant_team_info": {
+    "team_name": "BALTIKA",
+    "team_tag": "8",
+    "team_id": 4616603
+  },
+  "dire_team_info": {
+    "team_name": "Veronika SuperStar",
+    "team_tag": "VeronikaSS",
+    "team_id": 4213499
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.1.1"
+  },
+  "match_id": 9075086456,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "radiant",
+  "start_timestamp": 1793737941,
+  "start_time": "2026-11-03T20:32:21Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 2078,
+  "duration_minutes": 34.63,
+  "radiant_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Viper"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Death Prophet"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Jakiro"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Gyrocopter"
+    },
+    {
+      "nickname": "P0Druga",
+      "steam_id": "76561199783912739",
+      "hero": "Shadow Shaman"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Primal Beast"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Nyx Assassin"
+    },
+    {
+      "nickname": "Села на лицо",
+      "steam_id": "76561199173084716",
+      "hero": "Queen of Pain"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Arc Warden"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Winter Wyvern"
+    }
+  ],
+  "kda": {
+    "nerd": {
+      "kills": 18,
+      "deaths": 6,
+      "assists": 17,
+      "kda_ratio": 5.83
+    },
+    "Davros": {
+      "kills": 12,
+      "deaths": 3,
+      "assists": 9,
+      "kda_ratio": 7.0
+    },
+    "13": {
+      "kills": 4,
+      "deaths": 8,
+      "assists": 23,
+      "kda_ratio": 3.38
+    },
+    "???&": {
+      "kills": 12,
+      "deaths": 3,
+      "assists": 14,
+      "kda_ratio": 8.67
+    },
+    "P0Druga": {
+      "kills": 3,
+      "deaths": 2,
+      "assists": 21,
+      "kda_ratio": 12.0
+    },
+    "Donnie": {
+      "kills": 4,
+      "deaths": 11,
+      "assists": 9,
+      "kda_ratio": 1.18
+    },
+    "Kando!JeJe": {
+      "kills": 5,
+      "deaths": 11,
+      "assists": 5,
+      "kda_ratio": 0.91
+    },
+    "Села на лицо": {
+      "kills": 3,
+      "deaths": 9,
+      "assists": 6,
+      "kda_ratio": 1.0
+    },
+    "jMogwai": {
+      "kills": 9,
+      "deaths": 7,
+      "assists": 7,
+      "kda_ratio": 2.29
+    },
+    "Osaki": {
+      "kills": 1,
+      "deaths": 11,
+      "assists": 12,
+      "kda_ratio": 1.18
+    }
+  },
+  "net_worth": {
+    "nerd": 19827,
+    "Davros": 18034,
+    "13": 10692,
+    "???&": 22993,
+    "P0Druga": 10365,
+    "Donnie": 13185,
+    "Kando!JeJe": 7583,
+    "Села на лицо": 11868,
+    "jMogwai": 21752,
+    "Osaki": 4724
+  },
+  "last_hits": {
+    "nerd": 201,
+    "Davros": 192,
+    "13": 35,
+    "???&": 327,
+    "P0Druga": 38,
+    "Donnie": 176,
+    "Kando!JeJe": 41,
+    "Села на лицо": 167,
+    "jMogwai": 262,
+    "Osaki": 16
+  },
+  "denies": {
+    "nerd": 32,
+    "Davros": 18,
+    "13": 6,
+    "???&": 7,
+    "P0Druga": 1,
+    "Donnie": 7,
+    "Kando!JeJe": 0,
+    "Села на лицо": 11,
+    "jMogwai": 22,
+    "Osaki": 1
+  },
+  "gold_per_minute": {
+    "nerd": 618,
+    "Davros": 563,
+    "13": 307,
+    "???&": 698,
+    "P0Druga": 336,
+    "Donnie": 400,
+    "Kando!JeJe": 248,
+    "Села на лицо": 370,
+    "jMogwai": 678,
+    "Osaki": 191
+  },
+  "xp_per_minute": {
+    "nerd": 774,
+    "Davros": 794,
+    "13": 436,
+    "???&": 777,
+    "P0Druga": 513,
+    "Donnie": 716,
+    "Kando!JeJe": 352,
+    "Села на лицо": 500,
+    "jMogwai": 575,
+    "Osaki": 265
+  },
+  "hero_damage": {
+    "nerd": 40901,
+    "Davros": 23184,
+    "13": 15901,
+    "???&": 26809,
+    "P0Druga": 7785,
+    "Donnie": 13190,
+    "Kando!JeJe": 8485,
+    "Села на лицо": 17928,
+    "jMogwai": 32746,
+    "Osaki": 5186
+  },
+  "hero_healing": {
+    "nerd": 0,
+    "Davros": 0,
+    "13": 0,
+    "???&": 0,
+    "P0Druga": 10,
+    "Donnie": 0,
+    "Kando!JeJe": 0,
+    "Села на лицо": 281,
+    "jMogwai": 0,
+    "Osaki": 4104
+  },
+  "tower_damage": {
+    "nerd": 4964,
+    "Davros": 5387,
+    "13": 1981,
+    "???&": 5914,
+    "P0Druga": 3038,
+    "Donnie": 240,
+    "Kando!JeJe": 0,
+    "Села на лицо": 0,
+    "jMogwai": 1072,
+    "Osaki": 0
+  },
+  "total_deaths": 71
+}

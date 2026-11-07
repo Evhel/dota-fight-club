@@ -1,0 +1,759 @@
+{
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 4646
+    },
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 4790
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 5864
+    },
+    {
+      "team": 3,
+      "hero": "Alchemist",
+      "tick": 6850
+    },
+    {
+      "team": 3,
+      "hero": "Ring Master",
+      "tick": 8398
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Shaman",
+      "tick": 8580
+    },
+    {
+      "team": 2,
+      "hero": "Ursa",
+      "tick": 8896
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Demon",
+      "tick": 9674
+    },
+    {
+      "team": 3,
+      "hero": "Phantom Assassin",
+      "tick": 12638
+    },
+    {
+      "team": 2,
+      "hero": "Witch Doctor",
+      "tick": 15318
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 606
+    },
+    {
+      "team": 3,
+      "hero": "Spirit Breaker",
+      "tick": 1654
+    },
+    {
+      "team": 2,
+      "hero": "Vengeful Spirit",
+      "tick": 2142
+    },
+    {
+      "team": 3,
+      "hero": "Clockwerk",
+      "tick": 2876
+    },
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 2954
+    },
+    {
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 3124
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Abaddon",
+      "tick": 606,
+      "order": 0,
+      "game_time_sec": 20.2
+    },
+    {
+      "team": 3,
+      "hero": "Spirit Breaker",
+      "tick": 1654,
+      "order": 1,
+      "game_time_sec": 55.13333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Vengeful Spirit",
+      "tick": 2142,
+      "order": 2,
+      "game_time_sec": 71.4
+    },
+    {
+      "team": 3,
+      "hero": "Clockwerk",
+      "tick": 2876,
+      "order": 3,
+      "game_time_sec": 95.86666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 2954,
+      "order": 4,
+      "game_time_sec": 98.46666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Nyx Assassin",
+      "tick": 3124,
+      "order": 5,
+      "game_time_sec": 104.13333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Lifestealer",
+      "tick": 4646,
+      "order": 6,
+      "game_time_sec": 154.86666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 4790,
+      "order": 7,
+      "game_time_sec": 159.66666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 5864,
+      "order": 8,
+      "game_time_sec": 195.46666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Alchemist",
+      "tick": 6850,
+      "order": 9,
+      "game_time_sec": 228.33333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Ring Master",
+      "tick": 8398,
+      "order": 10,
+      "game_time_sec": 279.93333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Shaman",
+      "tick": 8580,
+      "order": 11,
+      "game_time_sec": 286.0
+    },
+    {
+      "team": 2,
+      "hero": "Ursa",
+      "tick": 8896,
+      "order": 12,
+      "game_time_sec": 296.53333333333336
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Demon",
+      "tick": 9674,
+      "order": 13,
+      "game_time_sec": 322.46666666666664
+    },
+    {
+      "team": 3,
+      "hero": "Phantom Assassin",
+      "tick": 12638,
+      "order": 14,
+      "game_time_sec": 421.26666666666665
+    },
+    {
+      "team": 2,
+      "hero": "Witch Doctor",
+      "tick": 15318,
+      "order": 15,
+      "game_time_sec": 510.6
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 8.17,
+  "wards_placed": {
+    "nerd": {
+      "observer": 17,
+      "sentry": 31,
+      "total": 48
+    },
+    "Kando!JeJe": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "???&": {
+      "observer": 11,
+      "sentry": 14,
+      "total": 25
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "jMogwai": {
+      "observer": 19,
+      "sentry": 31,
+      "total": 50
+    },
+    "P0Druga": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 5,
+      "sentry": 13,
+      "total": 18
+    },
+    "мелман": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    }
+  },
+  "wards_destroyed": {
+    "nerd": {
+      "observer": 3,
+      "sentry": 7,
+      "total": 10
+    },
+    "Kando!JeJe": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "???&": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "Davros": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "jMogwai": {
+      "observer": 7,
+      "sentry": 10,
+      "total": 17
+    },
+    "P0Druga": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Donnie": {
+      "observer": 2,
+      "sentry": 0,
+      "total": 2
+    },
+    "мелман": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "13": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    }
+  },
+  "high_fives": {
+    "nerd": 0,
+    "Kando!JeJe": 0,
+    "???&": 0,
+    "Davros": 0,
+    "Osaki": 0,
+    "jMogwai": 9,
+    "P0Druga": 1,
+    "Donnie": 2,
+    "мелман": 1,
+    "13": 0
+  },
+  "stuns_dealt": {
+    "nerd": 438.17,
+    "Kando!JeJe": 141.68,
+    "???&": 157.66,
+    "Davros": 46.52,
+    "Osaki": 29.77,
+    "jMogwai": 184.11,
+    "P0Druga": 0.0,
+    "Donnie": 104.82,
+    "мелман": 148.16,
+    "13": 53.8
+  },
+  "damage_taken": {
+    "nerd": 49135,
+    "Kando!JeJe": 33082,
+    "???&": 43247,
+    "Davros": 53602,
+    "Osaki": 52155,
+    "jMogwai": 37385,
+    "P0Druga": 40120,
+    "Donnie": 44881,
+    "мелман": 78305,
+    "13": 92265
+  },
+  "chat_after_draft": [
+    {
+      "tick": 18032,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "а че за хуйня ребята"
+    },
+    {
+      "tick": 18108,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "вд на кора"
+    },
+    {
+      "tick": 18268,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "это же против правил"
+    },
+    {
+      "tick": 18284,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "не мошни"
+    },
+    {
+      "tick": 18314,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "мальчики сапы"
+    },
+    {
+      "tick": 20932,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "а че вы бля"
+    },
+    {
+      "tick": 20994,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "толпой"
+    },
+    {
+      "tick": 26836,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "я тебе типалку выключу саппортик"
+    },
+    {
+      "tick": 26942,
+      "channel": "all",
+      "player_slot": 7,
+      "text": ")())"
+    },
+    {
+      "tick": 36848,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "мага почему фармишь"
+    },
+    {
+      "tick": 36898,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "не по правилам"
+    },
+    {
+      "tick": 45306,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "донни ты уже штук 15"
+    },
+    {
+      "tick": 45332,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "пачек"
+    },
+    {
+      "tick": 45352,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "убил"
+    },
+    {
+      "tick": 45440,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "вы уже проигарли"
+    },
+    {
+      "tick": 45716,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "техническое поражение"
+    },
+    {
+      "tick": 56184,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "пхахахаха"
+    },
+    {
+      "tick": 56250,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "1000-7?"
+    },
+    {
+      "tick": 69888,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "пхахаах"
+    },
+    {
+      "tick": 69928,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "гера"
+    },
+    {
+      "tick": 70012,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "где дасты"
+    },
+    {
+      "tick": 71660,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "купили глимеры"
+    },
+    {
+      "tick": 71700,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "слабаки"
+    },
+    {
+      "tick": 71848,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "стоят сейвят друг друга"
+    },
+    {
+      "tick": 72026,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "мы сапы"
+    },
+    {
+      "tick": 72068,
+      "channel": "all",
+      "player_slot": 7,
+      "text": "сапортсике шмотки"
+    },
+    {
+      "tick": 72112,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "хуйней не страдай"
+    },
+    {
+      "tick": 124570,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "типы кончились мага"
+    },
+    {
+      "tick": 124686,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "("
+    }
+  ],
+  "chat_message_count": 29,
+  "wards_events_count": 145,
+  "radiant_team_info": {
+    "team_name": "Veronika SuperStar",
+    "team_tag": "VeronikaSS",
+    "team_id": 4213499
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.1.1"
+  },
+  "match_id": 9075164496,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "dire",
+  "start_timestamp": 1793742195,
+  "start_time": "2026-11-03T21:43:15Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 3744,
+  "duration_minutes": 62.4,
+  "radiant_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Shadow Shaman"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Witch Doctor"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Techies"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Ursa"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Necrophos"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Ring Master"
+    },
+    {
+      "nickname": "P0Druga",
+      "steam_id": "76561199783912739",
+      "hero": "Phantom Assassin"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Shadow Demon"
+    },
+    {
+      "nickname": "мелман",
+      "steam_id": "76561198974599395",
+      "hero": "Alchemist"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Lifestealer"
+    }
+  ],
+  "kda": {
+    "nerd": {
+      "kills": 12,
+      "deaths": 18,
+      "assists": 31,
+      "kda_ratio": 2.39
+    },
+    "Kando!JeJe": {
+      "kills": 10,
+      "deaths": 10,
+      "assists": 27,
+      "kda_ratio": 3.7
+    },
+    "???&": {
+      "kills": 24,
+      "deaths": 16,
+      "assists": 34,
+      "kda_ratio": 3.62
+    },
+    "Davros": {
+      "kills": 14,
+      "deaths": 13,
+      "assists": 25,
+      "kda_ratio": 3.0
+    },
+    "Osaki": {
+      "kills": 9,
+      "deaths": 11,
+      "assists": 25,
+      "kda_ratio": 3.09
+    },
+    "jMogwai": {
+      "kills": 16,
+      "deaths": 12,
+      "assists": 42,
+      "kda_ratio": 4.83
+    },
+    "P0Druga": {
+      "kills": 4,
+      "deaths": 21,
+      "assists": 19,
+      "kda_ratio": 1.1
+    },
+    "Donnie": {
+      "kills": 11,
+      "deaths": 18,
+      "assists": 37,
+      "kda_ratio": 2.67
+    },
+    "мелман": {
+      "kills": 18,
+      "deaths": 7,
+      "assists": 29,
+      "kda_ratio": 6.71
+    },
+    "13": {
+      "kills": 18,
+      "deaths": 12,
+      "assists": 23,
+      "kda_ratio": 3.42
+    }
+  },
+  "net_worth": {
+    "nerd": 21226,
+    "Kando!JeJe": 23508,
+    "???&": 25774,
+    "Davros": 33543,
+    "Osaki": 29151,
+    "jMogwai": 23118,
+    "P0Druga": 29290,
+    "Donnie": 23460,
+    "мелман": 36686,
+    "13": 43416
+  },
+  "last_hits": {
+    "nerd": 207,
+    "Kando!JeJe": 192,
+    "???&": 184,
+    "Davros": 606,
+    "Osaki": 388,
+    "jMogwai": 127,
+    "P0Druga": 287,
+    "Donnie": 165,
+    "мелман": 527,
+    "13": 477
+  },
+  "denies": {
+    "nerd": 10,
+    "Kando!JeJe": 8,
+    "???&": 2,
+    "Davros": 9,
+    "Osaki": 6,
+    "jMogwai": 8,
+    "P0Druga": 5,
+    "Donnie": 2,
+    "мелман": 13,
+    "13": 24
+  },
+  "gold_per_minute": {
+    "nerd": 486,
+    "Kando!JeJe": 455,
+    "???&": 586,
+    "Davros": 685,
+    "Osaki": 560,
+    "jMogwai": 526,
+    "P0Druga": 433,
+    "Donnie": 448,
+    "мелман": 853,
+    "13": 712
+  },
+  "xp_per_minute": {
+    "nerd": 643,
+    "Kando!JeJe": 746,
+    "???&": 1068,
+    "Davros": 1000,
+    "Osaki": 987,
+    "jMogwai": 1025,
+    "P0Druga": 724,
+    "Donnie": 754,
+    "мелман": 1196,
+    "13": 1114
+  },
+  "hero_damage": {
+    "nerd": 41888,
+    "Kando!JeJe": 56538,
+    "???&": 99324,
+    "Davros": 45959,
+    "Osaki": 52580,
+    "jMogwai": 56849,
+    "P0Druga": 23094,
+    "Donnie": 33475,
+    "мелман": 56593,
+    "13": 61210
+  },
+  "hero_healing": {
+    "nerd": 0,
+    "Kando!JeJe": 7802,
+    "???&": 0,
+    "Davros": 0,
+    "Osaki": 6277,
+    "jMogwai": 125,
+    "P0Druga": 0,
+    "Donnie": 2330,
+    "мелман": 0,
+    "13": 4702
+  },
+  "tower_damage": {
+    "nerd": 5795,
+    "Kando!JeJe": 1518,
+    "???&": 773,
+    "Davros": 3772,
+    "Osaki": 247,
+    "jMogwai": 45,
+    "P0Druga": 4189,
+    "Donnie": 238,
+    "мелман": 13210,
+    "13": 11547
+  },
+  "total_deaths": 138
+}

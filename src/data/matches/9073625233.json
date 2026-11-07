@@ -1,0 +1,615 @@
+{
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 7562
+    },
+    {
+      "team": 2,
+      "hero": "Outworld Devourer",
+      "tick": 8730
+    },
+    {
+      "team": 2,
+      "hero": "Crystal Maiden",
+      "tick": 10388
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Demon",
+      "tick": 11488
+    },
+    {
+      "team": 3,
+      "hero": "Ogre Magi",
+      "tick": 12006
+    },
+    {
+      "team": 2,
+      "hero": "Enigma",
+      "tick": 13968
+    },
+    {
+      "team": 2,
+      "hero": "Snapfire",
+      "tick": 15702
+    },
+    {
+      "team": 3,
+      "hero": "Pugna",
+      "tick": 16586
+    },
+    {
+      "team": 3,
+      "hero": "Dragon Knight",
+      "tick": 18814
+    },
+    {
+      "team": 2,
+      "hero": "Troll Warlord",
+      "tick": 20388
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Shadow Fiend",
+      "tick": 1126
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 2018
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 3692
+    },
+    {
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 4570
+    },
+    {
+      "team": 2,
+      "hero": "Sniper",
+      "tick": 5778
+    },
+    {
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 6660
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Shadow Fiend",
+      "tick": 1126,
+      "order": 0,
+      "game_time_sec": 37.53333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Marci",
+      "tick": 2018,
+      "order": 1,
+      "game_time_sec": 67.26666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Spectre",
+      "tick": 3692,
+      "order": 2,
+      "game_time_sec": 123.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Necrophos",
+      "tick": 4570,
+      "order": 3,
+      "game_time_sec": 152.33333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Sniper",
+      "tick": 5778,
+      "order": 4,
+      "game_time_sec": 192.6
+    },
+    {
+      "team": 3,
+      "hero": "Huskar",
+      "tick": 6660,
+      "order": 5,
+      "game_time_sec": 222.0
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 7562,
+      "order": 6,
+      "game_time_sec": 252.06666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Outworld Devourer",
+      "tick": 8730,
+      "order": 7,
+      "game_time_sec": 291.0
+    },
+    {
+      "team": 2,
+      "hero": "Crystal Maiden",
+      "tick": 10388,
+      "order": 8,
+      "game_time_sec": 346.26666666666665
+    },
+    {
+      "team": 3,
+      "hero": "Shadow Demon",
+      "tick": 11488,
+      "order": 9,
+      "game_time_sec": 382.93333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Ogre Magi",
+      "tick": 12006,
+      "order": 10,
+      "game_time_sec": 400.2
+    },
+    {
+      "team": 2,
+      "hero": "Enigma",
+      "tick": 13968,
+      "order": 11,
+      "game_time_sec": 465.6
+    },
+    {
+      "team": 2,
+      "hero": "Snapfire",
+      "tick": 15702,
+      "order": 12,
+      "game_time_sec": 523.4
+    },
+    {
+      "team": 3,
+      "hero": "Pugna",
+      "tick": 16586,
+      "order": 13,
+      "game_time_sec": 552.8666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Dragon Knight",
+      "tick": 18814,
+      "order": 14,
+      "game_time_sec": 627.1333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Troll Warlord",
+      "tick": 20388,
+      "order": 15,
+      "game_time_sec": 679.6
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 10.7,
+  "wards_placed": {
+    "P0Druga": {
+      "observer": 7,
+      "sentry": 22,
+      "total": 29
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 7,
+      "sentry": 11,
+      "total": 18
+    },
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 1,
+      "total": 4
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 11,
+      "sentry": 22,
+      "total": 33
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Noxxion": {
+      "observer": 5,
+      "sentry": 12,
+      "total": 17
+    }
+  },
+  "wards_destroyed": {
+    "P0Druga": {
+      "observer": 1,
+      "sentry": 10,
+      "total": 11
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "ренальда": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "jMogwai": {
+      "observer": 4,
+      "sentry": 0,
+      "total": 4
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 0,
+      "sentry": 9,
+      "total": 9
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Noxxion": {
+      "observer": 1,
+      "sentry": 5,
+      "total": 6
+    }
+  },
+  "high_fives": {
+    "P0Druga": 0,
+    "Donnie": 0,
+    "nerd": 1,
+    "ренальда": 0,
+    "Davros": 0,
+    "jMogwai": 5,
+    "???&": 0,
+    "Osaki": 0,
+    "Профессор вкусных каш": 0,
+    "Noxxion": 0
+  },
+  "stuns_dealt": {
+    "P0Druga": 126.53,
+    "Donnie": 120.67,
+    "nerd": 266.45,
+    "ренальда": 80.64,
+    "Davros": 45.23,
+    "jMogwai": 1.52,
+    "???&": 68.5,
+    "Osaki": 51.89,
+    "Профессор вкусных каш": 0.0,
+    "Noxxion": 98.27
+  },
+  "damage_taken": {
+    "P0Druga": 17798,
+    "Donnie": 29960,
+    "nerd": 21204,
+    "ренальда": 19413,
+    "Davros": 13761,
+    "jMogwai": 17716,
+    "???&": 23405,
+    "Osaki": 14677,
+    "Профессор вкусных каш": 34183,
+    "Noxxion": 25440
+  },
+  "chat_after_draft": [
+    {
+      "tick": 22824,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "мага пукнул"
+    },
+    {
+      "tick": 23388,
+      "channel": "all",
+      "player_slot": 8,
+      "text": "Рахат лукутнул"
+    },
+    {
+      "tick": 23510,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "))"
+    },
+    {
+      "tick": 25072,
+      "channel": "all",
+      "player_slot": 2,
+      "text": "пук"
+    },
+    {
+      "tick": 25266,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "среньк"
+    }
+  ],
+  "chat_message_count": 5,
+  "wards_events_count": 106,
+  "radiant_team_info": {
+    "team_name": "Всех приветсвую, всем саламалейкум",
+    "team_tag": "SALAM",
+    "team_id": 10129669
+  },
+  "dire_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.1.0"
+  },
+  "match_id": 9073625233,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "radiant",
+  "start_timestamp": 1793647573,
+  "start_time": "2026-11-02T19:26:13Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 2537,
+  "duration_minutes": 42.28,
+  "radiant_team": [
+    {
+      "nickname": "P0Druga",
+      "steam_id": "76561199783912739",
+      "hero": "Crystal Maiden"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Troll Warlord"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Outworld Devourer"
+    },
+    {
+      "nickname": "ренальда",
+      "steam_id": "76561198213414847",
+      "hero": "Enigma"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Snapfire"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Pugna"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Dragon Knight"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Shadow Demon"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": "76561198069163159",
+      "hero": "Timbersaw"
+    },
+    {
+      "nickname": "Noxxion",
+      "steam_id": "76561198072867743",
+      "hero": "Ogre Magi"
+    }
+  ],
+  "kda": {
+    "P0Druga": {
+      "kills": 1,
+      "deaths": 11,
+      "assists": 12,
+      "kda_ratio": 1.18
+    },
+    "Donnie": {
+      "kills": 10,
+      "deaths": 6,
+      "assists": 14,
+      "kda_ratio": 4.0
+    },
+    "nerd": {
+      "kills": 15,
+      "deaths": 2,
+      "assists": 13,
+      "kda_ratio": 14.0
+    },
+    "ренальда": {
+      "kills": 7,
+      "deaths": 5,
+      "assists": 19,
+      "kda_ratio": 5.2
+    },
+    "Davros": {
+      "kills": 3,
+      "deaths": 4,
+      "assists": 19,
+      "kda_ratio": 5.5
+    },
+    "jMogwai": {
+      "kills": 10,
+      "deaths": 6,
+      "assists": 10,
+      "kda_ratio": 3.33
+    },
+    "???&": {
+      "kills": 4,
+      "deaths": 6,
+      "assists": 15,
+      "kda_ratio": 3.17
+    },
+    "Osaki": {
+      "kills": 6,
+      "deaths": 6,
+      "assists": 9,
+      "kda_ratio": 2.5
+    },
+    "Профессор вкусных каш": {
+      "kills": 2,
+      "deaths": 8,
+      "assists": 9,
+      "kda_ratio": 1.38
+    },
+    "Noxxion": {
+      "kills": 5,
+      "deaths": 10,
+      "assists": 7,
+      "kda_ratio": 1.2
+    }
+  },
+  "net_worth": {
+    "P0Druga": 10839,
+    "Donnie": 30327,
+    "nerd": 25428,
+    "ренальда": 22947,
+    "Davros": 17394,
+    "jMogwai": 16882,
+    "???&": 18318,
+    "Osaki": 11008,
+    "Профессор вкусных каш": 18945,
+    "Noxxion": 14093
+  },
+  "last_hits": {
+    "P0Druga": 32,
+    "Donnie": 427,
+    "nerd": 313,
+    "ренальда": 209,
+    "Davros": 156,
+    "jMogwai": 271,
+    "???&": 316,
+    "Osaki": 35,
+    "Профессор вкусных каш": 299,
+    "Noxxion": 72
+  },
+  "denies": {
+    "P0Druga": 2,
+    "Donnie": 26,
+    "nerd": 32,
+    "ренальда": 31,
+    "Davros": 12,
+    "jMogwai": 9,
+    "???&": 7,
+    "Osaki": 2,
+    "Профессор вкусных каш": 5,
+    "Noxxion": 0
+  },
+  "gold_per_minute": {
+    "P0Druga": 297,
+    "Donnie": 746,
+    "nerd": 656,
+    "ренальда": 556,
+    "Davros": 433,
+    "jMogwai": 508,
+    "???&": 506,
+    "Osaki": 254,
+    "Профессор вкусных каш": 541,
+    "Noxxion": 345
+  },
+  "xp_per_minute": {
+    "P0Druga": 414,
+    "Donnie": 1013,
+    "nerd": 899,
+    "ренальда": 626,
+    "Davros": 589,
+    "jMogwai": 704,
+    "???&": 655,
+    "Osaki": 394,
+    "Профессор вкусных каш": 657,
+    "Noxxion": 386
+  },
+  "hero_damage": {
+    "P0Druga": 9936,
+    "Donnie": 30131,
+    "nerd": 40154,
+    "ренальда": 20742,
+    "Davros": 14458,
+    "jMogwai": 37271,
+    "???&": 21249,
+    "Osaki": 11798,
+    "Профессор вкусных каш": 17191,
+    "Noxxion": 14627
+  },
+  "hero_healing": {
+    "P0Druga": 10,
+    "Donnie": 0,
+    "nerd": 0,
+    "ренальда": 0,
+    "Davros": 525,
+    "jMogwai": 3721,
+    "???&": 0,
+    "Osaki": 0,
+    "Профессор вкусных каш": 0,
+    "Noxxion": 0
+  },
+  "tower_damage": {
+    "P0Druga": 383,
+    "Donnie": 19428,
+    "nerd": 3093,
+    "ренальда": 4836,
+    "Davros": 910,
+    "jMogwai": 6981,
+    "???&": 3560,
+    "Osaki": 114,
+    "Профессор вкусных каш": 250,
+    "Noxxion": 158
+  },
+  "total_deaths": 64
+}

@@ -1,0 +1,597 @@
+{
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Skywrath Mage",
+      "tick": 4292
+    },
+    {
+      "team": 2,
+      "hero": "Pugna",
+      "tick": 9622
+    },
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 9660
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 11192
+    },
+    {
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 12514
+    },
+    {
+      "team": 2,
+      "hero": "Ursa",
+      "tick": 13766
+    },
+    {
+      "team": 2,
+      "hero": "Enigma",
+      "tick": 16638
+    },
+    {
+      "team": 3,
+      "hero": "Terrorblade",
+      "tick": 20066
+    },
+    {
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 20098
+    },
+    {
+      "team": 2,
+      "hero": "Death Prophet",
+      "tick": 21886
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 1006
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 1112
+    },
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 1966
+    },
+    {
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 1992
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 2910
+    },
+    {
+      "team": 3,
+      "hero": "Grimstroke",
+      "tick": 3298
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Necrophos",
+      "tick": 1006,
+      "order": 0,
+      "game_time_sec": 33.53333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Techies",
+      "tick": 1112,
+      "order": 1,
+      "game_time_sec": 37.06666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Clinkz",
+      "tick": 1966,
+      "order": 2,
+      "game_time_sec": 65.53333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 1992,
+      "order": 3,
+      "game_time_sec": 66.4
+    },
+    {
+      "team": 2,
+      "hero": "Lina",
+      "tick": 2910,
+      "order": 4,
+      "game_time_sec": 97.0
+    },
+    {
+      "team": 3,
+      "hero": "Grimstroke",
+      "tick": 3298,
+      "order": 5,
+      "game_time_sec": 109.93333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Skywrath Mage",
+      "tick": 4292,
+      "order": 6,
+      "game_time_sec": 143.06666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Pugna",
+      "tick": 9622,
+      "order": 7,
+      "game_time_sec": 320.73333333333335
+    },
+    {
+      "team": 2,
+      "hero": "Undying",
+      "tick": 9660,
+      "order": 8,
+      "game_time_sec": 322.0
+    },
+    {
+      "team": 3,
+      "hero": "Axe",
+      "tick": 11192,
+      "order": 9,
+      "game_time_sec": 373.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Slardar",
+      "tick": 12514,
+      "order": 10,
+      "game_time_sec": 417.1333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Ursa",
+      "tick": 13766,
+      "order": 11,
+      "game_time_sec": 458.8666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Enigma",
+      "tick": 16638,
+      "order": 12,
+      "game_time_sec": 554.6
+    },
+    {
+      "team": 3,
+      "hero": "Terrorblade",
+      "tick": 20066,
+      "order": 13,
+      "game_time_sec": 668.8666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 20098,
+      "order": 14,
+      "game_time_sec": 669.9333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Death Prophet",
+      "tick": 21886,
+      "order": 15,
+      "game_time_sec": 729.5333333333333
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 11.6,
+  "wards_placed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 12,
+      "sentry": 17,
+      "total": 29
+    },
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "P0Druga": {
+      "observer": 3,
+      "sentry": 25,
+      "total": 28
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Communication": {
+      "observer": 10,
+      "sentry": 27,
+      "total": 37
+    },
+    "Kando!JeJe": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "nerd": {
+      "observer": 4,
+      "sentry": 1,
+      "total": 5
+    },
+    "13": {
+      "observer": 8,
+      "sentry": 12,
+      "total": 20
+    }
+  },
+  "wards_destroyed": {
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Профессор вкусных каш": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 7,
+      "total": 8
+    },
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "P0Druga": {
+      "observer": 4,
+      "sentry": 8,
+      "total": 12
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 2,
+      "total": 2
+    },
+    "Communication": {
+      "observer": 2,
+      "sentry": 8,
+      "total": 10
+    },
+    "Kando!JeJe": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "nerd": {
+      "observer": 2,
+      "sentry": 1,
+      "total": 3
+    },
+    "13": {
+      "observer": 0,
+      "sentry": 6,
+      "total": 6
+    }
+  },
+  "high_fives": {
+    "???&": 0,
+    "Профессор вкусных каш": 0,
+    "Osaki": 0,
+    "jMogwai": 0,
+    "P0Druga": 0,
+    "Donnie": 0,
+    "Communication": 1,
+    "Kando!JeJe": 0,
+    "nerd": 2,
+    "13": 0
+  },
+  "stuns_dealt": {
+    "???&": 48.47,
+    "Профессор вкусных каш": 89.9,
+    "Osaki": 0.0,
+    "jMogwai": 25.9,
+    "P0Druga": 0.0,
+    "Donnie": 8.0,
+    "Communication": 105.03,
+    "Kando!JeJe": 68.23,
+    "nerd": 101.4,
+    "13": 29.02
+  },
+  "damage_taken": {
+    "???&": 26741,
+    "Профессор вкусных каш": 24002,
+    "Osaki": 17925,
+    "jMogwai": 33626,
+    "P0Druga": 15687,
+    "Donnie": 23708,
+    "Communication": 24291,
+    "Kando!JeJe": 19482,
+    "nerd": 21517,
+    "13": 14554
+  },
+  "chat_after_draft": [
+    {
+      "tick": 71162,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "г"
+    },
+    {
+      "tick": 71168,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "г"
+    }
+  ],
+  "chat_message_count": 2,
+  "wards_events_count": 122,
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "Всех приветсвую, всем саламалейкум",
+    "team_tag": "SALAM",
+    "team_id": 10129669
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.1.0"
+  },
+  "match_id": 9067629902,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "dire",
+  "start_timestamp": 1793304699,
+  "start_time": "2026-10-29T20:11:39Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 2781,
+  "duration_minutes": 46.35,
+  "radiant_team": [
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Ursa"
+    },
+    {
+      "nickname": "Профессор вкусных каш",
+      "steam_id": "76561198069163159",
+      "hero": "Enigma"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Undying"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Death Prophet"
+    },
+    {
+      "nickname": "P0Druga",
+      "steam_id": "76561199783912739",
+      "hero": "Pugna"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Terrorblade"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": "76561199222816532",
+      "hero": "Axe"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Slardar"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Pangolier"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Skywrath Mage"
+    }
+  ],
+  "kda": {
+    "???&": {
+      "kills": 8,
+      "deaths": 7,
+      "assists": 7,
+      "kda_ratio": 2.14
+    },
+    "Профессор вкусных каш": {
+      "kills": 9,
+      "deaths": 10,
+      "assists": 11,
+      "kda_ratio": 2.0
+    },
+    "Osaki": {
+      "kills": 6,
+      "deaths": 4,
+      "assists": 16,
+      "kda_ratio": 5.5
+    },
+    "jMogwai": {
+      "kills": 7,
+      "deaths": 7,
+      "assists": 13,
+      "kda_ratio": 2.86
+    },
+    "P0Druga": {
+      "kills": 1,
+      "deaths": 10,
+      "assists": 13,
+      "kda_ratio": 1.4
+    },
+    "Donnie": {
+      "kills": 11,
+      "deaths": 6,
+      "assists": 9,
+      "kda_ratio": 3.33
+    },
+    "Communication": {
+      "kills": 8,
+      "deaths": 7,
+      "assists": 22,
+      "kda_ratio": 4.29
+    },
+    "Kando!JeJe": {
+      "kills": 4,
+      "deaths": 3,
+      "assists": 14,
+      "kda_ratio": 6.0
+    },
+    "nerd": {
+      "kills": 12,
+      "deaths": 5,
+      "assists": 15,
+      "kda_ratio": 5.4
+    },
+    "13": {
+      "kills": 3,
+      "deaths": 11,
+      "assists": 22,
+      "kda_ratio": 2.27
+    }
+  },
+  "net_worth": {
+    "???&": 23346,
+    "Профессор вкусных каш": 19359,
+    "Osaki": 12898,
+    "jMogwai": 23794,
+    "P0Druga": 9782,
+    "Donnie": 34557,
+    "Communication": 20482,
+    "Kando!JeJe": 20455,
+    "nerd": 30648,
+    "13": 14292
+  },
+  "last_hits": {
+    "???&": 477,
+    "Профессор вкусных каш": 220,
+    "Osaki": 89,
+    "jMogwai": 389,
+    "P0Druga": 26,
+    "Donnie": 583,
+    "Communication": 198,
+    "Kando!JeJe": 214,
+    "nerd": 435,
+    "13": 44
+  },
+  "denies": {
+    "???&": 7,
+    "Профессор вкусных каш": 6,
+    "Osaki": 0,
+    "jMogwai": 12,
+    "P0Druga": 0,
+    "Donnie": 22,
+    "Communication": 2,
+    "Kando!JeJe": 3,
+    "nerd": 3,
+    "13": 1
+  },
+  "gold_per_minute": {
+    "???&": 615,
+    "Профессор вкусных каш": 477,
+    "Osaki": 291,
+    "jMogwai": 558,
+    "P0Druga": 247,
+    "Donnie": 806,
+    "Communication": 509,
+    "Kando!JeJe": 449,
+    "nerd": 722,
+    "13": 338
+  },
+  "xp_per_minute": {
+    "???&": 809,
+    "Профессор вкусных каш": 466,
+    "Osaki": 450,
+    "jMogwai": 680,
+    "P0Druga": 342,
+    "Donnie": 794,
+    "Communication": 882,
+    "Kando!JeJe": 648,
+    "nerd": 944,
+    "13": 554
+  },
+  "hero_damage": {
+    "???&": 29518,
+    "Профессор вкусных каш": 25696,
+    "Osaki": 10199,
+    "jMogwai": 27328,
+    "P0Druga": 10811,
+    "Donnie": 33649,
+    "Communication": 27385,
+    "Kando!JeJe": 9641,
+    "nerd": 33802,
+    "13": 14227
+  },
+  "hero_healing": {
+    "???&": 0,
+    "Профессор вкусных каш": 0,
+    "Osaki": 3040,
+    "jMogwai": 130,
+    "P0Druga": 3295,
+    "Donnie": 0,
+    "Communication": 0,
+    "Kando!JeJe": 0,
+    "nerd": 0,
+    "13": 0
+  },
+  "tower_damage": {
+    "???&": 2449,
+    "Профессор вкусных каш": 2957,
+    "Osaki": 33,
+    "jMogwai": 4758,
+    "P0Druga": 0,
+    "Donnie": 30317,
+    "Communication": 887,
+    "Kando!JeJe": 713,
+    "nerd": 953,
+    "13": 134
+  },
+  "total_deaths": 70
+}

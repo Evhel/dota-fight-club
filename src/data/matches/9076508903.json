@@ -1,0 +1,669 @@
+{
+  "picks": [
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 4988
+    },
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 5842
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 6740
+    },
+    {
+      "team": 3,
+      "hero": "Tidehunter",
+      "tick": 6778
+    },
+    {
+      "team": 3,
+      "hero": "Bane",
+      "tick": 8166
+    },
+    {
+      "team": 2,
+      "hero": "Razor",
+      "tick": 9308
+    },
+    {
+      "team": 2,
+      "hero": "Slardar",
+      "tick": 9902
+    },
+    {
+      "team": 3,
+      "hero": "Leshrac",
+      "tick": 12412
+    },
+    {
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 13350
+    },
+    {
+      "team": 2,
+      "hero": "Sniper",
+      "tick": 13878
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 1326
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 2108
+    },
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 2152
+    },
+    {
+      "team": 3,
+      "hero": "Dawnbreaker",
+      "tick": 4502
+    },
+    {
+      "team": 2,
+      "hero": "Broodmother",
+      "tick": 4686
+    },
+    {
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 4952
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Windranger",
+      "tick": 1326,
+      "order": 0,
+      "game_time_sec": 44.2
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 2108,
+      "order": 1,
+      "game_time_sec": 70.26666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 2152,
+      "order": 2,
+      "game_time_sec": 71.73333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Dawnbreaker",
+      "tick": 4502,
+      "order": 3,
+      "game_time_sec": 150.06666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Broodmother",
+      "tick": 4686,
+      "order": 4,
+      "game_time_sec": 156.2
+    },
+    {
+      "team": 3,
+      "hero": "Pangolier",
+      "tick": 4952,
+      "order": 5,
+      "game_time_sec": 165.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 4988,
+      "order": 6,
+      "game_time_sec": 166.26666666666668
+    },
+    {
+      "team": 2,
+      "hero": "Lich",
+      "tick": 5842,
+      "order": 7,
+      "game_time_sec": 194.73333333333332
+    },
+    {
+      "team": 2,
+      "hero": "Jakiro",
+      "tick": 6740,
+      "order": 8,
+      "game_time_sec": 224.66666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Tidehunter",
+      "tick": 6778,
+      "order": 9,
+      "game_time_sec": 225.93333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Bane",
+      "tick": 8166,
+      "order": 10,
+      "game_time_sec": 272.2
+    },
+    {
+      "team": 2,
+      "hero": "Razor",
+      "tick": 9308,
+      "order": 11,
+      "game_time_sec": 310.26666666666665
+    },
+    {
+      "team": 2,
+      "hero": "Slardar",
+      "tick": 9902,
+      "order": 12,
+      "game_time_sec": 330.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Leshrac",
+      "tick": 12412,
+      "order": 13,
+      "game_time_sec": 413.73333333333335
+    },
+    {
+      "team": 3,
+      "hero": "Juggernaut",
+      "tick": 13350,
+      "order": 14,
+      "game_time_sec": 445.0
+    },
+    {
+      "team": 2,
+      "hero": "Sniper",
+      "tick": 13878,
+      "order": 15,
+      "game_time_sec": 462.6
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 6.97,
+  "wards_placed": {
+    "Communication": {
+      "observer": 8,
+      "sentry": 21,
+      "total": 29
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Osaki": {
+      "observer": 6,
+      "sentry": 14,
+      "total": 20
+    },
+    "Kando!JeJe": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 7,
+      "sentry": 14,
+      "total": 21
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 9,
+      "sentry": 17,
+      "total": 26
+    },
+    "nerd": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    }
+  },
+  "wards_destroyed": {
+    "Communication": {
+      "observer": 5,
+      "sentry": 8,
+      "total": 13
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "Osaki": {
+      "observer": 2,
+      "sentry": 5,
+      "total": 7
+    },
+    "Kando!JeJe": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "jMogwai": {
+      "observer": 0,
+      "sentry": 3,
+      "total": 3
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Davros": {
+      "observer": 2,
+      "sentry": 4,
+      "total": 6
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "13": {
+      "observer": 1,
+      "sentry": 6,
+      "total": 7
+    },
+    "nerd": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    }
+  },
+  "high_fives": {
+    "Communication": 0,
+    "Donnie": 0,
+    "Osaki": 0,
+    "Kando!JeJe": 0,
+    "jMogwai": 0,
+    "???&": 0,
+    "Davros": 1,
+    "DeR meis+eR": 0,
+    "13": 1,
+    "nerd": 0
+  },
+  "stuns_dealt": {
+    "Communication": 62.83,
+    "Donnie": 0.0,
+    "Osaki": 60.2,
+    "Kando!JeJe": 46.53,
+    "jMogwai": 1.75,
+    "???&": 4.8,
+    "Davros": 177.65,
+    "DeR meis+eR": 37.9,
+    "13": 90.2,
+    "nerd": 63.33
+  },
+  "damage_taken": {
+    "Communication": 18288,
+    "Donnie": 33281,
+    "Osaki": 18706,
+    "Kando!JeJe": 27998,
+    "jMogwai": 25715,
+    "???&": 21559,
+    "Davros": 21874,
+    "DeR meis+eR": 31170,
+    "13": 18928,
+    "nerd": 32041
+  },
+  "chat_after_draft": [
+    {
+      "tick": 18486,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "че там"
+    },
+    {
+      "tick": 18796,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "ща, думаем как играть"
+    },
+    {
+      "tick": 19022,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "не торопись мы подождем"
+    },
+    {
+      "tick": 19124,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "Свапайте 3 линии"
+    },
+    {
+      "tick": 19308,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "вайпера в изи"
+    },
+    {
+      "tick": 19424,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "ты не вывезешь мид"
+    },
+    {
+      "tick": 19432,
+      "channel": "all",
+      "player_slot": 1,
+      "text": "))))"
+    },
+    {
+      "tick": 19674,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "го"
+    },
+    {
+      "tick": 26456,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "а я промазал?"
+    },
+    {
+      "tick": 28820,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "я промазал станом?"
+    },
+    {
+      "tick": 29066,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "хз я не смотрел"
+    },
+    {
+      "tick": 35048,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "вылетел?"
+    },
+    {
+      "tick": 36214,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "г?"
+    },
+    {
+      "tick": 50226,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "симфония нереальная"
+    }
+  ],
+  "chat_message_count": 14,
+  "wards_events_count": 104,
+  "radiant_team_info": {
+    "team_name": "123",
+    "team_tag": "",
+    "team_id": 10182410
+  },
+  "dire_team_info": {
+    "team_name": "dlya trenirovok",
+    "team_tag": "DLT",
+    "team_id": 1387268
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.1.1"
+  },
+  "match_id": 9076508903,
+  "game_mode_id": 16,
+  "game_mode": "Captain's Draft",
+  "league_id": 0,
+  "winner": "dire",
+  "start_timestamp": 1793824728,
+  "start_time": "2026-11-04T20:38:48Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 2404,
+  "duration_minutes": 40.07,
+  "radiant_team": [
+    {
+      "nickname": "Communication",
+      "steam_id": "76561199222816532",
+      "hero": "Lich"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Razor"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Jakiro"
+    },
+    {
+      "nickname": "Kando!JeJe",
+      "steam_id": "76561198040946408",
+      "hero": "Slardar"
+    },
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Sniper"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Juggernaut"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Bane"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": "76561198078638066",
+      "hero": "Tidehunter"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Witch Doctor"
+    },
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Leshrac"
+    }
+  ],
+  "kda": {
+    "Communication": {
+      "kills": 4,
+      "deaths": 11,
+      "assists": 21,
+      "kda_ratio": 2.27
+    },
+    "Donnie": {
+      "kills": 13,
+      "deaths": 12,
+      "assists": 4,
+      "kda_ratio": 1.42
+    },
+    "Osaki": {
+      "kills": 1,
+      "deaths": 9,
+      "assists": 12,
+      "kda_ratio": 1.44
+    },
+    "Kando!JeJe": {
+      "kills": 0,
+      "deaths": 13,
+      "assists": 9,
+      "kda_ratio": 0.69
+    },
+    "jMogwai": {
+      "kills": 12,
+      "deaths": 7,
+      "assists": 12,
+      "kda_ratio": 3.43
+    },
+    "???&": {
+      "kills": 21,
+      "deaths": 1,
+      "assists": 12,
+      "kda_ratio": 33.0
+    },
+    "Davros": {
+      "kills": 5,
+      "deaths": 7,
+      "assists": 23,
+      "kda_ratio": 4.0
+    },
+    "DeR meis+eR": {
+      "kills": 6,
+      "deaths": 8,
+      "assists": 24,
+      "kda_ratio": 3.75
+    },
+    "13": {
+      "kills": 7,
+      "deaths": 7,
+      "assists": 21,
+      "kda_ratio": 4.0
+    },
+    "nerd": {
+      "kills": 13,
+      "deaths": 7,
+      "assists": 15,
+      "kda_ratio": 4.0
+    }
+  },
+  "net_worth": {
+    "Communication": 10429,
+    "Donnie": 14726,
+    "Osaki": 8445,
+    "Kando!JeJe": 8660,
+    "jMogwai": 22806,
+    "???&": 34327,
+    "Davros": 13279,
+    "DeR meis+eR": 18927,
+    "13": 12687,
+    "nerd": 23082
+  },
+  "last_hits": {
+    "Communication": 57,
+    "Donnie": 248,
+    "Osaki": 51,
+    "Kando!JeJe": 123,
+    "jMogwai": 380,
+    "???&": 441,
+    "Davros": 38,
+    "DeR meis+eR": 229,
+    "13": 18,
+    "nerd": 217
+  },
+  "denies": {
+    "Communication": 13,
+    "Donnie": 12,
+    "Osaki": 0,
+    "Kando!JeJe": 2,
+    "jMogwai": 22,
+    "???&": 26,
+    "Davros": 5,
+    "DeR meis+eR": 9,
+    "13": 7,
+    "nerd": 3
+  },
+  "gold_per_minute": {
+    "Communication": 360,
+    "Donnie": 458,
+    "Osaki": 268,
+    "Kando!JeJe": 274,
+    "jMogwai": 679,
+    "???&": 887,
+    "Davros": 375,
+    "DeR meis+eR": 535,
+    "13": 383,
+    "nerd": 608
+  },
+  "xp_per_minute": {
+    "Communication": 497,
+    "Donnie": 660,
+    "Osaki": 521,
+    "Kando!JeJe": 433,
+    "jMogwai": 782,
+    "???&": 1338,
+    "Davros": 565,
+    "DeR meis+eR": 703,
+    "13": 606,
+    "nerd": 822
+  },
+  "hero_damage": {
+    "Communication": 25762,
+    "Donnie": 32293,
+    "Osaki": 8717,
+    "Kando!JeJe": 6861,
+    "jMogwai": 51939,
+    "???&": 42279,
+    "Davros": 11102,
+    "DeR meis+eR": 24622,
+    "13": 20313,
+    "nerd": 25672
+  },
+  "hero_healing": {
+    "Communication": 0,
+    "Donnie": 0,
+    "Osaki": 0,
+    "Kando!JeJe": 0,
+    "jMogwai": 0,
+    "???&": 15448,
+    "Davros": 925,
+    "DeR meis+eR": 0,
+    "13": 7863,
+    "nerd": 0
+  },
+  "tower_damage": {
+    "Communication": 0,
+    "Donnie": 366,
+    "Osaki": 135,
+    "Kando!JeJe": 0,
+    "jMogwai": 1384,
+    "???&": 22373,
+    "Davros": 96,
+    "DeR meis+eR": 1900,
+    "13": 187,
+    "nerd": 8348
+  },
+  "total_deaths": 82
+}

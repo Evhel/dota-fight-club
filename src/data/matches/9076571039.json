@@ -1,0 +1,777 @@
+{
+  "picks": [
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 5148
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 6150
+    },
+    {
+      "team": 3,
+      "hero": "Grimstroke",
+      "tick": 9382
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Demon",
+      "tick": 9718
+    },
+    {
+      "team": 2,
+      "hero": "Kunkka",
+      "tick": 12230
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 13126
+    },
+    {
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 15180
+    },
+    {
+      "team": 2,
+      "hero": "Mirana",
+      "tick": 16660
+    },
+    {
+      "team": 2,
+      "hero": "Weaver",
+      "tick": 20544
+    },
+    {
+      "team": 3,
+      "hero": "Earthshaker",
+      "tick": 21574
+    }
+  ],
+  "bans": [
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 852
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 916
+    },
+    {
+      "team": 3,
+      "hero": "Clinkz",
+      "tick": 1490
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 2066
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2492
+    },
+    {
+      "team": 3,
+      "hero": "Spirit Breaker",
+      "tick": 3236
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 5066
+    },
+    {
+      "team": 2,
+      "hero": "Skywrath Mage",
+      "tick": 7330
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 7652
+    },
+    {
+      "team": 3,
+      "hero": "Doom",
+      "tick": 8554
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 16938
+    },
+    {
+      "team": 2,
+      "hero": "Outworld Devourer",
+      "tick": 18496
+    },
+    {
+      "team": 3,
+      "hero": "Beastmaster",
+      "tick": 18688
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 19994
+    }
+  ],
+  "draft_order": [
+    {
+      "team": 2,
+      "hero": "Marci",
+      "tick": 852,
+      "order": 0,
+      "game_time_sec": 28.4
+    },
+    {
+      "team": 3,
+      "hero": "Windranger",
+      "tick": 916,
+      "order": 1,
+      "game_time_sec": 30.533333333333335
+    },
+    {
+      "team": 3,
+      "hero": "Clinkz",
+      "tick": 1490,
+      "order": 2,
+      "game_time_sec": 49.666666666666664
+    },
+    {
+      "team": 2,
+      "hero": "Techies",
+      "tick": 2066,
+      "order": 3,
+      "game_time_sec": 68.86666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Kez",
+      "tick": 2492,
+      "order": 4,
+      "game_time_sec": 83.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Spirit Breaker",
+      "tick": 3236,
+      "order": 5,
+      "game_time_sec": 107.86666666666666
+    },
+    {
+      "team": 2,
+      "hero": "Dawnbreaker",
+      "tick": 5066,
+      "order": 6,
+      "game_time_sec": 168.86666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Pudge",
+      "tick": 5148,
+      "order": 7,
+      "game_time_sec": 171.6
+    },
+    {
+      "team": 3,
+      "hero": "Timbersaw",
+      "tick": 6150,
+      "order": 8,
+      "game_time_sec": 205.0
+    },
+    {
+      "team": 2,
+      "hero": "Skywrath Mage",
+      "tick": 7330,
+      "order": 9,
+      "game_time_sec": 244.33333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Witch Doctor",
+      "tick": 7652,
+      "order": 10,
+      "game_time_sec": 255.06666666666666
+    },
+    {
+      "team": 3,
+      "hero": "Doom",
+      "tick": 8554,
+      "order": 11,
+      "game_time_sec": 285.1333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Grimstroke",
+      "tick": 9382,
+      "order": 12,
+      "game_time_sec": 312.73333333333335
+    },
+    {
+      "team": 2,
+      "hero": "Shadow Demon",
+      "tick": 9718,
+      "order": 13,
+      "game_time_sec": 323.93333333333334
+    },
+    {
+      "team": 2,
+      "hero": "Kunkka",
+      "tick": 12230,
+      "order": 14,
+      "game_time_sec": 407.6666666666667
+    },
+    {
+      "team": 3,
+      "hero": "Dazzle",
+      "tick": 13126,
+      "order": 15,
+      "game_time_sec": 437.53333333333336
+    },
+    {
+      "team": 3,
+      "hero": "Spectre",
+      "tick": 15180,
+      "order": 16,
+      "game_time_sec": 506.0
+    },
+    {
+      "team": 2,
+      "hero": "Mirana",
+      "tick": 16660,
+      "order": 17,
+      "game_time_sec": 555.3333333333334
+    },
+    {
+      "team": 3,
+      "hero": "Arc Warden",
+      "tick": 16938,
+      "order": 18,
+      "game_time_sec": 564.6
+    },
+    {
+      "team": 2,
+      "hero": "Outworld Devourer",
+      "tick": 18496,
+      "order": 19,
+      "game_time_sec": 616.5333333333333
+    },
+    {
+      "team": 3,
+      "hero": "Beastmaster",
+      "tick": 18688,
+      "order": 20,
+      "game_time_sec": 622.9333333333333
+    },
+    {
+      "team": 2,
+      "hero": "Lifestealer",
+      "tick": 19994,
+      "order": 21,
+      "game_time_sec": 666.4666666666667
+    },
+    {
+      "team": 2,
+      "hero": "Weaver",
+      "tick": 20544,
+      "order": 22,
+      "game_time_sec": 684.8
+    },
+    {
+      "team": 3,
+      "hero": "Earthshaker",
+      "tick": 21574,
+      "order": 23,
+      "game_time_sec": 719.1333333333333
+    }
+  ],
+  "has_draft": true,
+  "draft_duration_minutes": 11.51,
+  "wards_placed": {
+    "nerd": {
+      "observer": 3,
+      "sentry": 2,
+      "total": 5
+    },
+    "Communication": {
+      "observer": 12,
+      "sentry": 22,
+      "total": 34
+    },
+    "Osaki": {
+      "observer": 4,
+      "sentry": 13,
+      "total": 17
+    },
+    "???&": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    },
+    "jMogwai": {
+      "observer": 3,
+      "sentry": 0,
+      "total": 3
+    },
+    "Davros": {
+      "observer": 13,
+      "sentry": 23,
+      "total": 36
+    },
+    "13": {
+      "observer": 4,
+      "sentry": 14,
+      "total": 18
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Gojo Satoru": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    }
+  },
+  "wards_destroyed": {
+    "nerd": {
+      "observer": 2,
+      "sentry": 2,
+      "total": 4
+    },
+    "Communication": {
+      "observer": 3,
+      "sentry": 4,
+      "total": 7
+    },
+    "Osaki": {
+      "observer": 1,
+      "sentry": 2,
+      "total": 3
+    },
+    "???&": {
+      "observer": 1,
+      "sentry": 0,
+      "total": 1
+    },
+    "DeR meis+eR": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "jMogwai": {
+      "observer": 1,
+      "sentry": 1,
+      "total": 2
+    },
+    "Davros": {
+      "observer": 1,
+      "sentry": 8,
+      "total": 9
+    },
+    "13": {
+      "observer": 2,
+      "sentry": 3,
+      "total": 5
+    },
+    "Donnie": {
+      "observer": 0,
+      "sentry": 0,
+      "total": 0
+    },
+    "Gojo Satoru": {
+      "observer": 0,
+      "sentry": 1,
+      "total": 1
+    }
+  },
+  "high_fives": {
+    "nerd": 1,
+    "Communication": 0,
+    "Osaki": 0,
+    "???&": 0,
+    "DeR meis+eR": 0,
+    "jMogwai": 2,
+    "Davros": 2,
+    "13": 1,
+    "Donnie": 1,
+    "Gojo Satoru": 0
+  },
+  "stuns_dealt": {
+    "nerd": 55.97,
+    "Communication": 141.8,
+    "Osaki": 64.69,
+    "???&": 0.0,
+    "DeR meis+eR": 119.6,
+    "jMogwai": 299.89,
+    "Davros": 31.3,
+    "13": 26.93,
+    "Donnie": 0.0,
+    "Gojo Satoru": 0.0
+  },
+  "damage_taken": {
+    "nerd": 29501,
+    "Communication": 25012,
+    "Osaki": 17248,
+    "???&": 33221,
+    "DeR meis+eR": 28737,
+    "jMogwai": 30515,
+    "Davros": 19796,
+    "13": 15501,
+    "Donnie": 36186,
+    "Gojo Satoru": 18915
+  },
+  "chat_after_draft": [
+    {
+      "tick": 26796,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "ну лида9("
+    },
+    {
+      "tick": 27376,
+      "channel": "all",
+      "player_slot": 6,
+      "text": "ты псих"
+    },
+    {
+      "tick": 29816,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "mouse battery"
+    },
+    {
+      "tick": 29882,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "1 sec"
+    },
+    {
+      "tick": 30106,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "np charge"
+    },
+    {
+      "tick": 30168,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "20 min"
+    },
+    {
+      "tick": 32496,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "g?"
+    },
+    {
+      "tick": 32590,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "g"
+    },
+    {
+      "tick": 50860,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "5/5"
+    },
+    {
+      "tick": 59428,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "G?"
+    },
+    {
+      "tick": 73756,
+      "channel": "all",
+      "player_slot": 0,
+      "text": "g"
+    },
+    {
+      "tick": 73814,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "sec"
+    },
+    {
+      "tick": 75122,
+      "channel": "all",
+      "player_slot": 5,
+      "text": "g"
+    },
+    {
+      "tick": 101892,
+      "channel": "all",
+      "player_slot": 4,
+      "text": "gg"
+    },
+    {
+      "tick": 111926,
+      "channel": "all",
+      "player_slot": 3,
+      "text": "gg"
+    },
+    {
+      "tick": 111944,
+      "channel": "all",
+      "player_slot": 9,
+      "text": "g"
+    }
+  ],
+  "chat_message_count": 16,
+  "wards_events_count": 114,
+  "radiant_team_info": {
+    "team_name": "dlya trenirovok",
+    "team_tag": "DLT",
+    "team_id": 1387268
+  },
+  "dire_team_info": {
+    "team_name": "BALTIKA",
+    "team_tag": "8",
+    "team_id": 4616603
+  },
+  "data_quality": {
+    "parse_error": null,
+    "events_source": "gem-0.14.0",
+    "terminal_stats_source": "replay_match_details",
+    "parser_version": "1.1.1"
+  },
+  "match_id": 9076571039,
+  "game_mode_id": 2,
+  "game_mode": "Captain's Mode",
+  "league_id": 0,
+  "winner": "dire",
+  "start_timestamp": 1793828696,
+  "start_time": "2026-11-04T21:44:56Z",
+  "start_time_source": "replay_match_details",
+  "duration_seconds": 2605,
+  "duration_minutes": 43.42,
+  "radiant_team": [
+    {
+      "nickname": "nerd",
+      "steam_id": "76561198074554802",
+      "hero": "Mirana"
+    },
+    {
+      "nickname": "Communication",
+      "steam_id": "76561199222816532",
+      "hero": "Pudge"
+    },
+    {
+      "nickname": "Osaki",
+      "steam_id": "76561198306408521",
+      "hero": "Shadow Demon"
+    },
+    {
+      "nickname": "???&",
+      "steam_id": "76561198024572250",
+      "hero": "Weaver"
+    },
+    {
+      "nickname": "DeR meis+eR",
+      "steam_id": "76561198078638066",
+      "hero": "Kunkka"
+    }
+  ],
+  "dire_team": [
+    {
+      "nickname": "jMogwai",
+      "steam_id": "76561198025641132",
+      "hero": "Earthshaker"
+    },
+    {
+      "nickname": "Davros",
+      "steam_id": "76561198262536558",
+      "hero": "Dazzle"
+    },
+    {
+      "nickname": "13",
+      "steam_id": "76561198315265037",
+      "hero": "Grimstroke"
+    },
+    {
+      "nickname": "Donnie",
+      "steam_id": "76561198108151943",
+      "hero": "Timbersaw"
+    },
+    {
+      "nickname": "Gojo Satoru",
+      "steam_id": "76561198834701486",
+      "hero": "Spectre"
+    }
+  ],
+  "kda": {
+    "nerd": {
+      "kills": 8,
+      "deaths": 11,
+      "assists": 14,
+      "kda_ratio": 2.0
+    },
+    "Communication": {
+      "kills": 4,
+      "deaths": 10,
+      "assists": 20,
+      "kda_ratio": 2.4
+    },
+    "Osaki": {
+      "kills": 0,
+      "deaths": 9,
+      "assists": 16,
+      "kda_ratio": 1.78
+    },
+    "???&": {
+      "kills": 19,
+      "deaths": 8,
+      "assists": 9,
+      "kda_ratio": 3.5
+    },
+    "DeR meis+eR": {
+      "kills": 4,
+      "deaths": 5,
+      "assists": 15,
+      "kda_ratio": 3.8
+    },
+    "jMogwai": {
+      "kills": 13,
+      "deaths": 6,
+      "assists": 18,
+      "kda_ratio": 5.17
+    },
+    "Davros": {
+      "kills": 1,
+      "deaths": 7,
+      "assists": 24,
+      "kda_ratio": 3.57
+    },
+    "13": {
+      "kills": 1,
+      "deaths": 12,
+      "assists": 19,
+      "kda_ratio": 1.67
+    },
+    "Donnie": {
+      "kills": 15,
+      "deaths": 7,
+      "assists": 19,
+      "kda_ratio": 4.86
+    },
+    "Gojo Satoru": {
+      "kills": 11,
+      "deaths": 4,
+      "assists": 17,
+      "kda_ratio": 7.0
+    }
+  },
+  "net_worth": {
+    "nerd": 15152,
+    "Communication": 10183,
+    "Osaki": 9131,
+    "???&": 22669,
+    "DeR meis+eR": 18638,
+    "jMogwai": 25540,
+    "Davros": 11978,
+    "13": 9872,
+    "Donnie": 30384,
+    "Gojo Satoru": 25571
+  },
+  "last_hits": {
+    "nerd": 225,
+    "Communication": 70,
+    "Osaki": 26,
+    "???&": 336,
+    "DeR meis+eR": 316,
+    "jMogwai": 282,
+    "Davros": 66,
+    "13": 34,
+    "Donnie": 360,
+    "Gojo Satoru": 322
+  },
+  "denies": {
+    "nerd": 13,
+    "Communication": 0,
+    "Osaki": 2,
+    "???&": 7,
+    "DeR meis+eR": 16,
+    "jMogwai": 5,
+    "Davros": 6,
+    "13": 0,
+    "Donnie": 16,
+    "Gojo Satoru": 8
+  },
+  "gold_per_minute": {
+    "nerd": 461,
+    "Communication": 325,
+    "Osaki": 204,
+    "???&": 640,
+    "DeR meis+eR": 493,
+    "jMogwai": 625,
+    "Davros": 334,
+    "13": 297,
+    "Donnie": 736,
+    "Gojo Satoru": 626
+  },
+  "xp_per_minute": {
+    "nerd": 606,
+    "Communication": 483,
+    "Osaki": 384,
+    "???&": 830,
+    "DeR meis+eR": 584,
+    "jMogwai": 1095,
+    "Davros": 520,
+    "13": 518,
+    "Donnie": 1098,
+    "Gojo Satoru": 850
+  },
+  "hero_damage": {
+    "nerd": 27130,
+    "Communication": 19159,
+    "Osaki": 10093,
+    "???&": 35431,
+    "DeR meis+eR": 29100,
+    "jMogwai": 38726,
+    "Davros": 10528,
+    "13": 5390,
+    "Donnie": 37945,
+    "Gojo Satoru": 41130
+  },
+  "hero_healing": {
+    "nerd": 0,
+    "Communication": 125,
+    "Osaki": 900,
+    "???&": 0,
+    "DeR meis+eR": 0,
+    "jMogwai": 114,
+    "Davros": 19291,
+    "13": 97,
+    "Donnie": 0,
+    "Gojo Satoru": 174
+  },
+  "tower_damage": {
+    "nerd": 844,
+    "Communication": 0,
+    "Osaki": 61,
+    "???&": 3250,
+    "DeR meis+eR": 0,
+    "jMogwai": 5427,
+    "Davros": 901,
+    "13": 968,
+    "Donnie": 6997,
+    "Gojo Satoru": 7862
+  },
+  "total_deaths": 79
+}
